@@ -420,6 +420,60 @@
         "text": "마지막 날이군요. ……마스터, 오늘은 조금 더 천천히 걸읍시다.",
         "repeat": "once_per_run"
       }
+    ],
+    "mana_supply": [
+      {
+        "id": "great",
+        "text": "……충분합니다, 마스터. 지금이라면 이 검은, 누구에게도 뒤지지 않습니다.",
+        "when": {
+          "event.result": "great"
+        },
+        "tone": "calm"
+      },
+      {
+        "id": "success",
+        "text": "고맙습니다. 이 마력, 헛되이 쓰지 않겠습니다.",
+        "when": {
+          "event.result": "success"
+        },
+        "tone": "calm"
+      },
+      {
+        "id": "normal",
+        "text": "문제없습니다. 싸우기에 부족하지는 않으니.",
+        "when": {
+          "event.result": "normal"
+        },
+        "tone": "calm"
+      },
+      {
+        "id": "fail",
+        "text": "……무리하지 마십시오, 마스터. 모자란 몫은 검으로 메우겠습니다.",
+        "when": {
+          "event.result": "fail"
+        },
+        "tone": "grim"
+      },
+      {
+        "id": "fumble",
+        "text": "괜찮습니까, 마스터? ──오늘은 여기까지 하지요.",
+        "when": {
+          "event.result": "fumble"
+        },
+        "tone": "grim"
+      }
+    ],
+    "day_bond_fail": [
+      {
+        "id": "fail_01",
+        "text": "……마스터, 지금은 한가로이 걸을 때가 아닙니다. 경계를 늦추지 마십시오.",
+        "tone": "cold"
+      },
+      {
+        "id": "fail_02",
+        "text": "죄송합니다. 이런 자리는……아직 익숙하지 않아서.",
+        "tone": "grim"
+      }
     ]
   }
 }

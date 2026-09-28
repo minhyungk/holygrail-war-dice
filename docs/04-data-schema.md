@@ -63,6 +63,7 @@ data/
 `legacy/data-templates/*.csv`의 헤더를 옮겨 온 것이다. 이 문서가 기준이며, CSV 템플릿은 참고용으로만 남긴다.
 
 ### constants
+파일: `data/constants.json` = `{ "constants": [ {key, value, unit, doc_ref, status, note}, … ] }`. `status`는 `확정` / `임시값`만 (제안·TBD 값은 넣지 않는다).
 | 필드 | 설명 |
 |---|---|
 | `key` | 도메인 접두 + snake_case (`dice.`, `combat.`, `phase.`, `affinity.`, `mana.`, `day.`, `ai.`, `skill.`, `text.`) |
@@ -106,7 +107,8 @@ data/
 | `phase_id` | `ph_` |
 | `name_ko` | 이름 |
 | `attacker_stat` / `defender_stat` | 사용 스탯 (2개면 합산, D-018) |
-| `selection_conditions` | 선택 조건 (`systems/phases.md` §3.2) |
+| `kind` | `contest`(대항) / `solo`(방어측 단독 판정, `ph_fate`) (D-097) |
+| `selection` | 선택 방식: `terrain`(지형 추첨) / `np_both` / `np_one` (`systems/phases.md` §3.2) |
 | `notes` | 비고 |
 
 ### skills

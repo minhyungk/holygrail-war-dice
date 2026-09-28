@@ -1,0 +1,777 @@
+{
+  "notes": "모든 튜닝 수치 (AGENTS.md 규칙 2, docs/04-data-schema.md). 코드는 src/data/constants.ts를 거쳐 읽는다. status: 확정 / 임시값",
+  "constants": [
+    {
+      "key": "text.affinity_magnitude",
+      "value": [
+        4,
+        8
+      ],
+      "unit": "호감도",
+      "doc_ref": "narrative-engine.md §4.1",
+      "status": "임시값",
+      "note": "호감도 변화량 크기: 4 미만 small, 8 미만 mid, 이상 big (서술 사실 event.magnitude, D-121)"
+    },
+    {
+      "key": "dice.die_count",
+      "value": 2,
+      "unit": "개",
+      "doc_ref": "dice.md §3.1",
+      "status": "확정",
+      "note": "D-015"
+    },
+    {
+      "key": "dice.die_size",
+      "value": 10,
+      "unit": "면",
+      "doc_ref": "dice.md §3.1",
+      "status": "확정",
+      "note": "D-015"
+    },
+    {
+      "key": "dice.dc",
+      "value": {
+        "easy": 12,
+        "normal": 16,
+        "hard": 20
+      },
+      "unit": "판정값",
+      "doc_ref": "dice.md §3.2",
+      "status": "확정",
+      "note": "D-073"
+    },
+    {
+      "key": "dice.modifier_gap_cap",
+      "value": 15,
+      "unit": "보정",
+      "doc_ref": "dice.md §3.3",
+      "status": "확정",
+      "note": "대항 판정 양측 보정 차이 상한. D-073"
+    },
+    {
+      "key": "dice.miracle_range",
+      "value": {
+        "EX": [
+          18,
+          19,
+          20
+        ],
+        "A": [
+          19,
+          20
+        ],
+        "B": [
+          19,
+          20
+        ],
+        "C": [
+          20
+        ],
+        "D": [
+          20
+        ],
+        "E": [
+          20
+        ]
+      },
+      "unit": "자연값",
+      "doc_ref": "dice.md §3.4",
+      "status": "확정",
+      "note": "행운 랭크 문자 기준 (D-073)"
+    },
+    {
+      "key": "dice.miracle_bonus",
+      "value": 5,
+      "unit": "보정",
+      "doc_ref": "dice.md §3.4",
+      "status": "확정",
+      "note": "D-036. 차이 상한 밖에서 더함"
+    },
+    {
+      "key": "dice.fate_point_init",
+      "value": 3,
+      "unit": "점",
+      "doc_ref": "dice.md §3.5",
+      "status": "확정",
+      "note": "D-038, D-095"
+    },
+    {
+      "key": "dice.fate_point_min",
+      "value": 0,
+      "unit": "점",
+      "doc_ref": "dice.md §3.5",
+      "status": "확정",
+      "note": "D-095, D-127 (하한 0)"
+    },
+    {
+      "key": "dice.fate_point_max",
+      "value": 99,
+      "unit": "점",
+      "doc_ref": "dice.md §3.5",
+      "status": "확정",
+      "note": "D-095"
+    },
+    {
+      "key": "stats.rank_value",
+      "value": {
+        "E": 3,
+        "D": 4,
+        "C": 5,
+        "B": 6,
+        "A": 7,
+        "EX": 8
+      },
+      "unit": "보정",
+      "doc_ref": "stats.md §3.1",
+      "status": "확정",
+      "note": ""
+    },
+    {
+      "key": "stats.rank_modifier_step",
+      "value": 0.5,
+      "unit": "보정",
+      "doc_ref": "stats.md §3.2",
+      "status": "확정",
+      "note": "+ 하나당 +0.5, - 하나당 -0.5"
+    },
+    {
+      "key": "stats.special_rank",
+      "value": {
+        "?": {
+          "value": 7,
+          "letter": "A"
+        },
+        "None": {
+          "value": 5,
+          "letter": "C"
+        },
+        "A?": {
+          "value": 7,
+          "letter": "A"
+        }
+      },
+      "unit": "보정",
+      "doc_ref": "stats.md §3.3",
+      "status": "확정",
+      "note": "레거시 statRankToScore (D-039, D-073). letter는 기적 구간·마력표 조회용"
+    },
+    {
+      "key": "phase.weights_by_terrain",
+      "value": {
+        "open": {
+          "ph_clash": 50,
+          "ph_initiative": 20,
+          "ph_sorcery": 20,
+          "ph_fate": 10
+        },
+        "urban": {
+          "ph_clash": 20,
+          "ph_initiative": 50,
+          "ph_sorcery": 20,
+          "ph_fate": 10
+        },
+        "forest": {
+          "ph_clash": 20,
+          "ph_initiative": 30,
+          "ph_sorcery": 40,
+          "ph_fate": 10
+        },
+        "river": {
+          "ph_clash": 30,
+          "ph_initiative": 30,
+          "ph_sorcery": 30,
+          "ph_fate": 10
+        }
+      },
+      "unit": "가중치",
+      "doc_ref": "phases.md §3.3",
+      "status": "확정",
+      "note": "D-073. 순서가 추첨 누적 순서"
+    },
+    {
+      "key": "phase.fate_dc",
+      "value": 12,
+      "unit": "판정값",
+      "doc_ref": "phases.md §3.5",
+      "status": "확정",
+      "note": "D-097. 방어측 2d10 + 행운"
+    },
+    {
+      "key": "combat.phase_count",
+      "value": 3,
+      "unit": "국면",
+      "doc_ref": "combat.md §3.2",
+      "status": "확정",
+      "note": "D-030. 강제 전투는 제한 없음 (D-075)"
+    },
+    {
+      "key": "combat.big_loss_ratio",
+      "value": 2,
+      "unit": "배",
+      "doc_ref": "combat.md §3.4",
+      "status": "확정",
+      "note": "D-092. 이긴 쪽 판정값 ≥ 진 쪽 × 이 값이면 2단계 하락"
+    },
+    {
+      "key": "combat.command_seals",
+      "value": 3,
+      "unit": "획",
+      "doc_ref": "combat.md §5.1",
+      "status": "확정",
+      "note": "D-023"
+    },
+    {
+      "key": "combat.seal_buff",
+      "value": 5,
+      "unit": "보정",
+      "doc_ref": "combat.md §5.1",
+      "status": "임시값",
+      "note": "D-041, D-076. 전투 전체 지속. 쓰는 시점은 Q-159"
+    },
+    {
+      "key": "combat.night_recovery",
+      "value": 1,
+      "unit": "단계",
+      "doc_ref": "combat.md §3.4",
+      "status": "확정",
+      "note": "D-034. P3 낮·밤 루프에서 사용"
+    },
+    {
+      "key": "mana.max",
+      "value": 100,
+      "unit": "마력",
+      "doc_ref": "mana.md §3.1",
+      "status": "확정",
+      "note": ""
+    },
+    {
+      "key": "mana.by_rank",
+      "value": {
+        "E": {
+          "init": 10,
+          "regen": 20
+        },
+        "D": {
+          "init": 20,
+          "regen": 25
+        },
+        "C": {
+          "init": 40,
+          "regen": 30
+        },
+        "B": {
+          "init": 60,
+          "regen": 35
+        },
+        "A": {
+          "init": 80,
+          "regen": 40
+        },
+        "EX": {
+          "init": 100,
+          "regen": 100
+        }
+      },
+      "unit": "마력",
+      "doc_ref": "mana.md §3.1",
+      "status": "확정",
+      "note": "D-053"
+    },
+    {
+      "key": "mana.rank_modifier_step",
+      "value": 5,
+      "unit": "마력",
+      "doc_ref": "mana.md §3.1",
+      "status": "확정",
+      "note": "D-080. + 하나당 초기·회복 +5"
+    },
+    {
+      "key": "mana.np_threshold",
+      "value": 80,
+      "unit": "마력",
+      "doc_ref": "mana.md §3.2",
+      "status": "확정",
+      "note": "D-135: 보구 비용 80 (전투당 1회)"
+    },
+    {
+      "key": "mana.np_cost",
+      "value": 80,
+      "unit": "마력",
+      "doc_ref": "mana.md §3.2",
+      "status": "확정",
+      "note": "D-135"
+    },
+    {
+      "key": "day.days",
+      "value": 7,
+      "unit": "일",
+      "doc_ref": "day-loop.md §3",
+      "status": "확정",
+      "note": "D-025, D-048"
+    },
+    {
+      "key": "day.actions_day",
+      "value": 3,
+      "unit": "회",
+      "doc_ref": "day-loop.md §3",
+      "status": "확정",
+      "note": "D-048"
+    },
+    {
+      "key": "day.actions_night",
+      "value": 3,
+      "unit": "회",
+      "doc_ref": "day-loop.md §3",
+      "status": "확정",
+      "note": "D-048"
+    },
+    {
+      "key": "day.move_base",
+      "value": 1,
+      "unit": "칸",
+      "doc_ref": "day-loop.md §5",
+      "status": "확정",
+      "note": "D-050"
+    },
+    {
+      "key": "day.riding_move",
+      "value": {
+        "EX": 3,
+        "A": 3,
+        "B": 2,
+        "C": 2,
+        "D": 1,
+        "E": 1
+      },
+      "unit": "칸",
+      "doc_ref": "day-loop.md §5",
+      "status": "확정",
+      "note": "기승 랭크 문자별 한 행동 최대 이동 칸 수 (D-073)"
+    },
+    {
+      "key": "day.vision",
+      "value": 1,
+      "unit": "칸",
+      "doc_ref": "day-loop.md §5",
+      "status": "확정",
+      "note": "상하좌우 거리 (D-050)"
+    },
+    {
+      "key": "day.intel_mod",
+      "value": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "unit": "보정",
+      "doc_ref": "day-loop.md §4.3",
+      "status": "확정",
+      "note": "정보 단계별 그 진영과의 판정 보정 (D-049)"
+    },
+    {
+      "key": "day.intel_dc",
+      "value": [
+        0,
+        12,
+        16,
+        20
+      ],
+      "unit": "판정값",
+      "doc_ref": "day-loop.md §4.3",
+      "status": "확정",
+      "note": "목표 단계별 DC. 0번은 쓰지 않음 (D-107)"
+    },
+    {
+      "key": "day.bond_dc",
+      "value": 10,
+      "unit": "판정값",
+      "doc_ref": "day-loop.md §13",
+      "status": "확정",
+      "note": "교류 판정 목표값 (D-132, 사용자 지정)"
+    },
+    {
+      "key": "day.craft_dc",
+      "value": 16,
+      "unit": "판정값",
+      "doc_ref": "day-loop.md §13",
+      "status": "임시값",
+      "note": "진지 작성 판정. 2d10 + 마력 스탯 (D-109)"
+    },
+    {
+      "key": "day.camp_bonus",
+      "value": 2,
+      "unit": "보정",
+      "doc_ref": "day-loop.md §13",
+      "status": "임시값",
+      "note": "진지 타일에서 벌어진 전투의 플레이어 판정 보정 (D-109)"
+    },
+    {
+      "key": "day.ambush_margin",
+      "value": 5,
+      "unit": "판정값",
+      "doc_ref": "day-loop.md §13",
+      "status": "임시값",
+      "note": "조우 시 민첩 대항에서 이 차이 이상으로 이기면 기습 (D-109)"
+    },
+    {
+      "key": "day.ambush_bonus",
+      "value": 2,
+      "unit": "보정",
+      "doc_ref": "day-loop.md §13",
+      "status": "임시값",
+      "note": "기습한 쪽의 국면 1 판정 보정 (D-109)"
+    },
+    {
+      "key": "affinity.thresholds",
+      "value": [
+        10,
+        30,
+        50,
+        80
+      ],
+      "unit": "호감도",
+      "doc_ref": "affinity.md §3.2",
+      "status": "확정",
+      "note": "하한 포함 (D-054)"
+    },
+    {
+      "key": "affinity.roll_mod",
+      "value": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "unit": "보정",
+      "doc_ref": "affinity.md §3.4",
+      "status": "확정",
+      "note": "적대~충성. 적용 범위는 플레이어 서번트의 모든 판정 (D-109)"
+    },
+    {
+      "key": "affinity.init_by_temperament",
+      "value": {
+        "cheerful": 55,
+        "saint": 50,
+        "tsundere": 45,
+        "cool": 40,
+        "royal": 35,
+        "berserker": 30,
+        "avenger": 25,
+        "assassin": 35
+      },
+      "unit": "호감도",
+      "doc_ref": "affinity.md §3.3",
+      "status": "확정",
+      "note": "레거시 INITIAL_AFFECTION (D-073)"
+    },
+    {
+      "key": "affinity.gain_mult",
+      "value": {
+        "cheerful": 1.2,
+        "saint": 1.1,
+        "cool": 1.0,
+        "tsundere": 1.2,
+        "assassin": 1.2,
+        "royal": 0.8,
+        "berserker": 0.7,
+        "avenger": 0.6
+      },
+      "unit": "배",
+      "doc_ref": "affinity.md §3.3",
+      "status": "임시값",
+      "note": "레거시 GAIN_MULTIPLIER (D-109)"
+    },
+    {
+      "key": "affinity.penalty_mult",
+      "value": {
+        "cheerful": 1.0,
+        "saint": 1.0,
+        "cool": 1.2,
+        "tsundere": 1.3,
+        "assassin": 1.2,
+        "royal": 1.5,
+        "berserker": 1.3,
+        "avenger": 1.5
+      },
+      "unit": "배",
+      "doc_ref": "affinity.md §3.3",
+      "status": "임시값",
+      "note": "레거시 PENALTY_MULTIPLIER (D-109)"
+    },
+    {
+      "key": "affinity.refusal_chance",
+      "value": [
+        0.4,
+        0.15,
+        0,
+        0,
+        0
+      ],
+      "unit": "확률",
+      "doc_ref": "affinity.md §3.4",
+      "status": "확정",
+      "note": "적대~충성 (D-073)"
+    },
+    {
+      "key": "affinity.betrayal_chance",
+      "value": [
+        0.4,
+        0,
+        0,
+        0,
+        0
+      ],
+      "unit": "확률",
+      "doc_ref": "affinity.md §3.4",
+      "status": "확정",
+      "note": "적대~충성, 밤이 끝날 때 1회 (D-073)"
+    },
+    {
+      "key": "affinity.delta_bond",
+      "value": {
+        "success": 5,
+        "fail": -3
+      },
+      "unit": "호감도",
+      "doc_ref": "day-loop.md §13",
+      "status": "임시값",
+      "note": "계수 적용 전 (D-109)"
+    },
+    {
+      "key": "affinity.delta_supply",
+      "value": {
+        "great": 6,
+        "success": 3,
+        "normal": 0,
+        "fail": -2,
+        "fumble": -5
+      },
+      "unit": "호감도",
+      "doc_ref": "mana.md §3.4",
+      "status": "임시값",
+      "note": "계수 적용 전 (D-109)"
+    },
+    {
+      "key": "affinity.delta_post_choice",
+      "value": 8,
+      "unit": "호감도",
+      "doc_ref": "affinity.md §3.5",
+      "status": "임시값",
+      "note": "선: 방면 +, 처치 -. 악: 반대. 중립: 0 (D-109)"
+    },
+    {
+      "key": "mana.supply_result",
+      "value": [
+        {
+          "min": 18,
+          "result": "great",
+          "mana": 70
+        },
+        {
+          "min": 14,
+          "result": "success",
+          "mana": 50
+        },
+        {
+          "min": 9,
+          "result": "normal",
+          "mana": 30
+        },
+        {
+          "min": 5,
+          "result": "fail",
+          "mana": 30
+        },
+        {
+          "min": -999,
+          "result": "fumble",
+          "mana": 30
+        }
+      ],
+      "unit": "판정값",
+      "doc_ref": "mana.md §3.4",
+      "status": "확정",
+      "note": "위에서부터 min 이상이면 그 결과 (D-073)"
+    },
+    {
+      "key": "mana.supply_per_day",
+      "value": 1,
+      "unit": "회",
+      "doc_ref": "mana.md §3.3",
+      "status": "확정",
+      "note": "D-053"
+    },
+    {
+      "key": "ai.accept",
+      "value": {
+        "aggressive": 1,
+        "proud": 0.8,
+        "cautious": 0.4,
+        "cunning": 0.2
+      },
+      "unit": "확률",
+      "doc_ref": "masters.md §2",
+      "status": "임시값",
+      "note": "조우 시 전투 수락. 교활은 예상 승률이 ai.cunning_win_rate 이상이면 항상 수락, 아니면 이 값 (D-109)"
+    },
+    {
+      "key": "ai.cunning_win_rate",
+      "value": 0.5,
+      "unit": "확률",
+      "doc_ref": "masters.md §2",
+      "status": "임시값",
+      "note": "D-109"
+    },
+    {
+      "key": "ai.elo_d",
+      "value": 10,
+      "unit": "점",
+      "doc_ref": "masters.md §2",
+      "status": "임시값",
+      "note": "레거시 calcWinRate: 1 / (1 + 10^((상대 6스탯 합 - 내 합) / D))"
+    },
+    {
+      "key": "text.lines_per_beat_big",
+      "value": 6,
+      "unit": "줄",
+      "doc_ref": "narrative-engine.md §8.5",
+      "status": "임시값",
+      "note": "D-071"
+    },
+    {
+      "key": "text.lines_per_beat",
+      "value": 4,
+      "unit": "줄",
+      "doc_ref": "narrative-engine.md §8.5",
+      "status": "임시값",
+      "note": "D-071"
+    },
+    {
+      "key": "text.lines_per_beat_small",
+      "value": 2,
+      "unit": "줄",
+      "doc_ref": "narrative-engine.md §8.5",
+      "status": "임시값",
+      "note": "D-071"
+    },
+    {
+      "key": "text.max_narration_run",
+      "value": 2,
+      "unit": "줄",
+      "doc_ref": "narrative-engine.md §8.5",
+      "status": "임시값",
+      "note": "D-071"
+    },
+    {
+      "key": "text.small_margin",
+      "value": 2,
+      "unit": "판정값",
+      "doc_ref": "narrative-engine.md §8.5",
+      "status": "임시값",
+      "note": "차이가 이 값 이하면 작은 비트"
+    },
+    {
+      "key": "text.typing_ms",
+      "value": {
+        "slow": 50,
+        "normal": 30,
+        "fast": 15
+      },
+      "unit": "ms/글자",
+      "doc_ref": "03-ui-style.md §6",
+      "status": "임시값",
+      "note": "D-046"
+    },
+    {
+      "key": "text.auto_advance_ms",
+      "value": 1500,
+      "unit": "ms",
+      "doc_ref": "03-ui-style.md §6",
+      "status": "임시값",
+      "note": "자동 진행: 완성 후 다음까지 (D-046)"
+    },
+    {
+      "key": "text.summon_timing",
+      "value": {
+        "char_ms": 55,
+        "hold_ms": 650,
+        "ignite_ms": 2200,
+        "burst_ms": 650,
+        "line_delay_ms": 2400
+      },
+      "unit": "ms",
+      "doc_ref": "02-screens-flow.md S1_SUMMON",
+      "status": "임시값",
+      "note": "소환 연출: 영창 글자 간격, 줄 사이 멈춤, 기동, 섬광, 카드 후 소환 대사까지 (D-118)"
+    },
+    {
+      "key": "text.line_pause_ms",
+      "value": 450,
+      "unit": "ms",
+      "doc_ref": "03-ui-style.md §6",
+      "status": "임시값",
+      "note": "텍스트가 이어서 흘러나올 때 줄 사이 쉼 (D-122)"
+    },
+    {
+      "key": "mana.supply_request_affinity",
+      "value": 60,
+      "unit": "호감도",
+      "doc_ref": "mana.md §3.3",
+      "status": "확정",
+      "note": "아침에 이 값 이상이면 서번트가 마력 공급을 청한다 (D-129)"
+    },
+    {
+      "key": "text.pace",
+      "value": {
+        "chant": 2.4,
+        "np_name": 0.3,
+        "dramatic": 1.35,
+        "comma": 4,
+        "period": 8,
+        "ellipsis": 3,
+        "dash": 2.2,
+        "bang": 6,
+        "newline": 0
+      },
+      "unit": "배",
+      "doc_ref": "03-ui-style.md §6",
+      "status": "임시값",
+      "note": "글자별 출력 간격 배율 (D-133). chant: 보구 영창, np_name: ‘보구명’과 뒤따르는 !, dramatic: 기적·보구 반응 등 핵심 나레이션. 문장 부호 뒤에는 그만큼 쉰다"
+    },
+    {
+      "key": "combat.np_per_battle",
+      "value": 1,
+      "unit": "회",
+      "doc_ref": "phases.md §3.6",
+      "status": "확정",
+      "note": "보구는 전투당 1회. 영주 즉시 발동도 포함 (D-135)"
+    },
+    {
+      "key": "ai.np_open_chance",
+      "value": {
+        "base": 0.15,
+        "danger": 0.4
+      },
+      "unit": "확률",
+      "doc_ref": "combat.md §8",
+      "status": "임시값",
+      "note": "적 AI가 국면 시작에 먼저 보구를 여는 확률. 상대가 열면 따라서 연다 (D-136)"
+    },
+    {
+      "key": "ai.retreat_chance",
+      "value": {
+        "aggressive": 0.1,
+        "proud": 0.4,
+        "cautious": 0.9,
+        "cunning": 0.3,
+        "cunning_behind": 0.9
+      },
+      "unit": "확률",
+      "doc_ref": "combat.md §3.4",
+      "status": "임시값",
+      "note": "적 AI가 위험에 들어설 때 퇴각할 확률 (마스터 성향별). 교활은 상대보다 상태가 나쁘면 cunning_behind (D-134)"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "notes": "국면 유형 (docs/systems/phases.md §2). 국면 추가·삭제는 문서 표와 이 파일에서만 한다. kind: contest(대항) / solo(방어측 단독 판정, DC는 constants)",
+  "phases": [
+    { "phase_id": "ph_clash", "name_ko": "정면 격돌", "kind": "contest", "attacker_stat": ["str", "end"], "defender_stat": ["str", "end"], "selection": "terrain", "notes": "" },
+    { "phase_id": "ph_initiative", "name_ko": "선제/회피", "kind": "contest", "attacker_stat": ["agi"], "defender_stat": ["agi"], "selection": "terrain", "notes": "" },
+    { "phase_id": "ph_sorcery", "name_ko": "마술전", "kind": "contest", "attacker_stat": ["mana"], "defender_stat": ["mana"], "selection": "terrain", "notes": "방어측 대마력 보정은 P3 스킬" },
+    { "phase_id": "ph_fate", "name_ko": "즉사/우연", "kind": "solo", "attacker_stat": [], "defender_stat": ["luck"], "selection": "terrain", "notes": "D-097. DC는 phase.fate_dc" },
+    { "phase_id": "ph_np_clash", "name_ko": "보구 격돌", "kind": "contest", "attacker_stat": ["np"], "defender_stat": ["np"], "selection": "np_both", "notes": "D-098" },
+    { "phase_id": "ph_np_attack", "name_ko": "일방 보구", "kind": "contest", "attacker_stat": ["np"], "defender_stat": ["end"], "selection": "np_one", "notes": "D-098. 개방한 쪽이 공격측" }
+  ]
+}

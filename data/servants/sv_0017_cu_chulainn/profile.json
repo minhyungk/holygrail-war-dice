@@ -21,7 +21,11 @@
     "rank": "B+",
     "type_ko": "대인보구"
   },
-  "portrait_url": "https://static.atlasacademy.io/KR/Faces/f_3001000.png",
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3001000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/300100/300100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/300100/300100b@2.png"
+  },
   "sprite_id": null,
-  "notes": "레거시 servants-ko.json id 17에서 생성. alignment는 원작 설정 기준 AI 입력값 (Atlas로 검증 필요). temperament는 레거시 servantPersonality.ts를 ID가 아닌 이름으로 맞춘 값."
+  "notes": "레거시 servants-ko.json id 17에서 생성. alignment는 원작 설정 기준 AI 입력값 (Atlas로 검증 필요). temperament는 레거시 servantPersonality.ts를 ID가 아닌 이름으로 맞춘 값. images: Atlas Academy KR (face=맵 아이콘, summon=기본 재림 전신, final=최종 재림 전신, Q-134)."
 }

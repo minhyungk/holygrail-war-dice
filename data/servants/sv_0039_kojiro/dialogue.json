@@ -353,6 +353,60 @@
         "text": "마지막 날이구려. 오늘 밤의 달은, 유난히 밝을 것 같소.",
         "repeat": "once_per_run"
       }
+    ],
+    "mana_supply": [
+      {
+        "id": "great",
+        "text": "허허, 이거 참 몸이 가볍구려. 오늘 밤엔 날아가는 제비도 베어 떨어뜨리겠소.",
+        "when": {
+          "event.result": "great"
+        },
+        "tone": "playful"
+      },
+      {
+        "id": "success",
+        "text": "고맙소, 마스터. 달을 보며 마시는 술만은 못하나, 흡족하오.",
+        "when": {
+          "event.result": "success"
+        },
+        "tone": "calm"
+      },
+      {
+        "id": "normal",
+        "text": "음, 이만하면 되었소.",
+        "when": {
+          "event.result": "normal"
+        },
+        "tone": "calm"
+      },
+      {
+        "id": "fail",
+        "text": "마음이 급하면 검도 어긋나는 법이오. 서두르지 마시오.",
+        "when": {
+          "event.result": "fail"
+        },
+        "tone": "calm"
+      },
+      {
+        "id": "fumble",
+        "text": "허허……. 이 몸이 드릴 말씀은 없소이다.",
+        "when": {
+          "event.result": "fumble"
+        },
+        "tone": "playful"
+      }
+    ],
+    "day_bond_fail": [
+      {
+        "id": "fail_01",
+        "text": "허허, 오늘은 바람이 영 맞지 않는구려.",
+        "tone": "calm"
+      },
+      {
+        "id": "fail_02",
+        "text": "말없이 걷는 것도 풍류라면 풍류겠소마는……. 흥이 나지 않는 날도 있는 법이오.",
+        "tone": "grim"
+      }
     ]
   }
 }

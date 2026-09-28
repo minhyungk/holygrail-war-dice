@@ -3,10 +3,14 @@
   color-scheme: dark;
   --bg-base: #0E1220;
   --bg-panel: #171C2E;
+  --bg-panel-2: #1E2439;
   --bg-textbox: rgba(11, 14, 24, 0.88);
+  --line: rgba(201, 164, 92, 0.3);
+  --line-soft: rgba(236, 230, 214, 0.12);
   --text-primary: #ECE6D6;
   --text-muted: #9A97A6;
   --accent: #C9A45C;
+  --accent-ink: #1A1408;
   --danger: #C0392B;
   --miracle: #F4D77A;
   --cond-full: #5FAF7A;
@@ -14,8 +18,16 @@
   --cond-danger: #C0392B;
   --class-saber: #3D74D9; --class-archer: #C8452F; --class-lancer: #1FA38A; --class-rider: #D3558F;
   --class-caster: #8A5CD6; --class-assassin: #6B7385; --class-berserker: #8E2230;
+  /* 주사위 면 색: 눈 1~10마다 한 색 (3D 다이스와 합산 칩이 같이 쓴다). 무지개 순서라 이웃한 면은 서로 다른 색이 된다 */
+  --dice-face-1: #FF4D6D; --dice-face-2: #FF7A3D; --dice-face-3: #FFB020; --dice-face-4: #C9DB2E; --dice-face-5: #36D07F;
+  --dice-face-6: #1FC7B6; --dice-face-7: #2FA8FF; --dice-face-8: #4C6BFF; --dice-face-9: #8B5CF6; --dice-face-10: #D946EF;
   --affinity-hostile: #B03A3A; --affinity-wary: #C9803A; --affinity-neutral: #9A97A6; --affinity-friendly: #6FA8DC; --affinity-loyal: #C9A45C;
   --font: "Pretendard Variable", Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --crest: "Noto Serif KR", "AppleMyungjo", serif;
+  --fs-vn: 16px; --fs-label: 13px;
+  --vn-space: 36%;
 }
+/* 768px 미만 = 모바일 (03-ui-style.md §4) */
+@media (min-width: 768px) { :root { --fs-vn: 18px; --fs-label: 14px; } }
+@media (min-width: 900px) { :root { --vn-space: 230px; } }
 html, body, #root { height: 100%; }
-body { margin: 0; background: var(--bg-base); color: var(--text-primary); font-family: var(--font); }

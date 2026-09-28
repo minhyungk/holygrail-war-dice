@@ -337,6 +337,60 @@
         "text": "마지막 날이네요. ……읽던 책은, 끝까지 읽지 못할 것 같아요.",
         "repeat": "once_per_run"
       }
+    ],
+    "mana_supply": [
+      {
+        "id": "great",
+        "text": "……충분합니다. 몸이, 가볍습니다.",
+        "when": {
+          "event.result": "great"
+        },
+        "tone": "tender"
+      },
+      {
+        "id": "success",
+        "text": "고맙습니다, 마스터. ……따뜻했어요.",
+        "when": {
+          "event.result": "success"
+        },
+        "tone": "tender"
+      },
+      {
+        "id": "normal",
+        "text": "……네. 문제없습니다.",
+        "when": {
+          "event.result": "normal"
+        },
+        "tone": "calm"
+      },
+      {
+        "id": "fail",
+        "text": "……아뇨. 마스터 탓이 아닙니다.",
+        "when": {
+          "event.result": "fail"
+        },
+        "tone": "calm"
+      },
+      {
+        "id": "fumble",
+        "text": "……오늘은, 그만두죠.",
+        "when": {
+          "event.result": "fumble"
+        },
+        "tone": "cold"
+      }
+    ],
+    "day_bond_fail": [
+      {
+        "id": "fail_01",
+        "text": "……그렇군요.",
+        "tone": "cold"
+      },
+      {
+        "id": "fail_02",
+        "text": "……죄송합니다. 무슨 말을 해야 할지, 모르겠어요.",
+        "tone": "grim"
+      }
     ]
   }
 }

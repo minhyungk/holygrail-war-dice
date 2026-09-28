@@ -18,6 +18,8 @@ data/                    게임 데이터 (JSON, D-022). 사람이 편집하는 
   masters/{ms_id}/       profile · dialogue · voice
   common/                공통 나레이션
   tiles.json             맵 25칸
+  constants.json         튜닝 수치 전부
+  phases.json            국면 유형
 public/assets/           정적 이미지 (빌드에 그대로 복사)
   map/                   후유키 타일 (낮 / 밤)
   seals/                 영주 획수별 이미지
@@ -27,6 +29,7 @@ src/                     게임 코드 (TypeScript)
   data/                  데이터 스키마(zod)와 판 단위 로더. 순수 TS
   ui/                    React 화면, 디자인 토큰
   architecture.test.ts   AGENTS.md 규칙 검사
+  testkit.ts             테스트 도구 (정해진 주사위, 프로필 읽기). 게임 코드에서 import 금지
 prototype/               검증용 임시 도구 (서술 시뮬레이터, 화면 목업)
 legacy/                  레거시 자산 (코드 공유 안 함, 값·데이터만 참고. 05-legacy.md)
   data/  scripts/  data-templates/
@@ -46,7 +49,8 @@ legacy/                  레거시 자산 (코드 공유 안 함, 값·데이터
 ## 3. 데이터 규칙
 - 모든 데이터 파일은 `src/data/data.test.ts`가 검증한다: ID 규칙, 대사 형식, 태그 안 id 중복, 자리표시자 목록, 사실 이름의 네임스페이스
 - 판마다 필요한 서번트·마스터 폴더만 불러온다 (D-065, `src/data/load.ts`)
-- 튜닝 수치는 `data/constants.json`에만 둔다 (AGENTS.md 규칙 2). 파일은 판정 엔진 구현(P2)에서 만든다
+- 튜닝 수치는 `data/constants.json`에만 둔다 (AGENTS.md 규칙 2). 코드는 `src/data/constants.ts`의 `K['키']`로만 읽는다. 키별 형식은 zod로 검증하고, 없는 키를 읽으면 타입 검사에서 걸린다
+- 국면 정의는 `data/phases.json`
 
 ## 4. 배포
 `main` 브랜치에 push하면 GitHub Actions가 테스트 → 빌드 → GitHub Pages 배포를 한다 (Q-141). 경로 기준은 상대 경로(`base: './'`)라 저장소 이름과 무관하다.

@@ -387,6 +387,78 @@
         "text": "[image berserker_language_1]─!",
         "tone": "roar"
       }
+    ],
+    "mana_supply": [
+      {
+        "id": "great",
+        "text": "[image berserker_language_1]──!!",
+        "when": {
+          "event.result": "great"
+        },
+        "tone": "roar"
+      },
+      {
+        "id": "ok",
+        "text": "[image berserker_language_1]─",
+        "when": {
+          "event.result": {
+            "in": [
+              "success",
+              "normal"
+            ]
+          }
+        },
+        "tone": "calm"
+      },
+      {
+        "id": "bad",
+        "text": "[image berserker_language_1]……",
+        "when": {
+          "event.result": {
+            "in": [
+              "fail",
+              "fumble"
+            ]
+          }
+        },
+        "tone": "grim"
+      },
+      {
+        "id": "narr_great",
+        "text": "거인이 낮게 울었다. 그 소리에는, 이상할 만큼 온화한 울림이 섞여 있었다.",
+        "speaker": "narrator",
+        "slot": "react",
+        "when": {
+          "event.result": "great"
+        }
+      },
+      {
+        "id": "narr_bad",
+        "text": "거인은 움직이지 않는다. 다만 마스터를 내려다보는 그 눈만이, 조금 흐려져 있었다.",
+        "speaker": "narrator",
+        "slot": "react",
+        "when": {
+          "event.result": {
+            "in": [
+              "fail",
+              "fumble"
+            ]
+          }
+        }
+      }
+    ],
+    "day_bond_fail": [
+      {
+        "id": "fail_01",
+        "text": "[image berserker_language_1]……",
+        "tone": "grim"
+      },
+      {
+        "id": "narr_fail",
+        "text": "거인은 마스터 쪽을 보지 않는다. 그 거대한 등이, 오늘따라 멀게 느껴졌다.",
+        "speaker": "narrator",
+        "slot": "react"
+      }
     ]
   }
 }

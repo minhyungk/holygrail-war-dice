@@ -372,6 +372,60 @@
         "text": "마지막 날인가. 그럼 낮엔 제대로 놀자고, 마스터. 밤엔 제대로 싸울 테니까.",
         "repeat": "once_per_run"
       }
+    ],
+    "mana_supply": [
+      {
+        "id": "great",
+        "text": "오, 이거 제대로 들어오는데! 지금이라면 누구랑 붙어도 안 진다고.",
+        "when": {
+          "event.result": "great"
+        },
+        "tone": "playful"
+      },
+      {
+        "id": "success",
+        "text": "좋아, 충분해. 창이 가벼워졌다.",
+        "when": {
+          "event.result": "success"
+        },
+        "tone": "playful"
+      },
+      {
+        "id": "normal",
+        "text": "뭐, 이 정도면 됐지. 나머진 싸우면서 채우면 돼.",
+        "when": {
+          "event.result": "normal"
+        },
+        "tone": "calm"
+      },
+      {
+        "id": "fail",
+        "text": "……어이, 긴장했냐? 괜찮아, 다음엔 잘 될 거라고.",
+        "when": {
+          "event.result": "fail"
+        },
+        "tone": "tender"
+      },
+      {
+        "id": "fumble",
+        "text": "하하……. 뭐, 이런 날도 있는 거지. 운 없는 건 원래 내 몫인데 말이야.",
+        "when": {
+          "event.result": "fumble"
+        },
+        "tone": "playful"
+      }
+    ],
+    "day_bond_fail": [
+      {
+        "id": "fail_01",
+        "text": "어이, 표정이 너무 굳었다고. ……뭐, 억지로 떠들 필요는 없지.",
+        "tone": "calm"
+      },
+      {
+        "id": "fail_02",
+        "text": "하아. 오늘은 영 흥이 안 나는군.",
+        "tone": "grim"
+      }
     ]
   }
 }

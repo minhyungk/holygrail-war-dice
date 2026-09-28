@@ -356,6 +356,60 @@
         "text": "마지막 날이구나. ……이런 날까지 당신과 걷게 될 줄은 몰랐어.",
         "repeat": "once_per_run"
       }
+    ],
+    "mana_supply": [
+      {
+        "id": "great",
+        "text": "어머, 제법이네. 이 정도 마력이면 신전 하나쯤은 거뜬하겠어.",
+        "when": {
+          "event.result": "great"
+        },
+        "tone": "playful"
+      },
+      {
+        "id": "success",
+        "text": "흐응, 합격이야. 착각하지 마, 칭찬은 아니니까.",
+        "when": {
+          "event.result": "success"
+        },
+        "tone": "playful"
+      },
+      {
+        "id": "normal",
+        "text": "평범하네. 마술사라면 조금 더 노력해 보는 게 어때?",
+        "when": {
+          "event.result": "normal"
+        },
+        "tone": "cold"
+      },
+      {
+        "id": "fail",
+        "text": "……이게 전부야? 회로 관리부터 다시 배우도록 해.",
+        "when": {
+          "event.result": "fail"
+        },
+        "tone": "cold"
+      },
+      {
+        "id": "fumble",
+        "text": "잠깐, 역류하잖아! ……정말, 당신이란 사람은.",
+        "when": {
+          "event.result": "fumble"
+        },
+        "tone": "defiant"
+      }
+    ],
+    "day_bond_fail": [
+      {
+        "id": "fail_01",
+        "text": "흥, 지루해. 나를 데리고 다니려면 좀 더 재미있는 걸 준비하도록 해.",
+        "tone": "cold"
+      },
+      {
+        "id": "fail_02",
+        "text": "당신, 사람 기분 맞추는 데는 영 소질이 없구나.",
+        "tone": "defiant"
+      }
     ]
   }
 }

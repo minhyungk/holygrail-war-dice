@@ -44,14 +44,3 @@ export function deriveSeed(seed: number, stream: string): number {
   for (let i = 0; i < stream.length; i++) h = Math.imul(h ^ stream.charCodeAt(i), 16777619);
   return h >>> 0;
 }
-
-/** 2d10 (D-015). 자연값 2~20 */
-export interface Roll2d10 {
-  dice: [number, number];
-  natural: number;
-}
-export function roll2d10(rng: Rng): Roll2d10 {
-  const d1 = rng.int(1, 10);
-  const d2 = rng.int(1, 10);
-  return { dice: [d1, d2], natural: d1 + d2 };
-}

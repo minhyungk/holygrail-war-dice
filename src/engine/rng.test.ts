@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { createRng, deriveSeed, roll2d10 } from './rng';
+import { rollNatural } from './dice';
+import { createRng, deriveSeed } from './rng';
 
 describe('rng', () => {
   it('같은 시드는 같은 수열을 낸다', () => {
@@ -14,7 +15,7 @@ describe('rng', () => {
     const rng = createRng(1);
     const count = new Map<number, number>();
     for (let i = 0; i < 100_000; i++) {
-      const r = roll2d10(rng);
+      const r = rollNatural(rng);
       expect(r.natural).toBeGreaterThanOrEqual(2);
       expect(r.natural).toBeLessThanOrEqual(20);
       count.set(r.natural, (count.get(r.natural) ?? 0) + 1);
