@@ -1,7 +1,6 @@
 # 제6차 성배전쟁 (가칭, `fsn6`)
 
-페이트/스테이 나이트 세계관의 6차 성배전쟁을 다이스를 굴리는 TRPG식으로 즐기는 웹게임.
-AI 에이전트와 개발자는 **`AGENTS.md`를 먼저 읽는다.**
+페이트/스테이 나이트 세계관의 6차 성배전쟁을 주사위를 굴려 참여하세요. 
 
 ## 실행
 ```
@@ -16,5 +15,6 @@ npm run mockup     # 화면 목업 다시 빌드 → prototype/mockup/dist/
 ## 폴더
 구조와 규칙은 [`docs/06-repo-structure.md`](docs/06-repo-structure.md).
 
-## 저작권
-FGO·Fate 시리즈의 대사, 이미지, 설정은 TYPE-MOON / Aniplex에 귀속된다 (D-057). 폰트 Pretendard는 SIL Open Font License 1.1.
+## DISCLAIMER
+This is a non-profit fan project. All rights to 'Fate' series and related assets belong to TYPE-MOON / FGO PROJECT.
+폰트 Pretendard는 SIL Open Font License 1.1.
