@@ -1,0 +1,353 @@
+{
+ "notes": "docs/content/map-fuyuki.md §3 판독 결과. 지형 분류·중앙 타일·4방향 인접은 확인된 제안(Q-108). 장소 이름은 미정(Q-68).",
+ "tiles": [
+  {
+   "tile_id": "tl_r1c1",
+   "name_ko": null,
+   "row": 1,
+   "col": 1,
+   "terrain": "open",
+   "adjacent_ids": [
+    "tl_r2c1",
+    "tl_r1c2"
+   ],
+   "tags": []
+  },
+  {
+   "tile_id": "tl_r1c2",
+   "name_ko": null,
+   "row": 1,
+   "col": 2,
+   "terrain": "forest",
+   "adjacent_ids": [
+    "tl_r2c2",
+    "tl_r1c1",
+    "tl_r1c3"
+   ],
+   "tags": [
+    "landmark"
+   ]
+  },
+  {
+   "tile_id": "tl_r1c3",
+   "name_ko": null,
+   "row": 1,
+   "col": 3,
+   "terrain": "forest",
+   "adjacent_ids": [
+    "tl_r2c3",
+    "tl_r1c2",
+    "tl_r1c4"
+   ],
+   "tags": [
+    "landmark"
+   ]
+  },
+  {
+   "tile_id": "tl_r1c4",
+   "name_ko": null,
+   "row": 1,
+   "col": 4,
+   "terrain": "river",
+   "adjacent_ids": [
+    "tl_r2c4",
+    "tl_r1c3",
+    "tl_r1c5"
+   ],
+   "tags": []
+  },
+  {
+   "tile_id": "tl_r1c5",
+   "name_ko": null,
+   "row": 1,
+   "col": 5,
+   "terrain": "open",
+   "adjacent_ids": [
+    "tl_r2c5",
+    "tl_r1c4"
+   ],
+   "tags": []
+  },
+  {
+   "tile_id": "tl_r2c1",
+   "name_ko": null,
+   "row": 2,
+   "col": 1,
+   "terrain": "forest",
+   "adjacent_ids": [
+    "tl_r1c1",
+    "tl_r3c1",
+    "tl_r2c2"
+   ],
+   "tags": []
+  },
+  {
+   "tile_id": "tl_r2c2",
+   "name_ko": null,
+   "row": 2,
+   "col": 2,
+   "terrain": "river",
+   "adjacent_ids": [
+    "tl_r1c2",
+    "tl_r3c2",
+    "tl_r2c1",
+    "tl_r2c3"
+   ],
+   "tags": []
+  },
+  {
+   "tile_id": "tl_r2c3",
+   "name_ko": null,
+   "row": 2,
+   "col": 3,
+   "terrain": "urban",
+   "adjacent_ids": [
+    "tl_r1c3",
+    "tl_r3c3",
+    "tl_r2c2",
+    "tl_r2c4"
+   ],
+   "tags": []
+  },
+  {
+   "tile_id": "tl_r2c4",
+   "name_ko": null,
+   "row": 2,
+   "col": 4,
+   "terrain": "river",
+   "adjacent_ids": [
+    "tl_r1c4",
+    "tl_r3c4",
+    "tl_r2c3",
+    "tl_r2c5"
+   ],
+   "tags": []
+  },
+  {
+   "tile_id": "tl_r2c5",
+   "name_ko": null,
+   "row": 2,
+   "col": 5,
+   "terrain": "urban",
+   "adjacent_ids": [
+    "tl_r1c5",
+    "tl_r3c5",
+    "tl_r2c4"
+   ],
+   "tags": [
+    "landmark"
+   ]
+  },
+  {
+   "tile_id": "tl_r3c1",
+   "name_ko": null,
+   "row": 3,
+   "col": 1,
+   "terrain": "forest",
+   "adjacent_ids": [
+    "tl_r2c1",
+    "tl_r4c1",
+    "tl_r3c2"
+   ],
+   "tags": []
+  },
+  {
+   "tile_id": "tl_r3c2",
+   "name_ko": null,
+   "row": 3,
+   "col": 2,
+   "terrain": "urban",
+   "adjacent_ids": [
+    "tl_r2c2",
+    "tl_r4c2",
+    "tl_r3c1",
+    "tl_r3c3"
+   ],
+   "tags": [
+    "landmark"
+   ]
+  },
+  {
+   "tile_id": "tl_r3c3",
+   "name_ko": null,
+   "row": 3,
+   "col": 3,
+   "terrain": "open",
+   "adjacent_ids": [
+    "tl_r2c3",
+    "tl_r4c3",
+    "tl_r3c2",
+    "tl_r3c4"
+   ],
+   "tags": [
+    "center"
+   ]
+  },
+  {
+   "tile_id": "tl_r3c4",
+   "name_ko": null,
+   "row": 3,
+   "col": 4,
+   "terrain": "river",
+   "adjacent_ids": [
+    "tl_r2c4",
+    "tl_r4c4",
+    "tl_r3c3",
+    "tl_r3c5"
+   ],
+   "tags": []
+  },
+  {
+   "tile_id": "tl_r3c5",
+   "name_ko": null,
+   "row": 3,
+   "col": 5,
+   "terrain": "open",
+   "adjacent_ids": [
+    "tl_r2c5",
+    "tl_r4c5",
+    "tl_r3c4"
+   ],
+   "tags": []
+  },
+  {
+   "tile_id": "tl_r4c1",
+   "name_ko": null,
+   "row": 4,
+   "col": 1,
+   "terrain": "urban",
+   "adjacent_ids": [
+    "tl_r3c1",
+    "tl_r5c1",
+    "tl_r4c2"
+   ],
+   "tags": [
+    "landmark"
+   ]
+  },
+  {
+   "tile_id": "tl_r4c2",
+   "name_ko": null,
+   "row": 4,
+   "col": 2,
+   "terrain": "urban",
+   "adjacent_ids": [
+    "tl_r3c2",
+    "tl_r5c2",
+    "tl_r4c1",
+    "tl_r4c3"
+   ],
+   "tags": [
+    "landmark"
+   ]
+  },
+  {
+   "tile_id": "tl_r4c3",
+   "name_ko": null,
+   "row": 4,
+   "col": 3,
+   "terrain": "urban",
+   "adjacent_ids": [
+    "tl_r3c3",
+    "tl_r5c3",
+    "tl_r4c2",
+    "tl_r4c4"
+   ],
+   "tags": [
+    "landmark"
+   ]
+  },
+  {
+   "tile_id": "tl_r4c4",
+   "name_ko": null,
+   "row": 4,
+   "col": 4,
+   "terrain": "river",
+   "adjacent_ids": [
+    "tl_r3c4",
+    "tl_r5c4",
+    "tl_r4c3",
+    "tl_r4c5"
+   ],
+   "tags": [
+    "landmark"
+   ]
+  },
+  {
+   "tile_id": "tl_r4c5",
+   "name_ko": null,
+   "row": 4,
+   "col": 5,
+   "terrain": "urban",
+   "adjacent_ids": [
+    "tl_r3c5",
+    "tl_r5c5",
+    "tl_r4c4"
+   ],
+   "tags": []
+  },
+  {
+   "tile_id": "tl_r5c1",
+   "name_ko": null,
+   "row": 5,
+   "col": 1,
+   "terrain": "open",
+   "adjacent_ids": [
+    "tl_r4c1",
+    "tl_r5c2"
+   ],
+   "tags": []
+  },
+  {
+   "tile_id": "tl_r5c2",
+   "name_ko": null,
+   "row": 5,
+   "col": 2,
+   "terrain": "urban",
+   "adjacent_ids": [
+    "tl_r4c2",
+    "tl_r5c1",
+    "tl_r5c3"
+   ],
+   "tags": []
+  },
+  {
+   "tile_id": "tl_r5c3",
+   "name_ko": null,
+   "row": 5,
+   "col": 3,
+   "terrain": "urban",
+   "adjacent_ids": [
+    "tl_r4c3",
+    "tl_r5c2",
+    "tl_r5c4"
+   ],
+   "tags": []
+  },
+  {
+   "tile_id": "tl_r5c4",
+   "name_ko": null,
+   "row": 5,
+   "col": 4,
+   "terrain": "river",
+   "adjacent_ids": [
+    "tl_r4c4",
+    "tl_r5c3",
+    "tl_r5c5"
+   ],
+   "tags": []
+  },
+  {
+   "tile_id": "tl_r5c5",
+   "name_ko": null,
+   "row": 5,
+   "col": 5,
+   "terrain": "forest",
+   "adjacent_ids": [
+    "tl_r4c5",
+    "tl_r5c4"
+   ],
+   "tags": []
+  }
+ ]
+}

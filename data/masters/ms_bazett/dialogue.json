@@ -1,0 +1,92 @@
+{
+  "speaker": "ms_bazett",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "new"
+  },
+  "notes": "적 마스터 대사 AI 초안. 태그 범위: 조우·전투 중·영주 사용·처치당할 때·탈락 (D-089). self.phase_won은 화자(이 마스터) 쪽이 그 국면을 이겼는지.",
+  "tags": {
+    "master_encounter": [
+      {
+        "id": "base_01",
+        "text": "확인했습니다. 교전을 개시합니다.",
+        "tone": "cold"
+      },
+      {
+        "id": "base_02",
+        "text": "말은 필요 없습니다. 이것도 일입니다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "met_before",
+        "text": "두 번째군요. 이번에는 확실히 끝내겠습니다.",
+        "tone": "defiant",
+        "when": {
+          "mem.met_before": true
+        },
+        "repeat": "once_per_run"
+      }
+    ],
+    "master_battle": [
+      {
+        "id": "won",
+        "text": "예상대로입니다. 그대로 밀어붙이십시오.",
+        "tone": "calm",
+        "when": {
+          "self.phase_won": true
+        }
+      },
+      {
+        "id": "lost",
+        "text": "──아직입니다. 이 정도로 무너질 전선이 아닙니다.",
+        "tone": "defiant",
+        "when": {
+          "self.phase_won": false
+        }
+      },
+      {
+        "id": "danger",
+        "text": "{servant_class}, 버티십시오. 제가 직접 나설 틈을 만들겠습니다.",
+        "tone": "defiant",
+        "when": {
+          "self.condition": "danger"
+        }
+      }
+    ],
+    "master_seal_use": [
+      {
+        "id": "buff",
+        "text": "영주로 명합니다. 전력으로──이기십시오.",
+        "tone": "defiant",
+        "when": {
+          "event.purpose": "buff"
+        }
+      },
+      {
+        "id": "escape",
+        "text": "철수합니다. 패배가 아니라, 재편입니다.",
+        "tone": "cold",
+        "when": {
+          "event.purpose": "escape"
+        }
+      }
+    ],
+    "master_executed": [
+      {
+        "id": "base",
+        "text": "……임무 실패, 인가요. 적어도, 끝까지 싸웠습니다.",
+        "tone": "grim"
+      }
+    ],
+    "master_eliminated": [
+      {
+        "id": "base",
+        "text": "살려 두는 겁니까. 빚은 반드시 갚겠습니다.",
+        "tone": "cold"
+      }
+    ]
+  }
+}

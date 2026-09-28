@@ -1,0 +1,92 @@
+{
+  "speaker": "ms_olga_marie",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "new"
+  },
+  "notes": "적 마스터 대사 AI 초안. 태그 범위: 조우·전투 중·영주 사용·처치당할 때·탈락 (D-089). self.phase_won은 화자(이 마스터) 쪽이 그 국면을 이겼는지.",
+  "tags": {
+    "master_encounter": [
+      {
+        "id": "base_01",
+        "text": "멈, 멈춰! 아니무스피어의 당주 앞이야, 알고나 있어?",
+        "tone": "defiant"
+      },
+      {
+        "id": "base_02",
+        "text": "왜 하필 지금……! 좋아, 해 보자고. 할 수 있어, 나는 할 수 있어……!",
+        "tone": "grim"
+      },
+      {
+        "id": "met_before",
+        "text": "또 너야?! 이번엔 준비했단 말이야, 두고 봐!",
+        "tone": "defiant",
+        "when": {
+          "mem.met_before": true
+        },
+        "repeat": "once_per_run"
+      }
+    ],
+    "master_battle": [
+      {
+        "id": "won",
+        "text": "봐, 봤지? 내 판단이 옳았잖아!",
+        "tone": "playful",
+        "when": {
+          "self.phase_won": true
+        }
+      },
+      {
+        "id": "lost",
+        "text": "말도 안 돼, 이러면 안 되는데……!",
+        "tone": "grim",
+        "when": {
+          "self.phase_won": false
+        }
+      },
+      {
+        "id": "danger",
+        "text": "{servant_class}, 쓰러지면 안 돼! 너까지 없으면 나는……!",
+        "tone": "grim",
+        "when": {
+          "self.condition": "danger"
+        }
+      }
+    ],
+    "master_seal_use": [
+      {
+        "id": "buff",
+        "text": "영주로 명령해! 이겨, 제발 이겨 줘!",
+        "tone": "grim",
+        "when": {
+          "event.purpose": "buff"
+        }
+      },
+      {
+        "id": "escape",
+        "text": "도망쳐, 지금 당장! 창피한 건 나중에 생각할래!",
+        "tone": "grim",
+        "when": {
+          "event.purpose": "escape"
+        }
+      }
+    ],
+    "master_executed": [
+      {
+        "id": "base",
+        "text": "싫어……아직, 아무한테도 인정받지 못했는데──.",
+        "tone": "grim"
+      }
+    ],
+    "master_eliminated": [
+      {
+        "id": "base",
+        "text": "……살려 주는 거야? 흥, 고맙다고는 안 할 거야. ……안 할 거라고.",
+        "tone": "tender"
+      }
+    ]
+  }
+}

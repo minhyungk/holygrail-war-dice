@@ -1,0 +1,93 @@
+{
+  "speaker": "ms_kotomine_kirei",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "new"
+  },
+  "notes": "적 마스터 대사 AI 초안. 태그 범위: 조우·전투 중·영주 사용·처치당할 때·탈락 (D-089). self.phase_won은 화자(이 마스터) 쪽이 그 국면을 이겼는지.",
+  "tags": {
+    "master_encounter": [
+      {
+        "id": "base_01",
+        "text": "──이런 밤에 길을 잃었나. 아니면, 스스로 찾아왔나.",
+        "tone": "cold"
+      },
+      {
+        "id": "base_02",
+        "text": "서두를 것 없다. 자네가 무엇을 원해 이 전쟁에 섰는지, 먼저 들어 보고 싶군.",
+        "tone": "calm"
+      },
+      {
+        "id": "met_before",
+        "text": "또 만났군. 그때보다 조금은 흥미로운 얼굴이 되었어.",
+        "tone": "calm",
+        "when": {
+          "mem.met_before": true
+        },
+        "repeat": "once_per_run"
+      }
+    ],
+    "master_battle": [
+      {
+        "id": "won",
+        "text": "그래, 그 표정이다. 절망이란 그렇게 천천히 스며드는 것이지.",
+        "tone": "cold",
+        "when": {
+          "self.phase_won": true
+        }
+      },
+      {
+        "id": "lost",
+        "text": "──호오. 생각보다 버티는군.",
+        "tone": "calm",
+        "when": {
+          "self.phase_won": false
+        }
+      },
+      {
+        "id": "danger",
+        "text": "{servant_class}. 쓰러지려거든 조금 더 보기 좋게 쓰러져라.",
+        "tone": "cold",
+        "when": {
+          "self.condition": "danger"
+        }
+      }
+    ],
+    "master_seal_use": [
+      {
+        "id": "buff",
+        "text": "영주로 명한다. ──{servant_class}, 끝까지 싸워라.",
+        "tone": "cold",
+        "when": {
+          "event.purpose": "buff"
+        }
+      },
+      {
+        "id": "escape",
+        "text": "물러나라. 이 싸움의 결말은, 아직 보고 싶지 않다.",
+        "tone": "calm",
+        "when": {
+          "event.purpose": "escape"
+        }
+      }
+    ],
+    "master_executed": [
+      {
+        "id": "base",
+        "text": "그런가. ──그것이 너의 답인가. 기뻐하라 소년. 자네의 소원은, 이제 곧 이루어질 테니.",
+        "tone": "calm",
+        "notes": "'기뻐해라, 소년' 오마주 (Fate/stay night)"
+      }
+    ],
+    "master_eliminated": [
+      {
+        "id": "base",
+        "text": "살려 둔다는 건가. ……자네는 끝까지, 가장 잔인한 쪽을 고르는군.",
+        "tone": "calm"
+      }
+    ]
+  }
+}

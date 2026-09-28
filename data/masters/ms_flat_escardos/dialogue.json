@@ -1,0 +1,92 @@
+{
+  "speaker": "ms_flat_escardos",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "new"
+  },
+  "notes": "적 마스터 대사 AI 초안. 태그 범위: 조우·전투 중·영주 사용·처치당할 때·탈락 (D-089). self.phase_won은 화자(이 마스터) 쪽이 그 국면을 이겼는지.",
+  "tags": {
+    "master_encounter": [
+      {
+        "id": "base_01",
+        "text": "우와, 진짜 마스터다! 있잖아, 우리 싸우는 거지? 싸우는 거 맞지?",
+        "tone": "playful"
+      },
+      {
+        "id": "base_02",
+        "text": "교수님이 보시면 또 혼나겠지만──뭐, 괜찮겠지!",
+        "tone": "playful"
+      },
+      {
+        "id": "met_before",
+        "text": "아, 그때 그 사람! 또 만났네, 이번엔 더 재밌게 하자!",
+        "tone": "playful",
+        "when": {
+          "mem.met_before": true
+        },
+        "repeat": "once_per_run"
+      }
+    ],
+    "master_battle": [
+      {
+        "id": "won",
+        "text": "와, 됐다! 방금 거 봤어? 엄청 멋있었지!",
+        "tone": "playful",
+        "when": {
+          "self.phase_won": true
+        }
+      },
+      {
+        "id": "lost",
+        "text": "어라, 이상하다. 이렇게 하면 될 줄 알았는데!",
+        "tone": "playful",
+        "when": {
+          "self.phase_won": false
+        }
+      },
+      {
+        "id": "danger",
+        "text": "{servant_class}, 괜찮아?! 잠깐만, 내가 뭔가 해 볼게!",
+        "tone": "grim",
+        "when": {
+          "self.condition": "danger"
+        }
+      }
+    ],
+    "master_seal_use": [
+      {
+        "id": "buff",
+        "text": "영주 써 볼게! ──이거 한번 써 보고 싶었어!",
+        "tone": "playful",
+        "when": {
+          "event.purpose": "buff"
+        }
+      },
+      {
+        "id": "escape",
+        "text": "일단 도망! 작전상 후퇴라는 거야, 교수님이 그랬어!",
+        "tone": "playful",
+        "when": {
+          "event.purpose": "escape"
+        }
+      }
+    ],
+    "master_executed": [
+      {
+        "id": "base",
+        "text": "……아, 이건 좀, 안 좋네. 교수님한테, 미안하다고──.",
+        "tone": "grim"
+      }
+    ],
+    "master_eliminated": [
+      {
+        "id": "base",
+        "text": "살려 주는 거야? 고마워! 다음엔 친구로 만나자!",
+        "tone": "tender"
+      }
+    ]
+  }
+}

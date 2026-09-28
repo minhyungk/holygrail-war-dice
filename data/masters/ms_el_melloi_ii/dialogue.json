@@ -1,0 +1,93 @@
+{
+  "speaker": "ms_el_melloi_ii",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "new"
+  },
+  "notes": "적 마스터 대사 AI 초안. 태그 범위: 조우·전투 중·영주 사용·처치당할 때·탈락 (D-089). self.phase_won은 화자(이 마스터) 쪽이 그 국면을 이겼는지.",
+  "tags": {
+    "master_encounter": [
+      {
+        "id": "base_01",
+        "text": "……하필 이런 밤에. 좋아, 도망칠 수 없다면 적어도 계산은 하고 싸우지.",
+        "tone": "grim"
+      },
+      {
+        "id": "base_02",
+        "text": "정보가 부족하다. 이런 전투는 내 방식이 아닌데.",
+        "tone": "grim"
+      },
+      {
+        "id": "met_before",
+        "text": "또 자네인가. 지난번 전투는 전부 분석해 뒀다.",
+        "tone": "calm",
+        "when": {
+          "mem.met_before": true
+        },
+        "repeat": "once_per_run"
+      }
+    ],
+    "master_battle": [
+      {
+        "id": "won",
+        "text": "예상대로다. 추리가 아니라, 소거법의 결과지.",
+        "tone": "calm",
+        "when": {
+          "self.phase_won": true
+        }
+      },
+      {
+        "id": "lost",
+        "text": "──젠장, 변수를 놓쳤다.",
+        "tone": "grim",
+        "when": {
+          "self.phase_won": false
+        }
+      },
+      {
+        "id": "danger",
+        "text": "{servant_class}, 무리하지 마라! ……아니, 무리하지 않고 이길 방법 따윈 없나.",
+        "tone": "grim",
+        "when": {
+          "self.condition": "danger"
+        }
+      }
+    ],
+    "master_seal_use": [
+      {
+        "id": "buff",
+        "text": "영주로 명한다. ……부탁이다, 이겨 줘.",
+        "tone": "grim",
+        "when": {
+          "event.purpose": "buff"
+        }
+      },
+      {
+        "id": "escape",
+        "text": "철수다. 살아서 돌아가는 것도, 전략이다.",
+        "tone": "calm",
+        "when": {
+          "event.purpose": "escape"
+        }
+      }
+    ],
+    "master_executed": [
+      {
+        "id": "base",
+        "text": "……그렇군. 결국 나는, 그 왕의 등에 닿지 못했나.",
+        "tone": "grim",
+        "notes": "제4차 성배전쟁의 라이더(이스칸다르)를 암시"
+      }
+    ],
+    "master_eliminated": [
+      {
+        "id": "base",
+        "text": "살려 주는 건가. ……빚으로 달아 두지. 이자는 비싸게 쳐 주겠다.",
+        "tone": "calm"
+      }
+    ]
+  }
+}

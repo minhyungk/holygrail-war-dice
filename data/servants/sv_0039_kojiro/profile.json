@@ -1,0 +1,27 @@
+{
+  "servant_id": "sv_0039_kojiro",
+  "source_id": 39,
+  "name_ko": "사사키 코지로",
+  "class": "assassin",
+  "ranks": {
+    "str": "C",
+    "end": "E",
+    "agi": "A+",
+    "mana": "E",
+    "luck": "A",
+    "np": "None"
+  },
+  "alignment": "evil",
+  "alignment_detail": "중립·악",
+  "alignment_verified": false,
+  "temperament": "assassin",
+  "noble_phantasm": {
+    "name_ko": "츠바메가에시",
+    "ruby_ko": "제비반전베기",
+    "rank": "-",
+    "type_ko": "대인마검"
+  },
+  "portrait_url": "https://static.atlasacademy.io/KR/Faces/f_6001000.png",
+  "sprite_id": null,
+  "notes": "레거시 servants-ko.json id 39에서 생성. alignment는 원작 설정 기준 AI 입력값 (Atlas로 검증 필요). temperament는 레거시 servantPersonality.ts를 ID가 아닌 이름으로 맞춘 값."
+}

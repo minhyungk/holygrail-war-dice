@@ -1,0 +1,27 @@
+{
+  "servant_id": "sv_0023_medusa",
+  "source_id": 23,
+  "name_ko": "메두사",
+  "class": "rider",
+  "ranks": {
+    "str": "B",
+    "end": "D",
+    "agi": "A",
+    "mana": "B",
+    "luck": "E",
+    "np": "A+"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "기영의 고삐",
+    "ruby_ko": "벨레로폰",
+    "rank": "A+",
+    "type_ko": "대군보구"
+  },
+  "portrait_url": "https://static.atlasacademy.io/KR/Faces/f_4001000.png",
+  "sprite_id": null,
+  "notes": "레거시 servants-ko.json id 23에서 생성. alignment는 원작 설정 기준 AI 입력값 (Atlas로 검증 필요). temperament는 레거시 servantPersonality.ts를 ID가 아닌 이름으로 맞춘 값."
+}

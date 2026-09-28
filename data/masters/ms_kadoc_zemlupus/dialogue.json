@@ -1,0 +1,92 @@
+{
+  "speaker": "ms_kadoc_zemlupus",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "new"
+  },
+  "notes": "적 마스터 대사 AI 초안. 태그 범위: 조우·전투 중·영주 사용·처치당할 때·탈락 (D-089). self.phase_won은 화자(이 마스터) 쪽이 그 국면을 이겼는지.",
+  "tags": {
+    "master_encounter": [
+      {
+        "id": "base_01",
+        "text": "이봐, 이봐. 굳이 여기서 싸워야겠어? ……뭐, 네가 원한다면야.",
+        "tone": "cold"
+      },
+      {
+        "id": "base_02",
+        "text": "운 나쁜 녀석이네. 하필 나를 만나다니.",
+        "tone": "cold"
+      },
+      {
+        "id": "met_before",
+        "text": "또 너냐. 끈질기네. 그런 녀석이 제일 귀찮아.",
+        "tone": "cold",
+        "when": {
+          "mem.met_before": true
+        },
+        "repeat": "once_per_run"
+      }
+    ],
+    "master_battle": [
+      {
+        "id": "won",
+        "text": "봐, 이렇게 되잖아. 처음부터 결과는 정해져 있었다고.",
+        "tone": "cold",
+        "when": {
+          "self.phase_won": true
+        }
+      },
+      {
+        "id": "lost",
+        "text": "……하. 이건 좀 계산 밖인데.",
+        "tone": "grim",
+        "when": {
+          "self.phase_won": false
+        }
+      },
+      {
+        "id": "danger",
+        "text": "{servant_class}, 거기서 쓰러지면 곤란하다고. 진짜로.",
+        "tone": "grim",
+        "when": {
+          "self.condition": "danger"
+        }
+      }
+    ],
+    "master_seal_use": [
+      {
+        "id": "buff",
+        "text": "영주로 명령한다. ……어쩔 수 없잖아, 이기려면.",
+        "tone": "cold",
+        "when": {
+          "event.purpose": "buff"
+        }
+      },
+      {
+        "id": "escape",
+        "text": "빠진다. 이런 데서 목숨 거는 건 바보나 하는 짓이야.",
+        "tone": "cold",
+        "when": {
+          "event.purpose": "escape"
+        }
+      }
+    ],
+    "master_executed": [
+      {
+        "id": "base",
+        "text": "……뭐, 이런 끝도 나쁘진 않나. 아니, 역시 좀 억울하네.",
+        "tone": "grim"
+      }
+    ],
+    "master_eliminated": [
+      {
+        "id": "base",
+        "text": "살려 준다고? ……너, 진짜 이상한 녀석이네.",
+        "tone": "cold"
+      }
+    ]
+  }
+}

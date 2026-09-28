@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0031_medea",
+  "skills": [
+    {
+      "skill_id": "sk_territory_creation",
+      "name_ko": "진지작성",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_item_construction",
+      "name_ko": "도구작성",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_high_speed_divine_words",
+      "name_ko": "고속신언",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_golden_fleece",
+      "name_ko": "황금양모",
+      "rank": null,
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_circes_teaching",
+      "name_ko": "키르케의 가르침",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_np_rule_breaker",
+      "name_ko": "파계해야 할 모든 부적",
+      "rank": "C+",
+      "kind": "noble_phantasm",
+      "origin": "np"
+    }
+  ],
+  "notes": "스킬 이름·랭크는 레거시 FGO 데이터 기준. skill_id와 kind(범용/고유) 분류는 제안값. 훅·조건·효과는 Q-17, Q-126 확정 후 정의."
+}

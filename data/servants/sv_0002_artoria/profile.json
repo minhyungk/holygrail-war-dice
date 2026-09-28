@@ -1,0 +1,27 @@
+{
+  "servant_id": "sv_0002_artoria",
+  "source_id": 2,
+  "name_ko": "알트리아 펜드래곤",
+  "class": "saber",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "B",
+    "mana": "A",
+    "luck": "A+",
+    "np": "A++"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "약속된 승리의 검",
+    "ruby_ko": "엑스칼리버",
+    "rank": "A++",
+    "type_ko": "대성보구"
+  },
+  "portrait_url": "https://static.atlasacademy.io/KR/Faces/f_1001000.png",
+  "sprite_id": null,
+  "notes": "레거시 servants-ko.json id 2에서 생성. alignment는 원작 설정 기준 AI 입력값 (Atlas로 검증 필요). temperament는 레거시 servantPersonality.ts를 ID가 아닌 이름으로 맞춘 값."
+}

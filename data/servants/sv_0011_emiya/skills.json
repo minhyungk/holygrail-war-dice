@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0011_emiya",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "D",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_independent_action",
+      "name_ko": "단독행동",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_mind_eye_true",
+      "name_ko": "심안(진짜)",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_hawk_eye",
+      "name_ko": "매의 눈",
+      "rank": "B+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_circuit_connection",
+      "name_ko": "회로접속",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_np_unlimited_blade_works",
+      "name_ko": "무한의 검제",
+      "rank": "E~A",
+      "kind": "noble_phantasm",
+      "origin": "np"
+    }
+  ],
+  "notes": "스킬 이름·랭크는 레거시 FGO 데이터 기준. skill_id와 kind(범용/고유) 분류는 제안값. 훅·조건·효과는 Q-17, Q-126 확정 후 정의."
+}

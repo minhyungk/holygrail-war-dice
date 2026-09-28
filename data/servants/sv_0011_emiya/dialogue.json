@@ -1,0 +1,379 @@
+{
+  "speaker": "sv_0011_emiya",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "new"
+  },
+  "notes": "태그 ID는 Q-50 확정 전 임시. FGO·레거시 대사도 사용자 검수 전이라 status 기본값 draft. 줄 단위 speaker: narrator는 이 서번트에 대한 서술문. event.purpose / event.result / event.intel_level은 각 이벤트 data에서 온 사실.",
+  "tags": {
+    "summon": [
+      {
+        "id": "fgo_01",
+        "text": "서번트 아처. 소환에 응해 찾아왔다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true,
+        "repeat": "once_per_run"
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_01",
+        "text": "질리지도 않는 녀석들이군.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_02",
+        "text": "전력으로 상대하지.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_03",
+        "text": "정면으로? 후, 좀 봐달라고.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "legacy_vs_cu_01",
+        "when": {
+          "enemy.servant": "sv_0017_cu_chulainn"
+        },
+        "text": "랜서, 네놈의 운수는 오늘로 끝이다. 자해나 준비해두지.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_cu_02",
+        "when": {
+          "enemy.servant": "sv_0017_cu_chulainn",
+          "enemy.intel_level": 3
+        },
+        "text": "또 너인가, 수견. 이번에도 첫날 밤에 죽어줄 건가?",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_artoria_01",
+        "when": {
+          "enemy.servant": "sv_0002_artoria",
+          "enemy.intel_level": 3
+        },
+        "text": "세이버... 아니, 기사왕. 이번 전쟁에서는 같은 편이 아니라는 게 유감이군.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_artoria_02",
+        "when": {
+          "enemy.servant": "sv_0002_artoria",
+          "enemy.intel_level": 3
+        },
+        "text": "기사왕, 당신의 이상도, 나의 이상도 — 결국 검으로 증명하는 수밖에.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_medusa_01",
+        "when": {
+          "enemy.servant": "sv_0023_medusa",
+          "enemy.intel_level": 3
+        },
+        "text": "라이더... 메두사. 기동력이 높은 상대는 까다롭지만, 원거리전에서는 이쪽이 유리하다.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_medea_01",
+        "when": {
+          "enemy.servant": "sv_0031_medea",
+          "enemy.intel_level": 3
+        },
+        "text": "콜키스의 마녀... 그 높은 마력, 간강막야로 꿰뚫을 수 있을까?",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_medea_02",
+        "when": {
+          "enemy.servant": "sv_0031_medea"
+        },
+        "text": "캐스터, 그 술식은 인상적이지만 — 나에게도 대마술사를 상대한 경험은 있다.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_kojiro_01",
+        "when": {
+          "enemy.servant": "sv_0039_kojiro",
+          "enemy.intel_level": 3
+        },
+        "text": "류도사의 검사... 사사키 코지로인가. 근접전 특화 상대라면 거리를 유지해야겠군.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_kojiro_02",
+        "when": {
+          "enemy.servant": "sv_0039_kojiro"
+        },
+        "text": "저 검술은 진정으로 인간의 영역을 벗어났다. 경계하겠다.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_heracles_01",
+        "when": {
+          "enemy.servant": "sv_0047_heracles",
+          "enemy.intel_level": 3
+        },
+        "text": "갓 핸드(열두 가지 시련)... 같은 공격은 두 번 통하지 않는다. 기억이 나는군.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_heracles_02",
+        "when": {
+          "enemy.servant": "sv_0047_heracles",
+          "enemy.intel_level": 3
+        },
+        "text": "대영웅 헤라클레스. 그때도 이겼지만... 대가는 컸다.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "after_release",
+        "when": {
+          "mem.released": true
+        },
+        "text": "한 번 놓아준 상대를 또 만나는군. ……이번엔 후회하지 않게 해 주지.",
+        "repeat": "once_per_run"
+      },
+      {
+        "id": "after_draw",
+        "when": {
+          "mem.last_result": "draw"
+        },
+        "text": "결판을 미뤘던 상대군. 같은 실수를 두 번 할 생각은 없다.",
+        "repeat": "once_per_run"
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_01",
+        "text": "I am the bone of my sword. So as I pray, Unlimited Blade Works.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_01",
+        "text": "중상을 입었나……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_02",
+        "text": "나의…… 패배다……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_01",
+        "text": "결의도 각오도 부족했군.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_02",
+        "text": "조금 더 애를 먹을 줄 알았는데.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "crisis": [
+      {
+        "id": "base_01",
+        "text": "……조금 무리했나. 하지만 이 정도로 무너질 만큼, 가볍게 살아오진 않았다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "base_02",
+        "text": "걱정할 필요 없다, 마스터. ──이 몸은 아직, 검으로 되어 있으니까.",
+        "notes": "보구 영창(I am the bone of my sword)의 오마주",
+        "tone": "defiant"
+      },
+      {
+        "id": "again",
+        "when": {
+          "mem.near_death_count": {
+            "gte": 1
+          }
+        },
+        "text": "또 이 꼴인가. ……정말이지, 나는 배우질 않는군.",
+        "repeat": "once_per_run",
+        "tone": "grim"
+      }
+    ],
+    "seal_use": [
+      {
+        "id": "buff",
+        "when": {
+          "event.purpose": "buff"
+        },
+        "text": "영주를 이런 데 쓰다니, 대담하군. ──좋다, 기대에는 부응하지."
+      },
+      {
+        "id": "np",
+        "when": {
+          "event.purpose": "np"
+        },
+        "text": "명령이라면 어쩔 수 없지. ──투영, 개시.",
+        "notes": "레거시 인연 대사의 '투영, 개시'를 오마주"
+      },
+      {
+        "id": "escape",
+        "when": {
+          "event.purpose": "escape"
+        },
+        "text": "현명한 판단이다. 살아남는 것도 전략이지."
+      },
+      {
+        "id": "block_betrayal",
+        "when": {
+          "event.purpose": "block_betrayal"
+        },
+        "text": "……영주로 붙잡아 두는 건가. 좋을 대로 해라. 어차피 이 몸은, 그런 식으로 쓰이는 데 익숙하니까."
+      }
+    ],
+    "draw": [
+      {
+        "id": "base_01",
+        "text": "무승부인가. 오늘은 이 정도로 해 두지. ……다음은 없다."
+      }
+    ],
+    "execute": [
+      {
+        "id": "base_01",
+        "text": "냉정한 판단이다. 전쟁이란 그런 거지. ……이의는 없다.",
+        "notes": "성향 중립: 호감도 변화 없음 (D-056)"
+      }
+    ],
+    "release": [
+      {
+        "id": "base_01",
+        "text": "살려 보내는 건가. 달콤하군, 마스터. ──뭐, 그런 달콤함이 싫지는 않다만.",
+        "notes": "성향 중립: 호감도 변화 없음 (D-056)"
+      }
+    ],
+    "intel": [
+      {
+        "id": "success",
+        "when": {
+          "event.result": "success"
+        },
+        "text": "높은 곳에서 내려다보면 대부분은 보이지. {enemy}의 움직임, 파악해 뒀다.",
+        "notes": "매의 눈"
+      },
+      {
+        "id": "level1",
+        "when": {
+          "event.result": "success",
+          "event.intel_level": 1
+        },
+        "text": "상대의 클래스는 {enemy}. 이쯤은 매의 눈이 아니어도 알 수 있지."
+      },
+      {
+        "id": "level3",
+        "when": {
+          "event.result": "success",
+          "event.intel_level": 3
+        },
+        "text": "진명이 드러났군. {enemy}── 전설을 알면, 약점도 보이는 법이다."
+      },
+      {
+        "id": "fail",
+        "when": {
+          "event.result": "fail"
+        },
+        "text": "놓쳤다. ……상대도 바보는 아니라는 거군."
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "urban",
+        "when": {
+          "world.terrain": "urban"
+        },
+        "text": "장을 보러 나온 거라면 내게 맡겨라. ──별 뜻은 없다. 재료를 고르는 눈 정도는 있을 뿐이다.",
+        "notes": "요리 잘하는 설정"
+      },
+      {
+        "id": "river",
+        "when": {
+          "world.terrain": "river"
+        },
+        "text": "다리 위에서 보는 강은 꽤 괜찮군. ……이 도시는, 어딘가 낯이 익다."
+      },
+      {
+        "id": "open",
+        "when": {
+          "world.terrain": "open"
+        },
+        "text": "탁 트인 곳은 싫지 않다. 궁수에겐 고마운 지형이지."
+      },
+      {
+        "id": "forest",
+        "when": {
+          "world.terrain": "forest"
+        },
+        "text": "숲은 시야가 나쁘다. 오래 머물 곳은 아니야."
+      },
+      {
+        "id": "loyal",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "……너와 걷는 것도 나쁘지 않군. 이런 말은 두 번 하지 않을 테니, 잘 들어 둬라.",
+        "repeat": "once_per_run",
+        "tone": "tender"
+      },
+      {
+        "id": "cold",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "hostile",
+              "wary"
+            ]
+          }
+        },
+        "text": "산책이라면 혼자 해라. 호위가 필요하면 부르고.",
+        "tone": "cold"
+      },
+      {
+        "id": "last_day",
+        "when": {
+          "world.day": 7
+        },
+        "text": "마지막 날이군. ──마스터, 저녁은 내가 만들지. 싸우기 전에 배는 채워 둬야 하니까.",
+        "repeat": "once_per_run"
+      }
+    ]
+  }
+}

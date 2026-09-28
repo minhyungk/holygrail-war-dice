@@ -1,0 +1,450 @@
+{
+  "scope": "common",
+  "speaker": "narrator",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "new"
+  },
+  "notes": "공통 나레이션 임시 초안. 태그는 이벤트 이름 기반 임시 ID (Q-50). 시점은 3인칭 관찰자 (D-069). 이름은 자리표시자로만 쓴다 (정보 가림).",
+  "tags": {
+    "day_started": [
+      {
+        "id": "base",
+        "slot": "lead",
+        "text": "아침. 후유키의 하늘은, 어젯밤의 일 따위 모른다는 듯 맑았다."
+      },
+      {
+        "id": "day1",
+        "slot": "lead",
+        "text": "성배전쟁, 첫째 날. ──아직 아무것도 시작되지 않은 척, 도시는 평소처럼 숨을 쉰다.",
+        "when": {
+          "world.day": 1
+        },
+        "repeat": "once_per_run"
+      },
+      {
+        "id": "day7",
+        "slot": "lead",
+        "text": "일곱째 날. 남은 것은 오늘 하루, 그리고 오늘 밤.",
+        "when": {
+          "world.day": 7
+        },
+        "repeat": "once_per_run"
+      },
+      {
+        "id": "rumor_vague",
+        "slot": "lead",
+        "text": "밤사이 도시 어딘가에서, 거대한 마력이 충돌했다고 한다. 누가 누구와──그것까지는 알 수 없다.",
+        "when": {
+          "event.rumor": true,
+          "event.rumor_known": false
+        },
+        "notes": "소문 (§8.7). 정보 부족"
+      },
+      {
+        "id": "rumor_known",
+        "slot": "lead",
+        "text": "{loser}의 기척이 끊겼다. 밤사이, 또 하나의 진영이 무너졌다.",
+        "when": {
+          "event.rumor": true,
+          "event.rumor_known": true
+        },
+        "notes": "소문 (§8.7)"
+      }
+    ],
+    "night_started": [
+      {
+        "id": "base_01",
+        "slot": "lead",
+        "text": "해가 진다. 사람의 시간이 끝나고, 영령의 시간이 시작된다."
+      },
+      {
+        "id": "base_02",
+        "slot": "lead",
+        "text": "밤. 거리에서 인기척이 사라진다. 남은 것은, 공기에 밴 마력의 잔향뿐."
+      },
+      {
+        "id": "hurt",
+        "slot": "lead",
+        "text": "상처가 채 아물지 않은 채로, 또 밤이 온다.",
+        "when": {
+          "self.condition": "hurt"
+        }
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "urban",
+        "slot": "lead",
+        "text": "낮의 거리는 평화롭다. 이곳이 전쟁터라는 사실을, 잠시 잊을 수 있을 만큼.",
+        "when": {
+          "world.terrain": "urban"
+        }
+      },
+      {
+        "id": "river",
+        "slot": "lead",
+        "text": "햇빛이 수면 위에서 부서진다. 바람이, 강을 따라 천천히 흐른다.",
+        "when": {
+          "world.terrain": "river"
+        }
+      },
+      {
+        "id": "open",
+        "slot": "lead",
+        "text": "구름 그림자가 들판을 느릿하게 가로지른다.",
+        "when": {
+          "world.terrain": "open"
+        }
+      },
+      {
+        "id": "forest",
+        "slot": "lead",
+        "text": "나뭇잎 사이로 빛이 스민다. 새소리가, 멀리서 들려온다.",
+        "when": {
+          "world.terrain": "forest"
+        }
+      },
+      {
+        "id": "react_tender",
+        "slot": "react",
+        "text": "그 목소리는, 전장에서 듣던 것과는 조금 달랐다.",
+        "when": {
+          "beat.line.tone": "tender"
+        }
+      },
+      {
+        "id": "react_cold",
+        "slot": "react",
+        "text": "대답은 짧았다. 둘 사이의 거리는, 걸음 수만큼 좁혀지지 않는다.",
+        "when": {
+          "beat.line.tone": "cold"
+        }
+      }
+    ],
+    "intel": [
+      {
+        "id": "base",
+        "slot": "lead",
+        "text": "도시에 흩어진 흔적을 좇는다. 마력의 잔향, 부자연스러운 결계, 사람들의 소문."
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "place_open",
+        "slot": "lead",
+        "text": "탁 트인 공터. 숨을 곳도, 물러설 곳도 없다.",
+        "when": {
+          "world.terrain": "open",
+          "scene.setting_told": false
+        }
+      },
+      {
+        "id": "place_urban",
+        "slot": "lead",
+        "text": "잠든 주택가. 가로등 불빛 아래로, 두 개의 그림자가 길게 늘어진다.",
+        "when": {
+          "world.terrain": "urban",
+          "scene.setting_told": false
+        }
+      },
+      {
+        "id": "place_forest",
+        "slot": "lead",
+        "text": "나무 사이로 달빛이 조각나 떨어진다. 어둠이, 칼날의 윤곽을 삼킨다.",
+        "when": {
+          "world.terrain": "forest",
+          "scene.setting_told": false
+        }
+      },
+      {
+        "id": "place_river",
+        "slot": "lead",
+        "text": "강물 소리가 모든 기척을 덮는다. ──그러나 살기만은, 덮이지 않았다.",
+        "when": {
+          "world.terrain": "river",
+          "scene.setting_told": false
+        }
+      },
+      {
+        "id": "enemy_unknown",
+        "slot": "lead",
+        "text": "어둠 속에서 누군가 걸어 나온다. 정체를 알 수 없는──그러나 틀림없는, 서번트.",
+        "when": {
+          "enemy.intel_level": 0
+        }
+      },
+      {
+        "id": "enemy_class",
+        "slot": "lead",
+        "text": "{enemy}. 드러난 것은 클래스뿐. 그 이상은, 칼끝이 밝혀낼 것이다.",
+        "when": {
+          "enemy.intel_level": {
+            "in": [
+              1,
+              2
+            ]
+          }
+        }
+      },
+      {
+        "id": "enemy_named",
+        "slot": "lead",
+        "text": "{enemy}. 이름도 전설도 이미 드러난 상대. ──그렇기에 더욱, 방심은 허락되지 않는다.",
+        "when": {
+          "enemy.intel_level": 3
+        }
+      },
+      {
+        "id": "enemy_released",
+        "slot": "lead",
+        "text": "한 번 등을 보이고 떠났던 그림자가, 다시 앞을 막아선다.",
+        "when": {
+          "mem.released": true
+        },
+        "repeat": "once_per_run"
+      },
+      {
+        "id": "react_defiant",
+        "slot": "react",
+        "text": "허세가 아니다. 그 목소리에는, 이미 승부를 정한 자의 무게가 실려 있었다.",
+        "when": {
+          "beat.line.tone": "defiant"
+        }
+      },
+      {
+        "id": "react_playful",
+        "slot": "react",
+        "text": "가벼운 말투와 달리, 그 눈은 조금도 웃고 있지 않았다.",
+        "when": {
+          "beat.line.tone": "playful"
+        }
+      },
+      {
+        "id": "react_roar",
+        "slot": "react",
+        "text": "말이 아닌 포효. 그것만으로 대기가 떨리고, 세계의 질감이 삐걱거린다.",
+        "when": {
+          "beat.line.tone": "roar"
+        }
+      },
+      {
+        "id": "tail",
+        "slot": "tail",
+        "text": "대화는 거기까지였다. ──공기가, 팽팽하게 당겨진다."
+      }
+    ],
+    "phase_start": [
+      {
+        "id": "clash",
+        "slot": "lead",
+        "text": "정면. 피할 생각도, 피할 틈도 없다.",
+        "when": {
+          "event.phase_id": "ph_clash"
+        }
+      },
+      {
+        "id": "initiative",
+        "slot": "lead",
+        "text": "먼저 움직이는 쪽이 이긴다. ──찰나를 다투는 싸움.",
+        "when": {
+          "event.phase_id": "ph_initiative"
+        }
+      },
+      {
+        "id": "sorcery",
+        "slot": "lead",
+        "text": "마력이 소용돌이친다. 회로가 타는 냄새가, 밤공기에 섞인다.",
+        "when": {
+          "event.phase_id": "ph_sorcery"
+        }
+      },
+      {
+        "id": "fate",
+        "slot": "lead",
+        "text": "승패를 가르는 것은 힘도 기술도 아니다. 운명이라는 이름의, 한 번의 주사위.",
+        "when": {
+          "event.phase_id": "ph_fate"
+        }
+      },
+      {
+        "id": "np_clash",
+        "slot": "lead",
+        "text": "두 개의 전설이, 지금 정면으로 부딪친다.",
+        "when": {
+          "event.phase_id": "ph_np_clash"
+        }
+      },
+      {
+        "id": "np_attack",
+        "slot": "lead",
+        "text": "한쪽만이 전설을 꺼내 들었다. ──막아 낼 것인가, 삼켜질 것인가.",
+        "when": {
+          "event.phase_id": "ph_np_attack"
+        }
+      }
+    ],
+    "phase_result": [
+      {
+        "id": "skip",
+        "slot": "react",
+        "text": "칼과 칼이 맞물린 채 멈춘다. ──이번 합은, 누구의 것도 아니었다.",
+        "when": {
+          "event.result": "skipped"
+        }
+      },
+      {
+        "id": "small",
+        "slot": "react",
+        "text": "종이 한 장 차이. {winner}{이/가} 간신히 우위를 가져간다.",
+        "when": {
+          "event.margin": {
+            "lt": 5
+          }
+        }
+      },
+      {
+        "id": "big",
+        "slot": "react",
+        "text": "{winner}의 일격이 {loser}{을/를} 꿰뚫는다. 격차는, 명백했다.",
+        "when": {
+          "event.margin": {
+            "gte": 5
+          }
+        }
+      },
+      {
+        "id": "big_clash",
+        "slot": "react",
+        "text": "정면으로 부딪친 힘이, {loser}의 자세를 통째로 무너뜨린다.",
+        "when": {
+          "event.phase_id": "ph_clash",
+          "event.margin": {
+            "gte": 5
+          }
+        }
+      },
+      {
+        "id": "big_initiative",
+        "slot": "react",
+        "text": "보이지 않았다. {loser}{이/가} 알아차렸을 때, 칼끝은 이미 지나간 뒤였다.",
+        "when": {
+          "event.phase_id": "ph_initiative",
+          "event.margin": {
+            "gte": 5
+          }
+        }
+      },
+      {
+        "id": "big_sorcery",
+        "slot": "react",
+        "text": "술식이 술식을 삼킨다. {loser}의 회로가, 하얗게 타들어 간다.",
+        "when": {
+          "event.phase_id": "ph_sorcery",
+          "event.margin": {
+            "gte": 5
+          }
+        }
+      },
+      {
+        "id": "to_hurt",
+        "slot": "tail",
+        "text": "{loser}의 몸에서 피가 흐른다. 아직──아직은, 서 있다.",
+        "when": {
+          "event.condition_to": "hurt"
+        }
+      },
+      {
+        "id": "to_danger",
+        "slot": "tail",
+        "text": "영핵이 삐걱거린다. {loser}의 존재가, 한순간 희미해진다.",
+        "when": {
+          "event.condition_to": "danger"
+        }
+      }
+    ],
+    "miracle": [
+      {
+        "id": "base_01",
+        "slot": "react",
+        "text": "──그것은 기적. 혹은, 우연이라 불리는 찰나의 환영."
+      },
+      {
+        "id": "base_02",
+        "slot": "react",
+        "text": "있을 수 없는 일격. 운명이, 한순간 {winner}의 편을 들었다."
+      }
+    ],
+    "np_open": [
+      {
+        "id": "gather",
+        "slot": "lead",
+        "text": "마력이 한 점으로 모인다. 대기가 비명을 지르고, 세계의 텍스쳐가 일그러진다."
+      },
+      {
+        "id": "reveal_enemy",
+        "slot": "react",
+        "text": "그 이름이 불린 순간, 모든 것이 드러났다. ──진명, {actor}.",
+        "when": {
+          "beat.actor_side": "enemy"
+        },
+        "notes": "보구 개방 = 정체 공개 (D-067)"
+      },
+      {
+        "id": "self",
+        "slot": "react",
+        "text": "방출되는 것은 한 자루의 무기가 아니다. 인간이 자아낸, 전설 그 자체.",
+        "when": {
+          "beat.actor_side": "self"
+        }
+      }
+    ],
+    "battle_end": [
+      {
+        "id": "win",
+        "slot": "tail",
+        "text": "그리고──밤은 다시 고요해졌다.",
+        "when": {
+          "event.result": "win"
+        }
+      },
+      {
+        "id": "draw",
+        "slot": "tail",
+        "text": "승부는 나지 않았다. 두 그림자는 서로를 노려본 채, 어둠 속으로 물러난다.",
+        "when": {
+          "event.result": "draw"
+        }
+      },
+      {
+        "id": "escape",
+        "slot": "tail",
+        "text": "영주의 빛이 사라진 자리에, 붉은 잔광만이 남았다.",
+        "when": {
+          "event.result": "escape"
+        }
+      }
+    ],
+    "post_choice": [
+      {
+        "id": "execute",
+        "slot": "tail",
+        "text": "마지막 숨이 끊어진다. 영령은 빛의 입자가 되어, 밤하늘로 흩어졌다.",
+        "when": {
+          "event.choice": "execute"
+        }
+      },
+      {
+        "id": "release",
+        "slot": "tail",
+        "text": "패배한 마스터는 말없이 고개를 숙이고, 어둠 속으로 사라졌다.",
+        "when": {
+          "event.choice": "release"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "speaker": "ms_illyasviel",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "new"
+  },
+  "notes": "적 마스터 대사 AI 초안. 태그 범위: 조우·전투 중·영주 사용·처치당할 때·탈락 (D-089). self.phase_won은 화자(이 마스터) 쪽이 그 국면을 이겼는지.",
+  "tags": {
+    "master_encounter": [
+      {
+        "id": "base_01",
+        "text": "안녕, 마스터 씨. ──그럼, 죽어 줄래?",
+        "tone": "playful"
+      },
+      {
+        "id": "base_02",
+        "text": "후후, 운이 없네. 오늘 밤 나를 만나다니.",
+        "tone": "playful"
+      },
+      {
+        "id": "met_before",
+        "text": "또 왔네? 지난번엔 봐준 거야. 이번엔 안 봐줄 거야.",
+        "tone": "playful",
+        "when": {
+          "mem.met_before": true
+        },
+        "repeat": "once_per_run"
+      }
+    ],
+    "master_battle": [
+      {
+        "id": "won",
+        "text": "봐, 내 {servant_class}{은/는} 최강이라니까.",
+        "tone": "playful",
+        "when": {
+          "self.phase_won": true
+        }
+      },
+      {
+        "id": "lost",
+        "text": "……어라? 이상하네. 그럴 리가 없는데.",
+        "tone": "cold",
+        "when": {
+          "self.phase_won": false
+        }
+      },
+      {
+        "id": "danger",
+        "text": "일어나, {servant_class}! ……일어나라니까!",
+        "tone": "grim",
+        "when": {
+          "self.condition": "danger"
+        }
+      }
+    ],
+    "master_seal_use": [
+      {
+        "id": "buff",
+        "text": "죽여, {servant_class}. ──전부.",
+        "tone": "cold",
+        "when": {
+          "event.purpose": "buff"
+        },
+        "notes": "'죽여, 버서커' 오마주 (Fate/stay night)"
+      },
+      {
+        "id": "escape",
+        "text": "……돌아가자, {servant_class}. 오늘은 여기까지야.",
+        "tone": "grim",
+        "when": {
+          "event.purpose": "escape"
+        }
+      }
+    ],
+    "master_executed": [
+      {
+        "id": "base",
+        "text": "……추워. 있잖아, 겨울 성은──이것보다, 조금은 따뜻했어.",
+        "tone": "grim"
+      }
+    ],
+    "master_eliminated": [
+      {
+        "id": "base",
+        "text": "흥, 살려 준다고? ……이상한 사람. 기억해 둘게.",
+        "tone": "cold"
+      }
+    ]
+  }
+}

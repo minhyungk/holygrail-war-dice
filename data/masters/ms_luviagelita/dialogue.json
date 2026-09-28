@@ -1,0 +1,92 @@
+{
+  "speaker": "ms_luviagelita",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "new"
+  },
+  "notes": "적 마스터 대사 AI 초안. 태그 범위: 조우·전투 중·영주 사용·처치당할 때·탈락 (D-089). self.phase_won은 화자(이 마스터) 쪽이 그 국면을 이겼는지.",
+  "tags": {
+    "master_encounter": [
+      {
+        "id": "base_01",
+        "text": "오호호호! 에델펠트의 앞을 막아서다니, 용기만은 칭찬해 드리죠.",
+        "tone": "playful"
+      },
+      {
+        "id": "base_02",
+        "text": "어머, 마스터시군요. 우아하게 쓰러뜨려 드릴게요.",
+        "tone": "playful"
+      },
+      {
+        "id": "met_before",
+        "text": "또 뵙네요. 이번에는 끝까지 어울려 주셔야겠어요.",
+        "tone": "playful",
+        "when": {
+          "mem.met_before": true
+        },
+        "repeat": "once_per_run"
+      }
+    ],
+    "master_battle": [
+      {
+        "id": "won",
+        "text": "보셨나요? 이것이 에델펠트의 격이에요.",
+        "tone": "playful",
+        "when": {
+          "self.phase_won": true
+        }
+      },
+      {
+        "id": "lost",
+        "text": "……어머. 제법이시네요. 조금은 진심을 내 볼까요.",
+        "tone": "cold",
+        "when": {
+          "self.phase_won": false
+        }
+      },
+      {
+        "id": "danger",
+        "text": "{servant_class}, 에델펠트의 서번트가 이 정도로 쓰러질 셈인가요!",
+        "tone": "defiant",
+        "when": {
+          "self.condition": "danger"
+        }
+      }
+    ],
+    "master_seal_use": [
+      {
+        "id": "buff",
+        "text": "영주로 명하겠어요. ──승리 이외엔 인정하지 않아요.",
+        "tone": "defiant",
+        "when": {
+          "event.purpose": "buff"
+        }
+      },
+      {
+        "id": "escape",
+        "text": "오늘은 물러나 드리죠. 승부를 미룬 것뿐이에요.",
+        "tone": "cold",
+        "when": {
+          "event.purpose": "escape"
+        }
+      }
+    ],
+    "master_executed": [
+      {
+        "id": "base",
+        "text": "……이런 곳에서. 에델펠트의 이름에, 먹칠을 하고 말았네요.",
+        "tone": "grim"
+      }
+    ],
+    "master_eliminated": [
+      {
+        "id": "base",
+        "text": "자비라니, 굴욕이에요. ……하지만 이 은혜, 잊지 않겠어요.",
+        "tone": "cold"
+      }
+    ]
+  }
+}

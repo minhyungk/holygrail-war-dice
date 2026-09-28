@@ -1,0 +1,358 @@
+{
+  "speaker": "sv_0039_kojiro",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "new"
+  },
+  "notes": "태그 ID는 Q-50 확정 전 임시. FGO·레거시 대사도 사용자 검수 전이라 status 기본값 draft. 줄 단위 speaker: narrator는 이 서번트에 대한 서술문. event.purpose / event.result / event.intel_level은 각 이벤트 data에서 온 사실.",
+  "tags": {
+    "summon": [
+      {
+        "id": "fgo_01",
+        "text": "어쌔신 서번트, 사사키 코지로. 여기 대령하였소.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true,
+        "repeat": "once_per_run"
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_01",
+        "text": "그럼 붙어보실까.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_02",
+        "text": "베어낼 보람이 있는 머리로다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "legacy_vs_artoria_01",
+        "when": {
+          "enemy.servant": "sv_0002_artoria",
+          "enemy.intel_level": 3
+        },
+        "text": "오오... 이것은 훌륭한 검기. 성검의 주인이여, 그리운 감각이군.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_artoria_02",
+        "when": {
+          "enemy.servant": "sv_0002_artoria",
+          "enemy.intel_level": 3
+        },
+        "text": "기사왕인가. 서양의 검은 직선적이지만... 그 빛은 아름답군.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_cu_01",
+        "when": {
+          "enemy.servant": "sv_0017_cu_chulainn",
+          "enemy.intel_level": 3
+        },
+        "text": "창사(槍士)여. 그 마창의 궤도, 흥미롭군. 나의 검으로 꺾을 수 있을지...",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_cu_02",
+        "when": {
+          "enemy.servant": "sv_0017_cu_chulainn",
+          "enemy.intel_level": 3
+        },
+        "text": "쿠 훌린... 켈트 최강의 전사인가.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_emiya_01",
+        "when": {
+          "enemy.servant": "sv_0011_emiya"
+        },
+        "text": "궁병이 검을 쌍으로 쓰는가. 독특한 전투술이군. 흥미롭다.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_emiya_02",
+        "when": {
+          "enemy.servant": "sv_0011_emiya"
+        },
+        "text": "아처... 그 투영이라는 기술, 검으로 베어보고 싶군.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_medusa_01",
+        "when": {
+          "enemy.servant": "sv_0023_medusa"
+        },
+        "text": "빠른 자여. 그 속도, 나의 검으로 베어 보겠다.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_medea_01",
+        "when": {
+          "enemy.servant": "sv_0031_medea"
+        },
+        "text": "캐스터여, 당신의 술식은 잘 알고 있다. 하지만 이 검은 술식을 베어낸다.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_medea_02",
+        "when": {
+          "enemy.servant": "sv_0031_medea",
+          "self.intel_level": 3
+        },
+        "text": "...일찍이 문지기로 불렸던 인연인가. 이번에는 단순히 검사로서 맞서마.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건. 화자 자신의 정체를 드러내므로 self.intel_level 3 조건"
+      },
+      {
+        "id": "legacy_vs_heracles_01",
+        "when": {
+          "enemy.servant": "sv_0047_heracles",
+          "enemy.intel_level": 3
+        },
+        "text": "대영웅이여... 이 검으로 그 거구를 벨 수 있을지. 하지만 검사로서 물러서지 않겠다.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "after_release",
+        "when": {
+          "mem.released": true
+        },
+        "text": "허허, 살려 보낸 이와 다시 만나다니. 인연이란 참으로 묘하구려.",
+        "repeat": "once_per_run"
+      },
+      {
+        "id": "after_draw",
+        "when": {
+          "mem.last_result": "draw"
+        },
+        "text": "지난번의 승부, 아직 끝나지 않았소. 오늘 밤 마저 겨뤄 봅시다.",
+        "repeat": "once_per_run"
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_01",
+        "text": "비검── 츠바메가에시.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_01",
+        "text": "싱거웠다……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_02",
+        "text": "불찰이었군……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_01",
+        "text": "굳은 일념이면 귀신에까지 이른다. 인간의 몸이라고 얕봤군.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_02",
+        "text": "도신에 비틀림이 없군. 흠 하나 나지 않았다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "crisis": [
+      {
+        "id": "base_01",
+        "text": "허…… 제법 매서운 칼이오. 허나 이 몸의 검은, 아직 꺾이지 않았소.",
+        "tone": "defiant"
+      },
+      {
+        "id": "base_02",
+        "text": "걱정 마시오, 마스터. 꽃이 다 지기 전에 칼을 거두는 법은 없으니.",
+        "tone": "defiant"
+      },
+      {
+        "id": "again",
+        "when": {
+          "mem.near_death_count": {
+            "gte": 1
+          }
+        },
+        "text": "또 이리 되었구려. ……이 몸도, 아직 수행이 부족한가 보오.",
+        "repeat": "once_per_run",
+        "tone": "grim"
+      }
+    ],
+    "seal_use": [
+      {
+        "id": "buff",
+        "when": {
+          "event.purpose": "buff"
+        },
+        "text": "영주라. 과분한 명이오. ──그렇다면, 응해 드리리다."
+      },
+      {
+        "id": "np",
+        "when": {
+          "event.purpose": "np"
+        },
+        "text": "명을 받들겠소. ──비검, 츠바메가에시.",
+        "notes": "FGO 보구 영창의 오마주"
+      },
+      {
+        "id": "escape",
+        "when": {
+          "event.purpose": "escape"
+        },
+        "text": "물러나라 하시니 물러나리다. 달은 내일도 뜨는 법이오."
+      },
+      {
+        "id": "block_betrayal",
+        "when": {
+          "event.purpose": "block_betrayal"
+        },
+        "text": "영주로 이 몸을 묶으시겠다? ……허허, 그 또한 풍류라 하겠소."
+      }
+    ],
+    "draw": [
+      {
+        "id": "base_01",
+        "text": "승부는 다음으로 미룹시다. 서두를 것 없소."
+      }
+    ],
+    "execute": [
+      {
+        "id": "base_01",
+        "text": "베어야 할 것을 벤 것뿐이오. 검객에게 망설임은 사치요.",
+        "notes": "성향 악: 처치 시 호감도 상승 (D-056)"
+      }
+    ],
+    "release": [
+      {
+        "id": "base_01",
+        "text": "살려 보내신다? ……흠, 아까운 목이구려. 뭐, 마스터의 뜻이라면.",
+        "notes": "성향 악: 방면 시 호감도 하락 (D-056)"
+      }
+    ],
+    "intel": [
+      {
+        "id": "success",
+        "when": {
+          "event.result": "success"
+        },
+        "text": "바람 속에 칼 냄새가 섞여 있었소. {enemy}{이/가} 이 근처에 있소."
+      },
+      {
+        "id": "level1",
+        "when": {
+          "event.result": "success",
+          "event.intel_level": 1
+        },
+        "text": "상대는 {enemy}. 검을 섞어 보면, 더 알게 되겠지."
+      },
+      {
+        "id": "level3",
+        "when": {
+          "event.result": "success",
+          "event.intel_level": 3
+        },
+        "text": "{enemy}── 이름을 알고 나니, 그 검의 내력도 보이는구려."
+      },
+      {
+        "id": "fail",
+        "when": {
+          "event.result": "fail"
+        },
+        "text": "허탕이오. 뭐, 산책이라 생각하면 그만이지요."
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "open",
+        "when": {
+          "world.terrain": "open"
+        },
+        "text": "바람이 좋구려. 이런 날엔 칼보다, 풍경을 벗 삼고 싶소."
+      },
+      {
+        "id": "forest",
+        "when": {
+          "world.terrain": "forest"
+        },
+        "text": "산과 숲이라. 이 몸에겐 이런 곳이 제일 편하오."
+      },
+      {
+        "id": "river",
+        "when": {
+          "world.terrain": "river"
+        },
+        "text": "물 위에 비친 달이라도 보고 싶구려. ……낮이라 아쉽소."
+      },
+      {
+        "id": "urban",
+        "when": {
+          "world.terrain": "urban"
+        },
+        "text": "사람이 참 많소. 이 시대의 거리는 번잡하나, 활기가 있어 좋구려."
+      },
+      {
+        "id": "loyal",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "마스터와 걷는 이 길도 풍류요. ──허허, 이 몸이 이런 말을 하게 될 줄이야.",
+        "repeat": "once_per_run",
+        "tone": "tender"
+      },
+      {
+        "id": "cold",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "hostile",
+              "wary"
+            ]
+          }
+        },
+        "text": "구경이라면 혼자 하시구려. 이 몸은 칼이나 닦고 있겠소.",
+        "tone": "cold"
+      },
+      {
+        "id": "last_day",
+        "when": {
+          "world.day": 7
+        },
+        "text": "마지막 날이구려. 오늘 밤의 달은, 유난히 밝을 것 같소.",
+        "repeat": "once_per_run"
+      }
+    ]
+  }
+}

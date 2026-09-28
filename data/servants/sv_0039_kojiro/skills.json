@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0039_kojiro",
+  "skills": [
+    {
+      "skill_id": "sk_presence_concealment",
+      "name_ko": "기척 차단",
+      "rank": "D",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_mind_eye_fake",
+      "name_ko": "심안(가짜)",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_vitrification",
+      "name_ko": "투화",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_knowledge_of_harmony",
+      "name_ko": "소와의 소양",
+      "rank": "B++",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_np_tsubame_gaeshi",
+      "name_ko": "츠바메가에시",
+      "rank": "-",
+      "kind": "noble_phantasm",
+      "origin": "np"
+    }
+  ],
+  "notes": "스킬 이름·랭크는 레거시 FGO 데이터 기준. skill_id와 kind(범용/고유) 분류는 제안값. 훅·조건·효과는 Q-17, Q-126 확정 후 정의."
+}

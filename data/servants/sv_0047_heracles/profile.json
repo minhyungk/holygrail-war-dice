@@ -1,0 +1,27 @@
+{
+  "servant_id": "sv_0047_heracles",
+  "source_id": 47,
+  "name_ko": "헤라클레스",
+  "class": "berserker",
+  "ranks": {
+    "str": "A+",
+    "end": "A",
+    "agi": "A",
+    "mana": "A",
+    "luck": "B",
+    "np": "A"
+  },
+  "alignment": null,
+  "alignment_detail": "혼돈·광기",
+  "alignment_verified": false,
+  "temperament": "berserker",
+  "noble_phantasm": {
+    "name_ko": "사살하는 백 개의 머리",
+    "ruby_ko": "나인 라이브즈",
+    "rank": "C~A+",
+    "type_ko": "불명"
+  },
+  "portrait_url": "https://static.atlasacademy.io/KR/Faces/f_7001000.png",
+  "sprite_id": null,
+  "notes": "레거시 servants-ko.json id 47에서 생성. alignment는 원작 설정 기준 AI 입력값 (Atlas로 검증 필요). temperament는 레거시 servantPersonality.ts를 ID가 아닌 이름으로 맞춘 값. 성향 광기: alignment 값 미정 (Q-125)."
+}

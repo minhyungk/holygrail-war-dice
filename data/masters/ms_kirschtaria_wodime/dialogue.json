@@ -1,0 +1,92 @@
+{
+  "speaker": "ms_kirschtaria_wodime",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "new"
+  },
+  "notes": "적 마스터 대사 AI 초안. 태그 범위: 조우·전투 중·영주 사용·처치당할 때·탈락 (D-089). self.phase_won은 화자(이 마스터) 쪽이 그 국면을 이겼는지.",
+  "tags": {
+    "master_encounter": [
+      {
+        "id": "base_01",
+        "text": "반갑다, 마스터. 이 만남에도 의미가 있기를 바란다.",
+        "tone": "calm"
+      },
+      {
+        "id": "base_02",
+        "text": "물러설 생각이 없다면──그 의지에, 전력으로 답하지.",
+        "tone": "defiant"
+      },
+      {
+        "id": "met_before",
+        "text": "다시 만났군. 그대의 성장이, 조금 기대된다.",
+        "tone": "calm",
+        "when": {
+          "mem.met_before": true
+        },
+        "repeat": "once_per_run"
+      }
+    ],
+    "master_battle": [
+      {
+        "id": "won",
+        "text": "훌륭하다, {servant_class}. 그대로 가자.",
+        "tone": "calm",
+        "when": {
+          "self.phase_won": true
+        }
+      },
+      {
+        "id": "lost",
+        "text": "──그렇군. 과연, 여기까지 올라온 마스터다.",
+        "tone": "calm",
+        "when": {
+          "self.phase_won": false
+        }
+      },
+      {
+        "id": "danger",
+        "text": "{servant_class}, 아직이다. 우리의 이상은, 여기서 끝나지 않는다.",
+        "tone": "defiant",
+        "when": {
+          "self.condition": "danger"
+        }
+      }
+    ],
+    "master_seal_use": [
+      {
+        "id": "buff",
+        "text": "영주로 명한다. ──나의 서번트여, 그대의 전부를 보여 다오.",
+        "tone": "defiant",
+        "when": {
+          "event.purpose": "buff"
+        }
+      },
+      {
+        "id": "escape",
+        "text": "물러나자. 패배를 인정하는 것 또한, 앞으로 나아가기 위한 선택이다.",
+        "tone": "calm",
+        "when": {
+          "event.purpose": "escape"
+        }
+      }
+    ],
+    "master_executed": [
+      {
+        "id": "base",
+        "text": "……그런가. 그대에게 맡기지. 부디──이 세계를, 좋은 방향으로.",
+        "tone": "tender"
+      }
+    ],
+    "master_eliminated": [
+      {
+        "id": "base",
+        "text": "그대의 자비에 감사한다. 그 선택이 옳았기를, 나도 바라지.",
+        "tone": "calm"
+      }
+    ]
+  }
+}

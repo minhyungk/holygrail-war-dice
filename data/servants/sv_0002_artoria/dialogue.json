@@ -1,0 +1,425 @@
+{
+  "speaker": "sv_0002_artoria",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "new"
+  },
+  "notes": "태그 ID는 Q-50 확정 전 임시. FGO·레거시 대사도 사용자 검수 전이라 status 기본값 draft. 줄 단위 speaker: narrator는 이 서번트에 대한 서술문. event.purpose / event.result / event.intel_level은 각 이벤트 data에서 온 사실.",
+  "tags": {
+    "summon": [
+      {
+        "id": "fgo_01",
+        "text": "묻겠다. 그대가 나의 마스터인가?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true,
+        "repeat": "once_per_run"
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_01",
+        "text": "시작하죠, 마스터.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true,
+        "tone": "calm"
+      },
+      {
+        "id": "fgo_02",
+        "text": "사력을 다해 덤벼라.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true,
+        "tone": "defiant"
+      },
+      {
+        "id": "fgo_03",
+        "text": "싸움이라면, 쓰러뜨릴 뿐입니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true,
+        "tone": "defiant"
+      },
+      {
+        "id": "fgo_04",
+        "text": "침착하게, 방심하지 마시길.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true,
+        "tone": "calm"
+      },
+      {
+        "id": "legacy_vs_cu_01",
+        "when": {
+          "enemy.servant": "sv_0017_cu_chulainn",
+          "enemy.intel_level": 3
+        },
+        "text": "랜서... 쿠 훌린. 빛의 어린 전사, 그 창술은 전설 그 자체로군요.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_cu_02",
+        "when": {
+          "enemy.servant": "sv_0017_cu_chulainn",
+          "enemy.intel_level": 3
+        },
+        "text": "얼스터의 빛이여. 기사왕으로서 당신의 창끝을 받겠습니다.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_emiya_01",
+        "when": {
+          "enemy.servant": "sv_0011_emiya",
+          "enemy.intel_level": 3
+        },
+        "text": "아처... 에미야 시로? 아니, 그럴 리가... 하지만 이 검기는...",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_emiya_02",
+        "when": {
+          "enemy.servant": "sv_0011_emiya"
+        },
+        "text": "그 투영 마술... 익숙한 마력의 흔적이 느껴집니다. 당신은 누구입니까?",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_medusa_01",
+        "when": {
+          "enemy.servant": "sv_0023_medusa",
+          "enemy.intel_level": 3
+        },
+        "text": "라이더... 메두사. 신대의 괴물이여, 기사왕의 검으로 상대하겠습니다.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_medusa_02",
+        "when": {
+          "enemy.servant": "sv_0023_medusa"
+        },
+        "text": "그 마안... 조심해야겠군요. 하지만 물러서지는 않겠습니다.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_medea_01",
+        "when": {
+          "enemy.servant": "sv_0031_medea",
+          "enemy.intel_level": 3
+        },
+        "text": "마녀 메데이아... 그 술식은 위협적이지만, 대마력이 있는 한 검이 닿습니다.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_kojiro_01",
+        "when": {
+          "enemy.servant": "sv_0039_kojiro"
+        },
+        "text": "검사... 그 고아한 검기, 기사왕으로서 경의를 표합니다. 오십시오",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_kojiro_02",
+        "when": {
+          "enemy.servant": "sv_0039_kojiro",
+          "enemy.intel_level": 3
+        },
+        "text": "류도사의 검사여. 진검승부로 맞서겠습니다.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_heracles_01",
+        "when": {
+          "enemy.servant": "sv_0047_heracles",
+          "enemy.intel_level": 3
+        },
+        "text": "대영웅 헤라클레스... 광기에 물들었어도 그 무위(武威)는 신화 그 자체입니다.",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "legacy_vs_heracles_02",
+        "when": {
+          "enemy.servant": "sv_0047_heracles",
+          "enemy.intel_level": 3
+        },
+        "text": "열두 가지 시련의 영웅... 성검으로 맞서겠습니다!",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건"
+      },
+      {
+        "id": "vs_cu_reunion",
+        "when": {
+          "enemy.servant": "sv_0017_cu_chulainn",
+          "enemy.intel_level": 3,
+          "mem.met_before": true
+        },
+        "text": "다시 만났군요, 얼스터의 창. ──그 창이 노리는 곳이 심장이라는 것쯤, 이미 알고 있습니다.",
+        "repeat": "once_per_run"
+      },
+      {
+        "id": "after_release",
+        "when": {
+          "mem.released": true
+        },
+        "text": "한 번 살려 보낸 목숨입니다. ……두 번째 관용은 없다고 생각하십시오.",
+        "repeat": "once_per_run",
+        "notes": "방면했던 상대와 재조우 (기억 사실 mem.released)"
+      },
+      {
+        "id": "after_draw",
+        "when": {
+          "mem.last_result": "draw"
+        },
+        "text": "지난밤의 승부는 결판이 나지 않았지요. 오늘 밤, 끝을 내겠습니다.",
+        "repeat": "once_per_run"
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_01",
+        "text": "모이는 별의 숨결, 빛나는 생명의 격류── 받아라, ‘약속된 승리의 검(엑스칼리버)’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_02",
+        "text": "이 불빛은 별의 희망. 땅을 비추는 생명의 증거.  보도록 하라, ‘약속된 승리의 검(엑스칼리버)’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_03",
+        "text": "이 불빛은 별의 희망. 땅을 비추는 생명의 증거.  결판을 내겠다, ‘약속된 승리의 검(엑스칼리버)’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_01",
+        "text": "이런…… 곳에서……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_02",
+        "text": "미안해요, 마스터……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_01",
+        "text": "아직 미숙하군요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_02",
+        "text": "기사의 맹세는 깨지지 않아.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_03",
+        "text": "부상자의 치료를. 싸움은 아직 계속됩니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_04",
+        "text": "병참은 유지하고 있습니까? 그건 다행이군요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "crisis": [
+      {
+        "id": "base_01",
+        "text": "……아직입니다. 이 몸이 서 있는 한, 검은 꺾이지 않는다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "base_02",
+        "text": "괜찮습니다, 마스터. ──이 정도 상처로, 기사는 쓰러지지 않습니다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "again",
+        "when": {
+          "mem.near_death_count": {
+            "gte": 1
+          }
+        },
+        "text": "두 번째, 인가요. ……같은 곳에서 두 번 무릎 꿇는 것은 기사의 수치입니다.",
+        "repeat": "once_per_run",
+        "tone": "grim"
+      }
+    ],
+    "seal_use": [
+      {
+        "id": "buff",
+        "when": {
+          "event.purpose": "buff"
+        },
+        "text": "영주의 명, 확실히 받았습니다. ──이 검에 걸고, 응하겠습니다."
+      },
+      {
+        "id": "np",
+        "when": {
+          "event.purpose": "np"
+        },
+        "text": "마스터의 명이라면. ──별의 빛을, 지금 여기에."
+      },
+      {
+        "id": "escape",
+        "when": {
+          "event.purpose": "escape"
+        },
+        "text": "……물러나라는 겁니까. 알겠습니다. 이 굴욕은 다음 검으로 씻겠습니다."
+      },
+      {
+        "id": "block_betrayal",
+        "when": {
+          "event.purpose": "block_betrayal"
+        },
+        "text": "영주로 이 몸을 묶어 두겠다, 는 것이군요. ……좋습니다. 그것이 당신의 답이라면."
+      }
+    ],
+    "draw": [
+      {
+        "id": "base_01",
+        "text": "결판은 다음으로 미루죠. ……하지만, 다음은 없다고 생각하십시오."
+      }
+    ],
+    "execute": [
+      {
+        "id": "base_01",
+        "text": "……그것이 마스터의 결정이라면 따르겠습니다. 하지만 기억해 두십시오. 검을 거둘 줄 아는 자만이 왕도를 걷습니다.",
+        "notes": "성향 선: 처치 시 호감도 하락에 맞춘 불만 (D-056)"
+      }
+    ],
+    "release": [
+      {
+        "id": "base_01",
+        "text": "현명한 판단입니다, 마스터. 패자에게 베푸는 관용 또한 기사의 긍지니까요.",
+        "notes": "성향 선: 방면 시 호감도 상승에 맞춤 (D-056)"
+      }
+    ],
+    "intel": [
+      {
+        "id": "success",
+        "when": {
+          "event.result": "success"
+        },
+        "text": "{enemy}의 흔적을 찾았습니다. ──정면에서 맞설 준비는, 이것으로 충분합니다."
+      },
+      {
+        "id": "level1",
+        "when": {
+          "event.result": "success",
+          "event.intel_level": 1
+        },
+        "text": "상대는 {enemy}{이/가} 확실합니다. 클래스를 안 것만으로도 검 끝이 한결 가벼워지는군요."
+      },
+      {
+        "id": "level3",
+        "when": {
+          "event.result": "success",
+          "event.intel_level": 3
+        },
+        "text": "진명이 밝혀졌습니다. {enemy}──. 전설에 이름을 남긴 영웅이라면, 그에 걸맞은 예로 상대하겠습니다."
+      },
+      {
+        "id": "fail",
+        "when": {
+          "event.result": "fail"
+        },
+        "text": "……허탕이군요. 몸을 숨기는 데 능한 상대입니다. 서두르지 말죠, 마스터."
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "urban",
+        "when": {
+          "world.terrain": "urban"
+        },
+        "text": "이 거리의 음식은…… 네, 훌륭합니다. 전쟁 중이라는 걸 잊을 뻔했습니다. ──아뇨, 잊지는 않았습니다."
+      },
+      {
+        "id": "open",
+        "when": {
+          "world.terrain": "open"
+        },
+        "text": "바람이 좋군요. 이런 들판을 보면, 브리튼의 초원이 떠오릅니다."
+      },
+      {
+        "id": "river",
+        "when": {
+          "world.terrain": "river"
+        },
+        "text": "강물은 어느 시대에도 변하지 않는군요. ……마스터, 잠시만 이대로 있어도 되겠습니까."
+      },
+      {
+        "id": "forest",
+        "when": {
+          "world.terrain": "forest"
+        },
+        "text": "숲은 적이 숨기 좋은 곳입니다. 방심하지 마십시오. ……하지만, 새소리는 나쁘지 않군요."
+      },
+      {
+        "id": "loyal",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "마스터와 걷는 이 거리가, 어느새 제게도 익숙해졌습니다. ──성배를 얻은 뒤에도, 이 기억은 남겠지요.",
+        "repeat": "once_per_run",
+        "tone": "tender"
+      },
+      {
+        "id": "cold",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "hostile",
+              "wary"
+            ]
+          }
+        },
+        "text": "필요한 일이라면 동행하겠습니다. 다만, 거리를 즐길 기분은 아닙니다.",
+        "tone": "cold"
+      },
+      {
+        "id": "last_day",
+        "when": {
+          "world.day": 7
+        },
+        "text": "마지막 날이군요. ……마스터, 오늘은 조금 더 천천히 걸읍시다.",
+        "repeat": "once_per_run"
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0002_artoria",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_charisma",
+      "name_ko": "카리스마",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_dragon_core",
+      "name_ko": "용의 노심",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_shining_path",
+      "name_ko": "빛나는 길",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_np_excalibur",
+      "name_ko": "약속된 승리의 검",
+      "rank": "A++",
+      "kind": "noble_phantasm",
+      "origin": "np"
+    }
+  ],
+  "notes": "스킬 이름·랭크는 레거시 FGO 데이터 기준. skill_id와 kind(범용/고유) 분류는 제안값. 훅·조건·효과는 Q-17, Q-126 확정 후 정의."
+}

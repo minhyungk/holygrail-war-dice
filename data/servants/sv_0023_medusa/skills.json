@@ -1,0 +1,62 @@
+{
+  "servant_id": "sv_0023_medusa",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "A+",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_independent_action",
+      "name_ko": "단독행동",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_divinity",
+      "name_ko": "신성",
+      "rank": "E-",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_mystic_eyes",
+      "name_ko": "마안",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_monstrous_strength",
+      "name_ko": "괴력",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_blood_temple",
+      "name_ko": "선혈신전",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_np_bellerophon",
+      "name_ko": "기영의 고삐",
+      "rank": "A+",
+      "kind": "noble_phantasm",
+      "origin": "np"
+    }
+  ],
+  "notes": "스킬 이름·랭크는 레거시 FGO 데이터 기준. skill_id와 kind(범용/고유) 분류는 제안값. 훅·조건·효과는 Q-17, Q-126 확정 후 정의."
+}

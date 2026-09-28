@@ -1,0 +1,92 @@
+{
+  "speaker": "ms_ayaka_sajyou",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "new"
+  },
+  "notes": "적 마스터 대사 AI 초안. 태그 범위: 조우·전투 중·영주 사용·처치당할 때·탈락 (D-089). self.phase_won은 화자(이 마스터) 쪽이 그 국면을 이겼는지.",
+  "tags": {
+    "master_encounter": [
+      {
+        "id": "base_01",
+        "text": "……또야. 난 이런 거 하고 싶어서 여기 있는 게 아닌데.",
+        "tone": "grim"
+      },
+      {
+        "id": "base_02",
+        "text": "비켜 줄 생각은 없지? ……그래, 알았어.",
+        "tone": "cold"
+      },
+      {
+        "id": "met_before",
+        "text": "너, 지난번 그 마스터지. 이번엔 쉽게 안 끝나.",
+        "tone": "cold",
+        "when": {
+          "mem.met_before": true
+        },
+        "repeat": "once_per_run"
+      }
+    ],
+    "master_battle": [
+      {
+        "id": "won",
+        "text": "……됐어. 계속해.",
+        "tone": "calm",
+        "when": {
+          "self.phase_won": true
+        }
+      },
+      {
+        "id": "lost",
+        "text": "젠장. ……아직이야, 아직.",
+        "tone": "grim",
+        "when": {
+          "self.phase_won": false
+        }
+      },
+      {
+        "id": "danger",
+        "text": "{servant_class}! ……쓰러지지 마. 부탁이니까.",
+        "tone": "grim",
+        "when": {
+          "self.condition": "danger"
+        }
+      }
+    ],
+    "master_seal_use": [
+      {
+        "id": "buff",
+        "text": "이런 거 쓰고 싶지 않았는데. ──영주로 명령해. 이겨.",
+        "tone": "grim",
+        "when": {
+          "event.purpose": "buff"
+        }
+      },
+      {
+        "id": "escape",
+        "text": "도망치자. 창피해도 상관없어.",
+        "tone": "grim",
+        "when": {
+          "event.purpose": "escape"
+        }
+      }
+    ],
+    "master_executed": [
+      {
+        "id": "base",
+        "text": "……그래. 결국, 여기까지구나.",
+        "tone": "grim"
+      }
+    ],
+    "master_eliminated": [
+      {
+        "id": "base",
+        "text": "살려 주는 거야? ……고마워. 이상하네, 전쟁 중에 이런 말 하는 거.",
+        "tone": "tender"
+      }
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "speaker": "ms_matou_zouken",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "new"
+  },
+  "notes": "적 마스터 대사 AI 초안. 태그 범위: 조우·전투 중·영주 사용·처치당할 때·탈락 (D-089). self.phase_won은 화자(이 마스터) 쪽이 그 국면을 이겼는지.",
+  "tags": {
+    "master_encounter": [
+      {
+        "id": "base_01",
+        "text": "카카카, 늙은이의 밤 산책을 방해하다니. 무례한 애송이로구먼.",
+        "tone": "playful"
+      },
+      {
+        "id": "base_02",
+        "text": "마침 잘 왔느니라. 벌레들이 배가 고프다고 보채던 참이었지.",
+        "tone": "cold"
+      },
+      {
+        "id": "met_before",
+        "text": "또 보는구나. 한 번 놓친 먹이는 두 번 놓치지 않느니라.",
+        "tone": "cold",
+        "when": {
+          "mem.met_before": true
+        },
+        "repeat": "once_per_run"
+      }
+    ],
+    "master_battle": [
+      {
+        "id": "won",
+        "text": "카카카카! 그래, 그렇게 조금씩 파먹혀 가는 게다.",
+        "tone": "playful",
+        "when": {
+          "self.phase_won": true
+        }
+      },
+      {
+        "id": "lost",
+        "text": "……흠. 성가시구먼. 이 몸의 계산이 틀렸을 리 없는데.",
+        "tone": "cold",
+        "when": {
+          "self.phase_won": false
+        }
+      },
+      {
+        "id": "danger",
+        "text": "{servant_class}, 쓸모없는 것. 쓰러질 거면 적어도 상대를 끌고 가거라.",
+        "tone": "cold",
+        "when": {
+          "self.condition": "danger"
+        }
+      }
+    ],
+    "master_seal_use": [
+      {
+        "id": "buff",
+        "text": "영주로 명하노라. 도구는 도구답게, 끝까지 쓰여라.",
+        "tone": "cold",
+        "when": {
+          "event.purpose": "buff"
+        }
+      },
+      {
+        "id": "escape",
+        "text": "물러나라. 늙은이가 오래 사는 비결은, 질 싸움을 하지 않는 게다.",
+        "tone": "calm",
+        "when": {
+          "event.purpose": "escape"
+        }
+      }
+    ],
+    "master_executed": [
+      {
+        "id": "base",
+        "text": "카, 카카……수백 년을 버텨 왔거늘. 이런 애송이에게──.",
+        "tone": "grim"
+      }
+    ],
+    "master_eliminated": [
+      {
+        "id": "base",
+        "text": "살려 둔다? 카카카, 어리석구나. 벌레는 한 마리만 남아도 다시 번지느니라.",
+        "tone": "cold"
+      }
+    ]
+  }
+}

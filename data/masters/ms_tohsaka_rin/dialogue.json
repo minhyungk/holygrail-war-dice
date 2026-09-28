@@ -1,0 +1,93 @@
+{
+  "speaker": "ms_tohsaka_rin",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "new"
+  },
+  "notes": "적 마스터 대사 AI 초안. 태그 범위: 조우·전투 중·영주 사용·처치당할 때·탈락 (D-089). self.phase_won은 화자(이 마스터) 쪽이 그 국면을 이겼는지.",
+  "tags": {
+    "master_encounter": [
+      {
+        "id": "base_01",
+        "text": "마스터구나. 좋아, 이런 건 빨리 끝내는 게 서로 편하잖아?",
+        "tone": "defiant"
+      },
+      {
+        "id": "base_02",
+        "text": "토오사카의 마술사로서──정면으로 상대해 줄게.",
+        "tone": "defiant"
+      },
+      {
+        "id": "met_before",
+        "text": "또 너야? ……좋아, 이번엔 확실하게 결판을 내자고.",
+        "tone": "defiant",
+        "when": {
+          "mem.met_before": true
+        },
+        "repeat": "once_per_run"
+      }
+    ],
+    "master_battle": [
+      {
+        "id": "won",
+        "text": "흥, 당연하지. 계산대로야.",
+        "tone": "playful",
+        "when": {
+          "self.phase_won": true
+        }
+      },
+      {
+        "id": "lost",
+        "text": "잠깐, 이건 계산에 없었는데──!",
+        "tone": "grim",
+        "when": {
+          "self.phase_won": false
+        }
+      },
+      {
+        "id": "danger",
+        "text": "{servant_class}! 정신 차려, 아직 안 끝났어!",
+        "tone": "defiant",
+        "when": {
+          "self.condition": "danger"
+        }
+      }
+    ],
+    "master_seal_use": [
+      {
+        "id": "buff",
+        "text": "영주로 명령할게. ──{servant_class}, 이겨!",
+        "tone": "defiant",
+        "when": {
+          "event.purpose": "buff"
+        }
+      },
+      {
+        "id": "escape",
+        "text": "……철수야. 체면보다 목숨이 먼저라고.",
+        "tone": "grim",
+        "when": {
+          "event.purpose": "escape"
+        }
+      }
+    ],
+    "master_executed": [
+      {
+        "id": "base",
+        "text": "……하아. 이런 결말이라니. 마지막까지 우아하게──는, 역시 무리였나.",
+        "tone": "grim",
+        "notes": "가훈 '언제나 우아하게' 오마주"
+      }
+    ],
+    "master_eliminated": [
+      {
+        "id": "base",
+        "text": "빚진 걸로 해 둘게. 토오사카는 빚을 떼먹지 않으니까.",
+        "tone": "cold"
+      }
+    ]
+  }
+}

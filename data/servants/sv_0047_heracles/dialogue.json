@@ -1,0 +1,392 @@
+{
+  "speaker": "sv_0047_heracles",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "new"
+  },
+  "notes": "태그 ID는 Q-50 확정 전 임시. FGO·레거시 대사도 사용자 검수 전이라 status 기본값 draft. 줄 단위 speaker: narrator는 이 서번트에 대한 서술문. event.purpose / event.result / event.intel_level은 각 이벤트 data에서 온 사실.",
+  "tags": {
+    "summon": [
+      {
+        "id": "fgo_01",
+        "text": "[image berserker_language_1]",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true,
+        "repeat": "once_per_run",
+        "tone": "roar"
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_01",
+        "text": "[image berserker_language_1]─!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true,
+        "tone": "roar"
+      },
+      {
+        "id": "legacy_vs_artoria_01",
+        "when": {
+          "enemy.servant": "sv_0002_artoria"
+        },
+        "text": "[image berserker_language_1]──!!",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건. 원문의 ■ 표기를 포효 토큰으로 바꾸고 괄호 지문은 서술문으로 분리",
+        "tone": "roar"
+      },
+      {
+        "id": "legacy_vs_artoria_01_narr",
+        "speaker": "narrator",
+        "when": {
+          "enemy.servant": "sv_0002_artoria",
+          "enemy.intel_level": 3
+        },
+        "text": "{servant}{이/가} 성검의 빛에 반응하여 전신의 근육이 팽창한다.",
+        "source": "legacy",
+        "notes": "레거시 헤라클레스 대사의 괄호 지문을 서술문으로 분리"
+      },
+      {
+        "id": "legacy_vs_cu_01",
+        "when": {
+          "enemy.servant": "sv_0017_cu_chulainn"
+        },
+        "text": "[image berserker_language_1]──!!",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건. 원문의 ■ 표기를 포효 토큰으로 바꾸고 괄호 지문은 서술문으로 분리",
+        "tone": "roar"
+      },
+      {
+        "id": "legacy_vs_cu_01_narr",
+        "speaker": "narrator",
+        "when": {
+          "enemy.servant": "sv_0017_cu_chulainn",
+          "enemy.intel_level": 3
+        },
+        "text": "{servant}{이/가} 마창의 저주를 감지하고 더욱 포효한다.",
+        "source": "legacy",
+        "notes": "레거시 헤라클레스 대사의 괄호 지문을 서술문으로 분리"
+      },
+      {
+        "id": "legacy_vs_emiya_01",
+        "when": {
+          "enemy.servant": "sv_0011_emiya"
+        },
+        "text": "[image berserker_language_1]──!!",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건. 원문의 ■ 표기를 포효 토큰으로 바꾸고 괄호 지문은 서술문으로 분리",
+        "tone": "roar"
+      },
+      {
+        "id": "legacy_vs_emiya_01_narr",
+        "speaker": "narrator",
+        "when": {
+          "enemy.servant": "sv_0011_emiya"
+        },
+        "text": "{servant}{이/가} 투영 마술의 마력에 반응한다.",
+        "source": "legacy",
+        "notes": "레거시 헤라클레스 대사의 괄호 지문을 서술문으로 분리"
+      },
+      {
+        "id": "legacy_vs_medusa_01",
+        "when": {
+          "enemy.servant": "sv_0023_medusa"
+        },
+        "text": "[image berserker_language_1]──!",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건. 원문의 ■ 표기를 포효 토큰으로 바꾸고 괄호 지문은 서술문으로 분리",
+        "tone": "roar"
+      },
+      {
+        "id": "legacy_vs_medusa_01_narr",
+        "speaker": "narrator",
+        "when": {
+          "enemy.servant": "sv_0023_medusa",
+          "enemy.intel_level": 3
+        },
+        "text": "{servant}{이/가} 고르곤의 마기에 반응하여 전투 자세를 취한다.",
+        "source": "legacy",
+        "notes": "레거시 헤라클레스 대사의 괄호 지문을 서술문으로 분리"
+      },
+      {
+        "id": "legacy_vs_medea_01",
+        "when": {
+          "enemy.servant": "sv_0031_medea"
+        },
+        "text": "[image berserker_language_1]──!",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건. 원문의 ■ 표기를 포효 토큰으로 바꾸고 괄호 지문은 서술문으로 분리",
+        "tone": "roar"
+      },
+      {
+        "id": "legacy_vs_medea_01_narr",
+        "speaker": "narrator",
+        "when": {
+          "enemy.servant": "sv_0031_medea"
+        },
+        "text": "{servant}{이/가} 마녀의 마력을 감지하고 으르렁거린다.",
+        "source": "legacy",
+        "notes": "레거시 헤라클레스 대사의 괄호 지문을 서술문으로 분리"
+      },
+      {
+        "id": "legacy_vs_kojiro_01",
+        "when": {
+          "enemy.servant": "sv_0039_kojiro"
+        },
+        "text": "[image berserker_language_1]──!",
+        "source": "legacy",
+        "notes": "레거시 affinityDialogues.ts 인연 대사(encounter). 정체를 드러내는 표현이면 정보 3단계 조건. 원문의 ■ 표기를 포효 토큰으로 바꾸고 괄호 지문은 서술문으로 분리",
+        "tone": "roar"
+      },
+      {
+        "id": "legacy_vs_kojiro_01_narr",
+        "speaker": "narrator",
+        "when": {
+          "enemy.servant": "sv_0039_kojiro"
+        },
+        "text": "{servant}{이/가} 가느다란 검기에서 뿜어져 나오는 살의에 반응한다.",
+        "source": "legacy",
+        "notes": "레거시 헤라클레스 대사의 괄호 지문을 서술문으로 분리"
+      },
+      {
+        "speaker": "narrator",
+        "text": "{servant}{이/가} 상대를 알아본 듯 낮게 으르렁거린다. 한 번 놓아준 적을, 거인은 잊지 않았다.",
+        "id": "after_release",
+        "when": {
+          "mem.released": true
+        },
+        "repeat": "once_per_run"
+      },
+      {
+        "speaker": "narrator",
+        "text": "지난밤 끝내지 못한 싸움. {servant}의 숨결이, 한층 거칠어진다.",
+        "id": "after_draw",
+        "when": {
+          "mem.last_result": "draw"
+        },
+        "repeat": "once_per_run"
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_01",
+        "text": "[image berserker_language_1]───!!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true,
+        "tone": "roar"
+      },
+      {
+        "id": "fgo_02",
+        "text": "[image berserker_language_1]──!!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true,
+        "tone": "roar"
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_01",
+        "text": "[image berserker_language_1]─!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true,
+        "tone": "roar"
+      },
+      {
+        "id": "fgo_02",
+        "text": "누우우우……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_01",
+        "text": "[image berserker_language_1]─!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true,
+        "tone": "roar"
+      }
+    ],
+    "crisis": [
+      {
+        "id": "roar",
+        "text": "[image berserker_language_1]───!!",
+        "tone": "roar"
+      },
+      {
+        "speaker": "narrator",
+        "text": "무너질 법한 상처에도, 거인은 다시 일어선다. 그 몸에 새겨진 시련은, 이 정도로 끝나지 않는다.",
+        "id": "base_01",
+        "when": {
+          "self.intel_level": 3
+        },
+        "notes": "\"시련\"이 정체를 암시하므로 화자 정보 3단계 조건"
+      },
+      {
+        "speaker": "narrator",
+        "text": "두 번째다. 그러나 {servant}의 눈빛은, 조금도 흐려지지 않았다.",
+        "id": "again",
+        "when": {
+          "mem.near_death_count": {
+            "gte": 1
+          }
+        },
+        "repeat": "once_per_run"
+      }
+    ],
+    "seal_use": [
+      {
+        "speaker": "narrator",
+        "text": "영주의 빛이 스며들자, 광전사의 근육이 한층 부풀어 오른다.",
+        "id": "buff",
+        "when": {
+          "event.purpose": "buff"
+        }
+      },
+      {
+        "id": "np",
+        "when": {
+          "event.purpose": "np"
+        },
+        "text": "[image berserker_language_1]───!!!",
+        "tone": "roar"
+      },
+      {
+        "speaker": "narrator",
+        "text": "명령에 응해, {servant}{이/가} 마지못해 등을 돌린다. 분노를 삼킨 포효가 밤을 가른다.",
+        "id": "escape",
+        "when": {
+          "event.purpose": "escape"
+        }
+      },
+      {
+        "speaker": "narrator",
+        "text": "영주가 광기를 짓누른다. 거인의 몸이 떨리다가, 이윽고 멈췄다.",
+        "id": "block_betrayal",
+        "when": {
+          "event.purpose": "block_betrayal"
+        }
+      }
+    ],
+    "draw": [
+      {
+        "speaker": "narrator",
+        "text": "승부는 나지 않았다. {servant}{은/는} 적이 사라진 어둠을, 여전히 노려보고 있다.",
+        "id": "base_01"
+      }
+    ],
+    "execute": [
+      {
+        "speaker": "narrator",
+        "text": "{servant}{은/는} 아무 소리 없이, 그 광경을 지켜보았다.",
+        "id": "base_01",
+        "notes": "성향 광기: 호감도 처리 미정 (Q-125)"
+      }
+    ],
+    "release": [
+      {
+        "speaker": "narrator",
+        "text": "{servant}{은/는} 아무 소리 없이, 떠나가는 등을 지켜보았다.",
+        "id": "base_01",
+        "notes": "성향 광기: 호감도 처리 미정 (Q-125)"
+      }
+    ],
+    "intel": [
+      {
+        "speaker": "narrator",
+        "text": "{servant}{이/가} 멈춰 서서 한 방향을 노려본다. ──저쪽에, {enemy}{이/가} 있다.",
+        "id": "success",
+        "when": {
+          "event.result": "success"
+        }
+      },
+      {
+        "speaker": "narrator",
+        "text": "{servant}{은/는} 한동안 주위를 둘러보다가, 이내 흥미를 잃었다.",
+        "id": "fail",
+        "when": {
+          "event.result": "fail"
+        }
+      }
+    ],
+    "day_bond": [
+      {
+        "speaker": "narrator",
+        "text": "거대한 체구에 행인들이 길을 비킨다. {servant}{은/는} 묵묵히, 마스터의 걸음에 보폭을 맞춘다.",
+        "id": "urban",
+        "when": {
+          "world.terrain": "urban"
+        }
+      },
+      {
+        "speaker": "narrator",
+        "text": "들판에 선 거인이 바람을 맞으며 눈을 감는다. 광기 너머의, 아주 짧은 평온.",
+        "id": "open",
+        "when": {
+          "world.terrain": "open"
+        }
+      },
+      {
+        "speaker": "narrator",
+        "text": "강가에 앉은 {servant}{이/가} 물살을 바라본다. 산처럼 큰 등이, 이상하리만치 조용하다.",
+        "id": "river",
+        "when": {
+          "world.terrain": "river"
+        }
+      },
+      {
+        "speaker": "narrator",
+        "text": "숲의 짐승들이 거인을 피해 달아난다. {servant}{은/는} 그것을 쫓지 않았다.",
+        "id": "forest",
+        "when": {
+          "world.terrain": "forest"
+        }
+      },
+      {
+        "speaker": "narrator",
+        "text": "{servant}{이/가} 마스터 쪽으로 커다란 손을 내민다. 부서지지 않도록, 아주 조심스럽게.",
+        "id": "loyal",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "repeat": "once_per_run"
+      },
+      {
+        "speaker": "narrator",
+        "text": "{servant}{은/는} 마스터를 한 번 내려다볼 뿐, 따라오지 않았다.",
+        "id": "cold",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "hostile",
+              "wary"
+            ]
+          }
+        }
+      },
+      {
+        "speaker": "narrator",
+        "text": "마지막 날. {servant}{은/는} 마스터의 곁을 한시도 떠나지 않았다.",
+        "id": "last_day",
+        "when": {
+          "world.day": 7
+        },
+        "repeat": "once_per_run"
+      },
+      {
+        "id": "roar",
+        "text": "[image berserker_language_1]─!",
+        "tone": "roar"
+      }
+    ]
+  }
+}
