@@ -1,0 +1,215 @@
+{
+  "speaker": "class:archer",
+  "scope": "class:archer",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "new"
+  },
+  "notes": "클래스 공통 대사 (D-064, D-143). 이 클래스의 서번트 중 전용 대사가 없는 서번트가 쓴다. 어느 서번트가 말해도 어색하지 않도록 말씨는 해라체 선언·독백 위주로 쓰고, 존댓말/반말 어미와 특정 무기·전설 언급을 피했다. 조건은 서번트 대사가 쓰는 조건(event.result, event.purpose) 이하로만 건다 (narrative-engine.md §6.1). status draft, author ai.",
+  "tags": {
+    "summon": [
+      {
+        "id": "summon_01",
+        "text": "아처, 소환에 응했다. ──멀리 보는 것이 나의 일이다. 전장은, 이미 보이고 있다.",
+        "tone": "calm"
+      },
+      {
+        "id": "summon_02",
+        "text": "궁병의 영령, 아처. 계약 성립이다. ……마스터, 첫 명령을 기다리겠다.",
+        "tone": "calm"
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "start_01",
+        "text": "거리는 충분하다. ──이 위치라면, 놓치지 않는다.",
+        "tone": "calm"
+      },
+      {
+        "id": "start_02",
+        "text": "상대가 먼저 움직였다. 좋다, 그만큼 빈틈도 보인다.",
+        "tone": "cold"
+      },
+      {
+        "id": "start_03",
+        "text": "마스터는 몸을 낮추도록. ──여기서부터는, 사선(射線) 위다.",
+        "tone": "calm"
+      }
+    ],
+    "np_open": [
+      {
+        "id": "np_01",
+        "text": "조준 완료. 이 한 발로 끝낸다. ──{np}!"
+      },
+      {
+        "id": "np_02",
+        "text": "피할 곳은 없다. ──{np}!"
+      }
+    ],
+    "victory": [
+      {
+        "id": "win_01",
+        "text": "명중. ……예상대로다.",
+        "tone": "calm"
+      },
+      {
+        "id": "win_02",
+        "text": "끝났다. 다음 표적을 찾는다.",
+        "tone": "calm"
+      }
+    ],
+    "defeat": [
+      {
+        "id": "lose_01",
+        "text": "읽혔……나…… 이 거리에서……",
+        "tone": "grim"
+      },
+      {
+        "id": "lose_02",
+        "text": "……마스터. 끝까지…… 지켜보지, 못했다……",
+        "tone": "grim"
+      }
+    ],
+    "draw": [
+      {
+        "id": "draw_01",
+        "text": "결판은 나지 않았다. ……다음에는, 첫 수로 끝낸다.",
+        "tone": "defiant"
+      }
+    ],
+    "crisis": [
+      {
+        "id": "crisis_01",
+        "text": "……아직이다. 조준하는 눈이 살아 있는 한, 싸울 수 있다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "crisis_02",
+        "text": "피해는 컸다. ──그렇다면, 남은 한 수를 정확히 쓸 뿐이다.",
+        "tone": "grim"
+      }
+    ],
+    "seal_use": [
+      {
+        "id": "np",
+        "when": {
+          "event.purpose": "np"
+        },
+        "text": "영주인가. 좋다, 아껴 둘 이유는 없다. ──전력으로 간다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "escape",
+        "when": {
+          "event.purpose": "escape"
+        },
+        "text": "후퇴한다. ……현명한 판단이다. 궁수는, 살아남아야 다시 쏠 수 있다.",
+        "tone": "grim"
+      },
+      {
+        "id": "block_betrayal",
+        "when": {
+          "event.purpose": "block_betrayal"
+        },
+        "text": "……영주로 고삐를 쥐었나. 그것도, 하나의 답이다.",
+        "tone": "cold"
+      }
+    ],
+    "execute": [
+      {
+        "id": "execute_01",
+        "text": "……처리는 끝났다. 전쟁이란, 원래 이런 것이다.",
+        "tone": "grim"
+      }
+    ],
+    "release": [
+      {
+        "id": "release_01",
+        "text": "놓아주었다. ──그 판단이 옳았는지는, 결과가 알려 줄 것이다.",
+        "tone": "calm"
+      }
+    ],
+    "intel": [
+      {
+        "id": "success",
+        "when": {
+          "event.result": "success"
+        },
+        "text": "멀리서 지켜봤다. ──{enemy}. 움직임은, 이미 파악했다.",
+        "tone": "calm"
+      },
+      {
+        "id": "fail",
+        "when": {
+          "event.result": "fail"
+        },
+        "text": "……아무것도 보이지 않는다. 숨는 데 능한 상대다. 시간을 두고 보겠다.",
+        "tone": "calm"
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "bond_01",
+        "text": "높은 곳에 오르면, 거리가 한눈에 보인다. ……이런 풍경도, 가끔은 봐 둘 만하다.",
+        "tone": "calm"
+      },
+      {
+        "id": "bond_02",
+        "text": "무리하지 않는 편이 좋다, 마스터. 싸움은 밤에 한다. 낮은, 쉬는 시간이다.",
+        "tone": "tender"
+      }
+    ],
+    "day_bond_fail": [
+      {
+        "id": "fail_01",
+        "text": "……감시를 소홀히 할 수는 없다. 이런 산책은, 전쟁이 끝난 뒤에 해도 늦지 않다.",
+        "tone": "cold"
+      }
+    ],
+    "mana_supply": [
+      {
+        "id": "great",
+        "when": {
+          "event.result": "great"
+        },
+        "text": "……충분하다. 이 정도면, 어떤 거리에서도 맞힐 수 있다.",
+        "tone": "calm"
+      },
+      {
+        "id": "success",
+        "when": {
+          "event.result": "success"
+        },
+        "text": "받았다. 조준이 한결 선명해졌다.",
+        "tone": "calm"
+      },
+      {
+        "id": "normal",
+        "when": {
+          "event.result": "normal"
+        },
+        "text": "문제없다. 평소대로 싸울 수 있다.",
+        "tone": "calm"
+      },
+      {
+        "id": "fail",
+        "when": {
+          "event.result": "fail"
+        },
+        "text": "……무리할 필요는 없다. 부족한 몫은, 정확함으로 메운다.",
+        "tone": "grim"
+      },
+      {
+        "id": "fumble",
+        "when": {
+          "event.result": "fumble"
+        },
+        "text": "……오늘은 여기까지다. 이러다가는 마스터의 회로가 먼저 타 버린다.",
+        "tone": "grim"
+      }
+    ]
+  }
+}

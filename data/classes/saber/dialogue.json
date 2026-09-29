@@ -1,0 +1,215 @@
+{
+  "speaker": "class:saber",
+  "scope": "class:saber",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "new"
+  },
+  "notes": "클래스 공통 대사 (D-064, D-143). 이 클래스의 서번트 중 전용 대사가 없는 서번트가 쓴다. 어느 서번트가 말해도 어색하지 않도록 말씨는 해라체 선언·독백 위주로 쓰고, 존댓말/반말 어미와 특정 무기·전설 언급을 피했다. 조건은 서번트 대사가 쓰는 조건(event.result, event.purpose) 이하로만 건다 (narrative-engine.md §6.1). status draft, author ai.",
+  "tags": {
+    "summon": [
+      {
+        "id": "summon_01",
+        "text": "세이버의 이름으로 현계했다. ──이 검을 맡길 마스터를, 확인하겠다.",
+        "tone": "calm"
+      },
+      {
+        "id": "summon_02",
+        "text": "검의 영령, 세이버. 계약은 여기서 이루어졌다. ──지금부터 이 검은, 마스터의 뜻과 함께한다.",
+        "tone": "calm"
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "start_01",
+        "text": "검을 뽑는다. ──물러설 이유는, 어디에도 없다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "start_02",
+        "text": "상대가 누구든 상관없다. 이 검이 닿는 곳까지가, 나의 싸움이다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "start_03",
+        "text": "마스터는 뒤로. ──여기서부터는, 세이버의 영역이다.",
+        "tone": "calm"
+      }
+    ],
+    "np_open": [
+      {
+        "id": "np_01",
+        "text": "마력, 검에 집속. ──진명 해방. {np}!"
+      },
+      {
+        "id": "np_02",
+        "text": "이 일격에, 전설의 전부를 싣는다. ──{np}!"
+      }
+    ],
+    "victory": [
+      {
+        "id": "win_01",
+        "text": "……끝났다. 검을 거둔다.",
+        "tone": "calm"
+      },
+      {
+        "id": "win_02",
+        "text": "승부는 났다. 마스터, 다친 곳은 없는가.",
+        "tone": "calm"
+      }
+    ],
+    "defeat": [
+      {
+        "id": "lose_01",
+        "text": "검이…… 닿지, 않았나……",
+        "tone": "grim"
+      },
+      {
+        "id": "lose_02",
+        "text": "마스터…… 부디, 살아남기를……",
+        "tone": "grim"
+      }
+    ],
+    "draw": [
+      {
+        "id": "draw_01",
+        "text": "결판은 미뤄졌다. ──다음에는, 반드시 벤다.",
+        "tone": "defiant"
+      }
+    ],
+    "crisis": [
+      {
+        "id": "crisis_01",
+        "text": "……아직이다. 검을 쥔 손이 남아 있는 한, 쓰러지지 않는다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "crisis_02",
+        "text": "상처 따위, 검을 내려놓을 이유가 되지 않는다.",
+        "tone": "defiant"
+      }
+    ],
+    "seal_use": [
+      {
+        "id": "np",
+        "when": {
+          "event.purpose": "np"
+        },
+        "text": "영주의 명, 받았다. ──이 검에, 전부를 싣는다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "escape",
+        "when": {
+          "event.purpose": "escape"
+        },
+        "text": "……물러나라는 명령인가. 알겠다. 이 검은, 다음을 위해 거둔다.",
+        "tone": "grim"
+      },
+      {
+        "id": "block_betrayal",
+        "when": {
+          "event.purpose": "block_betrayal"
+        },
+        "text": "영주가 몸을 묶는다. ……그렇게까지 해서 붙잡겠다는 뜻이라면, 알았다.",
+        "tone": "cold"
+      }
+    ],
+    "execute": [
+      {
+        "id": "execute_01",
+        "text": "……결정은 내려졌다. 벤 것의 무게는, 이 검이 기억한다.",
+        "tone": "grim"
+      }
+    ],
+    "release": [
+      {
+        "id": "release_01",
+        "text": "패자는 떠났다. ──그 선택의 옳고 그름은, 전쟁이 끝난 뒤에 알게 될 것이다.",
+        "tone": "calm"
+      }
+    ],
+    "intel": [
+      {
+        "id": "success",
+        "when": {
+          "event.result": "success"
+        },
+        "text": "{enemy}의 흔적을 찾았다. ──이것으로, 검을 겨눌 곳이 정해졌다.",
+        "tone": "calm"
+      },
+      {
+        "id": "fail",
+        "when": {
+          "event.result": "fail"
+        },
+        "text": "……허탕이다. 서두를 필요는 없다. 상대도 언젠가는 모습을 드러낸다.",
+        "tone": "calm"
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "bond_01",
+        "text": "검을 들지 않는 시간도, 나쁘지 않다. ……전쟁 중이라는 것은, 잊지 않았다.",
+        "tone": "tender"
+      },
+      {
+        "id": "bond_02",
+        "text": "이 거리는 평온하다. ──그렇기에 더욱, 지킬 가치가 있다.",
+        "tone": "calm"
+      }
+    ],
+    "day_bond_fail": [
+      {
+        "id": "fail_01",
+        "text": "……지금은 한가로이 걸을 때가 아니다. 경계는, 늦출 수 없다.",
+        "tone": "cold"
+      }
+    ],
+    "mana_supply": [
+      {
+        "id": "great",
+        "when": {
+          "event.result": "great"
+        },
+        "text": "마력이 검 끝까지 차오른다. ──지금이라면, 어떤 적도 베어 넘긴다.",
+        "tone": "calm"
+      },
+      {
+        "id": "success",
+        "when": {
+          "event.result": "success"
+        },
+        "text": "마력, 확실히 받았다. 헛되이 쓰지 않겠다.",
+        "tone": "calm"
+      },
+      {
+        "id": "normal",
+        "when": {
+          "event.result": "normal"
+        },
+        "text": "문제없다. 싸우기에는 충분하다.",
+        "tone": "calm"
+      },
+      {
+        "id": "fail",
+        "when": {
+          "event.result": "fail"
+        },
+        "text": "……무리할 것 없다. 모자란 몫은, 검으로 메운다.",
+        "tone": "grim"
+      },
+      {
+        "id": "fumble",
+        "when": {
+          "event.result": "fumble"
+        },
+        "text": "……오늘은 여기까지다. 마스터의 몸이 먼저다.",
+        "tone": "grim"
+      }
+    ]
+  }
+}

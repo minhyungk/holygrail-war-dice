@@ -5,13 +5,14 @@
 - 모든 튜닝 수치는 `constants` 한 곳에만 둔다 (AGENTS.md 규칙 2, 설계 기둥 6).
 - 모든 참조는 ID로 한다. 이름 문자열로 참조하지 않는다.
 - 종류(훅, 효과 종류, 조건 종류)는 코드 enum, 인스턴스(스킬, 대사, 서번트)는 데이터 (D-008).
+- **범용 우선.** 서번트별 차이는 범용 → 유형·특성 → 개별 오버라이드 3층의 데이터로만 표현한다 (D-143, §7).
 
 ## 2. 현재 검증과 남은 검증
 - `src/data/schema.ts`의 zod 스키마로 JSON을 검증한다. constants 키별 값 형식은 `src/data/constants.ts`에서 검증한다 (D-091).
 - 현재 검사: 프로필 ID·랭크, 대사 형식·태그 안 ID 중복·자리표시자·사실 네임스페이스, constants 중복·값 형식, 국면 목록, 타일 인접 ID·중앙 타일.
 - 없는 constants 키 참조는 타입 검사에서 검출한다.
 - **구현 (D-142):** 스킬 효과 정의 스키마 검증, 보유 스킬 43개의 정의 존재 검사, 고정량 스킬의 constants 키 검사.
-- **미구현:** 필수 대사 태그 커버리지, 사실 이름 전체 목록 검증. 필수 태그 기준은 Q-50이다.
+- **미구현:** 필수 대사 태그 커버리지, 사실 이름 전체 목록 검증, `classes/*/dialogue.json`의 자동 테스트 (현재 `data.test.ts` 목록에 없음). 필수 태그 기준은 Q-50이다.
 
 ## 3. ID 규칙 [확정]
 snake_case, 접두사 고정, 한 번 정하면 변경 금지.
@@ -32,13 +33,14 @@ snake_case, 접두사 고정, 한 번 정하면 변경 금지.
 data/
   servants/{servant_id}/  profile.json, skills.json, dialogue.json, voice.md
   masters/{master_id}/    profile.json, dialogue.json, voice.md
+  classes/{class}/       dialogue.json
   common/                narrator.json, beats.json, labels.json, summon.json
   constants.json
   phases.json
   tiles.json
 ```
 - 서번트 ID: `sv_{FGO 번호 4자리}_{영문 이름}` (D-066). 판 시작 시 해당 판의 서번트·마스터 데이터를 불러온다 (D-065).
-- `classes/{class}/dialogue.json`은 로더가 지원하나 현재 파일은 없다.
+- `classes/{class}/dialogue.json`: 클래스 공통 대사. 7클래스 초안이 있다 (D-143, draft).
 - 전역 스킬 효과 정의는 `data/common/skills.json`에 있다 (D-142, 형식은 아래 skills). `hooks`는 코드 `src/engine/hooks.ts`와 `schema.ts`의 `HOOK_IDS`, 효과·조건 종류는 `schema.ts`의 `SkillEffect`·`SkillWhen`으로 정의한다. `effect_types.json`, `condition_types.json`, `items.json`은 **예정 파일이며 현재 없다**. 현재 촉매 소환은 서번트 선택 방식이다.
 
 ### 파일별 역할
@@ -182,3 +184,36 @@ data/
 - `legacy/data-templates/events.csv`, `contracts.csv`: 사건·연합 폐기(D-024)로 불필요
 - `legacy/data-templates/masters.csv`의 `base_affinity_to_player`: 진영 호감도 폐기(D-029)로 불필요
 - `legacy/data-templates/` 폴더는 당분간 유지 (D-057)
+
+## 7. 범용 우선 3층 구조 [확정] (D-143)
+서번트 풀은 Atlas 수록 서번트 약 400기까지 확장을 전제로 한다. 시작 7기는 프로토타입이다.
+서번트에 관한 규칙·콘텐츠는 아래 3층으로 해석한다. 위층 데이터가 있으면 위층을 쓰고, 없으면 아래층으로 떨어진다.
+
+| 층 | 단위 | 작성 방식 | 필요 여부 |
+|---|---|---|---|
+| 1. 개별 오버라이드 | 특정 서번트 (예: 아킬레우스 발뒤꿈치, 헤라클레스 12시련) | 직접 작성. 유명 서번트만 | 선택 |
+| 2. 유형·특성 | 클래스, 성향(`alignment`), 성격(`temperament`), Atlas 특성(traits) | 유형별로 한 번 작성 + 서번트마다 분류 필드 | 분류 필드는 필수, 유형별 콘텐츠는 권장 |
+| 3. 범용 기본값 | 모든 서번트 | 스탯·랭크 등 필수 데이터로 계산하는 규칙, 공통 나레이션 | 필수 (항상 존재) |
+
+### 7.1 규칙
+1. **3층만으로 동작한다.** 1·2층 데이터가 없는 서번트도 한 판을 끝까지 진행할 수 있어야 하며, 오류나 빈 출력이 생기면 안 된다.
+2. **오버라이드는 데이터로만.** 공용 어휘(훅·조건·효과 종류, 대사 `when`의 사실 이름)를 조합해 표현한다. 서번트 ID로 분기하는 코드는 쓰지 않는다 (AGENTS.md 규칙 10). 어휘로 표현할 수 없으면 서번트 전용 코드가 아니라 범용 어휘를 추가한다 (D-008).
+3. **7기에 특화하지 않는다.** 새 시스템 문서에는 "7기 밖의 서번트는 어느 층으로 동작하는가"를 적는다.
+4. 하위층 대사는 상위층 대사보다 조건을 더 걸지 않는다 (`systems/narrative-engine.md` §6.1).
+
+### 7.2 시스템별 적용
+| 시스템 | 3층 범용 | 2층 유형·특성 | 1층 오버라이드 | 현재 상태 |
+|---|---|---|---|---|
+| 대사 | 공통 나레이션 `common/narrator.json` | 클래스 대사 `classes/{class}/dialogue.json`, Atlas 보이스 자동 수집 | 서번트 `dialogue.json`, 조합 대사, `voice.md` | 계층 선택 구현. 클래스 대사 7종 초안. 서번트 대사의 공통 범용 폴백·Atlas 보이스 확장 수집은 미구현 |
+| 스킬 | 정의 없는 고유 스킬의 처리 [TBD] | 범용 스킬 (`kind: generic`, 랭크 연동) | 고유 스킬·보구 개별 정의 | 43개 정의 (D-142). 현재 검증은 보유 스킬 전부의 정의를 요구한다 |
+| 호감도 | 공통 증감 `affinity.delta_*` | 성격별 초기값·계수 `affinity.init_by_temperament`, `affinity.gain_mult`, `affinity.penalty_mult`. 성향별 처치/방면 | 특정 마스터·상대에 대한 반응 [제안] | 3층·2층 구현. 선택에 대한 성격별 반응표 [제안] |
+| 약점 | 진명 공개 시 상대의 약한 국면으로 유도 [제안] | Atlas 특성 상성 [제안] | 개별 약점 [제안] | 미설계 |
+| 프로필·이미지 | Atlas 자동 수집 | — | — | 7기 생성 완료. 수집 스크립트 확장 필요 (`05-legacy.md` §3) |
+
+### 7.3 서번트 추가 기준
+| 등급 | 항목 | 방법 |
+|---|---|---|
+| 필수 | `profile.json` (스탯, 클래스, 보구, 이미지, 성향), `skills.json` (스킬 이름·랭크) | 수집 스크립트 자동 생성 |
+| 필수 | `temperament` 분류 (현재 8종, `affinity.init_by_temperament`), `alignment` 검증 | AI 초안 → 사용자 검수 |
+| 선택 | 전용 대사, `voice.md`, 고유 스킬 효과, 약점, 조합 대사 | 직접 작성 (유명 서번트만) |
+- 검증 [제안]: 필수 데이터만 있는 가상 서번트로 한 판을 헤드리스 실행해 오류와 빈 대사 슬롯이 없는지 확인한다. 현재 미구현.

@@ -1,0 +1,215 @@
+{
+  "speaker": "class:assassin",
+  "scope": "class:assassin",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "new"
+  },
+  "notes": "클래스 공통 대사 (D-064, D-143). 이 클래스의 서번트 중 전용 대사가 없는 서번트가 쓴다. 어느 서번트가 말해도 어색하지 않도록 말씨는 해라체 선언·독백 위주로 쓰고, 존댓말/반말 어미와 특정 무기·전설 언급을 피했다. 조건은 서번트 대사가 쓰는 조건(event.result, event.purpose) 이하로만 건다 (narrative-engine.md §6.1). status draft, author ai.",
+  "tags": {
+    "summon": [
+      {
+        "id": "summon_01",
+        "text": "어새신, 부름에 응했다. ──그림자에 서는 것이 이 클래스의 일이다. 명을.",
+        "tone": "calm"
+      },
+      {
+        "id": "summon_02",
+        "text": "암살자의 영령, 어새신. 계약은 성립했다. ──모습은 보이지 않아도, 곁에 있다.",
+        "tone": "calm"
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "start_01",
+        "text": "기척을 지운다. ──눈치챘을 때는, 이미 끝나 있다.",
+        "tone": "cold"
+      },
+      {
+        "id": "start_02",
+        "text": "정면 승부는 취향이 아니지만……. 좋다, 상대해 주겠다.",
+        "tone": "playful"
+      },
+      {
+        "id": "start_03",
+        "text": "한 번이면 된다. ──빈틈은, 반드시 생긴다.",
+        "tone": "calm"
+      }
+    ],
+    "np_open": [
+      {
+        "id": "np_01",
+        "text": "그 목숨, 받아 간다. ──{np}!"
+      },
+      {
+        "id": "np_02",
+        "text": "숨겨 온 일격을, 지금. ──{np}!"
+      }
+    ],
+    "victory": [
+      {
+        "id": "win_01",
+        "text": "……끝났다. 흔적은 남기지 않는다.",
+        "tone": "calm"
+      },
+      {
+        "id": "win_02",
+        "text": "빈틈을 보인 쪽이 진다. 그것뿐이다.",
+        "tone": "calm"
+      }
+    ],
+    "defeat": [
+      {
+        "id": "lose_01",
+        "text": "……그림자가…… 벗겨졌나……",
+        "tone": "grim"
+      },
+      {
+        "id": "lose_02",
+        "text": "마스터…… 부디, 몸을 숨기기를……",
+        "tone": "grim"
+      }
+    ],
+    "draw": [
+      {
+        "id": "draw_01",
+        "text": "오늘은 여기까지. ──다음 밤, 그림자 속에서 다시 만나게 될 것이다.",
+        "tone": "defiant"
+      }
+    ],
+    "crisis": [
+      {
+        "id": "crisis_01",
+        "text": "……아직이다. 숨이 붙어 있는 한, 칼날은 목을 노린다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "crisis_02",
+        "text": "궁지에 몰린 그림자가, 가장 깊다.",
+        "tone": "cold"
+      }
+    ],
+    "seal_use": [
+      {
+        "id": "np",
+        "when": {
+          "event.purpose": "np"
+        },
+        "text": "영주의 명이라면. ──숨겨 둔 것을, 꺼내겠다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "escape",
+        "when": {
+          "event.purpose": "escape"
+        },
+        "text": "물러난다. 사라지는 것이라면, 누구보다 능숙하다.",
+        "tone": "grim"
+      },
+      {
+        "id": "block_betrayal",
+        "when": {
+          "event.purpose": "block_betrayal"
+        },
+        "text": "……영주로 목줄을 채우는가. 좋다. 당분간은, 얌전히 있겠다.",
+        "tone": "cold"
+      }
+    ],
+    "execute": [
+      {
+        "id": "execute_01",
+        "text": "……처리했다. 이것이, 이 클래스의 본분이다.",
+        "tone": "grim"
+      }
+    ],
+    "release": [
+      {
+        "id": "release_01",
+        "text": "살려 보냈다. ──그 목숨을 거둘 기회는, 또 올지도 모른다.",
+        "tone": "calm"
+      }
+    ],
+    "intel": [
+      {
+        "id": "success",
+        "when": {
+          "event.result": "success"
+        },
+        "text": "숨어서 지켜봤다. ──{enemy}. 버릇까지, 전부 봤다.",
+        "tone": "calm"
+      },
+      {
+        "id": "fail",
+        "when": {
+          "event.result": "fail"
+        },
+        "text": "……이쪽의 기척을 눈치챘다. 쉽지 않은 상대다.",
+        "tone": "calm"
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "bond_01",
+        "text": "낮의 거리는 소란스럽다. ……그림자가 설 곳이 없어서, 조금 어색하다.",
+        "tone": "playful"
+      },
+      {
+        "id": "bond_02",
+        "text": "이렇게 곁을 걷는 것도, 호위의 일부다.",
+        "tone": "calm"
+      }
+    ],
+    "day_bond_fail": [
+      {
+        "id": "fail_01",
+        "text": "……사람이 너무 많다. 이런 곳에서는, 등 뒤가 신경 쓰인다.",
+        "tone": "cold"
+      }
+    ],
+    "mana_supply": [
+      {
+        "id": "great",
+        "when": {
+          "event.result": "great"
+        },
+        "text": "……몸이 가볍다. 지금이라면, 누구의 등 뒤라도 잡을 수 있다.",
+        "tone": "calm"
+      },
+      {
+        "id": "success",
+        "when": {
+          "event.result": "success"
+        },
+        "text": "받았다. 칼끝이 한결 날카롭다.",
+        "tone": "calm"
+      },
+      {
+        "id": "normal",
+        "when": {
+          "event.result": "normal"
+        },
+        "text": "문제없다. 움직이는 데 지장은 없다.",
+        "tone": "calm"
+      },
+      {
+        "id": "fail",
+        "when": {
+          "event.result": "fail"
+        },
+        "text": "……무리하지 않아도 된다. 부족한 만큼은, 기술로 메운다.",
+        "tone": "grim"
+      },
+      {
+        "id": "fumble",
+        "when": {
+          "event.result": "fumble"
+        },
+        "text": "……오늘은 그만. 마스터가 쓰러지면, 지킬 대상이 없어진다.",
+        "tone": "grim"
+      }
+    ]
+  }
+}
