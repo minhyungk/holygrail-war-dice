@@ -103,7 +103,8 @@ export class Narrator {
           const narr = line.speaker === 'narrator';
           const key = `${narr ? `narrator@${owner}` : owner}|${tag}`;
           const arr = this.lines.get(key) ?? [];
-          arr.push({ line, textId: `tx_${owner}_${tag}_${line.id}`, layer, speaker: narr ? 'narrator' : owner });
+          // 공통 나레이션 파일(speaker: narrator)의 줄도 화자는 narrator다: 대사처럼 보이지 않게
+          arr.push({ line, textId: `tx_${owner}_${tag}_${line.id}`, layer, speaker: narr || file.speaker === 'narrator' ? 'narrator' : owner });
           this.lines.set(key, arr);
         }
     };
@@ -187,16 +188,21 @@ export class Narrator {
       case 'night_started':
         this.newScene();
         break;
-      case 'bond':
+      case 'action_started':
+        // 판정 행동의 장면은 여기서 연다 (D-141): 도입 나레이션이 주사위보다 먼저. 결과 비트는 같은 장면을 잇는다
+        if (e.data.faction !== P) return null;
         this.newScene();
+        if (e.data.target) ctx.enemy = e.data.target;
+        ctx.event = { action: e.data.action };
+        break;
+      case 'bond':
         ctx.event = { result: e.data.result };
         break;
       case 'mana_supplied':
-        this.newScene();
         ctx.event = { result: e.data.result };
         break;
       case 'intel_gained':
-        this.newScene();
+        if (e.data.cause === 'np') return null; // 보구 비트가 공개를 서술한다. 전투 장면은 유지한다.
         ctx.enemy = e.data.target;
         ctx.event = { result: e.data.result, intel_level: e.data.result === 'success' ? e.data.level_to : null, cause: e.data.cause };
         break;

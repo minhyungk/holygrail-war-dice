@@ -58,14 +58,6 @@
     ],
     "master_seal_use": [
       {
-        "id": "buff",
-        "text": "영주로 명령할게. ──{servant_class}, 이겨!",
-        "tone": "defiant",
-        "when": {
-          "event.purpose": "buff"
-        }
-      },
-      {
         "id": "escape",
         "text": "……철수야. 체면보다 목숨이 먼저라고.",
         "tone": "grim",

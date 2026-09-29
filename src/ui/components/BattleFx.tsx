@@ -1,10 +1,10 @@
 // 전투 화면 연출 층 (D-133). 판정·규칙과 무관한 장식만 그린다.
-// 효과는 잠깐 떴다 사라지는 목록으로 관리한다: VS, 국면 배너, 기적, 베기·피해, 방어, 보구, 위험, 소멸, 결과 도장.
+// 효과는 잠깐 떴다 사라지는 목록으로 관리한다: VS, 국면 배너, 기적, 베기·피해, 방어, 보구, 위험, 소멸, 결과 도장, 스킬 발동.
 import type { CSSProperties } from 'react';
 import { clsStyle, LABELS } from './common';
 import { RubyText } from './Ruby';
 
-export type FxKind = 'vs' | 'phase' | 'miracle' | 'slash' | 'dmg' | 'guard' | 'np' | 'danger' | 'death' | 'result';
+export type FxKind = 'vs' | 'phase' | 'miracle' | 'slash' | 'dmg' | 'guard' | 'np' | 'danger' | 'death' | 'result' | 'skill';
 export interface Fx {
   id: number;
   kind: FxKind;
@@ -15,6 +15,8 @@ export interface Fx {
   c?: { name: string; cls: string | null };
   cls?: string | null;
   tone?: 'win' | 'lose' | 'draw' | 'escape';
+  /** 같은 순간에 뜬 효과의 순번 (쌓아 보이기) */
+  n?: number;
 }
 
 const sideStyle = (side?: 'a' | 'c'): CSSProperties => (side === 'c' ? { left: '78%' } : side === 'a' ? { left: '22%' } : {});
@@ -86,6 +88,14 @@ export function FxLayer({ fx }: { fx: Fx[] }) {
                 {Array.from({ length: 14 }, (_, i) => (
                   <i key={i} style={{ ['--k' as string]: i }} />
                 ))}
+              </div>
+            );
+          case 'skill':
+            // 스킬 발동 (D-142): 발동한 쪽 카드 위에 이름표. 같은 순간 여러 개면 아래로 쌓인다 (n = 순번)
+            return (
+              <div key={f.id} className={`fx-skill ${f.side ?? ''}`} style={{ ...sideStyle(f.side), ['--n' as string]: f.n ?? 0 }}>
+                <small>✦ {f.sub}</small>
+                <b>{f.text}</b>
               </div>
             );
           case 'result':

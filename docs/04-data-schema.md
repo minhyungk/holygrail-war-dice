@@ -6,15 +6,12 @@
 - 모든 참조는 ID로 한다. 이름 문자열로 참조하지 않는다.
 - 종류(훅, 효과 종류, 조건 종류)는 코드 enum, 인스턴스(스킬, 대사, 서번트)는 데이터 (D-008).
 
-## 2. 검증 [제안]
-- JSON 로드 시(또는 테스트에서) zod 스키마로 검증한다.
-- 검증 항목:
-  - 존재하지 않는 `hook_id` / `effect_type` / `condition_type` / `skill_id` / `servant_id` 참조
-  - 어떤 훅에도 붙지 않은 스킬 (죽은 스킬 리포트)
-  - 스킬이 하나도 없는 서번트
-  - 필수 상황 태그에 대사가 없는 서번트 (`systems/text.md` §3.4 기준)
-  - ID 중복, 랭크 범위 이탈
-  - 코드가 `constants`에 없는 키를 참조하는지
+## 2. 현재 검증과 남은 검증
+- `src/data/schema.ts`의 zod 스키마로 JSON을 검증한다. constants 키별 값 형식은 `src/data/constants.ts`에서 검증한다 (D-091).
+- 현재 검사: 프로필 ID·랭크, 대사 형식·태그 안 ID 중복·자리표시자·사실 네임스페이스, constants 중복·값 형식, 국면 목록, 타일 인접 ID·중앙 타일.
+- 없는 constants 키 참조는 타입 검사에서 검출한다.
+- **구현 (D-142):** 스킬 효과 정의 스키마 검증, 보유 스킬 43개의 정의 존재 검사, 고정량 스킬의 constants 키 검사.
+- **미구현:** 필수 대사 태그 커버리지, 사실 이름 전체 목록 검증. 필수 태그 기준은 Q-50이다.
 
 ## 3. ID 규칙 [확정]
 snake_case, 접두사 고정, 한 번 정하면 변경 금지.
@@ -30,76 +27,76 @@ snake_case, 접두사 고정, 한 번 정하면 변경 금지.
 | `tl_` | 타일 |
 | `it_` | 아이템 |
 
-## 4. 폴더 구조 [확정] (D-063, D-064)
-서번트 관련 데이터는 서번트별 폴더에 모은다. 상세: `systems/narrative-engine.md` §5.1
-```
+## 4. 현재 데이터 파일 (D-063, D-064, D-137)
+```text
 data/
   servants/{servant_id}/  profile.json, skills.json, dialogue.json, voice.md
-  masters/{master_id}/    profile.json, dialogue.json, voice.md  (`content/masters.md`)
-  classes/{class}/        dialogue.json
-  common/                 narrator.json
-  constants.json, phases.json, hooks.json, effect_types.json, condition_types.json, skills.json(스킬 정의), tiles.json, items.json, masters/…
+  masters/{master_id}/    profile.json, dialogue.json, voice.md
+  common/                narrator.json, beats.json, labels.json, summon.json
+  constants.json
+  phases.json
+  tiles.json
 ```
-- 판 시작 시 그 판에 나오는 서번트 폴더만 불러온다 (D-065)
-- 서번트 ID: `sv_{FGO 번호 4자리}_{영문 이름}` [확정] (D-066)
+- 서번트 ID: `sv_{FGO 번호 4자리}_{영문 이름}` (D-066). 판 시작 시 해당 판의 서번트·마스터 데이터를 불러온다 (D-065).
+- `classes/{class}/dialogue.json`은 로더가 지원하나 현재 파일은 없다.
+- 전역 스킬 효과 정의는 `data/common/skills.json`에 있다 (D-142, 형식은 아래 skills). `hooks`는 코드 `src/engine/hooks.ts`와 `schema.ts`의 `HOOK_IDS`, 효과·조건 종류는 `schema.ts`의 `SkillEffect`·`SkillWhen`으로 정의한다. `effect_types.json`, `condition_types.json`, `items.json`은 **예정 파일이며 현재 없다**. 현재 촉매 소환은 서번트 선택 방식이다.
 
-## 4.1 데이터 파일 목록
-| 파일 | 내용 | 필요 시점 |
-|---|---|---|
-| `constants` | 모든 튜닝 수치 | P1 |
-| `servants/{id}/profile` | 서번트 스탯/성향/태그 | P1 |
-| `phases` | 국면 유형 | P1 |
-| `skills` | 스킬 정의 | P1 |
-| `servants/{id}/skills` | 서번트 × 스킬 × 랭크 연결 | P1 |
-| `effect_types` | 효과 종류 목록 (코드 enum과 동기) | P1 |
-| `condition_types` | 조건 종류 목록 (코드 enum과 동기) | P1 |
-| `hooks` | 훅 목록 (참조용, 원본은 코드) | P1 |
-| `servants/{id}/dialogue`, `classes/{class}/dialogue`, `common/narrator` | 대사 (형식: `systems/narrative-engine.md` §5) | P2 |
-| `masters` | 마스터 정의 | P2 |
-| `tiles` | 맵 타일 | P3 |
-| `items` | 촉매, 제작물 | P3 |
+### 파일별 역할
+| 파일 | 내용 |
+|---|---|
+| `constants.json` | 판정·자원·AI·텍스트 튜닝 값 |
+| `phases.json` | 국면 유형·사용 스탯·선택 방식 |
+| `tiles.json` | 맵 25칸·역할·인접 관계·이미지 격자선 |
+| `servants/{id}/profile.json` | 스탯·성향·성격·보구·이미지 |
+| `servants/{id}/skills.json` | 보유 스킬 이름·랭크 목록 (효과 정의 아님) |
+| `masters/{id}/profile.json` | 이름·출전·성향·미정 스탯·초상 슬롯 |
+| `*/dialogue.json`, `common/narrator.json` | 태그별 대사·서술문 |
+| `common/beats.json` | 이벤트별 비트 크기·슬롯·조건 |
+| `common/labels.json` | 클래스 이름·문장·미공개 호칭 등 |
+| `common/summon.json` | 소환 영창과 작성·검수 정보 |
 
 ## 5. 필드 정의
-`legacy/data-templates/*.csv`의 헤더를 옮겨 온 것이다. 이 문서가 기준이며, CSV 템플릿은 참고용으로만 남긴다.
+현재 JSON·스키마와 맞춘 필드 목록이다 (D-137). CSV 템플릿은 레거시 참고용이다. 아래에서 예정으로 표시한 스킬·아이템 정의는 아직 구현하지 않는다.
 
 ### constants
 파일: `data/constants.json` = `{ "constants": [ {key, value, unit, doc_ref, status, note}, … ] }`. `status`는 `확정` / `임시값`만 (제안·TBD 값은 넣지 않는다).
 | 필드 | 설명 |
 |---|---|
-| `key` | 도메인 접두 + snake_case (`dice.`, `combat.`, `phase.`, `affinity.`, `mana.`, `day.`, `ai.`, `skill.`, `text.`) |
+| `key` | 도메인 접두 + snake_case (`dice.`, `combat.`, `phase.`, `affinity.`, `mana.`, `day.`, `ai.`, `skill.`, `text.`, `stats.`) |
 | `value` | 숫자, 문자열, 또는 표(객체) |
 | `unit` | 단위 |
 | `doc_ref` | 근거 문서 (예: `dice.md §3.1`) |
-| `status` | 확정 / 제안 / TBD |
+| `status` | 확정 / 임시값 |
 | `note` | 비고 |
 
-### servants
+### servants — `profile.json`
 | 필드 | 설명 |
 |---|---|
-| `servant_id` | `sv_` |
-| `name_ko` | 표시 이름 |
-| `class` | 클래스 |
-| `rank_str` `rank_end` `rank_agi` `rank_mana` `rank_luck` `rank_np` | 6스탯 랭크 문자열 (`systems/stats.md`) |
-| `mana_pool` | 초기 마력. `systems/mana.md` §3.1 표에서 유도되므로 필드 불필요 [제안] |
-| `alignment` | 성향: `good` / `neutral` / `evil` (D-056). 그 외(광기 등) 처리 [TBD]. Atlas에서 수집 |
-| `temperament` | 성격 태그 (레거시 personality). 쓰임 [TBD] |
-| `tags` | 속성 태그 |
-| `sprite_id` `portrait_id` | 이미지 |
-| `source_id` | 레거시 JSON(FGO collectionNo) 연결용 [제안] |
-| `affinity_init` `affinity_coef` | 초기 호감도, 호감도 증감 계수 (`systems/affinity.md` §3.2) [제안] |
+| `servant_id`, `source_id` | 서번트 ID, FGO collectionNo |
+| `name_ko`, `name_short_ko?` | 이름, 같은 비트 안에서 다시 부를 때의 축약명 |
+| `class` | 7클래스 enum |
+| `ranks` | `{str, end, agi, mana, luck, np}` 랭크 문자열 객체 |
+| `alignment` | good / neutral / evil / null. 광기 등 null은 판정에서 중립 취급 (D-079) |
+| `alignment_detail`, `alignment_verified` | 원문 성향·검증 여부 |
+| `temperament` | 초기 호감도·증감 계수를 조회하는 성격 키 |
+| `noble_phantasm` | `{name_ko, ruby_ko, rank, type_ko}` |
+| `images` | `{face, summon, final}` Atlas URL (D-116) |
+| `sprite_id` | 나중에 교체할 스프라이트 ID, 현재 null |
+| `notes?` | 출처·검수 메모 |
 
-### masters
+초기 마력은 ranks.mana에서 계산한다. 초기 호감도·계수는 constants에 있다. `mana_pool`, `rank_str`, `portrait_id`, `affinity_init` 필드는 현재 프로필에 없다.
+
+### masters — `profile.json`
 | 필드 | 설명 |
 |---|---|
-| `master_id` | `ms_` |
-| `name_ko` | 표시 이름 |
-| `faction_id` | `fc_` |
-| `stats` | 마스터 스탯 (D-057). 종류 [TBD] |
-| `temperament` | 성격 태그. 쓰임 [TBD] |
-| `mana_pool` | 마스터 마력 |
-| `reason_for_war_text_id` | 참전 이유 대사 `tx_` |
-| `tags` | 태그 |
-| `portrait_id` | 이미지 |
+| `master_id`, `name_ko` | ID·이름 |
+| `source_work` | 출전 작품 |
+| `temperament` | aggressive / proud / cautious / cunning. 전투 수락·위험 퇴각 판단 |
+| `stats` | `{aptitude: null, mana: null}`. Q-152 확정 전 null만 허용 |
+| `portrait` | `{atlas_url, local}`, 각각 문자열 또는 null |
+| `notes?` | 메모 |
+
+진영 ID는 판 시작 때 엔진이 부여한다. 프로필에 `faction_id`, `mana_pool`은 없다.
 
 ### phases
 | 필드 | 설명 |
@@ -111,7 +108,10 @@ data/
 | `selection` | 선택 방식: `terrain`(지형 추첨) / `np_both` / `np_one` (`systems/phases.md` §3.2) |
 | `notes` | 비고 |
 
-### skills
+### skills — `data/common/skills.json` (D-142)
+현재 형식: `{notes?, skills: [...]}`. 원소는 `skill_id`, `hook`(null이면 전투 효과 없음 + `notes`에 이유), `when`(조건 객체, `skills.md` §5), `effect`(`{type, target, ...}`), `scaling`(`major`/`minor`/`fixed`/`none`), `uses_per_battle?`, `notes?`. 수치는 constants `skill.rank_amount`·`skill.fixed_amount`에만 둔다. 서번트 보유 스킬 43개는 모두 정의가 있어야 한다 (테스트).
+
+아래는 처음 계획한 필드다 [제안]. `text_id_on_trigger`, `cost`·`cooldown`은 아직 없다.
 | 필드 | 설명 |
 |---|---|
 | `skill_id` | `sk_` |
@@ -126,44 +126,50 @@ data/
 | `text_id_on_trigger` | 발동 시 출력할 대사 `tx_` |
 | `notes` | 비고 |
 
-### servant_skills
-| 필드 | 설명 |
+### servant_skills — 현재 `servants/{id}/skills.json`
+파일은 `{servant_id, skills: [...], notes?}`.
+| skills 원소 필드 | 설명 |
 |---|---|
-| `servant_id` | `sv_` |
-| `skill_id` | `sk_` |
-| `rank` | 스킬 랭크 |
-| `unlock_condition` | 해금 조건 (없으면 처음부터 보유) |
+| `skill_id`, `name_ko` | ID·이름 |
+| `rank` | 문자열 또는 null |
+| `kind` | generic / unique / noble_phantasm |
+| `origin` | 클래스·개인 스킬 등 출처 구분 |
 
-### effect_types / condition_types / hooks
+훅·조건·효과·unlock_condition은 이 파일에 없다.
+
+### effect_types / condition_types / hooks — 예정 정의 [제안], 현재 미구현
 | 파일 | 필드 |
 |---|---|
 | `effect_types` | `effect_type`, `params_schema`, `description`, `status` |
 | `condition_types` | `condition_type`, `value_schema`, `description`, `status` |
 | `hooks` | `hook_id`, `phase`, `description`, `order_priority`, `code_ref` |
 
-### dialogue
-| 필드 | 설명 |
-|---|---|
-| `text_id` | `tx_` |
-| `speaker_id` | 화자 |
-| `target_id` | 대상 (비우면 범용) |
-| `situation_tag` | 상황 태그 (`systems/text.md` §3.4) |
-| `condition_type` + `condition_value` | 추가 조건 |
-| `priority` | 매칭 우선순위 |
-| `text` | 본문 (자리표시자 허용, `systems/text.md` §3.3) |
-| `notes` | 비고 |
+### dialogue — 현재 형식
+파일은 `{speaker, scope?, defaults, tags, notes?}`. `tags`는 태그 ID → 대사 배열이다.
+- 대사 원소: `id`, `text`, `when?`, `weight?`, `repeat?`, `status?`, `author?`, `source?`, `quote_of?`, `quote_verified?`, `tone?`, `slot?`, `speaker?`, `motif?`, `notes?`.
+- `defaults`와 각 줄을 합쳐 사용한다. 줄의 `speaker`는 서번트 파일 안 나레이션을 위한 `narrator`만 허용한다.
+- text_id는 `tx_{소유자}_{태그}_{id}`로 생성한다. `target_id`, `priority`, `condition_type` 대신 `when`과 조건 수·계층·가중치를 사용한다.
+- 자세한 선택·검수 규칙은 `systems/narrative-engine.md` §5~§7.
 
-### tiles
-| 필드 | 설명 |
+### tiles — 현재 `tiles.json`
+파일은 `{notes?, image_grid, tiles}`.
+| 타일 필드 | 설명 |
 |---|---|
-| `tile_id` | `tl_` |
-| `name_ko` | 이름 |
-| `adjacent_ids` | 인접 타일 |
-| `terrain` | 지형: `open` / `urban` / `forest` / `river` (`content/map-fuyuki.md` §2) [제안] |
-| `x` `y` | 좌표 |
-| `tags` | 태그 (`center`, `landmark` 등) |
+| `tile_id`, `name_ko` | 타일 ID·이름 |
+| `row`, `col` | 1부터 시작하는 행·열 |
+| `adjacent_ids` | 상하좌우 인접 타일 ID |
+| `terrain` | open / urban / forest / river |
+| `role` | leyline / intel / bond. 낮 도착·머무르기 시 처리 (D-128) |
+| `tags` | center, landmark 등 |
 
-### items
+`image_grid`는 `{size, cols, rows}`. cols·rows는 이미지 격자선 픽셀 좌표 각 6개 (D-125).
+
+### 공통 연출 파일
+- `beats.json`: `{notes?, beats}`. 각 이벤트는 `{size, style?, slots}`. 슬롯은 `slot`, `from`, `tag` 또는 `tag_by`, 선택 조건 `if`, `when_has`, `when_lacks`, `protected`를 사용한다.
+- `labels.json`: `class_name`, `unknown_servant`, `player_master`, `class_glyph`, `image_tokens`, `notes?`.
+- `summon.json`: `author`, `status`, `source`, `quote_of?`, `lines`, `notes?`. 사용자 제공 영창 (D-118).
+
+### items — 예정 정의 [제안], 현재 미구현
 | 필드 | 설명 |
 |---|---|
 | `item_id` | `it_` |

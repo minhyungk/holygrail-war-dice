@@ -1,24 +1,26 @@
-// 판 진행 화면. 구조·연출은 prototype/mockup을 그대로 따른다 (D-072):
+// 판 진행 화면 (D-072):
 // 이벤트를 하나씩 재생 → 서술은 VN 텍스트박스, 내 굴림은 3D 다이스를 직접 던지고 주사위 → 기적 → 보정 → 총합을 한 단계씩,
 // 다 보여 준 뒤 선택지(맵 행동 / choices)를 띄운다. 낮 행동 판정도 같은 다이스로 던진다.
 import { type ReactNode, useCallback, useEffect, useRef, useState } from 'react';
 import { K, MAP_GRID, PHASES, TILES } from '../../data/constants';
-import { tierOf } from '../../engine/affinity';
+import { AFFINITY_TIERS as AFF_TIERS, tierOf } from '../../engine/affinity';
+import type { BattleInput, RollBreakdown } from '../../engine/combat';
 import type { RollResult } from '../../engine/dice';
 import type { AnyEvent, Condition } from '../../engine/events';
+import { forecastBattle, type BattleForecast } from '../../engine/forecast';
 import { visible } from '../../engine/map';
 import { createRng } from '../../engine/rng';
 import type { RunAnswer, RunPrompt, TileRole } from '../../engine/run';
-import { parseRank } from '../../engine/stats';
 import type { RunView } from '../../engine/view';
-import { Art, clsStyle, Glyph, LABELS, Ln, SealIcon, sealSrc } from '../components/common';
+import { Art, clsStyle, DieFace, Glyph, LABELS, Ln, SealIcon, sealSrc } from '../components/common';
 import { BattleBackdrop, type Fx, FxLayer } from '../components/BattleFx';
 import { RubyText } from '../components/Ruby';
 import { type ChoiceOpt, Choices, Vn } from '../components/Vn';
 import { REDUCED } from '../fx/circle';
 import type { DiceTable } from '../fx/dice3d';
-import { displayName, play, type Session, type ShownLine } from '../session';
+import { displayName, play, type Session, type ShownLine, skillLabel } from '../session';
 import { T } from '../strings';
+import { escapePresentation, statLines, wasShown } from '../rollPresentation';
 import { End } from './End';
 
 type Side = 'a' | 'c';
@@ -46,10 +48,8 @@ interface RollBox {
   dc: number | null;
   opponent: boolean;
   result: string | null;
-  /** 마력 공급: 목표값 대신 결과 구간표 (mana.md §3.4) */
-  bands?: boolean;
 }
-type StagedRoll = RollResult & { stats?: string[]; parts?: Record<string, number> };
+type StagedRoll = RollResult & { faction: string; stats?: string[]; parts?: Record<string, number> };
 interface ActionRoll {
   title: string;
   mine: StagedRoll;
@@ -58,7 +58,6 @@ interface ActionRoll {
   oppFc: string | null;
   ok: boolean;
   result: string;
-  bands?: boolean;
   mark?: Card['mark'];
 }
 
@@ -83,8 +82,6 @@ const GRID_STYLE = {
 };
 const fxRng = createRng(0x51f15e); // 상대 주사위 눈 돌리기 연출용 (결과와 무관)
 let lineKey = 0;
-/** 텍스트박스에 남겨 두는 줄 수 */
-const VN_KEEP = 60;
 
 export function Game({ session, onExit }: { session: Session; onExit: () => void }) {
   const labels = session.labels;
@@ -93,6 +90,10 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
   const [typing, setTyping] = useState(false);
   const [history, setHistory] = useState<ShownLine[]>([]);
   const [showLog, setShowLog] = useState(false);
+  const [forecast, setForecast] = useState<BattleForecast | null>(null);
+  const updateForecast = (input: BattleInput | undefined) => {
+    if (input) setForecast(forecastBattle(input, session.narrator.state.player));
+  };
   const [prompt, setPrompt] = useState<RunPrompt | null>(null);
   const [tileInfo, setTileInfo] = useState<string | null>(null);
   const [battle, setBattle] = useState<BattleUi | null>(null);
@@ -124,10 +125,17 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
   const dice = useRef<DiceTable | null>(null);
   const diceReady = useRef<Promise<void>>(Promise.resolve());
   const fast = useRef(false);
-  const staged = useRef(false); // 재굴림 선택 때 이미 던져 보여 준 굴림으로 확정했다
+  const staged = useRef<RollBreakdown | null>(null);
+  const takeShown = (roll: StagedRoll | undefined) => {
+    const shown = wasShown(staged.current, roll);
+    staged.current = null;
+    return shown;
+  };
   const battleRef = useRef<BattleUi | null>(null);
   battleRef.current = battle;
   const phaseSides = useRef<{ attacker: string; defender: string } | null>(null);
+  /** 같은 국면·같은 쪽에 연달아 뜬 스킬 이름표를 쌓는 순번 */
+  const skillStack = useRef<{ key: string; n: number }>({ key: '', n: 0 });
   /** 단독 판정 국면(즉사/우연)의 목표값. 카드 아래에 크게 보인다 */
   const [battleDc, setBattleDc] = useState<number | null>(null);
 
@@ -142,7 +150,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
     for (const l of lines) {
       await new Promise<void>((res) => {
         lineDone.current = res;
-        setVnLog((v) => [...v, l].slice(-VN_KEEP));
+        setVnLog((v) => [...v, l].slice(-K['text.vn_keep']));
         setTyping(true);
       });
     }
@@ -226,20 +234,30 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
     setVerdict(null);
     setTrayFx(null);
   };
-  /** 합산 칩. 내 주사위는 방금 던진 3D 주사위와 같은 색 */
-  const chips = (ds: (number | string)[], colors?: string[]) => (
-    <span>
+  /** 합산 칩: 3D 주사위와 같은 모양의 눈 */
+  const chips = (ds: (number | null)[]) => (
+    <span className="dchips">
       {T.dice}{' '}
       {ds.map((d, i) => (
-        <span className={`dchip ${colors?.[i] ? 'colored' : ''}`} key={i} style={colors?.[i] ? ({ ['--dc' as string]: colors[i] } as React.CSSProperties) : undefined}>
-          {d}
-        </span>
+        <DieFace key={i} n={d} />
       ))}
     </span>
   );
 
+  /** 판정 카드의 스킬 줄 (D-142): sk_* = 굴린 쪽 스킬, foe:sk_* = 상대가 건 스킬. 적 스킬 이름은 진명 전엔 가린다 */
+  const skillPart = (k: string, fc: string): ReactNode | null => {
+    const v = session.narrator.state;
+    const foe = k.startsWith('foe:');
+    const id = foe ? k.slice(4) : k;
+    if (!id.startsWith('sk_')) return null;
+    const owner = foe ? (v.battle?.sides.find((x) => x !== fc) ?? fc) : fc;
+    const label = skillLabel(v, session.data, owner, id) ?? T.part.skill!;
+    return <span className="skl">{foe ? `${T.part.foeSkill} · ${label}` : label}</span>;
+  };
   /** 보정 이름: 무슨 보정인지 알 수 있게 (예: 호감도 (중립), 정보 (2단계 · 스테이터스)) */
-  const partLabel = (k: string, v: number, fc: string) => {
+  const partLabel = (k: string, v: number, fc: string): ReactNode => {
+    const skill = skillPart(k, fc);
+    if (skill) return skill;
     const f = session.narrator.state.factions[fc];
     if (k === 'affinity' && f && f.affinity !== null) return `${T.part.affinity} (${T.affinityTier[tierOf(f.affinity)]})`;
     if (k === 'intel') return `${T.part.intel} (${v}단계 · ${T.intelLevel[v]})`;
@@ -253,13 +271,13 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
     const sv = f ? session.data.servants[f.servant_id]! : null;
     const knowStats = fc === v.player || (v.intel[fc] ?? 0) >= 2;
     if (mine) {
-      addLn(side, chips(r.dice, dice.current?.lastColors), r.natural);
+      addLn(side, chips(r.dice), r.natural);
       await countTo(side, 0, r.natural, 500);
       await wait(500);
     } else {
-      const key = addLn(side, chips(['?', '?']), '…');
+      const key = addLn(side, chips(Array.from({ length: K['dice.die_count'] }, () => null)), '…');
       for (let i = 0; i < (REDUCED || fast.current ? 0 : 14); i++) {
-        updateLn(side, key, chips([1 + fxRng.int(0, 9), 1 + fxRng.int(0, 9)]), '…');
+        updateLn(side, key, chips(Array.from({ length: K['dice.die_count'] }, () => fxRng.int(1, K['dice.die_size']))), '…');
         await new Promise((res) => window.setTimeout(res, 55));
       }
       updateLn(side, key, chips(r.dice), r.natural);
@@ -277,19 +295,19 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
       await wait(550);
     }
     if (r.stats && sv) {
-      for (const k of r.stats) {
-        const rank = sv.ranks[k as keyof typeof sv.ranks];
-        const val = parseRank(rank).value;
-        addLn(side, knowStats ? `${T.stat[k]} ${rank}` : `${T.stat[k]} ?`, `+${val}`);
-        await countTo(side, acc, acc + val, 500);
-        acc += val;
+      for (const { label, value } of statLines(sv, r.stats, knowStats)) {
+        addLn(side, label, value === null ? '?' : `+${value}`);
+        if (value !== null) {
+          await countTo(side, acc, acc + value, 500);
+          acc += value;
+        }
       }
       for (const [k, val] of Object.entries(r.parts ?? {})) {
         addLn(side, partLabel(k, val, fc), val >= 0 ? `+${val}` : String(val));
-        await countTo(side, acc, acc + val, 400);
+        if (knowStats) await countTo(side, acc, acc + val, 400);
         acc += val;
       }
-      if (r.applied_modifier !== r.modifier) {
+      if (knowStats && r.applied_modifier !== r.modifier) {
         addLn(side, T.part.cap, String(r.applied_modifier - r.modifier));
         await countTo(side, acc, r.total, 400);
       }
@@ -326,15 +344,14 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
       case 'mana_supplied': {
         const r = e.data.result;
         const mark = r === 'great' || r === 'success' ? 'win' : r === 'normal' ? 'mid' : 'lose';
-        return { title: T.actions.supply.label, mine: e.data.roll, dc: null, opp: null, oppFc: null, ok: mark !== 'lose', mark, bands: true, result: `${T.sys.supplyResult[r]!} · 마력 ${e.data.mana_before} → ${e.data.mana_after}` };
+        return { title: T.actions.supply.label, mine: e.data.roll, dc: null, opp: null, oppFc: null, ok: mark !== 'lose', mark, result: `${T.sys.supplyResult[r]!} · 마력 ${e.data.mana_before} → ${e.data.mana_after}` };
       }
       case 'escape_attempted': {
         if (e.data.context !== 'encounter') return null;
         const mine = e.data.rolls.find((r) => r.faction === me);
         const opp = e.data.rolls.find((r) => r.faction !== me);
         if (!mine || !opp) return null;
-        const runner = e.data.faction === me;
-        return { title: runner ? T.flee : T.chase, mine, dc: null, opp, oppFc: opp.faction, ok: runner ? e.data.success : !e.data.success, result: e.data.success ? T.sys.escapeOk : T.sys.escapeFail };
+        return { ...escapePresentation(e, me), mine, dc: null, opp, oppFc: opp.faction };
       }
       default:
         return null;
@@ -343,18 +360,17 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
 
   const showActionRoll = async (a: ActionRoll) => {
     const me = session.narrator.state.player;
-    if (staged.current) staged.current = false; // 재굴림 선택 때 이미 던졌다
-    else {
+    if (!takeShown(a.mine)) {
       resetRound();
-      setRollBox({ title: a.title, dc: a.dc, opponent: !!a.opp, result: null, bands: a.bands });
+      setRollBox({ title: a.title, dc: a.dc, opponent: !!a.opp, result: null });
       await wait(60);
       await throwMine(a.mine);
       await stageSide('a', a.mine, me, true);
       if (a.opp && a.oppFc) await stageSide('c', a.opp, a.oppFc, false);
     }
     setCards((c) => ({ ...c, a: { ...c.a, mark: a.mark ?? (a.ok ? 'win' : 'lose') } }));
-    setRollBox((b) => ({ title: a.title, dc: a.dc, opponent: !!a.opp, bands: a.bands, ...b, result: a.result }));
-    await wait(1100);
+    setRollBox((b) => ({ title: a.title, dc: a.dc, opponent: !!a.opp, ...b, result: a.result }));
+    await wait(K['text.roll_result_ms']);
     setRollBox(null);
   };
 
@@ -393,18 +409,36 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
       }
       case 'phase_rolled': {
         if (!battleRef.current || battleRef.current.id !== e.data.battle_id) return;
-        if (staged.current) {
+        const mine = e.data.rolls.find((r) => r.faction === me);
+        if (takeShown(mine)) {
           // 재굴림 선택 때 양쪽을 다 보여 줬다
-          staged.current = false;
           return;
         }
-        const mine = e.data.rolls.find((r) => r.faction === me);
         const theirs = e.data.rolls.find((r) => r.faction !== me);
         if (mine) {
           await throwMine(mine);
           await stageSide('a', mine, me, true);
         }
         if (theirs) await stageSide('c', theirs, theirs.faction, false);
+        return;
+      }
+      case 'escape_attempted': {
+        if (e.data.context !== 'battle' || battleRef.current?.id !== e.data.battle_id) return;
+        const mine = e.data.rolls.find((r) => r.faction === me);
+        const theirs = e.data.rolls.find((r) => r.faction !== me);
+        if (!mine || !theirs) return;
+        const display = escapePresentation(e, me);
+        setPh({ name: display.title, no: '' });
+        setBattleDc(null);
+        if (!takeShown(mine)) {
+          resetRound();
+          await throwMine(mine);
+          await stageSide('a', mine, me, true);
+          await stageSide('c', theirs, theirs.faction, false);
+        }
+        setCards((c) => ({ a: { ...c.a, mark: display.ok ? 'win' : 'lose' }, c: { ...c.c, mark: display.ok ? 'lose' : 'win' } }));
+        setVerdict(display.result);
+        await wait(K['text.roll_result_ms']);
         return;
       }
       case 'phase_resolved': {
@@ -447,6 +481,26 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
         await wait(700);
         return;
       }
+      case 'skill_triggered': {
+        // 스킬 자동 발동 (D-142): 발동한 쪽 카드 위에 이름표. 같은 국면에 연달아 뜨면 쌓는다
+        if (battleRef.current?.id !== e.data.battle_id) return;
+        const v = session.narrator.state;
+        const label = skillLabel(v, session.data, e.data.faction, e.data.skill_id) ?? T.part.skill!;
+        const known = e.data.faction === me || (v.intel[e.data.faction] ?? 0) >= 2;
+        const signed = (n: number) => (n > 0 ? `+${n}` : String(n));
+        const detail =
+          e.data.effect === 'roll_mod' ? (known ? `${e.data.target !== e.data.faction ? `${T.part.foeSkill} ` : ''}${signed(e.data.amount)}` : '')
+          : e.data.effect === 'event_negate' ? T.fx.negate
+          : e.data.effect === 'resource_change' ? `${T.mana} ${signed(e.data.amount)}`
+          : T.fx.guard;
+        const side = sideOf(e.data.faction);
+        const key = `${e.data.phase_index}:${side}`;
+        skillStack.current = skillStack.current.key === key ? { key, n: skillStack.current.n + 1 } : { key, n: 0 };
+        pushFx({ kind: 'skill', side, sub: T.fx.skill, text: detail ? `${label} ${detail}` : label, n: skillStack.current.n }, 1700);
+        if (e.data.effect === 'condition_guard') pushFx({ kind: 'guard', side, text: T.fx.guard }, 1300);
+        await wait(e.data.effect === 'condition_guard' ? 900 : 450);
+        return;
+      }
       case 'seal_used': {
         // 화면 중앙에 크게: 영주가 빛나며 한 획 사라진다
         const mine = e.data.faction === me;
@@ -468,6 +522,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
       }
       case 'battle_ended': {
         if (battleRef.current?.id !== e.data.battle_id) return;
+        staged.current = null;
         const tone = e.data.result === 'draw' ? 'draw' : e.data.escaped ? 'escape' : e.data.winner === me ? 'win' : 'lose';
         pushFx({ kind: 'result', tone, text: T.sys.battleEnd[tone === 'lose' ? 'loss' : tone]! }, 2200);
         await wait(1500);
@@ -483,19 +538,23 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
       while (queue.current.length) {
         const e = queue.current.shift()!;
         const p = play(session, e, labels);
-        setView(p.after);
-        const out = !p.after.factions[p.after.player]?.alive && e.type !== 'eliminated';
-        if (out) continue; // 탈락 후에는 빨리감기 (D-043)
-        if (battleRef.current && (e.type === 'day_started' || e.type === 'night_started' || e.type === 'final_battle_bracket' || e.type === 'moved')) setBattle(null);
         const ar = battleRef.current ? null : actionRollOf(e, p.after.player);
+        // 판정이 있는 행동은 주사위를 다 보여 준 뒤에 막대(마력·호감도)를 바꾼다: 결과를 미리 드러내지 않게
+        if (!ar) setView(p.after);
+        if (e.type === 'battle_started' || e.type === 'phase_started') updateForecast(e.data.forecast);
+        if (e.type === 'battle_ended') setForecast(null);
+        const out = !p.after.factions[p.after.player]?.alive && e.type !== 'eliminated';
+        if (out) {
+          setView(p.after);
+          continue; // 탈락 후에는 빨리감기 (D-043)
+        }
+        if (battleRef.current && (e.type === 'day_started' || e.type === 'night_started' || e.type === 'final_battle_bracket' || e.type === 'moved')) setBattle(null);
         if (ar) {
-          // 글이 먼저 장면을 열고, 그 다음에 주사위를 던진다. 결과(대사·반응·시스템 문구)는 던진 뒤에
-          const lead: ShownLine[] = [];
-          while (lead.length < p.lines.length && p.lines[lead.length]!.slot === 'lead') lead.push(p.lines[lead.length]!);
-          await say(lead);
+          // 도입 나레이션은 앞선 action_started가 이미 열었다 (D-141). 여기서는 던진 뒤 결과(대사·반응·시스템 문구)
           await showActionRoll(ar);
+          setView(p.after);
           await battleFx(e);
-          await say(p.lines.slice(lead.length));
+          await say(p.lines);
         } else {
           await battleFx(e);
           if (p.lines.length) await say(p.lines);
@@ -513,19 +572,23 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
         const me = v.player;
         const inBattle = !!battleRef.current && next.context !== 'action';
         resetRound();
-        // 목표값이 없는 낮 행동 판정은 마력 공급뿐이다: 구간표로 보인다
-        if (!inBattle) setRollBox({ title: next.context === 'action' && next.dc === null ? T.actions.supply.label : T.rollTitle, dc: next.dc, opponent: !!next.opponent_roll, result: null, bands: next.context === 'action' && next.dc === null });
+        if (inBattle && next.context === 'escape') {
+          setBattleDc(null);
+          setPh({ name: T.rollTitle, no: '' });
+        }
+        // 목표값이 없는 낮 행동 판정은 마력 공급뿐이다. 결과 구간표는 보이지 않는다 (D-141)
+        if (!inBattle) setRollBox({ title: next.context === 'action' && next.dc === null ? T.actions.supply.label : T.rollTitle, dc: next.dc, opponent: !!next.opponent_roll, result: null });
         await wait(60);
         await throwMine(next.own);
         await stageSide('a', next.own, me, true);
         if (next.opponent_roll) {
-          const opp = inBattle ? battleRef.current!.enemy : (Object.values(v.factions).find((f) => f.id !== me && f.alive && f.tile === v.factions[me]!.tile)?.id ?? me);
-          await stageSide('c', next.opponent_roll, opp, false);
+          await stageSide('c', next.opponent_roll, next.opponent_roll.faction, false);
         }
         // 재굴림은 실패했을 때만 묻는다 (D-119): 지금 굴림은 실패로 표시
         setCards((c) => ({ ...c, a: { ...c.a, mark: 'lose' } }));
       }
-      if (next && next.kind === 'action') setBattle(null);
+      if (next && (next.kind === 'action' || next.kind === 'encounter')) setBattle(null);
+      if (next && 'forecast' in next) updateForecast(next.forecast);
       setPrompt(next);
     } finally {
       running.current = false;
@@ -538,7 +601,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
 
   const answer = (a: RunAnswer) => {
     // 재굴림하지 않으면 지금 보여 준 굴림으로 확정: 뒤따르는 굴림 이벤트에서 다시 던지지 않는다
-    if (prompt?.kind === 'reroll' && a === false) staged.current = true;
+    staged.current = prompt?.kind === 'reroll' && a === false ? prompt.own : null;
     setPrompt(null);
     setTileInfo(null);
     session.answer(a);
@@ -557,13 +620,12 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
     if (!prompt || typing) return null;
     switch (prompt.kind) {
       case 'phase_command': {
-        // 국면 지시 (D-127): 마력 보구 개방 / 영주 보구 즉시 발동 / 영주 버프. 마력이 모자라면 이유와 함께 흐리게
+        // 국면 지시 (D-127, D-142): 마력 보구 개방 / 영주 보구 즉시 발동. 마력이 모자라면 이유와 함께 흐리게
         const opts: ChoiceOpt[] = [];
         const need = K['mana.np_threshold'];
         if (prompt.options.includes('np')) opts.push({ label: T.cmd.np(prompt.mana, prompt.mana - K['mana.np_cost']), value: 'np', primary: prompt.enemy_np });
         else if (prompt.enemy_np || prompt.options.includes('seal_np')) opts.push({ label: T.cmd.npLow(prompt.mana, need), value: 'np', blocked: T.cmd.npLowWhy(prompt.mana, need) });
         if (prompt.options.includes('seal_np')) opts.push({ label: T.cmd.sealNp(prompt.seals), value: 'seal_np' });
-        if (prompt.options.includes('seal_buff')) opts.push({ label: T.cmd.sealBuff(prompt.seals), value: 'seal_buff' });
         opts.push({ label: prompt.enemy_np ? T.cmd.noneCounter : T.cmd.none, value: 'none', primary: !prompt.enemy_np });
         return { q: prompt.enemy_np ? T.cmd.qCounter : T.cmd.q(prompt.phase_index), opts };
       }
@@ -648,19 +710,19 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
   // 낮에는 적 위치가 보이지 않는다 (D-110)
   const enemiesSeen = view.time === 'day' ? [] : Object.values(view.factions).filter((f) => f.id !== P && f.alive && visible(meF.tile, f.tile));
 
-  const statusBits = (
+  /** 마력·호감도 막대. PC는 서번트 프로필 아래, 사이드 패널이 없는 좁은 화면은 상단 HUD */
+  const meterBars = (
     <>
-      <SealIcon n={meF.seals} max={K['combat.command_seals']} />
-      <span className="meter mana" title="마력">
-        마력{' '}
+      <span className="meter mana" title={T.mana}>
+        <span className="lbl">{T.mana}</span>
         <span className="bar">
           <b style={{ width: `${meF.mana}%` }} />
         </span>
         <span className="val">{meF.mana}</span>
       </span>
       {tier && meF.affinity !== null ? (
-        <span className="meter aff" title="호감도 (경계 10 · 중립 30 · 호감 50 · 충성 80)">
-          호감도{' '}
+        <span className="meter aff" title={`${T.affinity} (${K['affinity.thresholds'].map((t, k) => `${T.affinityTier[AFF_TIERS[k + 1]!]} ${t}`).join(' · ')})`}>
+          <span className="lbl">{T.affinity}</span>
           <span className="bar">
             <b style={{ width: `${meF.affinity}%`, background: `var(--affinity-${tier})` }} />
             {K['affinity.thresholds'].map((t) => (
@@ -672,8 +734,14 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
           </span>
         </span>
       ) : null}
-      <span className="meter" title="운명점">
-        운명점 <span className="val">{meF.fatePoints}</span>
+    </>
+  );
+  const statusBits = (
+    <>
+      <SealIcon n={meF.seals} max={K['combat.command_seals']} />
+      <span className="hud-meters">{meterBars}</span>
+      <span className="meter" title={T.fatePoints}>
+        {T.fatePoints} <span className="val">{meF.fatePoints}</span>
       </span>
     </>
   );
@@ -698,6 +766,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
           <div className="bhead">
             <b>{ph.name}</b>
             <span>{ph.no}</span>
+            {forecast ? <Forecast value={forecast} /> : null}
           </div>
           <div
             className="arena"
@@ -795,10 +864,11 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
                   <div>
                     <b>{meSv.name_ko}</b>
                     <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>
-                      {LABELS.cls[meSv.class]} · {T.condition[meF.condition]} · 마력 {meF.mana}
+                      {LABELS.cls[meSv.class]} · {T.condition[meF.condition]}
                     </div>
                   </div>
                 </div>
+                <div className="me-meters">{meterBars}</div>
               </div>
               <div className="panel intel">
                 <h4>적 정보</h4>
@@ -822,7 +892,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
                     .slice(-80)
                     .reverse()
                     .map((l, i) => (
-                      <li key={i}>
+                      <li key={i} className={l.voice ? `v-${l.voice}` : l.kind === 'narration' ? 'narr' : ''}>
                         {l.speaker ? <b>{l.speaker}</b> : null}
                         {l.kind === 'system' ? l.text : <RubyText text={l.text} />}
                       </li>
@@ -844,7 +914,13 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
       {rollBox && !battle ? (
         <div className="modal roll">
           <div className="box rollbox">
-            <h3>{rollBox.title}</h3>
+            <div className="rb-head">
+              <h3>{rollBox.title}</h3>
+              <span className="meter" title={T.fatePointsHint}>
+                {T.fatePoints} <span className="val">{meF.fatePoints}</span>
+              </span>
+            </div>
+            <div className="rb-body">
             <div className="tray" ref={tray} {...trayHandlers}>
               <div key={edge} className={`edge-flash ${edge ? 'on' : ''}`} />
               {trayFx ? (
@@ -855,9 +931,10 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
               ) : null}
               {rollCtaEl}
             </div>
-            <div className={rollBox.opponent ? 'pair' : ''}>
-              <MiniCard card={cards.a} title={meSv.name_ko} dc={rollBox.dc} bands={rollBox.bands} />
+            <div className={`rb-cards ${rollBox.opponent ? 'pair' : ''}`}>
+              <MiniCard card={cards.a} title={meSv.name_ko} dc={rollBox.dc} />
               {rollBox.opponent ? <MiniCard card={cards.c} title={T.opponent} /> : null}
+            </div>
             </div>
             <div className="result">{rollBox.result}</div>
             {rerollInBox && choice ? (
@@ -875,7 +952,20 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
       ) : null}
       {/* 전투 화면에서는 글이 계속 남아 있고, 맵에서는 글이 나오는 동안만 보인다 (행동 메뉴를 가리지 않게) */}
       {battle || typing || rollBox ? <Vn log={vnLog} typing={typing} onLineDone={onLineDone} onLog={() => setShowLog(true)} /> : null}
-      {choice && !rerollInBox ? <Choices key={JSON.stringify(prompt)} low={!battle} question={choice.q} opts={choice.opts} onPick={(v) => answer(v as RunAnswer)} /> : null}
+      {choice && !rerollInBox ? (
+        <Choices
+          key={JSON.stringify(prompt)}
+          low={!battle}
+          question={choice.q}
+          opts={choice.opts}
+          onPick={(v) => answer(v as RunAnswer)}
+          extra={!battle && prompt?.kind === 'encounter' && forecast ? (
+            <div className="fc-box">
+              <Forecast value={forecast} />
+            </div>
+          ) : undefined}
+        />
+      ) : null}
       {sealFx ? (
         <div className={`seal-burst ${sealFx.master !== null ? 'enemy' : ''}`} key={sealFx.key} aria-live="assertive">
           <div className="sb-ring" />
@@ -897,7 +987,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
             <h3>기록</h3>
             <ul className="loglist">
               {history.map((l, i) => (
-                <li key={i}>
+                <li key={i} className={l.voice ? `v-${l.voice}` : l.kind === 'narration' ? 'narr' : ''}>
                   {l.speaker ? <b>{l.speaker}</b> : null}
                   {l.kind === 'system' ? l.text : <RubyText text={l.text} />}
                 </li>
@@ -928,7 +1018,7 @@ function MathLines({ card }: { card: Card }) {
   );
 }
 
-function MiniCard({ card, title, dc, bands }: { card: Card; title: string; dc?: number | null; bands?: boolean }) {
+function MiniCard({ card, title, dc }: { card: Card; title: string; dc?: number | null }) {
   return (
     <div className={`fcard ${card.mark}`}>
       <div className="who">
@@ -939,33 +1029,7 @@ function MiniCard({ card, title, dc, bands }: { card: Card; title: string; dc?: 
         <small>{T.total}</small>
         <b>{card.total}</b>
       </div>
-      {bands ? <BandLadder total={card.total} settled={card.mark !== ''} /> : <Threshold dc={dc ?? null} total={card.total} settled={card.mark !== ''} />}
-    </div>
-  );
-}
-
-/** 마력 공급 결과 구간표: 판정값이 어느 구간에 들어가는지, 구간별 마력·호감도 (mana.md §3.4) */
-function BandLadder({ total, settled }: { total: string; settled: boolean }) {
-  const bands = K['mana.supply_result'];
-  const v = Number(total);
-  const hit = settled && !Number.isNaN(v) ? bands.find((b) => v >= b.min)?.result : null;
-  const arrow = (d: number) => (d > 0 ? '▲'.repeat(d >= 5 ? 2 : 1) : d < 0 ? '▼'.repeat(d <= -5 ? 2 : 1) : '—');
-  return (
-    <div className="bands">
-      {bands.map((b, i) => {
-        const range = i === 0 ? `${b.min} 이상` : i === bands.length - 1 ? `${bands[i - 1]!.min - 1} 이하` : `${b.min}–${bands[i - 1]!.min - 1}`;
-        const d = K['affinity.delta_supply'][b.result];
-        return (
-          <div key={b.result} className={`band ${b.result} ${hit === b.result ? 'hit' : ''}`}>
-            <b>{T.sys.supplyResult[b.result]}</b>
-            <span className="rng">{range}</span>
-            <span>마력 +{b.mana}</span>
-            <span className={d > 0 ? 'up' : d < 0 ? 'down' : ''}>
-              호감도 {arrow(d)}
-            </span>
-          </div>
-        );
-      })}
+      <Threshold dc={dc ?? null} total={card.total} settled={card.mark !== ''} />
     </div>
   );
 }
@@ -978,7 +1042,7 @@ function Profile({ fc, view, session }: { fc: string; view: RunView; session: Se
   const m = f.master_id ? session.data.masters[f.master_id] : null;
   const name = mine ? T.masterMe : (m?.name_ko ?? T.unknownMaster);
   const sub = mine
-    ? `${T.masterLabel} · ${T.affinity} ${f.affinity ?? 0} (${T.affinityTier[tierOf(f.affinity ?? 0)]}) · ${T.fatePoints} ${f.fatePoints}`
+    ? `${T.masterLabel} · ${T.affinity} ${f.affinity ?? 0} (${T.affinityTier[tierOf(f.affinity ?? 0)]})`
     : m
       ? `${T.masterLabel} · ${T.temperament[m.temperament]}`
       : T.masterLabel;
@@ -1002,6 +1066,11 @@ function Profile({ fc, view, session }: { fc: string; view: RunView; session: Se
           </span>
           <span className="val">{f.mana}</span>
         </span>
+        {mine ? (
+          <span className="meter fate" title={T.fatePointsHint}>
+            {T.fatePoints} <span className="val">{f.fatePoints}</span>
+          </span>
+        ) : null}
       </div>
     </div>
   );
@@ -1065,6 +1134,31 @@ function FighterCard({ side, fc, view, session, card, name, dc }: { side: Side; 
         <b>{card.total}</b>
       </div>
       <Threshold dc={dc ?? null} total={card.total} settled={card.mark !== ''} />
+    </div>
+  );
+}
+
+/** 예상 승률: 승/패 두 칸 막대 (D-140). 기준 설명 문구는 두지 않는다 (D-141) */
+function Forecast({ value }: { value: BattleForecast }) {
+  if (value.win === null) {
+    return (
+      <div className="forecast none" aria-label={`${T.forecast.title}: ${T.forecast.none}`}>
+        <span className="fc-t">{T.forecast.title}</span>
+        <span className="fc-w">{T.forecast.win} <b>–</b></span>
+        <span className="fc-bar" />
+        <span className="fc-l"><b>–</b> {T.forecast.loss}</span>
+      </div>
+    );
+  }
+  const w = Math.round(value.win * 100);
+  const pct = (p: number, n: number) => (p < 0.01 ? T.forecast.low : p > 0.99 ? T.forecast.high : T.forecast.percent(n));
+  const winTxt = pct(value.win, w), lossTxt = pct(1 - value.win, 100 - w);
+  return (
+    <div className="forecast" aria-label={`${T.forecast.title} ${T.forecast.win} ${winTxt} ${T.forecast.loss} ${lossTxt}`}>
+      <span className="fc-t">{T.forecast.title}</span>
+      <span className="fc-w">{T.forecast.win} <b>{winTxt}</b></span>
+      <span className="fc-bar"><i style={{ width: `${value.win * 100}%` }} /></span>
+      <span className="fc-l"><b>{lossTxt}</b> {T.forecast.loss}</span>
     </div>
   );
 }

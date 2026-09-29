@@ -151,6 +151,45 @@ export const SkillLink = z
   .strict();
 export const ServantSkillsFile = z.object({ servant_id: z.string().regex(SERVANT_ID), skills: z.array(SkillLink), notes: z.string().optional() }).strict();
 export type ServantSkillsFile = z.infer<typeof ServantSkillsFile>;
+export type SkillLink = z.infer<typeof SkillLink>;
+
+// ── 스킬 효과 정의 (skills.md §3~§6, data/common/skills.json, D-142) ──
+export const HOOK_IDS = ['hk_battle_phase_select', 'hk_battle_phase_roll', 'hk_battle_escape', 'hk_battle_condition_change'] as const;
+export const SkillWhen = z
+  .object({
+    phase: z.array(z.enum(['ph_clash', 'ph_initiative', 'ph_sorcery', 'ph_fate', 'ph_np_clash', 'ph_np_attack'])).optional(),
+    role: z.enum(['attacker', 'defender']).optional(),
+    phase_index: z.number().int().positive().optional(),
+    self_condition: z.array(z.enum(['full', 'hurt', 'danger'])).optional(),
+    camp: z.literal(true).optional(),
+    escaper: z.literal(true).optional(),
+    foe_dropped: z.literal(true).optional(),
+    would_fall: z.literal(true).optional(),
+  })
+  .strict();
+export const SkillEffect = z.discriminatedUnion('type', [
+  z.object({ type: z.literal('roll_mod'), target: z.enum(['self', 'foe']), sign: z.literal(-1).optional() }).strict(),
+  z.object({ type: z.literal('event_negate'), target: z.enum(['self', 'foe']), kind: z.enum(['affinity_penalty', 'intel']) }).strict(),
+  z.object({ type: z.literal('resource_change'), target: z.literal('self'), resource: z.literal('mana') }).strict(),
+  z.object({ type: z.literal('condition_guard'), target: z.literal('self') }).strict(),
+]);
+export const SkillDef = z.union([
+  z.object({ skill_id: z.string().regex(/^sk_[a-z0-9_]+$/), hook: z.null(), notes: z.string() }).strict(),
+  z
+    .object({
+      skill_id: z.string().regex(/^sk_[a-z0-9_]+$/),
+      hook: z.enum(HOOK_IDS),
+      when: SkillWhen,
+      effect: SkillEffect,
+      scaling: z.enum(['major', 'minor', 'fixed', 'none']),
+      uses_per_battle: z.number().int().positive().optional(),
+      notes: z.string().optional(),
+    })
+    .strict(),
+]);
+export type SkillDef = z.infer<typeof SkillDef>;
+export type ActiveSkillDef = Extract<SkillDef, { hook: (typeof HOOK_IDS)[number] }>;
+export const SkillsFile = z.object({ notes: z.string().optional(), skills: z.array(SkillDef) }).strict();
 
 // ── 서술 엔진 데이터 ──
 export const LabelsFile = z

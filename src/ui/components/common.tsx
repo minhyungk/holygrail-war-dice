@@ -1,6 +1,7 @@
-// 공통 조각 (prototype/mockup 마크업 그대로). 클래스 이름·문장은 data/common/labels.json에서 받는다.
+// 공통 UI 조각. 클래스 이름·문장은 data/common/labels.json에서 받는다.
 import type { CSSProperties, ReactNode } from 'react';
 import { useEffect, useState } from 'react';
+import { pipLayout, pipRadius } from '../fx/pips';
 
 export const LABELS = { glyph: {} as Record<string, string>, cls: {} as Record<string, string>, unknown: '' };
 export const setLabels = (l: { class_glyph: Record<string, string>; class_name: Record<string, string>; unknown_servant: string }) => {
@@ -61,4 +62,18 @@ export function Art({ src, cls, className, hidden }: { src: string; cls: string;
   const [failed, setFailed] = useState(false);
   if (hidden || failed) return <Glyph cls={cls} hidden={hidden} />;
   return <img className={className} src={src} alt="" referrerPolicy="no-referrer" onError={() => setFailed(true)} />;
+}
+
+/** 합산 줄의 주사위 한 개: 숫자 대신 눈. 값을 모르면(상대가 굴리는 중) '?' */
+export function DieFace({ n }: { n: number | null }) {
+  return (
+    <svg className="dface" viewBox="0 0 100 100" role="img" aria-label={n === null ? '?' : String(n)}>
+      <rect x="4" y="4" width="92" height="92" rx="20" />
+      {n === null ? (
+        <text x="50" y="52">?</text>
+      ) : (
+        pipLayout(n).map(([u, v], i) => <circle key={i} className={n === 1 ? 'ace' : ''} cx={6 + u * 88} cy={6 + v * 88} r={pipRadius(n) * 88} />)
+      )}
+    </svg>
+  );
 }

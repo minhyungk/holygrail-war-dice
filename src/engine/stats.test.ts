@@ -35,13 +35,13 @@ describe('예시 (stats.md §5)', () => {
 describe('시작 7기 표 (servants-5th.md §2·§3)', () => {
   // 정면 격돌, 6스탯 합, 기적 구간
   it.each([
-    [SV.artoria, 12, 40.5, [19, 20]],
-    [SV.cu, 11, 32, [20]],
-    [SV.emiya, 9, 30, [20]],
-    [SV.medusa, 10, 33.5, [20]],
-    [SV.medea, 7, 30.5, [19, 20]],
-    [SV.kojiro, 8, 30.5, [19, 20]],
-    [SV.heracles, 14.5, 41.5, [19, 20]],
+    [SV.artoria, 12, 40.5, [11, 12]],
+    [SV.cu, 11, 32, [12]],
+    [SV.emiya, 9, 30, [12]],
+    [SV.medusa, 10, 33.5, [12]],
+    [SV.medea, 7, 30.5, [11, 12]],
+    [SV.kojiro, 8, 30.5, [11, 12]],
+    [SV.heracles, 14.5, 41.5, [11, 12]],
   ] as const)('%s', (id, clash, total, miracle) => {
     const s = servant(id);
     expect(statSum(s, ['str', 'end'])).toBe(clash);

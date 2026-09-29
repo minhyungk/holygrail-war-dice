@@ -1,5 +1,5 @@
-// VN 텍스트박스와 선택지 (prototype/mockup 기반, 03-ui-style.md §6, D-122).
-import { useEffect, useRef, useState } from 'react';
+// VN 텍스트박스와 선택지 (03-ui-style.md §6, D-122).
+import { type ReactNode, useEffect, useRef, useState } from 'react';
 import { K } from '../../data/constants';
 import { REDUCED } from '../fx/circle';
 import type { ShownLine } from '../session';
@@ -18,7 +18,7 @@ const SPEEDS = [
  * 탭: 타이핑 중이면 즉시 완성.
  */
 export function Vn({ log, typing, onLineDone, onLog, autoDefault = true }: { log: ShownLine[]; typing: boolean; onLineDone: () => void; onLog: () => void; autoDefault?: boolean }) {
-  const [n, setN] = useState(0);
+  const [progress, setProgress] = useState<{ line: ShownLine | undefined; count: number }>({ line: undefined, count: 0 });
   const [auto, setAuto] = useState(autoDefault);
   const [sp, setSp] = useState(1);
   const box = useRef<HTMLDivElement>(null);
@@ -27,15 +27,16 @@ export function Vn({ log, typing, onLineDone, onLog, autoDefault = true }: { log
   const ruby = cur?.kind !== 'system';
   const visible = cur ? (ruby ? parseRuby(full).map((sg) => sg.base).join('') : full) : '';
   const len = cur ? (ruby ? visibleLength(parseRuby(full)) : full.length) : 0;
+  // 새 줄은 첫 렌더부터 0글자. 같은 본문·같은 로그 길이여도 이전 줄의 진행도를 쓰지 않는다.
+  const n = progress.line === cur ? progress.count : REDUCED ? len : 0;
   const done = !cur || n >= len;
 
-  useEffect(() => setN(REDUCED ? len : 0), [log.length, typing]); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (!cur || done) return;
     // 글자마다 리듬이 다르다 (D-133): 방금 친 글자(n-1)에 따라 다음 글자까지 쉰다
     const base = K['text.typing_ms'][SPEEDS[sp]![1]];
     const ms = n === 0 ? base : charDelay(visible, n - 1, base, cur.pace);
-    const t = window.setTimeout(() => setN((x) => x + 1), ms);
+    const t = window.setTimeout(() => setProgress({ line: cur, count: n + 1 }), ms);
     return () => window.clearTimeout(t);
   }, [cur, n, done, sp, visible]);
   useEffect(() => {
@@ -50,7 +51,7 @@ export function Vn({ log, typing, onLineDone, onLog, autoDefault = true }: { log
 
   const advance = () => {
     if (!cur) return;
-    if (!done) setN(len);
+    if (!done) setProgress({ line: cur, count: len });
     else onLineDone();
   };
   if (!log.length) return null;
@@ -76,7 +77,7 @@ export function Vn({ log, typing, onLineDone, onLog, autoDefault = true }: { log
           const typingThis = typing && i === log.length - 1;
           const kind = l.kind === 'system' ? 'sys' : l.kind === 'narration' ? 'narr' : 'say';
           return (
-            <p key={i} className={`vl ${kind} ${typingThis ? 'cur' : ''}`}>
+            <p key={i} className={`vl ${kind} ${l.voice ? `v-${l.voice}` : ''} ${typingThis ? 'cur' : ''}`}>
               {l.speaker ? <b className="spk">{l.speaker}</b> : null}
               {l.draft && l.kind === 'line' ? <span className="draft">draft</span> : null}
               <span className="body">
@@ -112,10 +113,11 @@ export interface ChoiceOpt {
   primary?: boolean;
   blocked?: string;
 }
-export function Choices({ question, opts, onPick, low = true }: { question: string; opts: ChoiceOpt[]; onPick: (v: unknown) => void; low?: boolean }) {
+export function Choices({ question, opts, onPick, low = true, extra }: { question: string; opts: ChoiceOpt[]; onPick: (v: unknown) => void; low?: boolean; extra?: ReactNode }) {
   const [why, setWhy] = useState('');
   return (
     <div className={`choices ${low ? 'low' : ''}`}>
+      {extra}
       {question ? <div className="q">{question}</div> : null}
       {opts.map((o, k) => (
         <button key={k} className={`btn ${o.primary ? 'primary' : ''}`} onClick={() => (o.blocked ? setWhy(o.blocked) : onPick(o.value))}>

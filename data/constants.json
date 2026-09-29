@@ -22,70 +22,70 @@
     },
     {
       "key": "dice.die_size",
-      "value": 10,
+      "value": 6,
       "unit": "면",
       "doc_ref": "dice.md §3.1",
       "status": "확정",
-      "note": "D-015"
+      "note": "D-138. 2d6 전환"
     },
     {
       "key": "dice.dc",
       "value": {
-        "easy": 12,
-        "normal": 16,
-        "hard": 20
+        "easy": 9,
+        "normal": 12,
+        "hard": 15
       },
       "unit": "판정값",
       "doc_ref": "dice.md §3.2",
-      "status": "확정",
-      "note": "D-073"
+      "status": "임시값",
+      "note": "D-138. 2d6 전환"
     },
     {
       "key": "dice.modifier_gap_cap",
-      "value": 15,
+      "value": 8,
       "unit": "보정",
       "doc_ref": "dice.md §3.3",
-      "status": "확정",
-      "note": "대항 판정 양측 보정 차이 상한. D-073"
+      "status": "임시값",
+      "note": "D-138. 2d6 전환"
     },
     {
       "key": "dice.miracle_range",
       "value": {
         "EX": [
-          18,
-          19,
-          20
+          10,
+          11,
+          12
         ],
         "A": [
-          19,
-          20
+          11,
+          12
         ],
         "B": [
-          19,
-          20
+          11,
+          12
         ],
         "C": [
-          20
+          12
         ],
         "D": [
-          20
+          12
         ],
         "E": [
-          20
+          12
         ]
       },
       "unit": "자연값",
       "doc_ref": "dice.md §3.4",
-      "status": "확정",
-      "note": "행운 랭크 문자 기준 (D-073)"
+      "status": "임시값",
+      "note": "D-138. 2d6 전환"
     },
     {
       "key": "dice.miracle_bonus",
-      "value": 5,
+      "value": 3,
       "unit": "보정",
       "doc_ref": "dice.md §3.4",
-      "status": "확정",
-      "note": "D-036. 차이 상한 밖에서 더함"
+      "status": "임시값",
+      "note": "D-138. 2d6 전환"
     },
     {
       "key": "dice.fate_point_init",
@@ -190,11 +190,11 @@
     },
     {
       "key": "phase.fate_dc",
-      "value": 12,
+      "value": 9,
       "unit": "판정값",
       "doc_ref": "phases.md §3.5",
-      "status": "확정",
-      "note": "D-097. 방어측 2d10 + 행운"
+      "status": "임시값",
+      "note": "D-138. 2d6 전환"
     },
     {
       "key": "combat.phase_count",
@@ -219,14 +219,6 @@
       "doc_ref": "combat.md §5.1",
       "status": "확정",
       "note": "D-023"
-    },
-    {
-      "key": "combat.seal_buff",
-      "value": 5,
-      "unit": "보정",
-      "doc_ref": "combat.md §5.1",
-      "status": "임시값",
-      "note": "D-041, D-076. 전투 전체 지속. 쓰는 시점은 Q-159"
     },
     {
       "key": "combat.night_recovery",
@@ -373,30 +365,30 @@
       "key": "day.intel_dc",
       "value": [
         0,
-        12,
-        16,
-        20
+        4,
+        7,
+        10
       ],
       "unit": "판정값",
       "doc_ref": "day-loop.md §4.3",
-      "status": "확정",
-      "note": "목표 단계별 DC. 0번은 쓰지 않음 (D-107)"
+      "status": "임시값",
+      "note": "D-141. 사용자 요청으로 D-138의 8/11/14에서 4씩 낮춤"
     },
     {
       "key": "day.bond_dc",
-      "value": 10,
-      "unit": "판정값",
-      "doc_ref": "day-loop.md §13",
-      "status": "확정",
-      "note": "교류 판정 목표값 (D-132, 사용자 지정)"
-    },
-    {
-      "key": "day.craft_dc",
-      "value": 16,
+      "value": 7,
       "unit": "판정값",
       "doc_ref": "day-loop.md §13",
       "status": "임시값",
-      "note": "진지 작성 판정. 2d10 + 마력 스탯 (D-109)"
+      "note": "D-138. 2d6 전환"
+    },
+    {
+      "key": "day.craft_dc",
+      "value": 12,
+      "unit": "판정값",
+      "doc_ref": "day-loop.md §13",
+      "status": "임시값",
+      "note": "D-138. 2d6 전환"
     },
     {
       "key": "day.camp_bonus",
@@ -408,11 +400,11 @@
     },
     {
       "key": "day.ambush_margin",
-      "value": 5,
+      "value": 3,
       "unit": "판정값",
       "doc_ref": "day-loop.md §13",
       "status": "임시값",
-      "note": "조우 시 민첩 대항에서 이 차이 이상으로 이기면 기습 (D-109)"
+      "note": "D-138. 2d6 전환"
     },
     {
       "key": "day.ambush_bonus",
@@ -565,22 +557,22 @@
       "key": "mana.supply_result",
       "value": [
         {
-          "min": 18,
+          "min": 11,
           "result": "great",
           "mana": 70
         },
         {
-          "min": 14,
+          "min": 9,
           "result": "success",
           "mana": 50
         },
         {
-          "min": 9,
+          "min": 6,
           "result": "normal",
           "mana": 30
         },
         {
-          "min": 5,
+          "min": 4,
           "result": "fail",
           "mana": 30
         },
@@ -592,8 +584,8 @@
       ],
       "unit": "판정값",
       "doc_ref": "mana.md §3.4",
-      "status": "확정",
-      "note": "위에서부터 min 이상이면 그 결과 (D-073)"
+      "status": "임시값",
+      "note": "D-138. 2d6 구간 재조정"
     },
     {
       "key": "mana.supply_per_day",
@@ -772,6 +764,91 @@
       "doc_ref": "combat.md §3.4",
       "status": "임시값",
       "note": "적 AI가 위험에 들어설 때 퇴각할 확률 (마스터 성향별). 교활은 상대보다 상태가 나쁘면 cunning_behind (D-134)"
+    },
+    {
+      "key": "text.vn_keep",
+      "value": 60,
+      "unit": "줄",
+      "doc_ref": "03-ui-style.md §9",
+      "status": "임시값",
+      "note": "화면에 남기는 최근 줄 수. 기존 UI 값 이동 (D-137)"
+    },
+    {
+      "key": "text.wish_max_chars",
+      "value": 200,
+      "unit": "글자",
+      "doc_ref": "02-screens-flow.md S6_VICTORY",
+      "status": "임시값",
+      "note": "D-142. 우승 시 성배에 비는 소원의 최대 길이"
+    },
+    {
+      "key": "text.wish_grant_ms",
+      "value": 2200,
+      "unit": "ms",
+      "doc_ref": "02-screens-flow.md S6_VICTORY",
+      "status": "임시값",
+      "note": "D-142. 소원을 빈 뒤 성배가 빛나는 연출 시간"
+    },
+    {
+      "key": "text.roll_result_ms",
+      "value": 1100,
+      "unit": "ms",
+      "doc_ref": "03-ui-style.md §9",
+      "status": "임시값",
+      "note": "행동·도주 판정 결과를 보여 주는 시간. 기존 행동 판정 시간 유지 (D-137)"
+    },
+    {
+      "key": "combat.forecast_samples",
+      "value": 2048,
+      "unit": "회",
+      "doc_ref": "combat.md §9",
+      "status": "임시값",
+      "note": "D-139. 실제 판정과 분리된 승률 추정"
+    },
+    {
+      "key": "combat.forecast_seed",
+      "value": 139,
+      "unit": "시드",
+      "doc_ref": "combat.md §9",
+      "status": "임시값",
+      "note": "D-139. 실제 판정과 분리된 승률 추정"
+    },
+    {
+      "key": "skill.rank_amount",
+      "value": {
+        "major": {
+          "E": 0.5,
+          "D": 0.5,
+          "C": 1,
+          "B": 1.5,
+          "A": 2,
+          "EX": 2.5
+        },
+        "minor": {
+          "E": 0,
+          "D": 0.5,
+          "C": 0.5,
+          "B": 1,
+          "A": 1,
+          "EX": 1.5
+        }
+      },
+      "unit": "판정 보정",
+      "doc_ref": "skills.md §4",
+      "status": "임시값",
+      "note": "D-142. 랭크 문자 기준 (+/- 무시). major = 주력 스킬, minor = 보조 스킬"
+    },
+    {
+      "key": "skill.fixed_amount",
+      "value": {
+        "sk_golden_fleece": 1,
+        "sk_blood_temple": 10,
+        "sk_circes_teaching": 5
+      },
+      "unit": "판정 보정 / 마력",
+      "doc_ref": "skills.md §4",
+      "status": "임시값",
+      "note": "D-142. 랭크와 무관한 스킬의 효과량"
     }
   ]
 }

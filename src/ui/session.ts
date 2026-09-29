@@ -113,6 +113,8 @@ export interface ShownLine {
   draft?: boolean;
   /** 서술 비트의 슬롯 (lead = 장면을 여는 나레이션). 판정 전에 먼저 보일 줄을 가르는 데 쓴다 */
   slot?: string;
+  /** 누가 말하는가 (D-141): 내 서번트 / 상대 서번트 / 상대 마스터. 화면에서 색을 나눈다. 나레이션·시스템은 없음 */
+  voice?: 'self' | 'enemy' | 'enemy_master';
   /** 출력 리듬 (D-133): chant = 보구 영창(느리게, 보구명은 빠르게), dramatic = 핵심 나레이션(조금 느리게) */
   pace?: 'chant' | 'dramatic';
 }
@@ -137,6 +139,19 @@ export function displayName(v: RunView, data: RunData, fc: string, labels: { unk
   if (lv === 0) return labels.unknown;
   if (lv < 3) return labels.cls[sv.class] ?? sv.class;
   return sv.name_ko;
+}
+
+/**
+ * 스킬 이름표 (D-142). 적 스킬은 진명(정보 3단계)을 알기 전엔 이름을 가린다: 스킬 이름이 정체를 드러내기 때문
+ * 내 스킬이거나 진명을 알면 "카리스마 B", 아니면 null
+ */
+export function skillLabel(v: RunView, data: RunData, fc: string, skillId: string): string | null {
+  const f = v.factions[fc];
+  if (!f) return null;
+  if (fc !== v.player && (v.intel[fc] ?? 0) < 3) return null;
+  const sk = data.skills[f.servant_id]?.skills.find((x) => x.skill_id === skillId);
+  if (!sk) return null;
+  return sk.rank && sk.rank !== '-' ? `${sk.name_ko} ${sk.rank}` : sk.name_ko;
 }
 
 export function play(s: Session, e: AnyEvent, labels: { unknown: string; cls: Record<string, string> }): Played {
@@ -176,7 +191,7 @@ export function play(s: Session, e: AnyEvent, labels: { unknown: string; cls: Re
         break;
       case 'escape_attempted':
         if (e.data.faction === P) lines.push(sys(e.data.success ? T.sys.escapeOk : T.sys.escapeFail));
-        else if (e.data.context === 'encounter' && before.factions[P] && e.actors.length && e.data.rolls.some((r) => r.faction === P))
+        else if (e.data.rolls.some((r) => r.faction === P))
           lines.push(sys(e.data.success ? T.sys.enemyEscaped : T.sys.enemyEscapeFail));
         break;
       case 'encounter_decided': {
@@ -230,6 +245,14 @@ export function play(s: Session, e: AnyEvent, labels: { unknown: string; cls: Re
         }
         break;
       }
+      case 'skill_triggered': {
+        // 판정 보정·무효는 카드와 연출이 보인다. 버팀·마력 변화만 글로 알린다
+        if (!inMyBattle(e.data.battle_id)) break;
+        const label = skillLabel(after, s.data, e.data.faction, e.data.skill_id) ?? T.part.foeSkill!;
+        if (e.data.effect === 'condition_guard') lines.push(sys(T.sys.skillGuard(label)));
+        else if (e.data.effect === 'resource_change' && e.data.mana_after !== null) lines.push(sys(T.sys.skillMana(label, name(e.data.target), e.data.mana_after - e.data.amount, e.data.mana_after)));
+        break;
+      }
       case 'danger_decided':
         if (inMyBattle(e.data.battle_id) && e.data.faction !== P && e.data.choice === 'fight') lines.push(sys(T.sys.enemyHoldsOn(name(e.data.faction))));
         break;
@@ -243,12 +266,16 @@ export function play(s: Session, e: AnyEvent, labels: { unknown: string; cls: Re
     }
     // 서술 비트: 기본 시스템 요약 뒤가 아니라 앞에 둔다 (결과 문구가 비트를 닫는다)
     if (beat) {
+      const mine = after.factions[P];
+      const voiceOf = (speaker: string): ShownLine['voice'] =>
+        speaker === 'narrator' ? undefined : speaker === mine?.servant_id || speaker === mine?.master_id ? 'self' : s.data.masters[speaker] ? 'enemy_master' : 'enemy';
       const narr: ShownLine[] = beat.lines.map((l) => ({
         kind: beat.style === 'system' ? 'system' : l.speaker === 'narrator' ? 'narration' : 'line',
         speaker: l.speakerName,
         text: l.text,
         draft: l.status === 'draft',
         slot: l.slot,
+        voice: beat.style === 'system' ? undefined : voiceOf(l.speaker),
         pace:
           beat.type === 'np_opened' && l.speaker !== 'narrator'
             ? ('chant' as const)

@@ -10,7 +10,7 @@ export interface Rng {
   weighted(weights: readonly number[]): number;
 }
 
-/** mulberry32. 프로토타입(prototype/mockup)과 같은 알고리즘 */
+/** mulberry32 시드 고정 난수 생성기 */
 export function createRng(seed: number): Rng {
   let a = seed >>> 0;
   const next = () => {

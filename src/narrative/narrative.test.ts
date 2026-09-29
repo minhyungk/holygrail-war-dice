@@ -185,3 +185,26 @@ describe('호감도 변화 문구 (D-121)', () => {
     expect(down.lines[0]!.text).toContain('알트리아');
   });
 });
+
+describe('판정 행동의 도입 나레이션 (D-141)', () => {
+  const roll = { dice: [3, 4], natural: 7, miracle: false, modifier: 0, applied_modifier: 0, total: 7, faction: 'fc_player', stats: [], parts: {}, rerolls: 0 };
+  it.each([
+    ['supply', 'mana_supplied'],
+    ['bond', 'bond'],
+  ] as const)('%s: 도입(lead)은 action_started에서 나오고, 결과 비트에는 없다', (action, resultType) => {
+    const log = new EventLog({ day: 1, time: 'day', action: 0 });
+    const fs = (faction: string, sv: string, controller: 'player' | 'ai'): FactionSetup => ({
+      faction, servant_id: sv, master_id: null, controller, tile: 'tl_r2c2', condition: 'full', mana: 0, seals: 3, fate_points: 3, affinity: controller === 'player' ? 35 : null,
+    });
+    log.emit('run_started', [], { seed: 1, player: 'fc_player', summon: 'random', factions: [fs('fc_player', SV.artoria, 'player'), fs('fc_e1', SV.cu, 'ai')] });
+    log.emit('action_started', ['fc_player'], { faction: 'fc_player', action, tile: 'tl_r2c2', target: null });
+    if (resultType === 'mana_supplied') log.emit('mana_supplied', ['fc_player'], { faction: 'fc_player', result: 'normal', mana_before: 0, mana_after: 20, roll });
+    else log.emit('bond', ['fc_player'], { faction: 'fc_player', result: 'success', roll, dc: 7 });
+    const n = new Narrator(data, 3);
+    const [, start, result] = log.events.map((e) => n.consume(e));
+    expect(start!.lines.map((l) => l.slot)).toEqual(['lead']);
+    // 공통 나레이션도 화자가 narrator다 (대사처럼 따옴표로 보이지 않게)
+    expect(start!.lines[0]!.speaker).toBe('narrator');
+    expect(result?.lines.some((l) => l.slot === 'lead') ?? false).toBe(false);
+  });
+});

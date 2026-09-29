@@ -3,8 +3,9 @@
 import { z } from 'zod';
 import raw from '../../data/constants.json';
 import rawPhases from '../../data/phases.json';
+import rawSkills from '../../data/common/skills.json';
 import rawTiles from '../../data/tiles.json';
-import { ConstantsFile, type ImageGrid, PHASE_IDS, PhasesFile, RANK_LETTERS, TERRAINS, TilesFile, type PhaseDef, type PhaseId, type Tile } from './schema';
+import { type ActiveSkillDef, ConstantsFile, type ImageGrid, PHASE_IDS, PhasesFile, RANK_LETTERS, type SkillDef, SkillsFile, TERRAINS, TilesFile, type PhaseDef, type PhaseId, type Tile } from './schema';
 
 const num = z.number();
 const int = z.number().int();
@@ -29,10 +30,11 @@ const Schema = z
       .object(Object.fromEntries(TERRAINS.map((t) => [t, z.object(Object.fromEntries(TERRAIN_PHASES.map((p) => [p, num.nonnegative()])) as Record<(typeof TERRAIN_PHASES)[number], z.ZodNumber>).strict()])) as Record<(typeof TERRAINS)[number], z.ZodObject<Record<(typeof TERRAIN_PHASES)[number], z.ZodNumber>>>)
       .strict(),
     'phase.fate_dc': num,
+    'combat.forecast_samples': int.positive(),
+    'combat.forecast_seed': int,
     'combat.phase_count': int.positive(),
     'combat.big_loss_ratio': num.positive(),
     'combat.command_seals': int,
-    'combat.seal_buff': num,
     'combat.night_recovery': int,
     'combat.np_per_battle': int,
     'mana.max': num,
@@ -71,6 +73,8 @@ const Schema = z
     'ai.elo_d': num,
     'ai.np_open_chance': z.object({ base: num, danger: num }).strict(),
     'ai.retreat_chance': z.object({ aggressive: num, proud: num, cautious: num, cunning: num, cunning_behind: num }).strict(),
+    'skill.rank_amount': z.object({ major: byLetter(num), minor: byLetter(num) }).strict(),
+    'skill.fixed_amount': z.record(z.string(), num),
     'text.lines_per_beat_big': int,
     'text.lines_per_beat': int,
     'text.lines_per_beat_small': int,
@@ -80,6 +84,10 @@ const Schema = z
     'text.typing_ms': z.object({ slow: num, normal: num, fast: num }).strict(),
     'text.auto_advance_ms': num,
     'text.line_pause_ms': num,
+    'text.vn_keep': int.positive(),
+    'text.wish_max_chars': int.positive(),
+    'text.wish_grant_ms': num.nonnegative(),
+    'text.roll_result_ms': num.nonnegative(),
     'text.pace': z.object({ chant: num, np_name: num, dramatic: num, comma: num, period: num, ellipsis: num, dash: num, bang: num, newline: num }).strict(),
     'text.summon_timing': z.object({ char_ms: num, hold_ms: num, ignite_ms: num, burst_ms: num, line_delay_ms: num }).strict(),
   })
@@ -114,3 +122,17 @@ export function parseTiles(json: unknown): Tile[] {
 }
 export const TILES: Tile[] = parseTiles(rawTiles);
 export const MAP_GRID: ImageGrid = TilesFile.parse(rawTiles).image_grid;
+
+/** 스킬 효과 정의 (D-142). 고정 효과량 스킬은 skill.fixed_amount에 값이 있어야 한다 */
+export function parseSkills(json: unknown): Record<string, SkillDef> {
+  const list = SkillsFile.parse(json).skills;
+  const byId: Record<string, SkillDef> = {};
+  for (const s of list) {
+    if (byId[s.skill_id]) throw new Error(`스킬 정의 중복: ${s.skill_id}`);
+    if (s.hook !== null && s.scaling === 'fixed' && K['skill.fixed_amount'][s.skill_id] === undefined) throw new Error(`skill.fixed_amount에 ${s.skill_id} 없음`);
+    byId[s.skill_id] = s;
+  }
+  return byId;
+}
+export const SKILLS: Record<string, SkillDef> = parseSkills(rawSkills);
+export const isActiveSkill = (s: SkillDef | undefined): s is ActiveSkillDef => !!s && s.hook !== null;

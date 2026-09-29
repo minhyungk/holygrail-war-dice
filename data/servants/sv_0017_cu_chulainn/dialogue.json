@@ -231,13 +231,6 @@
     ],
     "seal_use": [
       {
-        "id": "buff",
-        "when": {
-          "event.purpose": "buff"
-        },
-        "text": "오, 영주까지 쓰냐? 좋아, 제대로 불붙었다!"
-      },
-      {
         "id": "np",
         "when": {
           "event.purpose": "np"

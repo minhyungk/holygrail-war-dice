@@ -8,8 +8,7 @@ npm install
 npm run dev        # 개발 서버
 npm test           # 테스트 (데이터 검증, AGENTS.md 규칙 검사 포함)
 npm run build      # 타입 검사 + 배포 빌드 (dist/)
-npm run sim        # 서술 시뮬레이터 (시드 6, 선택 근거 출력)
-npm run mockup     # 화면 목업 다시 빌드 → prototype/mockup/dist/
+npm run sim:battle # 전투 시뮬레이션 상성표 출력
 ```
 
 ## 폴더

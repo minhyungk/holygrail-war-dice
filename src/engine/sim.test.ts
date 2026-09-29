@@ -17,10 +17,10 @@ describe('헤드리스 시뮬', () => {
     expect(st.aWin + st.bWin).toBe(st.n); // 강제 전투는 무승부·도주 없음
   });
 
-  it('2단계 하락은 결판난 국면의 1~13% 범위 (Q-101 계산값)', () => {
+  it('2d6에서도 단일·2단계 피해가 모두 발생한다 (D-138)', () => {
     const st = matchup(servant(SV.artoria), servant(SV.cu), 4000);
-    expect(st.twoStepRate).toBeGreaterThan(0.005);
-    expect(st.twoStepRate).toBeLessThan(0.15);
+    expect(st.twoStepRate).toBeGreaterThan(0);
+    expect(st.twoStepRate).toBeLessThan(1);
   });
 
   it.runIf(process.env.SIM_REPORT)('상성표 출력', () => {

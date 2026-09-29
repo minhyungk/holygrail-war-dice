@@ -20,7 +20,7 @@ export const SV = {
   heracles: 'sv_0047_heracles',
 } as const;
 
-/** 자연값을 주사위 눈으로 나눈다 (예: 2d10에서 11 → [10, 1]) */
+/** 자연값을 주사위 눈으로 나눈다 (예: 2d6에서 7 → [6, 1]) */
 export function splitNatural(n: number): number[] {
   const count = K['dice.die_count'];
   const size = K['dice.die_size'];

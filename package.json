@@ -11,9 +11,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
-    "sim": "python3 prototype/narrative-sim/narrate_demo.py 6 --trace",
-    "sim:battle": "SIM_REPORT=1 vitest run src/engine/sim.test.ts --disableConsoleIntercept",
-    "mockup": "python3 prototype/mockup/build.py"
+    "sim:battle": "SIM_REPORT=1 vitest run src/engine/sim.test.ts --disableConsoleIntercept"
   },
   "dependencies": {
     "pretendard": "^1.3.9",

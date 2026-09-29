@@ -1,76 +1,74 @@
-// 3D 다이스 (2d10, 오각 사다리꼴면체). prototype/mockup의 Dice 모듈을 옮긴 것.
+// 3D 다이스 (2d6, 정육면체).
 // 결과는 엔진이 이미 정했다. 여기서는 정해진 눈으로 떨어지는 연출만 한다.
 import * as THREE from 'three';
+import { RoundedBoxGeometry } from 'three/examples/jsm/geometries/RoundedBoxGeometry.js';
+import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
 import { createRng } from '../../engine/rng';
 import { drawCircle, REDUCED } from './circle';
+import { pipLayout, pipRadius } from './pips';
 
 const fx = createRng(0x6d2b79f5); // 연출용 (결과와 무관)
-const SCALE = 0.55, G = -22, WALL = 1.55;
-/** 앞쪽 벽(카메라 쪽 z)과 멈출 때 보기 좋은 자리로 끌어오는 정도 */
-const FRONT = 0.95, HOME_PULL = 0.85;
+const SCALE = 0.4, G = -22, WALL = 1.55;
+/** 앞쪽 벽(카메라 쪽 z) */
+const FRONT = 0.95;
+/** 두 주사위 중심의 최소 거리: 어떻게 돌아가 있어도 겹치지 않게 (한 변 2·SCALE의 대각선 + 여유) */
+const MIN_GAP = SCALE * 2 * Math.SQRT2 * 1.08;
+/** 멈추는 자리의 가로 위치 (가운데에서 좌우로) */
+const HOME_X = MIN_GAP / 2 + 0.04;
 const UP = new THREE.Vector3(0, 1, 0);
 
-interface Kite { v: THREE.Vector3[]; val: number; normal: THREE.Vector3; dist: number; apex: THREE.Vector3; mid: THREE.Vector3 }
+interface Face { val: number; normal: THREE.Vector3 }
 interface Die {
-  mesh: THREE.Mesh; mat: THREE.MeshPhysicalMaterial; edge: THREE.LineBasicMaterial; sh: THREE.Mesh;
+  mesh: THREE.Mesh; mats: THREE.MeshPhysicalMaterial[]; sh: THREE.Mesh;
   vel: THREE.Vector3; ang: THREE.Vector3; state: 'rest' | 'fly' | 'settle'; t: number; bounces: number; val: number;
   s?: number; q0?: THREE.Quaternion; qT?: THREE.Quaternion; y0?: number; vxz?: THREE.Vector2; from?: THREE.Vector2; home?: THREE.Vector2;
 }
 
-function d10() {
-  // 적도 10정점(높이 ±h 교대) + 극점 ±H. H = h(1+cos36°)/(1-cos36°)일 때 연(kite) 면이 정확히 평면이 된다.
-  const h = 0.105, c36 = Math.cos(Math.PI / 5), H = (h * (1 + c36)) / (1 - c36);
-  const R: THREE.Vector3[] = [];
-  for (let i = 0; i < 10; i++) {
-    const a = (i * Math.PI) / 5;
-    R.push(new THREE.Vector3(Math.cos(a), i % 2 ? -h : h, Math.sin(a)));
-  }
-  const T = new THREE.Vector3(0, H, 0), B = new THREE.Vector3(0, -H, 0);
-  const upVals = [1, 3, 5, 7, 9];
-  const kites: Kite[] = [];
-  for (let k = 0; k < 5; k++) kites.push({ v: [T, R[2 * k]!, R[2 * k + 1]!, R[(2 * k + 2) % 10]!], val: upVals[k]! } as Kite);
-  for (let j = 0; j < 5; j++) kites.push({ v: [B, R[2 * j + 1]!, R[(2 * j + 2) % 10]!, R[(2 * j + 3) % 10]!], val: 11 - upVals[(j + 3) % 5]! } as Kite);
-  const pos: number[] = [];
-  kites.forEach((kt) => {
-    let [a, b, c, d] = kt.v as [THREE.Vector3, THREE.Vector3, THREE.Vector3, THREE.Vector3];
-    const cen = a.clone().add(b).add(c).add(d).multiplyScalar(0.25);
-    if (b.clone().sub(a).cross(c.clone().sub(a)).dot(cen) < 0) [b, d] = [d, b];
-    kt.normal = b.clone().sub(a).cross(c.clone().sub(a)).normalize();
-    kt.dist = kt.normal.dot(a);
-    kt.apex = a;
-    kt.mid = b.clone().add(d).multiplyScalar(0.5);
-    [[a, b, c], [a, c, d]].forEach((tri) => tri.forEach((p) => pos.push(p.x, p.y, p.z)));
-  });
-  const geo = new THREE.BufferGeometry();
-  geo.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
-  geo.computeVertexNormals();
-  return { geo, kites, rest: kites[0]!.dist };
+/** 모서리를 둥글린 정육면체. BoxGeometry 면 순서(+x, -x, +y, -y, +z, -z)에 눈을 붙인다. 마주 보는 면의 합은 7 */
+const FACE_VALS = [3, 4, 1, 6, 2, 5];
+const FACE_NORMALS: [number, number, number][] = [[1, 0, 0], [-1, 0, 0], [0, 1, 0], [0, -1, 0], [0, 0, 1], [0, 0, -1]];
+function d6() {
+  const geo = new RoundedBoxGeometry(2, 2, 2, 5, 0.3);
+  const faces: Face[] = FACE_VALS.map((val, i) => ({ val, normal: new THREE.Vector3(...FACE_NORMALS[i]!) }));
+  return { geo, faces, rest: 1 };
 }
-function numTex(n: number) {
+
+/** 면 무늬: 상아색 바탕에 파인 눈. bump=true면 같은 자리의 높이 지도(흰 바탕, 검은 구멍) */
+function faceTex(n: number, col: { body: string; pip: string; ace: string }, bump: boolean) {
+  const S = 256;
   const cv = document.createElement('canvas');
-  cv.width = cv.height = 128;
+  cv.width = cv.height = S;
   const x = cv.getContext('2d')!;
-  // 어떤 주사위 색 위에서도 읽히도록: 흰 글자 + 어두운 테두리
-  x.font = '900 92px Pretendard, sans-serif';
-  x.textAlign = 'center';
-  x.textBaseline = 'middle';
-  x.lineJoin = 'round';
-  x.shadowColor = 'rgba(255,228,150,.9)';
-  x.shadowBlur = 12;
-  x.lineWidth = 13;
-  x.strokeStyle = 'rgba(24,14,34,.92)';
-  x.strokeText(String(n), 64, 64);
-  x.shadowBlur = 0;
-  x.fillStyle = '#FFFFFF';
-  x.fillText(String(n), 64, 64);
-  if (n === 6 || n === 9) {
-    x.fillStyle = 'rgba(20,12,28,.9)';
-    x.fillRect(36, 106, 56, 14);
-    x.fillStyle = '#FFFFFF';
-    x.fillRect(40, 110, 48, 6);
+  x.fillStyle = bump ? '#ffffff' : col.body;
+  x.fillRect(0, 0, S, S);
+  for (const [u, v] of pipLayout(n)) {
+    const cx = u * S, cy = v * S, r = pipRadius(n) * S;
+    if (bump) {
+      const g = x.createRadialGradient(cx, cy, r * 0.2, cx, cy, r * 1.08);
+      g.addColorStop(0, '#000000');
+      g.addColorStop(0.8, '#303030');
+      g.addColorStop(1, '#ffffff');
+      x.fillStyle = g;
+    } else {
+      // 파인 자국: 위쪽 가장자리는 그늘, 아래쪽은 빛이 받쳐 준다
+      x.beginPath();
+      x.arc(cx, cy + r * 0.06, r * 1.06, 0, Math.PI * 2);
+      x.fillStyle = 'rgba(255,255,255,.55)';
+      x.fill();
+      const ink = n === 1 ? col.ace : col.pip;
+      const g = x.createRadialGradient(cx, cy + r * 0.25, r * 0.1, cx, cy, r);
+      g.addColorStop(0, ink);
+      g.addColorStop(0.75, ink);
+      g.addColorStop(1, 'rgba(0,0,0,.85)');
+      x.fillStyle = g;
+    }
+    x.beginPath();
+    x.arc(cx, cy, r, 0, Math.PI * 2);
+    x.fill();
   }
   const t = new THREE.CanvasTexture(cv);
-  t.anisotropy = 4;
+  if (!bump) t.colorSpace = THREE.SRGBColorSpace;
+  t.anisotropy = 8;
   return t;
 }
 function tableTex() {
@@ -102,14 +100,11 @@ export class DiceTable {
   private raf = 0;
   private last = 0;
   private pending: (() => void) | null = null;
-  private shape = d10();
-  private texs: Record<number, THREE.Texture> = {};
+  private shape = d6();
+  /** 면 무늬 (눈 순서가 아니라 BoxGeometry 면 순서) */
+  private faceMaps: { map: THREE.Texture; bump: THREE.Texture }[] = [];
   private shadow!: THREE.Texture;
   private ro: ResizeObserver | null = null;
-  /** 눈 1~10의 면 색 (tokens.css --dice-face-N) */
-  private faceColor: Record<number, string> = {};
-  /** 마지막으로 나온 두 눈의 면 색. 합산 칩도 같은 색을 쓴다 */
-  lastColors: string[] = [];
 
   constructor(private readonly host: HTMLElement) {
     try {
@@ -119,8 +114,13 @@ export class DiceTable {
       return;
     }
     this.renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+    // 방 조명 반사: 둥근 모서리와 광택이 살아난다
+    const pmrem = new THREE.PMREMGenerator(this.renderer);
+    this.scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+    this.scene.environmentIntensity = 0.45;
+    pmrem.dispose();
     host.prepend(this.renderer.domElement);
-    // 비스듬한 시점: 바로 위에서 보면 연 면 하나만 보여 10면체로 읽히지 않는다
+    // 비스듬한 시점으로 정육면체의 윗면과 옆면을 함께 보여 준다
     this.camera.position.set(0, 3.7, 3.9);
     this.camera.lookAt(0, 0, 0.15);
     this.scene.add(new THREE.HemisphereLight(0xfff3dd, 0x141a30, 0.55 * Math.PI));
@@ -134,13 +134,14 @@ export class DiceTable {
     table.rotation.x = -Math.PI / 2;
     this.scene.add(table);
     this.shadow = shadowTex();
+    // 색은 토큰에서 (tokens.css --dice-*)
     const css = getComputedStyle(document.documentElement);
-    for (let v = 1; v <= 10; v++) this.faceColor[v] = css.getPropertyValue(`--dice-face-${v}`).trim() || '#EDE5D0';
-    this.paintFaces();
-    for (let n = 1; n <= 10; n++) this.texs[n] = numTex(n);
+    const tok = (k: string, d: string) => css.getPropertyValue(k).trim() || d;
+    const col = { body: tok('--dice-body', '#F4ECDA'), pip: tok('--dice-pip', '#1B2140'), ace: tok('--dice-pip-ace', '#B3202E') };
+    this.faceMaps = this.shape.faces.map((f) => ({ map: faceTex(f.val, col, false), bump: faceTex(f.val, col, true) }));
     this.dice = [this.makeDie(), this.makeDie()];
-    this.placeRest(this.dice[0]!, 3, -0.6, 0.3);
-    this.placeRest(this.dice[1]!, 8, 0.6, 0.1);
+    this.placeRest(this.dice[0]!, 3, -HOME_X, 0.3);
+    this.placeRest(this.dice[1]!, 4, HOME_X, 0.1);
     this.ro = new ResizeObserver(() => this.resize());
     this.ro.observe(host);
     this.resize();
@@ -154,51 +155,39 @@ export class DiceTable {
     cancelAnimationFrame(this.raf);
     this.ro?.disconnect();
     this.renderer?.domElement.remove();
+    for (const f of this.faceMaps) (f.map.dispose(), f.bump.dispose());
+    this.scene.environment?.dispose();
     this.renderer?.dispose();
   }
 
   private makeDie(): Die {
-    // 면마다 다른 색의 보석 주사위: 정점 색(면 안에서 꼭짓점 쪽이 밝다) + 클리어코트 + 진주빛 무지개 광택
-    const mat = new THREE.MeshPhysicalMaterial({
-      color: 0xffffff,
-      vertexColors: true,
-      roughness: 0.22,
-      metalness: 0.05,
-      clearcoat: 1,
-      clearcoatRoughness: 0.08,
-      iridescence: 0.45,
-      iridescenceIOR: 1.3,
-      sheen: 0.4,
-      sheenColor: new THREE.Color(0xfff2d0),
-      flatShading: true,
+    // 상아 주사위: 반투명한 듯한 광택(클리어코트) + 파인 눈(범프)
+    const mats = this.faceMaps.map(({ map, bump }) => new THREE.MeshPhysicalMaterial({
+      map,
+      bumpMap: bump,
+      bumpScale: 2.2,
+      roughness: 0.38,
+      metalness: 0,
+      clearcoat: 0.8,
+      clearcoatRoughness: 0.18,
+      sheen: 0.25,
+      sheenColor: new THREE.Color(0xfff4e0),
       emissive: 0x000000,
-    });
-    const mesh = new THREE.Mesh(this.shape.geo, mat);
-    const edge = new THREE.LineBasicMaterial({ color: 0xf4d77a, transparent: true, opacity: 0.85 });
-    mesh.add(new THREE.LineSegments(new THREE.EdgesGeometry(this.shape.geo, 15), edge));
-    this.shape.kites.forEach((kt) => {
-      const pl = new THREE.Mesh(new THREE.PlaneGeometry(0.5, 0.5), new THREE.MeshBasicMaterial({ map: this.texs[kt.val]!, transparent: true, depthWrite: false }));
-      const p = kt.mid.clone().lerp(kt.apex, 0.3);
-      const up = kt.apex.clone().sub(p);
-      up.sub(kt.normal.clone().multiplyScalar(up.dot(kt.normal))).normalize();
-      pl.position.copy(p.clone().add(kt.normal.clone().multiplyScalar(0.006)));
-      pl.up.copy(up);
-      pl.lookAt(pl.position.clone().add(kt.normal));
-      mesh.add(pl);
-    });
+    }));
+    const mesh = new THREE.Mesh(this.shape.geo, mats);
     mesh.scale.setScalar(SCALE);
-    const sh = new THREE.Mesh(new THREE.PlaneGeometry(1.4, 1.4), new THREE.MeshBasicMaterial({ map: this.shadow, transparent: true, depthWrite: false }));
+    const sh = new THREE.Mesh(new THREE.PlaneGeometry(SCALE * 2.7, SCALE * 2.7), new THREE.MeshBasicMaterial({ map: this.shadow, transparent: true, depthWrite: false }));
     sh.rotation.x = -Math.PI / 2;
     this.scene.add(mesh);
     this.scene.add(sh);
-    return { mesh, mat, edge, sh, vel: new THREE.Vector3(), ang: new THREE.Vector3(), state: 'rest', t: 0, bounces: 0, val: 1 };
+    return { mesh, mats, sh, vel: new THREE.Vector3(), ang: new THREE.Vector3(), state: 'rest', t: 0, bounces: 0, val: 1 };
   }
   private heading(q: THREE.Quaternion) {
     const v = new THREE.Vector3(1, 0, 0).applyQuaternion(q);
     return Math.atan2(v.z, v.x);
   }
   private targetQuat(val: number, yawFrom: THREE.Quaternion) {
-    const kt = this.shape.kites.find((k) => k.val === val)!;
+    const kt = this.shape.faces.find((k) => k.val === val)!;
     const qA = new THREE.Quaternion().setFromUnitVectors(kt.normal, UP);
     return new THREE.Quaternion().setFromAxisAngle(UP, this.heading(qA) - this.heading(yawFrom)).multiply(qA);
   }
@@ -270,10 +259,10 @@ export class DiceTable {
       const e = 1 - Math.pow(1 - d.s, 3);
       m.quaternion.copy(d.q0!).slerp(d.qT!, e);
       m.position.y = d.y0! + (this.shape.rest * SCALE - d.y0!) * e;
-      // 멈추는 자리: 카메라 앞 가운데 쪽으로 부드럽게 끌어온다 (눈이 잘 보이도록)
+      // 멈추는 자리: 카메라 앞 가운데 쪽으로 부드럽게 끌어온다 (눈이 잘 보이도록). 두 자리는 MIN_GAP 이상 떨어져 있다
       const home = d.home!;
-      m.position.x = d.from!.x + (home.x - d.from!.x) * e * HOME_PULL;
-      m.position.z = d.from!.y + (home.y - d.from!.y) * e * HOME_PULL;
+      m.position.x = d.from!.x + (home.x - d.from!.x) * e;
+      m.position.z = d.from!.y + (home.y - d.from!.y) * e;
       if (d.s >= 1) d.state = 'rest';
     }
     this.syncShadow(d);
@@ -281,8 +270,8 @@ export class DiceTable {
   private separate() {
     const a = this.dice[0]!.mesh.position, b = this.dice[1]!.mesh.position;
     const dx = b.x - a.x, dz = b.z - a.z, dd = Math.hypot(dx, dz);
-    if (dd < 1.05 && dd > 1e-4) {
-      const p = (1.05 - dd) / 2, nx = dx / dd, nz = dz / dd;
+    if (dd < MIN_GAP && dd > 1e-4) {
+      const p = (MIN_GAP - dd) / 2, nx = dx / dd, nz = dz / dd;
       a.x -= nx * p;
       a.z -= nz * p;
       b.x += nx * p;
@@ -304,32 +293,16 @@ export class DiceTable {
     }
     this.raf = requestAnimationFrame(this.loop);
   };
-  /** 면(연 모양)마다 눈에 맞는 색을 칠한다. 꼭짓점 쪽은 밝게, 반대쪽은 조금 어둡게 해서 보석처럼 */
-  private paintFaces() {
-    const cols: number[] = [];
-    const white = new THREE.Color(0xffffff), black = new THREE.Color(0x000000);
-    this.shape.kites.forEach((kt) => {
-      const base = new THREE.Color(this.faceColor[kt.val]!);
-      const apex = base.clone().lerp(white, 0.38);
-      const side = base.clone();
-      const far = base.clone().lerp(black, 0.22);
-      // 정점 순서: (a, b, c), (a, c, d). a = 꼭짓점, c = 반대쪽 끝
-      for (const c of [apex, side, far, apex, far, side]) cols.push(c.r, c.g, c.b);
-    });
-    this.shape.geo.setAttribute('color', new THREE.Float32BufferAttribute(cols, 3));
-  }
   glow(on: boolean) {
     this.dice.forEach((d) => {
-      d.mat.emissive.setHex(on ? 0x8a6a10 : 0x000000);
-      d.edge.color.setHex(on ? 0xffffff : 0xf4d77a);
+      for (const m of d.mats) m.emissive.setHex(on ? 0x6a4e0c : 0x000000);
     });
     this.renderer?.render(this.scene, this.camera);
   }
-  /** 정해진 눈(1~10 두 개)으로 던진다. 렌더러가 없으면 false */
+  /** 정해진 눈(1~6 두 개)으로 던진다. 렌더러가 없으면 false */
   roll(values: number[], power: number, dirX: number): Promise<boolean> {
     return new Promise((res) => {
       if (!this.renderer) return res(false);
-      this.lastColors = values.map((v) => this.faceColor[v] ?? '#EDE5D0');
       this.glow(false);
       this.dice.forEach((d, k) => {
         d.val = values[k]!;
@@ -339,11 +312,11 @@ export class DiceTable {
         // 테이블 뒤쪽에서 나를 향해 굴린다 (멀어지면 눈이 안 보인다)
         d.mesh.position.set((k ? 0.5 : -0.5) + dirX * 0.3, 1.2, -1.3);
         d.vel.set(dirX * 1.2 + (fx.next() - 0.5) * 0.8, 1.8 + power * 1.0, 2.0 + power * 1.4 + (fx.next() - 0.5) * 0.6);
-        d.home = new THREE.Vector2((k ? 0.58 : -0.58) + (fx.next() - 0.5) * 0.2, 0.3 + (fx.next() - 0.5) * 0.2);
+        d.home = new THREE.Vector2((k ? HOME_X : -HOME_X) + (fx.next() - 0.5) * 0.08, 0.3 + (fx.next() - 0.5) * 0.2);
         d.ang.set((fx.next() - 0.5) * 30, (fx.next() - 0.5) * 20, (fx.next() - 0.5) * 30);
       });
       if (REDUCED) {
-        this.dice.forEach((d, k) => this.placeRest(d, d.val, k ? 0.6 : -0.6, 0));
+        this.dice.forEach((d, k) => this.placeRest(d, d.val, k ? HOME_X : -HOME_X, 0));
         this.renderer.render(this.scene, this.camera);
         return res(true);
       }

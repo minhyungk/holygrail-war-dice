@@ -1,4 +1,4 @@
-// S0_MAIN (prototype/mockup 메인 그대로 + 운명점 선택 D-095)
+// S0_MAIN (운명점 선택 D-095)
 import { K } from '../../data/constants';
 import { sealSrc } from '../components/common';
 import { RubyText } from '../components/Ruby';

@@ -7,7 +7,7 @@ import { distance, moveRange, reachable, tile, visible } from './map';
 const tileRole = (id: string) => tile(id).role;
 import { planRun, PLAYER_FACTION } from './run';
 import { simulateRun } from './sim';
-import { viewOf } from './view';
+import { applyEvent, emptyView, viewOf } from './view';
 
 const data = runData();
 const sim = (seed: number) => simulateRun({ seed, data, servantIds: servantIds(), masterIds: masterIds() });
@@ -82,6 +82,35 @@ describe('한 판 끝까지 (헤드리스)', () => {
 
   it('같은 시드 = 같은 로그', () => {
     expect(JSON.stringify(sim(7).log.events)).toBe(JSON.stringify(sim(7).log.events));
+  });
+
+  it('보구 공개 직후부터 화면 정보 단계와 실제 판정 보정이 일치한다 (D-137)', () => {
+    let reveals = 0;
+    let checked = 0;
+    for (const r of runs) {
+      let v = emptyView();
+      let negated = false; // 상대의 정보 무효 스킬 (소와의 소양, D-142)이 이번 굴림에서 발동했다
+      for (const e of r.log.events) {
+        v = applyEvent(v, e);
+        if (e.type === 'skill_triggered' && e.data.effect === 'event_negate' && e.data.target === v.player && e.data.faction !== v.player) negated = true;
+        if (e.type === 'intel_gained' && e.data.cause === 'np') {
+          reveals += 1;
+          expect(v.battle?.sides).toContain(v.player);
+          expect(v.battle?.sides).toContain(e.data.target);
+          expect(e.data.level_to).toBe(3);
+        }
+        if (e.type !== 'phase_rolled' || !v.battle?.sides.includes(v.player)) continue;
+        const mine = e.data.rolls.find((x) => x.faction === v.player);
+        if (!mine) continue;
+        const enemy = v.battle.sides.find((fc) => fc !== v.player)!;
+        const expected = negated ? 0 : K['day.intel_mod'][v.intel[enemy] ?? 0];
+        negated = false;
+        expect(mine.parts.intel ?? 0, `seed ${r.seed}, ${e.data.battle_id}/${e.data.phase_index}`).toBe(expected);
+        checked += 1;
+      }
+    }
+    expect(reveals).toBeGreaterThan(0);
+    expect(checked).toBeGreaterThan(reveals);
   });
 
   it('조우는 밤에만 (D-077)', () => {

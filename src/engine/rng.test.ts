@@ -11,18 +11,18 @@ describe('rng', () => {
     const a = createRng(deriveSeed(6, 'judge')), b = createRng(deriveSeed(6, 'narrative'));
     expect(a.next()).not.toEqual(b.next());
   });
-  it('2d10 자연값은 2~20이고 분포가 삼각형이다 (D-015)', () => {
+  it('2d6 자연값은 2~12이고 분포가 삼각형이다 (D-138)', () => {
     const rng = createRng(1);
     const count = new Map<number, number>();
     for (let i = 0; i < 100_000; i++) {
       const r = rollNatural(rng);
       expect(r.natural).toBeGreaterThanOrEqual(2);
-      expect(r.natural).toBeLessThanOrEqual(20);
+      expect(r.natural).toBeLessThanOrEqual(12);
       count.set(r.natural, (count.get(r.natural) ?? 0) + 1);
     }
-    // 11이 가장 흔하고(10%) 20은 드물다(1%). dice.md §3.4의 기적 확률 근거
-    expect(count.get(11)! / 100_000).toBeCloseTo(0.1, 1);
-    expect(count.get(20)! / 100_000).toBeCloseTo(0.01, 2);
+    // 7이 가장 흔하고(1/6) 12는 드물다(1/36). dice.md §3.4의 기적 확률 근거
+    expect(count.get(7)! / 100_000).toBeCloseTo(1 / 6, 2);
+    expect(count.get(12)! / 100_000).toBeCloseTo(1 / 36, 2);
   });
   it('가중치 추첨은 가중치 비율을 따른다', () => {
     const rng = createRng(3);

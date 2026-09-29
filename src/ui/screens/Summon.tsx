@@ -1,6 +1,6 @@
 // S1_SUMMON (02-screens-flow.md): 촉매 목록 → 소환 연출 → 카드 + 스테이터스 → 소환 대사(VN) → 시작.
 // 연출 순서: 영창(한 줄씩, 마법진이 한 획씩 그려진다) → 기동(회전 가속, 빛기둥, 불티) → 섬광 → 현현(카드).
-// 목업(prototype/mockup)의 마법진·카드·시트를 그대로 쓰고 그 위에 연출을 얹었다.
+// 마법진·카드·시트 위에 소환 연출을 얹는다.
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { K } from '../../data/constants';
 import { STAT_IDS, type ServantProfile } from '../../data/schema';
@@ -273,7 +273,7 @@ export function SummonReveal({ plan, session, chant, onStart }: { plan: RunPlan;
           ) : null}
         </div>
       </div>
-      {line && !lineDone ? <DelayedVn delay={TIMING.line_delay_ms} line={{ kind: 'line', speaker: s.name_ko, text: line.text, draft: line.status === 'draft' }} onDone={() => setLineDone(true)} /> : null}
+      {line && !lineDone ? <DelayedVn delay={TIMING.line_delay_ms} line={{ kind: 'line', speaker: s.name_ko, text: line.text, draft: line.status === 'draft', voice: 'self' }} onDone={() => setLineDone(true)} /> : null}
     </section>
   );
 }

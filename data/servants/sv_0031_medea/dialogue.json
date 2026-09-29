@@ -215,13 +215,6 @@
     ],
     "seal_use": [
       {
-        "id": "buff",
-        "when": {
-          "event.purpose": "buff"
-        },
-        "text": "영주를 쓰는 거야? 흐응, 제법 과감하네. 좋아, 받아 주지."
-      },
-      {
         "id": "np",
         "when": {
           "event.purpose": "np"

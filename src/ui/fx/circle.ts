@@ -1,5 +1,5 @@
-// 마법진 그리기 (prototype/mockup 그대로). 소환 캔버스와 다이스 테이블이 같이 쓴다.
-// progress(0~1): 소환 영창 동안 마법진이 한 획씩 그려지는 정도. 1이면 목업과 같다.
+// 마법진 그리기. 소환 캔버스와 다이스 테이블이 같이 쓴다.
+// progress(0~1): 소환 영창 동안 마법진이 한 획씩 그려지는 정도.
 export function drawCircle(ctx: CanvasRenderingContext2D, S: number, rot: number, glow: number, progress = 1) {
   const part = (from: number, to: number) => Math.max(0, Math.min(1, (progress - from) / (to - from)));
   const c = S / 2;

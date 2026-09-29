@@ -196,13 +196,6 @@
     ],
     "seal_use": [
       {
-        "id": "buff",
-        "when": {
-          "event.purpose": "buff"
-        },
-        "text": "……명령, 받았습니다. 전력으로 가겠습니다."
-      },
-      {
         "id": "np",
         "when": {
           "event.purpose": "np"

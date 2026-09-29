@@ -2,6 +2,16 @@
 // 여기에는 버튼·안내·결과 요약 같은 기능 문구만 둔다.
 
 export const T = {
+  forecast: {
+    title: '예상 승률',
+    win: '승',
+    loss: '패',
+    low: '<1%',
+    high: '>99%',
+    percent: (n: number) => `${n}%`,
+    none: '남은 국면으로는 승부가 나지 않는다',
+  },
+
   title: '제6차 성배전쟁',
   subtitle: '후유키 · 7일',
   statsPending: '우승자 비율 · 준비 중',
@@ -53,7 +63,6 @@ export const T = {
     npLow: (a: number, need: number) => `보구 개방 (마력 ${a}/${need})`,
     npLowWhy: (a: number, need: number) => `마력이 모자라다 (${a}/${need}). 영주로는 즉시 발동할 수 있다`,
     sealNp: (n: number) => `영주: 보구 즉시 발동 (남은 ${n}획)`,
-    sealBuff: (n: number) => `영주: 버프 +5, 이번 전투 내내 (남은 ${n}획)`,
     none: '지시하지 않는다',
     noneCounter: '맞서지 않는다',
   },
@@ -76,7 +85,6 @@ export const T = {
   // 전투 개입
   phaseN: (i: number) => `국면 ${i}`,
   sealCommandQ: (n: number) => `영주를 사용할까? (남은 ${n}획)`,
-  sealBuff: '영주: 버프 (+5, 이번 전투 내내)',
   sealNp: '영주: 보구 즉시 발동',
   sealNone: '사용하지 않는다',
   npOpenQ: (mana: number) => `보구를 개방할까? (마력 ${mana})`,
@@ -86,7 +94,7 @@ export const T = {
   npHold: '보류',
   rollCta: '주사위를 굴린다',
   battleOver: '전투 종료',
-  fx: { guard: '버텨 냈다', fall: '▼ 전투 불능' },
+  fx: { guard: '버텨 냈다', fall: '▼ 전투 불능', skill: '스킬 발동', negate: '무효' },
   sealBurst: '영주로 명한다',
   sealBurstEnemy: (m: string) => `${m || '상대 마스터'}이(가) 영주를 사용했다`,
   sealsLeft: (n: number) => `남은 영주 ${n}획`,
@@ -126,9 +134,10 @@ export const T = {
   dice: '주사위',
   miracle: '기적',
   total: '판정값',
+  hiddenStats: '미공개 스테이터스',
   dc: (n: number) => `목표 ${n}`,
   vs: 'VS',
-  part: { affinity: '호감도', intel: '정보', camp: '진지', seal: '영주 버프', ambush: '기습', presence_detection: '기척감지', cap: '보정 상한', modifier: '보정' } as Record<string, string>,
+  part: { affinity: '호감도', intel: '정보', camp: '진지', ambush: '기습', skill: '스킬', foeSkill: '상대 스킬', presence_detection: '기척감지', cap: '보정 상한', modifier: '보정' } as Record<string, string>,
   // 결과 요약 (시스템 문구)
   sys: {
     intelOk: (who: string, what: string) => `정보 수집 성공 — ${who}의 ${what}을(를) 알아냈다.`,
@@ -146,7 +155,7 @@ export const T = {
     enemyEscapeFail: '상대가 도주하려 했지만 놓치지 않았다.',
     parted: '서로 싸우지 않고 물러났다.',
     seal: (purpose: string, n: number) => `영주 사용: ${purpose} (남은 ${n}획)`,
-    sealPurpose: { np: '보구 즉시 발동', buff: '버프', escape: '도주', block_betrayal: '배신 저지' } as Record<string, string>,
+    sealPurpose: { np: '보구 즉시 발동', escape: '도주', block_betrayal: '배신 저지' } as Record<string, string>,
     battleEnd: { win: '승리', loss: '패배', draw: '무승부', escape: '도주' } as Record<string, string>,
     recovered: (a: string, b: string) => `하룻밤이 지나 상태가 회복되었다 (${a} → ${b}).`,
     betrayal: '서번트가 배신하려 한다.',
@@ -156,6 +165,9 @@ export const T = {
     eliminatedEnemy: (who: string) => `${who}이(가) 전쟁에서 탈락했다.`,
     playerOut: '당신의 성배전쟁은 여기서 끝났다.',
     check: (total: number, dc: number | null) => (dc === null ? `(판정 ${total})` : `(판정 ${total} / 목표 ${dc})`),
+    // 스킬 자동 발동 (D-142): 판정 보정 외의 효과만 글로 알린다. 판정 보정은 판정 카드와 연출이 보인다
+    skillGuard: (skill: string) => `${skill} — 쓰러지지 않고 위험에서 버틴다.`,
+    skillMana: (skill: string, who: string, a: number, b: number) => `${skill} — ${who}의 마력 ${a} → ${b}`,
     battleStart: (place: string) => `전투 개시${place ? ` — ${place}` : ''}`,
     enemyNp: (who: string) => `${who}이(가) 보구를 개방했다!`,
     sealNp: '영주의 명령으로 보구를 즉시 발동했다.',
@@ -172,6 +184,13 @@ export const T = {
     drawReason: (n: number) => `${n}국면 소진, 양측 생존`,
   },
   victoryTitle: '우승',
+  // 성배 소원 (D-142): 우승하면 성배 앞에서 소원을 적는다
+  grail: '성배',
+  wishLabel: '소원',
+  wishPlaceholder: '소원을 적는다',
+  wishSubmit: '소원을 빈다',
+  wishCount: (n: number, max: number) => `${n} / ${max}`,
+  wishMade: '성배에 빈 소원',
   victoryBody: '성배는 당신의 손에 들어왔다.',
   epiloguePending: '에필로그는 이벤트 로그를 바탕으로 나중에 쓰인다 (AI 에필로그, 후순위).',
   defeatTitle: '패배',

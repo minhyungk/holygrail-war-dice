@@ -245,14 +245,6 @@
     ],
     "seal_use": [
       {
-        "speaker": "narrator",
-        "text": "영주의 빛이 스며들자, 광전사의 근육이 한층 부풀어 오른다.",
-        "id": "buff",
-        "when": {
-          "event.purpose": "buff"
-        }
-      },
-      {
         "id": "np",
         "when": {
           "event.purpose": "np"

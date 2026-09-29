@@ -1,5 +1,6 @@
 // 이벤트 로그 (docs/systems/narrative-engine.md §3, D-096). 게임 상태 변화는 모두 여기에 기록한다.
 // 서술 엔진·화면·에필로그·재현·커버리지 시뮬레이터가 이 로그를 읽는다. 로그만으로 상태를 다시 만들 수 있어야 한다 (view.ts).
+import type { BattleInput } from './combat';
 import type { PhaseId, Terrain } from '../data/schema';
 import type { RollResult } from './dice';
 
@@ -50,6 +51,8 @@ export interface EventDataMap {
   condition_recovered: { faction: string; from: Condition; to: Condition; cause: 'night' | 'supply' };
   mana_regenerated: { faction: string; amount: number; mana_after: number };
   // 낮·밤 행동
+  /** 판정이 있는 플레이어 행동의 시작. 도입 나레이션이 주사위(재굴림 질문 포함)보다 먼저 나오게 한다 (D-141) */
+  action_started: { faction: string; action: 'bond' | 'intel' | 'craft' | 'supply'; tile: string; target: string | null };
   intel_gained: { target: string; level_from: number; level_to: number; result: 'success' | 'fail'; cause: 'intel' | 'np'; roll: RollRecord | null; dc: number | null };
   mana_supplied: { faction: string; result: SupplyResult; mana_before: number; mana_after: number; roll: RollRecord };
   bond: { faction: string; result: 'success' | 'fail'; roll: RollRecord; dc: number };
@@ -65,8 +68,8 @@ export interface EventDataMap {
   encounter: { tile: string; terrain: Terrain; factions: [string, string]; bystanders: string[]; ambusher: string | null; ambush_rolls: RollRecord[] };
   encounter_decided: { choices: Record<string, 'fight' | 'flee'> };
   // 전투
-  battle_started: { battle_id: string; tile: string | null; terrain: Terrain; is_final: boolean; ambusher: string | null; sides: [string, string] };
-  phase_started: { battle_id: string; phase_index: number; phase_id: PhaseId; attacker: string; defender: string };
+  battle_started: { forecast?: BattleInput; battle_id: string; tile: string | null; terrain: Terrain; is_final: boolean; ambusher: string | null; sides: [string, string] };
+  phase_started: { forecast?: BattleInput; battle_id: string; phase_index: number; phase_id: PhaseId; attacker: string; defender: string };
   np_opened: { battle_id: string; phase_index: number; faction: string; seal: boolean; mana_before: number; mana_after: number };
   phase_rolled: { battle_id: string; phase_index: number; phase_id: PhaseId; kind: 'contest' | 'solo'; rolls: RollRecord[]; dc: number | null };
   phase_resolved: {
@@ -83,11 +86,26 @@ export interface EventDataMap {
     drop: 0 | 1 | 2;
     miracle: boolean;
     condition_from: Condition | null;
-    /** below = `위험` 아래로 떨어짐 (도주 또는 사망) */
+    /** below = 위험에서 패배해 쓰러짐. 위험 진입에서 멈추면 danger (D-134, D-137) */
     condition_to: Condition | 'below' | null;
   };
   condition_changed: { battle_id: string; faction: string; from: Condition; to: Condition | 'dead' };
-  seal_used: { battle_id: string | null; faction: string; purpose: 'np' | 'buff' | 'escape' | 'block_betrayal'; seals_left: number };
+  seal_used: { battle_id: string | null; faction: string; purpose: 'np' | 'escape' | 'block_betrayal'; seals_left: number };
+  /**
+   * 스킬 자동 발동 (D-142). 판정 보정은 그 판정의 parts에도 들어간다 (키 = skill_id, 상대에게 건 것은 foe:skill_id).
+   * target = 효과를 받은 진영. amount = 보정·마력 변화량 (무효·버팀은 0). mana_after = 마력 변화가 있을 때만
+   */
+  skill_triggered: {
+    battle_id: string;
+    phase_index: number;
+    faction: string;
+    skill_id: string;
+    rank: string | null;
+    effect: 'roll_mod' | 'event_negate' | 'resource_change' | 'condition_guard';
+    amount: number;
+    target: string;
+    mana_after: number | null;
+  };
   /** 위험에 들어섰을 때의 선택 (D-134) */
   danger_decided: { battle_id: string; faction: string; choice: 'fight' | 'seal' | 'run' };
   escape_attempted: { battle_id: string | null; faction: string; context: 'battle' | 'encounter'; success: boolean; rolls: RollRecord[] };

@@ -21,14 +21,26 @@
         }
       ]
     },
-    "bond": {
-      "size": "normal",
+    "action_started": {
+      "size": "small",
       "slots": [
         {
           "slot": "lead",
           "from": "narrator",
-          "tag": "day_bond"
-        },
+          "tag_by": {
+            "fact": "event.action",
+            "map": {
+              "bond": "day_bond",
+              "intel": "intel",
+              "supply": "mana_supply"
+            }
+          }
+        }
+      ]
+    },
+    "bond": {
+      "size": "normal",
+      "slots": [
         {
           "slot": "line",
           "from": "self",
@@ -56,14 +68,6 @@
     "intel_gained": {
       "size": "normal",
       "slots": [
-        {
-          "slot": "lead",
-          "from": "narrator",
-          "tag": "intel",
-          "if": {
-            "event.cause": "intel"
-          }
-        },
         {
           "slot": "line",
           "from": "self",
@@ -305,11 +309,6 @@
     "mana_supplied": {
       "size": "normal",
       "slots": [
-        {
-          "slot": "lead",
-          "from": "narrator",
-          "tag": "mana_supply"
-        },
         {
           "slot": "line",
           "from": "self",

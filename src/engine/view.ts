@@ -23,7 +23,6 @@ export interface BattleView {
   tile: string | null;
   isFinal: boolean;
   phaseIndex: number;
-  buffed: string[];
 }
 
 export interface RunView {
@@ -100,12 +99,14 @@ export function applyEvent(prev: RunView, e: AnyEvent): RunView {
       break;
     case 'np_opened':
       f(e.data.faction).mana = e.data.mana_after;
-      // 플레이어 앞에서 연 보구는 그 순간 진명 공개 (D-067). 엔진은 전투가 끝난 뒤 intel_gained로 확정한다
+      // 영창부터 진명을 쓸 수 있도록 즉시 공개한다. 바로 뒤의 intel_gained가 같은 단계를 기록한다 (D-137)
       if (v.battle?.sides.includes(v.player) && e.data.faction !== v.player) v.intel[e.data.faction] = 3;
       break;
     case 'seal_used':
       f(e.data.faction).seals = e.data.seals_left;
-      if (e.data.purpose === 'buff' && v.battle) v.battle = { ...v.battle, buffed: [...v.battle.buffed, e.data.faction] };
+      break;
+    case 'skill_triggered':
+      if (e.data.mana_after !== null) f(e.data.faction).mana = e.data.mana_after;
       break;
     case 'phase_rolled':
       spendRerolls(e.data.rolls);
@@ -136,7 +137,7 @@ export function applyEvent(prev: RunView, e: AnyEvent): RunView {
       break;
     }
     case 'battle_started':
-      v.battle = { id: e.data.battle_id, sides: e.data.sides, tile: e.data.tile, isFinal: e.data.is_final, phaseIndex: 0, buffed: [] };
+      v.battle = { id: e.data.battle_id, sides: e.data.sides, tile: e.data.tile, isFinal: e.data.is_final, phaseIndex: 0 };
       break;
     case 'battle_ended':
       v.battle = null;

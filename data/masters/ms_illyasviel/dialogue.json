@@ -58,15 +58,6 @@
     ],
     "master_seal_use": [
       {
-        "id": "buff",
-        "text": "죽여, {servant_class}. ──전부.",
-        "tone": "cold",
-        "when": {
-          "event.purpose": "buff"
-        },
-        "notes": "'죽여, 버서커' 오마주 (Fate/stay night)"
-      },
-      {
         "id": "escape",
         "text": "……돌아가자, {servant_class}. 오늘은 여기까지야.",
         "tone": "grim",

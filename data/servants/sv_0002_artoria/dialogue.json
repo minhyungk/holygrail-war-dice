@@ -281,13 +281,6 @@
     ],
     "seal_use": [
       {
-        "id": "buff",
-        "when": {
-          "event.purpose": "buff"
-        },
-        "text": "영주의 명, 확실히 받았습니다. ──이 검에 걸고, 응하겠습니다."
-      },
-      {
         "id": "np",
         "when": {
           "event.purpose": "np"

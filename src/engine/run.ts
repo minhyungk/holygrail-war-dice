@@ -5,7 +5,7 @@
 import { K } from '../data/constants';
 import type { MasterProfile, ServantProfile, ServantSkillsFile, StatId } from '../data/schema';
 import { applyDelta, betrayalChance, initialAffinity, postChoiceDelta, refusalChance, rollMod, tierOf } from './affinity';
-import { battle, type BattleOutcome, type BattleDice, chance, createFighter, type Fighter, NO_BONUS, type Prompt, type PromptAnswer, rngDice, runBattle } from './combat';
+import { battle, type BattleInput, type BattleOutcome, type BattleDice, chance, createFighter, type Fighter, NO_BONUS, type Prompt, type PromptAnswer, rngDice, runBattle } from './combat';
 import { check, contest, type NaturalRoll } from './dice';
 import { type Condition, EventLog, type FactionSetup, type RollRecord, type SupplyResult } from './events';
 import { allTileIds, centerTileId, moveRange, neighbors, reachable, tile } from './map';
@@ -24,7 +24,7 @@ export type RunPrompt =
   | { kind: 'camp_offer'; tile: string; camp: string | null }
   /** 아침: 서번트가 마력 공급을 청한다 */
   | { kind: 'supply_offer'; reason: 'hurt' | 'trust'; condition: Condition; affinity: number }
-  | { kind: 'encounter'; enemy: string; tile: string; ambusher: string | null }
+  | { kind: 'encounter'; enemy: string; tile: string; ambusher: string | null; forecast?: BattleInput }
   | { kind: 'post_choice'; target: string }
   | { kind: 'betrayal_block'; seals: number };
 export type ActionAnswer = { action: 'move'; to: string };
@@ -226,7 +226,7 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
       // 실패했을 때만 (D-119). 목표가 없는 마력 공급은 결과가 실패·대실패일 때
       const failing = dc !== null ? !c0.success : ['fail', 'fumble'].includes(K['mana.supply_result'].find((b) => c0.roll.total >= b.min)!.result);
       if (!failing) break;
-      const own = { ...c0.roll, stats: [...stats], parts };
+      const own = { ...c0.roll, faction: player.id, stats: [...stats], parts };
       const again = yield* ask<boolean>({ kind: 'reroll', faction: player.id, context: 'action', own, opponent_total: null, opponent_roll: null, dc, fate_points: player.fatePoints }, isBool);
       if (!again) break;
       player.fatePoints -= 1;
@@ -256,9 +256,9 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
             kind: 'reroll',
             faction: player.id,
             context: 'escape',
-            own: { ...r[me], stats: ['agi'], parts: aff ? { affinity: aff } : {} },
+            own: { ...r[me], faction: player.id, stats: ['agi'], parts: aff ? { affinity: aff } : {} },
             opponent_total: theirs.total,
-            opponent_roll: { ...theirs, stats: ['agi'], parts: {} },
+            opponent_roll: { ...theirs, faction: (me === 'a' ? b : a).id, stats: ['agi'], parts: {} },
             dc: null,
             fate_points: player.fatePoints,
           },
@@ -312,6 +312,7 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
     const role = tile(player.tile).role;
     if (role === 'bond') {
       const dc = K['day.bond_dc'];
+      log.emit('action_started', [player.id], { faction: player.id, action: 'bond', tile: player.tile, target: null });
       const { record, success } = yield* playerCheck([], {}, dc);
       log.emit('bond', [player.id], { faction: player.id, result: success ? 'success' : 'fail', roll: record, dc });
       changeAffinity(K['affinity.delta_bond'][success ? 'success' : 'fail'], 'bond');
@@ -326,6 +327,7 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
       const dc = K['day.intel_dc'][from + 1]!;
       const detect = player.skills?.skills.find((sk) => sk.skill_id === 'sk_presence_detection');
       const extra: Record<string, number> = detect?.rank ? { presence_detection: parseRank(detect.rank).value } : {};
+      log.emit('action_started', [player.id, target.id], { faction: player.id, action: 'intel', tile: player.tile, target: target.id });
       const { record, success } = yield* playerCheck([], extra, dc);
       const to = success ? from + 1 : from;
       S.intel[target.id] = to;
@@ -336,6 +338,7 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
       const yes = yield* ask<boolean>({ kind: 'camp_offer', tile: player.tile, camp: S.camp }, isBool);
       if (!yes) return;
       const dc = K['day.craft_dc'];
+      log.emit('action_started', [player.id], { faction: player.id, action: 'craft', tile: player.tile, target: null });
       const { record, success } = yield* playerCheck(['mana'], {}, dc);
       if (success) S.camp = player.tile;
       log.emit('crafted', [player.id], { faction: player.id, tile: player.tile, result: success ? 'success' : 'fail', roll: record, dc });
@@ -353,6 +356,7 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
     const reason = hurt ? 'hurt' : 'trust';
     const yes = yield* ask<boolean>({ kind: 'supply_offer', reason, condition: player.condition, affinity: player.affinity ?? 0 }, isBool);
     if (!yes) return;
+    log.emit('action_started', [player.id], { faction: player.id, action: 'supply', tile: player.tile, target: null });
     const { record } = yield* playerCheck([], {}, null);
     const band = K['mana.supply_result'].find((b) => record.total >= b.min)!;
     const before = player.mana;
@@ -387,12 +391,14 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
       mana: f.mana,
       seals: f.seals,
       fatePoints: f.fatePoints,
+      intelLevel: f === player ? (S.intel[opponent.id] ?? 0) : 0,
       bonus:
         f === player
-          ? { affinity: rollMod(player.affinity ?? 0), intel: K['day.intel_mod'][S.intel[opponent.id] ?? 0]!, camp: S.camp === battleTile ? K['day.camp_bonus'] : 0 }
+          ? { affinity: rollMod(player.affinity ?? 0), camp: S.camp === battleTile ? K['day.camp_bonus'] : 0 }
           : NO_BONUS,
       refusal: f === player ? refusalChance(player.affinity ?? 0) : 0,
       temperament: f.master?.temperament ?? null,
+      skills: f.skills?.skills ?? [],
     });
 
   const applyOutcome = (a: FactionState, b: FactionState, o: BattleOutcome) => {
@@ -401,14 +407,15 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
       f.mana = r.mana;
       f.seals = r.seals;
       f.fatePoints = r.fatePoints;
+      if (f === player) S.intel[(f === a ? b : a).id] = r.intelLevel;
     }
   };
 
   function* fight(a: FactionState, b: FactionState, battleTile: string, isFinal: boolean, ambusher: FactionState | null) {
     S.battleSeq += 1;
     const battleId = `bt_${String(S.battleSeq).padStart(3, '0')}`;
-    const before = log.events.length;
     const input = {
+      captureForecast: a === player || b === player,
       battleId,
       a: fighterOf(a, b, battleTile),
       b: fighterOf(b, a, battleTile),
@@ -419,16 +426,6 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
     };
     const outcome = a === player || b === player ? yield* passBattle(battle(input, dice, log)) : runBattle(input, dice, log, aiPolicy);
     applyOutcome(a, b, outcome);
-    // 플레이어 앞에서 보구를 연 적은 진명이 공개된다 (D-067)
-    if (a === player || b === player) {
-      const enemy = a === player ? b : a;
-      const opened = log.events.slice(before).some((e) => e.type === 'np_opened' && e.data.faction === enemy.id);
-      if (opened && (S.intel[enemy.id] ?? 0) < 3) {
-        const from = S.intel[enemy.id] ?? 0;
-        S.intel[enemy.id] = 3;
-        log.emit('intel_gained', [player.id, enemy.id], { target: enemy.id, level_from: from, level_to: 3, result: 'success', cause: 'np', roll: null, dc: null });
-      }
-    }
     return outcome;
   }
 
@@ -471,7 +468,7 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
     for (const f of [a, b]) {
       if (f === player) {
         const enemy = f === a ? b : a;
-        let c = yield* ask<'fight' | 'flee'>({ kind: 'encounter', enemy: enemy.id, tile: at, ambusher: ambusher?.id ?? null }, (x): x is 'fight' | 'flee' => x === 'fight' || x === 'flee');
+        let c = yield* ask<'fight' | 'flee'>({ kind: 'encounter', enemy: enemy.id, tile: at, ambusher: ambusher?.id ?? null, forecast: { battleId: 'bt_forecast', a: fighterOf(a, b, at), b: fighterOf(b, a, at), terrain: tile(at).terrain, tile: at, ambusher: ambusher === a ? 'a' : ambusher === b ? 'b' : null } }, (x): x is 'fight' | 'flee' => x === 'fight' || x === 'flee');
         // 명령 거부 (D-083): 전투 개시·도주를 거부하면 반대로 한다
         if (chance(dice, refusalChance(player.affinity ?? 0))) {
           log.emit('refused', [player.id], { faction: player.id, command: c === 'fight' ? 'fight' : 'flee' });

@@ -30,7 +30,6 @@ src/                     게임 코드 (TypeScript)
   ui/                    React 화면, 디자인 토큰
   architecture.test.ts   AGENTS.md 규칙 검사
   testkit.ts             테스트 도구 (정해진 주사위, 프로필 읽기). 게임 코드에서 import 금지
-prototype/               검증용 임시 도구 (서술 시뮬레이터, 화면 목업)
 legacy/                  레거시 자산 (코드 공유 안 함, 값·데이터만 참고. 05-legacy.md)
   data/  scripts/  data-templates/
 .claude/skills/          AI 작성 가이드 (대사·나레이션)
@@ -56,4 +55,4 @@ legacy/                  레거시 자산 (코드 공유 안 함, 값·데이터
 `main` 브랜치에 push하면 GitHub Actions가 테스트 → 빌드 → GitHub Pages 배포를 한다 (Q-141). 경로 기준은 상대 경로(`base: './'`)라 저장소 이름과 무관하다.
 
 ## 5. 다국어 대비 (D-086)
-지금은 한국어만 쓴다. 대사 본문은 `data/` JSON에, 화면 문구는 `src/ui`에 있다. 다국어를 넣을 때는 화면 문구를 한 파일로 모으고, 대사 파일은 언어별로 나누는 방식을 쓴다 [제안].
+지금은 한국어만 쓴다. 대사 본문은 `data/` JSON, 주요 기능 문구는 `src/ui/strings.ts`, 클래스 이름 등은 `data/common/labels.json`에 있다. 일부 화면 문구와 연출 수치는 아직 컴포넌트에 남아 있다. 언어별 파일 분리·언어 전환은 미구현이다.

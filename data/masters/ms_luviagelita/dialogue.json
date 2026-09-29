@@ -58,14 +58,6 @@
     ],
     "master_seal_use": [
       {
-        "id": "buff",
-        "text": "영주로 명하겠어요. ──승리 이외엔 인정하지 않아요.",
-        "tone": "defiant",
-        "when": {
-          "event.purpose": "buff"
-        }
-      },
-      {
         "id": "escape",
         "text": "오늘은 물러나 드리죠. 승부를 미룬 것뿐이에요.",
         "tone": "cold",

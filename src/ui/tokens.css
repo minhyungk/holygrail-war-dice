@@ -18,9 +18,12 @@
   --cond-danger: #C0392B;
   --class-saber: #3D74D9; --class-archer: #C8452F; --class-lancer: #1FA38A; --class-rider: #D3558F;
   --class-caster: #8A5CD6; --class-assassin: #6B7385; --class-berserker: #8E2230;
-  /* 주사위 면 색: 눈 1~10마다 한 색 (3D 다이스와 합산 칩이 같이 쓴다). 무지개 순서라 이웃한 면은 서로 다른 색이 된다 */
-  --dice-face-1: #FF4D6D; --dice-face-2: #FF7A3D; --dice-face-3: #FFB020; --dice-face-4: #C9DB2E; --dice-face-5: #36D07F;
-  --dice-face-6: #1FC7B6; --dice-face-7: #2FA8FF; --dice-face-8: #4C6BFF; --dice-face-9: #8B5CF6; --dice-face-10: #D946EF;
+  /* 주사위: 상아 바탕 + 남색 눈, 1의 눈만 붉게 (3D 다이스와 합산 칩이 같이 쓴다) */
+  --dice-body: #F4ECDA; --dice-edge: #CDBF9F; --dice-pip: #1B2140; --dice-pip-ace: #B3202E;
+  /* 화자별 색 (D-141): 나레이션 · 내 서번트 · 상대 서번트 · 상대 마스터. 시스템 문구는 --accent */
+  --voice-narration: #BDB6A6; --voice-self: #7DB6FF; --voice-enemy: #FF8A7A; --voice-enemy-master: #C9A0FF;
+  /* 성배 (D-142): 금빛 잔의 밝은 면·어두운 면. 중간색은 --accent */
+  --grail-light: #FFF0B8; --grail-dark: #6E5420;
   --affinity-hostile: #B03A3A; --affinity-wary: #C9803A; --affinity-neutral: #9A97A6; --affinity-friendly: #6FA8DC; --affinity-loyal: #C9A45C;
   --font: "Pretendard Variable", Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
   --crest: "Noto Serif KR", "AppleMyungjo", serif;
