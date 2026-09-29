@@ -1,0 +1,144 @@
+{
+  "servant_id": "sv_0419_dobrynya_nikitich_lancer",
+  "source_id": 419,
+  "name_ko": "도브리냐 니키티치",
+  "name_en": "Dobrynya Nikitich (Lancer)",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/419?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "B",
+    "mana": "B+",
+    "luck": "A",
+    "np": "B+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2005,
+      "name": "wildbeast"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2632,
+      "name": "demonicBeastServant"
+    },
+    {
+      "id": 2821,
+      "name": "havingAnimalsCharacteristics"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 305500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 88450,
+        "name": "기승 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2391450,
+        "name": "여름의 나의 애마 B",
+        "rank": null
+      },
+      {
+        "id": 2392650,
+        "name": "대 용 전투술(물가) EX",
+        "rank": null
+      },
+      {
+        "id": 2393452,
+        "name": "서머 타임 니키티치! B++",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 305501,
+      "name": "네 갈래로 갈라져라, 어머니 대지여",
+      "ruby": "클라데네츠・즈메이・타타르",
+      "rank": "A",
+      "type": "대룡보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3055000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/305500/305500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/305500/305500b@2.png"
+  }
+}

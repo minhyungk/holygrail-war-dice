@@ -1,0 +1,125 @@
+{
+  "servant_id": "sv_0330_martha_santa",
+  "source_id": 330,
+  "name_ko": "마르타[산타]",
+  "name_en": "Martha (Santa)",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/330?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "D",
+    "agi": "C",
+    "mana": "A",
+    "luck": "A+",
+    "np": "C+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 505000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83450,
+        "name": "진지작성 B",
+        "rank": null
+      },
+      {
+        "id": 80250,
+        "name": "도구작성 D",
+        "rank": null
+      },
+      {
+        "id": 88650,
+        "name": "기승 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2009650,
+        "name": "마르타의 수제 요리 EX",
+        "rank": null
+      },
+      {
+        "id": 2010450,
+        "name": "언니의 참견 B",
+        "rank": null
+      },
+      {
+        "id": 2011351,
+        "name": "산타클로스의 초대장 C+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 505001,
+      "name": "성야의 만찬, 모두 즐겁게",
+      "ruby": "해피 메리 크리스마스",
+      "rank": "C+",
+      "type": "요리보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5050000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/505000/505000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/505000/505000b@2.png"
+  }
+}

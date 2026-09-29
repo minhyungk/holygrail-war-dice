@@ -1,0 +1,125 @@
+{
+  "servant_id": "sv_0284_altria_caster",
+  "source_id": 284,
+  "name_ko": "알트리아 캐스터",
+  "name_en": "Altria Caster",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/284?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "D",
+    "agi": "B",
+    "mana": "A",
+    "luck": "B",
+    "np": "A++"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 203,
+      "name": "attributeStar"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2007,
+      "name": "saberface"
+    },
+    {
+      "id": 2010,
+      "name": "arthur"
+    },
+    {
+      "id": 2795,
+      "name": "knightsOfTheRound"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 504500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 83650,
+        "name": "진지작성 EX",
+        "rank": null
+      },
+      {
+        "id": 764450,
+        "name": "독자마술 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 761450,
+        "name": "희망의 카리스마 B",
+        "rank": null
+      },
+      {
+        "id": 762550,
+        "name": "호수의 가호 A",
+        "rank": null
+      },
+      {
+        "id": 763650,
+        "name": "선정의 검 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 504501,
+      "name": "그대를 감싸안는 희망의 별",
+      "ruby": "어라운드 칼리번",
+      "rank": "A",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5045000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/504500/504500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/504500/504500b@2.png"
+  }
+}

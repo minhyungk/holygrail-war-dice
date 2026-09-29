@@ -1,0 +1,129 @@
+{
+  "servant_id": "sv_0246_william_tell",
+  "source_id": 246,
+  "name_ko": "윌리엄 텔",
+  "name_en": "William Tell",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/246?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "B",
+    "mana": "E",
+    "luck": "C",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2810,
+      "name": "fairyTaleServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 203400,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34250,
+        "name": "대 마력 D",
+        "rank": null
+      },
+      {
+        "id": 20550,
+        "name": "단독행동 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 616450,
+        "name": "우리의 사냥꾼 B",
+        "rank": null
+      },
+      {
+        "id": 617350,
+        "name": "부동의 인내 C",
+        "rank": null
+      },
+      {
+        "id": 601650,
+        "name": "에이밍 EX",
+        "rank": null
+      },
+      {
+        "id": 2242450,
+        "name": "기회에 이르는 인내 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 203401,
+      "name": "발사된 신뢰의 첫 번째 화살",
+      "ruby": "압펠 쉬센",
+      "rank": "C",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2034000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/203400/203400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/203400/203400b@2.png"
+  }
+}

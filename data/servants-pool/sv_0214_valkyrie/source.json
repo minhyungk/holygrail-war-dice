@@ -1,0 +1,144 @@
+{
+  "servant_id": "sv_0214_valkyrie",
+  "source_id": 214,
+  "name_ko": "발키리",
+  "name_en": "Valkyrie",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/214?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "B",
+    "mana": "A+",
+    "luck": "E",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2797,
+      "name": "divineSpirit"
+    },
+    {
+      "id": 2837,
+      "name": "valkyrie"
+    },
+    {
+      "id": 2847,
+      "name": "levitating"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 303300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 62550,
+        "name": "신성 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 127010,
+        "name": "원초의 룬",
+        "rank": null
+      },
+      {
+        "id": 495550,
+        "name": "백조예장 A",
+        "rank": null
+      },
+      {
+        "id": 496450,
+        "name": "운명의 직조 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 303301,
+      "name": "종말환상・소녀강림",
+      "ruby": "라그나로크・리브스라시르",
+      "rank": "B",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3033000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/303300/303300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/303300/303300b@2.png"
+  }
+}

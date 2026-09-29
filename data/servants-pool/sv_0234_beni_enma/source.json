@@ -1,0 +1,160 @@
+{
+  "servant_id": "sv_0234_beni_enma",
+  "source_id": 234,
+  "name_ko": "베니엔마",
+  "name_en": "Beni-Enma",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/234?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "E",
+    "agi": "A++",
+    "mana": "B",
+    "luck": "B",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1132,
+      "name": "oni"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2667,
+      "name": "childServant"
+    },
+    {
+      "id": 2810,
+      "name": "fairyTaleServant"
+    },
+    {
+      "id": 2847,
+      "name": "levitating"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 103700,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 20550,
+        "name": "단독행동 A",
+        "rank": null
+      },
+      {
+        "id": 50550,
+        "name": "기척 차단 A",
+        "rank": null
+      },
+      {
+        "id": 564450,
+        "name": "여관 작성 B",
+        "rank": null
+      },
+      {
+        "id": 565650,
+        "name": "복화술 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 36550,
+        "name": "심안(가짜) A",
+        "rank": null
+      },
+      {
+        "id": 566650,
+        "name": "별의 상자(대) EX",
+        "rank": null
+      },
+      {
+        "id": 567650,
+        "name": "별의 상자(소) EX",
+        "rank": null
+      },
+      {
+        "id": 2377550,
+        "name": "마요이가의 상차림 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 103701,
+      "name": "시왕판결・옷농의 도행",
+      "ruby": "시왕판결・옷농의 도행",
+      "rank": "A",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1037000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/103700/103700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/103700/103700b@2.png"
+  }
+}

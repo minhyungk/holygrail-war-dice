@@ -1,0 +1,132 @@
+{
+  "servant_id": "sv_0434_servant_434",
+  "source_id": 434,
+  "name_ko": "쿠로히메",
+  "name_en": null,
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/434?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "B",
+    "mana": "A",
+    "luck": "C",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 106200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 88350,
+        "name": "기승 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2460450,
+        "name": "산신의 가호 B",
+        "rank": null
+      },
+      {
+        "id": 2459550,
+        "name": "영묘한 머리카락 A",
+        "rank": null
+      },
+      {
+        "id": 2461450,
+        "name": "황금률(뱀&몸) B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 106201,
+      "name": "쿠로히메 이야기・카미나가시",
+      "ruby": "쿠로히메 이야기・카미나가시",
+      "rank": "B",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1062000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/106200/106200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/106200/106200b@2.png"
+  }
+}

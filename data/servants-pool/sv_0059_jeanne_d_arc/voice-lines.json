@@ -1,0 +1,1833 @@
+{
+  "origin": "Atlas Academy KR nice API",
+  "groups": [
+    {
+      "type": "home",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "인연 Lv.1",
+          "ids": [
+            "0_H090",
+            "0_H091"
+          ],
+          "subtitle": "기사로서의 마음가짐은 없지만, \n깃발을 가진 자로서는 무엇을 해야 할지, 알고 있고말고요. \n딱 붙어주세요, 마스터.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 1
+        },
+        {
+          "name": "인연 Lv.2",
+          "ids": [
+            "0_H100",
+            "0_H101",
+            "0_H102"
+          ],
+          "subtitle": "실은 제 특기 분야는 후방지원입니다.\n병사의 사기를 높이고, 그들의 무기에 축복을 걸어 \n뛰어난 무기로 만드는 거죠. \n그런 의미에서는 당신과 같군요.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 2
+        },
+        {
+          "name": "인연 Lv.3",
+          "ids": [
+            "0_H110",
+            "0_H111",
+            "0_H112"
+          ],
+          "subtitle": "죄송합니다… 당신이 싸우는 모습을 바라보고 있었습니다.\n당신은 미숙해도 자신의 약함을 핑계로 도망치지 않죠. \n어쩌면…… 예전에 저를 지켜봐 주었던 질도 \n이런 기분이었을지도 모르겠네요.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 3
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H120",
+            "0_H121"
+          ],
+          "subtitle": "모든 서번트를 미워하지 않고, 자비를 베풀며, 함께 싸우는 것. \n마스터, 당신이라면 분명히 가능할 터입니다.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H1600",
+            "0_H1601",
+            "0_H1602",
+            "0_H1603",
+            "0_H1604"
+          ],
+          "subtitle": "새로운 싸움이 시작되었습니다. \n하지만 당신은 아무것도 두려워하지 않는군요. \n그것이 저에 대한 신뢰 때문이라면 무척 기쁘겠어요. \n서번트의 숙원이지요. 우후훗.",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H130",
+            "0_H131"
+          ],
+          "subtitle": "언제 어떨 때라도, 당신과 함께. \n고난도, 비탄도 당신과 함께라면 극복할 수 있습니다! \n자, 서로 힘내요! 마스터!",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H1800",
+            "0_H1801",
+            "0_H1802",
+            "0_H1803",
+            "0_H1804",
+            "0_H1805"
+          ],
+          "subtitle": "당신은 아무리 힘들어도 일어서는 사람. \n과거에 존재한 흔적인 저는 당신을 부축하는 것밖에 허용되지 않습니다.\n그 사실을 분하게 느끼기도 합니다만…… \n저는 당신을 진심으로 믿고 있어요. 괜찮아요. \n당신의 눈은 빛을 잃지 않았습니다. 자, 가지요. 마스터!",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        },
+        {
+          "name": "대화 1",
+          "ids": [
+            "0_H030"
+          ],
+          "subtitle": "마스터? 슬슬 나가지 않으면 훌륭한 마스터가 될 수 없다구요!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 12
+        },
+        {
+          "name": "대화 2",
+          "ids": [
+            "0_H040",
+            "0_H041"
+          ],
+          "subtitle": "네. 확실히 저는 당신의 서번트예요. \n가능한 한 당신을 지키고, 이끄는 것이 저의 사명입니다.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 13
+        },
+        {
+          "name": "대화 3",
+          "ids": [
+            "0_H050"
+          ],
+          "subtitle": "서번트로서, 마스터로서, 앞으로도 서로 힘내도록 해요!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 14
+        },
+        {
+          "name": "좋아하는 것",
+          "ids": [
+            "0_H060",
+            "0_H061"
+          ],
+          "subtitle": "좋아하는 것? 저기……\n조심성 없는 짓이란 건 알지만, \n건초 더미에서 자는 것에는 거부하기 힘든 매력이 있어요.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 15
+        },
+        {
+          "name": "싫어하는 것",
+          "ids": [
+            "0_H070",
+            "0_H071"
+          ],
+          "subtitle": "애초에 싸우는 건 좋아하지 않습니다. \n다만 피에 젖는 것을 두려워할 정도의 겁쟁이도 아닙니다.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 16
+        },
+        {
+          "name": "성배에 대하여",
+          "ids": [
+            "0_H080",
+            "0_H081"
+          ],
+          "subtitle": "성배? 제게 소원 같은 건 없습니다. \n마스터. 룰러란 그런 클래스입니다.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 17
+        },
+        {
+          "name": "대화 4",
+          "ids": [
+            "0_H140"
+          ],
+          "subtitle": "지크 군에게 무슨 일 있었습니까? \n또 뭔가의 트러블에 휘말린 걸까요…?",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 18
+        },
+        {
+          "name": "대화 7",
+          "ids": [
+            "0_H170",
+            "0_H171"
+          ],
+          "subtitle": "지크프리트… 그 고명한 드래곤 슬레이어와는 약간 인연이 있어서요. \n그렇다고는 해도 초면에 가깝지만요.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 21
+        },
+        {
+          "name": "대화 8",
+          "ids": [
+            "0_H180",
+            "0_H181",
+            "0_H182",
+            "0_H183"
+          ],
+          "subtitle": "청빈을 뜻으로 삼는 베풂의 영웅……\n종파는 달라도 그 또한 성인과 동등한 존재겠죠. \n개인적으로 말씀드리자면 \n조금 더 마스터를 잘 만나야 하지 않을까, 생각합니다만……",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 22
+        },
+        {
+          "name": "대화 9",
+          "ids": [
+            "0_H190",
+            "0_H191",
+            "0_H192"
+          ],
+          "subtitle": "그렇군요. 질이…… \n그 모습으로. 정해진 과거를 돌이킬 수는 없습니다. \n지금은 그저 그의 영혼이 구원받을 수 있도록 기도드릴 뿐.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 23
+        },
+        {
+          "name": "대화 10",
+          "ids": [
+            "0_H200",
+            "0_H201",
+            "0_H202"
+          ],
+          "subtitle": "아아, 질! 당신도 원수로서 참가했군요! 좋아요. \n무슨 일이 있으면 언제라도 눈을 찔러주겠습니다!",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 24
+        },
+        {
+          "name": "대화 11",
+          "ids": [
+            "0_H210",
+            "0_H211",
+            "0_H212"
+          ],
+          "subtitle": "아탈란테…… 그렇네요. 지금은 대립하고 있을 상황이 아닙니다. \n함께 싸울 수 있는 것, 기쁘게 생각합니다.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 25
+        },
+        {
+          "name": "대화 12",
+          "ids": [
+            "0_H220",
+            "0_H221"
+          ],
+          "subtitle": "어머! 마르타 님이! \n기도만으로 타라스크를 무찌른 존귀한 성녀님께서 찾아와주시다니!",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 26
+        },
+        {
+          "name": "대화 13",
+          "ids": [
+            "0_H230",
+            "0_H231",
+            "0_H232",
+            "0_H233"
+          ],
+          "subtitle": "왕비님? ……아니, 잊지 않았어요. \n마리, 그렇게 불러도 괜찮은 거지요? 후후후.",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 27
+        },
+        {
+          "name": "대화 14",
+          "ids": [
+            "0_H240",
+            "0_H241",
+            "0_H242",
+            "0_H243"
+          ],
+          "subtitle": "아마쿠사 시로 토키사다. \n당신 또한 인류 구제를 목표로 삼는 자. \n솔직히 말해 두 번 다시 칼날을 맞대고 싶지 않은 난적이었기에. \n함께 싸울 수 있어 안심하고 있습니다.",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 28
+        },
+        {
+          "name": "대화 15",
+          "ids": [
+            "0_H250",
+            "0_H251",
+            "0_H252"
+          ],
+          "subtitle": "셰익스피어…. \n또 저에게 보구를 사용한다면 법정에서 뵙게 될 줄 아세요? \n저에게도 한계가 있으니까요!",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 29
+        },
+        {
+          "name": "대화 16",
+          "ids": [
+            "0_H260",
+            "0_H261",
+            "0_H262",
+            "0_H263",
+            "0_H264"
+          ],
+          "subtitle": "핫…… 죄송합니다, 마스터. 저 서번트는 대체……? 호문쿨루스……입니까. \n아마도 착각이겠지요. 네, 그럴 거예요.",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 35
+        },
+        {
+          "name": "대화 19",
+          "ids": [
+            "0_H290",
+            "0_H291",
+            "0_H292"
+          ],
+          "subtitle": "잠깐 기다리세요, 아스톨포・세이버! \n아무리 그래도…… 아무리 그래도 그건! 못 본 체하고 넘길 수 없습니다! \n어디까지 폭주할 생각인가요, 당신!",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 44
+        },
+        {
+          "name": "대화 20",
+          "ids": [
+            "0_H300",
+            "0_H301",
+            "0_H302",
+            "0_H303",
+            "0_H304",
+            "0_H305",
+            "0_H306"
+          ],
+          "subtitle": "제가 아닌 저, 다른 측면조차 아니었던 저, 라고요……? \n네? 근본적인 부분은 저하고 별로 다를 게 없다고요? \n그것은…… 조금 기쁘네요. 후훗, 마치 쌍둥이 여동생이 생긴 느낌이에요. \n……? 왜 여동생이라 말했을 뿐인데 저 아이는 노발대발하며 \n이쪽을 노려보는 것일까요? 심지어 약간 겁내는 것 같기도……?",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 45
+        },
+        {
+          "name": "대화 21",
+          "ids": [
+            "0_H310",
+            "0_H311",
+            "0_H312",
+            "0_H313"
+          ],
+          "subtitle": "과연……! 산타에, 릴리에, 얼터에, 저인 거로군요? \n……다, 다소 복잡합니다만, 괜찮습니다. 네, 괜찮아요!",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 46
+        },
+        {
+          "name": "대화 22",
+          "ids": [
+            "0_H320",
+            "0_H321",
+            "0_H322",
+            "0_H323",
+            "0_H324",
+            "0_H325"
+          ],
+          "subtitle": "얼터요? 그러네요, 최근에 뭔가 심경의 변화라도 있었던 걸까요. \n조금 차분해졌다고 할지, 달관했다고 할지. \n서번트에 육체적인 성장은 있을 수 없고, \n정신적인 성장도 거의 없다고 생각해 왔습니다만, 그 애는, \n그 예외일지도 모르겠네요. 후후, 어쩐지 부럽네요.",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 47
+        },
+        {
+          "name": "이벤트 개최중",
+          "ids": [
+            "0_H020"
+          ],
+          "subtitle": "조금 소란스럽네요. 무슨 일이 있었나 봅니다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 11
+        },
+        {
+          "name": "생일",
+          "ids": [
+            "0_H010"
+          ],
+          "subtitle": "마스터, 생일이신 것 같군요. 여기 꽃다발 받으세요.",
+          "text": [
+            ""
+          ],
+          "cond_type": "birthDay",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "0_G010"
+          ],
+          "subtitle": "아무래도 조금 강해진 것 같습니다.",
+          "text": [
+            "아무래도 조금 강해진 것 같습니다."
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 2",
+          "ids": [
+            "0_G020"
+          ],
+          "subtitle": "스펙의 향상에 성공한 모양입니다.",
+          "text": [
+            "스펙의 향상에 성공한 모양입니다."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 1",
+          "ids": [
+            "0_G030"
+          ],
+          "subtitle": "한층 더 향상! 약진이라고 해야 할까요?",
+          "text": [
+            "한층 더 향상! 약진이라고 해야 할까요?"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 1
+        },
+        {
+          "name": "영기재림 3",
+          "ids": [
+            "0_G040"
+          ],
+          "subtitle": "여기까지 도달할 줄은 저 스스로도 상상조차 하지 못했습니다.",
+          "text": [
+            "여기까지 도달할 줄은 저 스스로도 상상조차 하지 못했습니다."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 3
+        },
+        {
+          "name": "영기재림 4",
+          "ids": [
+            "0_G050"
+          ],
+          "subtitle": "아아, 정말 감사합니다!",
+          "text": [
+            "아아, 정말 감사합니다!"
+          ],
+          "cond_type": "svtCountStop",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "firstGet",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "소환",
+          "ids": [
+            "0_S010"
+          ],
+          "subtitle": "서번트 룰러. 잔 다르크.\n만날 수 있어서, 정말 다행이에요!",
+          "text": [
+            "서번트 룰러. 잔 다르크. [r]만날 수 있어서, 정말 다행이에요!"
+          ],
+          "cond_type": "svtGet",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "개시 1",
+          "ids": [
+            "0_B100"
+          ],
+          "subtitle": "싸움 없이 전진할 수 없다면 무찌르겠습니다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "0_B110"
+          ],
+          "subtitle": "시작하겠습니다. 부디 주님의 가호를.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 3",
+          "ids": [
+            "0_B500"
+          ],
+          "subtitle": "아무리 고된 길이라도, 돌진할 수밖에 없습니다! 자, 가죠!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 4",
+          "ids": [
+            "0_B510"
+          ],
+          "subtitle": "어쩔 수 없습니다, 날려버리겠어요! \n……음, 으음! 아무튼, 싸우겠습니다! 가죠!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 5",
+          "ids": [
+            "0_B2100"
+          ],
+          "subtitle": "기도 끝에 무엇이 있더라도…… 끝까지 싸우겠습니다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 6",
+          "ids": [
+            "0_B2110"
+          ],
+          "subtitle": "이 깃발 아래, 부디 승리를!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "0_B080"
+          ],
+          "subtitle": "이거로군요.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "0_B090"
+          ],
+          "subtitle": "그러면…… 이걸.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 3",
+          "ids": [
+            "0_B480"
+          ],
+          "subtitle": "주여, 힘을 빌려주소서.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 4",
+          "ids": [
+            "0_B490"
+          ],
+          "subtitle": "헤매지 않도록, 빛을!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 5",
+          "ids": [
+            "0_B880"
+          ],
+          "subtitle": "여기는 제가!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 6",
+          "ids": [
+            "0_B890"
+          ],
+          "subtitle": "앞으로 나가겠습니다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "0_B180"
+          ],
+          "subtitle": "네.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "0_B190"
+          ],
+          "subtitle": "맡겨주세요.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "0_B200"
+          ],
+          "subtitle": "갑니다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 4",
+          "ids": [
+            "0_B380"
+          ],
+          "subtitle": "상관없습니다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 5",
+          "ids": [
+            "0_B390"
+          ],
+          "subtitle": "알겠습니다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 6",
+          "ids": [
+            "0_B400"
+          ],
+          "subtitle": "밀고 나가죠!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B210"
+          ],
+          "subtitle": "주님의 뜻을 여기에!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B220"
+          ],
+          "subtitle": "맡겨 주세요! 제 뒤로!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 5
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B230"
+          ],
+          "subtitle": "쓰러지지는 않습니다. 이 깃발이 있는 한!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 6
+        },
+        {
+          "name": "공격 1",
+          "ids": [
+            "0_B010"
+          ],
+          "subtitle": "하앗!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "0_B020"
+          ],
+          "subtitle": "물러요!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "0_B030"
+          ],
+          "subtitle": "저기입니다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 4",
+          "ids": [
+            "0_B410"
+          ],
+          "subtitle": "전진합니다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 5",
+          "ids": [
+            "0_B420"
+          ],
+          "subtitle": "쓸어내겠습니다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 6",
+          "ids": [
+            "0_B430"
+          ],
+          "subtitle": "아직 멀었어요!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 7",
+          "ids": [
+            "0_B910"
+          ],
+          "subtitle": "격파합니다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 8",
+          "ids": [
+            "0_B920"
+          ],
+          "subtitle": "하낫, 둘!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 9",
+          "ids": [
+            "0_B930"
+          ],
+          "subtitle": "올려 치겠습니다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 10",
+          "ids": [
+            "0_B2010"
+          ],
+          "subtitle": "날아가 버려!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 11",
+          "ids": [
+            "0_B2020"
+          ],
+          "subtitle": "벌입니다, 질!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B040"
+          ],
+          "subtitle": "자, 각오하세요!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B440"
+          ],
+          "subtitle": "죄송합니다만, 짓밟겠습니다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B840"
+          ],
+          "subtitle": "재정자의 이름에 걸고!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격 4",
+          "ids": [
+            "0_B2440"
+          ],
+          "subtitle": "신의 사랑을, 여기에!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격 5",
+          "ids": [
+            "0_B2840"
+          ],
+          "subtitle": "눈부신 영광의 손!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격 6",
+          "ids": [
+            "0_B4040"
+          ],
+          "subtitle": "비, 빔이 아닙니다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "0_B150"
+          ],
+          "subtitle": "크으아!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "0_B140"
+          ],
+          "subtitle": "으읏!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 3",
+          "ids": [
+            "0_B550"
+          ],
+          "subtitle": "꺄아아아아아앗!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 4",
+          "ids": [
+            "0_B540"
+          ],
+          "subtitle": "아직입니다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "0_B160"
+          ],
+          "subtitle": "안…… 되려나……?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "0_B170"
+          ],
+          "subtitle": "여기까지, 왔는데……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 3",
+          "ids": [
+            "0_B560"
+          ],
+          "subtitle": "제가, 쓰러져도……! 아직, 동료가……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "0_B120"
+          ],
+          "subtitle": "휴우. 어떻게든 일을 해냈습니다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "0_B130"
+          ],
+          "subtitle": "모두들, 수고하셨습니다. 하지만 방심하지 않기를.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 3",
+          "ids": [
+            "0_B520"
+          ],
+          "subtitle": "승리했네요. 자, 더욱더 전진하죠!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 4",
+          "ids": [
+            "0_B530"
+          ],
+          "subtitle": "일단 한숨 돌리겠습니다. 앞길은 아직 멀지만요.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B050",
+            "0_B051"
+          ],
+          "subtitle": "나의 깃발이여. 나의 동포를 지켜라!\n‘나의 신은 여기에 있나니(뤼미노지테 에테르넬)’!!",
+          "text": [
+            "나의 깃발이여. 나의 동포를 지켜라!",
+            "‘나의 신은 여기에 있나니(뤼미노지테 에테르넬)’!!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        },
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B800",
+            "0_B801",
+            "0_B802"
+          ],
+          "subtitle": "여기에 기도를 바치겠습니다. 나의 벗, 나의 동료를 지켜 주소서! \n‘나의 신은 여기에 있나니(뤼미노지테 에테르넬)’!!",
+          "text": [
+            "여기에 기도를 바치겠습니다.",
+            "나의 벗, 나의 동료를 지켜 주소서!",
+            "‘나의 신은 여기에 있나니(뤼미노지테 에테르넬)’!!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 7
+        },
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B810",
+            "0_B811",
+            "0_B812"
+          ],
+          "subtitle": "주여, 간절히 빕니다. 저에게, 소중한 사람들을 지킬 힘을──! \n‘나의 신은 여기에 있나니(뤼미노지테 에테르넬)’!!",
+          "text": [
+            "주여, 간절히 빕니다.",
+            "저에게, 소중한 사람들을 지킬 힘을──!",
+            "‘나의 신은 여기에 있나니(뤼미노지테 에테르넬)’!!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 8
+        },
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B820",
+            "0_B821",
+            "0_B822",
+            "0_B823"
+          ],
+          "subtitle": "모든 것을 알고 굽어살피시는 주여, \n부디 우리 동포를 그 사랑으로 감싸주소서! \n‘나의 신은 여기에 있나니(뤼미노지테 에테르넬)’!! ──자아, 가죠!",
+          "text": [
+            "모든 것을 알고 굽어살피시는 주여,",
+            "부디 우리 동포를 그 사랑으로 감싸주소서!",
+            "‘나의 신은 여기에 있나니(뤼미노지테 에테르넬)’!!",
+            "──자아, 가죠!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 9
+        },
+        {
+          "name": "보구 5",
+          "ids": [
+            "0_B1000",
+            "0_B1001",
+            "0_B1002"
+          ],
+          "subtitle": "나의 깃발에 빛나는 힘을. 나의 전우에게 찬란한 마음을. \n모든 것은 인리를 위하여, 우리는 이 자리에 선다! \n‘나의 신은 여기에 있나니(뤼미노지테 에테르넬)’!!",
+          "text": [
+            "^0:0:2.39:나의 깃발에 빛나는 힘을.^0:2.4:E:나의 전우에게 찬란한 마음을.^1:0:2.39:나의 깃발에 빛나는 힘을.^1:2.4:E:나의 전우에게 찬란한 마음을.",
+            "모든 것은 인리를 위하여, 우리는 이 자리에 선다!",
+            "‘나의 신은 여기에 있나니(뤼미노지테 에테르넬)’!!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 54
+        }
+      ]
+    },
+    {
+      "type": "home",
+      "voice_prefix": 11,
+      "lines": [
+        {
+          "name": "영의에 대하여",
+          "ids": [
+            "11_H9000",
+            "11_H9001",
+            "11_H9002",
+            "11_H9003",
+            "11_H9004",
+            "11_H9005",
+            "11_H9006"
+          ],
+          "subtitle": "후우…… 죄, 죄송합니다. 아직 조금 익숙지 않아서…… \n앉거나 해도 괜찮을까요? \n얼터처럼 자신만만하게 입고 싶은데, 저는 아직 멀었네요. \n노력하겠습니다!",
+          "text": [
+            "후우……",
+            "죄, 죄송합니다.",
+            "아직 조금 익숙지 않아서……",
+            "앉거나 해도 괜찮을까요?",
+            "얼터처럼 자신만만하게 입고 싶은데,",
+            "저는 아직 멀었네요.",
+            "노력하겠습니다!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 63
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 11,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "11_G010"
+          ],
+          "subtitle": "아무래도 조금 강해진 것 같습니다.",
+          "text": [
+            "아무래도 조금 강해진 것 같습니다."
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영의 개방",
+          "ids": [
+            "11_G060",
+            "11_G061",
+            "11_G062",
+            "11_G063",
+            "11_G064"
+          ],
+          "subtitle": "이, 이, 이런 드레스를? 제가?! 감사, 감사합니다! \n굉장해요…… 어쩐지 꿈만 같아요. \n하지만 지금까지 이런 옷을 걸쳐본 적이 없다 보니…… \n아아, 어울리지 않으면 어쩌죠……",
+          "text": [
+            "이, 이, 이런 드레스를? 제가?!",
+            "감사, 감사합니다!",
+            "굉장해요…… 어쩐지 꿈만 같아요.",
+            "하지만 지금까지 이런 옷을 걸쳐본 적이 없다 보니……",
+            "아아, 어울리지 않으면 어쩌죠……"
+          ],
+          "cond_type": "costumeGet",
+          "cond_value": 11
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 11,
+      "lines": [
+        {
+          "name": "개시 1",
+          "ids": [
+            "11_B100"
+          ],
+          "subtitle": "왈츠의 시간이에요. 같이 춤추죠!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "11_B110"
+          ],
+          "subtitle": "마스터, 어울리나요? ……후후. 그러면, 시작할까요.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 5",
+          "ids": [
+            "11_B2100"
+          ],
+          "subtitle": "조금, 두근두근하네요……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 6",
+          "ids": [
+            "11_B2110"
+          ],
+          "subtitle": "그러면. 가죠, 마스터.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "11_B080"
+          ],
+          "subtitle": "이 순간, 손을 포개지요.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "11_B090"
+          ],
+          "subtitle": "시골 소녀의 춤입니다만……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 3",
+          "ids": [
+            "11_B480"
+          ],
+          "subtitle": "저라도 괜찮으시다면!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 5",
+          "ids": [
+            "11_B880"
+          ],
+          "subtitle": "즐겁네요, 여러분!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 6",
+          "ids": [
+            "11_B890"
+          ],
+          "subtitle": "우아함이 있다면 좋겠습니다만.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "11_B180"
+          ],
+          "subtitle": "알겠습니다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "11_B190"
+          ],
+          "subtitle": "솜씨를 보죠.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "11_B200"
+          ],
+          "subtitle": "갈게요.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 4",
+          "ids": [
+            "11_B380"
+          ],
+          "subtitle": "과연.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 5",
+          "ids": [
+            "11_B390"
+          ],
+          "subtitle": "스텝은 이렇게, 해서.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 6",
+          "ids": [
+            "11_B400"
+          ],
+          "subtitle": "그러면 함께!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "11_B210"
+          ],
+          "subtitle": "그러면, 광채를 보이겠습니다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "11_B220"
+          ],
+          "subtitle": "힘내겠습니다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 5
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "11_B230"
+          ],
+          "subtitle": "1(앙), 2(드), 3(트와)!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 6
+        },
+        {
+          "name": "공격 1",
+          "ids": [
+            "11_B010"
+          ],
+          "subtitle": "에~잇!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "11_B020"
+          ],
+          "subtitle": "미안해요!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "11_B030"
+          ],
+          "subtitle": "좋네요!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 7",
+          "ids": [
+            "11_B910"
+          ],
+          "subtitle": "하나, 둘!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 8",
+          "ids": [
+            "11_B920"
+          ],
+          "subtitle": "즐겁습니다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 9",
+          "ids": [
+            "11_B930"
+          ],
+          "subtitle": "죄송합니다, 부딪칩니다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 10",
+          "ids": [
+            "11_B2010"
+          ],
+          "subtitle": "이렇게군요!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "11_B040"
+          ],
+          "subtitle": "드레스가 더러워지지 않기를……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격 4",
+          "ids": [
+            "11_B2440"
+          ],
+          "subtitle": "신속하게 격파하겠습니다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격 5",
+          "ids": [
+            "11_B2840"
+          ],
+          "subtitle": "함께 춤추죠!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격 6",
+          "ids": [
+            "11_B4040"
+          ],
+          "subtitle": "세탁비가 걱정이네요……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "11_B150"
+          ],
+          "subtitle": "왓, 안 돼요! 이건……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "11_B140"
+          ],
+          "subtitle": "아야얏!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "11_B160"
+          ],
+          "subtitle": "죄, 죄송합니다. 잠깐 휴식……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "11_B170"
+          ],
+          "subtitle": "추, 춤추다 지친 것 같아요. 잠시 기다리시길……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "11_B120"
+          ],
+          "subtitle": "댄스는 끝입니다. 아쉬워라, 조금 더 춤추고 싶었는데요.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "11_B130"
+          ],
+          "subtitle": "마스터? 정말로 저 괜찮을까요? \n시골 소녀의 복장치고는 역시 조금 화려한 느낌이……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 11,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "11_B050",
+            "11_B051"
+          ],
+          "subtitle": "나의 깃발이여. 나의 동포를 지켜 주소서! 뤼미노지테 에테르넬!!",
+          "text": [
+            "나의 깃발이여. 나의 동포를 지켜라!",
+            "‘나의 신은 여기에 있나니(뤼미노지테 에테르넬)’!!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        },
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "11_B800",
+            "11_B801",
+            "11_B802"
+          ],
+          "subtitle": "여기에 기도를 바치겠습니다. 나의 벗, 나의 동료를 지켜 주소서! \n‘나의 신은 여기에 있나니(뤼미노지테 에테르넬)’!!",
+          "text": [
+            "여기에 기도를 바치겠습니다.",
+            "나의 벗, 나의 동료를 지켜 주소서!",
+            "‘나의 신은 여기에 있나니(뤼미노지테 에테르넬)’!!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 7
+        },
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "11_B810",
+            "11_B811",
+            "11_B812"
+          ],
+          "subtitle": "주여, 간절히 빕니다. 저에게, 소중한 사람들을 지킬 힘을──! \n‘나의 신은 여기에 있나니(뤼미노지테 에테르넬)’!!",
+          "text": [
+            "주여, 간절히 빕니다.",
+            "저에게, 소중한 사람들을 지킬 힘을──!",
+            "‘나의 신은 여기에 있나니(뤼미노지테 에테르넬)’!!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 8
+        },
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "11_B820",
+            "11_B821",
+            "11_B822",
+            "11_B823"
+          ],
+          "subtitle": "모든 것을 알고 굽어살피시는 주여, \n부디 우리 동포를 그 사랑으로 감싸주소서! \n‘나의 신은 여기에 있나니(뤼미노지테 에테르넬)’!! ──자아, 가죠!",
+          "text": [
+            "모든 것을 알고 굽어살피시는 주여,",
+            "부디 우리 동포를 그 사랑으로 감싸주소서!",
+            "‘나의 신은 여기에 있나니(뤼미노지테 에테르넬)’!!",
+            "자, 가죠!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 9
+        },
+        {
+          "name": "보구 5",
+          "ids": [
+            "11_B1000",
+            "11_B1001",
+            "11_B1002"
+          ],
+          "subtitle": "나의 깃발에 빛나는 힘을. 나의 전우에게 눈부신 마음을. \n모든 것은 인리를 위하여, 우리는 이 자리에 선다! \n‘나의 신은 여기에 있나니(뤼미노지테 에테르넬)’!!",
+          "text": [
+            "^0:0:2.39:나의 깃발에 빛나는 힘을.^0:2.4:E:나의 전우에게 찬란한 마음을.^1:0:2.39:나의 깃발에 빛나는 힘을.^1:2.4:E:나의 전우에게 찬란한 마음을.",
+            "모든 것은 인리를 위하여, 우리는 이 자리에 선다!",
+            "‘나의 신은 여기에 있나니(뤼미노지테 에테르넬)’!!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 54
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "servant_id": "sv_0194_queen_of_sheba",
+  "source_id": 194,
+  "name_ko": "시바의 여왕",
+  "name_en": "Queen of Sheba",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/194?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "D",
+    "mana": "A",
+    "luck": "A",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 503400,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83350,
+        "name": "진지작성 C",
+        "rank": null
+      },
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 5449,
+        "name": "카리스마 B-",
+        "rank": null
+      },
+      {
+        "id": 443550,
+        "name": "정령의 눈 A",
+        "rank": null
+      },
+      {
+        "id": 444550,
+        "name": "마신의 예지 A",
+        "rank": null
+      },
+      {
+        "id": 2160550,
+        "name": "여왕의 영향 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 503401,
+      "name": "세 가지 수수께끼",
+      "ruby": "쓰리 에니그마즈",
+      "rank": "B",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5034000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/503400/503400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/503400/503400b@2.png"
+  }
+}

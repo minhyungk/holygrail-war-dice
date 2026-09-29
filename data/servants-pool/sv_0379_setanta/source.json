@@ -1,0 +1,149 @@
+{
+  "servant_id": "sv_0379_setanta",
+  "source_id": 379,
+  "name_ko": "세탄타",
+  "name_en": "Sétanta",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/379?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B+",
+    "end": "C",
+    "agi": "B",
+    "mana": "C",
+    "luck": "A",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2667,
+      "name": "childServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 105700,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 62450,
+        "name": "신성 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2210450,
+        "name": "붉은 가지의 기사 B",
+        "rank": null
+      },
+      {
+        "id": 2211550,
+        "name": "맹견 살해자 A",
+        "rank": null
+      },
+      {
+        "id": 2212451,
+        "name": "영향의 무련 B+",
+        "rank": null
+      },
+      {
+        "id": 2211551,
+        "name": "맹견 살해자 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 105701,
+      "name": "갈라 찢는 죽음의 칼날",
+      "ruby": "크루딘 세탄타",
+      "rank": "B+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1057000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/105700/105700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/105700/105700b@2.png"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "servant_id": "sv_0092_ryougi_shiki_assassin",
+  "source_id": 92,
+  "name_ko": "료기 시키",
+  "name_en": "Ryougi Shiki (Assassin)",
+  "class": "assassin",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/92?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "D",
+    "agi": "A+",
+    "mana": "C",
+    "luck": "A+",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 105,
+      "name": "classAssassin"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2654,
+      "name": "livingHuman"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 602300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 50350,
+        "name": "기척 차단 C",
+        "rank": null
+      },
+      {
+        "id": 20550,
+        "name": "단독행동 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 164550,
+        "name": "직사의 마안 A",
+        "rank": null
+      },
+      {
+        "id": 36550,
+        "name": "심안(가짜) A",
+        "rank": null
+      },
+      {
+        "id": 165450,
+        "name": "음양어 B",
+        "rank": null
+      },
+      {
+        "id": 2280450,
+        "name": "빗속에서 만나다 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 602301,
+      "name": "유식・직사의 마안",
+      "ruby": "유식・직사의 마안",
+      "rank": "EX",
+      "type": "대인보구"
+    },
+    {
+      "id": 602302,
+      "name": "유식・직사의 마안",
+      "ruby": "유식・직사의 마안",
+      "rank": "EX",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6023000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/602300/602300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/602300/602300b@2.png"
+  }
+}

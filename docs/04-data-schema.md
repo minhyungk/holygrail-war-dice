@@ -34,7 +34,7 @@ data/
   servants/{servant_id}/  profile.json, skills.json, dialogue.json, voice.md
   masters/{master_id}/    profile.json, dialogue.json, voice.md
   classes/{class}/       dialogue.json
-  common/                narrator.json, beats.json, labels.json, summon.json
+  common/                narrator.json, speech.json, beats.json, labels.json, summon.json
   constants.json
   phases.json
   tiles.json
@@ -53,6 +53,7 @@ data/
 | `servants/{id}/skills.json` | 보유 스킬 이름·랭크 목록 (효과 정의 아님) |
 | `masters/{id}/profile.json` | 이름·출전·성향·미정 스탯·초상 슬롯 |
 | `*/dialogue.json`, `common/narrator.json` | 태그별 대사·서술문 |
+| `common/speech.json` | 서번트 공통 대사 (3층, D-151) |
 | `common/beats.json` | 이벤트별 비트 크기·슬롯·조건 |
 | `common/labels.json` | 클래스 이름·문장·미공개 호칭 등 |
 | `common/summon.json` | 소환 영창과 작성·검수 정보 |
@@ -81,6 +82,7 @@ data/
 | `alignment` | good / neutral / evil / null. 광기 등 null은 판정에서 중립 취급 (D-079) |
 | `alignment_detail`, `alignment_verified` | 원문 성향·검증 여부 |
 | `temperament` | 초기 호감도·증감 계수를 조회하는 성격 키 |
+| `reaction_overrides?` | 선택 반응(`affinity.reaction`)의 서번트별 예외. 선택 이름 → 호감도 변화 (D-150, D-143 오버라이드) |
 | `noble_phantasm` | `{name_ko, ruby_ko, rank, type_ko}` |
 | `images` | `{face, summon, final}` Atlas URL (D-116) |
 | `sprite_id` | 나중에 교체할 스프라이트 ID, 현재 null |
@@ -161,7 +163,7 @@ data/
 | `row`, `col` | 1부터 시작하는 행·열 |
 | `adjacent_ids` | 상하좌우 인접 타일 ID |
 | `terrain` | open / urban / forest / river |
-| `role` | leyline / intel / bond. 낮 도착·머무르기 시 처리 (D-128) |
+| `role` | leyline / intel / bond. 밤을 마친 칸의 역할이 다음 날 보너스 (D-145) |
 | `tags` | center, landmark 등 |
 
 `image_grid`는 `{size, cols, rows}`. cols·rows는 이미지 격자선 픽셀 좌표 각 6개 (D-125).
@@ -204,16 +206,23 @@ data/
 ### 7.2 시스템별 적용
 | 시스템 | 3층 범용 | 2층 유형·특성 | 1층 오버라이드 | 현재 상태 |
 |---|---|---|---|---|
-| 대사 | 공통 나레이션 `common/narrator.json` | 클래스 대사 `classes/{class}/dialogue.json`, Atlas 보이스 자동 수집 | 서번트 `dialogue.json`, 조합 대사, `voice.md` | 계층 선택 구현. 클래스 대사 7종 초안. 서번트 대사의 공통 범용 폴백·Atlas 보이스 확장 수집은 미구현 |
+| 대사 | 공통 나레이션 `common/narrator.json`, 서번트 공통 대사 `common/speech.json` | 클래스 대사 `classes/{class}/dialogue.json`, Atlas 보이스 자동 수집 (`scripts/fetch-voices.mjs`) | 서번트 `dialogue.json`, 조합 대사, `voice.md` | 3층 모두 구현 (D-144, D-151). 클래스·공통 대사는 draft |
 | 스킬 | 정의 없는 고유 스킬의 처리 [TBD] | 범용 스킬 (`kind: generic`, 랭크 연동) | 고유 스킬·보구 개별 정의 | 43개 정의 (D-142). 현재 검증은 보유 스킬 전부의 정의를 요구한다 |
-| 호감도 | 공통 증감 `affinity.delta_*` | 성격별 초기값·계수 `affinity.init_by_temperament`, `affinity.gain_mult`, `affinity.penalty_mult`. 성향별 처치/방면 | 특정 마스터·상대에 대한 반응 [제안] | 3층·2층 구현. 선택에 대한 성격별 반응표 [제안] |
-| 약점 | 진명 공개 시 상대의 약한 국면으로 유도 [제안] | Atlas 특성 상성 [제안] | 개별 약점 [제안] | 미설계 |
+| 호감도 | 공통 증감 `affinity.delta_*` | 성격별 초기값·계수, 성향별 처치/방면, 성격별 선택 반응 `affinity.reaction` (D-150) | `profile.json` `reaction_overrides` (예: 코지로) | 구현 |
+| 약점 | 진명을 알면 전투당 1회 가장 유리한 국면으로 (D-148) | Atlas 특성 상성 [제안] | 개별 약점 [제안] | 3층 구현 |
 | 프로필·이미지 | Atlas 자동 수집 | — | — | 7기 생성 완료. 수집 스크립트 확장 필요 (`05-legacy.md` §3) |
 
 ### 7.3 서번트 추가 기준
 | 등급 | 항목 | 방법 |
 |---|---|---|
 | 필수 | `profile.json` (스탯, 클래스, 보구, 이미지, 성향), `skills.json` (스킬 이름·랭크) | 수집 스크립트 자동 생성 |
+| 권장 | FGO 보이스 대사 (전투 외침·인연·좋아하는 것 등) | `node scripts/fetch-voices.mjs {servant_id}` (D-151) |
 | 필수 | `temperament` 분류 (현재 8종, `affinity.init_by_temperament`), `alignment` 검증 | AI 초안 → 사용자 검수 |
 | 선택 | 전용 대사, `voice.md`, 고유 스킬 효과, 약점, 조합 대사 | 직접 작성 (유명 서번트만) |
 - 검증 [제안]: 필수 데이터만 있는 가상 서번트로 한 판을 헤드리스 실행해 오류와 빈 대사 슬롯이 없는지 확인한다. 현재 미구현.
+
+### 7.4 확장용 원본 보관 [확정] (D-152)
+`data/servants-pool/{servant_id}/`는 Atlas KR 원본을 서번트별로 보관하는 준비 영역이다. `source.json`에 프로필·스킬 이름·특성·Atlas 이미지 URL, `voice-lines.json`에 음성 대사 원문과 원본 상황명·보이스 ID를 둔다. 음성 파일은 보관하지 않는다. 레거시 `servants-ko.json`·`dialogues-ko.json`은 Atlas 누락 항목의 보조 자료로 쓴다.
+재수집 명령은 `npm run prepare:servants`다. `manifest.json`에 상세 응답 실패와 원본 대사·이미지 누락을 기록한다.
+
+이 영역은 `data/servants/`와 분리한다. 현재 플레이 가능 서번트는 기존 7기 그대로이며, 준비 자료는 판 로더에 포함되지 않는다. 신규 서번트를 활성화할 때는 스키마에 맞춘 파일을 `data/servants/{id}/`로 생성하고 성향·성격·스킬 효과·대사 검수 등 §7.3의 미정 항목을 먼저 해결한다. 클래스 범위 확장도 별도 결정이 필요하다. 준비 원본의 대사는 검수 전 게임 대사로 사용하지 않는다.

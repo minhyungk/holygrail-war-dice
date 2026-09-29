@@ -1,0 +1,125 @@
+{
+  "servant_id": "sv_0409_monte_cristo",
+  "source_id": 409,
+  "name_ko": "암굴왕 몽테크리스토",
+  "name_en": "Monte Cristo",
+  "class": "avenger",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/409?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "A+",
+    "mana": "B",
+    "luck": "?",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 110,
+      "name": "classAvenger"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 1101700,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 169451,
+        "name": "복수자 B+",
+        "rank": null
+      },
+      {
+        "id": 170650,
+        "name": "망각보정 EX",
+        "rank": null
+      },
+      {
+        "id": 171250,
+        "name": "자기회복(마력) D",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2330650,
+        "name": "강철의 결의(불꽃) EX",
+        "rank": null
+      },
+      {
+        "id": 2331350,
+        "name": "암굴왕 C",
+        "rank": null
+      },
+      {
+        "id": 2332550,
+        "name": "14의 돌 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 1101701,
+      "name": "별이여, 빛나는 길을 나아가라",
+      "ruby": "파라디 샤토 디프",
+      "rank": "A",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_11017000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1101700/1101700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1101700/1101700b@2.png"
+  }
+}

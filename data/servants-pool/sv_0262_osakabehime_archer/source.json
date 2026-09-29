@@ -1,0 +1,146 @@
+{
+  "servant_id": "sv_0262_osakabehime_archer",
+  "source_id": 262,
+  "name_ko": "오사카베히메",
+  "name_en": "Osakabehime (Archer)",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/262?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "E",
+    "agi": "B",
+    "mana": "A",
+    "luck": "A",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 308,
+      "name": "alignmentSummer"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 203600,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 20550,
+        "name": "단독행동 A",
+        "rank": null
+      },
+      {
+        "id": 62349,
+        "name": "신성 C-",
+        "rank": null
+      },
+      {
+        "id": 661450,
+        "name": "요새구축 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 675450,
+        "name": "사격(FPS) B",
+        "rank": null
+      },
+      {
+        "id": 676550,
+        "name": "프린세스 서머 베케이션(가짜) A",
+        "rank": null
+      },
+      {
+        "id": 677650,
+        "name": "치요가미 대대장 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 203601,
+      "name": "하쿠로 성・1000식 밀리밀리 나이트 피버!",
+      "ruby": "하쿠로 성・1000식 밀리밀리 나이트 피버!",
+      "rank": "EX",
+      "type": "대군보구(일개대대)"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2036000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/203600/203600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/203600/203600b@2.png"
+  }
+}

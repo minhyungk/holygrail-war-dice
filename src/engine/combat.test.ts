@@ -2,8 +2,9 @@
 // 추첨값: 국면 추첨(0~99, 누적 가중치) 다음에 공격측(0=a, 1=b). 보구 국면이면 국면 추첨이 없다.
 // 확률 판정(적 AI의 보구 개방·위험 퇴각, 명령 거부)은 0~9999 추첨: 확률×10000보다 작으면 일어난다. 9999 = 일어나지 않음
 import { describe, expect, it } from 'vitest';
+import { K } from '../data/constants';
 import { scriptedDice, servant, SV } from '../testkit';
-import { type BattleInput, createFighter, type Fighter, type Policy, type Prompt, runBattle } from './combat';
+import { type BattleInput, createFighter, type Fighter, type Policy, type Prompt, runBattle, weaknessPhase } from './combat';
 import { EventLog } from './events';
 
 /** 기본 정책: 지시 없음, 위험에서는 버틴다, 재굴림 안 함 */
@@ -204,7 +205,7 @@ describe('보구 개방 (phases.md §5-3, §3.6)', () => {
   it('적 AI가 먼저 보구를 열고, 플레이어에게 맞설지 묻는다. 마력으로도 열 수 있다 (D-113, D-127)', () => {
     const r = run(
       { a: fighter('fc_a', SV.artoria, 'player', { mana: 80, fatePoints: 0, seals: 0 }), b: fighter('fc_h', SV.heracles, 'ai', { mana: 80 }), terrain: 'open' },
-      [3, 7, 3, 5, 3, 5], // 진명 공개 즉시 정보 +3: 보구 격돌과 다음 선제 국면 모두 동점
+      [4, 7, 4, 5, 4, 5], // 진명 공개 즉시 정보 +2 (D-147): 보구 격돌과 다음 선제 국면 모두 동점
       [0, 0, 50, 0, 50, 0], // 국면 1: 적 AI 보구 판정(0 = 연다), 보구 격돌 공격측 추첨
       (p) => (p.kind === 'phase_command' ? (p.phase_index === 1 ? 'np' : 'none') : false),
     );
@@ -338,13 +339,13 @@ describe('영주 명령 (D-101, combat.md §5.1)', () => {
 });
 
 describe('고정 보정 (dice.md §3.3)', () => {
-  it('호감도·정보·진지 보정이 판정에 더해지고 내역이 남는다', () => {
+  it('호감도·정보 보정이 판정에 더해지고 내역이 남는다 (정보 2단계 = +1, D-147)', () => {
     const r = run(
-      { a: fighter('fc_a', SV.artoria, 'ai', { intelLevel: 2, bonus: { affinity: 1, camp: 2 } }), b: fighter('fc_c', SV.cu, 'ai'), terrain: 'open' },
-      [2, 8, 2, 8, 2, 8], // 선제: 6 + 2 + 5 = 13 vs 7 + 8 = 15 → 쿠 훌린 승
+      { a: fighter('fc_a', SV.artoria, 'ai', { intelLevel: 2, bonus: { affinity: 1 } }), b: fighter('fc_c', SV.cu, 'ai'), terrain: 'open' },
+      [2, 8, 2, 8, 2, 8], // 선제: 6 + 2 + 2 = 10 vs 7 + 8 = 15 → 쿠 훌린 승
       [50, 0, 50, 0, NO, 50, 0], // 국면 2 뒤 알트리아는 위험에서 버틴다
     );
-    expect(r.log.ofType('phase_rolled')[0]!.data.rolls[0]).toMatchObject({ total: 13, parts: { affinity: 1, intel: 2, camp: 2 } });
+    expect(r.log.ofType('phase_rolled')[0]!.data.rolls[0]).toMatchObject({ total: 10, parts: { affinity: 1, intel: 1 } });
   });
   it('기습한 쪽은 국면 1에만 보정 +2 (D-109)', () => {
     const r = run(
@@ -399,7 +400,7 @@ describe('일방 보구를 막아 냄 (D-120)', () => {
 });
 
 describe('보구 공개 즉시 정보 보정 (D-137)', () => {
-  it.each(['a', 'b'] as const)('플레이어가 %s여도 공개한 국면부터 +3, 입력은 불변', (side) => {
+  it.each(['a', 'b'] as const)('플레이어가 %s여도 공개한 국면부터 진명 보정(+2, D-147), 입력은 불변', (side) => {
     const player = fighter('fc_p', SV.artoria, 'player', { intelLevel: 1, mana: 0, seals: 0, fatePoints: 0 });
     const enemy = fighter('fc_e', SV.artoria, 'ai', { mana: 80 });
     const r = run(
@@ -413,12 +414,12 @@ describe('보구 공개 즉시 정보 보정 (D-137)', () => {
     expect(revealed[0]!.seq).toBe(opened.seq + 1);
     expect(revealed[0]!.data).toMatchObject({ target: 'fc_e', level_from: 1, level_to: 3, cause: 'np' });
     for (const e of r.log.ofType('phase_rolled')) {
-      expect(e.data.rolls.find((x) => x.faction === 'fc_p')!.parts.intel).toBe(3);
+      expect(e.data.rolls.find((x) => x.faction === 'fc_p')!.parts.intel).toBe(K['day.intel_mod'][3]);
       expect(e.data.rolls.find((x) => x.faction === 'fc_e')!.parts.intel).toBeUndefined();
     }
     expect(r.out[side].intelLevel).toBe(3);
     expect(player.intelLevel).toBe(1);
-    expect(player.bonus).toEqual({ affinity: 0, camp: 0 });
+    expect(player.bonus).toEqual({ affinity: 0 });
   });
 
   it('적끼리의 보구 개방은 플레이어에게 공개하지 않는다', () => {
@@ -428,5 +429,55 @@ describe('보구 공개 즉시 정보 보정 (D-137)', () => {
     );
     expect(r.log.ofType('np_opened')).toHaveLength(1);
     expect(r.log.ofType('intel_gained')).toHaveLength(0);
+  });
+});
+
+describe('약점 공략 (combat.md §4.1, D-148)', () => {
+  it('가장 유리한 대항 국면: 코지로 vs 헤라클레스 → 선제(민첩 7.5 vs 7), 메데이아 vs 알트리아 → 마술전(7.5 vs 7)', () => {
+    expect(weaknessPhase(servant(SV.kojiro), servant(SV.heracles))).toBe('ph_initiative');
+    expect(weaknessPhase(servant(SV.medea), servant(SV.artoria))).toBe('ph_sorcery');
+  });
+  it('진명을 알면 전투당 1회 고를 수 있고, 그 국면은 추첨 없이 내가 공격측', () => {
+    const r = run(
+      { a: fighter('fc_k', SV.kojiro, 'player', { intelLevel: 3, fatePoints: 0 }), b: fighter('fc_h', SV.heracles, 'ai'), terrain: 'urban' },
+      [6, 6, 6, 6, 6, 6], // 국면 1 선제 7.5+6+2 = 15.5 vs 13 → 헤라클레스 부상. 국면 2·3 정면에서 코지로가 밀린다
+      [0, 0, 0, 0], // 국면 1은 추첨 없음. 국면 2·3: 정면, 공격측 a
+      (p) => (p.kind === 'phase_command' ? (p.options.includes('weakness') ? 'weakness' : 'none') : p.kind === 'danger_decision' ? 'fight' : false),
+    );
+    const asks = r.prompts.filter((p) => p.kind === 'phase_command');
+    expect(asks[0]).toMatchObject({ options: ['seal_np', 'weakness'], weakness_phase: 'ph_initiative' });
+    expect(asks.slice(1).every((p) => p.kind === 'phase_command' && !p.options.includes('weakness'))).toBe(true);
+    expect(r.log.ofType('weakness_used').map((e) => e.data)).toEqual([{ battle_id: 'bt_test', phase_index: 1, faction: 'fc_k', target: 'fc_h', phase_id: 'ph_initiative' }]);
+    expect(r.log.ofType('phase_started')[0]!.data).toMatchObject({ phase_id: 'ph_initiative', attacker: 'fc_k' });
+    expect(r.totals[0]).toEqual([15.5, 13]);
+  });
+  it('진명을 모르거나 상대가 이번 국면에 보구를 열었으면 선택지에 없다', () => {
+    const r = run(
+      { a: fighter('fc_k', SV.kojiro, 'player', { intelLevel: 2, fatePoints: 0, seals: 0 }), b: fighter('fc_c', SV.cu, 'ai'), terrain: 'open' },
+      [3, 3, 3, 3, 3, 3], [0, 0, 0, 0, 0, 0],
+    );
+    expect(r.prompts.some((p) => p.kind === 'phase_command')).toBe(false);
+  });
+});
+
+describe('적 AI 영주 퇴각 제한 (D-149)', () => {
+  it('영주 퇴각 횟수를 다 쓴 적 AI는 영주가 있어도 일반 도주한다', () => {
+    const r = run(
+      { a: fighter('fc_a', SV.artoria, 'player', { fatePoints: 0 }), b: fighter('fc_c', SV.cu, 'ai', { condition: 'hurt', temperament: 'cautious', sealRetreats: 0 }), terrain: 'open' },
+      [10, 2, 2, 10], // 정면 12+10 = 22 vs 11+2 = 13 → 쿠 훌린 위험. 도주: 6+2 vs 7+10 → 성공
+      [0, 0, 0], // 정면, 공격측 a, 퇴각 판정(일어남)
+    );
+    expect(r.log.ofType('seal_used')).toHaveLength(0);
+    expect(r.log.ofType('escape_attempted')[0]!.data).toMatchObject({ faction: 'fc_c', success: true });
+    expect(r.out).toMatchObject({ result: 'escape', escaped: 'fc_c' });
+    expect(r.out.b.seals).toBe(3);
+  });
+  it('남아 있으면 영주로 퇴각하고 횟수가 줄어든다', () => {
+    const r = run(
+      { a: fighter('fc_a', SV.artoria, 'player', { fatePoints: 0 }), b: fighter('fc_c', SV.cu, 'ai', { condition: 'hurt', temperament: 'cautious' }), terrain: 'open' },
+      [10, 2], [0, 0, 0],
+    );
+    expect(r.log.ofType('seal_used')[0]!.data.purpose).toBe('escape');
+    expect(r.out.b.sealRetreats).toBe(K['ai.seal_retreat_max'] - 1);
   });
 });

@@ -1,0 +1,130 @@
+{
+  "servant_id": "sv_0075_jack_the_ripper",
+  "source_id": 75,
+  "name_ko": "잭 더 리퍼",
+  "name_en": "Jack the Ripper",
+  "class": "assassin",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/75?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "A",
+    "mana": "C",
+    "luck": "E",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 105,
+      "name": "classAssassin"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2667,
+      "name": "childServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 600500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 50551,
+        "name": "기척 차단 A+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 130550,
+        "name": "안개 낀 밤의 살인 A",
+        "rank": null
+      },
+      {
+        "id": 131450,
+        "name": "정보 말소 B",
+        "rank": null
+      },
+      {
+        "id": 132150,
+        "name": "외과수술 E",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 600501,
+      "name": "해체성모",
+      "ruby": "마리아 더 리퍼",
+      "rank": "D",
+      "type": "대인보구"
+    },
+    {
+      "id": 600502,
+      "name": "해체성모",
+      "ruby": "마리아 더 리퍼",
+      "rank": "D+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6005000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/600500/600500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/600500/600500b@2.png"
+  }
+}

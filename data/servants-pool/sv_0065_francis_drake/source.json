@@ -1,0 +1,128 @@
+{
+  "servant_id": "sv_0065_francis_drake",
+  "source_id": 65,
+  "name_ko": "프랜시스 드레이크",
+  "name_en": "Francis Drake",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/65?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "B",
+    "mana": "E",
+    "luck": "EX",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 203,
+      "name": "attributeStar"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 400300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34250,
+        "name": "대 마력 D",
+        "rank": null
+      },
+      {
+        "id": 88450,
+        "name": "기승 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 35551,
+        "name": "폭풍의 항해자 A+",
+        "rank": null
+      },
+      {
+        "id": 97450,
+        "name": "황금률 B",
+        "rank": null
+      },
+      {
+        "id": 112650,
+        "name": "별의 개척자 EX",
+        "rank": null
+      },
+      {
+        "id": 915550,
+        "name": "달려나가는 황금률 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 400301,
+      "name": "황금 사슴과 폭풍의 밤",
+      "ruby": "골든 와일드 헌트",
+      "rank": "A",
+      "type": "대군보구"
+    },
+    {
+      "id": 400302,
+      "name": "황금 사슴과 폭풍의 밤",
+      "ruby": "골든 와일드 헌트",
+      "rank": "A+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4003000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/400300/400300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/400300/400300b@2.png"
+  }
+}

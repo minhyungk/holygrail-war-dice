@@ -49,11 +49,10 @@ GameEvent ─► ① 사실 수집 ─► ② 후보 필터 ─► ③ 점수·�
 | 시간 | `day_started`, `night_started` | |
 | | `condition_recovered` | 진영, 이전/이후 상태, cause(`night`/`supply`) |
 | | `mana_regenerated` | 진영, 증가량 |
-| 낮 행동·보구 공개 | `action_started` | 플레이어의 판정 행동 시작: 진영, action(`bond`/`intel`/`craft`/`supply`), 타일, 대상(정보 수집). 판정·재굴림 질문보다 먼저 기록해 도입 나레이션을 먼저 보인다 (D-141) |
-| | `intel_gained` | 대상, 이전/이후 단계, cause(`intel`/`np`), 결과·굴림·DC. 보구 공개는 개방 직후 기록 (D-137) |
+| 낮 행동·보구 공개 | `action_started` | 플레이어의 판정 행동 시작: 진영, action(`bond`/`intel`/`supply`), 타일, 대상(정보 수집). 판정·재굴림 질문보다 먼저 기록해 도입 나레이션을 먼저 보인다 (D-141) |
+| | `intel_gained` | 대상, 이전/이후 단계, cause(`intel`/`np`/`encounter`/`battle`), 결과·굴림·DC. 보구 공개는 개방 직후, 조우 자동 공개는 조우 직후, 결판 없는 전투 보상은 전투 종료 직후 기록 (D-137, D-147) |
 | | `mana_supplied` | 결과 구간, 마력 전/후, 굴림. 호감도는 별도 affinity_changed |
 | | `bond` | 결과, 굴림, DC. 호감도는 별도 affinity_changed |
-| | `crafted` | 진지 타일, 결과, 굴림, DC |
 | | `waited` | 머문 진영 |
 | | `moved` | 진영, from, to, path(타일 ID 배열) |
 | 관계 | `affinity_changed` | 이전/이후 수치, 단계 변화, 원인 |
@@ -64,6 +63,7 @@ GameEvent ─► ① 사실 수집 ─► ② 후보 필터 ─► ③ 점수·�
 | 전투 | `battle_started` | 전투 ID, 타일, 지형, 강제 전투 여부, 플레이어 전투의 승률 예측용 스냅샷(D-139) |
 | | `phase_started` | 국면 번호, phase_id, 공격측, 공개된 국면 시점의 승률 예측용 스냅샷(D-139) |
 | | `np_opened` | 진영, 영주 사용 여부 |
+| | `weakness_used` | 약점 공략: 진영, 대상, 국면 번호, 고른 국면 유형 (D-148) |
 | | `phase_rolled` | 양측 자연값, 보정, 판정값, 기적 여부, 운명점 재굴림 여부 |
 | | `phase_resolved` | 승자·패자, 차이, 피해 단계, 실제 도달 상태, skipped/defended. 위험 진입은 danger, 위험에서 패배는 below (D-137) |
 | | `condition_changed` | 진영, 이전/이후 상태 |
@@ -125,7 +125,8 @@ data/
     dialogue.json   ← 이 서번트가 말하는 모든 대사 (전용 + 특수 상호작용)
     voice.md        ← 말투 가이드 (호칭, 어조, 금기)
   classes/{class}/dialogue.json   ← 클래스 공통 대사
-  common/narrator.json            ← 서술문, 소문, 범용 대사
+  common/speech.json              ← 서번트 공통 대사 (누가 말해도 되는 말, D-151)
+  common/narrator.json            ← 서술문, 소문, 범용 나레이션
 ```
 - **대사는 말하는 쪽이 소유한다.** 에미야가 쿠 훌린에게 하는 말은 `sv_0011_emiya` 폴더에 `when: { "enemy.servant": ... }` 조건으로 둔다. 쌍 전용 폴더는 두지 않는다
 - 서번트 ID 규칙: **번호 + 이름** `sv_{FGO 번호 4자리}_{영문 이름}` [확정] (D-066). 예: `sv_0002_artoria`
@@ -180,7 +181,7 @@ data/
 2. **계층을 먼저 본다** (D-144): 남은 후보 중 가장 구체적인 계층(서번트 > 클래스 > 공통)의 후보만 남긴다. 그 안에서 조건 수가 가장 많은 후보만 남긴다. 서번트 전용 대사가 하나라도 맞으면 조건이 더 많은 클래스·공통 대사보다 우선한다.
 3. 같은 풀에 대안이 있으면 직전 대사를 제외한 뒤 `weight`로 시드 RNG 추첨한다.
 4. 후보가 없으면 해당 슬롯을 생략한다. 생략 커버리지 로그는 아직 미구현이다.
-- 현재 서번트 대사 후보는 개인·클래스 파일, 나레이션 후보는 관련 서번트의 서술문·공통 나레이션에서 모은다. 공통 범용 대사 폴백은 확장 작업이다.
+- 서번트 대사 후보는 개인 → 클래스 → 공통(`common/speech.json`, D-151) 파일, 나레이션 후보는 관련 서번트의 서술문·공통 나레이션에서 모은다.
 - 반복 기억은 선택 시 갱신되고 cooldown은 소비한 이벤트 수를 기준으로 센다 (현재 구현).
 
 ### 6.1 대체 계층 [확정] (D-064, D-144)
@@ -251,12 +252,17 @@ data/
 | `mana_supplied` | line → react |
 | `battle_started` | lead(장소) → lead(상대 등장) → line → (answer) → (react) → tail |
 | `phase_started` | lead(국면 유형) |
-| `phase_resolved` | react(공방 묘사) → (tail: 상태 변화) → (line: 위기) |
+| `phase_resolved` | react(공방 묘사) → (line: 국면 승리 `phase_win` / 피격 `phase_hit`, 확률) → (tail: 상태 변화) → (line: 위기) |
 | `np_opened` | lead(마력 집중) → line(영창) → react(정체 공개) |
+| `weakness_used` | lead(약점 서술, 국면 유형별) → line(`weakness`) (D-148) |
+| `skill_triggered` | 내 서번트만: line(`skill`, 확률) (D-151) |
+| `affinity_changed` (선택 반응) | `affinity_reaction` 템플릿: line(`react_choice`) → tail(호감도 변화) (D-150) |
 | 기적 발생 | react |
-| `battle_ended` | tail → line(승리/패배/무승부) |
+| `battle_ended` | tail → line(승리/패배/무승부). 역전승이면 react(`comeback`) → tail → line(`comeback`) (D-151) |
 | `post_choice` | line → tail |
 | `npc_battle_resolved` | 실제 전투가 있으면 그 밤 간접 묘사. 탈락 소문은 다음 날 `day_started` lead에도 사용 (D-130) |
+
+- **확률 슬롯** (D-151): 슬롯의 `chance`는 `text.slot_chance`의 이름이다. 그 확률로만 슬롯을 쓴다 (서술 RNG). 짧은 외침이 매 국면 나오지 않게 한다
 
 ### 8.3 고르는 순서: 대사가 먼저, 나레이션이 따라간다
 1. 템플릿의 대사 슬롯(`line`, `answer` 등)을 먼저 고른다.

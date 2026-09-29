@@ -1,0 +1,141 @@
+{
+  "servant_id": "sv_0256_gareth",
+  "source_id": 256,
+  "name_ko": "가레스",
+  "name_en": "Gareth",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/256?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "B",
+    "agi": "A",
+    "mana": "D",
+    "luck": "D",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 402,
+      "name": "twoStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2795,
+      "name": "knightsOfTheRound"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 303900,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      },
+      {
+        "id": 88450,
+        "name": "기승 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 649350,
+        "name": "전투속행 C",
+        "rank": null
+      },
+      {
+        "id": 638450,
+        "name": "아름다운 손의 가레스 B",
+        "rank": null
+      },
+      {
+        "id": 639450,
+        "name": "변신의 반지 B",
+        "rank": null
+      },
+      {
+        "id": 892452,
+        "name": "늑대는 잠들지 않는다 B++",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 303901,
+      "name": "사납게 날뛰는 소녀 늑대",
+      "ruby": "이라 루푸스",
+      "rank": "C++",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3039000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/303900/303900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/303900/303900b@2.png"
+  }
+}

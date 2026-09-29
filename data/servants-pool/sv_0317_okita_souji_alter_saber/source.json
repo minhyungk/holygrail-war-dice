@@ -1,0 +1,140 @@
+{
+  "servant_id": "sv_0317_okita_souji_alter_saber",
+  "source_id": 317,
+  "name_ko": "오키타 소지(얼터)",
+  "name_en": "Okita Souji Alter (Saber)",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/317?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "B",
+    "agi": "B",
+    "mana": "B",
+    "luck": "D",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 3,
+      "name": "genderUnknown"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2007,
+      "name": "saberface"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2356,
+      "name": "feminineLookingServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2839,
+      "name": "shinsengumiServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 10009,
+      "name": "unknown"
+    },
+    {
+      "id": 105100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 20550,
+        "name": "단독행동 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 921452,
+        "name": "마신검 B++",
+        "rank": null
+      },
+      {
+        "id": 922450,
+        "name": "연옥 B",
+        "rank": null
+      },
+      {
+        "id": 923550,
+        "name": "일월 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 105101,
+      "name": "절검・무궁일섬",
+      "ruby": "절검・무궁일섬",
+      "rank": "A+",
+      "type": "대계보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1051000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/105100/105100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/105100/105100b@2.png"
+  }
+}

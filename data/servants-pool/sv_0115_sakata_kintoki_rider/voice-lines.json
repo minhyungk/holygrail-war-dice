@@ -1,0 +1,913 @@
+{
+  "origin": "Atlas Academy KR nice API",
+  "groups": [
+    {
+      "type": "home",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "생일",
+          "ids": [
+            "0_H010",
+            "0_H011",
+            "0_H012"
+          ],
+          "subtitle": "여어, 생일이라면서. 멋들어지게 바비큐 어때. \n아니면 아시가라 휴게소로 밥이나 먹으러 갈까!",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "birthDay",
+          "cond_value": 0
+        },
+        {
+          "name": "이벤트 개최중",
+          "ids": [
+            "0_H020",
+            "0_H021"
+          ],
+          "subtitle": "페스티벌을 하고 있잖아. \n좋아, 나도 좀 끼어볼까?",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 11
+        },
+        {
+          "name": "대화 1",
+          "ids": [
+            "0_H030",
+            "0_H031",
+            "0_H032"
+          ],
+          "subtitle": "슬슬 어디 좀 안 가겠어?\n바람이 된다는 소리는 안 하겠는데, 바람보다 빠르게 질주해 보자고.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 12
+        },
+        {
+          "name": "대화 2",
+          "ids": [
+            "0_H040",
+            "0_H041",
+            "0_H042"
+          ],
+          "subtitle": "대장, 상태는 어때. \n나? 나야 언제나 골든이지.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 13
+        },
+        {
+          "name": "대화 3",
+          "ids": [
+            "0_H050",
+            "0_H051"
+          ],
+          "subtitle": "뭐든지 말해. \n예나 지금이나 난 대장 옆에 있으니까.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 14
+        },
+        {
+          "name": "좋아하는 것",
+          "ids": [
+            "0_H060",
+            "0_H061",
+            "0_H062",
+            "0_H063"
+          ],
+          "subtitle": "좋아하는 거? 라이더는 역시 애마가 있고 봐야 하지 않겠어?\n난 물론 베어호지!",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 15
+        },
+        {
+          "name": "싫어하는 것",
+          "ids": [
+            "0_H070",
+            "0_H071"
+          ],
+          "subtitle": "싫어하는 거라. 역시 막상 생각하면 떠오르는 게 없네──",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 16
+        },
+        {
+          "name": "성배에 대하여",
+          "ids": [
+            "0_H080",
+            "0_H081",
+            "0_H082",
+            "0_H083"
+          ],
+          "subtitle": "슬슬 알 거 같아. 성배라는 건 말하자면 트로피야. \n골든한 트로피라면 확실히 나쁘지 않아. 최고잖아",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 17
+        },
+        {
+          "name": "인연 Lv.1",
+          "ids": [
+            "0_H090",
+            "0_H091",
+            "0_H092"
+          ],
+          "subtitle": "뒤에 타고 싶다고? 쏘리, 그건 내가 정하는 게 아냐. \n너를 태울지 말지는 이 베어호가 정하는 거라고.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 1
+        },
+        {
+          "name": "인연 Lv.2",
+          "ids": [
+            "0_H100",
+            "0_H101",
+            "0_H102",
+            "0_H103",
+            "0_H104"
+          ],
+          "subtitle": "베어 호 봤지? 그래, 내가 항상 타고 있는 데빌 몬스터 머신이야. \n끝내주지? 최고로 밟아줄 수 있는 머신이야. \n골든 휴즈 베어호였다면 거대 로봇 형태도 보여줄 수 있는데…… \n뭐, 그 녀석은 다음 기회로 하지.",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 2
+        },
+        {
+          "name": "인연 Lv.3",
+          "ids": [
+            "0_H110",
+            "0_H111",
+            "0_H112",
+            "0_H113"
+          ],
+          "subtitle": "벨트 버클이 투박하다고? 무슨 소리야, 대장. \n라이더라는 건 그런 거잖아? ……아니야? ……정말이냐. \n너무 지나쳤나, 이거.",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 3
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H120",
+            "0_H121",
+            "0_H122",
+            "0_H123"
+          ],
+          "subtitle": "머리를 싹 비우고 드라이브하는 건 진짜 최고거든? \n바람과 달리면서 바람을 추월하는 거야. 잇츠 쏘 쿨이라고. \n인간은 가끔 야생으로 돌아가지 않으면 펑크나 버리잖아?",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H130",
+            "0_H131",
+            "0_H132",
+            "0_H133",
+            "0_H134",
+            "0_H135",
+            "0_H136"
+          ],
+          "subtitle": "휘유, 어떻게 된 거야! 베어호가 울부짖고 있어! \n너를 자기 등에 태우라고 말이야! 나뿐만이 아니라 \n야생의 곰조차 인정하다니……정말 와일드한 대장이야……\n좋아~, 그러기로 했으면 같이 타자! 떨어지지 말라구!",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        },
+        {
+          "name": "대화 4",
+          "ids": [
+            "0_H140",
+            "0_H141",
+            "0_H142"
+          ],
+          "subtitle": "슈텐이라고? 지금의 나한테는 어느 때보다도 천적이야. \n음주운전, 절대금지!",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 18
+        },
+        {
+          "name": "대화 5",
+          "ids": [
+            "0_H150",
+            "0_H151",
+            "0_H152",
+            "0_H153",
+            "0_H154",
+            "0_H155"
+          ],
+          "subtitle": "하지만 설마 라이코 대장이라니. \n만난 건 물론 기뻐. 기쁘긴 한데, 이게……있잖아? 어프로치라든가, \n스킨십이라든가, 그런 게 쑥스럽다고 할까, \n뭐랄까…… 그런 거 있잖아?",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 19
+        },
+        {
+          "name": "대화 6",
+          "ids": [
+            "0_H160",
+            "0_H161",
+            "0_H162"
+          ],
+          "subtitle": "찌릿찌릿한데. 뭔가 있군?\n어느 쪽의 전격이 위인지 한번 선더 매치라도 붙어 볼까?",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 20
+        },
+        {
+          "name": "대화 7",
+          "ids": [
+            "0_H170",
+            "0_H171",
+            "0_H172",
+            "0_H173"
+          ],
+          "subtitle": "메탈이다. 헤비메탈의 기운이 느껴져! \n크아~, 스미스소니언! 어이, 선생님들, \n베어호 좀 튠업해 주지 않겠어?",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 21
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "0_G010"
+          ],
+          "subtitle": "오오, 적응이 되어가는데.",
+          "text": [
+            "오오, 적응이 되어가는데."
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 2",
+          "ids": [
+            "0_G020"
+          ],
+          "subtitle": "역시 고기를 먹으면 기운이 달라!",
+          "text": [
+            "역시 고기를 먹으면 기운이 달라!"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 1",
+          "ids": [
+            "0_G030",
+            "0_G031",
+            "0_G032"
+          ],
+          "subtitle": "변신? 안 해. 이게 내 베스트 재킷이거든. \n……뭐, 라이더니까 변신 정도는 하고 싶지만.",
+          "text": [
+            "변신?",
+            "안 해. 이게 내 베스트 재킷이거든.",
+            "……뭐, 라이더니까 변신 정도는 하고 싶지만."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 1
+        },
+        {
+          "name": "영기재림 3",
+          "ids": [
+            "0_G040",
+            "0_G041",
+            "0_G042"
+          ],
+          "subtitle": "변한 것 같지도 않다고?\n변했다고, 안 보이는 곳이! 머신이란 건 그런 거야!",
+          "text": [
+            "변한 것 같지도 않다고?",
+            "변했다고, 안 보이는 곳이!",
+            "머신이란 건 그런 거야!"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 3
+        },
+        {
+          "name": "영기재림 4",
+          "ids": [
+            "0_G050",
+            "0_G051",
+            "0_G052",
+            "0_G053"
+          ],
+          "subtitle": "자, 다음은 어디를 노려볼까…… \n뭐, 대장과 함께라면 어디든 헤븐리인가! 헬멧 챙겨! \n기분 좋은 여행을 시작해 보자고, 마스터!",
+          "text": [
+            "자, 다음은 어디를 노려볼까……",
+            "뭐, 대장과 함께라면 어디든 헤븐리인가!",
+            "헬멧 챙겨!",
+            "기분 좋은 여행을 시작해 보자고, 마스터!"
+          ],
+          "cond_type": "svtCountStop",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "firstGet",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "소환",
+          "ids": [
+            "0_S010",
+            "0_S011",
+            "0_S012",
+            "0_S013"
+          ],
+          "subtitle": "여어, 대장, 또 만났네!\n라이더 킨토키, 고속으로 등장이다!\n고갯길을 공략할 거야? 아니면 하이웨이에서 음속을 초월해 볼까?",
+          "text": [
+            "여어, 대장, 또 만났네!",
+            "[r]\n라이더 킨토키, 고속으로 등장이다!",
+            "[r]\n고갯길을 공략할 거야? ",
+            "아니면 하이웨이에서 음속을 초월해 볼까?"
+          ],
+          "cond_type": "svtGet",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "eventJoin",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "임시 가입",
+          "ids": [
+            "0_S020",
+            "0_S021",
+            "0_S022",
+            "0_S023"
+          ],
+          "subtitle": "일단 잘 부탁해, 마스터.\n아앙? 평소보다 펑키하다고?\n그야 그렇지. 지금의 나는 바이커에 라이더니까!",
+          "text": [
+            "일단 잘 부탁해, 마스터.",
+            "[r]\n아앙? 평소보다 펑키하다고?",
+            "[r]\n그야 그렇지.",
+            " 지금의 나는 바이커에 라이더니까!"
+          ],
+          "cond_type": "svtEventJoin",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "개시 1",
+          "ids": [
+            "0_B100"
+          ],
+          "subtitle": "골든 라이더, 등장!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "0_B110"
+          ],
+          "subtitle": "제법이잖아, 보이즈.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 3",
+          "ids": [
+            "0_B500"
+          ],
+          "subtitle": "너도, 바람이 되고 싶나?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 4",
+          "ids": [
+            "0_B510"
+          ],
+          "subtitle": "싸우겠다면…… 제대로 싸워주겠어!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "0_B080"
+          ],
+          "subtitle": "맡겨줘. 바람이 될 테니까.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "0_B090"
+          ],
+          "subtitle": "치킨 레이스다, 짜샤!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 3",
+          "ids": [
+            "0_B480"
+          ],
+          "subtitle": "골든 에너지!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 4",
+          "ids": [
+            "0_B490"
+          ],
+          "subtitle": "썬더 스파크!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "0_B180"
+          ],
+          "subtitle": "베어 너클이다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "0_B190"
+          ],
+          "subtitle": "쿨하게.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "0_B200"
+          ],
+          "subtitle": "끝내주지.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B210"
+          ],
+          "subtitle": "OK, 떨어지지 마라?",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B220"
+          ],
+          "subtitle": "전속력으로 간다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 5
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B230"
+          ],
+          "subtitle": "풀스로틀이라구!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 6
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B250"
+          ],
+          "subtitle": "그래, 피니시다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 30
+        },
+        {
+          "name": "공격 1",
+          "ids": [
+            "0_B010"
+          ],
+          "subtitle": "하압!!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "0_B020"
+          ],
+          "subtitle": "예─이!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "0_B030"
+          ],
+          "subtitle": "스매시!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 4",
+          "ids": [
+            "0_B410"
+          ],
+          "subtitle": "으럇!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 5",
+          "ids": [
+            "0_B420"
+          ],
+          "subtitle": "Foo!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 6",
+          "ids": [
+            "0_B430"
+          ],
+          "subtitle": "이얏호우!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B040"
+          ],
+          "subtitle": "Rock'n'roll!!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B440"
+          ],
+          "subtitle": "Thunder Clap!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B840"
+          ],
+          "subtitle": "Lightning!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "0_B150"
+          ],
+          "subtitle": "이 자식, 공격이 장난 아닌데!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "0_B140"
+          ],
+          "subtitle": "큭!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 3",
+          "ids": [
+            "0_B550"
+          ],
+          "subtitle": "꽤 하잖아……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 4",
+          "ids": [
+            "0_B540"
+          ],
+          "subtitle": "으헷헤!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "0_B160"
+          ],
+          "subtitle": "미안, 연료가 떨어졌다……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "0_B170"
+          ],
+          "subtitle": "……면허 정지만은…… 좀 참아 줘……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 3",
+          "ids": [
+            "0_B560"
+          ],
+          "subtitle": "난리 났네…… 키는 어디 간 거야……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 4",
+          "ids": [
+            "0_B570"
+          ],
+          "subtitle": "크헉…… 제길……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "0_B120"
+          ],
+          "subtitle": "포 더 윈!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "0_B130"
+          ],
+          "subtitle": "잇츠 쏘 쿨이잖아.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 3",
+          "ids": [
+            "0_B520"
+          ],
+          "subtitle": "바람, 느꼈어?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 4",
+          "ids": [
+            "0_B530"
+          ],
+          "subtitle": "샤앗!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B050",
+            "0_B051",
+            "0_B052",
+            "0_B053"
+          ],
+          "subtitle": "그럼 밟아보실까……! \n베어 하울링! \n──고오올든 드라아아아이브! 굿 나이트!",
+          "text": [
+            "그럼 밟아보실까……!",
+            "베어 하울링!",
+            "──고오올든 드라아아아이브!",
+            "굿 나이트!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        },
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B800",
+            "0_B801",
+            "0_B802",
+            "0_B803"
+          ],
+          "subtitle": "따라올 수 있겠냐?! 컴온, 베이비!!\n야랑사구・황금질주(골든 드라이브 굿 나이트)!!!",
+          "text": [
+            "따라올 수 있겠냐?!",
+            "컴온, 베이비!!",
+            "골든 드라이브",
+            "굿 나이트(야랑사구・황금질주)!!!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 7
+        }
+      ]
+    }
+  ]
+}

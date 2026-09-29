@@ -1,0 +1,121 @@
+{
+  "servant_id": "sv_0429_servant_429",
+  "source_id": 429,
+  "name_ko": "로우히",
+  "name_en": null,
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/429?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "B",
+    "mana": "A++",
+    "luck": "C",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 705000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54350,
+        "name": "광화 C",
+        "rank": null
+      },
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 83550,
+        "name": "진지작성 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2440450,
+        "name": "천체 궤도 조정 B",
+        "rank": null
+      },
+      {
+        "id": 2441550,
+        "name": "북방의 재앙 A",
+        "rank": null
+      },
+      {
+        "id": 2442450,
+        "name": "파멸의 난제 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 705001,
+      "name": "극성천구각순환",
+      "ruby": "폴라리스 서큘레이션",
+      "rank": "B",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7050000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/705000/705000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/705000/705000b@2.png"
+  }
+}

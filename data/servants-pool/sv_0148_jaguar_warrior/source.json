@@ -1,0 +1,146 @@
+{
+  "servant_id": "sv_0148_jaguar_warrior",
+  "source_id": 148,
+  "name_ko": "재규어맨",
+  "name_en": "Jaguar Warrior",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/148?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "B",
+    "mana": "E",
+    "luck": "B",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2005,
+      "name": "wildbeast"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2654,
+      "name": "livingHuman"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 302800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 54150,
+        "name": "광화 E",
+        "rank": null
+      },
+      {
+        "id": 62550,
+        "name": "신성 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 317550,
+        "name": "재규어 펀치 A",
+        "rank": null
+      },
+      {
+        "id": 318450,
+        "name": "재규어 킥 B",
+        "rank": null
+      },
+      {
+        "id": 319551,
+        "name": "재규어 아이 A+",
+        "rank": null
+      },
+      {
+        "id": 317551,
+        "name": "재규어 펀치 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 302801,
+      "name": "피할 수 없는 죽음의 발톱",
+      "ruby": "그레이트 데스 크로",
+      "rank": "B",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3028000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/302800/302800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/302800/302800b@2.png"
+  }
+}

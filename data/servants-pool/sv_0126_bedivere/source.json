@@ -1,0 +1,148 @@
+{
+  "servant_id": "sv_0126_bedivere",
+  "source_id": 126,
+  "name_ko": "베디비어",
+  "name_en": "Bedivere",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/126?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "B",
+    "agi": "A+",
+    "mana": "C",
+    "luck": "B",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 203,
+      "name": "attributeStar"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2795,
+      "name": "knightsOfTheRound"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 101200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 88550,
+        "name": "기승 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 77350,
+        "name": "군략 C",
+        "rank": null
+      },
+      {
+        "id": 246450,
+        "name": "냉정침착 B",
+        "rank": null
+      },
+      {
+        "id": 247450,
+        "name": "수호의 계약 B",
+        "rank": null
+      },
+      {
+        "id": 874450,
+        "name": "기사의 군략 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 101201,
+      "name": "검을 취하라, 은색의 팔",
+      "ruby": "스위치 온 아가트람",
+      "rank": "C",
+      "type": "대인보구"
+    },
+    {
+      "id": 101202,
+      "name": "검을 취하라, 은색의 팔",
+      "ruby": "스위치 온 아가트람",
+      "rank": "C+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1012000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/101200/101200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/101200/101200b@2.png"
+  }
+}

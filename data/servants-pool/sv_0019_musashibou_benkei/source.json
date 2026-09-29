@@ -1,0 +1,134 @@
+{
+  "servant_id": "sv_0019_musashibou_benkei",
+  "source_id": 19,
+  "name_ko": "무사시보 벤케이",
+  "name_en": "Musashibou Benkei",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/19?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "B+",
+    "agi": "C",
+    "mana": "D",
+    "luck": "C",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 402,
+      "name": "twoStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2735,
+      "name": "genji"
+    },
+    {
+      "id": 2810,
+      "name": "fairyTaleServant"
+    },
+    {
+      "id": 2849,
+      "name": "defender"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 300600,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34351,
+        "name": "대 마력 C+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 38550,
+        "name": "원령조복 A",
+        "rank": null
+      },
+      {
+        "id": 99450,
+        "name": "우뚝 서기 B",
+        "rank": null
+      },
+      {
+        "id": 174000,
+        "name": "백지 권화장",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 300601,
+      "name": "오백나한 보타락도해",
+      "ruby": "오백나한 보타락도해",
+      "rank": "EX",
+      "type": "대군보구"
+    },
+    {
+      "id": 300602,
+      "name": "오백나한 보타락도해",
+      "ruby": "오백나한 보타락도해",
+      "rank": "EX",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3006000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/300600/300600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/300600/300600b@2.png"
+  }
+}

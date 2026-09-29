@@ -1,0 +1,129 @@
+{
+  "servant_id": "sv_0306_galatea",
+  "source_id": 306,
+  "name_ko": "갈라테아",
+  "name_en": "Galatea",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/306?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "EX",
+    "agi": "E",
+    "mana": "B+",
+    "luck": "C+",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2781,
+      "name": "mechanical"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 703900,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54650,
+        "name": "광화 EX",
+        "rank": null
+      },
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 854650,
+        "name": "피그말리온의 사랑 EX",
+        "rank": null
+      },
+      {
+        "id": 855550,
+        "name": "조각상 소녀 A",
+        "rank": null
+      },
+      {
+        "id": 856650,
+        "name": "아프로디테의 은혜 EX",
+        "rank": null
+      },
+      {
+        "id": 856675,
+        "name": "아프로디테의 은혜 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 703901,
+      "name": "이상을 새기는 왕의 끌",
+      "ruby": "피그말리온 치즐 아웃",
+      "rank": "B",
+      "type": "대물보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7039000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/703900/703900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/703900/703900b@2.png"
+  }
+}

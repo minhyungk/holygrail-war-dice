@@ -1,0 +1,152 @@
+{
+  "servant_id": "sv_0233_quetzalcoatl_samba_santa",
+  "source_id": 233,
+  "name_ko": "케찰코아틀(삼바/산타)",
+  "name_en": "Quetzalcoatl (Samba/Santa)",
+  "class": "ruler",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/233?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "B+",
+    "agi": "B",
+    "mana": "A",
+    "luck": "EX",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 108,
+      "name": "classRuler"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1110,
+      "name": "lamia"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2797,
+      "name": "divineSpirit"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 900700,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34551,
+        "name": "대 마력 A+",
+        "rank": null
+      },
+      {
+        "id": 30550,
+        "name": "여신의 신핵 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 558450,
+        "name": "삼비스타 B",
+        "rank": null
+      },
+      {
+        "id": 559550,
+        "name": "여신의 선물 A",
+        "rank": null
+      },
+      {
+        "id": 560650,
+        "name": "크리스마스 살법 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 900701,
+      "name": "사랑, 성야에 아이들에게 전해져라",
+      "ruby": "유카탄 레갈로 데 나비다",
+      "rank": "A",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_9007000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/900700/900700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/900700/900700b@2.png"
+  }
+}

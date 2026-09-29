@@ -59,7 +59,7 @@ describe('판정 보정 (hk_battle_phase_roll)', () => {
   });
 
   it('단독행동: 음수 호감도 보정을 무시한다', () => {
-    const r = fight(fighter('fc_e', SV.emiya, { controller: 'player', bonus: { affinity: -2, camp: 0 } }), fighter('fc_c', SV.cu), TIES, [DRAW.clash, 0, DRAW.clash, 0, DRAW.clash, 0]);
+    const r = fight(fighter('fc_e', SV.emiya, { controller: 'player', bonus: { affinity: -2 } }), fighter('fc_c', SV.cu), TIES, [DRAW.clash, 0, DRAW.clash, 0, DRAW.clash, 0]);
     const emiya = r.log.ofType('phase_rolled')[0]!.data.rolls.find((x) => x.faction === 'fc_e')!;
     expect(emiya.parts.affinity).toBeUndefined();
     expect(r.skills.some((s) => s.skill_id === 'sk_independent_action' && s.effect === 'event_negate')).toBe(true);

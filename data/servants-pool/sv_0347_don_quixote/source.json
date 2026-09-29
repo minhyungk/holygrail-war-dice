@@ -1,0 +1,150 @@
+{
+  "servant_id": "sv_0347_don_quixote",
+  "source_id": 347,
+  "name_ko": "돈키호테",
+  "name_en": "Don Quixote",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/347?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "C",
+    "mana": "C",
+    "luck": "EX",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2821,
+      "name": "havingAnimalsCharacteristics"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 2881,
+      "name": "groupServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 305100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34150,
+        "name": "대 마력 E",
+        "rank": null
+      },
+      {
+        "id": 88150,
+        "name": "기승 E",
+        "rank": null
+      },
+      {
+        "id": 2069450,
+        "name": "동행종자 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2070650,
+        "name": "편력기사의 대모험 EX",
+        "rank": null
+      },
+      {
+        "id": 2071650,
+        "name": "열리는 것은 몽상의 문 EX",
+        "rank": null
+      },
+      {
+        "id": 2072150,
+        "name": "닫히는 것은 현실의 장막 E",
+        "rank": null
+      },
+      {
+        "id": 2072650,
+        "name": "닫히는 것은 현실의 장막 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 305101,
+      "name": "아아, 사랑스런 공주에게 바치리라, 나의 창을!",
+      "ruby": "발리엔테 아살토 데디카도 아 라 프린세사",
+      "rank": "D++",
+      "type": "대거인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3051000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/305100/305100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/305100/305100b@2.png"
+  }
+}

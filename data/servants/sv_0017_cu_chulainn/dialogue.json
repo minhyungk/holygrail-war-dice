@@ -364,6 +364,119 @@
         },
         "text": "마지막 날인가. 그럼 낮엔 제대로 놀자고, 마스터. 밤엔 제대로 싸울 테니까.",
         "repeat": "once_per_run"
+      },
+      {
+        "id": "fgo_like",
+        "text": "내 취향? 트집 잘 잡고, 기가 센 여자려나? 뭐, 어느 쪽이든 제대로 된 꼴은 못 봤지만.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 거야 분명하지. 배신을 하면 배로 갚아준다. 귀찮은 건 성격에 안 맞아",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배라…… 그럼, 어디다 쓸까…… 뭐, 손에 들어온 다음에 생각할래",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "어디서 만났던가? 처음 보는 느낌이 아닌데…… 뭐, 앞으로 잘 부탁해!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "성배 전쟁이라는 건 장소에 따라 룰과 규모가 다 다르잖아. 이번엔 또 꽤나 엄청난 이야기가 되어 버렸네……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "겟슈라는 건 켈트의 전사가 교환하는 맹세를 말하지. 많으면 많을수록 전사로서의 격은 올라가지만…… 뭐, 대부분은 시샘, 시기, 질투 때문에 괴롭히겠다는 거지, 이건!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "나한테는 셋…… 아니, 네 명의 여자가 있었어. 창의 스승과 공주와 죽음의 여신과 적국의 여왕. 어느 쪽도 제대로 약속을 지키지 못했어. 이번엔 조금은 변변한 모습을 보여줄 수 있으면 좋겠는데……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "너와는 오랜 관계가 되었군. 나는 보다시피 고참 서번트이지만, 요긴하게 써준다면 사력을 다해주지. 뭐, 부끄럽지만 앞으로도 부탁해 마스터, 라는 거야!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
       }
     ],
     "mana_supply": [
@@ -418,6 +531,129 @@
         "id": "fail_02",
         "text": "하아. 오늘은 영 흥이 안 나는군.",
         "tone": "grim"
+      }
+    ],
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "쉭.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "훗.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "자!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "읏샤!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_2",
+        "text": "칫!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_1",
+        "text": "아프잖아……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "그럼 어디, 몰아붙여 볼까……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "붉은 가시는 가시나무 같은 거거든.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "comeback": [
+      {
+        "id": "comeback_01",
+        "text": "하하, 죽다 살았네! 이래서 싸움은 그만둘 수가 없다니까!",
+        "tone": "playful"
+      },
+      {
+        "id": "comeback_02",
+        "text": "운 없는 건 익숙하다고. 그래도 마지막에 서 있는 건 나잖아?",
+        "tone": "playful"
+      }
+    ],
+    "weakness": [
+      {
+        "id": "weakness_01",
+        "text": "{enemy}, 네 약점은 이미 들통났다고. ──자, 거기다!",
+        "tone": "defiant"
+      }
+    ],
+    "react_choice": [
+      {
+        "id": "encounter_fight",
+        "when": {
+          "event.reaction": "encounter_fight"
+        },
+        "text": "그래야지! 역시 말이 통하는 마스터라니까.",
+        "tone": "playful"
+      },
+      {
+        "id": "encounter_flee",
+        "when": {
+          "event.reaction": "encounter_flee"
+        },
+        "text": "어이어이, 여기서 등을 보이라고? ……쳇, 알았다.",
+        "tone": "cold"
+      },
+      {
+        "id": "danger_fight",
+        "when": {
+          "event.reaction": "danger_fight"
+        },
+        "text": "하, 좋아! 끝까지 가 보자고!",
+        "tone": "defiant"
+      },
+      {
+        "id": "danger_run",
+        "when": {
+          "event.reaction": "danger_run"
+        },
+        "text": "……도망이라. 명령이면 따르지만, 기분은 별로다.",
+        "tone": "cold"
+      },
+      {
+        "id": "weakness",
+        "when": {
+          "event.reaction": "weakness"
+        },
+        "text": "얍삽하긴 한데, 이기는 싸움은 좋지. 가자!",
+        "tone": "playful"
       }
     ]
   }

@@ -65,6 +65,10 @@ export type Terrain = (typeof TERRAINS)[number];
 export const PHASE_IDS = ['ph_clash', 'ph_initiative', 'ph_sorcery', 'ph_fate', 'ph_np_clash', 'ph_np_attack'] as const; // phases.md §2
 export type PhaseId = (typeof PHASE_IDS)[number];
 
+/** 호감도 반응을 일으키는 플레이어 선택 (affinity.md §3.6, D-150) */
+export const REACTIONS = ['encounter_fight', 'encounter_flee', 'danger_fight', 'danger_seal', 'danger_run', 'np_open', 'weakness'] as const;
+export type Reaction = (typeof REACTIONS)[number];
+
 export const ServantProfile = z
   .object({
     servant_id: z.string().regex(SERVANT_ID),
@@ -78,6 +82,8 @@ export const ServantProfile = z
     alignment_detail: z.string(),
     alignment_verified: z.boolean(),
     temperament: z.string(),
+    /** 성격 반응표의 서번트별 예외 (D-143 오버라이드, D-150) */
+    reaction_overrides: z.object(Object.fromEntries(REACTIONS.map((r) => [r, z.number()])) as Record<Reaction, z.ZodNumber>).partial().strict().optional(),
     noble_phantasm: z.object({ name_ko: z.string(), ruby_ko: z.string(), rank: z.string(), type_ko: z.string() }).strict(),
     /** Atlas 이미지 (Q-134): face = 맵 아이콘, summon = 기본 재림 전신, final = 최종 재림 전신 */
     images: z.object({ face: z.string().url(), summon: z.string().url(), final: z.string().url() }).strict(),
@@ -161,7 +167,8 @@ export const SkillWhen = z
     role: z.enum(['attacker', 'defender']).optional(),
     phase_index: z.number().int().positive().optional(),
     self_condition: z.array(z.enum(['full', 'hurt', 'danger'])).optional(),
-    camp: z.literal(true).optional(),
+    /** 영맥 칸에서 싸우는 중 (D-146, 진지 대체) */
+    leyline: z.literal(true).optional(),
     escaper: z.literal(true).optional(),
     foe_dropped: z.literal(true).optional(),
     would_fall: z.literal(true).optional(),
@@ -226,6 +233,8 @@ export const SlotDef = z
     when_has: z.string().optional(),
     when_lacks: z.string().optional(),
     protected: z.boolean().optional(),
+    /** 이 슬롯을 쓸 확률의 이름 (constants text.slot_chance). 짧은 외침이 매 국면 나오지 않게 (D-151) */
+    chance: z.string().optional(),
   })
   .strict()
   .refine((s) => !!s.tag !== !!s.tag_by, { message: 'tag와 tag_by 중 하나만' });

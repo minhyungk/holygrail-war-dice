@@ -1,0 +1,132 @@
+{
+  "servant_id": "sv_0066_anne_bonny_and_mary_read",
+  "source_id": 66,
+  "name_ko": "앤 보니&메리 리드",
+  "name_en": "Anne Bonny & Mary Read",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/66?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "A",
+    "mana": "E",
+    "luck": "B",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 2881,
+      "name": "groupServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 400900,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34250,
+        "name": "대 마력 D",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 113550,
+        "name": "항해 A",
+        "rank": null
+      },
+      {
+        "id": 114450,
+        "name": "사격 B",
+        "rank": null
+      },
+      {
+        "id": 115350,
+        "name": "콤비네이션 C",
+        "rank": null
+      },
+      {
+        "id": 912451,
+        "name": "접현돌격 B+",
+        "rank": null
+      },
+      {
+        "id": 2040451,
+        "name": "현란의 해적 공주 B+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 400901,
+      "name": "비익이자 연리",
+      "ruby": "캐리비언 프리 버드",
+      "rank": "C+",
+      "type": "대인보구"
+    },
+    {
+      "id": 400902,
+      "name": "비익이자 연리",
+      "ruby": "캐리비언 프리 버드",
+      "rank": "C++",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4009000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/400900/400900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/400900/400900b@2.png"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "servant_id": "sv_0146_medusa",
+  "source_id": 146,
+  "name_ko": "메두사",
+  "name_en": "Medusa",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/146?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "D",
+    "agi": "A",
+    "mana": "E",
+    "luck": "C",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1110,
+      "name": "lamia"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2667,
+      "name": "childServant"
+    },
+    {
+      "id": 2797,
+      "name": "divineSpirit"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 302700,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 30550,
+        "name": "여신의 신핵 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 91455,
+        "name": "매혹의 미성 B",
+        "rank": null
+      },
+      {
+        "id": 39350,
+        "name": "괴력 C",
+        "rank": null
+      },
+      {
+        "id": 315550,
+        "name": "저편을 향한 마음 A",
+        "rank": null
+      },
+      {
+        "id": 652550,
+        "name": "덧없는 자매 A",
+        "rank": null
+      },
+      {
+        "id": 2100650,
+        "name": "하얀 화관 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 302701,
+      "name": "여신의 포옹",
+      "ruby": "커레스 오브 메두사",
+      "rank": "B",
+      "type": "대인보구"
+    },
+    {
+      "id": 302702,
+      "name": "여신의 포옹",
+      "ruby": "커레스 오브 메두사",
+      "rank": "B+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3027000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/302700/302700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/302700/302700b@2.png"
+  }
+}

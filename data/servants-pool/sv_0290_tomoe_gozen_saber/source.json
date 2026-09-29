@@ -1,0 +1,155 @@
+{
+  "servant_id": "sv_0290_tomoe_gozen_saber",
+  "source_id": 290,
+  "name_ko": "토모에고젠",
+  "name_en": "Tomoe Gozen (Saber)",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/290?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "A",
+    "agi": "B",
+    "mana": "B",
+    "luck": "A",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1132,
+      "name": "oni"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2019,
+      "name": "demonic"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2735,
+      "name": "genji"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 104500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 88451,
+        "name": "기승 B+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 772550,
+        "name": "미드나이트 오브 서머 사이드 A",
+        "rank": null
+      },
+      {
+        "id": 773451,
+        "name": "VR 신음류 B+",
+        "rank": null
+      },
+      {
+        "id": 774650,
+        "name": "생존(산야) EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 104501,
+      "name": "VR 신음류 오의・토모에가후치 태양검 ",
+      "ruby": "VR 신음류 오의・토모에가후치 태양검 ",
+      "rank": "B",
+      "type": "대군보구"
+    },
+    {
+      "id": 104502,
+      "name": "VR 신음류 오의・토모에가후치 태양검 ",
+      "ruby": "VR 신음류 오의・토모에가후치 태양검 ",
+      "rank": "B+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1045000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/104500/104500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/104500/104500b@2.png"
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "servant_id": "sv_0384_medusa",
+  "source_id": 384,
+  "name_ko": "메두사",
+  "name_en": "Medusa",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/384?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A+",
+    "end": "C",
+    "agi": "C",
+    "mana": "A",
+    "luck": "E",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1110,
+      "name": "lamia"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2797,
+      "name": "divineSpirit"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 105600,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 88550,
+        "name": "기승 A",
+        "rank": null
+      },
+      {
+        "id": 62249,
+        "name": "신성 D-",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2234450,
+        "name": "자기봉인・암흑신전 B",
+        "rank": null
+      },
+      {
+        "id": 2235550,
+        "name": "마의 혈맥 A",
+        "rank": null
+      },
+      {
+        "id": 2236650,
+        "name": "인자포식(전쟁의 여신) EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 105601,
+      "name": "괴물의 황금검",
+      "ruby": "크리사오르",
+      "rank": "A",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1056000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/105600/105600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/105600/105600b@2.png"
+  }
+}

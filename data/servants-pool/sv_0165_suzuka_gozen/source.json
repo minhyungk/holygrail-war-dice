@@ -1,0 +1,165 @@
+{
+  "servant_id": "sv_0165_suzuka_gozen",
+  "source_id": 165,
+  "name_ko": "스즈카고젠",
+  "name_en": "Suzuka Gozen",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/165?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "A",
+    "mana": "A",
+    "luck": "B",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1132,
+      "name": "oni"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2797,
+      "name": "divineSpirit"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 103000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 88450,
+        "name": "기승 B",
+        "rank": null
+      },
+      {
+        "id": 62550,
+        "name": "신성 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 359450,
+        "name": "신통력 B",
+        "rank": null
+      },
+      {
+        "id": 93451,
+        "name": "마안 B+",
+        "rank": null
+      },
+      {
+        "id": 360350,
+        "name": "재지의 축복 C",
+        "rank": null
+      },
+      {
+        "id": 787451,
+        "name": "신통력(여고생) B+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 103001,
+      "name": "천귀우",
+      "ruby": "천귀우",
+      "rank": "B+",
+      "type": "대군보구"
+    },
+    {
+      "id": 103002,
+      "name": "천귀우",
+      "ruby": "천귀우",
+      "rank": "B++",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1030000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/103000/103000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/103000/103000b@2.png"
+  }
+}

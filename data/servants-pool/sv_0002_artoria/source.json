@@ -1,0 +1,177 @@
+{
+  "servant_id": "sv_0002_artoria",
+  "source_id": 2,
+  "name_ko": "알트리아 펜드래곤",
+  "name_en": "Altria Pendragon",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/2?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "B",
+    "mana": "A",
+    "luck": "A+",
+    "np": "A++"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2002,
+      "name": "dragon"
+    },
+    {
+      "id": 2007,
+      "name": "saberface"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2010,
+      "name": "arthur"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2795,
+      "name": "knightsOfTheRound"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 2883,
+      "name": "FSNServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 100100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 88450,
+        "name": "기승 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 5450,
+        "name": "카리스마 B",
+        "rank": null
+      },
+      {
+        "id": 92550,
+        "name": "마력방출 A",
+        "rank": null
+      },
+      {
+        "id": 57550,
+        "name": "직감 A",
+        "rank": null
+      },
+      {
+        "id": 756450,
+        "name": "용의 노심 B",
+        "rank": null
+      },
+      {
+        "id": 501650,
+        "name": "빛나는 길 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 100101,
+      "name": "약속된 승리의 검",
+      "ruby": "엑스칼리버",
+      "rank": "A",
+      "type": "대성보구"
+    },
+    {
+      "id": 100102,
+      "name": "약속된 승리의 검",
+      "ruby": "엑스칼리버",
+      "rank": "A++",
+      "type": "대성보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1001000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/100100/100100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/100100/100100b@2.png"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "servant_id": "sv_0067_medea_lily",
+  "source_id": 67,
+  "name_ko": "메데이아(릴리)",
+  "name_en": "Medea (Lily)",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/67?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "D",
+    "mana": "A",
+    "luck": "A",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2466,
+      "name": "associatedToTheArgo"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 501700,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83450,
+        "name": "진지작성 B",
+        "rank": null
+      },
+      {
+        "id": 80450,
+        "name": "도구작성 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 89550,
+        "name": "고속신언 A",
+        "rank": null
+      },
+      {
+        "id": 116550,
+        "name": "독 내성 A",
+        "rank": null
+      },
+      {
+        "id": 117450,
+        "name": "덧없는 사랑 B",
+        "rank": null
+      },
+      {
+        "id": 116552,
+        "name": "독 내성 A++",
+        "rank": null
+      },
+      {
+        "id": 117650,
+        "name": "덧없는 사랑 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 501701,
+      "name": "보수해야 할 모든 상처",
+      "ruby": "페인 브레이커",
+      "rank": "C-",
+      "type": "대마술보구"
+    },
+    {
+      "id": 501702,
+      "name": "보수해야 할 모든 상처",
+      "ruby": "페인 브레이커",
+      "rank": "C",
+      "type": "대마술보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5017000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/501700/501700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/501700/501700b@2.png"
+  }
+}

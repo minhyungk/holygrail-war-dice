@@ -1,0 +1,140 @@
+{
+  "servant_id": "sv_0217_ibaraki_douji_lancer",
+  "source_id": 217,
+  "name_ko": "이바라키도지",
+  "name_en": "Ibaraki-Douji (Lancer)",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/217?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B+",
+    "end": "A",
+    "agi": "D+",
+    "mana": "D",
+    "luck": "B",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1004,
+      "name": "demonBeast"
+    },
+    {
+      "id": 1132,
+      "name": "oni"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2019,
+      "name": "demonic"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2667,
+      "name": "childServant"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 303400,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      },
+      {
+        "id": 54250,
+        "name": "광화 D",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 507450,
+        "name": "귀종의 마(물) B",
+        "rank": null
+      },
+      {
+        "id": 508452,
+        "name": "나는 아직 안 돌아갈 거다! B++",
+        "rank": null
+      },
+      {
+        "id": 509550,
+        "name": "서머 타임 트러블 걸 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 303401,
+      "name": "우신예찬・일조여교",
+      "ruby": "엔커미움・모리아",
+      "rank": "B++",
+      "type": "대결계보구/대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3034000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/303400/303400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/303400/303400b@2.png"
+  }
+}

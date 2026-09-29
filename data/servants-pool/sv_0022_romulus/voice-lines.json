@@ -1,0 +1,833 @@
+{
+  "origin": "Atlas Academy KR nice API",
+  "groups": [
+    {
+      "type": "home",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "인연 Lv.1",
+          "ids": [
+            "0_H090"
+          ],
+          "subtitle": "너는 로마가 아닌, 가……?",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 1
+        },
+        {
+          "name": "인연 Lv.2",
+          "ids": [
+            "0_H100"
+          ],
+          "subtitle": "너는……\n아니, 역시 로마이지 않으냐……",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 2
+        },
+        {
+          "name": "인연 Lv.3",
+          "ids": [
+            "0_H110"
+          ],
+          "subtitle": "너……? \n뭐지…… 로마가 느껴진다……",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 3
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H120"
+          ],
+          "subtitle": "그러하다. 너 또한 로마임이 분명하다! \n세계는 곧 로마이니까.",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H130"
+          ],
+          "subtitle": "나의 아이야……\n너 또한 로마이니라……",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        },
+        {
+          "name": "대화 1",
+          "ids": [
+            "0_H030"
+          ],
+          "subtitle": "무얼 하는 게지. \n자, 가자, 로마가 기다리고 있다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 12
+        },
+        {
+          "name": "대화 2",
+          "ids": [
+            "0_H040"
+          ],
+          "subtitle": "흠……",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 13
+        },
+        {
+          "name": "대화 3",
+          "ids": [
+            "0_H050"
+          ],
+          "subtitle": "흐음……",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 14
+        },
+        {
+          "name": "좋아하는 것",
+          "ids": [
+            "0_H060"
+          ],
+          "subtitle": "로마야말로 세계이다. \n세계야말로 로마이다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 15
+        },
+        {
+          "name": "싫어하는 것",
+          "ids": [
+            "0_H070"
+          ],
+          "subtitle": "로마가 아닌 것은 존재하지 않는다. \n왜냐하면, 세계는 로마이기 때문이다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 16
+        },
+        {
+          "name": "성배에 대하여",
+          "ids": [
+            "0_H080"
+          ],
+          "subtitle": "성배라. 좋다, 어떠한 성배도\n로마의 일부로 환영하지.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 17
+        },
+        {
+          "name": "대화 4",
+          "ids": [
+            "0_H140"
+          ],
+          "subtitle": "네로는 좋다. \n저건 실로 좋은 로마의 황제이다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 18
+        },
+        {
+          "name": "대화 5",
+          "ids": [
+            "0_H150"
+          ],
+          "subtitle": "[#로마:나]와 닿아 어찌하겠다는 거지. \n하하, 로마에 끌리는 것은 어쩔 수 없지!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 19
+        },
+        {
+          "name": "대화 6",
+          "ids": [
+            "0_H160"
+          ],
+          "subtitle": "동생 로무스의 일은……\n아직도 후회하고 있다……",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 20
+        },
+        {
+          "name": "대화 10",
+          "ids": [
+            "0_H200",
+            "0_H201",
+            "0_H202",
+            "0_H203"
+          ],
+          "subtitle": "고개를 떨굴 것 없다. 자, 나의 로마를 보라. \n알 수 있을 것이다, 콘스탄티누스. \n너 역시도 틀림없이, 내가 사랑하는 로마임을.",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 24
+        },
+        {
+          "name": "대화 11",
+          "ids": [
+            "0_H210",
+            "0_H211"
+          ],
+          "subtitle": "자, 로마들이여, 내 품에 안기거라!",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 25
+        },
+        {
+          "name": "대화 12",
+          "ids": [
+            "0_H220",
+            "0_H221",
+            "0_H222"
+          ],
+          "subtitle": "후후…… 말썽꾸러기 로마가 한 명…… 후후, 후후후후후후……!",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 26
+        },
+        {
+          "name": "이벤트 개최중",
+          "ids": [
+            "0_H020"
+          ],
+          "subtitle": "새로운 로마의 기운이 있다. \n간다, [#로마:나]를 위해!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 11
+        },
+        {
+          "name": "생일",
+          "ids": [
+            "0_H010"
+          ],
+          "subtitle": "너의 생일. \n그 또한, 로마로부터 생겨난 것──",
+          "text": [
+            ""
+          ],
+          "cond_type": "birthDay",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "0_G010"
+          ],
+          "subtitle": "로마는 오늘도 성장한다. \n──하늘의 끝조차도",
+          "text": [
+            "로마는 오늘도 성장한다. ──하늘의 끝조차도"
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 2",
+          "ids": [
+            "0_G020"
+          ],
+          "subtitle": "좋다. 너의 모든 것을 허락한다.",
+          "text": [
+            "좋다. 너의 모든 것을 허락한다."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 1",
+          "ids": [
+            "0_G030"
+          ],
+          "subtitle": "너 또한, [#로마:내]가 되어라.",
+          "text": [
+            "너 또한, [#로마:내]가 되어라."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 1
+        },
+        {
+          "name": "영기재림 3",
+          "ids": [
+            "0_G040"
+          ],
+          "subtitle": "기뻐하라! \n지금 너는 [#로마:나]와 가까워졌다!",
+          "text": [
+            "기뻐하라! 지금 너는 [#로마:나]와 가까워졌다!"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 3
+        },
+        {
+          "name": "영기재림 4",
+          "ids": [
+            "0_G050"
+          ],
+          "subtitle": "여기서 바야흐로 로마가 완성된다──!!",
+          "text": [
+            "여기서 바야흐로 로마가 완성된다──!!"
+          ],
+          "cond_type": "svtCountStop",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "firstGet",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "소환",
+          "ids": [
+            "0_S010"
+          ],
+          "subtitle": "──[#로마:내]가 로마다.",
+          "text": [
+            "──내가 로마다."
+          ],
+          "cond_type": "svtGet",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "개시 1",
+          "ids": [
+            "0_B100"
+          ],
+          "subtitle": "이곳에 새로운 로마를 세우는 거다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "0_B110"
+          ],
+          "subtitle": "하늘을 보라, 대지를 보라 \n그것이 바로 로마다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 3",
+          "ids": [
+            "0_B500"
+          ],
+          "subtitle": "사람에 로마 있도다. 땅에 로마 있도다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 4",
+          "ids": [
+            "0_B510"
+          ],
+          "subtitle": "후후후…… 로마.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "0_B080"
+          ],
+          "subtitle": "──로마다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "0_B090"
+          ],
+          "subtitle": "──보아라, 새로운 신의 모습을!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 3",
+          "ids": [
+            "0_B480"
+          ],
+          "subtitle": "좋아.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 4",
+          "ids": [
+            "0_B490"
+          ],
+          "subtitle": "허락한다. 로마가 허락한다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "0_B180"
+          ],
+          "subtitle": "음.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "0_B190"
+          ],
+          "subtitle": "로마인가.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "0_B200"
+          ],
+          "subtitle": "로──마!!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B210"
+          ],
+          "subtitle": "자, 로마로!!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B220"
+          ],
+          "subtitle": "전진하라! 그러면 로마에 이를 것이다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 5
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B230"
+          ],
+          "subtitle": "좋아. 얼굴을 들라.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 6
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B250"
+          ],
+          "subtitle": "후하하하하하하하하하하하!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 30
+        },
+        {
+          "name": "공격 1",
+          "ids": [
+            "0_B010"
+          ],
+          "subtitle": "세프템!!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "0_B020"
+          ],
+          "subtitle": "로무스!!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "0_B030"
+          ],
+          "subtitle": "로마!!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 4",
+          "ids": [
+            "0_B410"
+          ],
+          "subtitle": "오피우스.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 5",
+          "ids": [
+            "0_B420"
+          ],
+          "subtitle": "벨리아.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 6",
+          "ids": [
+            "0_B430"
+          ],
+          "subtitle": "파구탈.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B040"
+          ],
+          "subtitle": "마그누스!!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B440"
+          ],
+          "subtitle": "수부라!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B840"
+          ],
+          "subtitle": "케르말루스……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격 4",
+          "ids": [
+            "0_B2440"
+          ],
+          "subtitle": "키스피우스!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "0_B150"
+          ],
+          "subtitle": "크오오오오오!!!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "0_B140"
+          ],
+          "subtitle": "흐음!!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 3",
+          "ids": [
+            "0_B550"
+          ],
+          "subtitle": "음, 음.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 4",
+          "ids": [
+            "0_B540"
+          ],
+          "subtitle": "후하하하!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "0_B160"
+          ],
+          "subtitle": "[#로마:나]는…… 무너지지 않는다……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "0_B170"
+          ],
+          "subtitle": "[#로마:나]는……\n영원, 하, 다……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 3",
+          "ids": [
+            "0_B560"
+          ],
+          "subtitle": "로마가 떠나고, 로마가 남는다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 4",
+          "ids": [
+            "0_B570"
+          ],
+          "subtitle": "좋다. 허락한다……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "0_B120"
+          ],
+          "subtitle": "설령 세상의 끝이라 해도, \n[#로마:나]의 손은 닿는다……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "0_B130"
+          ],
+          "subtitle": "보아라. 나의 창──\n다시 말해, \n[#로마:내]가 여기에 있다는 사실을.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 3",
+          "ids": [
+            "0_B520"
+          ],
+          "subtitle": "로──마!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 4",
+          "ids": [
+            "0_B530"
+          ],
+          "subtitle": "알 수 있다. 너에게도 로마가 있다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B051",
+            "0_B052"
+          ],
+          "subtitle": "모두, 모든 것은 나의 창으로 통한다──\n마그나 볼루이세 마그눔!",
+          "text": [
+            "모두, 모든 것은 나의 창으로 통한다──",
+            "마그나 볼루이세 마그눔!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        },
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B800",
+            "0_B801"
+          ],
+          "subtitle": "대지를 가득 채운, 우리의 로마! \n‘모든 것은 나의 창으로 통한다(마그나 볼루이세 마그눔)’!",
+          "text": [
+            "대지를 가득 채운, 우리의 로마!",
+            "‘모든 것은 나의 창으로 통한다(마그나 볼루이세 마그눔)’!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 7
+        },
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B810",
+            "0_B811"
+          ],
+          "subtitle": "──별이여, 별이여. 지금이야말로! \n사람의 걸음을 눈 크게 뜨고 보도록 하라!",
+          "text": [
+            "──별이여, 별이여. 지금이야말로!",
+            "사람의 걸음을 눈 크게 뜨고 보도록 하라!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 8
+        }
+      ]
+    }
+  ]
+}

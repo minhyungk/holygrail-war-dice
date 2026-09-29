@@ -1,0 +1,123 @@
+{
+  "servant_id": "sv_0260_salome",
+  "source_id": 260,
+  "name_ko": "살로메",
+  "name_en": "Salome",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/260?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "B",
+    "mana": "D",
+    "luck": "C",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 402,
+      "name": "twoStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2847,
+      "name": "levitating"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 703400,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54349,
+        "name": "광화 C-",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 646451,
+        "name": "피로 얼룩진 은쟁반 B+",
+        "rank": null
+      },
+      {
+        "id": 647350,
+        "name": "천성의 육체(몸) C",
+        "rank": null
+      },
+      {
+        "id": 648550,
+        "name": "일곱 베일의 춤 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 703401,
+      "name": "당신에게 입맞춤을 했어",
+      "ruby": "팜 파탈・베제",
+      "rank": "B",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7034000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/703400/703400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/703400/703400b@2.png"
+  }
+}

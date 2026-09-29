@@ -1,0 +1,130 @@
+{
+  "servant_id": "sv_0188_katou_black_kite_danzo",
+  "source_id": 188,
+  "name_ko": "카토 단조",
+  "name_en": "Katou \"Black Kite\" Danzo",
+  "class": "assassin",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/188?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "A",
+    "mana": "C",
+    "luck": "B",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 105,
+      "name": "classAssassin"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2781,
+      "name": "mechanical"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 603000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 50550,
+        "name": "기척 차단 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 418552,
+        "name": "인조사지(꼭두각시) A++",
+        "rank": null
+      },
+      {
+        "id": 227550,
+        "name": "인술 A",
+        "rank": null
+      },
+      {
+        "id": 419451,
+        "name": "꼭두각시 환법 B+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 603001,
+      "name": "꼭두각시 환법・탄우",
+      "ruby": "꼭두각시 환법・탄우",
+      "rank": "C",
+      "type": "대수보구"
+    },
+    {
+      "id": 603002,
+      "name": "꼭두각시 환법・탄우",
+      "ruby": "꼭두각시 환법・탄우",
+      "rank": "C+",
+      "type": "대수보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6030000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/603000/603000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/603000/603000b@2.png"
+  }
+}

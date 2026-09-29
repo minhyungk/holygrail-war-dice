@@ -1,0 +1,629 @@
+{
+  "origin": "Atlas Academy KR nice API",
+  "groups": [
+    {
+      "type": "home",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "인연 Lv.1",
+          "ids": [
+            "0_H090",
+            "0_H091"
+          ],
+          "subtitle": "나는 오니, 너는 인간. 날 두려워해라.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 1
+        },
+        {
+          "name": "인연 Lv.2",
+          "ids": [
+            "0_H100",
+            "0_H101",
+            "0_H102"
+          ],
+          "subtitle": "기묘한 인간이다. 오니란 인간을 먹고 범하고 \n재물을 빼앗는 악독한 무리. 말을 주고받아서 좋을 것은 하나도 없다.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 2
+        },
+        {
+          "name": "인연 Lv.3",
+          "ids": [
+            "0_H110",
+            "0_H111",
+            "0_H112"
+          ],
+          "subtitle": "괴팍한 인간도 다 있군. 나 같은 오니와, 마치, 친구처럼…… \n심각한 바보인가, 아니면──",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 3
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H120",
+            "0_H121",
+            "0_H122"
+          ],
+          "subtitle": "인정하지. 네게 흥미가 생겼다. 술이라도 나눌까. \n……오니와 친구가 되려는데, 설마 술을 못 마신다고 하진 않겠지?",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H130",
+            "0_H131",
+            "0_H132",
+            "0_H133"
+          ],
+          "subtitle": "너는…… 인간이긴 하지만, 마음에 들었다. \n오에산에 와라, 나와 슈텐, 오니들과 함께 재미있게 살아보지 않겠나?",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        },
+        {
+          "name": "대화 1",
+          "ids": [
+            "0_H030",
+            "0_H031"
+          ],
+          "subtitle": "알고 있느냐, 지루함을 주체 못하는 오니만큼 위험한 건 없거든?",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 12
+        },
+        {
+          "name": "대화 2",
+          "ids": [
+            "0_H040",
+            "0_H041",
+            "0_H042",
+            "0_H043"
+          ],
+          "subtitle": "날 종자로 다루려 하다니…… 목숨 아까운 줄 모르는 놈도 있구나, 마스터.\n하지만 그 어리석음, 뻔뻔함, 마음에 든다.",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 13
+        },
+        {
+          "name": "대화 3",
+          "ids": [
+            "0_H050",
+            "0_H051",
+            "0_H052"
+          ],
+          "subtitle": "나는 오에의 오니들을 통솔했던 수괴지. 따르는 입장은 익숙하지 않다.\n그 목젖이 뜯기는 일이 없도록 방심하지 말아라.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 14
+        },
+        {
+          "name": "좋아하는 것",
+          "ids": [
+            "0_H060",
+            "0_H061",
+            "0_H062",
+            "0_H063"
+          ],
+          "subtitle": "좋아하는 것? 슈텐이다. 함께 자라고, 함께 살고, \n함께 몇 번이나 교토를 습격한 동포──아아, 만나고 싶다……",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 15
+        },
+        {
+          "name": "싫어하는 것",
+          "ids": [
+            "0_H070",
+            "0_H071"
+          ],
+          "subtitle": "독이 든 술은 마음에 안 들어. 그걸 오니 퇴치에 이용한 비겁한 무사도.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 16
+        },
+        {
+          "name": "성배에 대하여",
+          "ids": [
+            "0_H080",
+            "0_H081",
+            "0_H082",
+            "0_H083"
+          ],
+          "subtitle": "소원을 이루어 주는 잔──교토의 궁궐에도 없었을 보물 중의 보물. \n……오니는 보물을 빼앗는 법이지. 해야 할 일은 뻔하겠지?",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 17
+        },
+        {
+          "name": "대화 4",
+          "ids": [
+            "0_H140",
+            "0_H141",
+            "0_H142"
+          ],
+          "subtitle": "크큭…… 여기에서도 또 슈텐과 함께 지낼 수 있나. 이런 행복이……!",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 18
+        },
+        {
+          "name": "대화 7",
+          "ids": [
+            "0_H170",
+            "0_H171",
+            "0_H172"
+          ],
+          "subtitle": "와아~! 나, 놀랐다! 거기 있는 건…… 혹시, 호법소녀가 아닌지? \n슈, 슈텐! 슈텐, 이것 좀 봐라! 진짜 호법소녀다~!",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 21
+        },
+        {
+          "name": "대화 8",
+          "ids": [
+            "0_H180",
+            "0_H181",
+            "0_H182",
+            "0_H183",
+            "0_H184"
+          ],
+          "subtitle": "뭐지? 어째서냐! 어째서 츠나가 있지? \n어째서 그놈이! ──이, 일단 그건 됐다! \n이번에도 내가 이기면 될 일이지! 뭣이……? 졌어? \n그런 일은 없어! 없다고~! ……없── 을 것이야.",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 22
+        },
+        {
+          "name": "이벤트 개최중",
+          "ids": [
+            "0_H020",
+            "0_H021"
+          ],
+          "subtitle": "술에 과자, 차려입은 여자──\n축제일이야말로 빼앗을 보람이 있지 않나?",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 11
+        },
+        {
+          "name": "생일",
+          "ids": [
+            "0_H010"
+          ],
+          "subtitle": "네가 태어난 날인가.",
+          "text": [
+            ""
+          ],
+          "cond_type": "birthDay",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "0_G010",
+            "0_G011"
+          ],
+          "subtitle": "먹으면 살이 된다. 당연한 섭리야.",
+          "text": [
+            "먹으면 살이 된다.",
+            "당연한 섭리야."
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 2",
+          "ids": [
+            "0_G020",
+            "0_G021"
+          ],
+          "subtitle": "흐음…… 기묘한 마음을 가졌구나.",
+          "text": [
+            "흐음……",
+            "기묘한 마음을 가졌구나."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 1",
+          "ids": [
+            "0_G030",
+            "0_G031"
+          ],
+          "subtitle": "뭐라고 할까. 오니라고 하면 거적대기일 텐데.",
+          "text": [
+            "뭐라고 할까.",
+            "오니라고 하면 거적대기일 텐데."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 1
+        },
+        {
+          "name": "영기재림 3",
+          "ids": [
+            "0_G040",
+            "0_G041",
+            "0_G042"
+          ],
+          "subtitle": "후후후. 이 휘황찬란한 모습으로 헤이안의 쿄토를 습격한다……\n생각만 해도 유쾌하지 않나!",
+          "text": [
+            "후후후.",
+            "이 휘황찬란한 모습으로 헤이안의 쿄토를 습격한다……",
+            "생각만 해도 유쾌하지 않나!"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 3
+        },
+        {
+          "name": "영기재림 4",
+          "ids": [
+            "0_G050",
+            "0_G051",
+            "0_G052",
+            "0_G053"
+          ],
+          "subtitle": "오니란 가난한 법. 고로 빼앗고 먹어치운다. \n하지만──지금은 배가 꽉 찼다.",
+          "text": [
+            "오니란 가난한 법.",
+            "고로 빼앗고 먹어치운다.",
+            "하지만──",
+            "지금은 배가 꽉 찼다."
+          ],
+          "cond_type": "svtCountStop",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "firstGet",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "소환",
+          "ids": [
+            "0_S010",
+            "0_S011"
+          ],
+          "subtitle": "나의 이름은 이바라키도지. 오에산 오니의 수괴다.",
+          "text": [
+            "나의 이름은 이바라키도지.",
+            " 오에산 오니의 수괴다."
+          ],
+          "cond_type": "svtGet",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "개시 1",
+          "ids": [
+            "0_B100"
+          ],
+          "subtitle": "어이, 지금 내가 조그맣다고 비웃었지?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "0_B110"
+          ],
+          "subtitle": "피가 끓는구나…… 말 그대로!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "0_B080"
+          ],
+          "subtitle": "진짜로 해보실까……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "0_B090"
+          ],
+          "subtitle": "마음에 안 들어…… 마음에 안 들어……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 3",
+          "ids": [
+            "0_B480"
+          ],
+          "subtitle": "크하하…… 어디 한 번 간파해 보거라!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "0_B180"
+          ],
+          "subtitle": "호오?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "0_B190"
+          ],
+          "subtitle": "별나구나.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "0_B200"
+          ],
+          "subtitle": "그래.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B210"
+          ],
+          "subtitle": "진정한 오니의 모습, 보여주마!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        },
+        {
+          "name": "공격 1",
+          "ids": [
+            "0_B010"
+          ],
+          "subtitle": "음!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "0_B020"
+          ],
+          "subtitle": "에잇!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "0_B030"
+          ],
+          "subtitle": "쿠하하하핫!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B040"
+          ],
+          "subtitle": "먹어치워주마……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "0_B150"
+          ],
+          "subtitle": "이것이……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "0_B140"
+          ],
+          "subtitle": "으음!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "0_B160"
+          ],
+          "subtitle": "실수했군…… 슈텐……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "0_B170"
+          ],
+          "subtitle": "오니는 쓰러질 운명, 인가……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "0_B120"
+          ],
+          "subtitle": "전리품을 확인해라. 땡전 한 닢도 놓치지 마라?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "0_B130"
+          ],
+          "subtitle": "역시 능욕은 기분 좋아.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B050",
+            "0_B051",
+            "0_B052",
+            "0_B053",
+            "0_B054"
+          ],
+          "subtitle": "크큭…… 간계로 잘렸다가 돌아온 오른팔은 괴이가 되었다!\n달려라, 소겐비! 라쇼몽 대원기!",
+          "text": [
+            "크큭……",
+            "간계로 잘렸다가",
+            "돌아온 오른팔은 괴이가 되었다!",
+            "달려라, 소겐비!",
+            "라쇼몽 대원기!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        }
+      ]
+    }
+  ]
+}

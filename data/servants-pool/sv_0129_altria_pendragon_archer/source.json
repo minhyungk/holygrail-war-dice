@@ -1,0 +1,158 @@
+{
+  "servant_id": "sv_0129_altria_pendragon_archer",
+  "source_id": 129,
+  "name_ko": "알트리아 펜드래곤",
+  "name_en": "Altria Pendragon (Archer)",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/129?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "B+",
+    "mana": "A+",
+    "luck": "A+",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2002,
+      "name": "dragon"
+    },
+    {
+      "id": 2007,
+      "name": "saberface"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2010,
+      "name": "arthur"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2795,
+      "name": "knightsOfTheRound"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 202600,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 20550,
+        "name": "단독행동 A",
+        "rank": null
+      },
+      {
+        "id": 83550,
+        "name": "진지작성 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 278551,
+        "name": "서머 스플래시! A+",
+        "rank": null
+      },
+      {
+        "id": 279650,
+        "name": "바닷가 매점의 가호 EX",
+        "rank": null
+      },
+      {
+        "id": 266450,
+        "name": "비치 플라워 B",
+        "rank": null
+      },
+      {
+        "id": 278650,
+        "name": "서머 스플래시! EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 202601,
+      "name": "햇살이 반짝이는 승리의 검",
+      "ruby": "엑스칼리버 비비안",
+      "rank": "A",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2026000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/202600/202600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/202600/202600b@2.png"
+  }
+}

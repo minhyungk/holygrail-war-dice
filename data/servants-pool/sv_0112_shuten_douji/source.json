@@ -1,0 +1,168 @@
+{
+  "servant_id": "sv_0112_shuten_douji",
+  "source_id": 112,
+  "name_ko": "슈텐도지",
+  "name_en": "Shuten-Douji",
+  "class": "assassin",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/112?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "B",
+    "agi": "B",
+    "mana": "A+",
+    "luck": "D",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 105,
+      "name": "classAssassin"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1004,
+      "name": "demonBeast"
+    },
+    {
+      "id": 1110,
+      "name": "lamia"
+    },
+    {
+      "id": 1132,
+      "name": "oni"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2002,
+      "name": "dragon"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2019,
+      "name": "demonic"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2734,
+      "name": "shuten"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 602100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 50350,
+        "name": "기척 차단 C",
+        "rank": null
+      },
+      {
+        "id": 807350,
+        "name": "신성 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 219550,
+        "name": "과일의 취기 A",
+        "rank": null
+      },
+      {
+        "id": 220550,
+        "name": "귀종의 마 A",
+        "rank": null
+      },
+      {
+        "id": 41551,
+        "name": "전투속행 A+",
+        "rank": null
+      },
+      {
+        "id": 786650,
+        "name": "오니의 목 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 602101,
+      "name": "천자만홍 신편귀독",
+      "ruby": "천자만홍 신편귀독",
+      "rank": "B",
+      "type": "대군보구"
+    },
+    {
+      "id": 602102,
+      "name": "천자만홍 신편귀독",
+      "ruby": "천자만홍 신편귀독",
+      "rank": "B+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6021000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/602100/602100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/602100/602100b@2.png"
+  }
+}

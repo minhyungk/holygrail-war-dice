@@ -1,0 +1,136 @@
+{
+  "servant_id": "sv_0080_charles_babbage",
+  "source_id": 80,
+  "name_ko": "찰스 배비지",
+  "name_en": "Charles Babbage",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/80?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B++",
+    "end": "B++",
+    "agi": "D++",
+    "mana": "A",
+    "luck": "E",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2781,
+      "name": "mechanical"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 501100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 140550,
+        "name": "도구작성(가짜) A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 141350,
+        "name": "일의전심 C",
+        "rank": null
+      },
+      {
+        "id": 142650,
+        "name": "기관의 갑옷 EX",
+        "rank": null
+      },
+      {
+        "id": 138250,
+        "name": "오버로드 D",
+        "rank": null
+      },
+      {
+        "id": 142655,
+        "name": "기관의 갑옷 EX",
+        "rank": null
+      },
+      {
+        "id": 822450,
+        "name": "증기기관 출력 상승 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 501101,
+      "name": "현란한 회신세계",
+      "ruby": "디멘션 오브 스팀",
+      "rank": "A+",
+      "type": "대군보구"
+    },
+    {
+      "id": 501102,
+      "name": "현란한 회신세계",
+      "ruby": "디멘션 오브 스팀",
+      "rank": "EX",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5011000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/501100/501100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/501100/501100b@2.png"
+  }
+}

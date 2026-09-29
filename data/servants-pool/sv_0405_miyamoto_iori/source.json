@@ -1,0 +1,135 @@
+{
+  "servant_id": "sv_0405_miyamoto_iori",
+  "source_id": 405,
+  "name_ko": "미야모토 이오리",
+  "name_en": "Miyamoto Iori",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/405?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "A",
+    "mana": "B",
+    "luck": "B",
+    "np": "None"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 106000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 88450,
+        "name": "기승 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2318450,
+        "name": "얼음과 같이 B",
+        "rank": null
+      },
+      {
+        "id": 2319450,
+        "name": "홍옥의 서 B",
+        "rank": null
+      },
+      {
+        "id": 2320550,
+        "name": "오륜의 칼날 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 106001,
+      "name": "비검・비익섬요",
+      "ruby": "비검・비익섬요",
+      "rank": "-",
+      "type": "대인마검"
+    },
+    {
+      "id": 106099,
+      "name": "???",
+      "ruby": "???",
+      "rank": "?",
+      "type": "불명"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1060000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/106000/106000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/106000/106000b@2.png"
+  }
+}

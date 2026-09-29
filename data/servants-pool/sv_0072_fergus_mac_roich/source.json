@@ -1,0 +1,152 @@
+{
+  "servant_id": "sv_0072_fergus_mac_roich",
+  "source_id": 72,
+  "name_ko": "퍼거스 막 로이",
+  "name_en": "Fergus mac Róich",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/72?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "A",
+    "agi": "B",
+    "mana": "E",
+    "luck": "C",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 101400,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 88450,
+        "name": "기승 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 16550,
+        "name": "용맹 A",
+        "rank": null
+      },
+      {
+        "id": 21450,
+        "name": "반골의 상 B",
+        "rank": null
+      },
+      {
+        "id": 37550,
+        "name": "심안(진짜) A",
+        "rank": null
+      },
+      {
+        "id": 2102550,
+        "name": "용사의 긍지 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 101401,
+      "name": "홍예검",
+      "ruby": "칼라드볼그",
+      "rank": "A+",
+      "type": "대군보구"
+    },
+    {
+      "id": 101402,
+      "name": "홍예검",
+      "ruby": "칼라드볼그",
+      "rank": "A+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1014000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/101400/101400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/101400/101400b@2.png"
+  }
+}

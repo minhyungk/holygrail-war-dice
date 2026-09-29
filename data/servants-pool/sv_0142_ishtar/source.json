@@ -1,0 +1,160 @@
+{
+  "servant_id": "sv_0142_ishtar",
+  "source_id": 142,
+  "name_ko": "이슈타르",
+  "name_en": "Ishtar",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/142?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "B",
+    "mana": "EX",
+    "luck": "A",
+    "np": "A++"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2654,
+      "name": "livingHuman"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 2847,
+      "name": "levitating"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 2924,
+      "name": "canFlyInSpace"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 202000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 20550,
+        "name": "단독행동 A",
+        "rank": null
+      },
+      {
+        "id": 30450,
+        "name": "여신의 신핵 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 305450,
+        "name": "미의 현현 B",
+        "rank": null
+      },
+      {
+        "id": 306550,
+        "name": "빛나는 큰 왕관 A",
+        "rank": null
+      },
+      {
+        "id": 307551,
+        "name": "마력방출(보석) A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 202001,
+      "name": "산맥을 뒤흔드는 샛별의 장작",
+      "ruby": "앙갈타 키갈슈",
+      "rank": "A++",
+      "type": "대산보구"
+    },
+    {
+      "id": 202002,
+      "name": "산맥을 뒤흔드는 샛별의 장작",
+      "ruby": "앙갈타 키갈슈",
+      "rank": "EX",
+      "type": "대산보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2020000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/202000/202000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/202000/202000b@2.png"
+  }
+}

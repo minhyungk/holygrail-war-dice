@@ -1,0 +1,121 @@
+{
+  "servant_id": "sv_0375_takasugi_shinsaku",
+  "source_id": 375,
+  "name_ko": "타카스기 신사쿠",
+  "name_en": "Takasugi Shinsaku",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/375?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "B",
+    "mana": "C",
+    "luck": "B-",
+    "np": "B+"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 204700,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34250,
+        "name": "대 마력 D",
+        "rank": null
+      },
+      {
+        "id": 20450,
+        "name": "단독행동 B",
+        "rank": null
+      },
+      {
+        "id": 2194450,
+        "name": "유신의 영웅(기) B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2195550,
+        "name": "파천의 기린아 A",
+        "rank": null
+      },
+      {
+        "id": 2196450,
+        "name": "무장유신 B",
+        "rank": null
+      },
+      {
+        "id": 2197550,
+        "name": "세상에 남으리, 우리의 정신 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 204701,
+      "name": "초급유신・기병대",
+      "ruby": "초급유신・기병대",
+      "rank": "B+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2047000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/204700/204700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/204700/204700b@2.png"
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "servant_id": "sv_0085_karna",
+  "source_id": 85,
+  "name_ko": "카르나",
+  "name_en": "Karna",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/85?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "A",
+    "mana": "B",
+    "luck": "D",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 300400,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      },
+      {
+        "id": 88550,
+        "name": "기승 A",
+        "rank": null
+      },
+      {
+        "id": 62550,
+        "name": "신성 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 148550,
+        "name": "빈자의 식견 A",
+        "rank": null
+      },
+      {
+        "id": 149550,
+        "name": "마력방출(불꽃) A",
+        "rank": null
+      },
+      {
+        "id": 150000,
+        "name": "무관의 무예",
+        "rank": null
+      },
+      {
+        "id": 2247000,
+        "name": "희사의 끝",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 300401,
+      "name": "일륜이여, 죽음에 복종하여라",
+      "ruby": "바사비 샤크티",
+      "rank": "EX",
+      "type": "대신보구"
+    },
+    {
+      "id": 300402,
+      "name": "일륜이여, 죽음에 복종하여라",
+      "ruby": "바사비 샤크티",
+      "rank": "EX",
+      "type": "대신보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3004000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/300400/300400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/300400/300400b@2.png"
+  }
+}

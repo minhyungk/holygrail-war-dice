@@ -1,0 +1,547 @@
+{
+  "origin": "Atlas Academy KR nice API",
+  "groups": [
+    {
+      "type": "home",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "생일",
+          "ids": [
+            "0_H010",
+            "0_H011"
+          ],
+          "subtitle": "오늘이라는 날은──\n……아니, 지금의 내게 축복 따윈.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "birthDay",
+          "cond_value": 0
+        },
+        {
+          "name": "이벤트 개최중",
+          "ids": [
+            "0_H020"
+          ],
+          "subtitle": "가지요.\n내 힘을 휘두를 때.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 11
+        },
+        {
+          "name": "대화 1",
+          "ids": [
+            "0_H030"
+          ],
+          "subtitle": "언제까지 그러고 있을 겁니까.\n가죠.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 12
+        },
+        {
+          "name": "대화 2",
+          "ids": [
+            "0_H040"
+          ],
+          "subtitle": "이 창──\n지금은 당신의 것이다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 13
+        },
+        {
+          "name": "대화 3",
+          "ids": [
+            "0_H050"
+          ],
+          "subtitle": "주인이고 종이고 내게는 관계없다.\n그저 가로막는 자를 모두 깨뜨리지.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 14
+        },
+        {
+          "name": "좋아하는 것",
+          "ids": [
+            "0_H060",
+            "0_H061"
+          ],
+          "subtitle": "좋아하는 것…… 지금 원하는 것이라.\n그렇군요. 마력이 다소 감소하였습니다.\n정크한 보급을 요구하겠습니다.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 15
+        },
+        {
+          "name": "싫어하는 것",
+          "ids": [
+            "0_H070"
+          ],
+          "subtitle": "나는……\n이 창으로…… 무엇을……",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 16
+        },
+        {
+          "name": "성배에 대하여",
+          "ids": [
+            "0_H080"
+          ],
+          "subtitle": "성배 안에 무엇이 잠들어 있는지──\n당신은 생각한 적이 있나.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 17
+        },
+        {
+          "name": "인연 Lv.1",
+          "ids": [
+            "0_H090"
+          ],
+          "subtitle": "당신은 결코 이해할 수 없다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 1
+        },
+        {
+          "name": "인연 Lv.2",
+          "ids": [
+            "0_H100"
+          ],
+          "subtitle": "──지금의 나는 이해할 수 있다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 2
+        },
+        {
+          "name": "인연 Lv.3",
+          "ids": [
+            "0_H110"
+          ],
+          "subtitle": "미움받고 소외되는 것이야말로\n영웅의 본분이라면──",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 3
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H120"
+          ],
+          "subtitle": "내게는 의무가 있다.\n그럼 나는 그것을 다할 뿐이다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H130"
+          ],
+          "subtitle": "나 때문에 스러진……\n모든 생명을 위하여……",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        },
+        {
+          "name": "대화 4",
+          "ids": [
+            "0_H140"
+          ],
+          "subtitle": "……긴 꿈을 꾸었다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 18
+        },
+        {
+          "name": "대화 5",
+          "ids": [
+            "0_H150"
+          ],
+          "subtitle": "꿈을 꾼 건 어느 쪽이었을까……",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 19
+        },
+        {
+          "name": "대화 6",
+          "ids": [
+            "0_H160"
+          ],
+          "subtitle": "명령을. 마스터.\n나는 뭘 깨뜨리면 됩니까.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 20
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "0_G010"
+          ],
+          "subtitle": "부족하군. 아직 부족하다.",
+          "text": [
+            "부족하군. 아직 부족하다."
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 2",
+          "ids": [
+            "0_G020"
+          ],
+          "subtitle": "힘을, 여기에.",
+          "text": [
+            "힘을, 여기에."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 1",
+          "ids": [
+            "0_G030"
+          ],
+          "subtitle": "──영기, 재림.",
+          "text": [
+            "──영기, 재림."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 1
+        },
+        {
+          "name": "영기재림 3",
+          "ids": [
+            "0_G040"
+          ],
+          "subtitle": "──그렇군, 나쁘지 않아.",
+          "text": [
+            "──그렇군, 나쁘지 않아."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 3
+        },
+        {
+          "name": "영기재림 4",
+          "ids": [
+            "0_G050",
+            "0_G051"
+          ],
+          "subtitle": "잘 보도록 해라. 땅끝에서 빛나는 저주의 창을.\n적이든 아군이든, 내 일격은 반역자를 섬멸한다.\n───마스터. 당신은 끝까지 내 곁에서 떨어지지 마라.",
+          "text": [
+            "잘 보도록 해라. 땅끝에서 빛나는 저주의 창을.[r]적이든 아군이든, 내 일격은 반역자를 섬멸한다.",
+            "───마스터. 당신은 끝까지 내 곁에서 떨어지지 마라."
+          ],
+          "cond_type": "svtCountStop",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "firstGet",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "소환",
+          "ids": [
+            "0_S010",
+            "0_S011",
+            "0_S012",
+            "0_S013"
+          ],
+          "subtitle": "랜서, 알트리아.\n소환에 응해 찾아왔다.\n내 애마가 비구름을 마시듯이, 내 창은 모든 성벽을 깨뜨린다.\n당신의 앞길을 가로막는 것, 모든 것을 깨뜨리지.",
+          "text": [
+            "랜서, 알트리아.",
+            "[r]소환에 응해 찾아왔다.",
+            "[r]\n나의 애마가 비구름을 삼키듯, 나의 창은 모든 성벽을 깨뜨린다.",
+            "[r]당신의 길을 막는 것들은, 모두 쳐부수겠다."
+          ],
+          "cond_type": "svtGet",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "공격 1",
+          "ids": [
+            "0_B010"
+          ],
+          "subtitle": "핫!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "0_B020"
+          ],
+          "subtitle": "흡!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "0_B030"
+          ],
+          "subtitle": "달려라!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B040"
+          ],
+          "subtitle": "──견딜 수 있을까!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "0_B080"
+          ],
+          "subtitle": "박차를 가한다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "0_B090"
+          ],
+          "subtitle": "네놈, 역린을 건드렸군──",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 1",
+          "ids": [
+            "0_B100"
+          ],
+          "subtitle": "작군. 말 위에서 보는 적이란.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "0_B110"
+          ],
+          "subtitle": "싸움이다. 짓밟는다. 흘람레이.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "0_B120"
+          ],
+          "subtitle": "이 정도인가.\n……이름을 기억할 가치도 없다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "0_B130"
+          ],
+          "subtitle": "……허무하군. 모든 것은 말 위에서 꾸는 한순간의 꿈이다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "0_B140"
+          ],
+          "subtitle": "네놈…!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "0_B150"
+          ],
+          "subtitle": "끄윽……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "0_B160"
+          ],
+          "subtitle": "나를…… 쓰러뜨리나……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "0_B170"
+          ],
+          "subtitle": "흘람레이…… 여태까지 고마웠다……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "0_B180"
+          ],
+          "subtitle": "뭉갤까.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "0_B190"
+          ],
+          "subtitle": "깨뜨릴까.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "0_B200"
+          ],
+          "subtitle": "……재미있군.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B210"
+          ],
+          "subtitle": "성창, 발묘────",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B050",
+            "0_B051",
+            "0_B052",
+            "0_B053",
+            "0_B054"
+          ],
+          "subtitle": "찔러라, 먹어라!\n열세 개의 이빨!\n──롱──고──미니아드!!",
+          "text": [
+            "찔러라",
+            "먹어라!",
+            "열세 개의 이빨!",
+            "──롱──고",
+            "──미니아드!!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        }
+      ]
+    }
+  ]
+}

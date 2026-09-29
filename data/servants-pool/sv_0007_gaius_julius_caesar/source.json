@@ -1,0 +1,161 @@
+{
+  "servant_id": "sv_0007_gaius_julius_caesar",
+  "source_id": 7,
+  "name_ko": "가이우스 율리우스 카이사르",
+  "name_en": "Gaius Julius Caesar",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/7?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "B",
+    "agi": "B",
+    "mana": "D",
+    "luck": "C",
+    "np": "B+"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2004,
+      "name": "roman"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 101300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      },
+      {
+        "id": 88450,
+        "name": "기승 B",
+        "rank": null
+      },
+      {
+        "id": 62250,
+        "name": "신성 D",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 77450,
+        "name": "군략 B",
+        "rank": null
+      },
+      {
+        "id": 5350,
+        "name": "카리스마 C",
+        "rank": null
+      },
+      {
+        "id": 42650,
+        "name": "선동 EX",
+        "rank": null
+      },
+      {
+        "id": 42900,
+        "name": "선동 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 101301,
+      "name": "황색 죽음",
+      "ruby": "크로케아 모르스",
+      "rank": "B+",
+      "type": "대인보구"
+    },
+    {
+      "id": 101302,
+      "name": "황색 죽음",
+      "ruby": "크로케아 모르스",
+      "rank": "B++",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1013000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/101300/101300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/101300/101300b@2.png"
+  }
+}

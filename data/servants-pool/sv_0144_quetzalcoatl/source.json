@@ -1,0 +1,166 @@
+{
+  "servant_id": "sv_0144_quetzalcoatl",
+  "source_id": 144,
+  "name_ko": "케찰코아틀",
+  "name_en": "Quetzalcoatl",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/144?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "B+",
+    "mana": "EX",
+    "luck": "A+",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1110,
+      "name": "lamia"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2797,
+      "name": "divineSpirit"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 401800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 88650,
+        "name": "기승 EX",
+        "rank": null
+      },
+      {
+        "id": 30650,
+        "name": "여신의 신핵 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 5551,
+        "name": "카리스마 A+",
+        "rank": null
+      },
+      {
+        "id": 311551,
+        "name": "선신의 지혜 A+",
+        "rank": null
+      },
+      {
+        "id": 312650,
+        "name": "자유로운 투쟁 EX",
+        "rank": null
+      },
+      {
+        "id": 858650,
+        "name": "태양의 카리스마 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 401801,
+      "name": "불꽃이여, 신마저도 불태워라",
+      "ruby": "슈 코아틀",
+      "rank": "A",
+      "type": "대인/대성보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4018000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/401800/401800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/401800/401800b@2.png"
+  }
+}

@@ -210,6 +210,78 @@
         "text": "……오늘은 그만두는 편이 좋겠다. 마스터가 먼저 쓰러지면, 곤란하다.",
         "tone": "grim"
       }
+    ],
+    "phase_win": [
+      {
+        "id": "win_01",
+        "text": "꿰뚫었다!",
+        "tone": "defiant"
+      },
+      {
+        "id": "win_02",
+        "text": "──어딜!",
+        "tone": "defiant"
+      },
+      {
+        "id": "win_03",
+        "text": "빠르다고 생각했나!",
+        "tone": "defiant"
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "hit_01",
+        "text": "칫……!",
+        "tone": "grim"
+      },
+      {
+        "id": "hit_02",
+        "text": "제법이군……!",
+        "tone": "grim"
+      }
+    ],
+    "skill": [
+      {
+        "id": "skill_01",
+        "text": "──간다!",
+        "tone": "defiant"
+      },
+      {
+        "id": "skill_02",
+        "text": "자, 따라올 수 있을까.",
+        "tone": "defiant"
+      }
+    ],
+    "comeback": [
+      {
+        "id": "comeback_01",
+        "text": "하, 하하……! 궁지에 몰린 창이 가장 날카롭다고 했지.",
+        "tone": "defiant"
+      },
+      {
+        "id": "comeback_02",
+        "text": "죽다 살았다. ──그러니까 싸움은 그만둘 수가 없다.",
+        "tone": "defiant"
+      }
+    ],
+    "weakness": [
+      {
+        "id": "weakness_01",
+        "text": "{enemy}. 네 전설의 약한 곳은, 이미 알고 있다. ──그곳을 찌른다.",
+        "tone": "cold"
+      },
+      {
+        "id": "weakness_02",
+        "text": "급소는 보였다. 이 창은, 빗나가지 않는다.",
+        "tone": "cold"
+      }
+    ],
+    "intel_battle": [
+      {
+        "id": "battle_01",
+        "text": "도망쳤지만, 창끝에 걸린 감촉은 남았다. 다음엔 놓치지 않는다.",
+        "tone": "calm"
+      }
     ]
   }
 }

@@ -1,0 +1,139 @@
+{
+  "servant_id": "sv_0031_medea",
+  "source_id": 31,
+  "name_ko": "메데이아",
+  "name_en": "Medea",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/31?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "D",
+    "agi": "C",
+    "mana": "A+",
+    "luck": "B",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2466,
+      "name": "associatedToTheArgo"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 2883,
+      "name": "FSNServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 500100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83550,
+        "name": "진지작성 A",
+        "rank": null
+      },
+      {
+        "id": 80550,
+        "name": "도구작성 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 89550,
+        "name": "고속신언 A",
+        "rank": null
+      },
+      {
+        "id": 81000,
+        "name": "황금양모",
+        "rank": null
+      },
+      {
+        "id": 229550,
+        "name": "키르케의 가르침 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 500101,
+      "name": "파계해야 할 모든 부적",
+      "ruby": "룰 브레이커",
+      "rank": "C",
+      "type": "대마술보구"
+    },
+    {
+      "id": 500102,
+      "name": "파계해야 할 모든 부적",
+      "ruby": "룰 브레이커",
+      "rank": "C+",
+      "type": "대마술보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5001000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/500100/500100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/500100/500100b@2.png"
+  }
+}

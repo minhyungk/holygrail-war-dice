@@ -1,0 +1,133 @@
+{
+  "servant_id": "sv_0096_edmond_dantes",
+  "source_id": 96,
+  "name_ko": "암굴왕",
+  "name_en": "Edmond Dantès",
+  "class": "avenger",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/96?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "A+",
+    "agi": "C",
+    "mana": "B",
+    "luck": "?",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 110,
+      "name": "classAvenger"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 1100200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 169550,
+        "name": "복수자 A",
+        "rank": null
+      },
+      {
+        "id": 170450,
+        "name": "망각보정 B",
+        "rank": null
+      },
+      {
+        "id": 171250,
+        "name": "자기회복(마력) D",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 172650,
+        "name": "강철의 결의 EX",
+        "rank": null
+      },
+      {
+        "id": 97550,
+        "name": "황금률 A",
+        "rank": null
+      },
+      {
+        "id": 173550,
+        "name": "궁지의 지혜 A",
+        "rank": null
+      },
+      {
+        "id": 2161551,
+        "name": "몽테크리스토의 비보 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 1100201,
+      "name": "호랑이여, 눈부시게 불타올라라",
+      "ruby": "앙페 샤토 디프",
+      "rank": "A",
+      "type": "대군보구"
+    },
+    {
+      "id": 1100202,
+      "name": "호랑이여, 눈부시게 불타올라라",
+      "ruby": "앙페 샤토 디프",
+      "rank": "A+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_11002000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1100200/1100200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1100200/1100200b@2.png"
+  }
+}

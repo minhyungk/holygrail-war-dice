@@ -1,0 +1,157 @@
+{
+  "servant_id": "sv_0225_shuten_douji_caster",
+  "source_id": 225,
+  "name_ko": "슈텐도지",
+  "name_en": "Shuten-Douji (Caster)",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/225?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C+",
+    "end": "B",
+    "agi": "B",
+    "mana": "A+",
+    "luck": "B",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1004,
+      "name": "demonBeast"
+    },
+    {
+      "id": 1110,
+      "name": "lamia"
+    },
+    {
+      "id": 1132,
+      "name": "oni"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2002,
+      "name": "dragon"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2019,
+      "name": "demonic"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2734,
+      "name": "shuten"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 504000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83450,
+        "name": "진지작성 B",
+        "rank": null
+      },
+      {
+        "id": 80450,
+        "name": "도구작성 B",
+        "rank": null
+      },
+      {
+        "id": 807350,
+        "name": "신성 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 533551,
+        "name": "호법의 오니・심악살 A+",
+        "rank": null
+      },
+      {
+        "id": 534450,
+        "name": "호법의 오니・구살봉 B",
+        "rank": null
+      },
+      {
+        "id": 535550,
+        "name": "귀종의 마(호) A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 504001,
+      "name": "호법소녀・구두룡오살",
+      "ruby": "호법소녀・구두룡오살",
+      "rank": "C++",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5040000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/504000/504000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/504000/504000b@2.png"
+  }
+}

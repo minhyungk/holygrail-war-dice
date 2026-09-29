@@ -1,0 +1,145 @@
+{
+  "servant_id": "sv_0056_kiyohime",
+  "source_id": 56,
+  "name_ko": "키요히메",
+  "name_en": "Kiyohime",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/56?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "C",
+    "mana": "E",
+    "luck": "E",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1110,
+      "name": "lamia"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2002,
+      "name": "dragon"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2667,
+      "name": "childServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 701300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54650,
+        "name": "광화 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 25350,
+        "name": "변화 C",
+        "rank": null
+      },
+      {
+        "id": 102450,
+        "name": "스토킹 B",
+        "rank": null
+      },
+      {
+        "id": 235550,
+        "name": "불꽃색 입맞춤 A",
+        "rank": null
+      },
+      {
+        "id": 571351,
+        "name": "변화(화룡) C+",
+        "rank": null
+      },
+      {
+        "id": 2368551,
+        "name": "슈퍼 포지티브 스토커 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 701301,
+      "name": "전신화생삼매",
+      "ruby": "전신화생삼매",
+      "rank": "EX",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7013000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/701300/701300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/701300/701300b@2.png"
+  }
+}

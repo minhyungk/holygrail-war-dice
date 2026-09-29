@@ -1,0 +1,144 @@
+{
+  "servant_id": "sv_0058_tamamo_cat",
+  "source_id": 58,
+  "name_ko": "타마모캣",
+  "name_en": "Tamamo Cat",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/58?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B+",
+    "end": "E",
+    "agi": "A",
+    "mana": "A",
+    "luck": "B",
+    "np": "D"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2005,
+      "name": "wildbeast"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2632,
+      "name": "demonicBeastServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 701600,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54350,
+        "name": "광화 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 39450,
+        "name": "괴력 B",
+        "rank": null
+      },
+      {
+        "id": 23150,
+        "name": "주술 E",
+        "rank": null
+      },
+      {
+        "id": 25450,
+        "name": "변화 B",
+        "rank": null
+      },
+      {
+        "id": 569450,
+        "name": "주층・묘일조 B",
+        "rank": null
+      },
+      {
+        "id": 502550,
+        "name": "변화(런치) A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 701601,
+      "name": "찬찬일광 오수궁주지육림",
+      "ruby": "눈부신 햇살 속 낮잠 주지육림",
+      "rank": "D",
+      "type": "대인보구"
+    },
+    {
+      "id": 701602,
+      "name": "찬찬일광 오수궁주지육림",
+      "ruby": "눈부신 햇살 속 낮잠 주지육림",
+      "rank": "D+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7016000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/701600/701600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/701600/701600b@2.png"
+  }
+}

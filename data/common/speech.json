@@ -1,0 +1,196 @@
+{
+  "speaker": "common_speech",
+  "scope": "common",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "new"
+  },
+  "notes": "서번트 공통 대사 (3층, D-143·D-151). 서번트·클래스 대사가 없을 때 누구나 쓴다. 해라체 선언·독백 위주로 존댓말/반말 어미를 피했다. react_choice: 플레이어 선택에 대한 반응 (D-150). event.reaction = 선택, event.direction = 호감도 변화 방향. status draft, author ai.",
+  "tags": {
+    "react_choice": [
+      {
+        "id": "fight_up_1",
+        "when": {
+          "event.reaction": "encounter_fight",
+          "event.direction": "up"
+        },
+        "text": "좋다. 그래야 싸우는 보람이 있다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "fight_up_2",
+        "when": {
+          "event.reaction": "encounter_fight",
+          "event.direction": "up"
+        },
+        "text": "망설임 없는 명령이다. ──그렇다면, 응할 뿐.",
+        "tone": "calm"
+      },
+      {
+        "id": "fight_down_1",
+        "when": {
+          "event.reaction": "encounter_fight",
+          "event.direction": "down"
+        },
+        "text": "……정면으로 부딪치는 것만이 싸움은 아니다.",
+        "tone": "cold"
+      },
+      {
+        "id": "fight_down_2",
+        "when": {
+          "event.reaction": "encounter_fight",
+          "event.direction": "down"
+        },
+        "text": "칼을 뽑기 전에, 한 번쯤은 생각해 두는 편이 좋다.",
+        "tone": "cold"
+      },
+      {
+        "id": "flee_up_1",
+        "when": {
+          "event.reaction": "encounter_flee",
+          "event.direction": "up"
+        },
+        "text": "현명하다. 싸울 자리는 이쪽이 고른다.",
+        "tone": "calm"
+      },
+      {
+        "id": "flee_up_2",
+        "when": {
+          "event.reaction": "encounter_flee",
+          "event.direction": "up"
+        },
+        "text": "물러서는 것도 수다. ……그 판단, 나쁘지 않다.",
+        "tone": "calm"
+      },
+      {
+        "id": "flee_down_1",
+        "when": {
+          "event.reaction": "encounter_flee",
+          "event.direction": "down"
+        },
+        "text": "……등을 보이라는 건가. 달갑지는 않다.",
+        "tone": "cold"
+      },
+      {
+        "id": "flee_down_2",
+        "when": {
+          "event.reaction": "encounter_flee",
+          "event.direction": "down"
+        },
+        "text": "적을 앞에 두고 물러선다. ──이 빚은, 반드시 갚는다.",
+        "tone": "grim"
+      },
+      {
+        "id": "hold_up_1",
+        "when": {
+          "event.reaction": "danger_fight",
+          "event.direction": "up"
+        },
+        "text": "그래, 아직 끝나지 않았다. ──끝까지 간다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "hold_up_2",
+        "when": {
+          "event.reaction": "danger_fight",
+          "event.direction": "up"
+        },
+        "text": "이 몸을 믿는다는 뜻이군. ……그 믿음, 저버리지 않겠다.",
+        "tone": "tender"
+      },
+      {
+        "id": "hold_down_1",
+        "when": {
+          "event.reaction": "danger_fight",
+          "event.direction": "down"
+        },
+        "text": "……무모하다. 그래도 명령이라면, 서 있겠다.",
+        "tone": "grim"
+      },
+      {
+        "id": "hold_down_2",
+        "when": {
+          "event.reaction": "danger_fight",
+          "event.direction": "down"
+        },
+        "text": "한 번 더 맞으면 끝이라는 것쯤은, 알고 있겠지.",
+        "tone": "cold"
+      },
+      {
+        "id": "run_up_1",
+        "when": {
+          "event.reaction": "danger_run",
+          "event.direction": "up"
+        },
+        "text": "살아남는 쪽이 이긴다. ──물러난다.",
+        "tone": "calm"
+      },
+      {
+        "id": "run_up_2",
+        "when": {
+          "event.reaction": "danger_run",
+          "event.direction": "up"
+        },
+        "text": "좋은 판단이다. 쓰러지면, 다음은 없다.",
+        "tone": "calm"
+      },
+      {
+        "id": "run_down_1",
+        "when": {
+          "event.reaction": "danger_run",
+          "event.direction": "down"
+        },
+        "text": "……등을 보이는 것은, 칼에 베이는 것보다 아프다.",
+        "tone": "grim"
+      },
+      {
+        "id": "run_down_2",
+        "when": {
+          "event.reaction": "danger_run",
+          "event.direction": "down"
+        },
+        "text": "도망치라는 건가. ──이 굴욕은, 잊지 않는다.",
+        "tone": "cold"
+      },
+      {
+        "id": "weak_up_1",
+        "when": {
+          "event.reaction": "weakness",
+          "event.direction": "up"
+        },
+        "text": "그 전설의 끝을 안다면, 찌를 곳도 안다. ──좋은 수다.",
+        "tone": "calm"
+      },
+      {
+        "id": "weak_up_2",
+        "when": {
+          "event.reaction": "weakness",
+          "event.direction": "up"
+        },
+        "text": "정보는 칼보다 날카롭다. 그 사실을, 지금 증명한다.",
+        "tone": "cold"
+      },
+      {
+        "id": "weak_down_1",
+        "when": {
+          "event.reaction": "weakness",
+          "event.direction": "down"
+        },
+        "text": "……약점을 파고드는 싸움은, 취향이 아니다.",
+        "tone": "cold"
+      },
+      {
+        "id": "weak_down_2",
+        "when": {
+          "event.reaction": "weakness",
+          "event.direction": "down"
+        },
+        "text": "이기는 방법으로는 옳다. 다만, 칼이 무겁다.",
+        "tone": "grim"
+      }
+    ]
+  }
+}

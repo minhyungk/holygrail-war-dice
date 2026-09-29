@@ -1,0 +1,1077 @@
+{
+  "origin": "Atlas Academy KR nice API",
+  "groups": [
+    {
+      "type": "home",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "생일",
+          "ids": [
+            "0_H010"
+          ],
+          "subtitle": "생일…… 맛있어 보이는 이름이구나!",
+          "text": [
+            ""
+          ],
+          "cond_type": "birthDay",
+          "cond_value": 0
+        },
+        {
+          "name": "이벤트 개최중",
+          "ids": [
+            "0_H020"
+          ],
+          "subtitle": "페이트 의  법칙 이  흐트러진다.!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 11
+        },
+        {
+          "name": "대화 1",
+          "ids": [
+            "0_H030"
+          ],
+          "subtitle": "주인, 산책 시간이다! 목줄을 가져오너라.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 12
+        },
+        {
+          "name": "대화 2",
+          "ids": [
+            "0_H040"
+          ],
+          "subtitle": "마력을 주는 한 따라간다! 그게 캣의 긍지라는 모양이야.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 13
+        },
+        {
+          "name": "대화 3",
+          "ids": [
+            "0_H050"
+          ],
+          "subtitle": "주종 관계…… 돈을 버는 자와 집을 지키는 자. \n남편과 아내 같은 관계로구나.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 14
+        },
+        {
+          "name": "좋아하는 것",
+          "ids": [
+            "0_H060"
+          ],
+          "subtitle": "좋아하는 것? 주인은 좋아한다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 15
+        },
+        {
+          "name": "싫어하는 것",
+          "ids": [
+            "0_H070"
+          ],
+          "subtitle": "싫어하는 것…… 자신과 같은 예풍에는 위협을 느끼지. \n그리고, 다른 나인은 죽인다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 16
+        },
+        {
+          "name": "성배에 대하여",
+          "ids": [
+            "0_H080"
+          ],
+          "subtitle": "성배라고!? 그건 전설로 전해지는, 골든 고양이 통조림인가!?",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 17
+        },
+        {
+          "name": "인연 Lv.1",
+          "ids": [
+            "0_H090",
+            "0_H091",
+            "0_H092"
+          ],
+          "subtitle": "타마모 나인이란 모든 악의 근원, \n타마모노마에로부터 나누어진 아홉 꼬리를 말한다. \n제각각 특성을 지니지만, \n모두 인간계를 어지럽힌다는 점만은 공통되어 있지. \n음, 남에게 폐를 끼치는구나.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 1
+        },
+        {
+          "name": "인연 Lv.2",
+          "ids": [
+            "0_H100"
+          ],
+          "subtitle": "오락가락하는 캐릭터성은 어디 가지 않아.\n그게 나인게다. 주인!",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 2
+        },
+        {
+          "name": "인연 Lv.3",
+          "ids": [
+            "0_H110",
+            "0_H111",
+            "0_H112"
+          ],
+          "subtitle": "응? 좀 더 양처답게 하라고? \n음…… 진지해지면 경국의 마성이 되니까 말이다~\n이성은 일부러 봉인하고 있는 게다. \n주인을 먹기라도 하면…… 역시 좋지 않으니. \n그래도 맛있어 보이네?",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 3
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H120",
+            "0_H121"
+          ],
+          "subtitle": "주인은 제대로 낮잠 시간을 챙겨줘서 고맙다. \n함께 잠자주니 더욱 행복하다. \n……오늘도 함께 자주는 게냐?",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H130",
+            "0_H131"
+          ],
+          "subtitle": "주인이 죽으면 슬프다, 라는 사실이 판명됐다. \n그러니 이제부터는 내게 의지하게!! \n내 목숨을 바쳐서라도 지켜주지, 마스터!",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        },
+        {
+          "name": "대화 4",
+          "ids": [
+            "0_H140",
+            "0_H141"
+          ],
+          "subtitle": "가까이에서 오리지널의 냄새가 나! \n좋아, 사인을 받아올까? 그러는 김에 피 축제를 벌이겠다. \n진짜 주지육림이란 걸 보여주지.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 18
+        },
+        {
+          "name": "대화 7",
+          "ids": [
+            "0_H170",
+            "0_H171",
+            "0_H172",
+            "0_H173"
+          ],
+          "subtitle": "호오오……? 이 박력 넘치는 중력장, 그렇다는 건 립이 있는 것이 아닌가? \n……흠. 무엇을 감추랴, 우리는 ‘귀여운 핸드 동지’. \n귀여움 친구로서 요리모임 등을 열고 있는데, \n립은 매일매일 성장하고 있다구. \n다소 크기는 해도, BIG한 마음으로 받아주도록 해라.",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 21
+        },
+        {
+          "name": "대화 8",
+          "ids": [
+            "0_H180",
+            "0_H181",
+            "0_H182",
+            "0_H183"
+          ],
+          "subtitle": "……음? 이 찌릿찌릿하게 앞치마에 거품이 이는 오오라는…… \n베니엔마 선생님!! 주인, 베니엔마 선생님의 눈에 든 것이냐? \n그거 훌륭하군! 어서 선생님의 조수가 되어서, \n눈앞이 아찔해지는 창작요리지옥으로 안내하자!",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 22
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "0_G010"
+          ],
+          "subtitle": "캣은 털의 결도 업!",
+          "text": [
+            "캣은 털의 결도 업!"
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 2",
+          "ids": [
+            "0_G020"
+          ],
+          "subtitle": "흐응, 산책이라도 하고 싶은데.",
+          "text": [
+            "흐응, 산책이라도 하고 싶은데."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 1",
+          "ids": [
+            "0_G030"
+          ],
+          "subtitle": "밥 먹을래? 아니면 식사는 어때?",
+          "text": [
+            "밥 먹을래? 아니면 식사는 어때?"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 1
+        },
+        {
+          "name": "영기재림 3",
+          "ids": [
+            "0_G040"
+          ],
+          "subtitle": "내가 생각해도 이건 서비스가 심했네.",
+          "text": [
+            "내가 생각해도 이건 서비스가 심했네."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 3
+        },
+        {
+          "name": "영기재림 4",
+          "ids": [
+            "0_G050"
+          ],
+          "subtitle": "들끓는 털, 용솟음치는 짐승의 본성. \n주인, 나는 마지막까지 따라가겠다멍!",
+          "text": [
+            "들끓는 털, 용솟음치는 짐승의 본성. 주인, 나는 마지막까지 따라가겠다멍!"
+          ],
+          "cond_type": "svtCountStop",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "firstGet",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "소환",
+          "ids": [
+            "0_S010"
+          ],
+          "subtitle": "내가 바로 타마모 나인의 하나, 야생 여우 타마모캣!\n주인, 잘 부탁해.",
+          "text": [
+            "내가 바로 타마모 나인의 하나, 야생 여우 타마모캣! [r]주인, 잘 부탁해!"
+          ],
+          "cond_type": "svtGet",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "공격 1",
+          "ids": [
+            "0_B010"
+          ],
+          "subtitle": "홋!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "0_B020"
+          ],
+          "subtitle": "에잇!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "0_B030"
+          ],
+          "subtitle": "찢어 갈겨주지!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 4",
+          "ids": [
+            "0_B410"
+          ],
+          "subtitle": "마마마마마마하볼록살!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 5",
+          "ids": [
+            "0_B420"
+          ],
+          "subtitle": "우으~우냐앙!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 6",
+          "ids": [
+            "0_B430"
+          ],
+          "subtitle": "잘게썰기 슬래셔!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B040"
+          ],
+          "subtitle": "무녀라고 했지? 그건 거짓말이다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B440"
+          ],
+          "subtitle": "비나이다 비나이다──‘주층・묘일조’!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B840"
+          ],
+          "subtitle": "그 지방을 불태운다── Fat cat Busterrrrr!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격 4",
+          "ids": [
+            "0_B2440"
+          ],
+          "subtitle": "그 지방을 불태운다──라고 말했지, 그것도 거짓말이다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "0_B080"
+          ],
+          "subtitle": "전력으로 간다! 이게 봐주는 것이다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "0_B090"
+          ],
+          "subtitle": "사실은 졸리기 시작한 것이다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 3",
+          "ids": [
+            "0_B480"
+          ],
+          "subtitle": "배틀── 즉, 런치타임!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 4",
+          "ids": [
+            "0_B490"
+          ],
+          "subtitle": "오래 기다리게 했구나, 이것이 답이다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 1",
+          "ids": [
+            "0_B100"
+          ],
+          "subtitle": "죽고 싶어서 안달이네. 그것도 좋겠지.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "0_B110"
+          ],
+          "subtitle": "웰던? 아니면 레어?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "0_B120"
+          ],
+          "subtitle": "보상으로 당근을 받도록 하지!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "0_B130"
+          ],
+          "subtitle": "주인, 다음은 더 굉장하다구!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "0_B140"
+          ],
+          "subtitle": "구오옷!?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "0_B150"
+          ],
+          "subtitle": "고하하하하하하!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "0_B160"
+          ],
+          "subtitle": "개라던가…… 고양이라던가……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "0_B170"
+          ],
+          "subtitle": "납득 못 해……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "0_B180"
+          ],
+          "subtitle": "알겠네!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "0_B190"
+          ],
+          "subtitle": "무후후.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "0_B200"
+          ],
+          "subtitle": "좋았어!!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B210"
+          ],
+          "subtitle": "타마모 지옥을 보여주지!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B220"
+          ],
+          "subtitle": "음기후궁을 채우고, 모두가 정체를 놓친다……",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 5
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B050",
+            "0_B051",
+            "0_B052"
+          ],
+          "subtitle": "응, 그런고로 몰살이다멍! 눈부신 햇살 속 오수궁 주지육림! \n으~응, 굿모닝~♪",
+          "text": [
+            "응, 그런고로 몰살이다멍!",
+            "눈부신 햇살 속 오수궁 주지육림!",
+            "^0:0:E:으~응, 굿모닝~♪^1:0:0.9:으~응, 굿모닝~♪^1:0.91:E: "
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        }
+      ]
+    },
+    {
+      "type": "home",
+      "voice_prefix": 11,
+      "lines": [
+        {
+          "name": "영의에 대하여",
+          "ids": [
+            "11_H9000",
+            "11_H9001",
+            "11_H9002",
+            "11_H9003"
+          ],
+          "subtitle": "주문은 기쁘다, 스케이트는 즐겁다, 주인의 시선은 따뜻하다── \n이렇게 좋은 일뿐이라 최고이지 않은가?! \n싸움이 끝난 후, 주인과 함께 카페를 여는 여생…… \n그야말로 툇마루에서 꾸는 꿈…… 이로구나.",
+          "text": [
+            "주문은 기쁘다, 스케이트는 즐겁다, 주인의 시선은 따뜻하다──",
+            "이렇게 좋은 일뿐이라 최고이지 않은가?!",
+            "싸움이 끝난 후, 주인과 함께 카페를 여는 여생……",
+            "그야말로 툇마루에서 꾸는 꿈…… 이로구나."
+          ],
+          "cond_type": "flag",
+          "cond_value": 63
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 11,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "11_G010"
+          ],
+          "subtitle": "캣은 털의 결도 업!",
+          "text": [
+            "캣은 털의 결도 업!"
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영의 개방",
+          "ids": [
+            "11_G060",
+            "11_G061",
+            "11_G062",
+            "11_G063"
+          ],
+          "subtitle": "호오오. 이것이 노래하고 춤추는 나. 캣에 의상, 이라는 뜻인가. \n좋다, 주인. 기꺼이 주문을 받지~!",
+          "text": [
+            "호오오. 이것이 노래하고 춤추는 나.",
+            "캣에 의상, 이라는 뜻인가.",
+            "좋다, 주인.",
+            "기꺼이 주문을 받지~!"
+          ],
+          "cond_type": "costumeGet",
+          "cond_value": 11
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 11,
+      "lines": [
+        {
+          "name": "개시 1",
+          "ids": [
+            "11_B100"
+          ],
+          "subtitle": "기다리게 만들었군, 그것은 미안하다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "11_B110"
+          ],
+          "subtitle": "주문, 접수하겠다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "11_B080"
+          ],
+          "subtitle": "큐트, 그리고 퀵!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "11_B090"
+          ],
+          "subtitle": "물 한 잔 더 줄까멍?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 3",
+          "ids": [
+            "11_B480"
+          ],
+          "subtitle": "파르페에 의해 멸망하라.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 4",
+          "ids": [
+            "11_B490"
+          ],
+          "subtitle": "흠. 편히 있다 가도록 해라.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "11_B180"
+          ],
+          "subtitle": "엿차.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "11_B190"
+          ],
+          "subtitle": "헛차.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "11_B200"
+          ],
+          "subtitle": "냥냐니냥~!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "11_B210"
+          ],
+          "subtitle": "딜리셔스로구나!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "11_B220"
+          ],
+          "subtitle": "오더 들어갑니다~♡",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 5
+        },
+        {
+          "name": "공격 1",
+          "ids": [
+            "11_B010"
+          ],
+          "subtitle": "두둥실.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "11_B020"
+          ],
+          "subtitle": "어떤가?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "11_B030"
+          ],
+          "subtitle": "고양이 스마일!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 4",
+          "ids": [
+            "11_B410"
+          ],
+          "subtitle": "딜리딜리딜리딜리버리~!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 5",
+          "ids": [
+            "11_B420"
+          ],
+          "subtitle": "한 접시 더 간다멍!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 6",
+          "ids": [
+            "11_B430"
+          ],
+          "subtitle": "전갱이 오프너.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "11_B040"
+          ],
+          "subtitle": "고양이라 했지, 그것도 가능하다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "11_B440"
+          ],
+          "subtitle": "셰프의 추천을 믿지 마라!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "11_B840"
+          ],
+          "subtitle": "이름을, 내려주마!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격 4",
+          "ids": [
+            "11_B2440"
+          ],
+          "subtitle": "무한 리필? 현실을 봐라!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "11_B150"
+          ],
+          "subtitle": "뭐뭐뭐뭐뭐뭐뭐뭣.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "11_B140"
+          ],
+          "subtitle": "위험하다고?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "11_B160"
+          ],
+          "subtitle": "아이돌이라던가, 웨이트리스라던가……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "11_B170"
+          ],
+          "subtitle": "정시가 되었으니, 캣은 슬슬 퇴근하고 싶다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "11_B120"
+          ],
+          "subtitle": "보상으로, 성원과 진심을 받도록 하지!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "11_B130"
+          ],
+          "subtitle": "점장, 다음은 더 귀여울 거다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 11,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "11_B050",
+            "11_B051",
+            "11_B052"
+          ],
+          "subtitle": "응, 그런고로 몰살이다멍! 눈부신 햇살 속 오수궁 주지육림! \n으~응, 굿모닝~♪",
+          "text": [
+            "응, 그런고로 몰살이다멍!",
+            "눈부신 햇살 속 오수궁 주지육림!",
+            "^0:0:E:으~응, 굿모닝~♪^1:0:0.9:으~응, 굿모닝~♪^1:0.91:E: "
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        }
+      ]
+    }
+  ]
+}

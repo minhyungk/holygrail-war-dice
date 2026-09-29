@@ -1,0 +1,136 @@
+{
+  "servant_id": "sv_0113_xuanzang_sanzang",
+  "source_id": 113,
+  "name_ko": "현장 삼장",
+  "name_en": "Xuanzang Sanzang",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/113?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "D",
+    "agi": "B",
+    "mana": "A+",
+    "luck": "EX",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 502200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83551,
+        "name": "진지작성 A+",
+        "rank": null
+      },
+      {
+        "id": 62250,
+        "name": "신성 D",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 221550,
+        "name": "고속독경 A",
+        "rank": null
+      },
+      {
+        "id": 222550,
+        "name": "요염한 홍안 A",
+        "rank": null
+      },
+      {
+        "id": 223550,
+        "name": "삼장의 가르침 A",
+        "rank": null
+      },
+      {
+        "id": 222551,
+        "name": "요염한 홍안 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 502201,
+      "name": "오행산 석가여래장",
+      "ruby": "오행산 석가여래장",
+      "rank": "B",
+      "type": "대군·대성 보구"
+    },
+    {
+      "id": 502202,
+      "name": "오행산 석가여래장",
+      "ruby": "오행산 석가여래장",
+      "rank": "B+",
+      "type": "대인, 대성보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5022000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/502200/502200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/502200/502200b@2.png"
+  }
+}

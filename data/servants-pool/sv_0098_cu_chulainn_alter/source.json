@@ -1,0 +1,147 @@
+{
+  "servant_id": "sv_0098_cu_chulainn_alter",
+  "source_id": 98,
+  "name_ko": "쿠 훌린(얼터)",
+  "name_en": "Cú Chulainn (Alter)",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/98?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "B+",
+    "agi": "A+",
+    "mana": "C",
+    "luck": "D",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 702000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54900,
+        "name": "광화 EX(C 상당)",
+        "rank": null
+      },
+      {
+        "id": 62350,
+        "name": "신성 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 180550,
+        "name": "정령의 광소 A",
+        "rank": null
+      },
+      {
+        "id": 59350,
+        "name": "화살 회피의 가호 C",
+        "rank": null
+      },
+      {
+        "id": 41550,
+        "name": "전투속행 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 702001,
+      "name": "씹어 으깨는 죽음의 송곳니 짐승",
+      "ruby": "쿠루드 코인헨 ",
+      "rank": "A",
+      "type": "대인보구"
+    },
+    {
+      "id": 702002,
+      "name": "씹어 으깨는 죽음의 송곳니 짐승",
+      "ruby": "쿠루드 코인헨 ",
+      "rank": "A+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7020000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/702000/702000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/702000/702000b@2.png"
+  }
+}

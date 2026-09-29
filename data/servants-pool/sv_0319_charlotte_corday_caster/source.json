@@ -1,0 +1,120 @@
+{
+  "servant_id": "sv_0319_charlotte_corday_caster",
+  "source_id": 319,
+  "name_ko": "샤를로트 코르데",
+  "name_en": "Charlotte Corday (Caster)",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/319?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "D",
+    "mana": "C++",
+    "luck": "A",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 308,
+      "name": "alignmentSummer"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 504800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 919650,
+        "name": "매직 쇼・필드 EX",
+        "rank": null
+      },
+      {
+        "id": 920351,
+        "name": "매직 굿즈・크리에이트 C+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 930351,
+        "name": "일루셔니스트(가짜) C+",
+        "rank": null
+      },
+      {
+        "id": 931550,
+        "name": "엉터리 쇼・플래닝 A",
+        "rank": null
+      },
+      {
+        "id": 932650,
+        "name": "기술의 천사 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 504801,
+      "name": "갈채 받는 하룻밤의 꿈",
+      "ruby": "라 페리 뒨 뉘",
+      "rank": "C++",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5048000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/504800/504800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/504800/504800b@2.png"
+  }
+}

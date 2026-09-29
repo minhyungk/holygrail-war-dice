@@ -1,0 +1,136 @@
+{
+  "servant_id": "sv_0116_ibaraki_douji",
+  "source_id": 116,
+  "name_ko": "이바라키도지",
+  "name_en": "Ibaraki-Douji",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/116?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "A+",
+    "agi": "C",
+    "mana": "C",
+    "luck": "B",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1004,
+      "name": "demonBeast"
+    },
+    {
+      "id": 1132,
+      "name": "oni"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2019,
+      "name": "demonic"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2667,
+      "name": "childServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 702200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54450,
+        "name": "광화 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 220550,
+        "name": "귀종의 마 A",
+        "rank": null
+      },
+      {
+        "id": 12550,
+        "name": "재정비 A",
+        "rank": null
+      },
+      {
+        "id": 25550,
+        "name": "변화 A",
+        "rank": null
+      },
+      {
+        "id": 808551,
+        "name": "오에의 오니 난동 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 702201,
+      "name": "나생문 대원기",
+      "ruby": "라쇼몽 대원기",
+      "rank": "B",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7022000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/702200/702200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/702200/702200b@2.png"
+  }
+}

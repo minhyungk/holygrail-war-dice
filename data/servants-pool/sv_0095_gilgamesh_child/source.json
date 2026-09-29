@@ -1,0 +1,161 @@
+{
+  "servant_id": "sv_0095_gilgamesh_child",
+  "source_id": 95,
+  "name_ko": "꼬마 길",
+  "name_en": "Gilgamesh (Child)",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/95?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "C",
+    "mana": "C",
+    "luck": "A",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2667,
+      "name": "childServant"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 201800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34150,
+        "name": "대 마력 E",
+        "rank": null
+      },
+      {
+        "id": 20550,
+        "name": "단독행동 A",
+        "rank": null
+      },
+      {
+        "id": 62450,
+        "name": "신성 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 5551,
+        "name": "카리스마 A+",
+        "rank": null
+      },
+      {
+        "id": 68350,
+        "name": "홍안의 미소년 C",
+        "rank": null
+      },
+      {
+        "id": 97550,
+        "name": "황금률 A",
+        "rank": null
+      },
+      {
+        "id": 844450,
+        "name": "현왕의 맹아 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 201801,
+      "name": "왕의 재보",
+      "ruby": "게이트 오브 바빌론",
+      "rank": "B+",
+      "type": "대인보구"
+    },
+    {
+      "id": 201802,
+      "name": "왕의 재보",
+      "ruby": "게이트 오브 바빌론",
+      "rank": "B++",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2018000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/201800/201800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/201800/201800b@2.png"
+  }
+}

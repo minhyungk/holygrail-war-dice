@@ -1,0 +1,135 @@
+{
+  "servant_id": "sv_0016_arash",
+  "source_id": 16,
+  "name_ko": "아라쉬",
+  "name_en": "Arash",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/16?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "A",
+    "agi": "B+",
+    "mana": "E",
+    "luck": "D",
+    "np": "B++"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 401,
+      "name": "oneStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 201300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      },
+      {
+        "id": 20350,
+        "name": "단독행동 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 85650,
+        "name": "강건 EX",
+        "rank": null
+      },
+      {
+        "id": 19550,
+        "name": "천리안 A",
+        "rank": null
+      },
+      {
+        "id": 232550,
+        "name": "궁시작성 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 201301,
+      "name": "유성일조",
+      "ruby": "스텔라",
+      "rank": "B++",
+      "type": "대군보구"
+    },
+    {
+      "id": 201302,
+      "name": "유성일조",
+      "ruby": "스텔라",
+      "rank": "A",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2013000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/201300/201300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/201300/201300b@2.png"
+  }
+}

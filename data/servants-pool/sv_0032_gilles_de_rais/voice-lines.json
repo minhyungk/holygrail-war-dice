@@ -1,0 +1,539 @@
+{
+  "origin": "Atlas Academy KR nice API",
+  "groups": [
+    {
+      "type": "home",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "생일",
+          "ids": [
+            "0_H010"
+          ],
+          "subtitle": "당신이라는 이름의 무대의 개막에 축복을. \n상영 주제는 희극인가? 아니면 비극?",
+          "text": [
+            ""
+          ],
+          "cond_type": "birthDay",
+          "cond_value": 0
+        },
+        {
+          "name": "이벤트 개최중",
+          "ids": [
+            "0_H020"
+          ],
+          "subtitle": "이쯤에서 한 번, 무료를 달래도록 할까요?",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 11
+        },
+        {
+          "name": "대화 1",
+          "ids": [
+            "0_H030"
+          ],
+          "subtitle": "자, 다음은 어떤 취향으로 절 매료 시켜주실까요?",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 12
+        },
+        {
+          "name": "대화 2",
+          "ids": [
+            "0_H040"
+          ],
+          "subtitle": "오오, 훌륭한 지휘. 그것이야말로, 내 주인에 걸맞습니다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 13
+        },
+        {
+          "name": "대화 3",
+          "ids": [
+            "0_H050",
+            "0_H051"
+          ],
+          "subtitle": "제가 섬기는 당신 또한 신의 은혜 앞에선 \n동등한 한 명의 하인. \n자, 함께 맘껏 모독하고 비웃도록 하죠!",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 14
+        },
+        {
+          "name": "좋아하는 것",
+          "ids": [
+            "0_H060",
+            "0_H061"
+          ],
+          "subtitle": "빛나는 자, 성스러운 자를 떠올릴 때, \n이 고조감을 참을 수 없습니다. \n특히 그게 더럽혀질 순간을 생각하면, 아아!",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 15
+        },
+        {
+          "name": "싫어하는 것",
+          "ids": [
+            "0_H070"
+          ],
+          "subtitle": "천박한 욕망의 망자는 보고 있기 힘듭니다. \n세상에 범속보다 더한 죄가 있을까요?",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 16
+        },
+        {
+          "name": "성배에 대하여",
+          "ids": [
+            "0_H080"
+          ],
+          "subtitle": "성배…… 저의 비원에 이르는 마지막 희망…… \n언젠가 반드시 이 손에!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 17
+        },
+        {
+          "name": "인연 Lv.1",
+          "ids": [
+            "0_H090"
+          ],
+          "subtitle": "흠, 그 노력은 인정하죠.",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 1
+        },
+        {
+          "name": "인연 Lv.2",
+          "ids": [
+            "0_H100"
+          ],
+          "subtitle": "흐음, 그 성의와 열정은 평가하겠습니다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 2
+        },
+        {
+          "name": "인연 Lv.3",
+          "ids": [
+            "0_H110"
+          ],
+          "subtitle": "오오, 이런 창조성이라니! 당신, 설마…",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 3
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H120"
+          ],
+          "subtitle": "틀림없는 재능의 반짝임! 감탄했습니다, \n나의 주인이여!",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H130"
+          ],
+          "subtitle": "호오오오! 이 무슨 신들과 같은 미의 구현! \n그 혼의 떨림을 어떻게 말로 표현할 수 있을까!",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        },
+        {
+          "name": "대화 4",
+          "ids": [
+            "0_H140",
+            "0_H141"
+          ],
+          "subtitle": "또 뵙게 됐군요. 전생한 제2의 잔느! \n재회의 기념입니다. 이 문어 같은 해마를 드시는 겁니다!",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 18
+        },
+        {
+          "name": "대화 5",
+          "ids": [
+            "0_H150",
+            "0_H151"
+          ],
+          "subtitle": "……뭔가 다르군요……\n금발에 여기사라면 다 좋다는 게 아니고……\n당신에게는 청초함, 가련함, 조신함, 청아함이 \n부족하다고 할까…… 없다고 할까……",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 19
+        },
+        {
+          "name": "대화 6",
+          "ids": [
+            "0_H160",
+            "0_H161"
+          ],
+          "subtitle": "오오오오오 오오아아! 내 주인이여! \n당신은 신인가! 아니, 당신이야말로 신인가! \n용케, 용케도 제 앞에 그녀를 불러내 주셨습니다아!",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 20
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "0_G010"
+          ],
+          "subtitle": "송구하기 짝이 없습니다!",
+          "text": [
+            "송구하기 짝이 없습니다!"
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 2",
+          "ids": [
+            "0_G020"
+          ],
+          "subtitle": "이것은 걸작의 느낌!",
+          "text": [
+            "이것은 걸작의 느낌!"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 1",
+          "ids": [
+            "0_G030"
+          ],
+          "subtitle": "아아! 지금 막, 새로운 영감이……!",
+          "text": [
+            "아아! 지금 막, 새로운 영감이……!"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 1
+        },
+        {
+          "name": "영기재림 3",
+          "ids": [
+            "0_G040"
+          ],
+          "subtitle": "오-오오오!! 난 어디까지 올라간단 말인가……!",
+          "text": [
+            "오-오오오!! 난 어디까지 올라간단 말인가……!"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 3
+        },
+        {
+          "name": "영기재림 4",
+          "ids": [
+            "0_G050"
+          ],
+          "subtitle": "흐흐하하하! \n끝끝내 나의 모독이 신의 영역에까지 이를 줄이야!",
+          "text": [
+            "흐흐하하하! 끝끝내 나의 모독이 신의 영역에까지 이를 줄이야!"
+          ],
+          "cond_type": "svtCountStop",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "firstGet",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "소환",
+          "ids": [
+            "0_S010",
+            "0_S011"
+          ],
+          "subtitle": "부름을 받아 찾아오게 되었습니다. 불초 질 드 레.\n이제부터 곁에서 모시도록 하겠습니다.",
+          "text": [
+            "부름을 받아 찾아오게 되었습니다. 불초 질 드 레.[r]",
+            "이제부터 곁에서 모시도록 하겠습니다."
+          ],
+          "cond_type": "svtGet",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "공격 1",
+          "ids": [
+            "0_B010"
+          ],
+          "subtitle": "어떻습니까?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "0_B020"
+          ],
+          "subtitle": "꺄앗!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "0_B030"
+          ],
+          "subtitle": "봐-라!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B040"
+          ],
+          "subtitle": "그 비명이야말로, 천상의 음율이로다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "0_B080"
+          ],
+          "subtitle": "그럼, 이건 마음에 드실까?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "0_B090"
+          ],
+          "subtitle": "봐주시옵소서!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 1",
+          "ids": [
+            "0_B100"
+          ],
+          "subtitle": "자아, 신마저 조롱하는 희극의 개막입니다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "0_B110"
+          ],
+          "subtitle": "어~서 오십시오, 신을 모독하는 연회에.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "0_B120"
+          ],
+          "subtitle": "흐흐흐하하하하하! \n빛나는 것이야말로 더럽혀져 떨어지는 법!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "0_B130"
+          ],
+          "subtitle": "이것으로 신에게 축복받은 영령이\n또 한 명 어둠 속으로…… 크흐흐흐흐…… ",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "0_B140"
+          ],
+          "subtitle": "네 놈!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "0_B150"
+          ],
+          "subtitle": "이 필부놈이이이이!!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "0_B160"
+          ],
+          "subtitle": "이걸로 저도, 한 명의 공물으로서…… ",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "0_B170"
+          ],
+          "subtitle": "아직이다. 아직 모독이 부족해!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "0_B180"
+          ],
+          "subtitle": "넵.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "0_B190"
+          ],
+          "subtitle": "맡겨주십시오.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "0_B200"
+          ],
+          "subtitle": "좋다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B210"
+          ],
+          "subtitle": "최고의 COOL을 보여드리도록 하죠!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B051"
+          ],
+          "subtitle": "흐하하하하하하하!!",
+          "text": [
+            "^0:0.7:E:흐하하하하하하하!!^1:0.7:2.15:흐하하하하하하하!!^1:2.16:E: "
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        }
+      ]
+    }
+  ]
+}

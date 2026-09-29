@@ -1,0 +1,171 @@
+{
+  "servant_id": "sv_0114_minamoto_no_raikou",
+  "source_id": 114,
+  "name_ko": "미나모토노 라이코",
+  "name_en": "Minamoto-no-Raikou",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/114?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "B",
+    "agi": "D",
+    "mana": "A",
+    "luck": "C",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2735,
+      "name": "genji"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 702300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34250,
+        "name": "대 마력 D",
+        "rank": null
+      },
+      {
+        "id": 54650,
+        "name": "광화 EX",
+        "rank": null
+      },
+      {
+        "id": 88551,
+        "name": "기승 A+",
+        "rank": null
+      },
+      {
+        "id": 62350,
+        "name": "신성 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 52551,
+        "name": "무궁의 무련 A+",
+        "rank": null
+      },
+      {
+        "id": 224550,
+        "name": "마력방출(번개) A",
+        "rank": null
+      },
+      {
+        "id": 225550,
+        "name": "신비 살해자 A",
+        "rank": null
+      },
+      {
+        "id": 614650,
+        "name": "겐지의 무련 EX",
+        "rank": null
+      },
+      {
+        "id": 2244551,
+        "name": "뇌신의 현 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 702301,
+      "name": "우왕초뢰 천망회회",
+      "ruby": "우왕초뢰 천망회회",
+      "rank": "B++",
+      "type": "대군보구"
+    },
+    {
+      "id": 702302,
+      "name": "우왕초뢰 천망회회",
+      "ruby": "우왕초뢰 천망회회",
+      "rank": "A+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7023000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/702300/702300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/702300/702300b@2.png"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "servant_id": "sv_0311_tam_lin_tristan",
+  "source_id": 311,
+  "name_ko": "바반 시",
+  "name_en": "Tam Lin Tristan",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/311?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "C",
+    "agi": "A",
+    "mana": "B",
+    "luck": "D",
+    "np": "E"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1177,
+      "name": "fae"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2019,
+      "name": "demonic"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 204300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34650,
+        "name": "대 마력 EX",
+        "rank": null
+      },
+      {
+        "id": 88550,
+        "name": "기승 A",
+        "rank": null
+      },
+      {
+        "id": 83550,
+        "name": "진지작성 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 883550,
+        "name": "그레이말킨 A",
+        "rank": null
+      },
+      {
+        "id": 884650,
+        "name": "축복받은 후계 EX",
+        "rank": null
+      },
+      {
+        "id": 885550,
+        "name": "요정흡혈 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 204301,
+      "name": "통환의 곡주",
+      "ruby": "페치・페일노트",
+      "rank": "E",
+      "type": "대인보구"
+    },
+    {
+      "id": 204302,
+      "name": "통환의 곡주",
+      "ruby": "페치・페일노트",
+      "rank": "C",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2043000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/204300/204300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/204300/204300b@2.png"
+  }
+}

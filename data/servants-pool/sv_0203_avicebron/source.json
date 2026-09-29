@@ -1,0 +1,123 @@
+{
+  "servant_id": "sv_0203_avicebron",
+  "source_id": 203,
+  "name_ko": "아비케브론",
+  "name_en": "Avicebron",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/203?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "D",
+    "mana": "A",
+    "luck": "B",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 503600,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83450,
+        "name": "진지작성 B",
+        "rank": null
+      },
+      {
+        "id": 80451,
+        "name": "도구작성 B+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 470450,
+        "name": "수비술 B",
+        "rank": null
+      },
+      {
+        "id": 90451,
+        "name": "고속영창 B+",
+        "rank": null
+      },
+      {
+        "id": 471650,
+        "name": "평온의 무화과 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 503601,
+      "name": "왕관 : 예지의 빛",
+      "ruby": "골렘・케테르 말쿠트",
+      "rank": "A+",
+      "type": "대군보구"
+    },
+    {
+      "id": 503602,
+      "name": "왕관 : 예지의 빛",
+      "ruby": "골렘・케테르 말쿠트",
+      "rank": "EX",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5036000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/503600/503600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/503600/503600b@2.png"
+  }
+}

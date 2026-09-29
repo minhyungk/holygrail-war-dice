@@ -1,0 +1,134 @@
+{
+  "servant_id": "sv_0253_leonardo_da_vinci",
+  "source_id": 253,
+  "name_ko": "레오나르도 다 빈치",
+  "name_en": "Leonardo da Vinci",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/253?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "B",
+    "mana": "A",
+    "luck": "A+",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2667,
+      "name": "childServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 403500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 88450,
+        "name": "기승 B",
+        "rank": null
+      },
+      {
+        "id": 83350,
+        "name": "진지작성 C",
+        "rank": null
+      },
+      {
+        "id": 659150,
+        "name": "오버홀 E",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 628650,
+        "name": "황금률(몸) EX",
+        "rank": null
+      },
+      {
+        "id": 629450,
+        "name": "액셀 턴 B",
+        "rank": null
+      },
+      {
+        "id": 630250,
+        "name": "별에 꿈을 D",
+        "rank": null
+      },
+      {
+        "id": 2426650,
+        "name": "만물의 궤적 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 403501,
+      "name": "경계를 넘는 자",
+      "ruby": "뷰티풀 저니",
+      "rank": "B",
+      "type": "대계보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4035000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/403500/403500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/403500/403500b@2.png"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "servant_id": "sv_0406_andromeda",
+  "source_id": 406,
+  "name_ko": "안드로메다",
+  "name_en": "Andromeda",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/406?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "B",
+    "mana": "C",
+    "luck": "A",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 405500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 88551,
+        "name": "기승 A+",
+        "rank": null
+      },
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      },
+      {
+        "id": 2322350,
+        "name": "영웅원망 C",
+        "rank": null
+      },
+      {
+        "id": 2323450,
+        "name": "수영능숙 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2324550,
+        "name": "카시오페이아의 딸 A",
+        "rank": null
+      },
+      {
+        "id": 2325550,
+        "name": "제물이 된 소녀 A",
+        "rank": null
+      },
+      {
+        "id": 2326650,
+        "name": "신탁쇄 네레이데스 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 405501,
+      "name": "그 바다에 잠든 고래룡",
+      "ruby": "아이티오피아・케투스",
+      "rank": "C",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4055000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/405500/405500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/405500/405500b@2.png"
+  }
+}

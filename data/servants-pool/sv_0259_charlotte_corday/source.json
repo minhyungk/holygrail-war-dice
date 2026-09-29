@@ -1,0 +1,116 @@
+{
+  "servant_id": "sv_0259_charlotte_corday",
+  "source_id": 259,
+  "name_ko": "샤를로트 코르데",
+  "name_en": "Charlotte Corday",
+  "class": "assassin",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/259?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "D",
+    "mana": "E",
+    "luck": "B+",
+    "np": "D"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 105,
+      "name": "classAssassin"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 401,
+      "name": "oneStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 603800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 50350,
+        "name": "기척 차단 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 644550,
+        "name": "암살의 천사 A",
+        "rank": null
+      },
+      {
+        "id": 172250,
+        "name": "강철의 결의 D",
+        "rank": null
+      },
+      {
+        "id": 645251,
+        "name": "엉터리 플래닝 D+",
+        "rank": null
+      },
+      {
+        "id": 2379350,
+        "name": "하늘의 뜻(암살) C",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 603801,
+      "name": "고국에 사랑을, 잠겨드는 듯한 꿈을",
+      "ruby": "라 레브 앙솔레예",
+      "rank": "C",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6038000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/603800/603800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/603800/603800b@2.png"
+  }
+}

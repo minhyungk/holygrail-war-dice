@@ -1,0 +1,537 @@
+{
+  "origin": "Atlas Academy KR nice API",
+  "groups": [
+    {
+      "type": "home",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "인연 Lv.1",
+          "ids": [
+            "0_H090",
+            "0_H091"
+          ],
+          "subtitle": "사사키 코지로라고 이름을 댔지만, 글쎄…… \n그것이 소인의 진실인가 어떤가는 스스로도 알 수 없는데.\n으음, 칼에 목숨을 바친 괴짜다운 말로로군.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 1
+        },
+        {
+          "name": "인연 Lv.2",
+          "ids": [
+            "0_H100",
+            "0_H101"
+          ],
+          "subtitle": "마스터에게 불만은 없는데? \n그대에게는 마술사 특유의 교만이 없다. 난 그게 마음에 드는군.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 2
+        },
+        {
+          "name": "인연 Lv.3",
+          "ids": [
+            "0_H110",
+            "0_H111"
+          ],
+          "subtitle": "소인에게도 자유인이라는 자각은 있지만, 주공도 대단하군. \n세계를 구한다는 사명을 짊어졌으면서도 여전히 경쾌한 행동거지라니. \n아니, 좋다. 실로 좋아.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 3
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H120",
+            "0_H121"
+          ],
+          "subtitle": "도구에는 도구의 행복이 있지. \n나는 인간으로서 망가진 몸인지라, \n그대 같은 사람이 써주는 편이 기분 좋아.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H130",
+            "0_H131",
+            "0_H132",
+            "0_H133"
+          ],
+          "subtitle": "어떤가, 가끔은 달을 안주 삼아서 술자리라도…. \n뭐라고, 미성년? 아직 못 마시나? \n그거 아쉽군. 그럼 앞으로 몇 년, 느긋하게 기다리도록 할까? \n그때까지 나 코지로, 계속해서 그대를 지키는 검으로 있지.",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        },
+        {
+          "name": "대화 1",
+          "ids": [
+            "0_H030"
+          ],
+          "subtitle": "슬슬 출발인가? 이쪽은 준비되어 있소.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 12
+        },
+        {
+          "name": "대화 2",
+          "ids": [
+            "0_H040"
+          ],
+          "subtitle": "불만은 없느냐고? 이렇다 하고 내세울 무예도 없는 몸. \n마스터의 지시에 따르지.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 13
+        },
+        {
+          "name": "대화 3",
+          "ids": [
+            "0_H050"
+          ],
+          "subtitle": "나를 그저 한 자루의 검 정도로 여기면 되오.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 14
+        },
+        {
+          "name": "좋아하는 것",
+          "ids": [
+            "0_H060"
+          ],
+          "subtitle": "바라는 것 말인가? 그저 매일같이 검을 휘두르는 것으로 만족이네만.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 15
+        },
+        {
+          "name": "싫어하는 것",
+          "ids": [
+            "0_H070"
+          ],
+          "subtitle": "무엇을 혐오하느냐고? 추악한 것은 봐주기 힘들지. \n모습이 아니라 마음의 이야기요.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 16
+        },
+        {
+          "name": "성배에 대하여",
+          "ids": [
+            "0_H080"
+          ],
+          "subtitle": "성배…… 달구경에는 너무 거창한 술잔이로군. \n차라리 해골 쪽이 멋이 있겠어.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 17
+        },
+        {
+          "name": "대화 4",
+          "ids": [
+            "0_H140",
+            "0_H141",
+            "0_H142"
+          ],
+          "subtitle": "어찌된 운명인지 또다시 그 여우와 연이 닿을 줄이야…… \n그런데 캐스터 녀석, 조금…… 아니, 완전히 다른 사람처럼 변하지 않았나?\n으음…… 이런 말은 하고 싶지 않지만…… 사랑스럽군.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 18
+        },
+        {
+          "name": "대화 5",
+          "ids": [
+            "0_H150",
+            "0_H151"
+          ],
+          "subtitle": "아니, 소인은 진짜 코지로가 아니기 때문에, \n저 검성님과 만난 적은 없지만……\n실제는 소설보다 기묘하다고 할까? \n대련을 해보고 싶으면서도 아닌 듯한……",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 19
+        },
+        {
+          "name": "이벤트 개최중",
+          "ids": [
+            "0_H020"
+          ],
+          "subtitle": "음……? 심상치 않은 이 기운……",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 11
+        },
+        {
+          "name": "생일",
+          "ids": [
+            "0_H010"
+          ],
+          "subtitle": "오늘이 주공의 축일이었는가? 좋은 하루가 되면 좋겠군.",
+          "text": [
+            ""
+          ],
+          "cond_type": "birthDay",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "0_G010"
+          ],
+          "subtitle": "흠, 남자다움이 늘었을까?",
+          "text": [
+            "흠, 남자다움이 늘었을까?"
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 2",
+          "ids": [
+            "0_G020"
+          ],
+          "subtitle": "검술의 폭이 넓어진 모양이다.",
+          "text": [
+            "검술의 폭이 넓어진 모양이다."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 1",
+          "ids": [
+            "0_G030"
+          ],
+          "subtitle": "달을 보며 한 잔. 이야, 정말 축하할 일이군.",
+          "text": [
+            "달을 보며 한 잔. 이야, 정말 축하할 일이군."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 1
+        },
+        {
+          "name": "영기재림 3",
+          "ids": [
+            "0_G040"
+          ],
+          "subtitle": "상쾌하군, 마스터.",
+          "text": [
+            "상쾌하군, 마스터."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 3
+        },
+        {
+          "name": "영기재림 4",
+          "ids": [
+            "0_G050",
+            "0_G051"
+          ],
+          "subtitle": "검기가 정묘한 경지에 이르렀군. 감사를 표하겠소, \n마스터. 나의 검, 마음껏 쓰도록!",
+          "text": [
+            "검기가 정묘한 경지에 이르렀군.",
+            " 감사를 표하겠소, 마스터. 나의 검, 마음껏 쓰도록!"
+          ],
+          "cond_type": "svtCountStop",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "firstGet",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "소환",
+          "ids": [
+            "0_S010"
+          ],
+          "subtitle": "어쌔신 서번트, 사사키 코지로.\n여기 대령하였소.",
+          "text": [
+            "어쌔신 서번트, 사사키 코지로. [r]여기 대령하였소."
+          ],
+          "cond_type": "svtGet",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "공격 1",
+          "ids": [
+            "0_B010"
+          ],
+          "subtitle": "흐읏.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "0_B020"
+          ],
+          "subtitle": "하아앗!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "0_B030"
+          ],
+          "subtitle": "느리군!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B040"
+          ],
+          "subtitle": "실력을 보여줄 때가 왔군!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "0_B080"
+          ],
+          "subtitle": "자, 공격할 때라고 봤는데, 어떤가.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "0_B090"
+          ],
+          "subtitle": "석화춘뢰, 단칼로 그 증거를 보이지.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 1",
+          "ids": [
+            "0_B100"
+          ],
+          "subtitle": "그럼 붙어보실까.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "0_B110"
+          ],
+          "subtitle": "베어낼 보람이 있는 머리로다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "0_B120"
+          ],
+          "subtitle": "굳은 일념이면 귀신에까지 이른다. 인간의 몸이라고 얕봤군.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "0_B130"
+          ],
+          "subtitle": "도신에 비틀림이 없군. 흠 하나 나지 않았다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "0_B140"
+          ],
+          "subtitle": "치잇.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "0_B150"
+          ],
+          "subtitle": "뭐라고……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "0_B160"
+          ],
+          "subtitle": "싱거웠다……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "0_B170"
+          ],
+          "subtitle": "불찰이었군……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "0_B180"
+          ],
+          "subtitle": "알겠다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "0_B190"
+          ],
+          "subtitle": "훗.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "0_B200"
+          ],
+          "subtitle": "알았다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B210"
+          ],
+          "subtitle": "───여기가 승부처로군.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B050"
+          ],
+          "subtitle": "비검── 츠바메가에시.",
+          "text": [
+            "비검── 츠바메가에시."
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        }
+      ]
+    }
+  ]
+}

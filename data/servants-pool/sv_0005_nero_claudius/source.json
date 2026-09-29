@@ -1,0 +1,162 @@
+{
+  "servant_id": "sv_0005_nero_claudius",
+  "source_id": 5,
+  "name_ko": "네로 클라우디우스",
+  "name_en": "Nero Claudius",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/5?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "A",
+    "mana": "B",
+    "luck": "A",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2004,
+      "name": "roman"
+    },
+    {
+      "id": 2007,
+      "name": "saberface"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 100500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      },
+      {
+        "id": 88450,
+        "name": "기승 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 86450,
+        "name": "두통 환자 B",
+        "rank": null
+      },
+      {
+        "id": 56650,
+        "name": "황제특권 EX",
+        "rank": null
+      },
+      {
+        "id": 154550,
+        "name": "세 번, 낙일을 맞이할지라도 A",
+        "rank": null
+      },
+      {
+        "id": 583450,
+        "name": "부의 잔 B",
+        "rank": null
+      },
+      {
+        "id": 2215650,
+        "name": "황제특권(갈채) EX",
+        "rank": null
+      },
+      {
+        "id": 154650,
+        "name": "세 번, 낙일을 맞이할지라도 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 100501,
+      "name": "여자아이가 노래하는 꽃의 제정",
+      "ruby": "라우스 상트 클라우디우스",
+      "rank": "B-",
+      "type": "대진보구"
+    },
+    {
+      "id": 100502,
+      "name": "여자아이가 노래하는 꽃의 제정",
+      "ruby": "라우스 상트 클라우디우스",
+      "rank": "B",
+      "type": "대진보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1005000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/100500/100500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/100500/100500b@2.png"
+  }
+}

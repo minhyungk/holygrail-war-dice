@@ -1,0 +1,137 @@
+{
+  "servant_id": "sv_0033_hans_christian_andersen",
+  "source_id": 33,
+  "name_ko": "한스 크리스티안 안데르센",
+  "name_en": "Hans Christian Andersen",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/33?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "E",
+    "mana": "EX",
+    "luck": "E",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 402,
+      "name": "twoStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2667,
+      "name": "childServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 500500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83250,
+        "name": "진지작성 D",
+        "rank": null
+      },
+      {
+        "id": 80350,
+        "name": "도구작성 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 11550,
+        "name": "인간관찰 A",
+        "rank": null
+      },
+      {
+        "id": 90150,
+        "name": "고속영창 E",
+        "rank": null
+      },
+      {
+        "id": 53250,
+        "name": "무고의 괴물 D",
+        "rank": null
+      },
+      {
+        "id": 11552,
+        "name": "인간관찰 A++",
+        "rank": null
+      },
+      {
+        "id": 580650,
+        "name": "인어공주의 사랑 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 500501,
+      "name": "당신을 위한 이야기",
+      "ruby": "메르헨 마이네스 레이벤스",
+      "rank": "C",
+      "type": "대인보구"
+    },
+    {
+      "id": 500502,
+      "name": "당신을 위한 이야기",
+      "ruby": "메르헨 마이네스 레이벤스",
+      "rank": "C+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5005000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/500500/500500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/500500/500500b@2.png"
+  }
+}

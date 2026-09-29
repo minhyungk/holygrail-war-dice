@@ -1,0 +1,929 @@
+{
+  "origin": "Atlas Academy KR nice API",
+  "groups": [
+    {
+      "type": "home",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "생일",
+          "ids": [
+            "0_H010",
+            "0_H011",
+            "0_H012",
+            "0_H013"
+          ],
+          "subtitle": "생일인가…… 이 꾸러미 안의 것은 크리스마스용이지만…… \n어쩔 수 없지. 여기, 미묘한 얼굴을 한 기관차 장난감을 주마.",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "birthDay",
+          "cond_value": 0
+        },
+        {
+          "name": "이벤트 개최중",
+          "ids": [
+            "0_H020",
+            "0_H021"
+          ],
+          "subtitle": "축제가 시작된 것 같군. 우리가 나갈 차례다, 순록.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 11
+        },
+        {
+          "name": "대화 1",
+          "ids": [
+            "0_H030",
+            "0_H031"
+          ],
+          "subtitle": "나는 밖으로 나가 선물을 모으러 가고 싶다. \n꾸준한 작업이 미소를 만드는 법이지.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 12
+        },
+        {
+          "name": "대화 2",
+          "ids": [
+            "0_H040",
+            "0_H041"
+          ],
+          "subtitle": "주종 관계…… \n내가 산타이고 네놈이 순록이라는 계약이 아니었나?",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 13
+        },
+        {
+          "name": "대화 3",
+          "ids": [
+            "0_H050",
+            "0_H051",
+            "0_H052"
+          ],
+          "subtitle": "내가 너를 위해 싸우는 것이 아니다. \n네가 나를 위해 길을 밝히는 것이다. \n자, 다음 선물 뿌리기 계획을 짜거라.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 14
+        },
+        {
+          "name": "좋아하는 것",
+          "ids": [
+            "0_H060",
+            "0_H061"
+          ],
+          "subtitle": "좋아하는 것은 강한 것이다. \n잘 망가지지 않는 장난감만큼 뛰어난 장난감은 없으니까.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 15
+        },
+        {
+          "name": "싫어하는 것",
+          "ids": [
+            "0_H070",
+            "0_H071"
+          ],
+          "subtitle": "싫어하는 것은 약한 것이다. \n살짝 만지기만 했는데도 손발이 떨어지는 인형 따위는 \n존재가치가 없으니까.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 16
+        },
+        {
+          "name": "성배에 대하여",
+          "ids": [
+            "0_H080",
+            "0_H081",
+            "0_H082"
+          ],
+          "subtitle": "성배에 대해? \n……예를 들면, 퍼도 퍼도 캔디가 바닥을 보이지 않는 \n마법의 바구니 같은 것인가? \n네놈. 그런 것이 있으면 내가 나설 차례가 사라지지 않느냐. \n몰수하겠다.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 17
+        },
+        {
+          "name": "인연 Lv.1",
+          "ids": [
+            "0_H090",
+            "0_H091",
+            "0_H092",
+            "0_H093"
+          ],
+          "subtitle": "세이버로서의 자세는 봉인했다. \n나는 순록이라는 마스터에 올라타는 라이더. \n성야에 나타난, 한바탕 불어대는 거센 바람에 불과하다. \n……흥분되기 시작했군.",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 1
+        },
+        {
+          "name": "인연 Lv.2",
+          "ids": [
+            "0_H100",
+            "0_H101",
+            "0_H102",
+            "0_H103"
+          ],
+          "subtitle": "이 꾸러미에는 꿈과 희망이 채워져 있다. \n내가 일 년에 걸쳐 엄선한, \n미묘하게 이건 좀 아니다 싶은 장난감의 정수라 할 수 있지. \n후, 후후후…… 나눠주는 것이 기대되기 시작했지?",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 2
+        },
+        {
+          "name": "인연 Lv.3",
+          "ids": [
+            "0_H110",
+            "0_H111",
+            "0_H112",
+            "0_H113"
+          ],
+          "subtitle": "크리스마스에는 별생각이 없지만, 칠면조는 좋다. 매우 좋아. \n그 소박하고 투박하고 기름이 번들번들한 것이 참을 수가 없다. \n요리란 그래야 하는 것이지.",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 3
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H120",
+            "0_H121",
+            "0_H122",
+            "0_H123"
+          ],
+          "subtitle": "……사실을 말하자면 왜 산타인지, 나도 의문이다. \n굳이 말하자면 난 받고 싶은 쪽이지, 주고 싶은 쪽이 아니야. \n……하지만……순록인 네가 기뻐한다면 임무를 게을리할 수는 없지……",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H130",
+            "0_H131",
+            "0_H132",
+            "0_H133",
+            "0_H134",
+            "0_H135"
+          ],
+          "subtitle": "이제 곧 아침이 밝는다…… 나의 잠깐의 임무도 끝나버리겠군……\n선물주머니 안도 슬슬 바닥이 보이기 시작했다. \n……하지만, 그래. 모두 사라지기 전에 너에게 이걸 주지. \n내가 특별히 아꼈던 용 장난감이다. 소중히 해라.",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        },
+        {
+          "name": "대화 4",
+          "ids": [
+            "0_H140",
+            "0_H141",
+            "0_H142",
+            "0_H143"
+          ],
+          "subtitle": "호오. 할로윈을 축하하는 서번트도 있는 건가. \n나보다 반짝반짝 꾸미고 있구나. ……꾸미고 있어. \n좋아. 저녁은 드래곤 스테이크로 하지.",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 18
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "0_G010",
+            "0_G011"
+          ],
+          "subtitle": "멀었다. 게으름 피우지 마.",
+          "text": [
+            "멀었다.",
+            "게으름 피우지 마."
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 2",
+          "ids": [
+            "0_G020",
+            "0_G021"
+          ],
+          "subtitle": "나쁘지 않아. 더 많은 장난감을 들 수 있는걸.",
+          "text": [
+            "나쁘지 않아.",
+            "더 많은 장난감을 들 수 있는걸."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 1",
+          "ids": [
+            "0_G030",
+            "0_G031"
+          ],
+          "subtitle": "이 모습은 마음에 들어. 나는 절대 갈아입지 않아.",
+          "text": [
+            "이 모습은 마음에 들어.",
+            "나는 절대 갈아입지 않아."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 1
+        },
+        {
+          "name": "영기재림 3",
+          "ids": [
+            "0_G040",
+            "0_G041",
+            "0_G042"
+          ],
+          "subtitle": "춥지 않냐고? 물론, 춥다. \n하지만 고난을 버텨내야지만 산타라 할 수 있겠지.",
+          "text": [
+            "춥지 않냐고?",
+            "물론, 춥다.",
+            "하지만 고난을 버텨내야지만 산타라 할 수 있겠지."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 3
+        },
+        {
+          "name": "영기재림 4",
+          "ids": [
+            "0_G050",
+            "0_G051",
+            "0_G052",
+            "0_G053"
+          ],
+          "subtitle": "이건…… 무슨……\n이렇게 많은 선물에 둘러싸인 것은 네 덕분이다, 순록. \n음…… 계속 이러고 있고 싶지만, \n이건 전 세계 아이들의 것…… 산타란 힘든 시련이구나……",
+          "text": [
+            "이건…… 무슨……",
+            "이렇게 많은 선물에 둘러싸인 것은 네 덕분이다, 순록.",
+            "음…… 계속 이러고 있고 싶지만, 이건 전 세계 아이들의 것……",
+            "산타란 힘든 시련이구나……"
+          ],
+          "cond_type": "svtCountStop",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "firstGet",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "소환",
+          "ids": [
+            "0_S010",
+            "0_S011",
+            "0_S012"
+          ],
+          "subtitle": "메리, 굴뚝에서 실례.\n소환에 응해 찾아온 산타클로스 누나다.\n네가 나의 순록이군?",
+          "text": [
+            "메리! 굴뚝에서 실례.",
+            "[r]\n소환에 응해 찾아온 산타클로스 누나다.",
+            "[r]\n네가 나의 순록이군?"
+          ],
+          "cond_type": "svtGet",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "eventReward",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "이벤트에 대해 1",
+          "ids": [
+            "0_N010"
+          ],
+          "subtitle": "메리 크리스마스. 1년에 한 번뿐인 성탄절이다, 즐기도록 해라.",
+          "text": [
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "이벤트에 대해 2",
+          "ids": [
+            "0_N020"
+          ],
+          "subtitle": "모처럼이니 성대모사 개인기를 해보려고 한다. \n─── 크흠. 간다, 구다구다 왕. 저장된 선물은 충분한가?",
+          "text": [
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "이벤트에 대해 3",
+          "ids": [
+            "0_N030"
+          ],
+          "subtitle": "잘 왔다, 순록. 자, 오늘도 퀘스트를 돌 시간이다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "이벤트에 대해 4",
+          "ids": [
+            "0_N040"
+          ],
+          "subtitle": "산타로부터의 알림이다. 귀찮아하지 말고 제대로 읽어 둬.",
+          "text": [
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "이벤트에 대해 5",
+          "ids": [
+            "0_N050"
+          ],
+          "subtitle": "특이점 사이로~, 썰매를 타고~, 달리는 기분~, 상쾌도 하다~♪",
+          "text": [
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "이벤트에 대해 6",
+          "ids": [
+            "0_N060"
+          ],
+          "subtitle": "특이점 사이로~, 썰매를 타고~, 달리는 기분~, 상쾌도 하다~♪",
+          "text": [
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "이벤트에 대해 7",
+          "ids": [
+            "0_N070"
+          ],
+          "subtitle": "올해 크리스마스도 끝이다. \n열심히 해 주었다. \n하지만, 세계가 계속되는 한 크리스마스 또한 계속되겠지. \n─── 내년에도 내 다리가 되어 활약해라. \n그런데, 남은 양말이 있다면 받도록 하지.",
+          "text": [
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "공격 1",
+          "ids": [
+            "0_B010"
+          ],
+          "subtitle": "음",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "0_B020"
+          ],
+          "subtitle": "축복해라",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "0_B030"
+          ],
+          "subtitle": "안 줄 거다",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B040"
+          ],
+          "subtitle": "착한 아이로 지냈나?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "0_B080"
+          ],
+          "subtitle": "……꾸러미가 무겁군……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "0_B090"
+          ],
+          "subtitle": "순록에 탄다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 1",
+          "ids": [
+            "0_B100"
+          ],
+          "subtitle": "기도는 끝났나?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "0_B110"
+          ],
+          "subtitle": "칠면조로 만들어 주지",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "0_B120"
+          ],
+          "subtitle": "굴뚝을 찾아야……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "0_B130"
+          ],
+          "subtitle": "생각보다 고된 노동이군……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "0_B150"
+          ],
+          "subtitle": "선물이……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "0_B160"
+          ],
+          "subtitle": "아이들을 위해…… 쓰러질 수는……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "0_B170"
+          ],
+          "subtitle": "징글…… 징글……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "0_B180"
+          ],
+          "subtitle": "좋다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "0_B190"
+          ],
+          "subtitle": "맡겨둬라.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "0_B200"
+          ],
+          "subtitle": "훗.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B210"
+          ],
+          "subtitle": "샴페인 준비는 되었나? 선물 시간이다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B220"
+          ],
+          "subtitle": "샴페인 준비는 되었나?",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 5
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B230"
+          ],
+          "subtitle": "선물 시간이다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 6
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B050",
+            "0_B051",
+            "0_B052",
+            "0_B053",
+            "0_B054"
+          ],
+          "subtitle": "산타의 선물이다───\n성야에 잠겨라, 엑스칼리버 모르간!",
+          "text": [
+            "산타의 선물이다───",
+            "성야에 잠겨라",
+            "엑스칼리버",
+            "모르간!",
+            " "
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        }
+      ]
+    },
+    {
+      "type": "eventShop",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "상점에 대해 1",
+          "ids": [
+            "0_I010",
+            "0_I011",
+            "0_I012"
+          ],
+          "subtitle": "메리 크리스마스! \n조금 이르지만 신경 쓰지 마라! \n오히려 일 년 내내 크리스마스다!",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "상점에 대해 2",
+          "ids": [
+            "0_I020",
+            "0_I021"
+          ],
+          "subtitle": "라이트 버전이라도 좋아. 씩씩하게 메리해 주길 바란다. \n여기서 얻은 선물은 너만의 것이다.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "상점에 대해 3",
+          "ids": [
+            "0_I030"
+          ],
+          "subtitle": "좋은 것을 고르는구나, 순록. \n네 감정 능력도 성장한 것처럼 보이는군.",
+          "text": [
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "상점에 대해 4",
+          "ids": [
+            "0_I040",
+            "0_I041"
+          ],
+          "subtitle": "사양 말고 더 교환하도록 해. \n내 선물주머니 안에는 아직 얼마든지 남아 있다.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "상점에 대해 5",
+          "ids": [
+            "0_I050",
+            "0_I051"
+          ],
+          "subtitle": "양말은 준비되어 있겠지? \n산타에게 답례로 과자를 넣어두는 것의 예의다.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "상점에 대해 6",
+          "ids": [
+            "0_I060",
+            "0_I061"
+          ],
+          "subtitle": "올해도 나의 다리가 되어 잘 활약해 주었다. \n남은 건 뒤탈이 없도록 아이템 교환을 잊지 말아라.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "상점에 대해 11",
+          "ids": [
+            "0_I110",
+            "0_I111",
+            "0_I112"
+          ],
+          "subtitle": "아이들이 있는 한, 그리고 칠면조가 있는 한, \n크리스마스는 반드시 찾아온다. \n순록이여, 또 만나자. 메리 크리스마스!",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "boxGachaTalk",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "상점에 대해 1",
+          "ids": [
+            "0_I5010"
+          ],
+          "subtitle": "",
+          "text": [
+            "매일매일 일하고 있구나, 순록. [r]\n보상이다. 선물을 주도록 하지."
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "상점에 대해 2",
+          "ids": [
+            "0_I5020"
+          ],
+          "subtitle": "",
+          "text": [
+            "보답받지 못하기에 내일이 있다.[r]\n낙심하지 마라. 아직 더 일할 수 있다고 생각해주었으면 한다."
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "상점에 대해 3",
+          "ids": [
+            "0_I5030"
+          ],
+          "subtitle": "",
+          "text": [
+            "좋아, 양말을 모아왔구나. [r] 이번 경품은 [line 3]"
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "상점에 대해 4",
+          "ids": [
+            "0_I5040"
+          ],
+          "subtitle": "",
+          "text": [
+            "굿럭 순록.[r]\n기대했던 대로의 결과다. 너는 최고야."
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "상점에 대해 5",
+          "ids": [
+            "0_I5050"
+          ],
+          "subtitle": "",
+          "text": [
+            "착한 아이의 추첨 시간이다. [r]아무 생각말고 돌려라. 회전 수가 전부다."
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "상점에 대해 6",
+          "ids": [
+            "0_I5060"
+          ],
+          "subtitle": "",
+          "text": [
+            "선물은 좋군, 내용물이 무엇이든 마음을 가득 채워줘……[r] 그렇게 생각하지 않나? ……그렇지 않은 건가."
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "상점에 대해 7",
+          "ids": [
+            "0_I5070"
+          ],
+          "subtitle": "",
+          "text": [
+            "쇼케이스 안의 트럼펫을 보는 기분이군. [r] 손에 넣을 수 없기에, 울적해지는 것도 있지."
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "상점에 대해 8",
+          "ids": [
+            "0_I5080"
+          ],
+          "subtitle": "",
+          "text": [
+            "이것으로 파티를 단련하는 것이 좋겠어.[r] 싸움은 포기할 때까지 계속되니까."
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "상점에 대해 9",
+          "ids": [
+            "0_I5090"
+          ],
+          "subtitle": "",
+          "text": [
+            "......"
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "상점에 대해 10",
+          "ids": [
+            "0_I5100"
+          ],
+          "subtitle": "",
+          "text": [
+            "잭팟! 잘 뽑았다, 순록![r]\n나도 기쁘다, 오늘 밤은 성대하게 축하하는 게 좋겠군!"
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        }
+      ]
+    }
+  ]
+}

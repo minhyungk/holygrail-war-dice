@@ -1,0 +1,126 @@
+{
+  "servant_id": "sv_0415_kuonji_alice",
+  "source_id": 415,
+  "name_ko": "쿠온지 아리스",
+  "name_en": "Kuonji Alice",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/415?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "B+",
+    "agi": "E",
+    "mana": "A++",
+    "luck": "A",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2654,
+      "name": "livingHuman"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 505500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83550,
+        "name": "진지작성 A",
+        "rank": null
+      },
+      {
+        "id": 80550,
+        "name": "도구작성 A",
+        "rank": null
+      },
+      {
+        "id": 2348450,
+        "name": "전승방어 B",
+        "rank": null
+      },
+      {
+        "id": 2342350,
+        "name": "유미나 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2358550,
+        "name": "밤의 향연 A",
+        "rank": null
+      },
+      {
+        "id": 2359350,
+        "name": "다리의 거인 C",
+        "rank": null
+      },
+      {
+        "id": 2344150,
+        "name": "울새의 살인 E",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 505501,
+      "name": "동화의 괴물, 달의 기름",
+      "ruby": "그레이트 쓰리, 플랫 스나크",
+      "rank": "A+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5055000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/505500/505500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/505500/505500b@2.png"
+  }
+}

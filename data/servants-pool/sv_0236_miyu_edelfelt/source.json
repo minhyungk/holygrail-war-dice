@@ -1,0 +1,131 @@
+{
+  "servant_id": "sv_0236_miyu_edelfelt",
+  "source_id": 236,
+  "name_ko": "미유 에델펠트",
+  "name_en": "Miyu Edelfelt",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/236?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "D",
+    "agi": "C",
+    "mana": "A",
+    "luck": "C",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2654,
+      "name": "livingHuman"
+    },
+    {
+      "id": 2667,
+      "name": "childServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 504100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 288450,
+        "name": "무한의 마력공급 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 577550,
+        "name": "유쾌형 마술예장(여동생) A",
+        "rank": null
+      },
+      {
+        "id": 290450,
+        "name": "소녀의 고집 B",
+        "rank": null
+      },
+      {
+        "id": 579650,
+        "name": "신의 아이의 소원 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 504101,
+      "name": "밤하늘을 비추어라, 지상의 삭월",
+      "ruby": "별에 소원을",
+      "rank": "EX",
+      "type": "대인~대계보구"
+    },
+    {
+      "id": 504102,
+      "name": "밤하늘을 비추어라, 지상의 삭월",
+      "ruby": "별에 소원을",
+      "rank": "EX",
+      "type": "대인~대계보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5041000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/504100/504100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/504100/504100b@2.png"
+  }
+}

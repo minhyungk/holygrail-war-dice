@@ -1,0 +1,126 @@
+{
+  "servant_id": "sv_0368_britomart",
+  "source_id": 368,
+  "name_ko": "브리토마트",
+  "name_en": "Britomart",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/368?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "A+",
+    "agi": "C",
+    "mana": "B",
+    "luck": "B+",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1177,
+      "name": "fae"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 305300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34451,
+        "name": "대 마력 B+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2157351,
+        "name": "여왕성새・파도개각 C+",
+        "rank": null
+      },
+      {
+        "id": 2158550,
+        "name": "정숙의 미덕 A",
+        "rank": null
+      },
+      {
+        "id": 2159350,
+        "name": "요정기사(요정향) C",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 305301,
+      "name": "요정기사・마풍돌격",
+      "ruby": "페네트레이트・블레이더드",
+      "rank": "B",
+      "type": "대인/대군보구"
+    },
+    {
+      "id": 305302,
+      "name": "요정기사・마풍돌격",
+      "ruby": "페네트레이트・블레이더드",
+      "rank": "B+",
+      "type": "대인/대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3053000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/305300/305300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/305300/305300b@2.png"
+  }
+}

@@ -14,7 +14,9 @@ const masters = readdirSync(join(ROOT, 'data/masters'));
 const dialogueFiles = [
   ...servants.map((id) => `data/servants/${id}/dialogue.json`),
   ...masters.map((id) => `data/masters/${id}/dialogue.json`),
+  ...readdirSync(join(ROOT, 'data/classes')).map((c) => `data/classes/${c}/dialogue.json`),
   'data/common/narrator.json',
+  'data/common/speech.json',
 ];
 
 describe('폴더와 ID', () => {

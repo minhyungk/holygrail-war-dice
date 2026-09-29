@@ -1,0 +1,140 @@
+{
+  "servant_id": "sv_0010_chevalier_d_eon",
+  "source_id": 10,
+  "name_ko": "슈발리에 데옹",
+  "name_en": "Chevalier d'Eon",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/10?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "B",
+    "agi": "B",
+    "mana": "C",
+    "luck": "A",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 3,
+      "name": "genderUnknown"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2356,
+      "name": "feminineLookingServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 102600,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      },
+      {
+        "id": 88450,
+        "name": "기승 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 37350,
+        "name": "심안(진짜) C",
+        "rank": null
+      },
+      {
+        "id": 72550,
+        "name": "자기암시 A",
+        "rank": null
+      },
+      {
+        "id": 96350,
+        "name": "아름다운 풍모 C",
+        "rank": null
+      },
+      {
+        "id": 2447551,
+        "name": "흰 백합에 빛을 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 102601,
+      "name": "백합꽃 활짝 피는 호화찬란",
+      "ruby": "플뢰르 드 리스",
+      "rank": "C",
+      "type": "대군보구"
+    },
+    {
+      "id": 102602,
+      "name": "백합꽃 활짝 피는 호화찬란",
+      "ruby": "플뢰르 드 리스",
+      "rank": "C+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1026000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/102600/102600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/102600/102600b@2.png"
+  }
+}

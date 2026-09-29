@@ -1,0 +1,153 @@
+{
+  "servant_id": "sv_0003_altria_pendragon_alter",
+  "source_id": 3,
+  "name_ko": "알트리아 펜드래곤(얼터)",
+  "name_en": "Altria Pendragon (Alter)",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/3?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "A",
+    "agi": "D",
+    "mana": "A++",
+    "luck": "C",
+    "np": "A++"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2002,
+      "name": "dragon"
+    },
+    {
+      "id": 2007,
+      "name": "saberface"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2010,
+      "name": "arthur"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2795,
+      "name": "knightsOfTheRound"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 2883,
+      "name": "FSNServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 100200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 92550,
+        "name": "마력방출 A",
+        "rank": null
+      },
+      {
+        "id": 57450,
+        "name": "직감 B",
+        "rank": null
+      },
+      {
+        "id": 5150,
+        "name": "카리스마 E",
+        "rank": null
+      },
+      {
+        "id": 2241550,
+        "name": "마력방출(역린) A",
+        "rank": null
+      },
+      {
+        "id": 713550,
+        "name": "초저녁의 별 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 100201,
+      "name": "약속된 승리의 검",
+      "ruby": "엑스칼리버 모르간",
+      "rank": "A++",
+      "type": "대성보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1002000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/100200/100200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/100200/100200b@2.png"
+  }
+}

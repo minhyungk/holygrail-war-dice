@@ -1,0 +1,120 @@
+{
+  "servant_id": "sv_0228_qin_liangyu",
+  "source_id": 228,
+  "name_ko": "진양옥",
+  "name_en": "Qin Liangyu",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/228?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "B",
+    "agi": "A",
+    "mana": "D",
+    "luck": "A",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 303500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 545450,
+        "name": "백간창 B",
+        "rank": null
+      },
+      {
+        "id": 546450,
+        "name": "충사의 상 B",
+        "rank": null
+      },
+      {
+        "id": 547450,
+        "name": "도적타파 B",
+        "rank": null
+      },
+      {
+        "id": 2142550,
+        "name": "악한타파 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 303501,
+      "name": "숭정제사시가",
+      "ruby": "무욕이자 충의의 노래",
+      "rank": "B",
+      "type": "대인보구(자신)"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3035000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/303500/303500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/303500/303500b@2.png"
+  }
+}

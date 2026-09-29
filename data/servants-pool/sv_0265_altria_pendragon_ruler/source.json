@@ -1,0 +1,158 @@
+{
+  "servant_id": "sv_0265_altria_pendragon_ruler",
+  "source_id": 265,
+  "name_ko": "알트리아 펜드래곤",
+  "name_en": "Altria Pendragon (Ruler)",
+  "class": "ruler",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/265?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "A+",
+    "agi": "B",
+    "mana": "A",
+    "luck": "B",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 108,
+      "name": "classRuler"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 308,
+      "name": "alignmentSummer"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2002,
+      "name": "dragon"
+    },
+    {
+      "id": 2007,
+      "name": "saberface"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2010,
+      "name": "arthur"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2795,
+      "name": "knightsOfTheRound"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 900900,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 83450,
+        "name": "진지작성 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 666550,
+        "name": "로열 버니 A",
+        "rank": null
+      },
+      {
+        "id": 667351,
+        "name": "로열 카드 C+",
+        "rank": null
+      },
+      {
+        "id": 668450,
+        "name": "사자의 기사 B",
+        "rank": null
+      },
+      {
+        "id": 667451,
+        "name": "로열 카드 B+",
+        "rank": null
+      },
+      {
+        "id": 668551,
+        "name": "사자의 기사 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 900901,
+      "name": "찬란할지어다, 나의 빛나는 연회장",
+      "ruby": "브라이트 에항웬",
+      "rank": "A+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_9009000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/900900/900900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/900900/900900b@2.png"
+  }
+}

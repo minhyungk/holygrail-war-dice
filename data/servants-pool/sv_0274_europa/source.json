@@ -1,0 +1,154 @@
+{
+  "servant_id": "sv_0274_europa",
+  "source_id": 274,
+  "name_ko": "에우로페",
+  "name_en": "Europa",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/274?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "D",
+    "mana": "B",
+    "luck": "A+",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2797,
+      "name": "divineSpirit"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 404000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      },
+      {
+        "id": 88551,
+        "name": "기승 A+",
+        "rank": null
+      },
+      {
+        "id": 62350,
+        "name": "신성 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 702450,
+        "name": "무구의 공주 B",
+        "rank": null
+      },
+      {
+        "id": 703551,
+        "name": "주신의 총애 A+",
+        "rank": null
+      },
+      {
+        "id": 704350,
+        "name": "주신의 흰 황소 C",
+        "rank": null
+      },
+      {
+        "id": 704351,
+        "name": "주신의 흰 황소 C+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 404001,
+      "name": "청동거인의 초중추",
+      "ruby": "스피리 투 탈로",
+      "rank": "A",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4040000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/404000/404000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/404000/404000b@2.png"
+  }
+}

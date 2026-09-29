@@ -1,0 +1,651 @@
+{
+  "origin": "Atlas Academy KR nice API",
+  "groups": [
+    {
+      "type": "home",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "생일",
+          "ids": [
+            "0_H010"
+          ],
+          "subtitle": "생일 축하해! 오늘은 앨리스와 축하하자.",
+          "text": [
+            ""
+          ],
+          "cond_type": "birthDay",
+          "cond_value": 0
+        },
+        {
+          "name": "이벤트 개최중",
+          "ids": [
+            "0_H020"
+          ],
+          "subtitle": "밖을 보러 가자! 분명 멋진 만남이 있을 거야!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 11
+        },
+        {
+          "name": "대화 1",
+          "ids": [
+            "0_H030"
+          ],
+          "subtitle": "창 너머로 보는 풍경은 질렸어. 밖으로 나가서 놀자!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 12
+        },
+        {
+          "name": "대화 2",
+          "ids": [
+            "0_H040"
+          ],
+          "subtitle": "응, 당신은 나의 멋진 마스터. 마지막 페이지까지 사랑해 줘야 해?",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 13
+        },
+        {
+          "name": "대화 3",
+          "ids": [
+            "0_H050"
+          ],
+          "subtitle": "주종 관계가 뭐냐고? 독자와 책인데? 그 이상 뭐가 더 필요해?",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 14
+        },
+        {
+          "name": "좋아하는 것",
+          "ids": [
+            "0_H060"
+          ],
+          "subtitle": "해피 엔딩은 정말 좋아해! 왜냐면 나한테는 없는 거니까!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 15
+        },
+        {
+          "name": "싫어하는 것",
+          "ids": [
+            "0_H070"
+          ],
+          "subtitle": "배드 엔딩은 지긋지긋해. 이젠 질렸어.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 16
+        },
+        {
+          "name": "성배에 대하여",
+          "ids": [
+            "0_H080"
+          ],
+          "subtitle": "성배…… 흐응. 사탕과자 같은 거야?",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 17
+        },
+        {
+          "name": "인연 Lv.1",
+          "ids": [
+            "0_H090"
+          ],
+          "subtitle": "티 타임은 아직이야? 마카롱은 카시스 맛으로 부탁해!",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 1
+        },
+        {
+          "name": "인연 Lv.2",
+          "ids": [
+            "0_H100"
+          ],
+          "subtitle": "독서는 천천히, 맛을 보면서 하는 거야. 시간을 신경쓴다니 당치도 않아!",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 2
+        },
+        {
+          "name": "인연 Lv.3",
+          "ids": [
+            "0_H110",
+            "0_H111"
+          ],
+          "subtitle": "좋은 독자는 책의 내용을 더욱 풍부하게 해. \n그런 점에서 당신은 합격이야, 마스터. 나 정말로 즐거웠어!",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 3
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H120"
+          ],
+          "subtitle": "싸우는 것도 좋지만 조심해야 해, 마스터. \n당신이 쓰러지면 누가 앨리스를 사랑해줄 건데?",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H130",
+            "0_H131",
+            "0_H132"
+          ],
+          "subtitle": "책이 사람을 좋아한다는건 이상한 걸까? 아니, 전혀 이상하지 않지. \n왜냐하면 이야기를 사랑하는 사람도 있는걸! \n앨리스와 당신은 최고의 커플이야, 마스터!",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        },
+        {
+          "name": "대화 4",
+          "ids": [
+            "0_H140",
+            "0_H141",
+            "0_H142"
+          ],
+          "subtitle": "세상에! 저 사람, 안데르센이야! \n인어공주에 관해서 항의 좀 해야겠어! \n대체 왜 엔딩을 그렇게 못되게 썼는지! 도와줄 거지, 마스터?",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 18
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "0_G010"
+          ],
+          "subtitle": "차를 마실 시간이네!",
+          "text": [
+            "차를 마실 시간이네!"
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 2",
+          "ids": [
+            "0_G020"
+          ],
+          "subtitle": "또 하나, 추억이 늘었네.",
+          "text": [
+            "또 하나, 추억이 늘었네."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 1",
+          "ids": [
+            "0_G030"
+          ],
+          "subtitle": "어머? 내가 또 한 명?",
+          "text": [
+            "어머? 내가 또 한 명?"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 1
+        },
+        {
+          "name": "영기재림 3",
+          "ids": [
+            "0_G040"
+          ],
+          "subtitle": "증쇄? 기뻐해도 되는 거야?",
+          "text": [
+            "증쇄? 기뻐해도 되는 거야?"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 3
+        },
+        {
+          "name": "영기재림 4",
+          "ids": [
+            "0_G050",
+            "0_G051"
+          ],
+          "subtitle": "이 얼마나 멋진 일이야! \n나, 이렇게 소중하게 여겨진 적은 처음이야! \n내 모습은 당신이 바라는 바. \n자, 이대로 함께 어디까지고 모험을 계속하자?",
+          "text": [
+            "이 얼마나 멋진 일이야! 나, 이렇게 소중하게 여겨진 적은 처음이야!",
+            "내 모습은 당신이 바라는 바. 자, 이대로 함께 어디까지고 모험을 계속하자?"
+          ],
+          "cond_type": "svtCountStop",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "firstGet",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "소환",
+          "ids": [
+            "0_S010"
+          ],
+          "subtitle": "안녕하세요, 멋진 분.\n꿈꾸듯이 만날까요?",
+          "text": [
+            "안녕하세요, 멋진 분. [r]꿈꾸듯이 만날까요?"
+          ],
+          "cond_type": "svtGet",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "공격 1",
+          "ids": [
+            "0_B010"
+          ],
+          "subtitle": "아핫",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "0_B020"
+          ],
+          "subtitle": "후후후",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "0_B030"
+          ],
+          "subtitle": "어때?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B040"
+          ],
+          "subtitle": "없어지는 거야…… ",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "0_B080"
+          ],
+          "subtitle": "더, 더 즐기자!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "0_B090"
+          ],
+          "subtitle": "빙글빙글 빙글빙글 돌아가는 문. 도착하는 곳은 냄비 속♪",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 1",
+          "ids": [
+            "0_B100"
+          ],
+          "subtitle": "자, 같이 놀자?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "0_B110"
+          ],
+          "subtitle": "즐거운 시간이 되면 좋겠지만.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "0_B120"
+          ],
+          "subtitle": "안심해. 우리들은 영원해.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "0_B130"
+          ],
+          "subtitle": "안녕히 주무세요. 다음에 눈뜰 때엔 행복하길.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "0_B140"
+          ],
+          "subtitle": "꺄악!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "0_B150"
+          ],
+          "subtitle": "아아, 재미있어, 재미있어, 재미있어!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "0_B160"
+          ],
+          "subtitle": "없어지는 거야…… ",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "0_B170"
+          ],
+          "subtitle": "심술궂은 사람.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "0_B180"
+          ],
+          "subtitle": "재미있어!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "0_B190"
+          ],
+          "subtitle": "기뻐!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "0_B200"
+          ],
+          "subtitle": "우후후.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B210"
+          ],
+          "subtitle": "자, 같이 놀자?",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B050",
+            "0_B051",
+            "0_B052",
+            "0_B053"
+          ],
+          "subtitle": "반복되는 페이지의 잔물결, 밀려오는 풀 책갈피. \n모든 동화는 친구야!",
+          "text": [
+            "반복되는 페이지의 잔물결",
+            "밀려오는 풀 책갈피.",
+            "모든 동화는",
+            "친구야!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        }
+      ]
+    },
+    {
+      "type": "eventShop",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "상점에 대해 1",
+          "ids": [
+            "0_I010",
+            "0_I011",
+            "0_I012"
+          ],
+          "subtitle": "우후후. 어서 와! 과자의 집이 아니라 미안해. 자, 뭘 하고 싶어?",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "상점에 대해 2",
+          "ids": [
+            "0_I020",
+            "0_I021",
+            "0_I022"
+          ],
+          "subtitle": "안녕, 사랑스러운 당신. 꿈을 꾸는 듯이 이끌려 온 거니? \n그렇지 않으면, 토끼처럼 도망쳐 온 거니?",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "상점에 대해 3",
+          "ids": [
+            "0_I030"
+          ],
+          "subtitle": "나만이 아니라 잔느 릴리도 만나러 와. 약속이야!",
+          "text": [
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "상점에 대해 4",
+          "ids": [
+            "0_I040",
+            "0_I041",
+            "0_I042"
+          ],
+          "subtitle": "저기…… 이걸로 됐어? 이런 걸 원하다니, 특이하네. \n그렇지 않으면 이게 ‘실용적’이라는 걸까.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "상점에 대해 5",
+          "ids": [
+            "0_I050",
+            "0_I051",
+            "0_I052"
+          ],
+          "subtitle": "교환 말이지? 알았어! 손을 내밀어 봐, 왕자님과 공주님. \n이것이 당신이 희망하는 물건이야.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "상점에 대해 6",
+          "ids": [
+            "0_I060",
+            "0_I061"
+          ],
+          "subtitle": "같이, 홍차와 마카롱은 어때? 티타임을 즐기면서, 느긋하게 교환하자!",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "상점에 대해 7",
+          "ids": [
+            "0_I070",
+            "0_I071",
+            "0_I072",
+            "0_I073"
+          ],
+          "subtitle": "이야기가 끝나버리는 거구나…… 아주아주 아쉬워. \n하지만 나와 네가 멀어지는 건 아닌걸. 자, 같이 돌아가자?",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "상점에 대해 8",
+          "ids": [
+            "0_I080",
+            "0_I081",
+            "0_I082"
+          ],
+          "subtitle": "넘길 수 있는 페이지를 다 넘겼어? \n해피 엔딩이었을까, 배드 엔딩이었을까. 물론, 해피 엔딩이었겠지!",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "servant_id": "sv_0045_mata_hari",
+  "source_id": 45,
+  "name_ko": "마타 하리",
+  "name_en": "Mata Hari",
+  "class": "assassin",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/45?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "E",
+    "mana": "E",
+    "luck": "D",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 105,
+      "name": "classAssassin"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 401,
+      "name": "oneStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 601400,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [],
+    "personal": [
+      {
+        "id": 76552,
+        "name": "첩보 A++",
+        "rank": null
+      },
+      {
+        "id": 7450,
+        "name": "페로몬 B",
+        "rank": null
+      },
+      {
+        "id": 255450,
+        "name": "더블 크로스 B",
+        "rank": null
+      },
+      {
+        "id": 911650,
+        "name": "뱅센에 해는 지고 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 601401,
+      "name": "태양의 눈을 가진 여자",
+      "ruby": "마타 하리",
+      "rank": "A",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6014000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/601400/601400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/601400/601400b@2.png"
+  }
+}

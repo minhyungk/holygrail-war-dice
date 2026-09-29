@@ -1,0 +1,126 @@
+{
+  "servant_id": "sv_0054_caligula",
+  "source_id": 54,
+  "name_ko": "칼리굴라",
+  "name_en": "Caligula",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/54?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A+",
+    "end": "B+",
+    "agi": "B+",
+    "mana": "D+",
+    "luck": "D+",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 402,
+      "name": "twoStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2004,
+      "name": "roman"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 701000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54551,
+        "name": "광화 A+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 15550,
+        "name": "가학체질 A",
+        "rank": null
+      },
+      {
+        "id": 56550,
+        "name": "황제특권 A",
+        "rank": null
+      },
+      {
+        "id": 257450,
+        "name": "지난날의 영광 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 701001,
+      "name": "나의 마음을 먹어라, 달빛",
+      "ruby": "플룩티쿨루스 디아나",
+      "rank": "C",
+      "type": "대군보구"
+    },
+    {
+      "id": 701002,
+      "name": "나의 마음을 먹어라, 달빛",
+      "ruby": "플룩티쿨루스 디아나",
+      "rank": "C+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7010000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/701000/701000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/701000/701000b@2.png"
+  }
+}

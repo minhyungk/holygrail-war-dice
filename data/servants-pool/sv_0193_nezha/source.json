@@ -1,0 +1,139 @@
+{
+  "servant_id": "sv_0193_nezha",
+  "source_id": 193,
+  "name_ko": "나타",
+  "name_en": "Nezha",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/193?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C+",
+    "end": "B",
+    "agi": "A",
+    "mana": "B",
+    "luck": "A",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2781,
+      "name": "mechanical"
+    },
+    {
+      "id": 2847,
+      "name": "levitating"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 303100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 438550,
+        "name": "도술 A",
+        "rank": null
+      },
+      {
+        "id": 439550,
+        "name": "영주자 A",
+        "rank": null
+      },
+      {
+        "id": 440450,
+        "name": "여래의 가호 B",
+        "rank": null
+      },
+      {
+        "id": 2125550,
+        "name": "신장・중단원수 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 303101,
+      "name": "지비상령 화첨창",
+      "ruby": "지비상령 화첨창",
+      "rank": "A",
+      "type": "대군보구"
+    },
+    {
+      "id": 303102,
+      "name": "지비상령 화첨창",
+      "ruby": "지비상령 화첨창",
+      "rank": "A+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3031000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/303100/303100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/303100/303100b@2.png"
+  }
+}

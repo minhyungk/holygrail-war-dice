@@ -1,6 +1,6 @@
 // 판 진행 화면 (D-072):
 // 이벤트를 하나씩 재생 → 서술은 VN 텍스트박스, 내 굴림은 3D 다이스를 직접 던지고 주사위 → 기적 → 보정 → 총합을 한 단계씩,
-// 다 보여 준 뒤 선택지(맵 행동 / choices)를 띄운다. 낮 행동 판정도 같은 다이스로 던진다.
+// 다 보여 준 뒤 선택지(맵 행동 / choices)를 띄운다. 낮 메뉴 판정은 자동이며 주사위를 보이지 않는다 (D-145). 아침 마력 공급은 직접 던진다.
 import { type ReactNode, useCallback, useEffect, useRef, useState } from 'react';
 import { K, MAP_GRID, PHASES, TILES } from '../../data/constants';
 import { AFFINITY_TIERS as AFF_TIERS, tierOf } from '../../engine/affinity';
@@ -115,6 +115,16 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
     window.setTimeout(() => setFxList((l) => l.filter((x) => x.id !== id)), ms);
   };
   const sideOf = (fc: string): Side => (fc === session.narrator.state.player ? 'a' : 'c');
+  // 피격 흔들림 (D-151): 큰 피해·쓰러짐은 세게
+  const [shake, setShake] = useState<{ key: number; heavy: boolean } | null>(null);
+  const doShake = (heavy: boolean) => {
+    if (REDUCED) return;
+    const key = ++fxSeq.current;
+    setShake({ key, heavy });
+    window.setTimeout(() => setShake((s) => (s?.key === key ? null : s)), heavy ? 700 : 450);
+  };
+  /** 이번 전투에서 내 서번트가 위험까지 갔나 (역전 연출, D-151) */
+  const wasInDanger = useRef(false);
   const [sealFx, setSealFx] = useState<{ key: number; from: number; to: number; purpose: string; master: string | null } | null>(null);
 
   const queue = useRef<AnyEvent[]>(session.takeEvents());
@@ -330,17 +340,9 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
     if (!animated) await wait(300);
   };
 
-  // ── 낮 행동·조우 도주 판정 (3D 다이스, 판정 상자) ──
+  // ── 아침 마력 공급·조우 도주 판정 (3D 다이스, 판정 상자). 낮 메뉴(정보 수집·교류)는 주사위 없이 결과만 (D-145) ──
   const actionRollOf = (e: AnyEvent, me: string): ActionRoll | null => {
-    const res = (ok: boolean) => (ok ? T.success : T.failure);
     switch (e.type) {
-      case 'intel_gained':
-        if (e.data.cause !== 'intel' || !e.data.roll) return null;
-        return { title: T.actions.intel.label, mine: e.data.roll, dc: e.data.dc, opp: null, oppFc: null, ok: e.data.result === 'success', result: res(e.data.result === 'success') };
-      case 'bond':
-        return { title: T.actions.bond.label, mine: e.data.roll, dc: e.data.dc, opp: null, oppFc: null, ok: e.data.result === 'success', result: res(e.data.result === 'success') };
-      case 'crafted':
-        return { title: T.actions.craft.label, mine: e.data.roll, dc: e.data.dc, opp: null, oppFc: null, ok: e.data.result === 'success', result: res(e.data.result === 'success') };
       case 'mana_supplied': {
         const r = e.data.result;
         const mark = r === 'great' || r === 'success' ? 'win' : r === 'normal' ? 'mid' : 'lose';
@@ -384,6 +386,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
         setRollBox(null);
         setVnLog([]); // 전투는 새 글로 시작한다
         setBattle({ id: e.data.battle_id, enemy, isFinal: e.data.is_final });
+        wasInDanger.current = session.narrator.state.factions[me]?.condition === 'danger';
         setCards({ a: emptyCard(), c: emptyCard() });
         setPh({ name: e.data.is_final ? T.time.final! : '조우', no: '' });
         setVerdict(null);
@@ -462,6 +465,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
           setCards((c) => ({ ...c, [lose]: { ...c[lose], mark: 'lose' } }));
           pushFx({ kind: 'slash', side: lose }, 900);
           const to = e.data.condition_to;
+          doShake(e.data.drop === 2 || to === 'below');
           pushFx({ kind: 'dmg', side: lose, text: to && to !== 'below' ? `▼ ${T.condition[to]}` : T.fx.fall }, 1500);
           await wait(400);
           setVerdict(solo ? T.verdict.fateFail(name(e.data.loser!)) : T.verdict.win(name(e.data.winner!), e.data.margin, e.data.drop));
@@ -473,8 +477,12 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
         if (!battleRef.current || battleRef.current.id !== e.data.battle_id) return;
         const side: Side = e.data.faction === me ? 'a' : 'c';
         setCards((c) => ({ ...c, [side]: { ...c[side], hit: c[side].hit + 1 } }));
-        if (e.data.to === 'danger' && side === 'a') pushFx({ kind: 'danger' }, 1700);
+        if (e.data.to === 'danger' && side === 'a') {
+          pushFx({ kind: 'danger' }, 1700);
+          wasInDanger.current = true;
+        }
         if (e.data.to === 'dead') {
+          doShake(true);
           pushFx({ kind: 'death', side }, 2200);
           await wait(900);
         }
@@ -516,14 +524,30 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
         if (battleRef.current?.id !== e.data.battle_id) return;
         setPh((p) => ({ ...p, name: T.npOpen }));
         const sv = session.data.servants[session.narrator.state.factions[e.data.faction]!.servant_id]!;
-        pushFx({ kind: 'np', side: sideOf(e.data.faction), cls: sv.class, text: `‘${sv.noble_phantasm.name_ko}(${sv.noble_phantasm.ruby_ko})’` }, 2600);
+        // 보구 컷인 (D-151): 최종 재림 일러스트가 들어온다
+        pushFx({ kind: 'np', side: sideOf(e.data.faction), cls: sv.class, img: sv.images.final, text: `‘${sv.noble_phantasm.name_ko}(${sv.noble_phantasm.ruby_ko})’` }, 2600);
+        doShake(true);
         await wait(1700);
+        return;
+      }
+      case 'weakness_used': {
+        // 약점 공략 (D-148)
+        if (battleRef.current?.id !== e.data.battle_id) return;
+        pushFx({ kind: 'weakness', sub: T.fx.weakness, text: PHASES[e.data.phase_id].name_ko }, 1900);
+        await wait(1400);
         return;
       }
       case 'battle_ended': {
         if (battleRef.current?.id !== e.data.battle_id) return;
         staged.current = null;
         const tone = e.data.result === 'draw' ? 'draw' : e.data.escaped ? 'escape' : e.data.winner === me ? 'win' : 'lose';
+        if (tone === 'win' && wasInDanger.current) {
+          // 역전승 (D-151): 위험까지 몰렸다가 이겼다
+          const sv = session.data.servants[session.narrator.state.factions[me]!.servant_id]!;
+          pushFx({ kind: 'comeback', cls: sv.class, img: sv.images.final, text: T.fx.comeback, sub: T.fx.comebackSub }, 3000);
+          await wait(2400);
+          return;
+        }
         pushFx({ kind: 'result', tone, text: T.sys.battleEnd[tone === 'lose' ? 'loss' : tone]! }, 2200);
         await wait(1500);
         return;
@@ -626,17 +650,26 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
         if (prompt.options.includes('np')) opts.push({ label: T.cmd.np(prompt.mana, prompt.mana - K['mana.np_cost']), value: 'np', primary: prompt.enemy_np });
         else if (prompt.enemy_np || prompt.options.includes('seal_np')) opts.push({ label: T.cmd.npLow(prompt.mana, need), value: 'np', blocked: T.cmd.npLowWhy(prompt.mana, need) });
         if (prompt.options.includes('seal_np')) opts.push({ label: T.cmd.sealNp(prompt.seals), value: 'seal_np' });
-        opts.push({ label: prompt.enemy_np ? T.cmd.noneCounter : T.cmd.none, value: 'none', primary: !prompt.enemy_np });
+        // 약점 공략 (D-148): 진명을 아는 적, 전투당 1회
+        if (prompt.options.includes('weakness') && prompt.weakness_phase) opts.push({ label: T.cmd.weakness(PHASES[prompt.weakness_phase].name_ko), value: 'weakness', primary: !prompt.enemy_np });
+        opts.push({ label: prompt.enemy_np ? T.cmd.noneCounter : T.cmd.none, value: 'none', primary: !prompt.enemy_np && !prompt.options.includes('weakness') });
         return { q: prompt.enemy_np ? T.cmd.qCounter : T.cmd.q(prompt.phase_index), opts };
       }
-      case 'camp_offer':
+      case 'day_action': {
+        // 낮 메뉴 (D-145): 정보 수집 / 교류. 오늘 칸 보너스를 보여 준다
+        const t = tileOf(prompt.tile);
+        const n = K['day.role_bonus'][prompt.role];
+        const bonus = n ? T.dayBonus(T.roleBonus[prompt.role]!, n) : '';
         return {
-          q: prompt.camp ? T.campQMove(tileOf(prompt.tile).name_ko, tileOf(prompt.camp).name_ko) : T.campQ(tileOf(prompt.tile).name_ko),
+          q: T.dayQ(prompt.day, t.name_ko, `${ROLE_ICON[prompt.role]} ${T.role[prompt.role]}`, bonus),
           opts: [
-            { label: T.campYes, value: true, primary: true },
-            { label: T.campNo, value: false },
+            prompt.intel_open
+              ? { label: T.dayIntel(prompt.bonus.intel), value: { action: 'intel' }, primary: prompt.bonus.intel > 0 }
+              : { label: T.dayIntel(0), value: { action: 'intel' }, blocked: T.dayIntelWhy },
+            { label: T.dayBond(meSv.name_ko, prompt.bonus.bond), value: { action: 'bond' }, primary: prompt.bonus.bond > 0 || !prompt.intel_open },
           ],
         };
+      }
       case 'supply_offer':
         return {
           q: prompt.reason === 'hurt' ? T.supplyHurtQ(meSv.name_ko, T.condition[prompt.condition]!) : T.supplyTrustQ(meSv.name_ko),
@@ -760,7 +793,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
   return (
     <>
       {battle ? (
-        <section className={`screen s-battle ${battle.isFinal ? 'final' : ''}`}>
+        <section className={`screen s-battle ${battle.isFinal ? 'final' : ''} ${shake ? (shake.heavy ? 'shake-heavy' : 'shake') : ''}`}>
           <BattleBackdrop final={battle.isFinal} />
           <FxLayer fx={fxList} />
           <div className="bhead">
@@ -775,6 +808,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
             }}
           >
             <div className="bcol a">
+              <StandArt fc={P} view={view} session={session} />
               <Profile fc={P} view={view} session={session} />
               <FighterCard side="a" fc={P} view={view} session={session} card={cards.a} name={name(P, view)} dc={battleDc !== null && phaseSides.current?.defender === P ? battleDc : null} />
             </div>
@@ -790,6 +824,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
               {rollCtaEl}
             </div>
             <div className="bcol c">
+              <StandArt fc={battle.enemy} view={view} session={session} />
               <Profile fc={battle.enemy} view={view} session={session} />
               <FighterCard side="c" fc={battle.enemy} view={view} session={session} card={cards.c} name={name(battle.enemy, view)} dc={battleDc !== null && phaseSides.current?.defender === battle.enemy ? battleDc : null} />
             </div>
@@ -826,13 +861,13 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
                     return (
                       <button
                         key={t.tile_id}
-                        className={`tile ${adj ? 'adj' : ''} ${fog ? 'fog' : ''} ${view.camp === t.tile_id ? 'camp' : ''}`}
+                        className={`tile ${adj ? 'adj' : ''} ${fog ? 'fog' : ''}`}
                         style={{ gridRow: t.row, gridColumn: t.col }}
                         aria-label={`(${t.row},${t.col}) ${t.name_ko} ${TERRAIN_KO[t.terrain]} · ${T.role[t.role]}${stay ? ` · ${T.stayHere}` : ''}`}
                         title={`${t.name_ko} · ${T.role[t.role]}${stay ? ` · ${T.stayHere}` : ''}`}
                         onClick={() => onTile(t.tile_id)}
                       >
-                        {view.time === 'day' ? <span className="role-mark" aria-hidden="true">{ROLE_ICON[t.role]}</span> : null}
+                        <span className="role-mark" aria-hidden="true">{ROLE_ICON[t.role]}</span>
                         {stay ? <span className="stay-mark">{T.stay}</span> : null}
                       </button>
                     );
@@ -854,7 +889,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
                   {tileInfo ?? `현재 (${curTile.row},${curTile.col}) · ${curTile.name_ko} · ${TERRAIN_KO[curTile.terrain]} · ${ROLE_ICON[curTile.role]} ${T.role[curTile.role]}${curTile.tags.includes('center') ? ' · 중앙' : ''}`}
                 </div>
               </div>
-              <p className="hint">{actionPrompt ? (actionPrompt.time === 'day' ? T.pickTileDay : T.pickTile) : ''}</p>
+              <p className="hint">{actionPrompt ? T.pickTile : ''}</p>
             </div>
             <aside className="side">
               <div className="panel">
@@ -904,7 +939,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
           <div className="role-legend">
             {(Object.keys(T.role) as TileRole[]).map((r) => (
               <span key={r}>
-                {ROLE_ICON[r]} {T.role[r]}
+                {ROLE_ICON[r]} {T.role[r]} · {T.roleBonus[r]}{K['day.role_bonus'][r]}
               </span>
             ))}
             <span className="hud-sub">{T.roleHint}</span>
@@ -1074,6 +1109,20 @@ function Profile({ fc, view, session }: { fc: string; view: RunView; session: Se
       </div>
     </div>
   );
+}
+
+/**
+ * 서 있는 일러스트 (Atlas charaGraph, D-151): 카드 뒤에 옅게. 적은 진명(정보 3단계)을 알아야 보인다 (정보 가림).
+ * 위험이면 붉게 깜빡이고, 쓰러지면 빛으로 흩어진다
+ */
+function StandArt({ fc, view, session }: { fc: string; view: RunView; session: Session }) {
+  const [failed, setFailed] = useState(false);
+  const f = view.factions[fc];
+  if (!f || failed) return null;
+  if (fc !== view.player && (view.intel[fc] ?? 0) < 3) return null;
+  const sv = session.data.servants[f.servant_id]!;
+  const state = !f.alive ? 'dead' : f.condition === 'danger' ? 'danger' : '';
+  return <img className={`stand-art ${state}`} src={sv.images.summon} alt="" referrerPolicy="no-referrer" onError={() => setFailed(true)} />;
 }
 
 /** 목표값: 카드 맨 아래에 크게. 판정값이 나오면 넘었는지 색으로 */

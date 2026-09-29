@@ -1,0 +1,120 @@
+{
+  "servant_id": "sv_0294_oda_nobukatsu",
+  "source_id": 294,
+  "name_ko": "오다 노부카츠",
+  "name_en": "Oda Nobukatsu",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/294?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "C",
+    "mana": "E",
+    "luck": "E",
+    "np": "D"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 401,
+      "name": "oneStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 204100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34250,
+        "name": "대 마력 D",
+        "rank": null
+      },
+      {
+        "id": 20350,
+        "name": "단독행동 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 795250,
+        "name": "치졸한 모략 D",
+        "rank": null
+      },
+      {
+        "id": 796450,
+        "name": "나, 마천을 위해 죽으리 B",
+        "rank": null
+      },
+      {
+        "id": 797350,
+        "name": "전란의 도화 C",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 204101,
+      "name": "마왕회천・만주사화",
+      "ruby": "마왕회천・만주사화",
+      "rank": "D",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2041000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/204100/204100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/204100/204100b@2.png"
+  }
+}

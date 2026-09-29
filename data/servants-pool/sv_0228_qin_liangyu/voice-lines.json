@@ -1,0 +1,751 @@
+{
+  "origin": "Atlas Academy KR nice API",
+  "groups": [
+    {
+      "type": "home",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "인연 Lv.1",
+          "ids": [
+            "0_H090",
+            "0_H091"
+          ],
+          "subtitle": "마스터, 진양옥입니다. \n저처럼 비재한 몸을 높이 평가해 주셔서, 정말 감사합니다. ",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 1
+        },
+        {
+          "name": "인연 Lv.2",
+          "ids": [
+            "0_H100",
+            "0_H101"
+          ],
+          "subtitle": "마스터, 저는 당신에게 충성을 다하겠습니다. \n그것이 서번트라는 것…… 이겠지요. ",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 2
+        },
+        {
+          "name": "인연 Lv.3",
+          "ids": [
+            "0_H110",
+            "0_H111"
+          ],
+          "subtitle": "부디 마스터는 아무것도 하지 말아 주세요. \n제가 모든 것을 맡도록 하겠습니다. ",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 3
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H120",
+            "0_H121",
+            "0_H122",
+            "0_H123"
+          ],
+          "subtitle": "마스터, 언제 어느 때라도, 어디라도 어디까지라도, 저는 함께 있습니다. \n죽음이 두 사람을 갈라놓을 때까지 말이지요. ……부, 부끄럽네요. ",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H1600",
+            "0_H1601",
+            "0_H1602"
+          ],
+          "subtitle": "저기 그, 키 말인가요? 아…… 거짓말입니다, 거짓말. \n그 옷은 조금, 그게…… 허세를 부려서 발주했을 뿐입니다. \n6척 1촌이라니, 너무 허세를 부린 걸까요~",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H130",
+            "0_H131",
+            "0_H132",
+            "0_H133"
+          ],
+          "subtitle": "마스터. ……후훗, 신기한 울림이군요. \n설마, 가족과 황제 이외에, 이렇게 충성을 다하고 싶은 \n상대가 생기다니…… 무릎을 빌려드릴 테니, 푹 쉬세요. \n계속 지켜보고 있으니까요. ……계속.",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        },
+        {
+          "name": "대화 1",
+          "ids": [
+            "0_H030"
+          ],
+          "subtitle": "네, 슬슬 출발입니다, 마스터. 다들, 기다리고 있습니다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 12
+        },
+        {
+          "name": "대화 2",
+          "ids": [
+            "0_H040",
+            "0_H041"
+          ],
+          "subtitle": "물론, 충실하게 모시겠습니다. \n하지만 마스터, 나쁜 일에는, “떽!” 이라고요.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 13
+        },
+        {
+          "name": "대화 3",
+          "ids": [
+            "0_H050",
+            "0_H051",
+            "0_H052"
+          ],
+          "subtitle": "마스터, 저는 ‘양’이라고 불러 주세요. \n그편이 부르기 편하겠죠?",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 14
+        },
+        {
+          "name": "좋아하는 것",
+          "ids": [
+            "0_H060",
+            "0_H061"
+          ],
+          "subtitle": "평화를 정말 좋아합니다. 아, 그리고 농업도 좋아합니다. ",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 15
+        },
+        {
+          "name": "좋아하는 것",
+          "ids": [
+            "0_H3060",
+            "0_H3061",
+            "0_H3062"
+          ],
+          "subtitle": "좋아하는 것이 한 가지 늘었습니다. 마스터, 당신의 미소입니다. \n예, 그것을 지키기 위해서라면, 목숨을 바치겠습니다. ",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 38
+        },
+        {
+          "name": "싫어하는 것",
+          "ids": [
+            "0_H070",
+            "0_H071"
+          ],
+          "subtitle": "도적이 정말 싫습니다! 정말, 정말정말정말.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 16
+        },
+        {
+          "name": "성배에 대하여",
+          "ids": [
+            "0_H080",
+            "0_H081",
+            "0_H082",
+            "0_H083"
+          ],
+          "subtitle": "성배에 빌고 싶은 소원이 뭐냐고요? 후후, 마스터부터 소원을 이루세요. \n저는 그 뒤에, 느긋하게 생각해 보겠습니다. 후후. ",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 17
+        },
+        {
+          "name": "대화 7",
+          "ids": [
+            "0_H170",
+            "0_H171"
+          ],
+          "subtitle": "그, 그 비장군과 함께 싸울 수 있다니, 영광입니다! 잘 부탁드립니다!",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 21
+        },
+        {
+          "name": "대화 8",
+          "ids": [
+            "0_H180",
+            "0_H181"
+          ],
+          "subtitle": "우후후, 왠지는 모르겠지만, 마음이 잘 맞을 것 같군요. \n저와 토모에 씨는.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 22
+        },
+        {
+          "name": "대화 9",
+          "ids": [
+            "0_H190",
+            "0_H191",
+            "0_H192"
+          ],
+          "subtitle": "으으음…… 불온한 기척! 마스터의 수면은, 제가 수호하겠습니다! \n마스터는 아침까지, 푹 주무세요. ",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 23
+        },
+        {
+          "name": "대화 10",
+          "ids": [
+            "0_H200",
+            "0_H201",
+            "0_H202"
+          ],
+          "subtitle": "응, 저 여자도 동료입니까…… 아니요, 괜찮습니다! \n하지만 마스터, 너무 방심하지는 말아주세요?",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 24
+        },
+        {
+          "name": "이벤트 개최중",
+          "ids": [
+            "0_H020",
+            "0_H021"
+          ],
+          "subtitle": "아, 마스터, 마스터, 뭔가 있는 것 같습니다. ",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 11
+        },
+        {
+          "name": "생일",
+          "ids": [
+            "0_H010",
+            "0_H011",
+            "0_H012"
+          ],
+          "subtitle": "후훗. 마스터, 생일 축하드립니다. 축하의 월병입니다. ",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "birthDay",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "0_G010",
+            "0_G011"
+          ],
+          "subtitle": "아아, 레벨 업이네요! 마스터, 이로써 더 잘 지킬 수 있습니다. ",
+          "text": [
+            "아아, 레벨 업이네요!",
+            "마스터, 이로써 더 잘 지킬 수 있습니다."
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 1",
+          "ids": [
+            "0_G030",
+            "0_G031"
+          ],
+          "subtitle": "가, 감격입니다. 아직 더 강해지겠습니다!",
+          "text": [
+            "가, 감격입니다.",
+            "아직 더 강해지겠습니다!"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 1
+        },
+        {
+          "name": "영기재림 2",
+          "ids": [
+            "0_G020"
+          ],
+          "subtitle": "감사합니다, 마스터.",
+          "text": [
+            "감사합니다, 마스터."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 3",
+          "ids": [
+            "0_G040",
+            "0_G041",
+            "0_G042"
+          ],
+          "subtitle": "감사합니다, 마스터. 더욱, 더욱 강해지겠습니다.\n누구보다도, 누구보다도, 입니다!",
+          "text": [
+            "감사합니다, 마스터.",
+            "더욱, 더욱 강해지겠습니다.",
+            "누구보다도, 누구보다도, 입니다!"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 3
+        },
+        {
+          "name": "영기재림 4",
+          "ids": [
+            "0_G050",
+            "0_G051",
+            "0_G052"
+          ],
+          "subtitle": "정말…… 정말 감격입니다, 마스터. \n저의 뼈 하나, 살 한 조각, 모든 것을 바치겠습니다. \n만에 하나, 상처를 입는다면…… \n치유될 때까지 곁에 있는 것을, 허락해 주시길.",
+          "text": [
+            "정말…… 정말 감격입니다, 마스터.",
+            "저의 뼈 하나, 살 한 조각, 모든 것을 바치겠습니다.",
+            "만에 하나, 상처를 입는다면……[r]치유될 때까지 곁에 있는 것을, 허락해 주시길."
+          ],
+          "cond_type": "svtCountStop",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "firstGet",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "소환",
+          "ids": [
+            "0_S010",
+            "0_S011"
+          ],
+          "subtitle": "서번트, 랜서. 진양옥이라고 합니다. \n마스터, 잘 부탁드릴게요. ",
+          "text": [
+            "서번트, 랜서. 진양옥이라고 합니다.",
+            "[r]\n마스터, 잘 부탁드릴게요."
+          ],
+          "cond_type": "svtGet",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "개시 1",
+          "ids": [
+            "0_B100"
+          ],
+          "subtitle": "그러면, 시작하죠. 제대로 순서에 맞춰서, 말이지요. ",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "0_B110"
+          ],
+          "subtitle": "가죠. 인류를 구원하기 위해!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 3",
+          "ids": [
+            "0_B500"
+          ],
+          "subtitle": "마스터를 지키기 위해서입니다. 각오하세요!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "0_B080"
+          ],
+          "subtitle": "어떻습니까.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "0_B090"
+          ],
+          "subtitle": "이것은?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 3",
+          "ids": [
+            "0_B480"
+          ],
+          "subtitle": "출진!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 4",
+          "ids": [
+            "0_B490"
+          ],
+          "subtitle": "징을 울리세요!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "0_B180"
+          ],
+          "subtitle": "네!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "0_B190"
+          ],
+          "subtitle": "예에. ",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "0_B200"
+          ],
+          "subtitle": "그렇지요. ",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 4",
+          "ids": [
+            "0_B380"
+          ],
+          "subtitle": "흡!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B210"
+          ],
+          "subtitle": "갑니다. ",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B220"
+          ],
+          "subtitle": "할게요. ……에, 아, 아뇨, 아니에요. 아, 정말 싫다……",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 5
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B230"
+          ],
+          "subtitle": "마스터, 괜찮으시겠죠? 보구 개방!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 6
+        },
+        {
+          "name": "공격 1",
+          "ids": [
+            "0_B010"
+          ],
+          "subtitle": "얍!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "0_B020"
+          ],
+          "subtitle": "핫!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "0_B030"
+          ],
+          "subtitle": "타앗!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B440",
+            "0_B441"
+          ],
+          "subtitle": "악을 쳐부순다! 세에에에잇!",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B840",
+            "0_B841"
+          ],
+          "subtitle": "이것이 내 창의 역할이다! 세에에에잇!",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "0_B150"
+          ],
+          "subtitle": "큭, 으으윽, 큭!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "0_B140"
+          ],
+          "subtitle": "아파라!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "0_B160"
+          ],
+          "subtitle": "안 돼, 아직…… 도망쳐, 주세요.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "0_B170"
+          ],
+          "subtitle": "그럴 수가…… 마스터, 부디…… 무사히……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "0_B120"
+          ],
+          "subtitle": "이겼습니다. 서번트 여러분, 감사합니다. ",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "0_B130"
+          ],
+          "subtitle": "승리했습니다. 마스터가 기뻐해 주신다면 좋겠군요. ",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B050",
+            "0_B051",
+            "0_B052",
+            "0_B053",
+            "0_B054"
+          ],
+          "subtitle": "비소하며 비재한 몸이지만…… 이 신뢰에는, 모든 것을 바치겠습니다. \n‘숭정제사시가’ 여기에! 하앗! 갑니다!!",
+          "text": [
+            "비소하며 비재한 몸이지만……",
+            "이 신뢰에는, 모든 것을 바치겠습니다.",
+            "‘숭정제사시가’ 여기에!",
+            "하앗!",
+            "갑니다!!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        },
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B800",
+            "0_B801",
+            "0_B802",
+            "0_B803"
+          ],
+          "subtitle": "황제시여…… 이 시를 명예롭게 생각합니다. \n이 시가 있기에, 저는 목숨을 바쳐도 아깝지 않습니다!",
+          "text": [
+            "황제시여……",
+            "이 시를 명예롭게 생각합니다.",
+            "이 시가 있기에,",
+            "저는 목숨을 바쳐도 아깝지 않습니다!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 7
+        }
+      ]
+    }
+  ]
+}

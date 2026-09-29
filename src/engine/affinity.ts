@@ -1,6 +1,6 @@
 // 호감도 (docs/systems/affinity.md).
 import { K } from '../data/constants';
-import type { ServantProfile } from '../data/schema';
+import type { Reaction, ServantProfile } from '../data/schema';
 import type { AffinityTier } from './events';
 
 export const AFFINITY_TIERS: readonly AffinityTier[] = ['hostile', 'wary', 'neutral', 'friendly', 'loyal'];
@@ -40,3 +40,13 @@ export function postChoiceDelta(servant: ServantProfile, choice: 'execute' | 're
   if (servant.alignment === 'evil') return choice === 'release' ? -d : d;
   return 0;
 }
+
+/** 선택에 대한 반응 (affinity.md §3.6, D-150): 서번트 예외 → 성격 표. 성격 계수를 곱하지 않는다 */
+export function reactionDelta(servant: ServantProfile, reaction: Reaction): number {
+  const own = servant.reaction_overrides?.[reaction];
+  if (own !== undefined) return own;
+  return K['affinity.reaction'][servant.temperament]?.[reaction] ?? 0;
+}
+
+/** 계수 없이 더하고 0~100 절삭 */
+export const addClamped = (value: number, delta: number): number => Math.min(AFFINITY_MAX, Math.max(AFFINITY_MIN, Math.round(value + delta)));

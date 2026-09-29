@@ -1,0 +1,135 @@
+{
+  "servant_id": "sv_0232_bradamante",
+  "source_id": 232,
+  "name_ko": "브라다만테",
+  "name_en": "Bradamante",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/232?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "A+",
+    "agi": "A",
+    "mana": "C",
+    "luck": "D",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 303600,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 561450,
+        "name": "클레르몽의 공훈 B",
+        "rank": null
+      },
+      {
+        "id": 562451,
+        "name": "하얀 깃털의 기사 B+",
+        "rank": null
+      },
+      {
+        "id": 563550,
+        "name": "마술해제 A",
+        "rank": null
+      },
+      {
+        "id": 2243350,
+        "name": "아름다운 미희의 반지 C",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 303601,
+      "name": "눈부신 섬광의 마순",
+      "ruby": "부클리에 데 아틀랑트",
+      "rank": "B",
+      "type": "대군보구"
+    },
+    {
+      "id": 303602,
+      "name": "눈부신 섬광의 마순",
+      "ruby": "부클리에 데 아틀랑트",
+      "rank": "B+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3036000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/303600/303600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/303600/303600b@2.png"
+  }
+}

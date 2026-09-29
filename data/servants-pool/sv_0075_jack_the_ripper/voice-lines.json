@@ -1,0 +1,873 @@
+{
+  "origin": "Atlas Academy KR nice API",
+  "groups": [
+    {
+      "type": "home",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "인연 Lv.1",
+          "ids": [
+            "0_H090"
+          ],
+          "subtitle": "왜?",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 1
+        },
+        {
+          "name": "인연 Lv.2",
+          "ids": [
+            "0_H100",
+            "0_H101"
+          ],
+          "subtitle": "아픈 거 하고 싶어? 아픈 거 싫어.\n왜 아픈 짓을 하는 거야? ……안 할 거구나?",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 2
+        },
+        {
+          "name": "인연 Lv.3",
+          "ids": [
+            "0_H110"
+          ],
+          "subtitle": "으음…… 아프지 않으면, 좋은데.",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 3
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H120"
+          ],
+          "subtitle": "아하하하하. 간지러, 간지럽다니까!",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H130",
+            "0_H131"
+          ],
+          "subtitle": "꼬옥, 안아줘. ……응? 엄마를 위해서라면, 우린, 뭐든지 할게.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H1800",
+            "0_H1801"
+          ],
+          "subtitle": "많이 노력했구나. 엄마는 참 장하네. \n그러니까 조금 웃어주면, 우리는 기쁘겠는데~",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        },
+        {
+          "name": "대화 1",
+          "ids": [
+            "0_H030"
+          ],
+          "subtitle": "엄마. 가자, 가자.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 12
+        },
+        {
+          "name": "대화 2",
+          "ids": [
+            "0_H040"
+          ],
+          "subtitle": "응. 엄마는 엄마야.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 13
+        },
+        {
+          "name": "대화 3",
+          "ids": [
+            "0_H050"
+          ],
+          "subtitle": "우리는 엄마를 좋아하는데.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 14
+        },
+        {
+          "name": "좋아하는 것",
+          "ids": [
+            "0_H060"
+          ],
+          "subtitle": "좋은 기억? 따뜻한 이불 속에서 자는 건 기분 좋아~",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 15
+        },
+        {
+          "name": "싫어하는 것",
+          "ids": [
+            "0_H070"
+          ],
+          "subtitle": "싫은 기억? 괴롭히는 사람은 싫을까.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 16
+        },
+        {
+          "name": "성배에 대하여",
+          "ids": [
+            "0_H080"
+          ],
+          "subtitle": "성배에, 바라는 것…… 엄마 속으로 돌아가고 싶어. \n우리는, 그거면 되는데.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 17
+        },
+        {
+          "name": "대화 4",
+          "ids": [
+            "0_H140",
+            "0_H141",
+            "0_H142",
+            "0_H143",
+            "0_H144",
+            "0_H145"
+          ],
+          "subtitle": "이상적인 엄마? 피투성이가 되어도 괜찮고, 척척 고문할 수 있고, \n5개 국어 정도는 가볍게 하고, IQ가 엄청 높고, 살고 싶다고 바라는 사람!",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 18
+        },
+        {
+          "name": "대화 7",
+          "ids": [
+            "0_H170",
+            "0_H171"
+          ],
+          "subtitle": "너서리 라임은 친구야. 우리와 그 아이는, 행복을 원하면 안 되는 콤비야.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 21
+        },
+        {
+          "name": "대화 8",
+          "ids": [
+            "0_H180",
+            "0_H181"
+          ],
+          "subtitle": "스팸 릴리! 노~올~자! 아, 얼굴이 새빨개져서 돌진해 왔어!",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 22
+        },
+        {
+          "name": "대화 9",
+          "ids": [
+            "0_H190",
+            "0_H191",
+            "0_H192",
+            "0_H193"
+          ],
+          "subtitle": "아, 성녀님이다. 성녀라고 생각하지만 잔느는 그렇게 말하면, \n어쩐지 조금 슬픈 얼굴을 하지. 으음~ 잘 모르겠어.",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 23
+        },
+        {
+          "name": "대화 10",
+          "ids": [
+            "0_H200",
+            "0_H201",
+            "0_H202"
+          ],
+          "subtitle": "어째서 저 녹색 사람은 우리를 보면 슬픈 얼굴을 하는 걸까. \n분명 중요한 것이겠지만, 모르겠어. 모르는 편이 좋겠지.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 24
+        },
+        {
+          "name": "대화 11",
+          "ids": [
+            "0_H210",
+            "0_H211"
+          ],
+          "subtitle": "저기저기, 너서리. \n저기에 있는 커다랗고 커다란 아이도 놀고 싶어 하는 모양이야. \n사람이 많은 편이 좋지!",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 25
+        },
+        {
+          "name": "대화 12",
+          "ids": [
+            "0_H220",
+            "0_H221",
+            "0_H222",
+            "0_H223",
+            "0_H224",
+            "0_H225"
+          ],
+          "subtitle": "저기저기, 릴리. 저기서 몰래 숨어있는 아이가 있잖아? \n응! 리본이 많이 달렸고, 인형을 안고 있는 아이. \n분명히 같이 놀고 싶다고 생각하니까, 쫓아가자! ……어? \n그렇다면 나이프는 손에 들지 않는 편이 좋다? 그럴까? \n저 애도 뭔가 들고 있는 것 같고…… 뭐, 상관없을까.",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 26
+        },
+        {
+          "name": "이벤트 개최중",
+          "ids": [
+            "0_H020"
+          ],
+          "subtitle": "이상사태야. 잠깐 보러 가보자.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 11
+        },
+        {
+          "name": "생일",
+          "ids": [
+            "0_H010"
+          ],
+          "subtitle": "태어난 날이 그렇게 기쁜 거야?",
+          "text": [
+            ""
+          ],
+          "cond_type": "birthDay",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "0_G010"
+          ],
+          "subtitle": "와아, 고마워!",
+          "text": [
+            "와아, 고마워!"
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 2",
+          "ids": [
+            "0_G020"
+          ],
+          "subtitle": "에헤헤, 강해졌다!",
+          "text": [
+            "에헤헤, 강해졌다!"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 1",
+          "ids": [
+            "0_G030"
+          ],
+          "subtitle": "으음, 더 갈 수 있으려나.",
+          "text": [
+            "으음, 더 갈 수 있으려나."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 1
+        },
+        {
+          "name": "영기재림 3",
+          "ids": [
+            "0_G040"
+          ],
+          "subtitle": "어때, 귀여워?",
+          "text": [
+            "어때, 귀여워?"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 3
+        },
+        {
+          "name": "영기재림 4",
+          "ids": [
+            "0_G050"
+          ],
+          "subtitle": "저기, 왜 이렇게 사랑해 주는 거야?",
+          "text": [
+            "저기, 왜 이렇게 사랑해 주는 거야?"
+          ],
+          "cond_type": "svtCountStop",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "firstGet",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "소환",
+          "ids": [
+            "0_S010"
+          ],
+          "subtitle": "어쌔신, 잭 더 리퍼.\n잘 부탁해, 엄마.",
+          "text": [
+            "어쌔신. 잭 더 리퍼. [r]잘 부탁해, 엄마."
+          ],
+          "cond_type": "svtGet",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "개시 1",
+          "ids": [
+            "0_B100"
+          ],
+          "subtitle": "해체할 시간이야.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "0_B110"
+          ],
+          "subtitle": "학살을 시작할게.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 3",
+          "ids": [
+            "0_B500"
+          ],
+          "subtitle": "그러면, 죽일게. 간다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 4",
+          "ids": [
+            "0_B510"
+          ],
+          "subtitle": "뒤에서 찌를 건데, 화내지 마?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "0_B080"
+          ],
+          "subtitle": "밤의 어둠에 숨어서……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "0_B090"
+          ],
+          "subtitle": "응, 이거구나.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 3",
+          "ids": [
+            "0_B480"
+          ],
+          "subtitle": "안개의 도시에 잘 오셨습니다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 4",
+          "ids": [
+            "0_B490"
+          ],
+          "subtitle": "엄마, 있어?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "0_B180"
+          ],
+          "subtitle": "갈게……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "0_B190"
+          ],
+          "subtitle": "응……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "0_B200"
+          ],
+          "subtitle": "자를게.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B210"
+          ],
+          "subtitle": "응, 죽이자!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B220"
+          ],
+          "subtitle": "악성을 적출할게. 도려낸다는 거야♪",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 5
+        },
+        {
+          "name": "공격 1",
+          "ids": [
+            "0_B010"
+          ],
+          "subtitle": "얍!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "0_B020"
+          ],
+          "subtitle": "에잇!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "0_B030"
+          ],
+          "subtitle": "샤아압!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 4",
+          "ids": [
+            "0_B410"
+          ],
+          "subtitle": "아하하!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 5",
+          "ids": [
+            "0_B420"
+          ],
+          "subtitle": "이쪽이야!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 6",
+          "ids": [
+            "0_B430"
+          ],
+          "subtitle": "맞아줘!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 7",
+          "ids": [
+            "0_B910"
+          ],
+          "subtitle": "하낫둘~!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B040",
+            "0_B840"
+          ],
+          "subtitle": "해체할게!",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B040",
+            "0_B5440"
+          ],
+          "subtitle": "해체할게!",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B440",
+            "0_B840"
+          ],
+          "subtitle": "배가 고파졌는걸",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B440",
+            "0_B2440"
+          ],
+          "subtitle": "배가 고파졌는걸",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "0_B150"
+          ],
+          "subtitle": "너무하잖아, 아앙!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "0_B140"
+          ],
+          "subtitle": "아얏!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 3",
+          "ids": [
+            "0_B550"
+          ],
+          "subtitle": "싫어싫어싫어! 그만두라니깐!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 4",
+          "ids": [
+            "0_B540"
+          ],
+          "subtitle": "웃.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "0_B160"
+          ],
+          "subtitle": "엄…… 마……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "0_B170"
+          ],
+          "subtitle": "돌아가고 싶었을…… 뿐인데……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 3",
+          "ids": [
+            "0_B560"
+          ],
+          "subtitle": "우우우~! 돌아가서 간식 먹을 거야~!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "0_B120"
+          ],
+          "subtitle": "마음껏 해체하게 해줘.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "0_B130"
+          ],
+          "subtitle": "하아, 완전히 조각났네.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 3",
+          "ids": [
+            "0_B520"
+          ],
+          "subtitle": "해체하는 건 즐거워! 그것밖에 즐거움이 없는걸.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B050",
+            "0_B051",
+            "0_B052",
+            "0_B053",
+            "0_B054",
+            "0_B055",
+            "0_B056"
+          ],
+          "subtitle": "여기부터는 지옥. 우리는 불길, 비, 힘── 살육을 여기에.\n‘해체성모(마리아 더 리퍼)’……!",
+          "text": [
+            "여기부터는 지옥.",
+            "우리는",
+            "불길",
+            "비",
+            "힘",
+            "살육을 여기에",
+            "‘해체성모(마리아 더 리퍼)’……!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        },
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B800",
+            "0_B801",
+            "0_B802"
+          ],
+          "subtitle": "안개의 도시…… 우리의 지옥은 여기서부터. \n끝도 시작도 없이, 그저 무의미한 해체를 반복하는, \n‘해체성모(마리아 더 리퍼)’",
+          "text": [
+            "안개의 도시…… 우리의 지옥은 여기서부터.",
+            "끝도 시작도 없이, 그저 무의미한 해체를 반복하는,",
+            "‘해체성모(마리아 더 리퍼)’"
+          ],
+          "cond_type": "flag",
+          "cond_value": 7
+        },
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B810",
+            "0_B811",
+            "0_B812"
+          ],
+          "subtitle": "엄마…… 엄마, 엄마엄마! 우…… 우아아아아! \n무참하게 죽어! ‘해체성모(마리아 더 리퍼)’!!",
+          "text": [
+            "엄마…… 엄마, 엄마엄마!",
+            "우…… 우아아아아! 무참하게 죽어!",
+            "‘해체성모(마리아 더 리퍼)’!!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 8
+        }
+      ]
+    }
+  ]
+}

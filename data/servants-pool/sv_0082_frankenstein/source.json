@@ -1,0 +1,135 @@
+{
+  "servant_id": "sv_0082_frankenstein",
+  "source_id": 82,
+  "name_ko": "프랑켄슈타인",
+  "name_en": "Frankenstein",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/82?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "B",
+    "agi": "D",
+    "mana": "D",
+    "luck": "B",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2781,
+      "name": "mechanical"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 700400,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54250,
+        "name": "광화 D",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 136450,
+        "name": "갈바니즘 B",
+        "rank": null
+      },
+      {
+        "id": 137250,
+        "name": "공허한 생자의 한탄 D",
+        "rank": null
+      },
+      {
+        "id": 138350,
+        "name": "오버로드 C",
+        "rank": null
+      },
+      {
+        "id": 137350,
+        "name": "공허한 생자의 한탄 C",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 700401,
+      "name": "책형의 번개나무",
+      "ruby": "블래스티드 트리",
+      "rank": "D~B",
+      "type": "대군보구"
+    },
+    {
+      "id": 700402,
+      "name": "책형의 번개나무",
+      "ruby": "블래스티드 트리",
+      "rank": "D~B+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7004000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/700400/700400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/700400/700400b@2.png"
+  }
+}

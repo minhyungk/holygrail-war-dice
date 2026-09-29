@@ -1,0 +1,120 @@
+{
+  "servant_id": "sv_0162_chacha",
+  "source_id": 162,
+  "name_ko": "차차",
+  "name_en": "Chacha",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/162?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "D",
+    "mana": "C",
+    "luck": "B",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2667,
+      "name": "childServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 702600,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54151,
+        "name": "광화 E+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 345450,
+        "name": "황금률(흉) B",
+        "rank": null
+      },
+      {
+        "id": 346350,
+        "name": "무고의 괴물(염) C",
+        "rank": null
+      },
+      {
+        "id": 347650,
+        "name": "일륜의 총희 EX",
+        "rank": null
+      },
+      {
+        "id": 345452,
+        "name": "황금률(흉) B++",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 702601,
+      "name": "현란마계 일륜성",
+      "ruby": "현란마계 일륜성",
+      "rank": "C",
+      "type": "성채보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7026000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/702600/702600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/702600/702600b@2.png"
+  }
+}

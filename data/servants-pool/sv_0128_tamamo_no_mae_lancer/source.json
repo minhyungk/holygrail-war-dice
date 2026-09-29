@@ -1,0 +1,162 @@
+{
+  "servant_id": "sv_0128_tamamo_no_mae_lancer",
+  "source_id": 128,
+  "name_ko": "타마모노마에",
+  "name_en": "Tamamo-no-Mae (Lancer)",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/128?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "A",
+    "mana": "E",
+    "luck": "A",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 308,
+      "name": "alignmentSummer"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2632,
+      "name": "demonicBeastServant"
+    },
+    {
+      "id": 2797,
+      "name": "divineSpirit"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2850,
+      "name": "hasGoddessMetamorphosis"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 302400,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 88550,
+        "name": "기승 A",
+        "rank": null
+      },
+      {
+        "id": 83550,
+        "name": "진지작성 A",
+        "rank": null
+      },
+      {
+        "id": 62552,
+        "name": "신성 A++",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 266650,
+        "name": "비치 플라워 EX",
+        "rank": null
+      },
+      {
+        "id": 267550,
+        "name": "한여름의 주술 A",
+        "rank": null
+      },
+      {
+        "id": 268450,
+        "name": "여신변생 B",
+        "rank": null
+      },
+      {
+        "id": 2041550,
+        "name": "여신변생(하늘) A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 302401,
+      "name": "상하일광 일제산총애일신",
+      "ruby": "상하일광 일제산총애일신",
+      "rank": "C",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3024000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/302400/302400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/302400/302400b@2.png"
+  }
+}

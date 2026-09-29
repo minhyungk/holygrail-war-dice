@@ -1,0 +1,136 @@
+{
+  "servant_id": "sv_0264_katsushika_hokusai_saber",
+  "source_id": 264,
+  "name_ko": "카츠시카 호쿠사이",
+  "name_en": "Katsushika Hokusai (Saber)",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/264?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "B",
+    "mana": "C-",
+    "luck": "B-",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1172,
+      "name": "threatToHumanity"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 104000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      },
+      {
+        "id": 62150,
+        "name": "신성 E",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 682350,
+        "name": "신통력(묵) C",
+        "rank": null
+      },
+      {
+        "id": 683450,
+        "name": "부녀의 인연 B",
+        "rank": null
+      },
+      {
+        "id": 684450,
+        "name": "아호・용문소 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 104001,
+      "name": "전국 폭포 순회",
+      "ruby": "전국 폭포 순회",
+      "rank": "B",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1040000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/104000/104000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/104000/104000b@2.png"
+  }
+}

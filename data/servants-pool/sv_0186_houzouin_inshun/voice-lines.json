@@ -1,0 +1,579 @@
+{
+  "origin": "Atlas Academy KR nice API",
+  "groups": [
+    {
+      "type": "home",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "생일",
+          "ids": [
+            "0_H010",
+            "0_H011"
+          ],
+          "subtitle": "네가 태어난 날이라던데.\n여태까지 키워준 이들에게 감사하는 게 좋아.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "birthDay",
+          "cond_value": 0
+        },
+        {
+          "name": "이벤트 개최중",
+          "ids": [
+            "0_H020"
+          ],
+          "subtitle": "아무래도 뭔가 온 모양이로군. 갈까?",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 11
+        },
+        {
+          "name": "대화 1",
+          "ids": [
+            "0_H030"
+          ],
+          "subtitle": "어디, 여행을 시작해 보도록 할까.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 12
+        },
+        {
+          "name": "대화 2",
+          "ids": [
+            "0_H040",
+            "0_H041"
+          ],
+          "subtitle": "하하하, 소승은 일단 부처를 모시는 몸이니까.\n마스터라고 해도 사양하진 않겠어.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 13
+        },
+        {
+          "name": "대화 3",
+          "ids": [
+            "0_H050",
+            "0_H051"
+          ],
+          "subtitle": "소승은 마력을 먹고, 너는 나를 먹는다.\n서로의 양식이 된다면 그도 좋겠지.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 14
+        },
+        {
+          "name": "좋아하는 것",
+          "ids": [
+            "0_H060",
+            "0_H061",
+            "0_H062"
+          ],
+          "subtitle": "소승에게서 창을 빼앗으면 뭐가 남으리라 생각하지?\n아무것도 남지 않아. 하하하.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 15
+        },
+        {
+          "name": "싫어하는 것",
+          "ids": [
+            "0_H070",
+            "0_H071"
+          ],
+          "subtitle": "무익한 살생은 좋아하지 않아.\n이래 보여도 중이니까.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 16
+        },
+        {
+          "name": "성배에 대하여",
+          "ids": [
+            "0_H080"
+          ],
+          "subtitle": "성배라, 내 창이 이 이상 예리해질 방법이 있다면 배우고 싶을까.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 17
+        },
+        {
+          "name": "인연 Lv.1",
+          "ids": [
+            "0_H090"
+          ],
+          "subtitle": "어이어이, 중의 머리를 쓰다듬지 마.",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 1
+        },
+        {
+          "name": "인연 Lv.2",
+          "ids": [
+            "0_H100",
+            "0_H101"
+          ],
+          "subtitle": "후후, 참나……\n찌른다?",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 2
+        },
+        {
+          "name": "인연 Lv.3",
+          "ids": [
+            "0_H110",
+            "0_H111"
+          ],
+          "subtitle": "아마쿠사 시로 토키사다? 모르는 건 아니지만.\n아니, 그 눈은 뭐지?",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 3
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H120"
+          ],
+          "subtitle": "흠, 창술을 가르쳐 볼까.",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H130",
+            "0_H131"
+          ],
+          "subtitle": "하하하, 가르친다는 것도 나쁘지 않군!\n거기, 자세가 흐트러졌다!",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        },
+        {
+          "name": "대화 4",
+          "ids": [
+            "0_H140",
+            "0_H141"
+          ],
+          "subtitle": "벤케이? 우시와카마루? 뭐, 사사키 코지로도 있나?\n이거참, 칼데아란 기묘한 장소로군.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 18
+        },
+        {
+          "name": "대화 5",
+          "ids": [
+            "0_H150",
+            "0_H151"
+          ],
+          "subtitle": "으음…… 아마쿠사 시로, 미야모토 무사시, 야규 무네노리……\n왜일까, 모여서 좋은 것 같기도 하고 안 좋은 것 같기도 하고……",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 19
+        },
+        {
+          "name": "대화 6",
+          "ids": [
+            "0_H160",
+            "0_H161",
+            "0_H162"
+          ],
+          "subtitle": "이서문…… 신창인가.\n부처를 모시는 몸으로서 한 번 시합을 해둬야 할까……\n그만두자, 틀림없이 죽고 죽이는 싸움이 되겠지.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 20
+        },
+        {
+          "name": "대화 7",
+          "ids": [
+            "0_H170"
+          ],
+          "subtitle": "무사시, 인가.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 21
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "0_G010"
+          ],
+          "subtitle": "흐흥, 창이 날카롭군.",
+          "text": [
+            "흐흥, 창이 날카롭군."
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 2",
+          "ids": [
+            "0_G020"
+          ],
+          "subtitle": "이거, 이거. 제법 좋군.",
+          "text": [
+            "이거, 이거. 제법 좋군."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 1",
+          "ids": [
+            "0_G030",
+            "0_G031"
+          ],
+          "subtitle": "오오, 제법 상태가 좋아.\n삼단 찌르기, 할 수 있을까?",
+          "text": [
+            "오오, 제법 상태가 좋아.",
+            "삼단 찌르기, 할 수 있을까?"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 1
+        },
+        {
+          "name": "영기재림 3",
+          "ids": [
+            "0_G040"
+          ],
+          "subtitle": "음. 정신이 예리하군. 심신 모두 열반의 경지야.",
+          "text": [
+            "음. 정신이 예리하군. 심신 모두 열반의 경지야."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 3
+        },
+        {
+          "name": "영기재림 4",
+          "ids": [
+            "0_G050",
+            "0_G051"
+          ],
+          "subtitle": "지금이라면 신도 부처도 이 창으로 찌를 수 있겠지.\n……좋지 못한 말이었나. 하하핫.",
+          "text": [
+            "지금이라면 신도 부처도 이 창으로 찌를 수 있겠지.",
+            "……좋지 못한 말이었나. 하하핫."
+          ],
+          "cond_type": "svtCountStop",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "firstGet",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "소환",
+          "ids": [
+            "0_S010",
+            "0_S011",
+            "0_S012"
+          ],
+          "subtitle": "놀랐나?　\n랜서, 호조인 인슈운.\n그럼 잘 부탁해.",
+          "text": [
+            "놀랐나? ",
+            "\n랜서, 호조인 인슈운.",
+            "[r]\n그럼 잘 부탁해."
+          ],
+          "cond_type": "svtGet",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "공격 1",
+          "ids": [
+            "0_B010"
+          ],
+          "subtitle": "합!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "0_B020"
+          ],
+          "subtitle": "멀었다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "0_B030"
+          ],
+          "subtitle": "틈이 있군!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B040"
+          ],
+          "subtitle": "그럼 나의 기술을 보여주지!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "0_B080"
+          ],
+          "subtitle": "안 통한다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "0_B090"
+          ],
+          "subtitle": "날카롭게 한다……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 1",
+          "ids": [
+            "0_B100"
+          ],
+          "subtitle": "자, 나의 창, 어떻게 받아낼 거지?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "0_B110"
+          ],
+          "subtitle": "그럼 창술을 가르치지. 자세를 잡아봐.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "0_B120"
+          ],
+          "subtitle": "창은 모든 것을 이기는 무기다. 그걸 깨달았을까?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "0_B130"
+          ],
+          "subtitle": "나의 창술, 충분히 맛보았을까.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "0_B140"
+          ],
+          "subtitle": "큭!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "0_B150"
+          ],
+          "subtitle": "이런!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "0_B160"
+          ],
+          "subtitle": "나의 창, 닿지 않…… 는가……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "0_B170"
+          ],
+          "subtitle": "염불은 필요없다. 그럼 이만……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "0_B180"
+          ],
+          "subtitle": "알겠다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "0_B190"
+          ],
+          "subtitle": "맡겨다오.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "0_B200"
+          ],
+          "subtitle": "간다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B210"
+          ],
+          "subtitle": "호조인 창술의 묘기, 잘 보시라!!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B050",
+            "0_B051",
+            "0_B052",
+            "0_B053"
+          ],
+          "subtitle": "이것이 바로 창의 궁극.\n생애 무패를 확립시킨 열하나의 식.\n오보로우라즈키.\n그럼 간다!",
+          "text": [
+            "이것이 바로 창의 궁극.",
+            "생애 무패를 확립시킨 열하나의 식.",
+            "오보로우라즈키.",
+            "그럼 간다!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        }
+      ]
+    }
+  ]
+}

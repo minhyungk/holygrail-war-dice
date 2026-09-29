@@ -1,0 +1,137 @@
+{
+  "servant_id": "sv_0106_jeanne_d_arc_alter",
+  "source_id": 106,
+  "name_ko": "잔 다르크(얼터)",
+  "name_en": "Jeanne d'Arc (Alter)",
+  "class": "avenger",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/106?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "C",
+    "agi": "A",
+    "mana": "A+",
+    "luck": "E",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 110,
+      "name": "classAvenger"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2007,
+      "name": "saberface"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 1100300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 169450,
+        "name": "복수자 B",
+        "rank": null
+      },
+      {
+        "id": 170550,
+        "name": "망각보정 A",
+        "rank": null
+      },
+      {
+        "id": 171551,
+        "name": "자기회복(마력) A+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 71650,
+        "name": "자기개조 EX",
+        "rank": null
+      },
+      {
+        "id": 65900,
+        "name": "용의 마녀 EX",
+        "rank": null
+      },
+      {
+        "id": 196550,
+        "name": "덧없는 꿈 A",
+        "rank": null
+      },
+      {
+        "id": 196655,
+        "name": "덧없는 꿈 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 1100301,
+      "name": "울부짖으라, 나의 분노",
+      "ruby": "라 그롱드망 뒤 엔",
+      "rank": "A+",
+      "type": "대군보구"
+    },
+    {
+      "id": 1100302,
+      "name": "울부짖으라, 나의 분노",
+      "ruby": "라 그롱드망 뒤 엔",
+      "rank": "EX",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_11003000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1100300/1100300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1100300/1100300b@2.png"
+  }
+}

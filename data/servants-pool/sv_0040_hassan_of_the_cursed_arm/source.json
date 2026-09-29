@@ -1,0 +1,127 @@
+{
+  "servant_id": "sv_0040_hassan_of_the_cursed_arm",
+  "source_id": 40,
+  "name_ko": "주완의 하산",
+  "name_en": "Hassan of the Cursed Arm",
+  "class": "assassin",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/40?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "A",
+    "mana": "C",
+    "luck": "E",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 105,
+      "name": "classAssassin"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 402,
+      "name": "twoStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 2883,
+      "name": "FSNServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 600200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 50551,
+        "name": "기척 차단 A+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 44450,
+        "name": "투척(단도) B",
+        "rank": null
+      },
+      {
+        "id": 71350,
+        "name": "자기개조 C",
+        "rank": null
+      },
+      {
+        "id": 87550,
+        "name": "바람막이의 가호 A",
+        "rank": null
+      },
+      {
+        "id": 503550,
+        "name": "투척/회수 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 600201,
+      "name": "망상심음",
+      "ruby": "자바니아",
+      "rank": "C",
+      "type": "대인보구"
+    },
+    {
+      "id": 600202,
+      "name": "망상심음",
+      "ruby": "자바니아",
+      "rank": "C+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6002000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/600200/600200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/600200/600200b@2.png"
+  }
+}

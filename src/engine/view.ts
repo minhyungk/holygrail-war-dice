@@ -34,7 +34,6 @@ export interface RunView {
   factions: Record<string, FactionView>;
   /** 플레이어가 아는 적 정보 단계 */
   intel: Record<string, number>;
-  camp: string | null;
   suppliedDay: number;
   battle: BattleView | null;
   final: { round: number; pairs: [string, string][]; bye: string | null } | null;
@@ -44,7 +43,7 @@ export interface RunView {
 }
 
 export function emptyView(): RunView {
-  return { seed: 0, player: '', day: 1, time: 'day', action: 0, factions: {}, intel: {}, camp: null, suppliedDay: 0, battle: null, final: null, ended: null, eliminated: [] };
+  return { seed: 0, player: '', day: 1, time: 'day', action: 0, factions: {}, intel: {}, suppliedDay: 0, battle: null, final: null, ended: null, eliminated: [] };
 }
 
 /** 이벤트 하나를 반영한 새 보기를 돌려준다 (입력은 바꾸지 않는다) */
@@ -121,10 +120,6 @@ export function applyEvent(prev: RunView, e: AnyEvent): RunView {
       break;
     case 'bond':
       spendRerolls([e.data.roll]);
-      break;
-    case 'crafted':
-      spendRerolls([e.data.roll]);
-      if (e.data.result === 'success') v.camp = e.data.tile;
       break;
     case 'affinity_changed':
       f(e.data.faction).affinity = e.data.to;

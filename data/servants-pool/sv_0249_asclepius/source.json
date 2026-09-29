@@ -1,0 +1,158 @@
+{
+  "servant_id": "sv_0249_asclepius",
+  "source_id": 249,
+  "name_ko": "아스클레피오스",
+  "name_en": "Asclepius",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/249?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "B",
+    "mana": "A",
+    "luck": "D",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1110,
+      "name": "lamia"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2114,
+      "name": "greekMythologyMales"
+    },
+    {
+      "id": 2466,
+      "name": "associatedToTheArgo"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 504300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83550,
+        "name": "진지작성 A",
+        "rank": null
+      },
+      {
+        "id": 80650,
+        "name": "도구작성 EX",
+        "rank": null
+      },
+      {
+        "id": 62550,
+        "name": "신성 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 608650,
+        "name": "의술의 신 EX",
+        "rank": null
+      },
+      {
+        "id": 609550,
+        "name": "아폴론의 아이 A",
+        "rank": null
+      },
+      {
+        "id": 610450,
+        "name": "뱀주인 B",
+        "rank": null
+      },
+      {
+        "id": 610451,
+        "name": "뱀주인 B+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 504301,
+      "name": "방약・불요한 명부의 비탄",
+      "ruby": "리저렉션・플로트 하데스",
+      "rank": "B",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5043000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/504300/504300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/504300/504300b@2.png"
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "servant_id": "sv_0012_gilgamesh",
+  "source_id": 12,
+  "name_ko": "길가메시",
+  "name_en": "Gilgamesh",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/12?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "C",
+    "mana": "B",
+    "luck": "A",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 2883,
+      "name": "FSNServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 200200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34150,
+        "name": "대 마력 E",
+        "rank": null
+      },
+      {
+        "id": 20551,
+        "name": "단독행동 A+",
+        "rank": null
+      },
+      {
+        "id": 62450,
+        "name": "신성 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 5551,
+        "name": "카리스마 A+",
+        "rank": null
+      },
+      {
+        "id": 97550,
+        "name": "황금률 A",
+        "rank": null
+      },
+      {
+        "id": 6650,
+        "name": "컬렉터 EX",
+        "rank": null
+      },
+      {
+        "id": 2167650,
+        "name": "모든 것을 본 자 EX",
+        "rank": null
+      },
+      {
+        "id": 302650,
+        "name": "바빌론의 창고 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 200201,
+      "name": "천지를 괴리시키는 개벽의 별",
+      "ruby": "에누마 엘리시",
+      "rank": "A++",
+      "type": "대계보구"
+    },
+    {
+      "id": 200202,
+      "name": "천지를 괴리시키는 개벽의 별",
+      "ruby": "에누마 엘리시",
+      "rank": "EX",
+      "type": "대계보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2002000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/200200/200200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/200200/200200b@2.png"
+  }
+}

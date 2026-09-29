@@ -15,6 +15,8 @@ export interface NarratorData {
   masterDialogue: DialogueFile[];
   classDialogue: DialogueFile[];
   narrator: DialogueFile;
+  /** 서번트 공통 대사 (3층, D-143·D-151). 서번트·클래스 대사가 없을 때 */
+  speech?: DialogueFile;
   servants: Record<string, ServantProfile>;
   masters: Record<string, MasterProfile>;
   tiles: readonly Tile[];
@@ -88,6 +90,8 @@ export class Narrator {
   private npPhase: string | null = null;
   private phaseAttacker: string | null = null;
   private phaseDefender: string | null = null;
+  /** 이번 플레이어 전투에서 내 서번트가 위험까지 갔나 (역전승 판단, D-151) */
+  private dangerThisBattle = false;
 
   constructor(
     private readonly data: NarratorData,
@@ -112,6 +116,7 @@ export class Narrator {
     for (const f of data.masterDialogue) index(f, f.speaker, 0);
     for (const f of data.classDialogue) index(f, f.scope ?? f.speaker, 1);
     index(data.narrator, 'common', 2);
+    if (data.speech) index(data.speech, 'common_speech', 2);
   }
 
   /** 현재 보기 (마지막으로 읽은 이벤트까지) */
@@ -158,6 +163,7 @@ export class Narrator {
         break;
       case 'condition_changed':
         if (e.data.faction === P && e.data.to === 'danger' && before.factions[P]?.condition !== 'danger') this.nearDeath += 1;
+        if (e.data.faction === P && e.data.to === 'danger' && this.playerBattle === e.data.battle_id) this.dangerThisBattle = true;
         break;
       case 'npc_battle_resolved':
         if (e.data.result === 'win') this.rumors.push(e);
@@ -203,6 +209,7 @@ export class Narrator {
         break;
       case 'intel_gained':
         if (e.data.cause === 'np') return null; // 보구 비트가 공개를 서술한다. 전투 장면은 유지한다.
+        if (e.data.cause === 'encounter') return null; // 조우 비트가 상대를 소개한다 (D-147)
         ctx.enemy = e.data.target;
         ctx.event = { result: e.data.result, intel_level: e.data.result === 'success' ? e.data.level_to : null, cause: e.data.cause };
         break;
@@ -219,6 +226,7 @@ export class Narrator {
         if (!e.data.sides.includes(P)) return null;
         this.playerBattle = e.data.battle_id;
         this.battleTile = e.data.tile;
+        this.dangerThisBattle = before.factions[P]?.condition === 'danger';
         const enemy = e.data.sides.find((f) => f !== P)!;
         if (this.opponent !== enemy) {
           // 강제 전투는 조우 없이 시작한다
@@ -239,6 +247,8 @@ export class Narrator {
       case 'affinity_changed': {
         // 호감도 변화 시스템 문구 (D-121): 방향 · 크기 · 단계 변화 · 원인
         if (e.data.faction !== P) return null;
+        // 선택에 대한 반응 (D-150): 서번트가 한마디 하고 나레이션이 받는다
+        if (e.data.cause.startsWith('react:')) tpl = this.data.beats.beats.affinity_reaction ?? tpl;
         const delta = Math.abs(e.data.to - e.data.from);
         const [m1, m2] = K['text.affinity_magnitude'] as [number, number];
         ctx.event = {
@@ -248,9 +258,23 @@ export class Narrator {
           tier_changed: e.data.tier_from !== e.data.tier_to,
           tier_to: e.data.tier_to,
           cause: e.data.cause,
+          reaction: e.data.cause.startsWith('react:') ? e.data.cause.slice(6) : null,
         };
         break;
       }
+      case 'weakness_used':
+        // 약점 공략 (D-148)
+        if (this.playerBattle !== e.data.battle_id) return null;
+        ctx.enemy = e.data.target;
+        ctx.event = { phase_id: e.data.phase_id };
+        break;
+      case 'skill_triggered':
+        // 스킬 발동 외침 (D-151): 내 서번트만. 적의 외침은 스킬 이름이 진명을 드러낼 수 있다
+        if (this.playerBattle !== e.data.battle_id || e.data.faction !== P) return null;
+        ctx.actor = e.data.faction;
+        ctx.beat = { actor_side: 'self' };
+        ctx.event = { skill_id: e.data.skill_id, effect: e.data.effect };
+        break;
       case 'np_opened':
         if (this.playerBattle !== e.data.battle_id) return null;
         ctx.actor = e.data.faction;
@@ -271,6 +295,7 @@ export class Narrator {
           result: e.data.defended ? 'defended' : e.data.skipped ? 'skipped' : 'resolved',
           condition_to: to === 'below' ? null : to,
           self_lost: e.data.loser === P,
+          self_won: e.data.winner === P,
         };
         if (e.data.winner) ctx.names.winner = e.data.winner;
         if (e.data.loser) ctx.names.loser = e.data.loser;
@@ -293,7 +318,8 @@ export class Narrator {
         if (this.playerBattle !== e.data.battle_id) return null;
         const selfResult = e.data.result === 'draw' ? 'draw' : e.data.winner === P ? 'win' : e.data.loser === P ? 'loss' : null;
         const side = (fc: string | null) => (fc === null ? null : fc === P ? 'self' : 'enemy');
-        ctx.event = { result: e.data.result, self_result: selfResult, dead_side: side(e.data.dead), escaped_side: side(e.data.escaped) };
+        // 역전승 (D-151): 이번 전투에서 위험까지 몰렸다가 이겼다
+        ctx.event = { result: e.data.result, self_result: selfResult, dead_side: side(e.data.dead), escaped_side: side(e.data.escaped), comeback: selfResult === 'win' && this.dangerThisBattle };
         if (e.data.winner) ctx.names.winner = e.data.winner;
         if (e.data.loser) ctx.names.loser = e.data.loser;
         break;
@@ -357,6 +383,8 @@ export class Narrator {
       const ref = s.slot === 'react' || s.slot === 'tail' ? (prev ?? firstLine) : firstLine;
       const facts = this.facts(s.from, faction, ctx, ref);
       if (s.if && !whenOk(s.if, facts)) continue;
+      // 확률 슬롯 (D-151): 짧은 외침이 매번 나오지 않게. 서술 RNG를 쓴다 (판정과 분리, D-104)
+      if (s.chance && this.rng.next() >= (K['text.slot_chance'][s.chance] ?? 1)) continue;
       const tag = s.tag ?? (s.tag_by ? s.tag_by.map[String(facts[s.tag_by.fact])] : undefined);
       if (!tag) continue;
       const owner = s.from === 'narrator' ? null : this.ownerOf(s.from, faction!);
@@ -415,7 +443,10 @@ export class Narrator {
     const out = [...(this.lines.get(`${narration ? `narrator@${owner}` : owner}|${tag}`) ?? [])];
     const sv = this.data.servants[owner];
     // 클래스 대사의 화자도 그 서번트다 (화면의 화자 색·beat.line.speaker가 서번트 ID로 판단한다)
-    if (sv && !narration) out.push(...(this.lines.get(`class:${sv.class}|${tag}`) ?? []).map((c) => ({ ...c, speaker: owner })));
+    if (sv && !narration) {
+      out.push(...(this.lines.get(`class:${sv.class}|${tag}`) ?? []).map((c) => ({ ...c, speaker: owner })));
+      out.push(...(this.lines.get(`common_speech|${tag}`) ?? []).map((c) => ({ ...c, speaker: owner })));
+    }
     return out;
   }
   /** 나레이션 후보: 관련 서번트 파일의 서술문(§5.2) + 공통 나레이션 */

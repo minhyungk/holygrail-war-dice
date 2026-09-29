@@ -1,0 +1,153 @@
+{
+  "servant_id": "sv_0145_gilgamesh",
+  "source_id": 145,
+  "name_ko": "길가메시",
+  "name_en": "Gilgamesh",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/145?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "D",
+    "agi": "C",
+    "mana": "B",
+    "luck": "A",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 501800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 140550,
+        "name": "도구작성(가짜) A",
+        "rank": null
+      },
+      {
+        "id": 83550,
+        "name": "진지작성 A",
+        "rank": null
+      },
+      {
+        "id": 62450,
+        "name": "신성 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 313550,
+        "name": "왕의 귀환 A",
+        "rank": null
+      },
+      {
+        "id": 5551,
+        "name": "카리스마 A+",
+        "rank": null
+      },
+      {
+        "id": 314650,
+        "name": "마장의 지배자 EX",
+        "rank": null
+      },
+      {
+        "id": 313650,
+        "name": "왕의 귀환 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 501801,
+      "name": "왕의 호포",
+      "ruby": "멜람무 딘기르",
+      "rank": "B",
+      "type": "대군~대성보구"
+    },
+    {
+      "id": 501802,
+      "name": "왕의 호포",
+      "ruby": "멜람무 딘기르",
+      "rank": "B+",
+      "type": "대군~대성보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5018000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/501800/501800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/501800/501800b@2.png"
+  }
+}

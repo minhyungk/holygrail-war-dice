@@ -3,32 +3,35 @@
 // 판 전체가 하나의 제너레이터다. 플레이어가 고를 때마다 RunPrompt를 내보내고 답을 받아 이어 간다.
 // 플레이어가 탈락하면 같은 제너레이터가 적 AI 규칙만으로 끝까지 진행한다 (패배 빨리감기, D-043).
 import { K } from '../data/constants';
-import type { MasterProfile, ServantProfile, ServantSkillsFile, StatId } from '../data/schema';
-import { applyDelta, betrayalChance, initialAffinity, postChoiceDelta, refusalChance, rollMod, tierOf } from './affinity';
+import type { MasterProfile, Reaction, ServantProfile, ServantSkillsFile, StatId } from '../data/schema';
+import { addClamped, applyDelta, betrayalChance, initialAffinity, postChoiceDelta, reactionDelta, refusalChance, rollMod, tierOf } from './affinity';
 import { battle, type BattleInput, type BattleOutcome, type BattleDice, chance, createFighter, type Fighter, NO_BONUS, type Prompt, type PromptAnswer, rngDice, runBattle } from './combat';
 import { check, contest, type NaturalRoll } from './dice';
 import { type Condition, EventLog, type FactionSetup, type RollRecord, type SupplyResult } from './events';
-import { allTileIds, centerTileId, moveRange, neighbors, reachable, tile } from './map';
+import { allTileIds, centerTileId, distance, moveRange, neighbors, reachable, tile } from './map';
 import { createRng, deriveSeed, type Rng } from './rng';
 import { manaByRank, miracleNaturals, parseRank, statSum } from './stats';
 
 export const PLAYER_FACTION = 'fc_player';
-/** 낮 행동은 이동뿐이다. 교류·정보 수집·진지 작성은 칸 역할로, 마력 공급은 서번트의 요청으로 벌어진다 (D-128, D-129) */
+/** 칸 역할: 밤을 마친 칸의 역할이 다음 날 보너스가 된다 (D-145) */
 export type TileRole = 'leyline' | 'intel' | 'bond';
+/** 낮 메뉴 (D-145) */
+export type DayAction = 'intel' | 'bond';
 
 export type RunPrompt =
   | Prompt
-  /** reachable에는 자기 칸이 들어 있다 (머무르기, D-112) */
-  | { kind: 'action'; time: 'day' | 'night'; day: number; action_index: number; reachable: string[] }
-  /** 영맥 칸: 진지를 세울까 (camp = 지금 진지 칸) */
-  | { kind: 'camp_offer'; tile: string; camp: string | null }
+  /** 밤 이동. reachable에는 자기 칸이 들어 있다 (머무르기, D-112) */
+  | { kind: 'action'; time: 'night'; day: number; action_index: number; reachable: string[] }
+  /** 낮 메뉴 1회 (D-145). bonus = 오늘 칸 보너스, intel_open = 진명을 모르는 적이 남았나 */
+  | { kind: 'day_action'; day: number; tile: string; role: TileRole; options: DayAction[]; bonus: Record<DayAction, number>; intel_open: boolean }
   /** 아침: 서번트가 마력 공급을 청한다 */
   | { kind: 'supply_offer'; reason: 'hurt' | 'trust'; condition: Condition; affinity: number }
   | { kind: 'encounter'; enemy: string; tile: string; ambusher: string | null; forecast?: BattleInput }
   | { kind: 'post_choice'; target: string }
   | { kind: 'betrayal_block'; seals: number };
 export type ActionAnswer = { action: 'move'; to: string };
-export type RunAnswer = PromptAnswer | ActionAnswer | 'fight' | 'flee' | 'execute' | 'release';
+export type DayAnswer = { action: DayAction };
+export type RunAnswer = PromptAnswer | ActionAnswer | DayAnswer | 'fight' | 'flee' | 'execute' | 'release';
 
 // ── 준비 ──
 
@@ -98,6 +101,8 @@ export interface FactionState {
   /** 플레이어 서번트만 */
   affinity: number | null;
   alive: boolean;
+  /** 남은 영주 퇴각 횟수 (적 AI만 제한, D-149) */
+  sealRetreats: number;
 }
 
 export interface RunState {
@@ -105,7 +110,6 @@ export interface RunState {
   factions: Record<string, FactionState>;
   /** 플레이어가 아는 적 진영 정보 단계 (day-loop.md §4.3) */
   intel: Record<string, number>;
-  camp: string | null;
   suppliedDay: number;
   battleSeq: number;
 }
@@ -144,8 +148,9 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
     fatePoints: fp,
     affinity: initialAffinity(sv(plan.player_servant_id)),
     alive: true,
+    sealRetreats: Infinity,
   };
-  const S: RunState = { plan, factions: { [PLAYER_FACTION]: player }, intel: {}, camp: null, suppliedDay: 0, battleSeq: 0 };
+  const S: RunState = { plan, factions: { [PLAYER_FACTION]: player }, intel: {}, suppliedDay: 0, battleSeq: 0 };
   plan.enemies.forEach((e, i) => {
     const m = data.masters[e.master_id];
     if (!m) throw new Error(`마스터 데이터 없음: ${e.master_id}`);
@@ -162,6 +167,7 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
       fatePoints: 0,
       affinity: null,
       alive: true,
+      sealRetreats: K['ai.seal_retreat_max'],
     };
     S.intel[e.faction] = 0;
   });
@@ -211,9 +217,26 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
     player.affinity = to;
     log.emit('affinity_changed', [player.id], { faction: player.id, from, to, tier_from: tierOf(from), tier_to: tierOf(to), cause });
   };
+  /** 플레이어 선택에 대한 서번트의 반응 (affinity.md §3.6, D-150): 표 값을 그대로 더한다 */
+  const react = (faction: string, reaction: Reaction) => {
+    if (faction !== player.id || player.affinity === null || !player.alive) return;
+    const from = player.affinity;
+    const to = addClamped(from, reactionDelta(player.servant, reaction));
+    if (to === from) return;
+    player.affinity = to;
+    log.emit('affinity_changed', [player.id], { faction: player.id, from, to, tier_from: tierOf(from), tier_to: tierOf(to), cause: `react:${reaction}` });
+  };
+  /** 정보 단계를 올린다 (D-147). 이미 그 이상이면 아무 일도 없다 */
+  const raiseIntel = (target: FactionState, to: number, cause: 'encounter' | 'battle') => {
+    const from = S.intel[target.id] ?? 0;
+    const next = Math.min(K['day.intel_mod'].length - 1, to);
+    if (next <= from) return;
+    S.intel[target.id] = next;
+    log.emit('intel_gained', [player.id, target.id], { target: target.id, level_from: from, level_to: next, result: 'success', cause, roll: null, dc: null });
+  };
 
-  /** 플레이어의 단독 판정 (낮 행동). 운명점 재굴림을 묻는다 */
-  function* playerCheck(stats: readonly StatId[], extra: Record<string, number>, dc: number | null) {
+  /** 플레이어의 단독 판정. auto면 재굴림을 묻지 않는다 (낮 행동, D-145). 아니면 실패했을 때 운명점 재굴림을 묻는다 */
+  function* playerCheck(stats: readonly StatId[], extra: Record<string, number>, dc: number | null, auto = false) {
     const parts: Record<string, number> = { ...extra };
     const aff = rollMod(player.affinity ?? 0);
     if (aff) parts.affinity = aff;
@@ -221,7 +244,7 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
     const mir = miracleNaturals(player.servant);
     let roll = dice.roll();
     let rerolls = 0;
-    while (player.fatePoints > 0) {
+    while (!auto && player.fatePoints > 0) {
       const c0 = check(roll, mod, mir, dc ?? Infinity);
       // 실패했을 때만 (D-119). 목표가 없는 마력 공급은 결과가 실패·대실패일 때
       const failing = dc !== null ? !c0.success : ['fail', 'fumble'].includes(K['mana.supply_result'].find((b) => c0.roll.total >= b.min)!.result);
@@ -283,11 +306,10 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
 
   const clampMana = (v: number) => Math.min(K['mana.max'], v);
 
-  // ── 플레이어 행동: 낮·밤 모두 이동뿐이다. 자기 칸을 고르면 머문다 (D-112) ──
-  //    낮에는 도착하거나 머문 칸의 역할이 자동으로 벌어진다 (D-128)
-  function* playerAction(time: 'day' | 'night', day: number, index: number) {
+  // ── 밤 행동: 이동뿐이다. 자기 칸을 고르면 머문다 (D-112) ──
+  function* playerMove(day: number, index: number) {
     const range = reachable(player.tile, moveRange(player.skills));
-    const answer = yield* ask<ActionAnswer>({ kind: 'action', time, day, action_index: index, reachable: [player.tile, ...range.keys()] }, (a): a is ActionAnswer => {
+    const answer = yield* ask<ActionAnswer>({ kind: 'action', time: 'night', day, action_index: index, reachable: [player.tile, ...range.keys()] }, (a): a is ActionAnswer => {
       if (typeof a !== 'object' || a === null || !('action' in a) || a.action !== 'move') return false;
       return a.to === player.tile || range.has(a.to);
     });
@@ -304,45 +326,47 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
       log.emit('moved', [player.id], { faction: player.id, from: player.tile, to: answer.to, path: range.get(answer.to)! });
       player.tile = answer.to;
     }
-    if (time === 'day' && player.alive) yield* tileEvent();
   }
 
-  /** 칸 역할 (D-128): 교류 → 교류 판정, 정보 → 정보 수집 판정, 영맥 → 진지를 세울지 묻는다 */
-  function* tileEvent() {
+  /** 오늘 칸 보너스 (D-145): 밤을 마친 칸의 역할 */
+  const roleBonus = (kind: 'intel' | 'bond' | 'leyline'): number => (tile(player.tile).role === kind ? K['day.role_bonus'][kind] : 0);
+
+  /** 정보 수집 대상 (D-147): 진명을 모르는 적 중 이미 만난 진영 우선, 그중 단계가 가장 낮은 진영에서 무작위 */
+  const intelTargets = () => alive().filter((f) => f !== player && (S.intel[f.id] ?? 0) < K['day.intel_mod'].length - 1);
+
+  // ── 낮 행동: 메뉴 1회 (D-145). 판정은 자동, 재굴림 없음 ──
+  function* dayAction(day: number) {
     const role = tile(player.tile).role;
-    if (role === 'bond') {
+    const answer = yield* ask<DayAnswer>(
+      { kind: 'day_action', day, tile: player.tile, role, options: ['intel', 'bond'], bonus: { intel: roleBonus('intel'), bond: roleBonus('bond') }, intel_open: intelTargets().length > 0 },
+      (a): a is DayAnswer => typeof a === 'object' && a !== null && 'action' in a && (a.action === 'intel' || a.action === 'bond'),
+    );
+    if (answer.action === 'bond') {
       const dc = K['day.bond_dc'];
+      const extra: Record<string, number> = roleBonus('bond') ? { role: roleBonus('bond') } : {};
       log.emit('action_started', [player.id], { faction: player.id, action: 'bond', tile: player.tile, target: null });
-      const { record, success } = yield* playerCheck([], {}, dc);
+      const { record, success } = yield* playerCheck([], extra, dc, true);
       log.emit('bond', [player.id], { faction: player.id, result: success ? 'success' : 'fail', roll: record, dc });
       changeAffinity(K['affinity.delta_bond'][success ? 'success' : 'fail'], 'bond');
-    } else if (role === 'intel') {
-      // 정보 수집 (D-107): 정보 단계가 가장 낮은 적 진영 중 무작위 1 (D-109). 모두 진명을 알면 아무 일도 없다
-      const targets = alive().filter((f) => f !== player && (S.intel[f.id] ?? 0) < 3);
-      if (!targets.length) return;
-      const low = Math.min(...targets.map((f) => S.intel[f.id] ?? 0));
-      const pool = targets.filter((f) => (S.intel[f.id] ?? 0) === low);
-      const target = pool[dice.draw(pool.length)]!;
-      const from = S.intel[target.id] ?? 0;
-      const dc = K['day.intel_dc'][from + 1]!;
-      const detect = player.skills?.skills.find((sk) => sk.skill_id === 'sk_presence_detection');
-      const extra: Record<string, number> = detect?.rank ? { presence_detection: parseRank(detect.rank).value } : {};
-      log.emit('action_started', [player.id, target.id], { faction: player.id, action: 'intel', tile: player.tile, target: target.id });
-      const { record, success } = yield* playerCheck([], extra, dc);
-      const to = success ? from + 1 : from;
-      S.intel[target.id] = to;
-      log.emit('intel_gained', [player.id, target.id], { target: target.id, level_from: from, level_to: to, result: success ? 'success' : 'fail', cause: 'intel', roll: record, dc });
-    } else {
-      // 영맥: 진지 작성 (D-082, D-109). 이미 진지인 칸이면 묻지 않는다
-      if (S.camp === player.tile) return;
-      const yes = yield* ask<boolean>({ kind: 'camp_offer', tile: player.tile, camp: S.camp }, isBool);
-      if (!yes) return;
-      const dc = K['day.craft_dc'];
-      log.emit('action_started', [player.id], { faction: player.id, action: 'craft', tile: player.tile, target: null });
-      const { record, success } = yield* playerCheck(['mana'], {}, dc);
-      if (success) S.camp = player.tile;
-      log.emit('crafted', [player.id], { faction: player.id, tile: player.tile, result: success ? 'success' : 'fail', roll: record, dc });
+      return;
     }
+    const targets = intelTargets();
+    if (!targets.length) return; // 모두 진명을 안다
+    const met = targets.filter((f) => (S.intel[f.id] ?? 0) >= 1);
+    const pool0 = met.length ? met : targets;
+    const low = Math.min(...pool0.map((f) => S.intel[f.id] ?? 0));
+    const pool = pool0.filter((f) => (S.intel[f.id] ?? 0) === low);
+    const target = pool[dice.draw(pool.length)]!;
+    const from = S.intel[target.id] ?? 0;
+    const dc = K['day.intel_dc'][from + 1]!;
+    const detect = player.skills?.skills.find((sk) => sk.skill_id === 'sk_presence_detection');
+    const extra: Record<string, number> = detect?.rank ? { presence_detection: parseRank(detect.rank).value } : {};
+    if (roleBonus('intel')) extra.role = roleBonus('intel');
+    log.emit('action_started', [player.id, target.id], { faction: player.id, action: 'intel', tile: player.tile, target: target.id });
+    const { record, success } = yield* playerCheck([], extra, dc, true);
+    const to = success ? from + 1 : from;
+    S.intel[target.id] = to;
+    log.emit('intel_gained', [player.id, target.id], { target: target.id, level_from: from, level_to: to, result: success ? 'success' : 'fail', cause: 'intel', roll: record, dc });
   }
 
   /**
@@ -357,7 +381,8 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
     const yes = yield* ask<boolean>({ kind: 'supply_offer', reason, condition: player.condition, affinity: player.affinity ?? 0 }, isBool);
     if (!yes) return;
     log.emit('action_started', [player.id], { faction: player.id, action: 'supply', tile: player.tile, target: null });
-    const { record } = yield* playerCheck([], {}, null);
+    // 영맥 칸에서 밤을 마쳤으면 공급 판정 보너스 (D-145)
+    const { record } = yield* playerCheck([], roleBonus('leyline') ? { leyline: roleBonus('leyline') } : {}, null);
     const band = K['mana.supply_result'].find((b) => record.total >= b.min)!;
     const before = player.mana;
     player.mana = clampMana(player.mana + band.mana);
@@ -372,12 +397,24 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
     changeAffinity(K['affinity.delta_supply'][band.result], 'supply');
   }
 
-  // ── 적 AI 이동 (D-051, D-082): 머무르기와 인접 칸을 같은 확률로 ──
-  const enemiesMove = () => {
+  // ── 적 AI 이동 (D-051, D-082): 머무르기와 인접 칸을 같은 확률로.
+  //    ai.hunt_from_day일차부터는 ai.hunt_chance 확률로 가장 가까운 진영 쪽으로 (D-149) ──
+  const huntStep = (f: FactionState): string | null => {
+    const others = alive().filter((o) => o !== f);
+    if (!others.length) return null;
+    const near = Math.min(...others.map((o) => distance(f.tile, o.tile)));
+    if (near === 0) return f.tile;
+    const goals = others.filter((o) => distance(f.tile, o.tile) === near);
+    const goal = goals[dice.draw(goals.length)]!;
+    const steps = neighbors(f.tile).filter((n) => distance(n, goal.tile) < near);
+    return steps[dice.draw(steps.length)]!;
+  };
+  const enemiesMove = (day: number) => {
     for (const f of alive()) {
       if (f.controller !== 'ai') continue;
+      const hunt = day >= K['ai.hunt_from_day'] && chance(dice, K['ai.hunt_chance']) ? huntStep(f) : null;
       const opts = [f.tile, ...neighbors(f.tile)];
-      const to = opts[dice.draw(opts.length)]!;
+      const to = hunt ?? opts[dice.draw(opts.length)]!;
       if (to === f.tile) continue;
       log.emit('moved', [f.id], { faction: f.id, from: f.tile, to, path: [to] });
       f.tile = to;
@@ -385,17 +422,15 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
   };
 
   // ── 전투 ──
-  const fighterOf = (f: FactionState, opponent: FactionState, battleTile: string): Fighter =>
+  const fighterOf = (f: FactionState, opponent: FactionState): Fighter =>
     createFighter(f.id, f.servant, f.controller, {
       condition: f.condition,
       mana: f.mana,
       seals: f.seals,
       fatePoints: f.fatePoints,
       intelLevel: f === player ? (S.intel[opponent.id] ?? 0) : 0,
-      bonus:
-        f === player
-          ? { affinity: rollMod(player.affinity ?? 0), camp: S.camp === battleTile ? K['day.camp_bonus'] : 0 }
-          : NO_BONUS,
+      bonus: f === player ? { affinity: rollMod(player.affinity ?? 0) } : NO_BONUS,
+      sealRetreats: f.sealRetreats,
       refusal: f === player ? refusalChance(player.affinity ?? 0) : 0,
       temperament: f.master?.temperament ?? null,
       skills: f.skills?.skills ?? [],
@@ -407,6 +442,7 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
       f.mana = r.mana;
       f.seals = r.seals;
       f.fatePoints = r.fatePoints;
+      f.sealRetreats = r.sealRetreats;
       if (f === player) S.intel[(f === a ? b : a).id] = r.intelLevel;
     }
   };
@@ -414,18 +450,26 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
   function* fight(a: FactionState, b: FactionState, battleTile: string, isFinal: boolean, ambusher: FactionState | null) {
     S.battleSeq += 1;
     const battleId = `bt_${String(S.battleSeq).padStart(3, '0')}`;
-    const input = {
-      captureForecast: a === player || b === player,
+    const mine = a === player || b === player;
+    const input: BattleInput = {
+      captureForecast: mine,
       battleId,
-      a: fighterOf(a, b, battleTile),
-      b: fighterOf(b, a, battleTile),
+      a: fighterOf(a, b),
+      b: fighterOf(b, a),
       terrain: tile(battleTile).terrain,
       tile: battleTile,
       isFinal,
       ambusher: ambusher === a ? ('a' as const) : ambusher === b ? ('b' as const) : null,
+      leyline: tile(battleTile).role === 'leyline',
+      ...(mine ? { onChoice: react } : {}),
     };
-    const outcome = a === player || b === player ? yield* passBattle(battle(input, dice, log)) : runBattle(input, dice, log, aiPolicy);
+    const outcome = mine ? yield* passBattle(battle(input, dice, log)) : runBattle(input, dice, log, aiPolicy);
     applyOutcome(a, b, outcome);
+    // 결판 없는 전투의 보상 (D-147): 무승부이거나 적이 도주했으면 그 적 정보 +1단계
+    if (mine && player.alive) {
+      const enemy = a === player ? b : a;
+      if (outcome.result === 'draw' || (outcome.result === 'escape' && outcome.escaped === enemy.id)) raiseIntel(enemy, (S.intel[enemy.id] ?? 0) + 1, 'battle');
+    }
     return outcome;
   }
 
@@ -463,17 +507,19 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
       ambusher: ambusher?.id ?? null,
       ambush_rolls: amb.records,
     });
+    // 조우하면 상대 클래스를 안다 (D-147)
+    if (a === player || b === player) raiseIntel(a === player ? b : a, 1, 'encounter');
 
     const choices: Record<string, 'fight' | 'flee'> = {};
     for (const f of [a, b]) {
       if (f === player) {
         const enemy = f === a ? b : a;
-        let c = yield* ask<'fight' | 'flee'>({ kind: 'encounter', enemy: enemy.id, tile: at, ambusher: ambusher?.id ?? null, forecast: { battleId: 'bt_forecast', a: fighterOf(a, b, at), b: fighterOf(b, a, at), terrain: tile(at).terrain, tile: at, ambusher: ambusher === a ? 'a' : ambusher === b ? 'b' : null } }, (x): x is 'fight' | 'flee' => x === 'fight' || x === 'flee');
-        // 명령 거부 (D-083): 전투 개시·도주를 거부하면 반대로 한다
+        let c = yield* ask<'fight' | 'flee'>({ kind: 'encounter', enemy: enemy.id, tile: at, ambusher: ambusher?.id ?? null, forecast: { battleId: 'bt_forecast', a: fighterOf(a, b), b: fighterOf(b, a), terrain: tile(at).terrain, tile: at, ambusher: ambusher === a ? 'a' : ambusher === b ? 'b' : null, leyline: tile(at).role === 'leyline' } }, (x): x is 'fight' | 'flee' => x === 'fight' || x === 'flee');
+        // 명령 거부 (D-083): 전투 개시·도주를 거부하면 반대로 한다. 거부당한 명령에는 반응하지 않는다 (D-150)
         if (chance(dice, refusalChance(player.affinity ?? 0))) {
           log.emit('refused', [player.id], { faction: player.id, command: c === 'fight' ? 'fight' : 'flee' });
           c = c === 'fight' ? 'flee' : 'fight';
-        }
+        } else react(player.id, c === 'fight' ? 'encounter_fight' : 'encounter_flee');
         choices[f.id] = c;
       } else choices[f.id] = wantsFight(f, f === a ? b : a) ? 'fight' : 'flee';
     }
@@ -549,8 +595,8 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
     if (playerActive()) yield* supplyOffer(day);
     for (let i = 1; i <= K['day.actions_day'] && !over(); i++) {
       log.clock = { day, time: 'day', action: i };
-      if (playerActive()) yield* playerAction('day', day, i);
-      enemiesMove();
+      if (playerActive()) yield* dayAction(day);
+      enemiesMove(day);
     }
     if (over()) break;
 
@@ -567,8 +613,8 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
     }
     for (let i = 1; i <= K['day.actions_night'] && !over(); i++) {
       log.clock = { day, time: 'night', action: i };
-      if (playerActive()) yield* playerAction('night', day, i);
-      enemiesMove();
+      if (playerActive()) yield* playerMove(day, i);
+      enemiesMove(day);
       yield* resolveEncounters();
     }
     if (over()) break;

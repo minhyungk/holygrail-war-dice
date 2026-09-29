@@ -1,0 +1,119 @@
+{
+  "servant_id": "sv_0219_jeanne_d_arc_alter_berserker",
+  "source_id": 219,
+  "name_ko": "잔 다르크(얼터)",
+  "name_en": "Jeanne d'Arc Alter (Berserker)",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/219?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "D",
+    "agi": "A",
+    "mana": "B",
+    "luck": "D",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 308,
+      "name": "alignmentSummer"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2007,
+      "name": "saberface"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 703100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54650,
+        "name": "광화 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 512450,
+        "name": "슈바르츠발트・팔케 B",
+        "rank": null
+      },
+      {
+        "id": 513551,
+        "name": "실추의 마녀 A+",
+        "rank": null
+      },
+      {
+        "id": 514650,
+        "name": "뫼르・오・튜・드와 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 703101,
+      "name": "소각천리・오살룡",
+      "ruby": "뵐커모르트・포이어드라헤",
+      "rank": "A+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7031000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/703100/703100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/703100/703100b@2.png"
+  }
+}

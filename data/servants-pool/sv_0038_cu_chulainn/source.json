@@ -1,0 +1,157 @@
+{
+  "servant_id": "sv_0038_cu_chulainn",
+  "source_id": 38,
+  "name_ko": "쿠 훌린",
+  "name_en": "Cú Chulainn",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/38?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "D",
+    "agi": "C",
+    "mana": "B",
+    "luck": "D",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 502100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83450,
+        "name": "진지작성 B",
+        "rank": null
+      },
+      {
+        "id": 62450,
+        "name": "신성 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 9550,
+        "name": "룬 마술 A",
+        "rank": null
+      },
+      {
+        "id": 59550,
+        "name": "화살 회피의 가호 A",
+        "rank": null
+      },
+      {
+        "id": 12350,
+        "name": "재정비 C",
+        "rank": null
+      },
+      {
+        "id": 127250,
+        "name": "원초의 룬",
+        "rank": null
+      },
+      {
+        "id": 899650,
+        "name": "샘에서 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 502101,
+      "name": "불사르는 불꽃의 우리",
+      "ruby": "위커 맨",
+      "rank": "B",
+      "type": "대군보구"
+    },
+    {
+      "id": 502102,
+      "name": "불사르는 불꽃의 우리",
+      "ruby": "위커 맨",
+      "rank": "B+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5021000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/502100/502100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/502100/502100b@2.png"
+  }
+}

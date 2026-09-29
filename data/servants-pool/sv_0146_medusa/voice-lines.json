@@ -1,0 +1,563 @@
+{
+  "origin": "Atlas Academy KR nice API",
+  "groups": [
+    {
+      "type": "home",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "생일",
+          "ids": [
+            "0_H010",
+            "0_H011"
+          ],
+          "subtitle": "마스터의 생일이로군요.\n축하합니다.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "birthDay",
+          "cond_value": 0
+        },
+        {
+          "name": "이벤트 개최중",
+          "ids": [
+            "0_H020",
+            "0_H021"
+          ],
+          "subtitle": "전투의 기운이 있습니다.\n새로운 싸움이로군요──",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 11
+        },
+        {
+          "name": "대화 1",
+          "ids": [
+            "0_H030",
+            "0_H031"
+          ],
+          "subtitle": "지시를 내려주세요, 마스터.\n저는 조금 지루해하고 있습니다.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 12
+        },
+        {
+          "name": "대화 2",
+          "ids": [
+            "0_H040"
+          ],
+          "subtitle": "미숙한 저를 서번트로 삼아서,\n후회하지 않습니까, 마스터.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 13
+        },
+        {
+          "name": "대화 3",
+          "ids": [
+            "0_H050"
+          ],
+          "subtitle": "누군가를 모신다는 것은\n이런 감각이로군요. 신기합니다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 14
+        },
+        {
+          "name": "좋아하는 것",
+          "ids": [
+            "0_H060",
+            "0_H061"
+          ],
+          "subtitle": "물가는 좋습니다.\n헤엄치는 걸 좋아합니다.\n마스터는 헤엄칠 줄 압니까?",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 15
+        },
+        {
+          "name": "싫어하는 것",
+          "ids": [
+            "0_H070",
+            "0_H071"
+          ],
+          "subtitle": "바다에서 헤엄치면……\n물풀이 다리에 걸립니다. 그건 싫습니다. \n미역은 특히나 좋아할 수 없습니다.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 16
+        },
+        {
+          "name": "성배에 대하여",
+          "ids": [
+            "0_H080",
+            "0_H081"
+          ],
+          "subtitle": "성배──\n소원을 이루는 원망기, 입니까.\n그렇다면 저는 언니들과의 나날이 계속되기를 빌겠습니다.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 17
+        },
+        {
+          "name": "인연 Lv.1",
+          "ids": [
+            "0_H090",
+            "0_H091",
+            "0_H092",
+            "0_H093",
+            "0_H094"
+          ],
+          "subtitle": "랜서 클래스라서 은밀활동은 별로입니다……\n무기가 너무 커서일까요.\n뱀처럼 소리도 없이 걷는다?\n그건…… 예, 조용히 걷는 것은 잘하니까요.",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 1
+        },
+        {
+          "name": "인연 Lv.2",
+          "ids": [
+            "0_H100",
+            "0_H101"
+          ],
+          "subtitle": "저는 분명히 메두사입니다만,\n아테나의 저주에 걸리기 훨씬 전의 모습으로 현계했습니다. \n몸도 성장 전. 이건 분명 특수한 사례네요.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 2
+        },
+        {
+          "name": "인연 Lv.3",
+          "ids": [
+            "0_H110",
+            "0_H111"
+          ],
+          "subtitle": "……성장 전의 모습인 것은 정말 기쁩니다.\n제가 이 모습…… 언니들과 비슷한 모습으로 \n있을 수 있던 시간은 별로 길지 않았으니까요.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 3
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H120",
+            "0_H121",
+            "0_H122"
+          ],
+          "subtitle": "폐가 되지…… 않습니까?\n저는「어린」모습으로 현계했습니다. \n거기에 맞추어 능력도 매우 열화되었을 것입니다. \n……괴물에 가까워질수록 저는 강력한 존재가 되니까요……",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H130",
+            "0_H131"
+          ],
+          "subtitle": "……고맙습니다, 마스터.\n이 모습의 저를 이대로 있게 해주어서.\n당신이 허락하는 한 저는 힘이 되겠습니다.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        },
+        {
+          "name": "대화 4",
+          "ids": [
+            "0_H140",
+            "0_H141"
+          ],
+          "subtitle": "언니들과 있을 수 있는 것, 기쁩니다.\n고마워요, 마스터.\n저, 지금…… 정말 행복합니다.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 18
+        },
+        {
+          "name": "대화 5",
+          "ids": [
+            "0_H150",
+            "0_H151"
+          ],
+          "subtitle": "신기한 기분입니다.\n미래의 제가 있네요…… 저와 같은, \n하지만 저와는 다른 존재…… 진정한, 저……",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 19
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "0_G010"
+          ],
+          "subtitle": "아……\n성장, 하고 있어……",
+          "text": [
+            "아…… 성장, 하고 있어……"
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 2",
+          "ids": [
+            "0_G020",
+            "0_G021"
+          ],
+          "subtitle": "경험의 축적.\n신체의 변화.\n그것이 성장이로군요.",
+          "text": [
+            "경험의 축적. 신체의 변화.",
+            "그것이 성장이로군요."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 1",
+          "ids": [
+            "0_G030"
+          ],
+          "subtitle": "어라, 제……\n모습이 변해서……?",
+          "text": [
+            "어라, 제…… 모습이 변해서……?"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 1
+        },
+        {
+          "name": "영기재림 3",
+          "ids": [
+            "0_G040",
+            "0_G041"
+          ],
+          "subtitle": "변화, 종료했습니다.\n저, 커지지 않았네요…… 어째서?",
+          "text": [
+            "변화, 종료했습니다.",
+            "저, 커지지 않았네요…… 어째서?"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 3
+        },
+        {
+          "name": "영기재림 4",
+          "ids": [
+            "0_G050",
+            "0_G051"
+          ],
+          "subtitle": "조금 안 것 같습니다.\n저는 본래의 저와는 다르게 성장하고 있어요……",
+          "text": [
+            "조금 안 것 같습니다.",
+            "저는 본래의 저와는 다르게 성장하고 있어요……"
+          ],
+          "cond_type": "svtCountStop",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "firstGet",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "소환",
+          "ids": [
+            "0_S010",
+            "0_S011",
+            "0_S012"
+          ],
+          "subtitle": "랜서 클래스로 현계했습니다.\n진명, 메두사. 잘 부탁합니다.",
+          "text": [
+            "랜서 클래스로 현계했습니다.",
+            "[r]\n진명, 메두사.",
+            " 잘 부탁합니다."
+          ],
+          "cond_type": "svtGet",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "공격 1",
+          "ids": [
+            "0_B010"
+          ],
+          "subtitle": "하아앗!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "0_B020"
+          ],
+          "subtitle": "음!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "0_B030"
+          ],
+          "subtitle": "조용히……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B040"
+          ],
+          "subtitle": "이걸로, 끝내겠습니다……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "0_B080"
+          ],
+          "subtitle": "……각오해 주세요.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "0_B090"
+          ],
+          "subtitle": "……다소 화가 났으니까요……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 1",
+          "ids": [
+            "0_B100"
+          ],
+          "subtitle": "앞을 가로막겠다면 없애겠습니다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "0_B110"
+          ],
+          "subtitle": "베는 보람은 있을 것 같습니다……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "0_B120"
+          ],
+          "subtitle": "……처치했습니다.\n다들 한심합니다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "0_B130"
+          ],
+          "subtitle": "전투 종료.\n……휴우.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "0_B140"
+          ],
+          "subtitle": "큭……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "0_B150"
+          ],
+          "subtitle": "꺄아악!!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "0_B160"
+          ],
+          "subtitle": "패배…… 했습니다……\n언니……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "0_B170"
+          ],
+          "subtitle": "전투, 계속…… 할 수 없습니다……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "0_B180"
+          ],
+          "subtitle": "어쩔 수 없습니다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "0_B190"
+          ],
+          "subtitle": "아프게인가요? 심하게인가요?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "0_B200"
+          ],
+          "subtitle": "하겠습니다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B210"
+          ],
+          "subtitle": "편하게 죽여주지는 않을 테니까요.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B050",
+            "0_B053",
+            "0_B054"
+          ],
+          "subtitle": "그 손가락은 쇠, 그 머리칼은 우리, 그 속삭임은 달콤한 독───\n이것이 나───!\n커레스 오브 더 메두사!",
+          "text": [
+            "^0:0:1.79:그 손가락은 쇠^0:1.8:2.29:그 머리칼은 우리^0:2.3:E:그 속삭임은 달콤한 독───^1:0:1.79:그 손가락은 쇠^1:1.8:2.29:그 머리칼은 우리^1:2.3:E:그 속삭임은 달콤한 독───",
+            "이것이 나───!",
+            "커레스 오브 더 메두사!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        }
+      ]
+    }
+  ]
+}

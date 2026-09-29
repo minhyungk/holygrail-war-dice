@@ -1,0 +1,132 @@
+{
+  "servant_id": "sv_0105_billy_the_kid",
+  "source_id": 105,
+  "name_ko": "빌리 더 키드",
+  "name_en": "Billy the Kid",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/105?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "E",
+    "agi": "B",
+    "mana": "E",
+    "luck": "B",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 201000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 20550,
+        "name": "단독행동 A",
+        "rank": null
+      },
+      {
+        "id": 88351,
+        "name": "기승 C+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 114552,
+        "name": "사격 A++",
+        "rank": null
+      },
+      {
+        "id": 195551,
+        "name": "퀵 드로우 A+",
+        "rank": null
+      },
+      {
+        "id": 36350,
+        "name": "심안(가짜) C",
+        "rank": null
+      },
+      {
+        "id": 2383650,
+        "name": "소년 악당왕 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 201001,
+      "name": "괴음의 벽력",
+      "ruby": "썬더러",
+      "rank": "C++",
+      "type": "대인보구"
+    },
+    {
+      "id": 201002,
+      "name": "괴음의 벽력",
+      "ruby": "썬더러",
+      "rank": "C+++",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2010000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/201000/201000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/201000/201000b@2.png"
+  }
+}

@@ -24,7 +24,7 @@
 | 자산 | 내용 | 쓸 곳 |
 |---|---|---|
 | `legacy/scripts/fetch-servants.mjs` | Atlas Academy API에서 서번트 데이터 수집 (KR/EN/JP) | 서번트 데이터, 확장(P6) |
-| `legacy/scripts/fetch-dialogues.mjs` | 소환 / 전투 개시 / 보구 영창 / 패배 / 승리 대사 수집 | 대사 데이터 |
+| `legacy/scripts/fetch-dialogues.mjs` | 소환 / 전투 개시 / 보구 영창 / 패배 / 승리 대사 수집 | 대사 데이터. 전투·인연 보이스는 새 스크립트 `scripts/fetch-voices.mjs`가 대신한다 (D-151) |
 | `servants-*.json` | 서번트 408기 스탯·스킬 이름·보구·프로필 | 서번트 원본 |
 | `dialogues-*.json` | 서번트별 대사 5종 | `systems/text.md` 대사 |
 | `affinityDialogues.ts` | 인연 서번트 쌍 12쌍의 조우/전투 대사 | 특정 조합 대사 (`systems/text.md` §3.2 1층) |
@@ -50,3 +50,6 @@
 
 ## 5. 저작권
 FGO 대사·이미지·프로필은 TYPE-MOON/Aniplex 저작물이다. 화면 하단에 저작권 귀속 고지를 둔다 [확정] (D-057).
+
+## 6. 전체 서번트 준비 자료 (D-152)
+기존 `servants-ko.json`·`dialogues-ko.json`과 Atlas KR/NA API를 이용해 `data/servants-pool/`에 서번트별 원본을 보관한다. 새 수집기는 `scripts/prepare-servants.mjs`이며, Atlas 상세 응답이 없을 때 레거시 값을 보조 자료로 쓴다. 게임에서 읽는 `data/servants/`로 옮기기 전까지 원본 대사는 플레이에 사용되지 않는다.

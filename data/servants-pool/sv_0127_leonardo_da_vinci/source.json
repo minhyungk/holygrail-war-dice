@@ -1,0 +1,133 @@
+{
+  "servant_id": "sv_0127_leonardo_da_vinci",
+  "source_id": 127,
+  "name_ko": "레오나르도 다 빈치",
+  "name_en": "Leonardo da Vinci",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/127?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "C",
+    "mana": "A+",
+    "luck": "B",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 203,
+      "name": "attributeStar"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 500900,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83550,
+        "name": "진지작성 A",
+        "rank": null
+      },
+      {
+        "id": 80550,
+        "name": "도구작성 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 145650,
+        "name": "천부의 예지 EX",
+        "rank": null
+      },
+      {
+        "id": 181450,
+        "name": "황금률(몸) B",
+        "rank": null
+      },
+      {
+        "id": 112650,
+        "name": "별의 개척자 EX",
+        "rank": null
+      },
+      {
+        "id": 2202650,
+        "name": "총명예지 EX",
+        "rank": null
+      },
+      {
+        "id": 852551,
+        "name": "모나리자 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 500901,
+      "name": "만능인",
+      "ruby": "워모 우니베르살레",
+      "rank": "EX",
+      "type": "대인보구/대군보구"
+    },
+    {
+      "id": 500902,
+      "name": "만능인",
+      "ruby": "워모 우니베르살레",
+      "rank": "EX",
+      "type": "대인보구/대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5009000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/500900/500900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/500900/500900b@2.png"
+  }
+}

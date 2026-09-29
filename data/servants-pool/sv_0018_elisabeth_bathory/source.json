@@ -1,0 +1,137 @@
+{
+  "servant_id": "sv_0018_elisabeth_bathory",
+  "source_id": 18,
+  "name_ko": "엘리자베트 바토리",
+  "name_en": "Elisabeth Báthory",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/18?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "D",
+    "agi": "E",
+    "mana": "A",
+    "luck": "B",
+    "np": "D"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2002,
+      "name": "dragon"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 300500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 83450,
+        "name": "진지작성 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 5350,
+        "name": "카리스마 C",
+        "rank": null
+      },
+      {
+        "id": 45550,
+        "name": "고문기술 A",
+        "rank": null
+      },
+      {
+        "id": 41450,
+        "name": "전투속행 B",
+        "rank": null
+      },
+      {
+        "id": 295550,
+        "name": "기학의 카리스마 A",
+        "rank": null
+      },
+      {
+        "id": 943450,
+        "name": "체이테의 밤 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 300501,
+      "name": "선혈마양",
+      "ruby": "바토리 에르제베트",
+      "rank": "E-",
+      "type": "대인보구"
+    },
+    {
+      "id": 300502,
+      "name": "선혈마양",
+      "ruby": "바토리 에르제베트",
+      "rank": "E+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3005000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/300500/300500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/300500/300500b@2.png"
+  }
+}

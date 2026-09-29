@@ -1,0 +1,145 @@
+{
+  "servant_id": "sv_0176_frankenstein_saber",
+  "source_id": 176,
+  "name_ko": "프랑켄슈타인",
+  "name_en": "Frankenstein (Saber)",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/176?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C++",
+    "end": "B",
+    "agi": "C",
+    "mana": "D",
+    "luck": "A",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 308,
+      "name": "alignmentSummer"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2781,
+      "name": "mechanical"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 103100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34150,
+        "name": "대 마력 E",
+        "rank": null
+      },
+      {
+        "id": 88650,
+        "name": "기승 EX",
+        "rank": null
+      },
+      {
+        "id": 54150,
+        "name": "광화 E",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 381451,
+        "name": "서머 갈바니즘 B+",
+        "rank": null
+      },
+      {
+        "id": 382550,
+        "name": "공허한 혹서를 향한 한탄 A",
+        "rank": null
+      },
+      {
+        "id": 383350,
+        "name": "적당히 로드 C",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 103101,
+      "name": "꿰뚫는 번개칼날",
+      "ruby": "스큐어드 플라즈마 블레이드",
+      "rank": "D~B",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1031000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/103100/103100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/103100/103100b@2.png"
+  }
+}

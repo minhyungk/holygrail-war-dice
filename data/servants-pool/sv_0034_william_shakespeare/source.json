@@ -1,0 +1,118 @@
+{
+  "servant_id": "sv_0034_william_shakespeare",
+  "source_id": 34,
+  "name_ko": "윌리엄 셰익스피어",
+  "name_en": "William Shakespeare",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/34?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "D",
+    "mana": "C++",
+    "luck": "B",
+    "np": "C+"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 402,
+      "name": "twoStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 500700,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83350,
+        "name": "진지작성 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 4550,
+        "name": "인챈트 A",
+        "rank": null
+      },
+      {
+        "id": 70450,
+        "name": "자기보존 B",
+        "rank": null
+      },
+      {
+        "id": 231350,
+        "name": "국왕일좌 C",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 500701,
+      "name": "막을 올릴 때가 왔으니, 여기에 우레 같은 갈채를",
+      "ruby": "퍼스트 폴리오",
+      "rank": "B",
+      "type": "대인보구"
+    },
+    {
+      "id": 500702,
+      "name": "막을 올릴 때가 왔으니, 여기에 우레 같은 갈채를",
+      "ruby": "퍼스트 폴리오",
+      "rank": "B+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5007000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/500700/500700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/500700/500700b@2.png"
+  }
+}

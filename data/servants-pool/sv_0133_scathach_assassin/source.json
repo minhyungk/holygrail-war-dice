@@ -1,0 +1,124 @@
+{
+  "servant_id": "sv_0133_scathach_assassin",
+  "source_id": 133,
+  "name_ko": "스카사하",
+  "name_en": "Scáthach (Assassin)",
+  "class": "assassin",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/133?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "A+",
+    "mana": "C",
+    "luck": "D",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 105,
+      "name": "classAssassin"
+    },
+    {
+      "id": 203,
+      "name": "attributeStar"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 602400,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 50150,
+        "name": "기척 차단 E",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 275551,
+        "name": "비치 크라이시스 A+",
+        "rank": null
+      },
+      {
+        "id": 276550,
+        "name": "원초의 룬(바다) A",
+        "rank": null
+      },
+      {
+        "id": 277350,
+        "name": "한여름의 실수 C",
+        "rank": null
+      },
+      {
+        "id": 2237650,
+        "name": "비치 클라이맥스 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 602401,
+      "name": "걷어차 뚫는 죽음의 투창",
+      "ruby": "게이 볼그 얼터너티브",
+      "rank": "B+",
+      "type": "대인/대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6024000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/602400/602400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/602400/602400b@2.png"
+  }
+}

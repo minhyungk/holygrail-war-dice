@@ -1,0 +1,158 @@
+{
+  "servant_id": "sv_0181_minamoto_no_raikou_lancer",
+  "source_id": 181,
+  "name_ko": "미나모토노 라이코",
+  "name_en": "Minamoto-no-Raikou (Lancer)",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/181?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "B",
+    "agi": "D",
+    "mana": "A",
+    "luck": "C",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2735,
+      "name": "genji"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 302900,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      },
+      {
+        "id": 88551,
+        "name": "기승 A+",
+        "rank": null
+      },
+      {
+        "id": 54350,
+        "name": "광화 C",
+        "rank": null
+      },
+      {
+        "id": 62350,
+        "name": "신성 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 393550,
+        "name": "그림자 풍기위원장 A",
+        "rank": null
+      },
+      {
+        "id": 394350,
+        "name": "연철 요요 C",
+        "rank": null
+      },
+      {
+        "id": 406650,
+        "name": "서머 카타스트로프 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 302901,
+      "name": "석제환인 금강저",
+      "ruby": "석제환인 금강저",
+      "rank": "A+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3029000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/302900/302900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/302900/302900b@2.png"
+  }
+}

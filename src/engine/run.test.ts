@@ -2,7 +2,8 @@
 import { describe, expect, it } from 'vitest';
 import { K } from '../data/constants';
 import { masterIds, runData, servant, servantIds, SV } from '../testkit';
-import { applyDelta, postChoiceDelta, tierOf } from './affinity';
+import type { Reaction } from '../data/schema';
+import { applyDelta, postChoiceDelta, reactionDelta, tierOf } from './affinity';
 import { distance, moveRange, reachable, tile, visible } from './map';
 const tileRole = (id: string) => tile(id).role;
 import { planRun, PLAYER_FACTION } from './run';
@@ -44,7 +45,7 @@ describe('맵 (day-loop.md §10)', () => {
     expect(reachable('tl_r3c3', 3).has('tl_r2c5')).toBe(true);
     expect(reachable('tl_r3c3', 1).has('tl_r2c5')).toBe(false);
   });
-  it('3. 정보 단계 2 → 그 진영과의 판정 +2', () => expect(K['day.intel_mod'][2]).toBe(2));
+  it('3. 정보 단계 2 → 그 진영과의 판정 +1, 3단계 → +2, 클래스(1단계)는 보정 없음 (D-147)', () => expect(K['day.intel_mod']).toEqual([0, 0, 1, 2]));
 });
 
 describe('호감도 (affinity.md §5)', () => {
@@ -56,6 +57,12 @@ describe('호감도 (affinity.md §5)', () => {
     expect(postChoiceDelta(servant(SV.medea), 'release')).toBeLessThan(0);
     expect(postChoiceDelta(servant(SV.emiya), 'release')).toBe(0);
     expect(postChoiceDelta(servant(SV.heracles), 'execute')).toBe(0);
+  });
+  it('선택 반응 (§3.6, D-150): 성격 표, 서번트 예외가 우선', () => {
+    expect(reactionDelta(servant(SV.artoria), 'danger_run')).toBe(K['affinity.reaction'].royal!.danger_run);
+    expect(reactionDelta(servant(SV.kojiro), 'encounter_fight')).toBe(2); // 성격(assassin) 표는 -1이지만 예외가 우선
+    expect(K['affinity.reaction'].assassin!.encounter_fight).toBe(-1);
+    expect(reactionDelta(servant(SV.kojiro), 'danger_seal')).toBe(K['affinity.reaction'].assassin!.danger_seal); // 예외에 없는 선택은 성격 표
   });
   it('변동량 = 기본값 × 성격 계수, 0~100 절삭', () => {
     expect(applyDelta(35, 10, servant(SV.artoria))).toBe(35 + 10 * K['affinity.gain_mult'].royal!);
@@ -121,7 +128,7 @@ describe('한 판 끝까지 (헤드리스)', () => {
     for (const r of runs) {
       for (const e of r.log.events) {
         if (e.type === 'intel_gained' && e.data.cause === 'intel') expect(e.time).toBe('day');
-        if (e.type === 'bond' || e.type === 'mana_supplied' || e.type === 'crafted') expect(e.time).toBe('day');
+        if (e.type === 'bond' || e.type === 'mana_supplied') expect(e.time).toBe('day');
       }
       const days = r.log.ofType('mana_supplied').map((e) => e.day);
       expect(new Set(days).size).toBe(days.length);
@@ -170,20 +177,47 @@ describe('한 판 끝까지 (헤드리스)', () => {
     expect(runs.some((r) => r.log.ofType('waited').length > 0)).toBe(true);
   });
 
-  it('낮 행동은 칸 역할로만 벌어진다: 교류·정보 칸은 자동, 영맥은 진지 작성 (D-128)', () => {
+  it('하루 = 낮 메뉴 1회 + 밤 이동 2회, 낮에는 이동하지 않는다 (D-145)', () => {
     for (const r of runs) {
-      const v = viewOf(r.log.events);
-      void v;
+      for (const e of r.log.events) {
+        if (e.type === 'moved' && e.data.faction === PLAYER_FACTION) expect(e.time).toBe('night');
+        if (e.time === 'night' && e.type !== 'condition_recovered' && e.type !== 'betrayal_attempted' && e.type !== 'betrayal_blocked' && e.type !== 'seal_used' && e.type !== 'eliminated')
+          expect(e.action).toBeLessThanOrEqual(K['day.actions_night']);
+        if (e.type === 'action_started' && e.data.action !== 'supply') expect([e.time, e.action]).toEqual(['day', 1]);
+      }
+    }
+    expect(runs.some((r) => r.log.ofType('bond').length > 0)).toBe(true);
+    expect(runs.some((r) => r.log.ofType('intel_gained').some((e) => e.data.cause === 'intel'))).toBe(true);
+  });
+
+  it('칸 보너스: 밤을 마친 칸의 역할이 그날 판정에 더해진다 (D-145)', () => {
+    let seen = 0;
+    for (const r of runs) {
       let tileNow = '';
       for (const e of r.log.events) {
         if (e.type === 'run_started') tileNow = e.data.factions.find((f) => f.faction === PLAYER_FACTION)!.tile;
         if (e.type === 'moved' && e.data.faction === PLAYER_FACTION) tileNow = e.data.to;
-        if (e.type === 'bond') expect(tileRole(tileNow)).toBe('bond');
-        if (e.type === 'intel_gained' && e.data.cause === 'intel') expect(tileRole(tileNow)).toBe('intel');
-        if (e.type === 'crafted') expect(tileRole(tileNow)).toBe('leyline');
+        const bonus = K['day.role_bonus'];
+        if (e.type === 'bond') expect(e.data.roll.parts.role ?? 0).toBe(tileRole(tileNow) === 'bond' ? bonus.bond : 0);
+        if (e.type === 'intel_gained' && e.data.cause === 'intel') expect(e.data.roll!.parts.role ?? 0).toBe(tileRole(tileNow) === 'intel' ? bonus.intel : 0);
+        if (e.type === 'mana_supplied') {
+          expect(e.data.roll.parts.leyline ?? 0).toBe(tileRole(tileNow) === 'leyline' ? bonus.leyline : 0);
+          if (e.data.roll.parts.leyline) seen += 1;
+        }
       }
     }
-    expect(runs.some((r) => r.log.ofType('bond').length > 0)).toBe(true);
+    expect(seen).toBeGreaterThan(0);
+  });
+
+  it('낮 판정은 자동: 운명점 재굴림이 없다 (D-145)', () => {
+    for (const r of runs) {
+      for (const e of r.log.ofType('bond')) expect(e.data.roll.rerolls).toBe(0);
+      for (const e of r.log.ofType('intel_gained')) if (e.data.roll) expect(e.data.roll.rerolls).toBe(0);
+    }
+  });
+
+  it('진지는 없다 (D-146)', () => {
+    for (const r of runs) for (const e of r.log.events) expect(['crafted', 'camp_offer']).not.toContain(e.type);
   });
 
   it('마력 공급은 아침 요청으로만, 부상 때 보통 이상이면 상태 회복 (D-129)', () => {
@@ -192,6 +226,69 @@ describe('한 판 끝까지 (헤드리스)', () => {
       for (const e of r.log.ofType('condition_recovered')) if (e.data.cause === 'supply') expect(e.time).toBe('day');
     }
     expect(runs.some((r) => r.log.ofType('mana_supplied').length > 0)).toBe(true);
+  });
+
+  it('조우하면 상대 클래스를 안다 (D-147)', () => {
+    let n = 0;
+    for (const r of runs) {
+      let v = emptyView();
+      for (const e of r.log.events) {
+        v = applyEvent(v, e);
+        if (e.type === 'encounter' && e.data.factions.includes(PLAYER_FACTION)) {
+          const enemy = e.data.factions.find((f) => f !== PLAYER_FACTION)!;
+          expect(v.intel[enemy], `seed ${r.seed}`).toBeGreaterThanOrEqual(0);
+          n += 1;
+        }
+        if (e.type === 'encounter_decided' && Object.keys(e.data.choices).includes(PLAYER_FACTION)) {
+          const enemy = Object.keys(e.data.choices).find((f) => f !== PLAYER_FACTION)!;
+          expect(v.intel[enemy], `seed ${r.seed}`).toBeGreaterThanOrEqual(1);
+        }
+      }
+    }
+    expect(n).toBeGreaterThan(0);
+  });
+
+  it('결판 없는 플레이어 전투(무승부·적 도주)는 그 적 정보 +1단계 (D-147)', () => {
+    let n = 0;
+    for (const r of runs) {
+      const ev = r.log.events;
+      for (let k = 0; k < ev.length; k++) {
+        const e = ev[k]!;
+        if (e.type !== 'battle_ended' || !r.log.ofType('battle_started').find((b) => b.data.battle_id === e.data.battle_id)!.data.sides.includes(PLAYER_FACTION)) continue;
+        const enemy = r.log.ofType('battle_started').find((b) => b.data.battle_id === e.data.battle_id)!.data.sides.find((f) => f !== PLAYER_FACTION)!;
+        const noVerdict = e.data.result === 'draw' || (e.data.result === 'escape' && e.data.escaped === enemy);
+        const next = ev[k + 1];
+        const gained = next?.type === 'intel_gained' && next.data.cause === 'battle' && next.data.target === enemy;
+        if (!noVerdict) expect(gained).toBe(false);
+        if (gained) {
+          n += 1;
+          expect(next.data.level_to).toBe(next.data.level_from + 1);
+        }
+      }
+    }
+    expect(n).toBeGreaterThan(0);
+  });
+
+  it('적 AI의 영주 퇴각은 진영당 판 ai.seal_retreat_max회 (D-149)', () => {
+    for (const r of runs) {
+      const count: Record<string, number> = {};
+      for (const e of r.log.ofType('seal_used')) if (e.data.faction !== PLAYER_FACTION && e.data.purpose === 'escape') count[e.data.faction] = (count[e.data.faction] ?? 0) + 1;
+      for (const c of Object.values(count)) expect(c).toBeLessThanOrEqual(K['ai.seal_retreat_max']);
+    }
+  });
+
+  it('선택에 대한 호감도 반응은 표 값을 그대로 더한다 (D-150)', () => {
+    let n = 0;
+    for (const r of runs) {
+      const sv = r.result.state.factions[PLAYER_FACTION]!.servant;
+      for (const e of r.log.ofType('affinity_changed')) {
+        if (!e.data.cause.startsWith('react:')) continue;
+        const d = reactionDelta(sv, e.data.cause.slice(6) as Reaction);
+        expect(e.data.to).toBe(Math.min(100, Math.max(0, e.data.from + d)));
+        n += 1;
+      }
+    }
+    expect(n).toBeGreaterThan(0);
   });
 
   it('적 AI는 영주를 도주에만 쓴다 (D-094)', () => {

@@ -1,0 +1,126 @@
+{
+  "servant_id": "sv_0141_jeanne_d_arc_alter_santa_lily",
+  "source_id": 141,
+  "name_ko": "잔 다르크 얼터 산타 릴리",
+  "name_en": "Jeanne d'Arc Alter Santa Lily",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/141?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "D",
+    "agi": "A",
+    "mana": "B",
+    "luck": "A++",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2007,
+      "name": "saberface"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2667,
+      "name": "childServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 302600,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34551,
+        "name": "대 마력 A+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 128350,
+        "name": "성자의 선물 C",
+        "rank": null
+      },
+      {
+        "id": 303550,
+        "name": "자기변혁 A",
+        "rank": null
+      },
+      {
+        "id": 196650,
+        "name": "덧없는 꿈 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 302601,
+      "name": "우아하게 노래하라, 저 성탄을",
+      "ruby": "라 그라스피유 노엘",
+      "rank": "A+",
+      "type": "대군보구"
+    },
+    {
+      "id": 302602,
+      "name": "우아하게 노래하라, 저 성탄을",
+      "ruby": "라 그라스피유 노엘",
+      "rank": "EX",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3026000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/302600/302600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/302600/302600b@2.png"
+  }
+}

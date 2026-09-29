@@ -1,6 +1,6 @@
 // 화면과 엔진 사이. 판 준비(데이터 로딩)와 진행(제너레이터에 답 보내기), 이벤트 → 화면 항목 변환.
 // 규칙 계산은 하지 않는다 (06-repo-structure.md §2).
-import { TILES } from '../data/constants';
+import { PHASES, TILES } from '../data/constants';
 import { availableMasterIds, availableServantIds, loadClassDialogue, loadMasterProfiles, loadNarrationCommon, loadRunDialogue, loadServantProfiles, loadServantSkills } from '../data/load';
 import type { ServantProfile } from '../data/schema';
 import { type AnyEvent, EventLog } from '../engine/events';
@@ -93,6 +93,7 @@ export async function startSession(plan: RunPlan, fatePoints: number): Promise<S
       masterDialogue: dialogue.masters,
       classDialogue,
       narrator: dialogue.narrator,
+      speech: dialogue.speech,
       servants: data.servants,
       masters: data.masters,
       tiles: TILES,
@@ -170,18 +171,21 @@ export function play(s: Session, e: AnyEvent, labels: { unknown: string; cls: Re
   if (!playerOut) {
     switch (e.type) {
       case 'intel_gained':
+        // 낮 판정은 자동이며 수치를 보이지 않는다 (D-145). 조우·결판 없는 전투로 얻은 정보도 알린다 (D-147)
         if (e.data.cause === 'np') lines.push(sys(T.sys.npReveal(name(e.data.target))));
-        else if (e.data.result === 'success') lines.push(sys(`${T.sys.intelOk(name(e.data.target), T.intelLevel[e.data.level_to]!)} ${T.sys.check(e.data.roll!.total, e.data.dc)}`));
-        else lines.push(sys(`${T.sys.intelFail} ${T.sys.check(e.data.roll!.total, e.data.dc)}`));
+        else if (e.data.cause === 'encounter') lines.push(sys(T.sys.intelMet(name(e.data.target))));
+        else if (e.data.cause === 'battle') lines.push(sys(T.sys.intelBattle(name(e.data.target), T.intelLevel[e.data.level_to]!)));
+        else if (e.data.result === 'success') lines.push(sys(T.sys.intelOk(name(e.data.target), T.intelLevel[e.data.level_to]!)));
+        else lines.push(sys(T.sys.intelFail));
         break;
       case 'mana_supplied':
         lines.push(sys(`${T.sys.supply(T.sys.supplyResult[e.data.result]!, e.data.mana_before, e.data.mana_after)} ${T.sys.check(e.data.roll.total, null)}`));
         break;
       case 'bond':
-        lines.push(sys(`${T.sys.bond(e.data.result === 'success')} ${T.sys.check(e.data.roll.total, e.data.dc)}`));
+        lines.push(sys(T.sys.bond(e.data.result === 'success')));
         break;
-      case 'crafted':
-        lines.push(sys(`${T.sys.craft(e.data.result === 'success', tileName(e.data.tile))} ${T.sys.check(e.data.roll.total, e.data.dc)}`));
+      case 'weakness_used':
+        if (inMyBattle(e.data.battle_id)) pre.push(sys(T.sys.weakness(name(e.data.target), PHASES[e.data.phase_id].name_ko)));
         break;
       case 'affinity_changed':
         lines.push(sys(T.sys.affinity(e.data.from, e.data.to, T.affinityTier[e.data.tier_to]!)));

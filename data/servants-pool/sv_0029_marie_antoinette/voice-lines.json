@@ -1,0 +1,897 @@
+{
+  "origin": "Atlas Academy KR nice API",
+  "groups": [
+    {
+      "type": "home",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "인연 Lv.1",
+          "ids": [
+            "0_H090"
+          ],
+          "subtitle": "난 모두가 정말 좋아. \n그 누구도 미워하지 않아.",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 1
+        },
+        {
+          "name": "인연 Lv.2",
+          "ids": [
+            "0_H100"
+          ],
+          "subtitle": "모두가 나를 사랑해 줘. \n그러니까 나도 사랑할 거야.",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 2
+        },
+        {
+          "name": "인연 Lv.3",
+          "ids": [
+            "0_H110",
+            "0_H111"
+          ],
+          "subtitle": "나는 모두가 너무 좋아. \n모두를 위해 뭐든지 할 거야. \n……뭐든지, 했어.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 3
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H120",
+            "0_H121"
+          ],
+          "subtitle": "아무리 상처 입어도,\n미움을 사도, 미소는 잃지 않아. \n그것이 왕비의 본분이니까!",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H130",
+            "0_H131"
+          ],
+          "subtitle": "내 마지막이 어떻든, 내 인생은 화려했어. \n그걸로 됐어. 그걸로 충분해. \n그러니까 지금은 엄청 행복해. \n이런 나라도 당신 같은 사람의 힘이 될 수 있는 날이 왔으니까!",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        },
+        {
+          "name": "대화 1",
+          "ids": [
+            "0_H030"
+          ],
+          "subtitle": "당신의 일. 당신의 운명. \n도와줄게.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 12
+        },
+        {
+          "name": "대화 2",
+          "ids": [
+            "0_H040"
+          ],
+          "subtitle": "마스터는……\n반려와도 같은 것이지. 후후♪",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 13
+        },
+        {
+          "name": "대화 3",
+          "ids": [
+            "0_H050"
+          ],
+          "subtitle": "마스터. \n── 후후, 그냥 불러봤어♪",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 14
+        },
+        {
+          "name": "좋아하는 것",
+          "ids": [
+            "0_H060"
+          ],
+          "subtitle": "좋아하는 거? 그럼 목욕하고 싶어. \n나, 목욕 엄청 좋아해♪",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 15
+        },
+        {
+          "name": "싫어하는 것",
+          "ids": [
+            "0_H070"
+          ],
+          "subtitle": "……기요틴은 싫어. \n그딴 거……",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 16
+        },
+        {
+          "name": "성배에 대하여",
+          "ids": [
+            "0_H080",
+            "0_H081"
+          ],
+          "subtitle": "성배 같은 게 없어도 내 소원은 변치 않아. \n하늘에 빛을. \n땅에는 축복을. \n백성에게 행복을.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 17
+        },
+        {
+          "name": "대화 4",
+          "ids": [
+            "0_H140"
+          ],
+          "subtitle": "향수는 말이야──\n꽃이나 허브 같은 가벼운 것이 좋아.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 18
+        },
+        {
+          "name": "대화 5",
+          "ids": [
+            "0_H150",
+            "0_H151"
+          ],
+          "subtitle": "연설 연습도 열심히 할 거야. \n무슨 일이 있어도 활기차게, \n투명한 목소리로 모두의 앞에 서야 하니까♡",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 19
+        },
+        {
+          "name": "대화 6",
+          "ids": [
+            "0_H160"
+          ],
+          "subtitle": "빵이 없어?",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 20
+        },
+        {
+          "name": "대화 7",
+          "ids": [
+            "0_H170",
+            "0_H171"
+          ],
+          "subtitle": "브리오슈는 맛있어. \n좋아하는데? \n── 왜?",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 21
+        },
+        {
+          "name": "대화 8",
+          "ids": [
+            "0_H180",
+            "0_H181",
+            "0_H182",
+            "0_H183",
+            "0_H184",
+            "0_H185",
+            "0_H186",
+            "0_H187"
+          ],
+          "subtitle": "안녕하신가요, 황제 폐하. 아아, 안 돼, 그렇게 슬픈 얼굴 하지 말아줄래?\n이향에 태어났음에도 프랑스를 사랑한 당신, 좋아해! 알고 있지? \n후후, 나도 태어난 곳은 프랑스가 아니야. \n그러니까, 나와 당신은 동지나 마찬가지, 안 그래? \n자, 함께! [#Vive la France:프랑스 만세]!",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 22
+        },
+        {
+          "name": "대화 9",
+          "ids": [
+            "0_H190",
+            "0_H191",
+            "0_H192",
+            "0_H193",
+            "0_H194",
+            "0_H195"
+          ],
+          "subtitle": "어머나, 백작, 안녕하신가요! 네, 그래요…… \n아니요, 그렇지는 않아요. 저는 마리 앙투아네트로서 여기에 있습니다. \n당신은…… 아니요, 그것은, 제가 할 말이 아니겠네요.",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 23
+        },
+        {
+          "name": "대화 10",
+          "ids": [
+            "0_H200",
+            "0_H201"
+          ],
+          "subtitle": "슬슬 차를 들 시간이네. 응, 그렇다면 모두에게 말을 해야지.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 24
+        },
+        {
+          "name": "대화 11",
+          "ids": [
+            "0_H210",
+            "0_H211",
+            "0_H212",
+            "0_H213",
+            "0_H214",
+            "0_H215",
+            "0_H216",
+            "0_H217"
+          ],
+          "subtitle": "왜? 아마데우스, 그렇게 싱글벙글하고. \n아, 알겠다, 또 뭔가 고약한 장난이 떠오른 거지?\n하지만 아쉽게 됐네, 내가 알게 된 이상, 당신을 꼭 말릴 거야. \n우후후, 그렇게 풀 죽은 표정 짓지 말고, 자, 같이 산책하자. \n그러고 나서… 그렇지, 노래 레슨을 해줄래?",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 25
+        },
+        {
+          "name": "대화 12",
+          "ids": [
+            "0_H220",
+            "0_H221",
+            "0_H222",
+            "0_H223",
+            "0_H224",
+            "0_H225",
+            "0_H226"
+          ],
+          "subtitle": "어머나, 살리에리 선생님, 안녕하신가요. 오늘은 몸 상태가 어떠신가요? \n만약 상태가 괜찮으시다면 부탁이 있답니다. 노래 레슨을…… \n네? 아마데우스? 어, 없는데요? 오늘은 없으니까, 안심하세요.",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 26
+        },
+        {
+          "name": "대화 13",
+          "ids": [
+            "0_H230",
+            "0_H231",
+            "0_H232"
+          ],
+          "subtitle": "에우로페 님은 어쩐지 남 같지가 않아. \n닮은 곳이 있는 것도 아닌데, 어머님 생각이 나버려. 마스터는 어때?",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 27
+        },
+        {
+          "name": "대화 14",
+          "ids": [
+            "0_H240",
+            "0_H241",
+            "0_H242",
+            "0_H243",
+            "0_H244"
+          ],
+          "subtitle": "또 한 명의 나─── 어벤저, 마리 앙투아네트.\n제대로 이야기를 나누어 보고 싶은데……\n저 애는 분명 싫어하겠지. 알 수 있어.",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 28
+        },
+        {
+          "name": "이벤트 개최중",
+          "ids": [
+            "0_H020"
+          ],
+          "subtitle": "어디서 축제를 하나 봐. \n저기, 가보자!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 11
+        },
+        {
+          "name": "생일",
+          "ids": [
+            "0_H010",
+            "0_H011"
+          ],
+          "subtitle": "어머머──\n당신, 오늘이 생일이라면서? \n축하해!",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "birthDay",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "0_G010"
+          ],
+          "subtitle": "[#Vive la France:프랑스 만세]♪",
+          "text": [
+            "[#Vive la France:프랑스 만세]♪"
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 2",
+          "ids": [
+            "0_G020"
+          ],
+          "subtitle": "나, 빛나고 있어?",
+          "text": [
+            "나, 빛나고 있어?"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 1",
+          "ids": [
+            "0_G030"
+          ],
+          "subtitle": "예쁘다고──\n말해주는구나. 좋아해♪",
+          "text": [
+            "예쁘다고── 말해주는구나. 좋아해♪"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 1
+        },
+        {
+          "name": "영기재림 3",
+          "ids": [
+            "0_G040"
+          ],
+          "subtitle": "굉장히 기분 좋아──\n이런 기분은 오랜만인걸♪",
+          "text": [
+            "굉장히 기분 좋아── 이런 기분은 오랜만인걸♪"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 3
+        },
+        {
+          "name": "영기재림 4",
+          "ids": [
+            "0_G050",
+            "0_G051"
+          ],
+          "subtitle": "멋지지? 손잡아줄래? \n언제 어디서든, 티 타임에도── \n나는 꿈처럼 화려하게 피어나.",
+          "text": [
+            "멋지지? 손잡아줄래?",
+            "언제 어디서든, 티 타임에도── 나는 꿈처럼 화려하게 피어나."
+          ],
+          "cond_type": "svtCountStop",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "firstGet",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "소환",
+          "ids": [
+            "0_S010",
+            "0_S011"
+          ],
+          "subtitle": "당신도 날 좋아하지?\n좋아, 그럼──── [#Vive la France:프랑스 만세]!",
+          "text": [
+            "당신도 날 좋아하지? [r]\n좋아, 그러면──",
+            "──[#Vive la France:프랑스 만세]!"
+          ],
+          "cond_type": "svtGet",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "개시 1",
+          "ids": [
+            "0_B100"
+          ],
+          "subtitle": "마리야♪\n자, 같이. [#Vive la France:프랑스 만세]!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "0_B110"
+          ],
+          "subtitle": "춤추자, 노래하자! \n이건 즐거운 무도회!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 3",
+          "ids": [
+            "0_B500"
+          ],
+          "subtitle": "모처럼인걸, 즐겁게 하자!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 4",
+          "ids": [
+            "0_B510"
+          ],
+          "subtitle": "좋아, 춤추자. [#Vive la France:프랑스 만세]!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "0_B080"
+          ],
+          "subtitle": "화려하게 피어나는 나──",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "0_B090"
+          ],
+          "subtitle": "반짝반짝 반짝반짝 빛나는 거야──",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 3",
+          "ids": [
+            "0_B480"
+          ],
+          "subtitle": "프랑스는 영원히!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "0_B180"
+          ],
+          "subtitle": "맡겨줘!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "0_B190"
+          ],
+          "subtitle": "잘 부탁해?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "0_B200"
+          ],
+          "subtitle": "우후후.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B210"
+          ],
+          "subtitle": "왁자지껄한 꽃처럼, 태양처럼!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B220"
+          ],
+          "subtitle": "그러네! 당신이 바란다면!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 5
+        },
+        {
+          "name": "공격 1",
+          "ids": [
+            "0_B010"
+          ],
+          "subtitle": "에잇",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "0_B020"
+          ],
+          "subtitle": "후후후♪",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "0_B030"
+          ],
+          "subtitle": "이런 느낌? ♪",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 4",
+          "ids": [
+            "0_B410"
+          ],
+          "subtitle": "어떨까?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 5",
+          "ids": [
+            "0_B420"
+          ],
+          "subtitle": "에~잇!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 6",
+          "ids": [
+            "0_B430"
+          ],
+          "subtitle": "미안해라",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B040"
+          ],
+          "subtitle": "어떤 댄스가 특기일까! ♪",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B440"
+          ],
+          "subtitle": "반짝반짝 반짝반짝, 반짝거리며.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "0_B150"
+          ],
+          "subtitle": "꺄아아아악!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "0_B140"
+          ],
+          "subtitle": "꺄악",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 3",
+          "ids": [
+            "0_B550"
+          ],
+          "subtitle": "너무해!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 4",
+          "ids": [
+            "0_B540"
+          ],
+          "subtitle": "정말 참!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "0_B160"
+          ],
+          "subtitle": "미안해……\n구두, 더러워졌어……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "0_B170"
+          ],
+          "subtitle": "그래……\n당신도, 나를……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 3",
+          "ids": [
+            "0_B560"
+          ],
+          "subtitle": "먼저, 잠들게.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 4",
+          "ids": [
+            "0_B570"
+          ],
+          "subtitle": "미안해… 마스터",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "0_B120"
+          ],
+          "subtitle": "모두 너무 좋아! \n고마워── [#Vive la France:프랑스 만세]!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "0_B130"
+          ],
+          "subtitle": "나를 좋아해 주는 모두에게\n부디──\n근사한 은총이 있기를♪",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 3",
+          "ids": [
+            "0_B520"
+          ],
+          "subtitle": "[#Vive la France:프랑스 만세]!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 4",
+          "ids": [
+            "0_B530"
+          ],
+          "subtitle": "어머, 이제 댄스는 끝이야?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B050",
+            "0_B051",
+            "0_B052",
+            "0_B053"
+          ],
+          "subtitle": "화려하게 피어나야 한다? \n계속 춤추는 거야! \n간다! \n──‘백합의 왕관에 영광이 있으라(기요틴 브레이커)’!",
+          "text": [
+            "화려하게 피어나야 한다?",
+            "계속 춤추는 거야!",
+            "간다!",
+            "──‘백합의 왕관에 영광이 있으라(기요틴 브레이커)’!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        },
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B800",
+            "0_B801",
+            "0_B802",
+            "0_B803"
+          ],
+          "subtitle": "센 강의 물살, 몽블랑의 정상, 아아, 아름다운 프랑스! \n‘백합의 왕관에 영광이 있으라(기요틴 브레이커)’!",
+          "text": [
+            "센 강의 물살,",
+            "몽블랑의 정상,",
+            "아아, 아름다운 프랑스!",
+            "‘백합의 왕관에 영광이 있으라(기요틴 브레이커)’!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 7
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "servant_id": "sv_0026_boudica",
+  "source_id": 26,
+  "name_ko": "부디카",
+  "name_en": "Boudica",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/26?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "B+",
+    "agi": "C",
+    "mana": "D",
+    "luck": "D",
+    "np": "B+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 401100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34250,
+        "name": "대 마력 D",
+        "rank": null
+      },
+      {
+        "id": 88550,
+        "name": "기승 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 31450,
+        "name": "여신에 대한 맹세 B",
+        "rank": null
+      },
+      {
+        "id": 41550,
+        "name": "전투속행 A",
+        "rank": null
+      },
+      {
+        "id": 176550,
+        "name": "안드라스타의 가호 A",
+        "rank": null
+      },
+      {
+        "id": 656550,
+        "name": "승리의 여왕 A",
+        "rank": null
+      },
+      {
+        "id": 843551,
+        "name": "전장의 군량 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 401101,
+      "name": "약속되지 않은 수호의 바퀴",
+      "ruby": "채리엇 오브 부디카",
+      "rank": "B+",
+      "type": "대군보구"
+    },
+    {
+      "id": 401102,
+      "name": "약속되지 않은 수호의 바퀴",
+      "ruby": "채리엇 오브 부디카",
+      "rank": "B++",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4011000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/401100/401100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/401100/401100b@2.png"
+  }
+}

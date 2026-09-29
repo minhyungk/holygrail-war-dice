@@ -1,0 +1,137 @@
+{
+  "servant_id": "sv_0273_mandricardo",
+  "source_id": 273,
+  "name_ko": "만드리카르도",
+  "name_en": "Mandricardo",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/273?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "B",
+    "agi": "A",
+    "mana": "C",
+    "luck": "B",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 403900,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      },
+      {
+        "id": 88450,
+        "name": "기승 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 705550,
+        "name": "아홉 위인의 갑옷 A",
+        "rank": null
+      },
+      {
+        "id": 706350,
+        "name": "찰나의 일격 C",
+        "rank": null
+      },
+      {
+        "id": 707550,
+        "name": "브릴리아도로의 울음 A",
+        "rank": null
+      },
+      {
+        "id": 706353,
+        "name": "찰나의 일격 C+++",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 403901,
+      "name": "부대검의 맹세",
+      "ruby": "세르망 드 뒤랑달",
+      "rank": "A",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4039000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/403900/403900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/403900/403900b@2.png"
+  }
+}

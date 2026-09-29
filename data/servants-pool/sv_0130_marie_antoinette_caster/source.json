@@ -1,0 +1,120 @@
+{
+  "servant_id": "sv_0130_marie_antoinette_caster",
+  "source_id": 130,
+  "name_ko": "마리 앙투아네트",
+  "name_en": "Marie Antoinette (Caster)",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/130?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "D",
+    "agi": "C",
+    "mana": "A",
+    "luck": "B+",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 502700,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83550,
+        "name": "진지작성 A",
+        "rank": null
+      },
+      {
+        "id": 80250,
+        "name": "도구작성 D",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 266551,
+        "name": "비치 플라워 A+",
+        "rank": null
+      },
+      {
+        "id": 269550,
+        "name": "해바라기의 광채 A",
+        "rank": null
+      },
+      {
+        "id": 270550,
+        "name": "아름다운 공주(바다) A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 502701,
+      "name": "사랑스러운 광채는 영원히",
+      "ruby": "크리스탈 드레스",
+      "rank": "A",
+      "type": "대군보구/대민보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5027000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/502700/502700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/502700/502700b@2.png"
+  }
+}

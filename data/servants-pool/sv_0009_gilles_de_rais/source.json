@@ -1,0 +1,138 @@
+{
+  "servant_id": "sv_0009_gilles_de_rais",
+  "source_id": 9,
+  "name_ko": "질 드 레",
+  "name_en": "Gilles de Rais",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/9?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "C",
+    "mana": "D",
+    "luck": "D",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 102200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 88450,
+        "name": "기승 B",
+        "rank": null
+      },
+      {
+        "id": 54650,
+        "name": "광화 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 77350,
+        "name": "군략 C",
+        "rank": null
+      },
+      {
+        "id": 97450,
+        "name": "황금률 B",
+        "rank": null
+      },
+      {
+        "id": 212450,
+        "name": "프렐라티의 격려 B",
+        "rank": null
+      },
+      {
+        "id": 2378650,
+        "name": "성처녀의 개선 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 102201,
+      "name": "신성한 깃발로 모여 외쳐라",
+      "ruby": "세인트 워 오더",
+      "rank": "B",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1022000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/102200/102200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/102200/102200b@2.png"
+  }
+}

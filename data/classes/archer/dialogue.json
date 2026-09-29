@@ -210,6 +210,78 @@
         "text": "……오늘은 여기까지다. 이러다가는 마스터의 회로가 먼저 타 버린다.",
         "tone": "grim"
       }
+    ],
+    "phase_win": [
+      {
+        "id": "win_01",
+        "text": "명중.",
+        "tone": "defiant"
+      },
+      {
+        "id": "win_02",
+        "text": "──거기다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "win_03",
+        "text": "읽혔다.",
+        "tone": "defiant"
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "hit_01",
+        "text": "큭……!",
+        "tone": "grim"
+      },
+      {
+        "id": "hit_02",
+        "text": "계산이 틀렸나……!",
+        "tone": "grim"
+      }
+    ],
+    "skill": [
+      {
+        "id": "skill_01",
+        "text": "──조준.",
+        "tone": "defiant"
+      },
+      {
+        "id": "skill_02",
+        "text": "여기서 한 수 둔다.",
+        "tone": "defiant"
+      }
+    ],
+    "comeback": [
+      {
+        "id": "comeback_01",
+        "text": "……아슬아슬했다. 하지만 마지막 한 발은, 빗나가지 않았다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "comeback_02",
+        "text": "벼랑 끝에서 쏜 화살일수록, 잘 맞는 법이다.",
+        "tone": "defiant"
+      }
+    ],
+    "weakness": [
+      {
+        "id": "weakness_01",
+        "text": "{enemy}. 그 전설의 사각은 이미 보인다. ──그곳을 노린다.",
+        "tone": "cold"
+      },
+      {
+        "id": "weakness_02",
+        "text": "약점은 파악했다. 이제 맞히기만 하면 된다.",
+        "tone": "cold"
+      }
+    ],
+    "intel_battle": [
+      {
+        "id": "battle_01",
+        "text": "결판은 나지 않았다. 대신 버릇과 간격은, 전부 봐 두었다.",
+        "tone": "calm"
+      }
     ]
   }
 }

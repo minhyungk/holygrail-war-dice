@@ -1,0 +1,128 @@
+{
+  "servant_id": "sv_0024_georgios",
+  "source_id": 24,
+  "name_ko": "게오르기우스",
+  "name_en": "Georgios",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/24?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "A+",
+    "agi": "C++",
+    "mana": "D",
+    "luck": "A+",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 402,
+      "name": "twoStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2003,
+      "name": "dragonSlayer"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 400600,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 88450,
+        "name": "기승 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 32551,
+        "name": "수호기사 A+",
+        "rank": null
+      },
+      {
+        "id": 48451,
+        "name": "순교자의 혼 B+",
+        "rank": null
+      },
+      {
+        "id": 41550,
+        "name": "전투속행 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 400601,
+      "name": "힘을 타파하는 축복의 검",
+      "ruby": "아스칼론",
+      "rank": "B",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4006000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/400600/400600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/400600/400600b@2.png"
+  }
+}

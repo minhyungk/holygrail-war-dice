@@ -1,0 +1,559 @@
+{
+  "origin": "Atlas Academy KR nice API",
+  "groups": [
+    {
+      "type": "home",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "생일",
+          "ids": [
+            "0_H010",
+            "0_H011"
+          ],
+          "subtitle": "생일 축하해. 파티를 열도록 하자. \n될 수 있으면 많은 사람을 부르는 게 떠들썩하고 좋겠는데──",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "birthDay",
+          "cond_value": 0
+        },
+        {
+          "name": "이벤트 개최중",
+          "ids": [
+            "0_H020"
+          ],
+          "subtitle": "세계의 변화를 느껴. 당신도, 가는거지?",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 11
+        },
+        {
+          "name": "대화 1",
+          "ids": [
+            "0_H030"
+          ],
+          "subtitle": "언제든지 갈 수 있어. 후후. 당신은 어때, 마스터?",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 12
+        },
+        {
+          "name": "대화 2",
+          "ids": [
+            "0_H040"
+          ],
+          "subtitle": "지금의 나는 서번트. 일시적이기는 하지만, 당신을 도울게.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 13
+        },
+        {
+          "name": "대화 3",
+          "ids": [
+            "0_H050",
+            "0_H051"
+          ],
+          "subtitle": "지금의 나는 일시적인 존재이지만, \n명령을 수행할 능력과 강인함이 있어. \n당신은 나를…… 이 성배를 제대로 다룰 수 있을까?",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 14
+        },
+        {
+          "name": "좋아하는 것",
+          "ids": [
+            "0_H060",
+            "0_H061"
+          ],
+          "subtitle": "좋아하는 것? 나는 좋아하는 것이 많이 있는데……\n한 가지를 떠올린다면, 그렇지. 그 아이하고, 그 사람을……",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 15
+        },
+        {
+          "name": "싫어하는 것",
+          "ids": [
+            "0_H070",
+            "0_H071"
+          ],
+          "subtitle": "싫어하는 것? ……일반론이지만,\n말도 안 되게 매운 음식을 좋아하고,\n표정이 없고, 태극권을 사용하는 신부는 안된다고 생각해.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 16
+        },
+        {
+          "name": "성배에 대하여",
+          "ids": [
+            "0_H080",
+            "0_H081",
+            "0_H082"
+          ],
+          "subtitle": "성배. \n그것은 현재의 나이면서, 동시에 다른 존재를 가리키는 말이기도 해. \n본래, 어떠한 성배에도 의사는 존재하지 않아.\n하지만 때때로, 성배는 검게 물들어 이 세상의 모든 악을……",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 17
+        },
+        {
+          "name": "인연 Lv.1",
+          "ids": [
+            "0_H090",
+            "0_H091",
+            "0_H092"
+          ],
+          "subtitle": "나는 아이리스필. \n풀네임은 아이리스필 폰 아인츠베른. \n성배의 의사, 라고 할 수는 없지만……",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 1
+        },
+        {
+          "name": "인연 Lv.2",
+          "ids": [
+            "0_H100",
+            "0_H101",
+            "0_H102"
+          ],
+          "subtitle": "내가 이렇게 내 모습을 하고 현계한다. \n사실은 있을 수 없는 일이지.\n왜냐하면 나는 좌에 있는 영령이 아닌걸.\n……진짜 나는, 인간으로서 ……호문쿨루스로서 죽어있어.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 2
+        },
+        {
+          "name": "인연 Lv.3",
+          "ids": [
+            "0_H110",
+            "0_H111"
+          ],
+          "subtitle": "있을 수 없는 형태로의 현계. 내가 캐스터 서번트가 되다니. \n이유는 몇 가지인가 짐작이 가. \n하지만 별로 생각하고 싶지 않아서…… 당신은, 어때?",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 3
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H120",
+            "0_H121"
+          ],
+          "subtitle": "이상한 이야기지. \n나는 성배의 힘으로, 성배의 단말 중 하나로서 일시적으로 \n현계하고 있는데…… 성배보다도 소중히 여기는 게 있어. \n그 아이하고, 그 사람.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H130",
+            "0_H131",
+            "0_H132"
+          ],
+          "subtitle": "당신도 소중해. 세상을 위해 싸우는 당신. \n성배야 어찌 됐든, 나는 당신을 응원할게. 부디 세계를 지켜줘. \n그 사람이 사랑했던 그 아이가 살아가야 할, 이 세계를……",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        },
+        {
+          "name": "대화 4",
+          "ids": [
+            "0_H140",
+            "0_H141"
+          ],
+          "subtitle": "어머나, 이건. 이 느낌…… 설마 그 사람이 있는 거야? \n하지만 뭐랄까…… 좋지 않은 뭔가에 붙잡힌 것 같은 느낌이……?",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 18
+        },
+        {
+          "name": "대화 5",
+          "ids": [
+            "0_H150",
+            "0_H151"
+          ],
+          "subtitle": "우후후. 알겠다. \n그 아이가 있구나…… 다시 만나게 되다니…… 생각도 못했어.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 19
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "0_G010"
+          ],
+          "subtitle": "마력을 축적해서…… 성배는 소원을 받아들이지……",
+          "text": [
+            "마력을 축적해서…… 성배는 소원을 받아들이지……"
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 2",
+          "ids": [
+            "0_G020"
+          ],
+          "subtitle": "성배의 기능과는 별개로, 나라는 개체가 힘을 얻고 있구나──",
+          "text": [
+            "성배의 기능과는 별개로, 나라는 개체가 힘을 얻고 있구나──"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 1",
+          "ids": [
+            "0_G030",
+            "0_G031"
+          ],
+          "subtitle": "내가, 변화되어 간다?\n나만의 기능이 아니야. 이건 당신의 마음이구나, 마스터.",
+          "text": [
+            "내가, 변화되어 간다?",
+            "나만의 기능이 아니야. 이건 당신의 마음이구나, 마스터."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 1
+        },
+        {
+          "name": "영기재림 3",
+          "ids": [
+            "0_G040",
+            "0_G041"
+          ],
+          "subtitle": "이 형태를…… 나는 알고 있어. \n하늘의 옷──헤븐스 필. 이걸, 내가 걸치게 되다니──",
+          "text": [
+            "이 형태를…… 나는 알고 있어.",
+            "하늘의 옷──헤븐스 필. 이걸, 내가 걸치게 되다니──"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 3
+        },
+        {
+          "name": "영기재림 4",
+          "ids": [
+            "0_G050",
+            "0_G051"
+          ],
+          "subtitle": "당신의 마음은 강력하구나, 마스터. \n이후로, 나는 많은 힘을 당신에게 빌려줄 수 있겠지──",
+          "text": [
+            "당신의 마음은 강력하구나, 마스터.",
+            "이후로, 나는 많은 힘을 당신에게 빌려줄 수 있겠지──"
+          ],
+          "cond_type": "svtCountStop",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "firstGet",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "소환",
+          "ids": [
+            "0_S010",
+            "0_S011",
+            "0_S012"
+          ],
+          "subtitle": "나는 성배에서 나오는 자. 성배의 단말과도 같은 자.\n일시적인 형태. 일시적인 서번트.\n이름은, 아이리스필이라 불러줘.",
+          "text": [
+            "나는 성배에서 나온 자. 성배의 단말과도 같은 자.",
+            "[r]\n일시적인 형태. 일시적인 서번트.",
+            "[r]\n이름은, 아이리스필이라 불러줘."
+          ],
+          "cond_type": "svtGet",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "공격 1",
+          "ids": [
+            "0_B010"
+          ],
+          "subtitle": "빛이여!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "0_B020"
+          ],
+          "subtitle": "안 돼",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "0_B030"
+          ],
+          "subtitle": "헛수고입니다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B040"
+          ],
+          "subtitle": "성배는 합당한 사람에게만──",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "0_B080"
+          ],
+          "subtitle": "괴롭게 하지는 않을 테니까……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "0_B090"
+          ],
+          "subtitle": "싸우는 것은 양쪽 모두 잘못입니다──",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 1",
+          "ids": [
+            "0_B100"
+          ],
+          "subtitle": "벌을 내리겠습니다.\n못된 장난에는, 그에 상응하는……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "0_B110"
+          ],
+          "subtitle": "자격없는 자는, 건드려서는 안 돼……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "0_B120"
+          ],
+          "subtitle": "성배에, 또, 쌓여가……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "0_B130"
+          ],
+          "subtitle": "당신은 아니야……\n성배를, 손에 넣어야 할 사람은……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "0_B140"
+          ],
+          "subtitle": "꺄앗!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "0_B150"
+          ],
+          "subtitle": "꺄아아아아아아!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "0_B160"
+          ],
+          "subtitle": "당신……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "0_B170"
+          ],
+          "subtitle": "이리야……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "0_B180"
+          ],
+          "subtitle": "네.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "0_B190"
+          ],
+          "subtitle": "알겠습니다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "0_B200"
+          ],
+          "subtitle": "가죠.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B210"
+          ],
+          "subtitle": "──열려라, 하늘의 잔.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B050",
+            "0_B051"
+          ],
+          "subtitle": "하얀 성배여, 칭송하라──",
+          "text": [
+            "하얀 성배여",
+            "칭송하라──"
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        }
+      ]
+    }
+  ]
+}

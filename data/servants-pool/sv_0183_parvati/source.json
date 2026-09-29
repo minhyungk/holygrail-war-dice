@@ -1,0 +1,144 @@
+{
+  "servant_id": "sv_0183_parvati",
+  "source_id": 183,
+  "name_ko": "파르바티",
+  "name_en": "Pārvatī",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/183?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "D",
+    "mana": "B",
+    "luck": "B",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2654,
+      "name": "livingHuman"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 303000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 30450,
+        "name": "여신의 신핵 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 408650,
+        "name": "이매지너리 어라운드 EX",
+        "rank": null
+      },
+      {
+        "id": 407650,
+        "name": "카마의 재 EX",
+        "rank": null
+      },
+      {
+        "id": 409551,
+        "name": "여신의 은혜 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 303001,
+      "name": "사랑을 보고도 행하지 않음은 사랑 없음이라",
+      "ruby": "트리슐라 샤크티",
+      "rank": "EX",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3030000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/303000/303000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/303000/303000b@2.png"
+  }
+}

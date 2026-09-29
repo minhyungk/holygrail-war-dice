@@ -1,0 +1,146 @@
+{
+  "servant_id": "sv_0394_ptolemaios",
+  "source_id": 394,
+  "name_ko": "프톨레마이오스",
+  "name_en": "Ptolemaîos",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/394?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "A",
+    "agi": "C",
+    "mana": "A",
+    "luck": "A++",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 205000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 20550,
+        "name": "단독행동 A",
+        "rank": null
+      },
+      {
+        "id": 83551,
+        "name": "진지작성 A+",
+        "rank": null
+      },
+      {
+        "id": 2284550,
+        "name": "영기 정보 보존 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2282550,
+        "name": "구제의 카리스마 A",
+        "rank": null
+      },
+      {
+        "id": 2283550,
+        "name": "분할사고(왕) A",
+        "rank": null
+      },
+      {
+        "id": 2281650,
+        "name": "예지에 대한 접촉 EX",
+        "rank": null
+      },
+      {
+        "id": 2281675,
+        "name": "예지에 대한 접촉 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 205001,
+      "name": "달은 모르는, 영원한 빛",
+      "ruby": "파로스 티스 알렉산드리아스",
+      "rank": "B++",
+      "type": "대성보구"
+    },
+    {
+      "id": 205002,
+      "name": "왕의 서고",
+      "ruby": "비블리오테케 바실레이오우",
+      "rank": "A+",
+      "type": "결계/대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2050000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/205000/205000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/205000/205000b@2.png"
+  }
+}

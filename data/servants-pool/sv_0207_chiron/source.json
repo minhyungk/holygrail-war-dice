@@ -1,0 +1,156 @@
+{
+  "servant_id": "sv_0207_chiron",
+  "source_id": 207,
+  "name_ko": "케이론",
+  "name_en": "Chiron",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/207?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "A+",
+    "mana": "B",
+    "luck": "C",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2114,
+      "name": "greekMythologyMales"
+    },
+    {
+      "id": 2466,
+      "name": "associatedToTheArgo"
+    },
+    {
+      "id": 2797,
+      "name": "divineSpirit"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 203000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 20550,
+        "name": "단독행동 A",
+        "rank": null
+      },
+      {
+        "id": 62350,
+        "name": "신성 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 37550,
+        "name": "심안(진짜) A",
+        "rank": null
+      },
+      {
+        "id": 480650,
+        "name": "영생의 봉헌 EX",
+        "rank": null
+      },
+      {
+        "id": 481551,
+        "name": "신수의 지혜 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 203001,
+      "name": "천갈일사",
+      "ruby": "안타레스・스나이프",
+      "rank": "A",
+      "type": "대인보구"
+    },
+    {
+      "id": 203002,
+      "name": "천갈일사",
+      "ruby": "안타레스・스나이프",
+      "rank": "A+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2030000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/203000/203000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/203000/203000b@2.png"
+  }
+}

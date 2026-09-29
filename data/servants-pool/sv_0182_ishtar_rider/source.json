@@ -1,0 +1,162 @@
+{
+  "servant_id": "sv_0182_ishtar_rider",
+  "source_id": 182,
+  "name_ko": "이슈타르",
+  "name_en": "Ishtar (Rider)",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/182?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "A",
+    "mana": "B",
+    "luck": "B",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2654,
+      "name": "livingHuman"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2847,
+      "name": "levitating"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 402600,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 88650,
+        "name": "기승 EX",
+        "rank": null
+      },
+      {
+        "id": 20550,
+        "name": "단독행동 A",
+        "rank": null
+      },
+      {
+        "id": 30450,
+        "name": "여신의 신핵 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 398550,
+        "name": "빛나는 물의 옷 A",
+        "rank": null
+      },
+      {
+        "id": 399450,
+        "name": "액셀 턴 B",
+        "rank": null
+      },
+      {
+        "id": 400550,
+        "name": "서머 브레이커! A",
+        "rank": null
+      },
+      {
+        "id": 400551,
+        "name": "서머 브레이커! A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 402601,
+      "name": "신봉의 하늘을 맴도는 샛별의 무지개",
+      "ruby": "앙갈타 세븐 컬러즈",
+      "rank": "EX",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4026000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/402600/402600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/402600/402600b@2.png"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "servant_id": "sv_0345_kriemhild",
+  "source_id": 345,
+  "name_ko": "크림힐트",
+  "name_en": "Kriemhild",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/345?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C++",
+    "end": "D",
+    "agi": "C",
+    "mana": "A",
+    "luck": "EX",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 704200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54650,
+        "name": "광화 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2061452,
+        "name": "복수계획(광분) B++",
+        "rank": null
+      },
+      {
+        "id": 2062550,
+        "name": "살육응수 A",
+        "rank": null
+      },
+      {
+        "id": 2063650,
+        "name": "지체 높은 소녀의 사랑 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 704201,
+      "name": "유리마검・성비실추",
+      "ruby": "발뭉・크림힐트",
+      "rank": "A+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7042000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/704200/704200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/704200/704200b@2.png"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "servant_id": "sv_0344_roland",
+  "source_id": 344,
+  "name_ko": "롤랑",
+  "name_en": "Roland",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/344?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "A+",
+    "agi": "B",
+    "mana": "C",
+    "luck": "B",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 104300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 88550,
+        "name": "기승 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2058550,
+        "name": "금강체 A",
+        "rank": null
+      },
+      {
+        "id": 2059350,
+        "name": "사랑에 취해서 하염없이 눈물 C",
+        "rank": null
+      },
+      {
+        "id": 2060650,
+        "name": "너무 늦은 뿔피리 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 104301,
+      "name": "불훼의 극성",
+      "ruby": "뒤랑달",
+      "rank": "A+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1043000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/104300/104300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/104300/104300b@2.png"
+  }
+}

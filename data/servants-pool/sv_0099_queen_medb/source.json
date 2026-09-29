@@ -1,0 +1,158 @@
+{
+  "servant_id": "sv_0099_queen_medb",
+  "source_id": 99,
+  "name_ko": "여왕 메이브",
+  "name_en": "Queen Medb",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/99?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "B",
+    "mana": "C",
+    "luck": "EX",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 401300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 88550,
+        "name": "기승 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 181550,
+        "name": "황금률(몸) A",
+        "rank": null
+      },
+      {
+        "id": 5450,
+        "name": "카리스마 B",
+        "rank": null
+      },
+      {
+        "id": 91350,
+        "name": "매혹의 미성 C",
+        "rank": null
+      },
+      {
+        "id": 867551,
+        "name": "여왕의 몸 A+",
+        "rank": null
+      },
+      {
+        "id": 293550,
+        "name": "여왕의 훈육 A",
+        "rank": null
+      },
+      {
+        "id": 528350,
+        "name": "사랑스러운 나의 벌꿀술 C",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 401301,
+      "name": "사랑하는 나의 강철전차",
+      "ruby": "채리엇 마이 러브",
+      "rank": "B",
+      "type": "대군보구"
+    },
+    {
+      "id": 401302,
+      "name": "사랑하는 나의 강철전차",
+      "ruby": "채리엇 마이 러브",
+      "rank": "B+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4013000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/401300/401300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/401300/401300b@2.png"
+  }
+}

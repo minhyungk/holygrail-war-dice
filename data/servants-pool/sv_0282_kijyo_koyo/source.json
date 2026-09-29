@@ -1,0 +1,132 @@
+{
+  "servant_id": "sv_0282_kijyo_koyo",
+  "source_id": 282,
+  "name_ko": "귀녀 코요",
+  "name_en": "Kijyo Koyo",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/282?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "D",
+    "mana": "B",
+    "luck": "D",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1132,
+      "name": "oni"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2002,
+      "name": "dragon"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2019,
+      "name": "demonic"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 703700,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54550,
+        "name": "광화 A",
+        "rank": null
+      },
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 728350,
+        "name": "변화(공룡) C",
+        "rank": null
+      },
+      {
+        "id": 729550,
+        "name": "구두룡의 뇌화 A",
+        "rank": null
+      },
+      {
+        "id": 730450,
+        "name": "생명의 밧줄 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 703701,
+      "name": "단풍놀이",
+      "ruby": "모미지가리",
+      "rank": "C",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7037000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/703700/703700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/703700/703700b@2.png"
+  }
+}

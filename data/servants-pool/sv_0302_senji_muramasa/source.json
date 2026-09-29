@@ -1,0 +1,134 @@
+{
+  "servant_id": "sv_0302_senji_muramasa",
+  "source_id": 302,
+  "name_ko": "센지 무라마사",
+  "name_en": "Senji Muramasa",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/302?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "A",
+    "agi": "D",
+    "mana": "E",
+    "luck": "B",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2654,
+      "name": "livingHuman"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 104900,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 83550,
+        "name": "진지작성 A",
+        "rank": null
+      },
+      {
+        "id": 831550,
+        "name": "도검심미 A",
+        "rank": null
+      },
+      {
+        "id": 832450,
+        "name": "당대불길 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 833451,
+        "name": "타메시모노 B+",
+        "rank": null
+      },
+      {
+        "id": 834550,
+        "name": "업의 눈 A",
+        "rank": null
+      },
+      {
+        "id": 835650,
+        "name": "불꽃 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 104901,
+      "name": "무원의 검제",
+      "ruby": "츠무카리 무라마사",
+      "rank": "A+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1049000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/104900/104900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/104900/104900b@2.png"
+  }
+}

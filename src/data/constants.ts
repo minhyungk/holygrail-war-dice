@@ -5,7 +5,7 @@ import raw from '../../data/constants.json';
 import rawPhases from '../../data/phases.json';
 import rawSkills from '../../data/common/skills.json';
 import rawTiles from '../../data/tiles.json';
-import { type ActiveSkillDef, ConstantsFile, type ImageGrid, PHASE_IDS, PhasesFile, RANK_LETTERS, type SkillDef, SkillsFile, TERRAINS, TilesFile, type PhaseDef, type PhaseId, type Tile } from './schema';
+import { type ActiveSkillDef, ConstantsFile, type ImageGrid, PHASE_IDS, PhasesFile, RANK_LETTERS, REACTIONS, type Reaction, type SkillDef, SkillsFile, TERRAINS, TilesFile, type PhaseDef, type PhaseId, type Tile } from './schema';
 
 const num = z.number();
 const int = z.number().int();
@@ -54,8 +54,7 @@ const Schema = z
     'day.intel_mod': z.array(num).length(4),
     'day.intel_dc': z.array(num).length(4),
     'day.bond_dc': num,
-    'day.craft_dc': num,
-    'day.camp_bonus': num,
+    'day.role_bonus': z.object({ intel: num, bond: num, leyline: num }).strict(),
     'day.ambush_margin': num,
     'day.ambush_bonus': num,
     'affinity.thresholds': z.array(num).length(4),
@@ -68,17 +67,22 @@ const Schema = z
     'affinity.delta_bond': z.object({ success: num, fail: num }).strict(),
     'affinity.delta_supply': z.object({ great: num, success: num, normal: num, fail: num, fumble: num }).strict(),
     'affinity.delta_post_choice': num,
+    'affinity.reaction': z.record(z.string(), z.object(Object.fromEntries(REACTIONS.map((r) => [r, num])) as Record<Reaction, z.ZodNumber>).strict()),
     'ai.accept': z.object({ aggressive: num, proud: num, cautious: num, cunning: num }).strict(),
     'ai.cunning_win_rate': num,
     'ai.elo_d': num,
     'ai.np_open_chance': z.object({ base: num, danger: num }).strict(),
     'ai.retreat_chance': z.object({ aggressive: num, proud: num, cautious: num, cunning: num, cunning_behind: num }).strict(),
+    'ai.seal_retreat_max': int.nonnegative(),
+    'ai.hunt_from_day': int.positive(),
+    'ai.hunt_chance': num.min(0).max(1),
     'skill.rank_amount': z.object({ major: byLetter(num), minor: byLetter(num) }).strict(),
     'skill.fixed_amount': z.record(z.string(), num),
     'text.lines_per_beat_big': int,
     'text.lines_per_beat': int,
     'text.lines_per_beat_small': int,
     'text.max_narration_run': int,
+    'text.slot_chance': z.record(z.string(), num.min(0).max(1)),
     'text.small_margin': num,
     'text.affinity_magnitude': z.array(num).length(2),
     'text.typing_ms': z.object({ slow: num, normal: num, fast: num }).strict(),

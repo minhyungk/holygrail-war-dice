@@ -1,0 +1,158 @@
+{
+  "servant_id": "sv_0189_osakabehime",
+  "source_id": 189,
+  "name_ko": "오사카베히메",
+  "name_en": "Osakabehime",
+  "class": "assassin",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/189?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "E",
+    "mana": "A+",
+    "luck": "A+",
+    "np": "A++"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 105,
+      "name": "classAssassin"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 603100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83551,
+        "name": "진지작성 A+",
+        "rank": null
+      },
+      {
+        "id": 428450,
+        "name": "기척 차단(음) B",
+        "rank": null
+      },
+      {
+        "id": 62350,
+        "name": "신성 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 25551,
+        "name": "변화 A+",
+        "rank": null
+      },
+      {
+        "id": 423650,
+        "name": "치요가미 조법 EX",
+        "rank": null
+      },
+      {
+        "id": 424552,
+        "name": "성요괴 A++",
+        "rank": null
+      },
+      {
+        "id": 613550,
+        "name": "사신지상(백로) A",
+        "rank": null
+      },
+      {
+        "id": 423900,
+        "name": "치요가미 조법 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 603101,
+      "name": "하쿠로 성의 백귀 하치텐도 님",
+      "ruby": "하쿠로 성의 백귀 하치텐도 님",
+      "rank": "A+",
+      "type": "대성보구 (자신)"
+    },
+    {
+      "id": 603102,
+      "name": "하쿠로 성의 백귀 하치텐도 님",
+      "ruby": "하쿠로 성의 백귀 하치텐도 님",
+      "rank": "EX",
+      "type": "대성보구 (자신)"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6031000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/603100/603100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/603100/603100b@2.png"
+  }
+}

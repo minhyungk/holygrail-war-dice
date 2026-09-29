@@ -1,0 +1,140 @@
+{
+  "servant_id": "sv_0313_percival",
+  "source_id": 313,
+  "name_ko": "퍼시벌",
+  "name_en": "Percival",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/313?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "B",
+    "mana": "D",
+    "luck": "C",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2795,
+      "name": "knightsOfTheRound"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 304700,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34452,
+        "name": "대 마력 B++",
+        "rank": null
+      },
+      {
+        "id": 88351,
+        "name": "기승 C+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 896550,
+        "name": "성배의 가호 A",
+        "rank": null
+      },
+      {
+        "id": 897451,
+        "name": "수호기사(성창) B+",
+        "rank": null
+      },
+      {
+        "id": 898450,
+        "name": "구제의 빛 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 304701,
+      "name": "빛이 비치는 운명의 창",
+      "ruby": "롱기누스・카운트제로",
+      "rank": "C+~A+",
+      "type": "대성보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3047000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/304700/304700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/304700/304700b@2.png"
+  }
+}

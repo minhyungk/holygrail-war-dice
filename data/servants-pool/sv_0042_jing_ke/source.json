@@ -1,0 +1,123 @@
+{
+  "servant_id": "sv_0042_jing_ke",
+  "source_id": 42,
+  "name_ko": "형가",
+  "name_en": "Jing Ke",
+  "class": "assassin",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/42?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "E",
+    "agi": "A",
+    "mana": "E",
+    "luck": "D",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 105,
+      "name": "classAssassin"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 601100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 50450,
+        "name": "기척 차단 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 43550,
+        "name": "억제 A",
+        "rank": null
+      },
+      {
+        "id": 8450,
+        "name": "플래닝 B",
+        "rank": null
+      },
+      {
+        "id": 217550,
+        "name": "방약무인 A",
+        "rank": null
+      },
+      {
+        "id": 853451,
+        "name": "십보살일인 B+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 601101,
+      "name": "불환비수",
+      "ruby": "그저 죽일 뿐",
+      "rank": "B",
+      "type": "대인보구"
+    },
+    {
+      "id": 601102,
+      "name": "불환비수",
+      "ruby": "그저 죽일 뿐",
+      "rank": "B+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6011000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/601100/601100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/601100/601100b@2.png"
+  }
+}

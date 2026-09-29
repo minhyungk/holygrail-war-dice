@@ -1,0 +1,128 @@
+{
+  "servant_id": "sv_0263_carmilla_rider",
+  "source_id": 263,
+  "name_ko": "카밀라",
+  "name_en": "Carmilla (Rider)",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/263?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "E",
+    "agi": "A++",
+    "mana": "D",
+    "luck": "B",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 403600,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 20550,
+        "name": "단독행동 A",
+        "rank": null
+      },
+      {
+        "id": 50450,
+        "name": "기척 차단 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 672550,
+        "name": "팜 파탈(가짜) A",
+        "rank": null
+      },
+      {
+        "id": 673550,
+        "name": "괴도의 예고장 A",
+        "rank": null
+      },
+      {
+        "id": 674650,
+        "name": "미스트리스・C EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 403601,
+      "name": "야밤을 달리는 강철처녀",
+      "ruby": "테스타로사 메이든",
+      "rank": "B",
+      "type": "대인~대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4036000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/403600/403600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/403600/403600b@2.png"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "servant_id": "sv_0123_gawain",
+  "source_id": 123,
+  "name_ko": "가웨인",
+  "name_en": "Gawain",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/123?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B+",
+    "end": "B+",
+    "agi": "B+",
+    "mana": "A",
+    "luck": "A",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2795,
+      "name": "knightsOfTheRound"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 100700,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 88450,
+        "name": "기승 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 242650,
+        "name": "성자의 숫자 EX",
+        "rank": null
+      },
+      {
+        "id": 5150,
+        "name": "카리스마 E",
+        "rank": null
+      },
+      {
+        "id": 243650,
+        "name": "베르틸락의 벨트 EX",
+        "rank": null
+      },
+      {
+        "id": 658450,
+        "name": "불야의 카리스마 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 100701,
+      "name": "전륜하는 승리의 검",
+      "ruby": "엑스칼리버 갈라틴",
+      "rank": "A+",
+      "type": "대군보구"
+    },
+    {
+      "id": 100702,
+      "name": "전륜하는 승리의 검",
+      "ruby": "엑스칼리버 갈라틴",
+      "rank": "A+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1007000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/100700/100700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/100700/100700b@2.png"
+  }
+}

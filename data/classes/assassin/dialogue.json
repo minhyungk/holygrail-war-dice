@@ -210,6 +210,78 @@
         "text": "……오늘은 그만. 마스터가 쓰러지면, 지킬 대상이 없어진다.",
         "tone": "grim"
       }
+    ],
+    "phase_win": [
+      {
+        "id": "win_01",
+        "text": "──베었다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "win_02",
+        "text": "등 뒤다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "win_03",
+        "text": "빈틈.",
+        "tone": "defiant"
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "hit_01",
+        "text": "큭……!",
+        "tone": "grim"
+      },
+      {
+        "id": "hit_02",
+        "text": "들켰나……!",
+        "tone": "grim"
+      }
+    ],
+    "skill": [
+      {
+        "id": "skill_01",
+        "text": "기척을 지운다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "skill_02",
+        "text": "──지금이다.",
+        "tone": "defiant"
+      }
+    ],
+    "comeback": [
+      {
+        "id": "comeback_01",
+        "text": "……목숨은 붙어 있다. 그렇다면, 마지막에 베는 쪽은 이쪽이다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "comeback_02",
+        "text": "궁지에 몰린 그림자가 가장 깊다. ──증명했다.",
+        "tone": "defiant"
+      }
+    ],
+    "weakness": [
+      {
+        "id": "weakness_01",
+        "text": "{enemy}. 그 전설의 급소는 이미 알고 있다. ──그곳에 칼을 댄다.",
+        "tone": "cold"
+      },
+      {
+        "id": "weakness_02",
+        "text": "약점은 보였다. 한 번이면 된다.",
+        "tone": "cold"
+      }
+    ],
+    "intel_battle": [
+      {
+        "id": "battle_01",
+        "text": "놓쳤다. 하지만 숨소리와 버릇은, 전부 봐 두었다.",
+        "tone": "calm"
+      }
     ]
   }
 }

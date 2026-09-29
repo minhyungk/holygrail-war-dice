@@ -1,0 +1,136 @@
+{
+  "servant_id": "sv_0223_diarmuid_ua_duibhne",
+  "source_id": 223,
+  "name_ko": "디어뮈드 오 디나",
+  "name_en": "Diarmuid Ua Duibhne",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/223?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B+",
+    "end": "B",
+    "agi": "A",
+    "mana": "D",
+    "luck": "E",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 103500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34551,
+        "name": "대 마력 A+",
+        "rank": null
+      },
+      {
+        "id": 88450,
+        "name": "기승 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 525550,
+        "name": "마력방출(도약) A",
+        "rank": null
+      },
+      {
+        "id": 526450,
+        "name": "피오나 기사단의 명예 B",
+        "rank": null
+      },
+      {
+        "id": 527451,
+        "name": "격정의 물결 B+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 103501,
+      "name": "분노의 파도",
+      "ruby": "모랄타",
+      "rank": "B",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1035000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/103500/103500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/103500/103500b@2.png"
+  }
+}

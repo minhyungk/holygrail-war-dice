@@ -1,0 +1,129 @@
+{
+  "servant_id": "sv_0397_takeda_harunobu",
+  "source_id": 397,
+  "name_ko": "타케다 하루노부",
+  "name_en": "Takeda Harunobu",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/397?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B+",
+    "end": "B+",
+    "agi": "C+",
+    "mana": "C+",
+    "luck": "C",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2735,
+      "name": "genji"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 405200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 88550,
+        "name": "기승 A",
+        "rank": null
+      },
+      {
+        "id": 34250,
+        "name": "대 마력 D",
+        "rank": null
+      },
+      {
+        "id": 2303350,
+        "name": "진지작성(타케다) C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2295550,
+        "name": "카이의 호랑이 A",
+        "rank": null
+      },
+      {
+        "id": 2296550,
+        "name": "붉은 불꽃 A",
+        "rank": null
+      },
+      {
+        "id": 2297450,
+        "name": "타테나시 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 405201,
+      "name": "풍림화산",
+      "ruby": "풍림화산",
+      "rank": "B",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4052000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/405200/405200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/405200/405200b@2.png"
+  }
+}

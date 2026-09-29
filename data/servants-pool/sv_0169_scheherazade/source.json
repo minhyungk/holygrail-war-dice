@@ -1,0 +1,142 @@
+{
+  "servant_id": "sv_0169_scheherazade",
+  "source_id": 169,
+  "name_ko": "셰에라자드",
+  "name_en": "Scheherazade",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/169?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "D",
+    "agi": "E",
+    "mana": "C",
+    "luck": "EX",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 503000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83552,
+        "name": "진지작성 A++",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 364650,
+        "name": "이야기꾼 EX",
+        "rank": null
+      },
+      {
+        "id": 365551,
+        "name": "생존의 침실 A+",
+        "rank": null
+      },
+      {
+        "id": 366550,
+        "name": "대 영웅 A",
+        "rank": null
+      },
+      {
+        "id": 755650,
+        "name": "야화의 이야기꾼 EX",
+        "rank": null
+      },
+      {
+        "id": 475650,
+        "name": "대 영웅(담) EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 503000,
+      "name": "???",
+      "ruby": "",
+      "rank": "?",
+      "type": "???"
+    },
+    {
+      "id": 503001,
+      "name": "천일야화",
+      "ruby": "알프 라일라 와 라일라",
+      "rank": "EX",
+      "type": "대왕보구"
+    },
+    {
+      "id": 503002,
+      "name": "???",
+      "ruby": "",
+      "rank": "?",
+      "type": "???"
+    },
+    {
+      "id": 503003,
+      "name": "천일야화",
+      "ruby": "알프 라일라 와 라일라",
+      "rank": "EX",
+      "type": "대왕보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5030000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/503000/503000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/503000/503000b@2.png"
+  }
+}

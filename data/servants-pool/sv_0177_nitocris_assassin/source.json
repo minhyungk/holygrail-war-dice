@@ -1,0 +1,155 @@
+{
+  "servant_id": "sv_0177_nitocris_assassin",
+  "source_id": 177,
+  "name_ko": "니토크리스",
+  "name_en": "Nitocris (Assassin)",
+  "class": "assassin",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/177?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "B",
+    "mana": "A",
+    "luck": "A",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 105,
+      "name": "classAssassin"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2797,
+      "name": "divineSpirit"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 602800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 50550,
+        "name": "기척 차단 A",
+        "rank": null
+      },
+      {
+        "id": 62451,
+        "name": "신성 B+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 395550,
+        "name": "흰색 어의 A",
+        "rank": null
+      },
+      {
+        "id": 396650,
+        "name": "비치 패닉 EX",
+        "rank": null
+      },
+      {
+        "id": 397550,
+        "name": "열사의 왕도 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 602801,
+      "name": "더러움을 씻어내라, 푸르고 아름다운 나일",
+      "ruby": "스네프루 이테루 나일",
+      "rank": "B",
+      "type": "대군보구"
+    },
+    {
+      "id": 602802,
+      "name": "더러움을 씻어내라, 푸르고 아름다운 나일",
+      "ruby": "스네프루 이테루 나일",
+      "rank": "B+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6028000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/602800/602800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/602800/602800b@2.png"
+  }
+}

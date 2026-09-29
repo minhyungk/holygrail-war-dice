@@ -1,0 +1,155 @@
+{
+  "servant_id": "sv_0052_vlad_iii",
+  "source_id": 52,
+  "name_ko": "블라드 3세",
+  "name_en": "Vlad III",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/52?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "A",
+    "agi": "C",
+    "mana": "B",
+    "luck": "E",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2849,
+      "name": "defender"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 700700,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54650,
+        "name": "광화 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 22550,
+        "name": "흡혈 A",
+        "rank": null
+      },
+      {
+        "id": 25350,
+        "name": "변화 C",
+        "rank": null
+      },
+      {
+        "id": 41550,
+        "name": "전투속행 A",
+        "rank": null
+      },
+      {
+        "id": 363551,
+        "name": "선혈의 전승 A+",
+        "rank": null
+      },
+      {
+        "id": 747551,
+        "name": "전율의 불사자 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 700701,
+      "name": "악마 같은 피투성이 왕",
+      "ruby": "카지클 베이",
+      "rank": "C",
+      "type": "대인보구"
+    },
+    {
+      "id": 700702,
+      "name": "악마 같은 피투성이 왕",
+      "ruby": "카지클 베이",
+      "rank": "C+",
+      "type": "대인보구"
+    },
+    {
+      "id": 700703,
+      "name": "악마 같은 피투성이 왕",
+      "ruby": "카지클 베이",
+      "rank": "B+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7007000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/700700/700700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/700700/700700b@2.png"
+  }
+}

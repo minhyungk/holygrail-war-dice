@@ -215,7 +215,6 @@ button:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--accent
 .stepper button:hover:not(:disabled) { border-color: var(--accent); }
 .stepper button:disabled { opacity: .35; cursor: default; }
 .stepper b { min-width: 3ch; font-size: 22px; font-weight: 800; font-variant-numeric: tabular-nums; }
-.tile.camp::before { content: "⛺"; position: absolute; right: 6%; top: 4%; font-size: 12px; }
 .vn .txt.sys { color: var(--accent); }
 .vn .draft { font-size: 10px; font-weight: 400; color: var(--text-muted); border: 1px solid var(--line-soft); border-radius: 3px; padding: 0 4px; margin-left: 6px; }
 .intel li.out { opacity: .45; text-decoration: line-through; }
@@ -534,3 +533,35 @@ rt.in { opacity: .95; transform: none; }
 .wish-made figcaption { font-size: 11px; letter-spacing: .12em; color: var(--text-muted); margin-bottom: 4px; }
 .wish-made blockquote { margin: 0; font-size: 18px; line-height: 1.6; color: var(--miracle); }
 @media (prefers-reduced-motion: reduce) { .grail, .grail-halo, .grail .grail-light, .grail-motes i, .wish-rising { animation: none; } }
+
+/* ── D-151 연출: 보구 컷인, 서 있는 일러스트, 피격 흔들림, 약점 공략, 역전 ── */
+.fx-np .np-art { position: absolute; bottom: 0; height: 104%; max-width: 70%; object-fit: contain; object-position: bottom; filter: drop-shadow(0 0 24px var(--cls, var(--miracle))); -webkit-mask-image: linear-gradient(to top, transparent 0, #000 18%); mask-image: linear-gradient(to top, transparent 0, #000 18%); animation: np-art 2.6s cubic-bezier(.2,.9,.2,1) forwards; }
+.fx-np.a .np-art { left: -4%; --from: -40vw; } .fx-np.c .np-art { right: -4%; --from: 40vw; }
+@keyframes np-art { 0% { transform: translateX(var(--from, -40vw)) skewX(-8deg); opacity: 0; filter: brightness(3) drop-shadow(0 0 24px var(--cls, var(--miracle))); } 18% { transform: none; opacity: 1; filter: brightness(1.3) drop-shadow(0 0 24px var(--cls, var(--miracle))); } 80% { opacity: 1; transform: translateX(calc(var(--from, -40vw) * -0.03)); } 100% { opacity: 0; transform: translateX(calc(var(--from, -40vw) * -0.06)); } }
+
+.bcol { position: relative; }
+.bcol > :not(.stand-art) { position: relative; z-index: 1; }
+.stand-art { position: absolute; z-index: 0; bottom: 0; height: 100%; max-width: 120%; object-fit: contain; object-position: bottom; opacity: .3; pointer-events: none; -webkit-mask-image: linear-gradient(to top, transparent 0, #000 30%, #000 70%, transparent 100%); mask-image: linear-gradient(to top, transparent 0, #000 30%, #000 70%, transparent 100%); transition: opacity .6s, filter .6s; animation: stand-in .9s ease-out both; }
+.bcol.a .stand-art { left: -12%; } .bcol.c .stand-art { right: -12%; transform: scaleX(-1); }
+.stand-art.danger { filter: saturate(.4) sepia(.4) hue-rotate(-30deg) brightness(.8); animation: stand-in .9s ease-out both, stand-flicker 1.6s ease-in-out infinite; }
+.stand-art.dead { opacity: 0; filter: brightness(3) blur(6px); }
+@keyframes stand-in { from { opacity: 0; translate: 0 12px; } }
+@keyframes stand-flicker { 50% { opacity: .18; } }
+
+.s-battle.shake { animation: bshake .45s cubic-bezier(.36,.07,.19,.97); }
+.s-battle.shake-heavy { animation: bshake-heavy .7s cubic-bezier(.36,.07,.19,.97); }
+@keyframes bshake { 20% { transform: translate(-4px, 2px); } 40% { transform: translate(4px, -2px); } 60% { transform: translate(-3px, -1px); } 80% { transform: translate(2px, 1px); } }
+@keyframes bshake-heavy { 10% { transform: translate(-9px, 4px) rotate(-.4deg); filter: brightness(1.6); } 25% { transform: translate(9px, -4px) rotate(.4deg); } 40% { transform: translate(-7px, 3px); filter: none; } 60% { transform: translate(5px, -2px); } 80% { transform: translate(-2px, 1px); } }
+
+.fx-weak { position: absolute; left: 0; right: 0; top: 30%; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 18px 0; background: linear-gradient(90deg, transparent, rgba(40,28,8,.92) 18%, rgba(40,28,8,.92) 82%, transparent); animation: phase-band 1.9s cubic-bezier(.2,.9,.2,1) forwards; }
+.fx-weak .cut { position: absolute; left: 50%; top: 50%; width: 140%; height: 3px; background: linear-gradient(90deg, transparent, #fff, var(--miracle), transparent); rotate: -14deg; translate: -50% -50%; box-shadow: 0 0 20px var(--miracle); animation: slash .8s cubic-bezier(.2,.9,.2,1) .15s both; }
+.fx-weak small { font-size: 12px; letter-spacing: .5em; color: var(--miracle); }
+.fx-weak b { font-size: clamp(26px, 5.5vw, 48px); font-weight: 900; letter-spacing: .14em; color: #fff6d6; text-shadow: 0 0 18px var(--miracle); }
+
+.fx-comeback { position: absolute; inset: 0; display: grid; place-items: center; align-content: center; gap: 6px; background: radial-gradient(circle at 50% 45%, rgba(244,215,122,.25), rgba(8,10,18,.75) 70%); animation: fx-fade 3s ease forwards; }
+.fx-comeback .rays { position: absolute; left: 50%; top: 45%; width: 160vmax; height: 160vmax; transform: translate(-50%, -50%); background: repeating-conic-gradient(rgba(244,215,122,.22) 0 4deg, transparent 4deg 12deg); -webkit-mask-image: radial-gradient(circle, #000 0, transparent 42%); mask-image: radial-gradient(circle, #000 0, transparent 42%); animation: rays-burst 3s ease-out forwards; }
+.fx-comeback .cb-art { position: absolute; bottom: 0; height: 96%; max-width: 80%; object-fit: contain; object-position: bottom; opacity: .55; -webkit-mask-image: linear-gradient(to top, transparent 0, #000 25%); mask-image: linear-gradient(to top, transparent 0, #000 25%); animation: stand-in 1s ease-out both; }
+.fx-comeback b { position: relative; font-family: var(--crest); font-size: clamp(56px, 14vw, 130px); font-weight: 900; color: #fff6d6; text-shadow: 0 0 24px var(--miracle), 0 0 80px var(--danger); animation: miracle-word 3s cubic-bezier(.2,1.3,.3,1) forwards; }
+.fx-comeback small { position: relative; font-size: 14px; letter-spacing: .4em; color: var(--miracle); animation: fade-up .6s ease-out .5s both; }
+
+@media (prefers-reduced-motion: reduce) { .fx-np .np-art, .stand-art, .stand-art.danger, .s-battle.shake, .s-battle.shake-heavy, .fx-weak, .fx-comeback, .fx-comeback .rays { animation: none; } }

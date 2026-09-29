@@ -1,0 +1,144 @@
+{
+  "servant_id": "sv_0014_atalante",
+  "source_id": 14,
+  "name_ko": "아탈란테",
+  "name_en": "Atalante",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/14?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "E",
+    "agi": "A",
+    "mana": "B",
+    "luck": "C",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2006,
+      "name": "moon"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2466,
+      "name": "associatedToTheArgo"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 200500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34250,
+        "name": "대 마력 D",
+        "rank": null
+      },
+      {
+        "id": 20550,
+        "name": "단독행동 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 3450,
+        "name": "아르카디아 너머 B",
+        "rank": null
+      },
+      {
+        "id": 78350,
+        "name": "몰이사냥의 미학 C",
+        "rank": null
+      },
+      {
+        "id": 260550,
+        "name": "칼리돈 사냥 A",
+        "rank": null
+      },
+      {
+        "id": 3550,
+        "name": "아르카디아 너머 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 200501,
+      "name": "청원의 화살 편지",
+      "ruby": "포이보스 카타스트로피",
+      "rank": "B",
+      "type": "대군보구"
+    },
+    {
+      "id": 200502,
+      "name": "청원의 화살 편지",
+      "ruby": "포이보스 카타스트로피",
+      "rank": "B+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2005000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/200500/200500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/200500/200500b@2.png"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "servant_id": "sv_0097_florence_nightingale",
+  "source_id": 97,
+  "name_ko": "나이팅게일",
+  "name_en": "Florence Nightingale",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/97?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B+",
+    "end": "A+",
+    "agi": "B+",
+    "mana": "D+",
+    "luck": "A+",
+    "np": "D"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 701400,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54650,
+        "name": "광화 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 178550,
+        "name": "강철의 간호 A",
+        "rank": null
+      },
+      {
+        "id": 177550,
+        "name": "인체 이해 A",
+        "rank": null
+      },
+      {
+        "id": 179650,
+        "name": "천사의 외침 EX",
+        "rank": null
+      },
+      {
+        "id": 178551,
+        "name": "강철의 간호 A+",
+        "rank": null
+      },
+      {
+        "id": 179655,
+        "name": "천사의 외침 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 701401,
+      "name": "나는 모든 독 있는 것, 해 있는 것을 없앤다",
+      "ruby": "나이팅게일 플레지",
+      "rank": "C",
+      "type": "대군보구"
+    },
+    {
+      "id": 701402,
+      "name": "나는 모든 독 있는 것, 해 있는 것을 없앤다",
+      "ruby": "나이팅게일 플레지",
+      "rank": "C+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7014000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/701400/701400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/701400/701400b@2.png"
+  }
+}

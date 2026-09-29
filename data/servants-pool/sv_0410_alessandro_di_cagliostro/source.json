@@ -1,0 +1,117 @@
+{
+  "servant_id": "sv_0410_alessandro_di_cagliostro",
+  "source_id": 410,
+  "name_ko": "알레산드로 디 칼리오스트로",
+  "name_en": "Alessandro di Cagliostro",
+  "class": "pretender",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/410?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "D",
+    "mana": "B+",
+    "luck": "A",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 120,
+      "name": "classPretender"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 2800700,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 2026650,
+        "name": "위장 공작 EX",
+        "rank": null
+      },
+      {
+        "id": 2336650,
+        "name": "물품주조(가짜) EX",
+        "rank": null
+      },
+      {
+        "id": 2337152,
+        "name": "영웅의 대적(가짜) E++",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2338650,
+        "name": "나는 아샤라일지니 EX",
+        "rank": null
+      },
+      {
+        "id": 2339350,
+        "name": "알토타스 연속체 C",
+        "rank": null
+      },
+      {
+        "id": 2340551,
+        "name": "동방무기 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 2800701,
+      "name": "질서에 죽음을, 온 세계에 혼돈을",
+      "ruby": "레벨리옹 오 몽드",
+      "rank": "B~EX",
+      "type": "대 도시/혼돈보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_28007000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/2800700/2800700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/2800700/2800700b@2.png"
+  }
+}

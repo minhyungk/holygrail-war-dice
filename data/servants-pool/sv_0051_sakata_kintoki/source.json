@@ -1,0 +1,147 @@
+{
+  "servant_id": "sv_0051_sakata_kintoki",
+  "source_id": 51,
+  "name_ko": "사카타 킨토키",
+  "name_en": "Sakata Kintoki",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/51?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A+",
+    "end": "B",
+    "agi": "B",
+    "mana": "C",
+    "luck": "C",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2735,
+      "name": "genji"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2810,
+      "name": "fairyTaleServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 700600,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54150,
+        "name": "광화 E",
+        "rank": null
+      },
+      {
+        "id": 62250,
+        "name": "신성 D",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 39551,
+        "name": "괴력 A+",
+        "rank": null
+      },
+      {
+        "id": 17350,
+        "name": "동물 회화 C",
+        "rank": null
+      },
+      {
+        "id": 26550,
+        "name": "천성의 육체 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 700601,
+      "name": "황금충격",
+      "ruby": "골든 스파크",
+      "rank": "C-",
+      "type": "대인보구"
+    },
+    {
+      "id": 700602,
+      "name": "황금충격",
+      "ruby": "골든 스파크",
+      "rank": "C",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7006000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/700600/700600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/700600/700600b@2.png"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "servant_id": "sv_0242_astraea",
+  "source_id": 242,
+  "name_ko": "아스트라이아",
+  "name_en": "Astraea",
+  "class": "ruler",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/242?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A+",
+    "end": "A+",
+    "agi": "D",
+    "mana": "EX",
+    "luck": "B",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 108,
+      "name": "classRuler"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2004,
+      "name": "roman"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2654,
+      "name": "livingHuman"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2923,
+      "name": "hasSupereffectiveNPAgainstAlignmentEvil"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 900800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 20550,
+        "name": "단독행동 A",
+        "rank": null
+      },
+      {
+        "id": 83550,
+        "name": "진지작성 A",
+        "rank": null
+      },
+      {
+        "id": 30450,
+        "name": "여신의 신핵 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 590551,
+        "name": "천칭의 가호 A+",
+        "rank": null
+      },
+      {
+        "id": 591551,
+        "name": "마력방출(별) A+",
+        "rank": null
+      },
+      {
+        "id": 592550,
+        "name": "별의 심판 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 900801,
+      "name": "심판의 때는 지금. 그대의 이름을 고하라",
+      "ruby": "커스토스 모룸",
+      "rank": "A+",
+      "type": "대죄보구"
+    },
+    {
+      "id": 900802,
+      "name": "심판의 때는 지금. 그대의 이름을 고하라",
+      "ruby": "커스토스 모룸",
+      "rank": "EX",
+      "type": "대죄보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_9008000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/900800/900800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/900800/900800b@2.png"
+  }
+}

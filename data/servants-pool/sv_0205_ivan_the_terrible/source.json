@@ -1,0 +1,144 @@
+{
+  "servant_id": "sv_0205_ivan_the_terrible",
+  "source_id": 205,
+  "name_ko": "이반 뇌제",
+  "name_en": "Ivan the Terrible",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/205?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B+",
+    "end": "A+",
+    "agi": "D",
+    "mana": "C",
+    "luck": "B",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2005,
+      "name": "wildbeast"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2666,
+      "name": "giant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 402800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34250,
+        "name": "대 마력 D",
+        "rank": null
+      },
+      {
+        "id": 88650,
+        "name": "기승 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 462550,
+        "name": "모순정신 A",
+        "rank": null
+      },
+      {
+        "id": 463550,
+        "name": "무고의 괴물(이) A",
+        "rank": null
+      },
+      {
+        "id": 464550,
+        "name": "비상대권 A",
+        "rank": null
+      },
+      {
+        "id": 462551,
+        "name": "모순정신 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 402801,
+      "name": "나의 여행길을 따르라, 짐승",
+      "ruby": "즈베리・크례스니 호드",
+      "rank": "A+",
+      "type": "대인보구"
+    },
+    {
+      "id": 402802,
+      "name": "나의 여행길을 따르라, 짐승",
+      "ruby": "즈베리・크례스니 호드",
+      "rank": "EX",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4028000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/402800/402800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/402800/402800b@2.png"
+  }
+}

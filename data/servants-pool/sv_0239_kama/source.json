@@ -1,0 +1,157 @@
+{
+  "servant_id": "sv_0239_kama",
+  "source_id": 239,
+  "name_ko": "카마",
+  "name_en": "Kama",
+  "class": "assassin",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/239?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "B+",
+    "agi": "B",
+    "mana": "A+",
+    "luck": "B",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 105,
+      "name": "classAssassin"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 603700,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 88550,
+        "name": "기승 A",
+        "rank": null
+      },
+      {
+        "id": 161350,
+        "name": "단독현현 C",
+        "rank": null
+      },
+      {
+        "id": 584450,
+        "name": "애신의 신핵 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 409450,
+        "name": "여신의 은혜 B",
+        "rank": null
+      },
+      {
+        "id": 586650,
+        "name": "신체 없는 자 EX",
+        "rank": null
+      },
+      {
+        "id": 587650,
+        "name": "마라・파피야스 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 603701,
+      "name": "사랑으로 메마름은 사랑 없음이라",
+      "ruby": "카마・삼모하나",
+      "rank": "C",
+      "type": "대인보구"
+    },
+    {
+      "id": 603702,
+      "name": "사랑으로 메마름은 사랑 없음이라",
+      "ruby": "카마・삼모하나",
+      "rank": "B",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6037000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/603700/603700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/603700/603700b@2.png"
+  }
+}

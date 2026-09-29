@@ -1,0 +1,627 @@
+{
+  "origin": "Atlas Academy KR nice API",
+  "groups": [
+    {
+      "type": "home",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "생일",
+          "ids": [
+            "0_H010"
+          ],
+          "subtitle": "당신이 태어난 날인 것 같네. 물론 나한테는 아무래도 좋은 일이야.",
+          "text": [
+            ""
+          ],
+          "cond_type": "birthDay",
+          "cond_value": 0
+        },
+        {
+          "name": "이벤트 개최중",
+          "ids": [
+            "0_H020"
+          ],
+          "subtitle": "어머나, 무슨 일이 일어난 모양이네?",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 11
+        },
+        {
+          "name": "대화 1",
+          "ids": [
+            "0_H030"
+          ],
+          "subtitle": "슬슬 밖으로 나가야지. 당신 흡혈귀라도 되려고 그래?",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 12
+        },
+        {
+          "name": "대화 2",
+          "ids": [
+            "0_H040"
+          ],
+          "subtitle": "주종 관계에 대해서? ……소환된 이상, 명령에는 따르겠어.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 13
+        },
+        {
+          "name": "대화 3",
+          "ids": [
+            "0_H050",
+            "0_H051"
+          ],
+          "subtitle": "이것만큼은 알아둬. \n난 명령에는 따르겠지만 반항하지 않겠다는 건 아니거든?",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 14
+        },
+        {
+          "name": "좋아하는 것",
+          "ids": [
+            "0_H060"
+          ],
+          "subtitle": "좋아하는 것? 말할 것도 없이, 소녀의 피야.\n이것만큼은 어쩔 수 없어. 경멸하는 거니?",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 15
+        },
+        {
+          "name": "싫어하는 것",
+          "ids": [
+            "0_H070"
+          ],
+          "subtitle": "나는 내가 싫어. 정말 싫어. 정말이야. 이건 내게 물어봐도 마찬가지야.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 16
+        },
+        {
+          "name": "성배에 대하여",
+          "ids": [
+            "0_H080"
+          ],
+          "subtitle": "성배 말이지. 피로 더럽히면 어떻게 될지는 흥미가 있어, 그뿐이야.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 17
+        },
+        {
+          "name": "인연 Lv.1",
+          "ids": [
+            "0_H090"
+          ],
+          "subtitle": "불경하잖아. 죽이겠어.",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 1
+        },
+        {
+          "name": "인연 Lv.2",
+          "ids": [
+            "0_H100"
+          ],
+          "subtitle": "……읏. 끈질기네. 만지는 거 싫어해.",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 2
+        },
+        {
+          "name": "인연 Lv.3",
+          "ids": [
+            "0_H110"
+          ],
+          "subtitle": "아, 알겠어. 알겠다고. 대신에 피를 줘. 등가교환이야.",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 3
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H120"
+          ],
+          "subtitle": "하여튼간에…… 짓궂네, 당신. 나보다 심술궂다니 대단해.",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H130"
+          ],
+          "subtitle": "……안 만져?",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        },
+        {
+          "name": "대화 4",
+          "ids": [
+            "0_H140",
+            "0_H141",
+            "0_H142"
+          ],
+          "subtitle": "시간은 순식간에 지나가는 것. \n영원히 머무르고 싶다고 바라는 것은 결코 나쁘지 않다고, \n지금도 나는 생각하고 있어. ……지나치지 않다면 말이야.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 18
+        },
+        {
+          "name": "대화 5",
+          "ids": [
+            "0_H150",
+            "0_H151"
+          ],
+          "subtitle": "어라, 불야짱이잖아. 차라도 한 잔 어때? \n고문도구에 대해서라면, 이야깃거리가 바닥날 일은 없겠지.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 19
+        },
+        {
+          "name": "대화 6",
+          "ids": [
+            "0_H160",
+            "0_H161",
+            "0_H162",
+            "0_H163",
+            "0_H164"
+          ],
+          "subtitle": "미인…… 익숙하지 않은 말이네. 불쾌해. 당신의 고문은 업무상의 일.\n나의 그것과 동일하게 생각하지 말도록 해. \n그 용맹함, 흉폭함이 없다면 으깨버렸을 거야. \n……애초에 골격에 비해 근육이 적다고. \n너무 조악한 식사만 하는 거 아니야, 토시조?",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 20
+        },
+        {
+          "name": "대화 7",
+          "ids": [
+            "0_H170",
+            "0_H171"
+          ],
+          "subtitle": "아아, 정말로 어린 시절의 자기 자신이란 것은 보고 있으면 정말 싫어져.\n운명을 알고 있으면서도, 저 활달함을 유지하고 있다면 더욱 그래.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 21
+        },
+        {
+          "name": "대화 8",
+          "ids": [
+            "0_H180",
+            "0_H181",
+            "0_H182"
+          ],
+          "subtitle": "……할로윈이라고는 해도, 그 의상은 뭐야. \n게다가 캐스터? ……정말로 뭐냐고……",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 22
+        },
+        {
+          "name": "대화 9",
+          "ids": [
+            "0_H190",
+            "0_H191",
+            "0_H192"
+          ],
+          "subtitle": "아니아니, 아니아니아니. 정말로 뭐야?! \n그 망측한 의상, 영기의 어디를 어떻게 건드리면 그렇게 되는 거야?!",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 23
+        },
+        {
+          "name": "대화 10",
+          "ids": [
+            "0_H200",
+            "0_H201"
+          ],
+          "subtitle": "……그 여자에 관해서는, 수호신상이니까 내가 뭐라 할 말은 없지만. \n……어째서, 메카일까……",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 24
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "0_G010"
+          ],
+          "subtitle": "강해졌어.",
+          "text": [
+            "강해졌어."
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 2",
+          "ids": [
+            "0_G020"
+          ],
+          "subtitle": "이것 또한 아름다움 중 하나야.",
+          "text": [
+            "이것 또한 아름다움 중 하나야."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 1",
+          "ids": [
+            "0_G030"
+          ],
+          "subtitle": "피부의 생기가 돌아오고 있어!",
+          "text": [
+            "피부의 생기가 돌아오고 있어!"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 1
+        },
+        {
+          "name": "영기재림 3",
+          "ids": [
+            "0_G040"
+          ],
+          "subtitle": "아아…… 이것이 아름다움이야!",
+          "text": [
+            "아아…… 이것이 아름다움이야!"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 3
+        },
+        {
+          "name": "영기재림 4",
+          "ids": [
+            "0_G050",
+            "0_G051"
+          ],
+          "subtitle": "자, 여기가 바로 지옥의 문. 어찌어찌하다가 여기까지 와버렸네. \n말라비틀어질 때까지 사랑해 줘도 좋아. 이런 식으로……",
+          "text": [
+            "자, 여기가 바로 지옥의 문. 어찌어찌 하다가 여기까지 와버렸네.",
+            "말라 비틀어질 때까지 사랑해줘도 좋아. 이런 식으로……"
+          ],
+          "cond_type": "svtCountStop",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "firstGet",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "소환",
+          "ids": [
+            "0_S010"
+          ],
+          "subtitle": "어머. 이것 또한 운명이란 것일까.\n서번트, 어쌔신. 카밀라라고 부르세요.",
+          "text": [
+            "어머. 이것 또한 운명이란 것일까. [r]\n서번트, 어쌔신. 카밀라라고 부르세요."
+          ],
+          "cond_type": "svtGet",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "공격 1",
+          "ids": [
+            "0_B010"
+          ],
+          "subtitle": "흠.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "0_B020"
+          ],
+          "subtitle": "추하긴.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "0_B030"
+          ],
+          "subtitle": "죽어버려.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B040"
+          ],
+          "subtitle": "그러니까 전부 헛수고야.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "0_B080"
+          ],
+          "subtitle": "잡았다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "0_B090"
+          ],
+          "subtitle": "받아 가지.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 1",
+          "ids": [
+            "0_B100"
+          ],
+          "subtitle": "가능한 한, 절망을 노래해 줘.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "0_B110"
+          ],
+          "subtitle": "자, 유린과 학살의 시간이야. 반항해 봐, 전력으로.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "0_B120"
+          ],
+          "subtitle": "그러니까 말했잖아? 헛수고라고.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "0_B130"
+          ],
+          "subtitle": "좋은 소리로 우는구나. 당신들, 내 성에서 울어보도록 해.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "0_B140"
+          ],
+          "subtitle": "치잇.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "0_B150"
+          ],
+          "subtitle": "크으읏!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "0_B160"
+          ],
+          "subtitle": "그, 그럴 수가…… 거짓말…… 이야……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "0_B170"
+          ],
+          "subtitle": "어째서…… 어째서지……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "0_B180"
+          ],
+          "subtitle": "닥쳐.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "0_B190"
+          ],
+          "subtitle": "그래.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "0_B200"
+          ],
+          "subtitle": "알았어.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B210"
+          ],
+          "subtitle": "좋아…… 정말로 좋아.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B050",
+            "0_B051",
+            "0_B052"
+          ],
+          "subtitle": "모든 것은 환상 속, 하지만 소녀는 이 상자로. 팬텀 메이든! \n참을 수 없어……",
+          "text": [
+            "^0:0:2.72:모든 것은 환상 속^0:2.73:E:하지만 소녀는 이 상자로.^1:0:2.72:모든 것은 환상 속^1:2.73:E:하지만 소녀는 이 상자로.",
+            "^0:0:1.47:팬텀 메이든!^1:0:1.47:팬텀 메이든!",
+            "참을 수 없어……"
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        },
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B800",
+            "0_B801",
+            "0_B802",
+            "0_B803"
+          ],
+          "subtitle": "피여, 피여, 피여! \n영원한 아름다움, 영겁의 연회, 늙음과 추함은 시간의 끝으로! \n팬텀 메이든! 후후, 아하하하하……!",
+          "text": [
+            "피여, 피여, 피여!",
+            "^0:0:1.56:영원한 아름다움^0:1.57:3.52:영겁의 연회^0:3.53:E:늙음과 추함은 시간의 끝으로!^1:0:1.56:영원한 아름다움^1:1.57:3.52:영겁의 연회^1:3.53:E:늙음과 추함은 시간의 끝으로!",
+            "팬텀 메이든!",
+            "후후, 아하하하하……!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 7
+        }
+      ]
+    }
+  ]
+}

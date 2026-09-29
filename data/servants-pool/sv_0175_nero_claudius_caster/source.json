@@ -1,0 +1,141 @@
+{
+  "servant_id": "sv_0175_nero_claudius_caster",
+  "source_id": 175,
+  "name_ko": "네로 클라우디우스",
+  "name_en": "Nero Claudius (Caster)",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/175?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "A",
+    "mana": "B",
+    "luck": "A",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 308,
+      "name": "alignmentSummer"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2004,
+      "name": "roman"
+    },
+    {
+      "id": 2007,
+      "name": "saberface"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 503200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 88450,
+        "name": "기승 B",
+        "rank": null
+      },
+      {
+        "id": 83551,
+        "name": "진지작성 A+",
+        "rank": null
+      },
+      {
+        "id": 405650,
+        "name": "도구작성(가짜) EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 378650,
+        "name": "폭주특권 EX",
+        "rank": null
+      },
+      {
+        "id": 379350,
+        "name": "일곱 개의 면류관 C",
+        "rank": null
+      },
+      {
+        "id": 380550,
+        "name": "죽지 않는 마구스 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 503201,
+      "name": "명예를 노래하는 황금극장",
+      "ruby": "라우다렌툼 도무스 일루스테리아스",
+      "rank": "A",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5032000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/503200/503200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/503200/503200b@2.png"
+  }
+}

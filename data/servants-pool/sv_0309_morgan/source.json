@@ -1,0 +1,151 @@
+{
+  "servant_id": "sv_0309_morgan",
+  "source_id": 309,
+  "name_ko": "모르간",
+  "name_en": "Morgan",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/309?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "E",
+    "agi": "B",
+    "mana": "A+",
+    "luck": "B",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1177,
+      "name": "fae"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2007,
+      "name": "saberface"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 704000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54450,
+        "name": "광화 B",
+        "rank": null
+      },
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 80650,
+        "name": "도구작성 EX",
+        "rank": null
+      },
+      {
+        "id": 83450,
+        "name": "진지작성 B",
+        "rank": null
+      },
+      {
+        "id": 877550,
+        "name": "요정안 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 879450,
+        "name": "갈망의 카리스마 B",
+        "rank": null
+      },
+      {
+        "id": 762350,
+        "name": "호수의 가호 C",
+        "rank": null
+      },
+      {
+        "id": 880550,
+        "name": "땅끝으로부터 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 704001,
+      "name": "이제는 도달할 수 없는 이상향",
+      "ruby": "로드리스 카멜롯",
+      "rank": "EX",
+      "type": "대성보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7040000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/704000/704000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/704000/704000b@2.png"
+  }
+}

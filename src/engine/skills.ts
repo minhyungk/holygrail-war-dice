@@ -18,7 +18,8 @@ export interface SkillCtx {
   role?: 'attacker' | 'defender';
   phaseIndex: number;
   selfCondition: Condition;
-  camp: boolean;
+  /** 영맥 칸에서 싸우는 중 (D-146) */
+  leyline: boolean;
   escaper?: boolean;
   foeDropped?: boolean;
   wouldFall?: boolean;
@@ -39,7 +40,7 @@ export function whenOk(w: ActiveSkillDef['when'], c: SkillCtx): boolean {
   if (w.role && w.role !== c.role) return false;
   if (w.phase_index !== undefined && w.phase_index !== c.phaseIndex) return false;
   if (w.self_condition && !w.self_condition.includes(c.selfCondition)) return false;
-  if (w.camp && !c.camp) return false;
+  if (w.leyline && !c.leyline) return false;
   if (w.escaper && !c.escaper) return false;
   if (w.foe_dropped && !c.foeDropped) return false;
   if (w.would_fall && !c.wouldFall) return false;

@@ -1,0 +1,123 @@
+{
+  "servant_id": "sv_0326_elisabeth_bathory_cinderella",
+  "source_id": 326,
+  "name_ko": "엘리자베트 바토리(신데렐라)",
+  "name_en": "Elisabeth Báthory (Cinderella)",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/326?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "E",
+    "agi": "A",
+    "mana": "B",
+    "luck": "A+",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2002,
+      "name": "dragon"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2810,
+      "name": "fairyTaleServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 404600,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 88650,
+        "name": "기승 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 951450,
+        "name": "스노우 화이트 프린세스 B",
+        "rank": null
+      },
+      {
+        "id": 952550,
+        "name": "레드 후드 슬라이서 A",
+        "rank": null
+      },
+      {
+        "id": 953650,
+        "name": "글래스 신데렐라 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 404601,
+      "name": "동화자설마양",
+      "ruby": "페어리 테일・에르제베트",
+      "rank": "D++",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4046000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/404600/404600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/404600/404600b@2.png"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "servant_id": "sv_0077_nikola_tesla",
+  "source_id": 77,
+  "name_ko": "니콜라 테슬라",
+  "name_en": "Nikola Tesla",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/77?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "C",
+    "mana": "B",
+    "luck": "D",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 203,
+      "name": "attributeStar"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 201100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      },
+      {
+        "id": 20450,
+        "name": "단독행동 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 136550,
+        "name": "갈바니즘 A",
+        "rank": null
+      },
+      {
+        "id": 145550,
+        "name": "천부의 예지 A",
+        "rank": null
+      },
+      {
+        "id": 112650,
+        "name": "별의 개척자 EX",
+        "rank": null
+      },
+      {
+        "id": 685551,
+        "name": "테슬라 코일 A+",
+        "rank": null
+      },
+      {
+        "id": 145655,
+        "name": "천부의 예지 EX",
+        "rank": null
+      },
+      {
+        "id": 685552,
+        "name": "테슬라 코일 A++",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 201101,
+      "name": "인류신화 뇌전강림",
+      "ruby": "시스템 케라우노스",
+      "rank": "EX",
+      "type": "대성보구"
+    },
+    {
+      "id": 201102,
+      "name": "인류신화 뇌전강림",
+      "ruby": "시스템 케라우노스",
+      "rank": "EX",
+      "type": "대성보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2011000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/201100/201100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/201100/201100b@2.png"
+  }
+}

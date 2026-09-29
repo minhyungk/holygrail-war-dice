@@ -7,7 +7,7 @@
     { "skill_id": "sk_mind_eye_fake", "hook": "hk_battle_phase_roll", "when": { "phase": ["ph_initiative", "ph_fate"] }, "effect": { "type": "roll_mod", "target": "self" }, "scaling": "major", "notes": "직감·위기 회피" },
     { "skill_id": "sk_independent_action", "hook": "hk_battle_phase_roll", "when": {}, "effect": { "type": "event_negate", "target": "self", "kind": "affinity_penalty" }, "scaling": "none", "notes": "마스터와 틀어져도 흔들리지 않는다: 음수 호감도 보정 무시" },
     { "skill_id": "sk_presence_concealment", "hook": "hk_battle_phase_roll", "when": { "phase_index": 1, "phase": ["ph_initiative"] }, "effect": { "type": "roll_mod", "target": "self" }, "scaling": "major", "notes": "첫 선제" },
-    { "skill_id": "sk_territory_creation", "hook": "hk_battle_phase_roll", "when": { "camp": true }, "effect": { "type": "roll_mod", "target": "self" }, "scaling": "major", "notes": "진지에서 싸울 때" },
+    { "skill_id": "sk_territory_creation", "hook": "hk_battle_phase_roll", "when": { "leyline": true }, "effect": { "type": "roll_mod", "target": "self" }, "scaling": "major", "notes": "영맥 칸에서 싸울 때 (D-146, 진지 폐기로 대체)" },
     { "skill_id": "sk_riding", "hook": null, "notes": "비전투: 이동 칸 수 (day-loop.md §5)" },
     { "skill_id": "sk_item_construction", "hook": null, "notes": "비전투 스킬. 전투 효과 없음" },
     { "skill_id": "sk_mad_enhancement", "hook": null, "notes": "강화는 스테이터스에 이미 반영 (D-079)" },

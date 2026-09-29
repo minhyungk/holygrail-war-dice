@@ -1,0 +1,142 @@
+{
+  "servant_id": "sv_0252_nagao_kagetora",
+  "source_id": 252,
+  "name_ko": "나가오 카게토라",
+  "name_en": "Nagao Kagetora",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/252?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "A",
+    "mana": "D+",
+    "luck": "C+",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 303800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      },
+      {
+        "id": 88350,
+        "name": "기승 C",
+        "rank": null
+      },
+      {
+        "id": 62350,
+        "name": "신성 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 625550,
+        "name": "운은 하늘에 달렸고 A",
+        "rank": null
+      },
+      {
+        "id": 626550,
+        "name": "갑옷은 가슴에 달렸으며 A",
+        "rank": null
+      },
+      {
+        "id": 627550,
+        "name": "공적은 발에 달렸노라 A",
+        "rank": null
+      },
+      {
+        "id": 625551,
+        "name": "운은 하늘에 달렸고 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 303801,
+      "name": "비천팔상 차륜진",
+      "ruby": "비천팔상 차륜진",
+      "rank": "B",
+      "type": "대인, 대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3038000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/303800/303800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/303800/303800b@2.png"
+  }
+}

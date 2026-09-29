@@ -1,0 +1,125 @@
+{
+  "servant_id": "sv_0320_leonardo_da_vinci_ruler",
+  "source_id": 320,
+  "name_ko": "레오나르도 다 빈치",
+  "name_en": "Leonardo da Vinci (Ruler)",
+  "class": "ruler",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/320?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "B",
+    "mana": "A",
+    "luck": "A+",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 108,
+      "name": "classRuler"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 308,
+      "name": "alignmentSummer"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2667,
+      "name": "childServant"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 901200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 88650,
+        "name": "기승 EX",
+        "rank": null
+      },
+      {
+        "id": 80550,
+        "name": "도구작성 A",
+        "rank": null
+      },
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 939550,
+        "name": "꿈꾸는 기계 A",
+        "rank": null
+      },
+      {
+        "id": 940450,
+        "name": "트레저 체커 B",
+        "rank": null
+      },
+      {
+        "id": 941650,
+        "name": "황혼에 빛나는 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 901201,
+      "name": "잊지 못할 여름휴가, 백악의 꿈",
+      "ruby": "다이너소어・서머・굿바이",
+      "rank": "A",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_9012000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/901200/901200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/901200/901200b@2.png"
+  }
+}

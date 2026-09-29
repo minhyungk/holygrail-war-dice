@@ -1,0 +1,118 @@
+{
+  "servant_id": "sv_0135_martha_ruler",
+  "source_id": 135,
+  "name_ko": "마르타",
+  "name_en": "Martha (Ruler)",
+  "class": "ruler",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/135?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B+",
+    "end": "B",
+    "agi": "B",
+    "mana": "A",
+    "luck": "A+",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 108,
+      "name": "classRuler"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 900400,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34650,
+        "name": "대 마력 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 285451,
+        "name": "물가의 성녀 B+",
+        "rank": null
+      },
+      {
+        "id": 284550,
+        "name": "천성의 육체(바다) A",
+        "rank": null
+      },
+      {
+        "id": 286450,
+        "name": "야곱의 수족 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 900401,
+      "name": "미쳐 날뛰는 가엾은 용이여",
+      "ruby": "타라스크",
+      "rank": "A",
+      "type": "대인보구/대용보구"
+    },
+    {
+      "id": 900402,
+      "name": "미쳐 날뛰는 가엾은 용이여",
+      "ruby": "타라스크",
+      "rank": "A+",
+      "type": "대인보구/대용보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_9004000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/900400/900400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/900400/900400b@2.png"
+  }
+}

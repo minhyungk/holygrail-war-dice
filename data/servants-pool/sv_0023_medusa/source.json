@@ -1,0 +1,170 @@
+{
+  "servant_id": "sv_0023_medusa",
+  "source_id": 23,
+  "name_ko": "메두사",
+  "name_en": "Medusa",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/23?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "D",
+    "agi": "A",
+    "mana": "B",
+    "luck": "E",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1110,
+      "name": "lamia"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2797,
+      "name": "divineSpirit"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 2883,
+      "name": "FSNServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 400100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 88551,
+        "name": "기승 A+",
+        "rank": null
+      },
+      {
+        "id": 20350,
+        "name": "단독행동 C",
+        "rank": null
+      },
+      {
+        "id": 62149,
+        "name": "신성 E-",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 93551,
+        "name": "마안 A+",
+        "rank": null
+      },
+      {
+        "id": 39450,
+        "name": "괴력 B",
+        "rank": null
+      },
+      {
+        "id": 213450,
+        "name": "선혈신전 B",
+        "rank": null
+      },
+      {
+        "id": 2455450,
+        "name": "사괴변생 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 400101,
+      "name": "기영의 고삐",
+      "ruby": "벨레로폰",
+      "rank": "A+",
+      "type": "대군보구"
+    },
+    {
+      "id": 400102,
+      "name": "기영의 고삐",
+      "ruby": "벨레로폰",
+      "rank": "A+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4001000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/400100/400100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/400100/400100b@2.png"
+  }
+}

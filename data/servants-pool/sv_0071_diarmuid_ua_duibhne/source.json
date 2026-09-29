@@ -1,0 +1,135 @@
+{
+  "servant_id": "sv_0071_diarmuid_ua_duibhne",
+  "source_id": 71,
+  "name_ko": "디어뮈드 오 디나",
+  "name_en": "Diarmuid Ua Duibhne",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/71?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "A+",
+    "mana": "D",
+    "luck": "E",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 300200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 37450,
+        "name": "심안(진짜) B",
+        "rank": null
+      },
+      {
+        "id": 125350,
+        "name": "사랑의 점 C",
+        "rank": null
+      },
+      {
+        "id": 126450,
+        "name": "기사의 무략 B",
+        "rank": null
+      },
+      {
+        "id": 2101550,
+        "name": "비련요란 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 300201,
+      "name": "파마의 홍장미, 필멸의 황장미",
+      "ruby": "게이 저그&게이 보",
+      "rank": "B",
+      "type": "대인보구"
+    },
+    {
+      "id": 300202,
+      "name": "파마의 홍장미, 필멸의 황장미",
+      "ruby": "게이 저그&게이 보",
+      "rank": "B+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3002000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/300200/300200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/300200/300200b@2.png"
+  }
+}

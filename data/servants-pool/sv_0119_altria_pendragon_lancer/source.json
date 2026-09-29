@@ -1,0 +1,157 @@
+{
+  "servant_id": "sv_0119_altria_pendragon_lancer",
+  "source_id": 119,
+  "name_ko": "알트리아 펜드래곤",
+  "name_en": "Altria Pendragon (Lancer)",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/119?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "A",
+    "agi": "A",
+    "mana": "A",
+    "luck": "C",
+    "np": "A++"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2002,
+      "name": "dragon"
+    },
+    {
+      "id": 2007,
+      "name": "saberface"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2010,
+      "name": "arthur"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2795,
+      "name": "knightsOfTheRound"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 302000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 88550,
+        "name": "기승 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 92550,
+        "name": "마력방출 A",
+        "rank": null
+      },
+      {
+        "id": 5450,
+        "name": "카리스마 B",
+        "rank": null
+      },
+      {
+        "id": 135650,
+        "name": "땅끝의 가호 EX",
+        "rank": null
+      },
+      {
+        "id": 875551,
+        "name": "빛의 분류 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 302001,
+      "name": "땅끝에서 빛나는 창",
+      "ruby": "롱고미니아드",
+      "rank": "A++",
+      "type": "대성보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3020000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/302000/302000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/302000/302000b@2.png"
+  }
+}

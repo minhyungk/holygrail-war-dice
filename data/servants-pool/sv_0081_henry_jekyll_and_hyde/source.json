@@ -1,0 +1,135 @@
+{
+  "servant_id": "sv_0081_henry_jekyll_and_hyde",
+  "source_id": 81,
+  "name_ko": "헨리 지킬&하이드",
+  "name_en": "Henry Jekyll & Hyde",
+  "class": "assassin",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/81?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C+",
+    "end": "E",
+    "agi": "A+",
+    "mana": "E",
+    "luck": "C",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 105,
+      "name": "classAssassin"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 600700,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 50550,
+        "name": "기척 차단 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 39455,
+        "name": "괴력 B",
+        "rank": null
+      },
+      {
+        "id": 139555,
+        "name": "공황의 목소리 A",
+        "rank": null
+      },
+      {
+        "id": 71255,
+        "name": "자기개조 D",
+        "rank": null
+      },
+      {
+        "id": 2099451,
+        "name": "자기변용 B+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 600701,
+      "name": "비밀스러운 죄의 유희",
+      "ruby": "데인저러스 게임",
+      "rank": "C",
+      "type": "대인보구"
+    },
+    {
+      "id": 600702,
+      "name": "비밀스러운 죄의 유희",
+      "ruby": "데인저러스 게임",
+      "rank": "C+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6007000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/600700/600700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/600700/600700b@2.png"
+  }
+}

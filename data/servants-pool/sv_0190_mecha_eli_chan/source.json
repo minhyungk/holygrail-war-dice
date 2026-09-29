@@ -1,0 +1,125 @@
+{
+  "servant_id": "sv_0190_mecha_eli_chan",
+  "source_id": 190,
+  "name_ko": "메카에리짱",
+  "name_en": "Mecha Eli-chan",
+  "class": "alterEgo",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/190?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "A",
+    "agi": "E",
+    "mana": "E",
+    "luck": "E",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 109,
+      "name": "classAlterEgo"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1172,
+      "name": "threatToHumanity"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2781,
+      "name": "mechanical"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 1000400,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 80450,
+        "name": "도구작성 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 425650,
+        "name": "무고의 괴수 EX",
+        "rank": null
+      },
+      {
+        "id": 426350,
+        "name": "오버로드 개 C",
+        "rank": null
+      },
+      {
+        "id": 427350,
+        "name": "파이널 에리짱 C",
+        "rank": null
+      },
+      {
+        "id": 426351,
+        "name": "오버로드 개 C+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 1000401,
+      "name": "강철천공마양",
+      "ruby": "브레스트제로・에르제베트",
+      "rank": "B",
+      "type": "대군개인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_10004000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1000400/1000400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1000400/1000400b@2.png"
+  }
+}

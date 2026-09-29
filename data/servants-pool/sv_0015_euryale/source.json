@@ -1,0 +1,160 @@
+{
+  "servant_id": "sv_0015_euryale",
+  "source_id": 15,
+  "name_ko": "에우리알레",
+  "name_en": "Euryale",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/15?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "C",
+    "mana": "EX",
+    "luck": "EX",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2797,
+      "name": "divineSpirit"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 2850,
+      "name": "hasGoddessMetamorphosis"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 201200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 20551,
+        "name": "단독행동 A+",
+        "rank": null
+      },
+      {
+        "id": 30650,
+        "name": "여신의 신핵 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 22350,
+        "name": "흡혈 C",
+        "rank": null
+      },
+      {
+        "id": 91550,
+        "name": "매혹의 미성 A",
+        "rank": null
+      },
+      {
+        "id": 230550,
+        "name": "여신의 변덕 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 201201,
+      "name": "여신의 시선",
+      "ruby": "아이 오브 디 에우리알레",
+      "rank": "B-",
+      "type": "대인보구"
+    },
+    {
+      "id": 201202,
+      "name": "여신의 시선",
+      "ruby": "아이 오브 디 에우리알레",
+      "rank": "B",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2012000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/201200/201200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/201200/201200b@2.png"
+  }
+}

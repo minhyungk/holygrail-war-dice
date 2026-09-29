@@ -1,0 +1,145 @@
+{
+  "servant_id": "sv_0381_bhima",
+  "source_id": 381,
+  "name_ko": "비마",
+  "name_en": "Bhīma",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/381?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A+",
+    "end": "A",
+    "agi": "A+",
+    "mana": "B",
+    "luck": "C",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 305400,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      },
+      {
+        "id": 62450,
+        "name": "신성 B",
+        "rank": null
+      },
+      {
+        "id": 2227550,
+        "name": "나가의 아독 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2228550,
+        "name": "바스키의 영약 A",
+        "rank": null
+      },
+      {
+        "id": 2229550,
+        "name": "곤봉술 A",
+        "rank": null
+      },
+      {
+        "id": 2230650,
+        "name": "하누만・하울링 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 305401,
+      "name": "풍신의 아이, 여기 있노라",
+      "ruby": "마루티 바유푸트라",
+      "rank": "B",
+      "type": "대인/대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3054000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/305400/305400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/305400/305400b@2.png"
+  }
+}

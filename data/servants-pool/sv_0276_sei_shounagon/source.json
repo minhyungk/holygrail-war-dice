@@ -1,0 +1,131 @@
+{
+  "servant_id": "sv_0276_sei_shounagon",
+  "source_id": 276,
+  "name_ko": "세이 쇼나곤",
+  "name_en": "Sei Shounagon",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/276?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "D",
+    "agi": "B",
+    "mana": "C",
+    "luck": "A",
+    "np": "D++"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 204000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      },
+      {
+        "id": 715550,
+        "name": "단독행동(자기중심) A",
+        "rank": null
+      },
+      {
+        "id": 716550,
+        "name": "향로봉의 눈 A",
+        "rank": null
+      },
+      {
+        "id": 717450,
+        "name": "일승법 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 572465,
+        "name": "가선의 시가 B",
+        "rank": null
+      },
+      {
+        "id": 719550,
+        "name": "오사카의 관문 A",
+        "rank": null
+      },
+      {
+        "id": 720450,
+        "name": "별은 묘성 B",
+        "rank": null
+      },
+      {
+        "id": 719552,
+        "name": "오사카의 관문 A++",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 204001,
+      "name": "마쿠라노소시・춘서초",
+      "ruby": "이모셔널 엔진・풀 드라이브",
+      "rank": "D++",
+      "type": "시가보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2040000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/204000/204000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/204000/204000b@2.png"
+  }
+}

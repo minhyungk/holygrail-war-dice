@@ -1,0 +1,151 @@
+{
+  "servant_id": "sv_0316_oberon",
+  "source_id": 316,
+  "name_ko": "오베론",
+  "name_en": "Oberon",
+  "class": "pretender",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/316?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "A+",
+    "mana": "A",
+    "luck": "EX",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 120,
+      "name": "classPretender"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1172,
+      "name": "threatToHumanity"
+    },
+    {
+      "id": 1177,
+      "name": "fae"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2002,
+      "name": "dragon"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 2800100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 900250,
+        "name": "???",
+        "rank": null
+      },
+      {
+        "id": 83149,
+        "name": "진지작성 E-",
+        "rank": null
+      },
+      {
+        "id": 80551,
+        "name": "도구작성 A+",
+        "rank": null
+      },
+      {
+        "id": 88550,
+        "name": "기승 A",
+        "rank": null
+      },
+      {
+        "id": 901650,
+        "name": "한여름 밤의 꿈 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 902650,
+        "name": "밤의 장막 EX",
+        "rank": null
+      },
+      {
+        "id": 903650,
+        "name": "아침의 종다리 EX",
+        "rank": null
+      },
+      {
+        "id": 904650,
+        "name": "꿈의 끝 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 2800101,
+      "name": "저편으로 드리우는 꿈 이야기",
+      "ruby": "라이 라임 굿펠로우",
+      "rank": "E",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_28001000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/2800100/2800100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/2800100/2800100b@2.png"
+  }
+}

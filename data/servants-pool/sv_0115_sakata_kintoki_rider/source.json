@@ -1,0 +1,139 @@
+{
+  "servant_id": "sv_0115_sakata_kintoki_rider",
+  "source_id": 115,
+  "name_ko": "사카타 킨토키",
+  "name_en": "Sakata Kintoki (Rider)",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/115?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A+",
+    "end": "B",
+    "agi": "B+",
+    "mana": "C",
+    "luck": "C",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2735,
+      "name": "genji"
+    },
+    {
+      "id": 2810,
+      "name": "fairyTaleServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 402300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 62350,
+        "name": "신성 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 226550,
+        "name": "천리 질주 A",
+        "rank": null
+      },
+      {
+        "id": 17350,
+        "name": "동물 회화 C",
+        "rank": null
+      },
+      {
+        "id": 26550,
+        "name": "천성의 육체 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 402301,
+      "name": "야랑사구・황금질주",
+      "ruby": "골든 드라이브 굿 나이트",
+      "rank": "B",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4023000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/402300/402300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/402300/402300b@2.png"
+  }
+}

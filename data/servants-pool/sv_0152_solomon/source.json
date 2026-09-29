@@ -1,0 +1,104 @@
+{
+  "servant_id": "sv_0152_solomon",
+  "source_id": 152,
+  "name_ko": "솔로몬",
+  "name_en": "Solomon",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/152?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "B",
+    "mana": "A++",
+    "luck": "A++",
+    "np": "A+++"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 9935530,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83550,
+        "name": "진지작성 A",
+        "rank": null
+      },
+      {
+        "id": 80350,
+        "name": "도구작성 C",
+        "rank": null
+      }
+    ],
+    "personal": []
+  },
+  "noble_phantasms": [
+    {
+      "id": 9935531,
+      "name": "결별의 때가 왔으니, 그는, 세계를 손에서 놓는 자",
+      "ruby": "아르스 노바",
+      "rank": "A",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_99355300.png",
+    "summon": null,
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/9935530/9935530a.png"
+  }
+}

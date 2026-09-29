@@ -1,0 +1,138 @@
+{
+  "servant_id": "sv_0053_asterios",
+  "source_id": 53,
+  "name_ko": "아스테리오스",
+  "name_en": "Asterios",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/53?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A++",
+    "end": "A++",
+    "agi": "C",
+    "mana": "D",
+    "luck": "E",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 401,
+      "name": "oneStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2114,
+      "name": "greekMythologyMales"
+    },
+    {
+      "id": 2632,
+      "name": "demonicBeastServant"
+    },
+    {
+      "id": 2666,
+      "name": "giant"
+    },
+    {
+      "id": 2667,
+      "name": "childServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 700900,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54450,
+        "name": "광화 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 39550,
+        "name": "괴력 A",
+        "rank": null
+      },
+      {
+        "id": 27552,
+        "name": "천성의 마 A++",
+        "rank": null
+      },
+      {
+        "id": 234350,
+        "name": "심연의 라브리스 C",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 700901,
+      "name": "만고불역의 미궁",
+      "ruby": "케이오스 라비린토스",
+      "rank": "EX",
+      "type": "미궁보구"
+    },
+    {
+      "id": 700902,
+      "name": "만고불역의 미궁",
+      "ruby": "케이오스 라비린토스",
+      "rank": "EX",
+      "type": "미궁보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7009000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/700900/700900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/700900/700900b@2.png"
+  }
+}

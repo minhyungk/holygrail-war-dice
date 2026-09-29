@@ -15,6 +15,7 @@ docs/                    기획 문서 (규칙의 원본)
   archive/               지난 답변 원본
 data/                    게임 데이터 (JSON, D-022). 사람이 편집하는 콘텐츠
   servants/{sv_id}/      profile · skills · dialogue · voice (D-063)
+  servants-pool/{sv_id}/ Atlas 준비 원본 (게임 로더 제외, D-152)
   masters/{ms_id}/       profile · dialogue · voice
   common/                공통 나레이션
   tiles.json             맵 25칸
@@ -32,6 +33,7 @@ src/                     게임 코드 (TypeScript)
   testkit.ts             테스트 도구 (정해진 주사위, 프로필 읽기). 게임 코드에서 import 금지
 legacy/                  레거시 자산 (코드 공유 안 함, 값·데이터만 참고. 05-legacy.md)
   data/  scripts/  data-templates/
+scripts/                 원본 수집·준비 도구
 .claude/skills/          AI 작성 가이드 (대사·나레이션)
 .github/workflows/       GitHub Pages 배포
 ```

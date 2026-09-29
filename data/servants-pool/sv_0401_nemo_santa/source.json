@@ -1,0 +1,161 @@
+{
+  "servant_id": "sv_0401_nemo_santa",
+  "source_id": 401,
+  "name_ko": "네모[산타]",
+  "name_en": "Nemo (Santa)",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/401?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "B",
+    "mana": "B",
+    "luck": "EX",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2114,
+      "name": "greekMythologyMales"
+    },
+    {
+      "id": 2466,
+      "name": "associatedToTheArgo"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2797,
+      "name": "divineSpirit"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 2923,
+      "name": "hasSupereffectiveNPAgainstAlignmentEvil"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 405300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 88550,
+        "name": "기승 A",
+        "rank": null
+      },
+      {
+        "id": 62450,
+        "name": "신성 B",
+        "rank": null
+      },
+      {
+        "id": 805250,
+        "name": "해신의 가호 D",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2305550,
+        "name": "성야의 운전자 A",
+        "rank": null
+      },
+      {
+        "id": 2306451,
+        "name": "불굴의 배달자 B+",
+        "rank": null
+      },
+      {
+        "id": 2307650,
+        "name": "네임리스 세인트 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 405301,
+      "name": "나는 짊어진다, 성야제의 앵무조개",
+      "ruby": "홀리 런・노틸러스",
+      "rank": "B",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4053000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/405300/405300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/405300/405300b@2.png"
+  }
+}

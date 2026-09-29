@@ -1,0 +1,153 @@
+{
+  "servant_id": "sv_0047_heracles",
+  "source_id": 47,
+  "name_ko": "헤라클레스",
+  "name_en": "Heracles",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/47?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A+",
+    "end": "A",
+    "agi": "A",
+    "mana": "A",
+    "luck": "B",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 306,
+      "name": "alignmentMadness"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2114,
+      "name": "greekMythologyMales"
+    },
+    {
+      "id": 2466,
+      "name": "associatedToTheArgo"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 2883,
+      "name": "FSNServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 700100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54450,
+        "name": "광화 B",
+        "rank": null
+      },
+      {
+        "id": 62550,
+        "name": "신성 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 16551,
+        "name": "용맹 A+",
+        "rank": null
+      },
+      {
+        "id": 36450,
+        "name": "심안(가짜) B",
+        "rank": null
+      },
+      {
+        "id": 41550,
+        "name": "전투속행 A",
+        "rank": null
+      },
+      {
+        "id": 760550,
+        "name": "불요불굴 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 700101,
+      "name": "사살하는 백 개의 머리",
+      "ruby": "나인 라이브즈",
+      "rank": "C~A+",
+      "type": "불명"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7001000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/700100/700100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/700100/700100b@2.png"
+  }
+}

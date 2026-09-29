@@ -1,0 +1,140 @@
+{
+  "servant_id": "sv_0161_hijikata_toshizo",
+  "source_id": 161,
+  "name_ko": "히지카타 토시조",
+  "name_en": "Hijikata Toshizo",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/161?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "C",
+    "mana": "E",
+    "luck": "D",
+    "np": "C+"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2839,
+      "name": "shinsengumiServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 10009,
+      "name": "unknown"
+    },
+    {
+      "id": 702500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54251,
+        "name": "광화 D+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 343450,
+        "name": "전장의 귀신 B",
+        "rank": null
+      },
+      {
+        "id": 12350,
+        "name": "재정비 C",
+        "rank": null
+      },
+      {
+        "id": 344650,
+        "name": "국중법도 EX",
+        "rank": null
+      },
+      {
+        "id": 789451,
+        "name": "치열한 여로 B+",
+        "rank": null
+      },
+      {
+        "id": 344655,
+        "name": "국중법도 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 702501,
+      "name": "불멸의 진심",
+      "ruby": "신선조",
+      "rank": "C+",
+      "type": "대인보구"
+    },
+    {
+      "id": 702502,
+      "name": "불멸의 진심",
+      "ruby": "신선조",
+      "rank": "C++",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7025000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/702500/702500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/702500/702500b@2.png"
+  }
+}

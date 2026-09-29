@@ -1,0 +1,122 @@
+{
+  "servant_id": "sv_0025_edward_teach",
+  "source_id": 25,
+  "name_ko": "에드워드 티치",
+  "name_en": "Edward Teach",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/25?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B+",
+    "end": "A",
+    "agi": "E",
+    "mana": "D",
+    "luck": "C",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 402,
+      "name": "twoStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 400800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34150,
+        "name": "대 마력 E",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 35550,
+        "name": "폭풍의 항해자 A",
+        "rank": null
+      },
+      {
+        "id": 51450,
+        "name": "해적의 명예 B",
+        "rank": null
+      },
+      {
+        "id": 251350,
+        "name": "신사적인 사랑 C",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 400801,
+      "name": "앤 여왕의 복수",
+      "ruby": "퀸 앤즈 리벤지",
+      "rank": "C++",
+      "type": "대군보구"
+    },
+    {
+      "id": 400802,
+      "name": "앤 여왕의 복수",
+      "ruby": "퀸 앤즈 리벤지",
+      "rank": "C+++",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4008000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/400800/400800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/400800/400800b@2.png"
+  }
+}

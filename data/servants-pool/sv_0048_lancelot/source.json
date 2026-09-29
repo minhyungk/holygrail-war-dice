@@ -1,0 +1,128 @@
+{
+  "servant_id": "sv_0048_lancelot",
+  "source_id": 48,
+  "name_ko": "랜슬롯",
+  "name_en": "Lancelot",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/48?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "A",
+    "agi": "A+",
+    "mana": "C",
+    "luck": "B",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 306,
+      "name": "alignmentMadness"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2795,
+      "name": "knightsOfTheRound"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 700200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54350,
+        "name": "광화 C",
+        "rank": null
+      },
+      {
+        "id": 34150,
+        "name": "대 마력 E",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 52551,
+        "name": "무궁의 무련 A+",
+        "rank": null
+      },
+      {
+        "id": 67550,
+        "name": "정령의 가호 A",
+        "rank": null
+      },
+      {
+        "id": 254550,
+        "name": "마력 역류 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 700201,
+      "name": "기사는 맨손으로 죽지 않는다",
+      "ruby": "나이트 오브 아너",
+      "rank": "A",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7002000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/700200/700200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/700200/700200b@2.png"
+  }
+}

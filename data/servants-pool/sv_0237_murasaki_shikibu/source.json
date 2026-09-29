@@ -1,0 +1,121 @@
+{
+  "servant_id": "sv_0237_murasaki_shikibu",
+  "source_id": 237,
+  "name_ko": "무라사키 시키부",
+  "name_en": "Murasaki Shikibu",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/237?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "D",
+    "mana": "B",
+    "luck": "A+",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 504200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83351,
+        "name": "진지작성 C+",
+        "rank": null
+      },
+      {
+        "id": 80350,
+        "name": "도구작성 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 572550,
+        "name": "가선의 시가 A",
+        "rank": null
+      },
+      {
+        "id": 580251,
+        "name": "주술(사) D+",
+        "rank": null
+      },
+      {
+        "id": 573450,
+        "name": "무라사키 시키부 일기 B",
+        "rank": null
+      },
+      {
+        "id": 573452,
+        "name": "무라사키 시키부 일기 B++",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 504201,
+      "name": "겐지 모노가타리・아오이・모노노케",
+      "ruby": "겐지 모노가타리・아오이・모노노케",
+      "rank": "C",
+      "type": "시가보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5042000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/504200/504200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/504200/504200b@2.png"
+  }
+}

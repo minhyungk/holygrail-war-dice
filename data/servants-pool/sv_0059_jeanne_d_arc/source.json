@@ -1,0 +1,132 @@
+{
+  "servant_id": "sv_0059_jeanne_d_arc",
+  "source_id": 59,
+  "name_ko": "잔 다르크",
+  "name_en": "Jeanne d'Arc",
+  "class": "ruler",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/59?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "A",
+    "mana": "A",
+    "luck": "C",
+    "np": "A++"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 108,
+      "name": "classRuler"
+    },
+    {
+      "id": 203,
+      "name": "attributeStar"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2007,
+      "name": "saberface"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 900100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34650,
+        "name": "대 마력 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 24550,
+        "name": "계시 A",
+        "rank": null
+      },
+      {
+        "id": 58450,
+        "name": "진명간파 B",
+        "rank": null
+      },
+      {
+        "id": 63550,
+        "name": "신명재결 A",
+        "rank": null
+      },
+      {
+        "id": 2341650,
+        "name": "청렬한 기도의 끝에 EX",
+        "rank": null
+      },
+      {
+        "id": 866550,
+        "name": "찬연한 성광의 복권 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 900101,
+      "name": "나의 신은 여기에 있나니",
+      "ruby": "뤼미노지테 에테르넬",
+      "rank": "A-",
+      "type": "결계보구"
+    },
+    {
+      "id": 900102,
+      "name": "나의 신은 여기에 있나니",
+      "ruby": "뤼미노지테 에테르넬",
+      "rank": "A",
+      "type": "결계보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_9001000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/900100/900100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/900100/900100b@2.png"
+  }
+}

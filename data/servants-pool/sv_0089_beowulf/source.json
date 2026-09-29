@@ -1,0 +1,144 @@
+{
+  "servant_id": "sv_0089_beowulf",
+  "source_id": 89,
+  "name_ko": "베오울프",
+  "name_en": "Beowulf",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/89?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "A",
+    "agi": "C",
+    "mana": "D",
+    "luck": "A",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 700800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54149,
+        "name": "광화 E-",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 155550,
+        "name": "베르세르크 A",
+        "rank": null
+      },
+      {
+        "id": 57450,
+        "name": "직감 B",
+        "rank": null
+      },
+      {
+        "id": 41450,
+        "name": "전투속행 B",
+        "rank": null
+      },
+      {
+        "id": 582551,
+        "name": "분기의 용사 A+",
+        "rank": null
+      },
+      {
+        "id": 830550,
+        "name": "견인의 노경 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 700801,
+      "name": "원류투쟁",
+      "ruby": "그렌델 버스터",
+      "rank": "A+",
+      "type": "대인보구"
+    },
+    {
+      "id": 700802,
+      "name": "원류투쟁",
+      "ruby": "그렌델 버스터",
+      "rank": "A+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7008000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/700800/700800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/700800/700800b@2.png"
+  }
+}

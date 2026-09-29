@@ -1,8 +1,8 @@
 // 3국면 자동 전투 (docs/systems/combat.md, phases.md, dice.md).
 // 전투는 제너레이터로 진행한다: 개입 지점(combat.md §4)에서 Prompt를 내보내고 답을 받아 이어 간다.
 // UI는 Prompt를 화면에 띄우고, 헤드리스 시뮬은 정책 함수로 답한다 (runBattle).
-import { K } from '../data/constants';
-import type { PhaseId, ServantProfile, SkillLink, StatId, Terrain } from '../data/schema';
+import { K, PHASES } from '../data/constants';
+import type { PhaseId, Reaction, ServantProfile, SkillLink, StatId, Terrain } from '../data/schema';
 import { check, contest, type NaturalRoll, rollNatural, type RollResult } from './dice';
 import type { Condition, EventLog, RollRecord, Side } from './events';
 import { phaseDef, phaseFromDraw, phaseFromNp, terrainWeightTotal } from './phases';
@@ -16,10 +16,8 @@ export const CONDITIONS: readonly Condition[] = ['full', 'hurt', 'danger']; // D
 export interface FixedBonus {
   /** 호감도 보정 (affinity.md §3.4) */
   affinity: number;
-  /** 진지 보정 (day-loop.md §13) */
-  camp: number;
 }
-export const NO_BONUS: FixedBonus = { affinity: 0, camp: 0 };
+export const NO_BONUS: FixedBonus = { affinity: 0 };
 
 export interface Fighter {
   faction: string;
@@ -39,6 +37,8 @@ export interface Fighter {
   temperament: string | null;
   /** 보유 스킬 (servants/{id}/skills.json). 훅마다 자동 발동한다 (D-142) */
   skills: readonly SkillLink[];
+  /** 남은 영주 퇴각 횟수 (적 AI만 제한, D-149). 플레이어는 제한 없음 */
+  sealRetreats: number;
 }
 
 export function createFighter(
@@ -60,6 +60,7 @@ export function createFighter(
     refusal: 0,
     temperament: null,
     skills: [],
+    sealRetreats: controller === 'ai' ? K['ai.seal_retreat_max'] : Infinity,
     ...overrides,
   };
 }
@@ -70,6 +71,8 @@ export interface BattleCheckpoint {
   npUsed: Record<Side, number>;
   /** 전투당 횟수 제한이 있는 스킬의 사용 횟수 (D-142) */
   skillUses: Record<Side, Record<string, number>>;
+  /** 약점 공략을 이미 썼나 (전투당 1회, D-148) */
+  weaknessUsed?: Record<Side, boolean>;
   current?: { opened: Record<Side, boolean>; aiDecided: boolean; phase?: { id: PhaseId; attacker: Side } };
 }
 
@@ -85,6 +88,10 @@ export interface BattleInput {
   isFinal?: boolean;
   /** 기습에 성공한 쪽. 국면 1의 공격측이 되고 국면 1 판정에 보정을 받는다 (phases.md §3.4, D-099, D-109) */
   ambusher?: Side | null;
+  /** 영맥 칸에서의 전투 (진지작성 스킬 조건, D-146) */
+  leyline?: boolean;
+  /** 플레이어가 고른 선택을 알린다 (호감도 반응, D-150). 선택 이벤트를 기록한 직후 부른다. 예측 실행에는 넘기지 않는다 */
+  onChoice?: (faction: string, reaction: Reaction) => void;
 }
 
 /** 전투가 쓰는 무작위. 기본은 시드 RNG, 테스트는 정해진 값을 넣는다 */
@@ -103,11 +110,11 @@ export type RollBreakdown = RollResult & { faction: string; stats: string[]; par
 export type EscapeOption = 'seal' | 'run';
 /** 위험에 들어섰을 때 (D-134): 계속 싸운다 / 영주로 퇴각 / 일반 도주 */
 export type DangerChoice = 'fight' | EscapeOption;
-/** 국면 지시 (D-127): 마력으로 보구 개방 / 영주 보구 즉시 발동. 영주 버프는 폐지 (D-142) */
-export type PhaseCommand = 'np' | 'seal_np';
+/** 국면 지시 (D-127): 마력으로 보구 개방 / 영주 보구 즉시 발동 / 약점 공략 (D-148). 영주 버프는 폐지 (D-142) */
+export type PhaseCommand = 'np' | 'seal_np' | 'weakness';
 export type Prompt = (
-  /** enemy_np: 상대가 이번 국면에 보구를 개방했다 (D-113) */
-  | { kind: 'phase_command'; faction: string; phase_index: number; options: PhaseCommand[]; enemy_np: boolean; mana: number; seals: number }
+  /** enemy_np: 상대가 이번 국면에 보구를 개방했다 (D-113). weakness_phase: 약점 공략을 고르면 될 국면 (D-148) */
+  | { kind: 'phase_command'; faction: string; phase_index: number; options: PhaseCommand[]; enemy_np: boolean; mana: number; seals: number; weakness_phase: PhaseId | null }
   /** 운명점 재굴림은 실패했을 때만 묻는다 (D-119). own·opponent_roll에는 보정 내역이 들어 있다 */
   | { kind: 'reroll'; faction: string; context: 'phase' | 'escape' | 'action'; own: RollBreakdown; opponent_total: number | null; opponent_roll: RollBreakdown | null; dc: number | null; fate_points: number }
   | { kind: 'danger_decision'; faction: string; options: DangerChoice[]; seals: number }) & { forecast?: BattleInput };
@@ -141,12 +148,27 @@ function* askDanger(p: Extract<Prompt, { kind: 'danger_decision' }>): Generator<
 function* askPhase(p: Extract<Prompt, { kind: 'phase_command' }>): Generator<Prompt, PhaseCommand | 'none', PromptAnswer> {
   const a = yield p;
   if (a === 'none') return a;
-  if (a !== 'np' && a !== 'seal_np') throw new TypeError(`phase_command의 답은 np/seal_np/none이어야 한다: ${String(a)}`);
+  if (a !== 'np' && a !== 'seal_np' && a !== 'weakness') throw new TypeError(`phase_command의 답은 np/seal_np/weakness/none이어야 한다: ${String(a)}`);
   if (!p.options.includes(a)) throw new RangeError(`고를 수 없는 국면 지시: ${a}`);
   return a;
 }
 
 const other = (s: Side): Side => (s === 'a' ? 'b' : 'a');
+
+/**
+ * 약점 공략으로 끌고 갈 국면 (D-148): 지형 추첨 대상인 대항 국면 중 '내 스탯 − 상대 스탯'이 가장 큰 것.
+ * 내가 공격측이다. 같으면 phases.json 순서
+ */
+export function weaknessPhase(me: ServantProfile, foe: ServantProfile): PhaseId {
+  let best: PhaseId | null = null;
+  let bestGap = -Infinity;
+  for (const def of Object.values(PHASES)) {
+    if (def.selection !== 'terrain' || def.kind !== 'contest') continue;
+    const gap = statSum(me, def.attacker_stat) - statSum(foe, def.defender_stat);
+    if (gap > bestGap) (best = def.phase_id), (bestGap = gap);
+  }
+  return best!;
+}
 
 export function* battle(input: BattleInput, dice: BattleDice, log: EventLog): BattleGen {
   const F: Record<Side, Fighter> = { a: { ...input.a }, b: { ...input.b } };
@@ -155,11 +177,12 @@ export function* battle(input: BattleInput, dice: BattleDice, log: EventLog): Ba
   const both = [F.a.faction, F.b.faction];
   const npUsed: Record<Side, number> = { ...(input.checkpoint?.npUsed ?? { a: 0, b: 0 }) };
   const skillUses: Record<Side, Record<string, number>> = { a: { ...input.checkpoint?.skillUses.a }, b: { ...input.checkpoint?.skillUses.b } };
+  const weaknessUsed: Record<Side, boolean> = { ...(input.checkpoint?.weaknessUsed ?? { a: false, b: false }) };
   for (const s of ['a', 'b'] as const) if (!CONDITIONS.includes(F[s].condition)) throw new Error(`전투할 수 없는 상태: ${F[s].faction}`);
 
   const forecast = (completed: number, current?: BattleCheckpoint['current']): { forecast?: BattleInput } => input.captureForecast ? {
     forecast: { ...input, captureForecast: false, a: { ...F.a }, b: { ...F.b }, checkpoint: {
-      completed, npUsed: { ...npUsed }, skillUses: { a: { ...skillUses.a }, b: { ...skillUses.b } },
+      completed, npUsed: { ...npUsed }, skillUses: { a: { ...skillUses.a }, b: { ...skillUses.b } }, weaknessUsed: { ...weaknessUsed },
       ...(current ? { current: { ...current, opened: { ...current.opened } } } : {}),
     } },
   } : {};
@@ -186,7 +209,6 @@ export function* battle(input: BattleInput, dice: BattleDice, log: EventLog): Ba
     if (f.bonus.affinity) parts.affinity = f.bonus.affinity;
     const intel = K['day.intel_mod'][f.intelLevel]!;
     if (intel) parts.intel = intel;
-    if (f.bonus.camp) parts.camp = f.bonus.camp;
     if (phaseIndex === 1 && input.ambusher === s) parts.ambush = K['day.ambush_bonus'];
     return parts;
   };
@@ -194,7 +216,7 @@ export function* battle(input: BattleInput, dice: BattleDice, log: EventLog): Ba
 
   // ── 스킬 (skills.md, D-142): 훅마다 양측 스킬을 보유 순서대로, a → b 순으로 판단한다 ──
   const ctxOf = (s: Side, phaseIndex: number, extra: Partial<SkillCtx> = {}): SkillCtx => ({
-    phaseIndex, selfCondition: F[s].condition, camp: F[s].bonus.camp > 0, ...extra,
+    phaseIndex, selfCondition: F[s].condition, leyline: input.leyline ?? false, ...extra,
   });
   const trigger = (s: Side, sk: ActiveSkill, phaseIndex: number, amount: number, target: Side, manaAfter: number | null = null) =>
     log.emit('skill_triggered', [F[s].faction], {
@@ -313,6 +335,7 @@ export function* battle(input: BattleInput, dice: BattleDice, log: EventLog): Ba
       f.seals -= 1;
       log.emit('seal_used', [f.faction], { battle_id: id, faction: f.faction, purpose, seals_left: f.seals });
     };
+    let weakSide: Side | null = null;
     for (const s of current?.phase ? [] : order) {
       const f = F[s];
       if (f.controller === 'ai') {
@@ -325,14 +348,27 @@ export function* battle(input: BattleInput, dice: BattleDice, log: EventLog): Ba
       const options: PhaseCommand[] = [];
       if (canNp(s)) options.push('np');
       if (!opened[s] && npUsed[s] < K['combat.np_per_battle'] && f.seals > 0) options.push('seal_np');
+      // 약점 공략 (D-148): 진명을 알고, 이 전투에서 아직 안 썼고, 상대가 이번 국면에 보구를 열지 않았을 때
+      const canWeak = f.intelLevel >= K['day.intel_mod'].length - 1 && !weaknessUsed[s] && !opened[other(s)];
+      if (canWeak) options.push('weakness');
       if (!options.length) continue;
-      const cmd = yield* askPhase({ kind: 'phase_command', faction: f.faction, phase_index: index, options, enemy_np: opened[other(s)], mana: f.mana, seals: f.seals, ...forecast(index - 1, { opened, aiDecided: true }) });
+      const cmd = yield* askPhase({
+        kind: 'phase_command', faction: f.faction, phase_index: index, options, enemy_np: opened[other(s)], mana: f.mana, seals: f.seals,
+        weakness_phase: canWeak ? weaknessPhase(f.servant, F[other(s)].servant) : null,
+        ...forecast(index - 1, { opened, aiDecided: true }),
+      });
       if (cmd === 'np') openNp(s, false);
       else if (cmd === 'seal_np') {
         // 영주 보구 즉시 발동: 마력 조건 없이, 마력 소모 없음 (D-076). 전투당 1회에 포함 (D-135)
         useSeal(s, 'np');
         openNp(s, true);
+      } else if (cmd === 'weakness') {
+        weaknessUsed[s] = true;
+        weakSide = s;
+        log.emit('weakness_used', both, { battle_id: id, phase_index: index, faction: f.faction, target: F[other(s)].faction, phase_id: weaknessPhase(f.servant, F[other(s)].servant) });
+        input.onChoice?.(f.faction, 'weakness');
       }
+      if (cmd === 'np' || cmd === 'seal_np') input.onChoice?.(f.faction, 'np_open');
     }
     // 상대가 보구를 열면 적 AI는 따라서 연다 (D-136)
     for (const s of ['a', 'b'] as const) if (F[s].controller === 'ai' && !opened[s] && opened[other(s)] && canNp(s)) openNp(s, false);
@@ -348,6 +384,10 @@ export function* battle(input: BattleInput, dice: BattleDice, log: EventLog): Ba
     } else if (np) {
       phaseId = np.phase;
       attacker = np.attacker ?? coin();
+    } else if (weakSide) {
+      // 약점 공략 (D-148): 추첨하지 않고 가장 유리한 국면, 고른 쪽이 공격측
+      phaseId = weaknessPhase(F[weakSide].servant, F[other(weakSide)].servant);
+      attacker = weakSide;
     } else {
       phaseId = phaseFromDraw(input.terrain, dice.draw(terrainWeightTotal(input.terrain)));
       attacker = index === 1 && input.ambusher ? input.ambusher : coin();
@@ -467,6 +507,7 @@ export function* battle(input: BattleInput, dice: BattleDice, log: EventLog): Ba
     // 5. 위험에 들어섰다: 계속 싸울지, 물러날지 (§3.4-3, D-134)
     const sealEscape = () => {
       lf.seals -= 1;
+      lf.sealRetreats -= 1;
       log.emit('seal_used', [lf.faction], { battle_id: id, faction: lf.faction, purpose: 'escape', seals_left: lf.seals });
       return end({ result: 'escape', winner: null, loser: null, dead: null, escaped: lf.faction, phases: index });
     };
@@ -477,20 +518,29 @@ export function* battle(input: BattleInput, dice: BattleDice, log: EventLog): Ba
       const behind = CONDITIONS.indexOf(lf.condition) > CONDITIONS.indexOf(F[winner].condition);
       const R = K['ai.retreat_chance'];
       const p = t === 'cunning' ? (behind ? R.cunning_behind : R.cunning) : (R[t as keyof typeof R] ?? R.proud);
-      choice = chance(dice, p) ? (lf.seals > 0 ? 'seal' : 'run') : 'fight';
+      // 영주 퇴각은 판 ai.seal_retreat_max회까지 (D-149). 이후 퇴각은 일반 도주
+      choice = chance(dice, p) ? (lf.seals > 0 && lf.sealRetreats > 0 ? 'seal' : 'run') : 'fight';
     } else {
       const options: DangerChoice[] = lf.seals > 0 ? ['fight', 'seal', 'run'] : ['fight', 'run'];
       choice = yield* askDanger({ kind: 'danger_decision', faction: lf.faction, options, seals: lf.seals, ...forecast(index) });
     }
     log.emit('danger_decided', [lf.faction], { battle_id: id, faction: lf.faction, choice });
-    if (choice === 'fight') continue;
-    if (choice === 'seal') return sealEscape(); // 영주 명령은 거부할 수 없다 (D-109)
+    const react = (r: Reaction) => lf.controller === 'player' && input.onChoice?.(lf.faction, r);
+    if (choice === 'fight') {
+      react('danger_fight');
+      continue;
+    }
+    if (choice === 'seal') {
+      react('danger_seal');
+      return sealEscape(); // 영주 명령은 거부할 수 없다 (D-109)
+    }
 
-    // 명령 거부 (D-083): 일반 도주를 거부하면 물러나지 않고 계속 싸운다
+    // 명령 거부 (D-083): 일반 도주를 거부하면 물러나지 않고 계속 싸운다. 거부당한 명령에는 반응하지 않는다
     if (chance(dice, lf.refusal)) {
       log.emit('refused', [lf.faction], { faction: lf.faction, command: 'escape' });
       continue;
     }
+    react('danger_run');
 
     // 일반 도주: 민첩 대항. 동점은 성공 (D-100). 실패하면 전쟁 패배 (§3.4-3)
     const escParts = rollParts('hk_battle_escape', index, ['a', 'b'], (s) => ({ escaper: s === loser }));

@@ -1,0 +1,116 @@
+{
+  "servant_id": "sv_0404_yui_shousetsu",
+  "source_id": 404,
+  "name_ko": "유이 쇼세츠",
+  "name_en": "Yui Shousetsu",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/404?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "C",
+    "mana": "A",
+    "luck": "B+",
+    "np": "C+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 505400,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83351,
+        "name": "진지작성 C+",
+        "rank": null
+      },
+      {
+        "id": 80350,
+        "name": "도구작성 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2315350,
+        "name": "위조생명(아종) C",
+        "rank": null
+      },
+      {
+        "id": 2316450,
+        "name": "열사의 군학 B",
+        "rank": null
+      },
+      {
+        "id": 2317451,
+        "name": "마술(원소) B+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 505401,
+      "name": "열사순명・불석신명",
+      "ruby": "열사순명・불석신명",
+      "rank": "C",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5054000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/505400/505400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/505400/505400b@2.png"
+  }
+}

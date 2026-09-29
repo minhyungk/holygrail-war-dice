@@ -1,0 +1,149 @@
+{
+  "servant_id": "sv_0138_elisabeth_bathory_brave",
+  "source_id": 138,
+  "name_ko": "엘리자베트 바토리(브레이브)",
+  "name_en": "Elisabeth Báthory (Brave)",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/138?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "C",
+    "mana": "C",
+    "luck": "B",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2002,
+      "name": "dragon"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 101000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 83350,
+        "name": "진지작성 C",
+        "rank": null
+      },
+      {
+        "id": 296150,
+        "name": "더블 클래스 E",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 297650,
+        "name": "용사대원칙 EX",
+        "rank": null
+      },
+      {
+        "id": 298250,
+        "name": "마력방출(용기) D",
+        "rank": null
+      },
+      {
+        "id": 299650,
+        "name": "진홍의 용사전설 EX",
+        "rank": null
+      },
+      {
+        "id": 945650,
+        "name": "진홍의 용사전설・극장판 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 101001,
+      "name": "선혈용권마양",
+      "ruby": "바토리 브레이브 에르제베트",
+      "rank": "B",
+      "type": "대인보구"
+    },
+    {
+      "id": 101002,
+      "name": "선혈용권마양",
+      "ruby": "바토리 브레이브 에르제베트",
+      "rank": "V",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1010000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/101000/101000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/101000/101000b@2.png"
+  }
+}

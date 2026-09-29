@@ -412,6 +412,85 @@
         },
         "text": "마지막 날이군요. ……마스터, 오늘은 조금 더 천천히 걸읍시다.",
         "repeat": "once_per_run"
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것…… 죄송합니다, 떠오르지 않습니다.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것도 잘 떠오르지 않네요…… 부끄럽습니다……",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "왜 남장을 했느냐고요? 저의 시대에 왕권은 남성의 것이었습니다. 애당초 소녀의 신분으로는 아무것도 지킬 수 없었습니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "하지만…… 그렇군요. 조금이나마 꿈을 꾸기도 했습니다. 만약 왕의 검을 뽑지 않았다면, 나는 어떤 인생을 보냈을까 하는 꿈을.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "멀린을 아십니까? 장난을 좋아하는 대마술사인데, 믿을 수 있는 인물입니다. 그 남자가 아군으로 있어 준다면 든든한데……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "당신의 지시는 기분이 좋습니다. 신기하게도 마음이 따뜻해집니다. 저의 검이 조금이나마 힘이 된다면 온 정신을 다해 당신의 힘이 되겠습니다, 마스터.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
       }
     ],
     "mana_supply": [
@@ -466,6 +545,206 @@
         "id": "fail_02",
         "text": "죄송합니다. 이런 자리는……아직 익숙하지 않아서.",
         "tone": "grim"
+      }
+    ],
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "흣!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "하아!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "야아아아앗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "베어 올린다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "아직이다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "잡았다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "세잇!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "바람이여, 날아오르라……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "풍왕철퇴(스트라이크 에어)!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "간다, 스트라이크 칼리번!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_4",
+        "text": "훌륭하군…… 그렇다면 응해주마!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "이 정도로……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "큭!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "전원, 돌격 준비!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "온 힘을 다하겠다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "놓치지는 않는다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "정면으로, 응해주마!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_5",
+        "text": "이 길에 승리를!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_6",
+        "text": "성검, 해방.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "comeback": [
+      {
+        "id": "comeback_01",
+        "text": "……아직, 서 있습니다. 기사는 마지막 순간까지 무릎 꿇지 않습니다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "comeback_02",
+        "text": "위험했습니다. 하지만 마스터, 이 검은 끝까지 꺾이지 않았습니다.",
+        "tone": "calm"
+      }
+    ],
+    "weakness": [
+      {
+        "id": "weakness_01",
+        "text": "{enemy}──당신의 전설이 어디서 끝났는지, 알고 있습니다. 그곳을 베겠습니다.",
+        "tone": "cold"
+      }
+    ],
+    "react_choice": [
+      {
+        "id": "encounter_fight",
+        "when": {
+          "event.reaction": "encounter_fight"
+        },
+        "text": "좋습니다. 정면으로 맞서는 것이야말로 기사의 도리입니다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "encounter_flee",
+        "when": {
+          "event.reaction": "encounter_flee"
+        },
+        "text": "……물러서라는 겁니까. 적에게 등을 보이는 것은, 제 뜻이 아닙니다.",
+        "tone": "cold"
+      },
+      {
+        "id": "danger_fight",
+        "when": {
+          "event.reaction": "danger_fight"
+        },
+        "text": "……감사합니다, 마스터. 끝까지 싸우게 해 주셔서.",
+        "tone": "defiant"
+      },
+      {
+        "id": "danger_run",
+        "when": {
+          "event.reaction": "danger_run"
+        },
+        "text": "도망치라는 명령입니까. ……따르겠습니다. 하지만 이 치욕은 잊지 않겠습니다.",
+        "tone": "grim"
+      },
+      {
+        "id": "weakness",
+        "when": {
+          "event.reaction": "weakness"
+        },
+        "text": "약점을 노리는 것은 이기는 길이겠지요. ……다만, 기사의 싸움은 아닙니다.",
+        "tone": "cold"
       }
     ]
   }

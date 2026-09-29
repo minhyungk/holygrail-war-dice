@@ -1,0 +1,143 @@
+{
+  "servant_id": "sv_0209_okita_souji_alter",
+  "source_id": 209,
+  "name_ko": "오키타 소지(얼터)",
+  "name_en": "Okita Souji (Alter)",
+  "class": "alterEgo",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/209?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "A",
+    "mana": "B",
+    "luck": "C",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 109,
+      "name": "classAlterEgo"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2007,
+      "name": "saberface"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2839,
+      "name": "shinsengumiServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 10009,
+      "name": "unknown"
+    },
+    {
+      "id": 1000700,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 20550,
+        "name": "단독행동 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 488550,
+        "name": "극지 A",
+        "rank": null
+      },
+      {
+        "id": 489450,
+        "name": "부단 B",
+        "rank": null
+      },
+      {
+        "id": 490550,
+        "name": "무변 A",
+        "rank": null
+      },
+      {
+        "id": 488551,
+        "name": "극지 A+",
+        "rank": null
+      },
+      {
+        "id": 489451,
+        "name": "부단 B+",
+        "rank": null
+      },
+      {
+        "id": 490551,
+        "name": "무변 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 1000701,
+      "name": "절검・무궁삼단",
+      "ruby": "절검・무궁삼단",
+      "rank": "A",
+      "type": "대계보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_10007000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1000700/1000700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1000700/1000700b@2.png"
+  }
+}

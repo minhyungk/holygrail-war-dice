@@ -210,6 +210,78 @@
         "text": "……오늘은 여기까지다. 마스터의 몸이 먼저다.",
         "tone": "grim"
       }
+    ],
+    "phase_win": [
+      {
+        "id": "win_01",
+        "text": "베었다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "win_02",
+        "text": "──하아앗!",
+        "tone": "defiant"
+      },
+      {
+        "id": "win_03",
+        "text": "검 끝이, 닿았다.",
+        "tone": "defiant"
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "hit_01",
+        "text": "큭……!",
+        "tone": "grim"
+      },
+      {
+        "id": "hit_02",
+        "text": "이 정도로……!",
+        "tone": "grim"
+      }
+    ],
+    "skill": [
+      {
+        "id": "skill_01",
+        "text": "──간다!",
+        "tone": "defiant"
+      },
+      {
+        "id": "skill_02",
+        "text": "검에 힘을 싣는다.",
+        "tone": "defiant"
+      }
+    ],
+    "comeback": [
+      {
+        "id": "comeback_01",
+        "text": "……쓰러지지 않았다. 검을 쥔 손이 남아 있었으니까.",
+        "tone": "defiant"
+      },
+      {
+        "id": "comeback_02",
+        "text": "몇 번을 베여도, 마지막에 서 있는 쪽이 이긴다.",
+        "tone": "defiant"
+      }
+    ],
+    "weakness": [
+      {
+        "id": "weakness_01",
+        "text": "{enemy}──그 전설의 끝을 알고 있다. 검은, 그곳을 벤다.",
+        "tone": "cold"
+      },
+      {
+        "id": "weakness_02",
+        "text": "약점은 보였다. ──망설이지 않는다.",
+        "tone": "cold"
+      }
+    ],
+    "intel_battle": [
+      {
+        "id": "battle_01",
+        "text": "결판은 나지 않았다. 하지만 칼을 맞댄 만큼은, 상대를 알았다.",
+        "tone": "calm"
+      }
     ]
   }
 }

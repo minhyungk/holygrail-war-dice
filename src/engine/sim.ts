@@ -6,11 +6,11 @@ import { EventLog } from './events';
 import { createRng, deriveSeed } from './rng';
 import { planRun, playRun, type RunAnswer, type RunData, type RunPrompt, type RunResult } from './run';
 
-/** 플레이어 자리를 대신 두는 정책: 보구는 열 수 있으면 열고, 지고 있으면 재굴림, 도주는 영주 우선 */
+/** 플레이어 자리를 대신 두는 정책: 보구는 열 수 있으면 열고(아니면 약점 공략), 지고 있으면 재굴림, 도주는 영주 우선 */
 export const autoPolicy: Policy = (p) => {
   switch (p.kind) {
     case 'phase_command':
-      return p.options.includes('np') ? 'np' : 'none';
+      return p.options.includes('np') ? 'np' : p.options.includes('weakness') ? 'weakness' : 'none';
     case 'reroll':
       if (p.dc !== null) return p.own.total < p.dc;
       return p.opponent_total !== null && p.own.total <= p.opponent_total;
@@ -89,9 +89,11 @@ export function autoRunPolicy(seed: number): (p: RunPrompt) => RunAnswer {
   return (p) => {
     switch (p.kind) {
       case 'action':
-        // 무작위 이동 또는 머무르기. 낮에는 도착한 칸의 역할이 자동으로 벌어진다
+        // 밤: 무작위 이동 또는 머무르기
         return { action: 'move', to: p.reachable[rng.int(0, p.reachable.length - 1)]! };
-      case 'camp_offer':
+      case 'day_action':
+        // 낮 메뉴: 진명을 모르는 적이 남았으면 반반, 아니면 교류
+        return { action: p.intel_open && rng.int(0, 1) === 0 ? 'intel' : 'bond' };
       case 'supply_offer':
         return true;
       case 'encounter':

@@ -1,0 +1,147 @@
+{
+  "servant_id": "sv_0060_orion",
+  "source_id": 60,
+  "name_ko": "오리온",
+  "name_en": "Orion",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/60?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "B",
+    "mana": "A",
+    "luck": "A+",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2114,
+      "name": "greekMythologyMales"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 2847,
+      "name": "levitating"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 200900,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34250,
+        "name": "대 마력 D",
+        "rank": null
+      },
+      {
+        "id": 20551,
+        "name": "단독행동 A+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 104650,
+        "name": "여신의 총애 EX",
+        "rank": null
+      },
+      {
+        "id": 105551,
+        "name": "바람기를 향한 쐐기 A+",
+        "rank": null
+      },
+      {
+        "id": 36449,
+        "name": "심안(가짜) B-",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 200901,
+      "name": "달의 여신의 애정과 연심의 화살",
+      "ruby": "트라이스타 아모레 미오",
+      "rank": "A+",
+      "type": "대인보구"
+    },
+    {
+      "id": 200902,
+      "name": "달의 여신의 애정과 연심의 화살",
+      "ruby": "트라이스타 아모레 미오",
+      "rank": "A+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2009000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/200900/200900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/200900/200900b@2.png"
+  }
+}

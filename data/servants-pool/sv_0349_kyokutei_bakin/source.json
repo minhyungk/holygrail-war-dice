@@ -1,0 +1,137 @@
+{
+  "servant_id": "sv_0349_kyokutei_bakin",
+  "source_id": 349,
+  "name_ko": "쿄쿠테이 바킨",
+  "name_en": "Kyokutei Bakin",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/349?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "B+",
+    "mana": "B+",
+    "luck": "C-",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 2923,
+      "name": "hasSupereffectiveNPAgainstAlignmentEvil"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 404800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 88450,
+        "name": "기승 B",
+        "rank": null
+      },
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 62350,
+        "name": "신성 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2084450,
+        "name": "명전자성 B",
+        "rank": null
+      },
+      {
+        "id": 2085550,
+        "name": "인의팔행 A",
+        "rank": null
+      },
+      {
+        "id": 2086550,
+        "name": "게사쿠삼매 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 404801,
+      "name": "난소 사토미 팔견전",
+      "ruby": "난소 사토미 팔견전",
+      "rank": "A",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4048000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/404800/404800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/404800/404800b@2.png"
+  }
+}

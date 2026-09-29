@@ -1,0 +1,124 @@
+{
+  "servant_id": "sv_0374_pope_johanna",
+  "source_id": 374,
+  "name_ko": "여교황 요한나",
+  "name_en": "Pope Johanna",
+  "class": "ruler",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/374?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "C",
+    "mana": "A",
+    "luck": "EX",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 108,
+      "name": "classRuler"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2004,
+      "name": "roman"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 901600,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34650,
+        "name": "대 마력 EX",
+        "rank": null
+      },
+      {
+        "id": 83550,
+        "name": "진지작성 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2192550,
+        "name": "환상의 성인 A",
+        "rank": null
+      },
+      {
+        "id": 2193350,
+        "name": "기피되는 제례행렬 C",
+        "rank": null
+      },
+      {
+        "id": 2194650,
+        "name": "교황논의 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 901601,
+      "name": "기도 올리는 눈부신 영광의 옥좌",
+      "ruby": "레전덤・파파・트로누스",
+      "rank": "A",
+      "type": "대인보구(자신)"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_9016000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/901600/901600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/901600/901600b@2.png"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "servant_id": "sv_0210_okada_izo",
+  "source_id": 210,
+  "name_ko": "오카다 이조",
+  "name_en": "Okada Izo",
+  "class": "assassin",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/210?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "D",
+    "agi": "B",
+    "mana": "E",
+    "luck": "E",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 105,
+      "name": "classAssassin"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 603300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 50450,
+        "name": "기척 차단 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 484550,
+        "name": "칼잡이 A",
+        "rank": null
+      },
+      {
+        "id": 36350,
+        "name": "심안(가짜) C",
+        "rank": null
+      },
+      {
+        "id": 485550,
+        "name": "검술 날래기로는 매와 같으니 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 603301,
+      "name": "시말검",
+      "ruby": "시말검",
+      "rank": "없음",
+      "type": "대인마검"
+    },
+    {
+      "id": 603302,
+      "name": "시말검",
+      "ruby": "시말검",
+      "rank": "없음",
+      "type": "대인마검"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6033000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/603300/603300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/603300/603300b@2.png"
+  }
+}

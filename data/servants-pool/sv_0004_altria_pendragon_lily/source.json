@@ -1,0 +1,160 @@
+{
+  "servant_id": "sv_0004_altria_pendragon_lily",
+  "source_id": 4,
+  "name_ko": "알트리아 펜드래곤(릴리)",
+  "name_en": "Altria Pendragon (Lily)",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/4?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "B",
+    "mana": "A",
+    "luck": "A+",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2002,
+      "name": "dragon"
+    },
+    {
+      "id": 2007,
+      "name": "saberface"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2010,
+      "name": "arthur"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 100300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 88350,
+        "name": "기승 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 57450,
+        "name": "직감 B",
+        "rank": null
+      },
+      {
+        "id": 92550,
+        "name": "마력방출 A",
+        "rank": null
+      },
+      {
+        "id": 73650,
+        "name": "꽃의 여로 EX",
+        "rank": null
+      },
+      {
+        "id": 909550,
+        "name": "꽃이 내리는 길 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 100301,
+      "name": "승리해야 할 황금의 검",
+      "ruby": "칼리번",
+      "rank": "B",
+      "type": "대인보구"
+    },
+    {
+      "id": 100302,
+      "name": "승리해야 할 황금의 검",
+      "ruby": "칼리번",
+      "rank": "B+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1003000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/100300/100300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/100300/100300b@2.png"
+  }
+}

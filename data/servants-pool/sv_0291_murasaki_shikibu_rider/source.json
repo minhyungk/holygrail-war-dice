@@ -1,0 +1,126 @@
+{
+  "servant_id": "sv_0291_murasaki_shikibu_rider",
+  "source_id": 291,
+  "name_ko": "무라사키 시키부",
+  "name_en": "Murasaki Shikibu (Rider)",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/291?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "C",
+    "agi": "D",
+    "mana": "B",
+    "luck": "A+",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 404100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 88451,
+        "name": "기승 B+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 771650,
+        "name": "서머 나이트 블랙 위도우 EX",
+        "rank": null
+      },
+      {
+        "id": 770352,
+        "name": "엽기취미(여름) C++",
+        "rank": null
+      },
+      {
+        "id": 769550,
+        "name": "문학소녀(여름) A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 404101,
+      "name": "소토오리히메・거미집 짓기",
+      "ruby": "소토오리히메・거미집 짓기",
+      "rank": "B",
+      "type": "대인보구"
+    },
+    {
+      "id": 404102,
+      "name": "소토오리히메・거미집 짓기",
+      "ruby": "소토오리히메・거미집 짓기",
+      "rank": "B+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4041000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/404100/404100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/404100/404100b@2.png"
+  }
+}

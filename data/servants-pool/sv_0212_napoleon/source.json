@@ -1,0 +1,127 @@
+{
+  "servant_id": "sv_0212_napoleon",
+  "source_id": 212,
+  "name_ko": "나폴레옹",
+  "name_en": "Napoleon",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/212?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "A",
+    "mana": "E",
+    "luck": "B",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 203,
+      "name": "attributeStar"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 203100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      },
+      {
+        "id": 20350,
+        "name": "단독행동 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 499450,
+        "name": "개선의 카리스마 B",
+        "rank": null
+      },
+      {
+        "id": 500451,
+        "name": "화력지원(포) B+",
+        "rank": null
+      },
+      {
+        "id": 491450,
+        "name": "가능성의 빛 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 203101,
+      "name": "개선을 드높이 고하는 홍궁",
+      "ruby": "아크 드 트리옹프 드 레투알",
+      "rank": "A",
+      "type": "대군보구"
+    },
+    {
+      "id": 203102,
+      "name": "개선을 드높이 고하는 홍궁",
+      "ruby": "아크 드 트리옹프 드 레투알",
+      "rank": "A+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2031000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/203100/203100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/203100/203100b@2.png"
+  }
+}

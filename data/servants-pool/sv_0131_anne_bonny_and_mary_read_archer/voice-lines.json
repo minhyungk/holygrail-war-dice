@@ -1,0 +1,749 @@
+{
+  "origin": "Atlas Academy KR nice API",
+  "groups": [
+    {
+      "type": "home",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "생일",
+          "ids": [
+            "0_H010",
+            "0_H011",
+            "0_H012"
+          ],
+          "subtitle": "[앤] : 생일 선물 말인데요……\n[메리] : 나 자신이라고 하면 커틀러스가 불을 뿜는다!\n[앤] : 커틀러스는 불을 뿜지 않는데요?!",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "birthDay",
+          "cond_value": 0
+        },
+        {
+          "name": "이벤트 개최중",
+          "ids": [
+            "0_H020"
+          ],
+          "subtitle": "마스터, 마스터. 아무래도 잔치 같아. 건배하러 가자!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 11
+        },
+        {
+          "name": "대화 1",
+          "ids": [
+            "0_H030"
+          ],
+          "subtitle": "마스터, 슬슬…… 어떠신가요? 모험 여행이라든가.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 12
+        },
+        {
+          "name": "대화 2",
+          "ids": [
+            "0_H040",
+            "0_H041",
+            "0_H042"
+          ],
+          "subtitle": "주인님♪ ……이라고 할 사이는 아니지요. \n저는 저, 그 이외의 누구도 아닙니다……",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 13
+        },
+        {
+          "name": "대화 3",
+          "ids": [
+            "0_H050",
+            "0_H051"
+          ],
+          "subtitle": "마스터도 그거야? 주인님이라고 불리면 기뻐하는 쪽? \n……아니, 마스터는 그런 의미지만. ……왠지 그런 거 싫네.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 14
+        },
+        {
+          "name": "좋아하는 것",
+          "ids": [
+            "0_H060",
+            "0_H061"
+          ],
+          "subtitle": "보물은 좋아하고, 바다도 좋아합니다. 이런 모습이니까요. \n어머, 마스터, 부끄러워하나요? 후후후후.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 15
+        },
+        {
+          "name": "싫어하는 것",
+          "ids": [
+            "0_H070",
+            "0_H071"
+          ],
+          "subtitle": "싫어하는 것…… 이성이 보내는 불순한 시선이라든가…… 일까요? \n아, 마스터는 예외입니다. 마음껏 봐주세요.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 16
+        },
+        {
+          "name": "성배에 대하여",
+          "ids": [
+            "0_H080",
+            "0_H081"
+          ],
+          "subtitle": "성배, 성배라…… 뭐, 하지만 보물이라면 탐나긴 탐나지. \n잔뜩 모으면 파티에도 쓸 수 있겠고.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 17
+        },
+        {
+          "name": "인연 Lv.1",
+          "ids": [
+            "0_H090",
+            "0_H091",
+            "0_H092"
+          ],
+          "subtitle": "자, 마스터. 왜 그러시나요? 아, 혹시 보고 싶은가요? \n그러거든 이렇게. 후후후.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 1
+        },
+        {
+          "name": "인연 Lv.2",
+          "ids": [
+            "0_H100",
+            "0_H101",
+            "0_H102"
+          ],
+          "subtitle": "저기, 마스터. 앤이 자꾸 들이댈지도 모르는데, \n그건 어디까지나 도발이니까. 거기 넘어가면 안 되니까. \n넘어가면 경멸할 거야! 경멸! 정말로!",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 2
+        },
+        {
+          "name": "인연 Lv.3",
+          "ids": [
+            "0_H110",
+            "0_H111",
+            "0_H112"
+          ],
+          "subtitle": "아, 마스터?! 아, 아뇨, 조금. 쳐다보시는 게 부끄럽다고 할까요…… \n아하, 아하하, 무슨 말을 하는 걸까요. 그렇죠?",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 3
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H120",
+            "0_H121",
+            "0_H122"
+          ],
+          "subtitle": "마스터, 마스터. 앤이 이상한데, 무슨 짓 했어? \n……안 했지? 응, 그건 믿겠는데…… 으음……",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H130",
+            "0_H131",
+            "0_H132",
+            "0_H133"
+          ],
+          "subtitle": "마스터…… 마스터, 마스터, 마스터. 후후, 신기한 느낌. \n한여름밖에 계속되지 않는 감정이었다고 해도, \n지금의 저는 행복해요. 예, 정말로!",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        },
+        {
+          "name": "대화 4",
+          "ids": [
+            "0_H140",
+            "0_H141"
+          ],
+          "subtitle": "[앤] : 어머, 프랜시스 드레이크네요, 메리!\n[메리] : 그런 시원스런 선장이라면 우리도 기분 좋게 싸웠겠지.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 18
+        },
+        {
+          "name": "대화 5",
+          "ids": [
+            "0_H150"
+          ],
+          "subtitle": "저기, 죄송합니다. 서퍼 아이가 저를 계속 노려보고 있는데요……",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 19
+        },
+        {
+          "name": "대화 6",
+          "ids": [
+            "0_H160",
+            "0_H161"
+          ],
+          "subtitle": "(총소리) 죄송합니다, 마스터. \n지금 봐선 안 되는 수염 남자가 보였기에 그만. \n괜찮습니다, 바다에 버리면 증거는 사라집니다.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 20
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "0_G010"
+          ],
+          "subtitle": "응, 응, 좋아, 좋아.",
+          "text": [
+            "응, 응, 좋아, 좋아."
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 2",
+          "ids": [
+            "0_G020"
+          ],
+          "subtitle": "나도 조금 더 성장한 모습이었으면……",
+          "text": [
+            "나도 조금 더 성장한 모습이었으면……"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 1",
+          "ids": [
+            "0_G030"
+          ],
+          "subtitle": "어떤가요? 조금 청순파 기분입니다. 우후후.",
+          "text": [
+            "어떤가요? 조금 청순파 기분입니다."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 1
+        },
+        {
+          "name": "영기재림 3",
+          "ids": [
+            "0_G040",
+            "0_G041"
+          ],
+          "subtitle": "붉은색은 좋아합니다. 피나 화약이 눈에 띄지 않잖아요? 우후후후후!",
+          "text": [
+            "우후후. 붉은색은 좋아합니다.",
+            "피나 화약이 눈에 띄지 않잖아요? 우후후후후!"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 3
+        },
+        {
+          "name": "영기재림 4",
+          "ids": [
+            "0_G050",
+            "0_G051",
+            "0_G052",
+            "0_G053"
+          ],
+          "subtitle": "[앤] : 마・스・터♪ 우후후, 이렇게 가슴이 두근거리는 건 \n여름이기 때문일까요?\n[메리] : 평소와 달리 적극적이네. 앤이. ……나도 질 생각은 없지만.",
+          "text": [
+            "[앤] : 마・스・터♪",
+            "[앤] : 우후후, 이렇게 가슴이 두근거리는 건 여름이기 때문일까요?",
+            "[메리] : 평소와 달리 적극적이네. 앤이.",
+            "[메리] : ……나도 질 생각은 없지만."
+          ],
+          "cond_type": "svtCountStop",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "firstGet",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "소환",
+          "ids": [
+            "0_S010",
+            "0_S011"
+          ],
+          "subtitle": "자, 마스터! 이 수영복, 어떤가요? \n……시선이 음흉하네요, 마스터. 흥.",
+          "text": [
+            "자, 마스터! 이 수영복, 어떤가요? [r]",
+            "\n……시선이 음흉하네요, 마스터. 흥."
+          ],
+          "cond_type": "svtGet",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "eventReward",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "미션에 대해 1",
+          "ids": [
+            "0_M010"
+          ],
+          "subtitle": "예, 다 됐습니다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "미션에 대해 2",
+          "ids": [
+            "0_M020"
+          ],
+          "subtitle": "제법 괜찮게 만들어졌다고 생각되지 않습니까?",
+          "text": [
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "미션에 대해 3",
+          "ids": [
+            "0_M030"
+          ],
+          "subtitle": "……조금 지나쳤다는 느낌이 없는 것도 아니네요.",
+          "text": [
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "미션에 대해 4",
+          "ids": [
+            "0_M040"
+          ],
+          "subtitle": "음, 완벽해. 만세.",
+          "text": [
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "미션에 대해 5",
+          "ids": [
+            "0_M050"
+          ],
+          "subtitle": "잘 만들어졌네요. 쓱쓱.",
+          "text": [
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "미션에 대해 6",
+          "ids": [
+            "0_M060"
+          ],
+          "subtitle": "애 많이 썼어. 착하지, 착해.",
+          "text": [
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "미션에 대해 7",
+          "ids": [
+            "0_M070"
+          ],
+          "subtitle": "후후후, 제법 근사하죠.",
+          "text": [
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "미션에 대해 8",
+          "ids": [
+            "0_M080"
+          ],
+          "subtitle": "아무튼 대단한 건물이란 것을 알아주신다면!",
+          "text": [
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "미션에 대해 9",
+          "ids": [
+            "0_M090"
+          ],
+          "subtitle": "대, 대단하네요…… 조금 감동했습니다.\n어떤가요, 캡틴!",
+          "text": [
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "미션에 대해 10",
+          "ids": [
+            "0_M100"
+          ],
+          "subtitle": "어어…… 왠지 대단해.",
+          "text": [
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "미션에 대해 11",
+          "ids": [
+            "0_M110"
+          ],
+          "subtitle": "……아니아니, 아니아니아니.\n뭔가 대단해지지 않았어?",
+          "text": [
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        },
+        {
+          "name": "미션에 대해 12",
+          "ids": [
+            "0_M120"
+          ],
+          "subtitle": "……응. 내가 봐도 대단한 게 나왔어.\n어때, 마스터. 어흠.",
+          "text": [
+            ""
+          ],
+          "cond_type": "eventEnd",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "공격 1",
+          "ids": [
+            "0_B010"
+          ],
+          "subtitle": "에잇!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "0_B020"
+          ],
+          "subtitle": "쏘겠습니다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "0_B030"
+          ],
+          "subtitle": "YES!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B040"
+          ],
+          "subtitle": "[메리] : 갈 테니까, 이 바보!\n[앤] : 가겠어요, 바보!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "0_B080"
+          ],
+          "subtitle": "애 많이 썼네, 앤!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "0_B090"
+          ],
+          "subtitle": "한숨이 나오네요.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 1",
+          "ids": [
+            "0_B100"
+          ],
+          "subtitle": "[메리] : 원호할게.\n[앤] : 예, 그럼 잘 부탁드리겠어요.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "0_B110"
+          ],
+          "subtitle": "[앤] : 이런 차림으로 싸우게 하다니…… 마스터는 인간도 아니네요, 후훗.\n[메리] : 마스터가 잔뜩 항의하고 싶은가 본데……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "0_B120"
+          ],
+          "subtitle": "[앤] : 자, 탈탈 털어가도록 하겠어요!\n[메리] : 영차, 영차.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "0_B130"
+          ],
+          "subtitle": "[앤] : 메리. 이런 곳에 피가 묻어 있네요.\n[메리] : 닦아줄래? 땡큐.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "0_B140"
+          ],
+          "subtitle": "아야!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "0_B150"
+          ],
+          "subtitle": "이런…… 정신 차려, 앤!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "0_B160"
+          ],
+          "subtitle": "[메리] : 아야야……\n[앤] : 너무 방심했군요……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "0_B170"
+          ],
+          "subtitle": "[앤] : 으음, 아쉬워라. 미안해요, 마스터. 안녕히 주무세요.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "0_B180"
+          ],
+          "subtitle": "그럼.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "0_B190"
+          ],
+          "subtitle": "응!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "0_B200"
+          ],
+          "subtitle": "[앤] : 갑니다!\n[메리] : 간다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B210"
+          ],
+          "subtitle": "돌격 준비 다 됐어!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B230"
+          ],
+          "subtitle": "[앤] : 자, 해적이 나가십니다!\n[메리] : 자, 해적이 나간다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 6
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B050",
+            "0_B051",
+            "0_B052",
+            "0_B053",
+            "0_B054"
+          ],
+          "subtitle": "[앤] : 이번에는 저부터 가겠어요……! 에잇!\n[메리] : 도와줄게! 에잇에잇에잇!\n[앤] : 이걸로 마무리…… Shoot!",
+          "text": [
+            "[앤] : 이번에는 저부터 가겠어요……!",
+            "[앤] : 에잇!",
+            "[메리] : 도와줄게! 에잇에잇에잇!",
+            "[앤] : 이걸로 마무리……",
+            "[앤] : Shoot!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        }
+      ]
+    }
+  ]
+}

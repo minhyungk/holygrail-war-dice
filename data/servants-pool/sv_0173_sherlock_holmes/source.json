@@ -1,0 +1,113 @@
+{
+  "servant_id": "sv_0173_sherlock_holmes",
+  "source_id": 173,
+  "name_ko": "셜록 홈즈",
+  "name_en": "Sherlock Holmes",
+  "class": "ruler",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/173?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "B+",
+    "mana": "B",
+    "luck": "A++",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 108,
+      "name": "classRuler"
+    },
+    {
+      "id": 203,
+      "name": "attributeStar"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 900500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83650,
+        "name": "진지작성 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 372552,
+        "name": "천부의 견식 A++",
+        "rank": null
+      },
+      {
+        "id": 373551,
+        "name": "가설추론 A+",
+        "rank": null
+      },
+      {
+        "id": 374452,
+        "name": "바리츠 B++",
+        "rank": null
+      },
+      {
+        "id": 372553,
+        "name": "천부의 견식 A+++",
+        "rank": null
+      },
+      {
+        "id": 2076650,
+        "name": "해명하는 자 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 900501,
+      "name": "초보적인 것이라네, 친구여",
+      "ruby": "엘리멘터리 마이 디어",
+      "rank": "B",
+      "type": "대인보구/대계보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_9005000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/900500/900500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/900500/900500b@2.png"
+  }
+}

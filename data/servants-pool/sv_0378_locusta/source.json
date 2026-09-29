@@ -1,0 +1,120 @@
+{
+  "servant_id": "sv_0378_locusta",
+  "source_id": 378,
+  "name_ko": "로쿠스타",
+  "name_en": "Locusta",
+  "class": "assassin",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/378?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E+",
+    "agi": "E",
+    "mana": "D",
+    "luck": "EX",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 105,
+      "name": "classAssassin"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2004,
+      "name": "roman"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 604800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 50450,
+        "name": "기척 차단 B",
+        "rank": null
+      },
+      {
+        "id": 2213250,
+        "name": "정신오염(독) D",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2207551,
+        "name": "독약조합 A+",
+        "rank": null
+      },
+      {
+        "id": 2208550,
+        "name": "강건(독) A",
+        "rank": null
+      },
+      {
+        "id": 2209450,
+        "name": "조리(버섯) B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 604801,
+      "name": "버섯, 신성한 어찬이리니",
+      "ruby": "피니스 풍구스",
+      "rank": "C+",
+      "type": "대인/대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6048000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/604800/604800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/604800/604800b@2.png"
+  }
+}

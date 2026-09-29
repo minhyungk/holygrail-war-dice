@@ -1,0 +1,148 @@
+{
+  "servant_id": "sv_0020_cu_chulainn_prototype",
+  "source_id": 20,
+  "name_ko": "쿠 훌린(프로토타입)",
+  "name_en": "Cú Chulainn (Prototype)",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/20?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "C",
+    "agi": "A+",
+    "mana": "B",
+    "luck": "D",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 300700,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      },
+      {
+        "id": 62450,
+        "name": "신성 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 9450,
+        "name": "룬 마술 B",
+        "rank": null
+      },
+      {
+        "id": 59450,
+        "name": "화살 회피의 가호 B",
+        "rank": null
+      },
+      {
+        "id": 55451,
+        "name": "짐승 살해자 B+",
+        "rank": null
+      },
+      {
+        "id": 55452,
+        "name": "짐승 살해자 B++",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 300701,
+      "name": "꿰뚫는 붉은 창",
+      "ruby": "게이 볼그",
+      "rank": "B",
+      "type": "대인보구"
+    },
+    {
+      "id": 300702,
+      "name": "꿰뚫는 붉은 창",
+      "ruby": "게이 볼그",
+      "rank": "B+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3007000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/300700/300700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/300700/300700b@2.png"
+  }
+}

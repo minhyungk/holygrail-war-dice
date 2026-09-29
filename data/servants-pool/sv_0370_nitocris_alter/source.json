@@ -1,0 +1,159 @@
+{
+  "servant_id": "sv_0370_nitocris_alter",
+  "source_id": 370,
+  "name_ko": "니토크리스(얼터)",
+  "name_en": "Nitocris (Alter)",
+  "class": "avenger",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/370?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "B",
+    "mana": "EX",
+    "luck": "EX",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 110,
+      "name": "classAvenger"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2797,
+      "name": "divineSpirit"
+    },
+    {
+      "id": 2847,
+      "name": "levitating"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 1101500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54150,
+        "name": "광화 E",
+        "rank": null
+      },
+      {
+        "id": 169252,
+        "name": "복수자 D++",
+        "rank": null
+      },
+      {
+        "id": 170550,
+        "name": "망각보정 A",
+        "rank": null
+      },
+      {
+        "id": 171450,
+        "name": "자기회복(마력) B",
+        "rank": null
+      },
+      {
+        "id": 62650,
+        "name": "신성 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2179550,
+        "name": "장례문서 A",
+        "rank": null
+      },
+      {
+        "id": 2180550,
+        "name": "명부신의 재정 A",
+        "rank": null
+      },
+      {
+        "id": 2181550,
+        "name": "사막의 밤바람 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 1101501,
+      "name": "아름다운 나의 명부, 그 길을 열어라",
+      "ruby": "네페루 수엔 아누비스",
+      "rank": "A",
+      "type": "대인/대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_11015000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1101500/1101500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1101500/1101500b@2.png"
+  }
+}

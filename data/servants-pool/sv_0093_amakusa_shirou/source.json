@@ -1,0 +1,133 @@
+{
+  "servant_id": "sv_0093_amakusa_shirou",
+  "source_id": 93,
+  "name_ko": "아마쿠사 시로",
+  "name_en": "Amakusa Shirou",
+  "class": "ruler",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/93?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "B",
+    "mana": "A",
+    "luck": "B",
+    "np": "D"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 108,
+      "name": "classRuler"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 900200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 24550,
+        "name": "계시 A",
+        "rank": null
+      },
+      {
+        "id": 166451,
+        "name": "세례영창 B+",
+        "rank": null
+      },
+      {
+        "id": 63350,
+        "name": "신명재결 C",
+        "rank": null
+      },
+      {
+        "id": 746550,
+        "name": "기나긴 여로를 향한 기도 A",
+        "rank": null
+      },
+      {
+        "id": 851650,
+        "name": "치천의 잔 EX",
+        "rank": null
+      },
+      {
+        "id": 404352,
+        "name": "신명재결(가짜) C++",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 900201,
+      "name": "쌍완 영차집속",
+      "ruby": "트윈 암 빅 크런치",
+      "rank": "A+",
+      "type": "대군보구"
+    },
+    {
+      "id": 900202,
+      "name": "쌍완 영차집속",
+      "ruby": "트윈 암 빅 크런치",
+      "rank": "EX",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_9002000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/900200/900200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/900200/900200b@2.png"
+  }
+}

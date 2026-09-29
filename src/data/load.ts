@@ -19,12 +19,14 @@ async function loadRaw(table: Table, path: string): Promise<unknown> {
 const loadOne = async (table: Table, path: string) => DialogueFile.parse(await loadRaw(table, path));
 
 export async function loadRunDialogue(servantIds: readonly string[], masterIds: readonly string[]) {
-  const [servants, masters, narrator] = await Promise.all([
+  const [servants, masters, narrator, speech] = await Promise.all([
     Promise.all(servantIds.map((id) => loadOne(servantDialogue, `/data/servants/${id}/dialogue.json`))),
     Promise.all(masterIds.map((id) => loadOne(masterDialogue, `/data/masters/${id}/dialogue.json`))),
     loadOne(common, '/data/common/narrator.json'),
+    // 서번트 공통 대사 (3층, D-143): 서번트·클래스 대사가 없을 때 누구나 쓰는 말
+    loadOne(common, '/data/common/speech.json'),
   ]);
-  return { servants, masters, narrator };
+  return { servants, masters, narrator, speech };
 }
 
 /** 그 판에 나오는 서번트 클래스의 공통 대사 (§6.1). 폴더가 없는 클래스는 건너뛴다 */

@@ -1,0 +1,120 @@
+{
+  "servant_id": "sv_0208_sieg",
+  "source_id": 208,
+  "name_ko": "지크",
+  "name_en": "Sieg",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/208?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "E",
+    "mana": "D",
+    "luck": "B",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2002,
+      "name": "dragon"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 503800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 20650,
+        "name": "단독행동 EX",
+        "rank": null
+      },
+      {
+        "id": 476351,
+        "name": "호문쿨루스 C+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 482451,
+        "name": "인공영웅(가짜) B+",
+        "rank": null
+      },
+      {
+        "id": 94350,
+        "name": "마술 C",
+        "rank": null
+      },
+      {
+        "id": 483650,
+        "name": "용고영주 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 503801,
+      "name": "작열용식・만지융해",
+      "ruby": "아카필로가・알그리즈",
+      "rank": "EX",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5038000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/503800/503800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/503800/503800b@2.png"
+  }
+}

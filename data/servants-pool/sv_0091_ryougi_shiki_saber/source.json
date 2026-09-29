@@ -1,0 +1,146 @@
+{
+  "servant_id": "sv_0091_ryougi_shiki_saber",
+  "source_id": 91,
+  "name_ko": "료기 시키",
+  "name_en": "Ryougi Shiki (Saber)",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/91?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "A",
+    "agi": "C",
+    "mana": "B",
+    "luck": "A",
+    "np": "B+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 102800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 161350,
+        "name": "단독현현 C",
+        "rank": null
+      },
+      {
+        "id": 162550,
+        "name": "근원접속 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 164350,
+        "name": "직사의 마안 C",
+        "rank": null
+      },
+      {
+        "id": 163450,
+        "name": "운요 B",
+        "rank": null
+      },
+      {
+        "id": 165550,
+        "name": "음양어 A",
+        "rank": null
+      },
+      {
+        "id": 2279350,
+        "name": "샛별 C",
+        "rank": null
+      },
+      {
+        "id": 165551,
+        "name": "음양어 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 102801,
+      "name": "무구식・공의 경계",
+      "ruby": "무구식・공의 경계",
+      "rank": "EX",
+      "type": "대인보구"
+    },
+    {
+      "id": 102802,
+      "name": "무구식・공의 경계",
+      "ruby": "무구식・공의 경계",
+      "rank": "EX",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1028000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/102800/102800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/102800/102800b@2.png"
+  }
+}

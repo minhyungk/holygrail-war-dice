@@ -1,0 +1,138 @@
+{
+  "servant_id": "sv_0385_aesc_the_rain_witch",
+  "source_id": 385,
+  "name_ko": "비의 마녀 토네리코",
+  "name_en": "Aesc the Rain Witch",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/385?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "B",
+    "mana": "EX",
+    "luck": "E",
+    "np": "A++"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1177,
+      "name": "fae"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2007,
+      "name": "saberface"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 2923,
+      "name": "hasSupereffectiveNPAgainstAlignmentEvil"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 505300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83650,
+        "name": "진지작성 EX",
+        "rank": null
+      },
+      {
+        "id": 80350,
+        "name": "도구작성 C",
+        "rank": null
+      },
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 877350,
+        "name": "요정안 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2238550,
+        "name": "비의 나라의 요정 A",
+        "rank": null
+      },
+      {
+        "id": 2239550,
+        "name": "역경의 카리스마 A",
+        "rank": null
+      },
+      {
+        "id": 2240550,
+        "name": "라스트 리조트 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 505301,
+      "name": "성검의 아득한 꿈의 흔적",
+      "ruby": "메모리 오브 론디니움",
+      "rank": "A++",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5053000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/505300/505300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/505300/505300b@2.png"
+  }
+}

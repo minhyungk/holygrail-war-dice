@@ -1,0 +1,137 @@
+{
+  "servant_id": "sv_0227_prince_of_lan_ling",
+  "source_id": 227,
+  "name_ko": "난릉왕",
+  "name_en": "Prince of Lan Ling",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/227?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "A+",
+    "mana": "D",
+    "luck": "D",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 103600,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      },
+      {
+        "id": 88550,
+        "name": "기승 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 542550,
+        "name": "은미의 가면 A",
+        "rank": null
+      },
+      {
+        "id": 543350,
+        "name": "파죽지세 C",
+        "rank": null
+      },
+      {
+        "id": 544650,
+        "name": "마성의 용모 EX",
+        "rank": null
+      },
+      {
+        "id": 543450,
+        "name": "파죽지세 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 103601,
+      "name": "난릉왕입진곡",
+      "ruby": "용맹한 가면 쓴 자, 음용겸미의 난릉왕이로다",
+      "rank": "C+",
+      "type": "대군보구(자신의진영)"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1036000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/103600/103600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/103600/103600b@2.png"
+  }
+}

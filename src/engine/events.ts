@@ -16,7 +16,7 @@ export interface RollRecord extends RollResult {
   faction: string;
   /** 사용한 스탯 (합산 전) */
   stats: string[];
-  /** 스탯 외 보정 내역 (affinity, intel, camp, seal, ambush) */
+  /** 스탯 외 보정 내역 (affinity, intel, ambush, role, skill_id …) */
   parts: Record<string, number>;
   /** 운명점으로 재굴림한 횟수 */
   rerolls: number;
@@ -52,11 +52,11 @@ export interface EventDataMap {
   mana_regenerated: { faction: string; amount: number; mana_after: number };
   // 낮·밤 행동
   /** 판정이 있는 플레이어 행동의 시작. 도입 나레이션이 주사위(재굴림 질문 포함)보다 먼저 나오게 한다 (D-141) */
-  action_started: { faction: string; action: 'bond' | 'intel' | 'craft' | 'supply'; tile: string; target: string | null };
-  intel_gained: { target: string; level_from: number; level_to: number; result: 'success' | 'fail'; cause: 'intel' | 'np'; roll: RollRecord | null; dc: number | null };
+  action_started: { faction: string; action: 'bond' | 'intel' | 'supply'; tile: string; target: string | null };
+  /** cause: 정보 수집 / 보구 개방 / 조우 자동 공개 / 결판 없는 전투 (D-147) */
+  intel_gained: { target: string; level_from: number; level_to: number; result: 'success' | 'fail'; cause: 'intel' | 'np' | 'encounter' | 'battle'; roll: RollRecord | null; dc: number | null };
   mana_supplied: { faction: string; result: SupplyResult; mana_before: number; mana_after: number; roll: RollRecord };
   bond: { faction: string; result: 'success' | 'fail'; roll: RollRecord; dc: number };
-  crafted: { faction: string; tile: string; result: 'success' | 'fail'; roll: RollRecord; dc: number };
   moved: { faction: string; from: string; to: string; path: string[] };
   waited: { faction: string };
   // 관계
@@ -71,6 +71,8 @@ export interface EventDataMap {
   battle_started: { forecast?: BattleInput; battle_id: string; tile: string | null; terrain: Terrain; is_final: boolean; ambusher: string | null; sides: [string, string] };
   phase_started: { forecast?: BattleInput; battle_id: string; phase_index: number; phase_id: PhaseId; attacker: string; defender: string };
   np_opened: { battle_id: string; phase_index: number; faction: string; seal: boolean; mana_before: number; mana_after: number };
+  /** 약점 공략 (D-148): 이 국면을 phase_id로 끌고 간다 */
+  weakness_used: { battle_id: string; phase_index: number; faction: string; target: string; phase_id: PhaseId };
   phase_rolled: { battle_id: string; phase_index: number; phase_id: PhaseId; kind: 'contest' | 'solo'; rolls: RollRecord[]; dc: number | null };
   phase_resolved: {
     battle_id: string;

@@ -1,0 +1,131 @@
+{
+  "servant_id": "sv_0331_taigong_wang",
+  "source_id": 331,
+  "name_ko": "태공망",
+  "name_en": "Taigong Wang",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/331?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "A",
+    "mana": "EX",
+    "luck": "A+",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 404300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 88551,
+        "name": "기승 A+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2012551,
+        "name": "원시병법 A+",
+        "rank": null
+      },
+      {
+        "id": 2013450,
+        "name": "봉신집행 B",
+        "rank": null
+      },
+      {
+        "id": 2014650,
+        "name": "사상건문 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 404301,
+      "name": "타신편",
+      "ruby": "타신편",
+      "rank": "EX",
+      "type": "대신보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4043000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/404300/404300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/404300/404300b@2.png"
+  }
+}

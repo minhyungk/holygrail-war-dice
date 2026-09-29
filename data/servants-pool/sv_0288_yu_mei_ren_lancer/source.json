@@ -1,0 +1,131 @@
+{
+  "servant_id": "sv_0288_yu_mei_ren_lancer",
+  "source_id": 288,
+  "name_ko": "우미인",
+  "name_en": "Yu Mei-ren (Lancer)",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/288?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "D",
+    "agi": "A",
+    "mana": "A",
+    "luck": "C",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2019,
+      "name": "demonic"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2833,
+      "name": "yuMeiren"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 304400,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 781551,
+        "name": "여름의 수육정령 A+",
+        "rank": null
+      },
+      {
+        "id": 782650,
+        "name": "패왕의 여인 EX",
+        "rank": null
+      },
+      {
+        "id": 783650,
+        "name": "지난날의 춤 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 304401,
+      "name": "하마필멸창무",
+      "ruby": "안티플링・론도",
+      "rank": "A",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3044000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/304400/304400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/304400/304400b@2.png"
+  }
+}

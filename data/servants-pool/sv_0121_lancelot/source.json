@@ -1,0 +1,151 @@
+{
+  "servant_id": "sv_0121_lancelot",
+  "source_id": 121,
+  "name_ko": "랜슬롯",
+  "name_en": "Lancelot",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/121?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "A",
+    "agi": "B",
+    "mana": "C",
+    "luck": "B+",
+    "np": "A++"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2795,
+      "name": "knightsOfTheRound"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 102000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 88450,
+        "name": "기승 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 240550,
+        "name": "호수의 기사 A",
+        "rank": null
+      },
+      {
+        "id": 52551,
+        "name": "무궁의 무련 A+",
+        "rank": null
+      },
+      {
+        "id": 241552,
+        "name": "기사는 맨손으로 죽지 않는다 A++",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 102001,
+      "name": "박쇄전단・과중호광",
+      "ruby": "아론다이트 오버로드",
+      "rank": "A",
+      "type": "대군보구"
+    },
+    {
+      "id": 102002,
+      "name": "박쇄전단・과중호광",
+      "ruby": "아론다이트 오버로드",
+      "rank": "A+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1020000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/102000/102000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/102000/102000b@2.png"
+  }
+}

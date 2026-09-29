@@ -1,0 +1,153 @@
+{
+  "servant_id": "sv_0357_scathach_skadi_ruler",
+  "source_id": 357,
+  "name_ko": "스카사하=스카디",
+  "name_en": "Scáthach-Skadi (Ruler)",
+  "class": "ruler",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/357?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "C",
+    "agi": "D",
+    "mana": "EX",
+    "luck": "A+",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 108,
+      "name": "classRuler"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 308,
+      "name": "alignmentSummer"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2797,
+      "name": "divineSpirit"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 901400,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34650,
+        "name": "대 마력 EX",
+        "rank": null
+      },
+      {
+        "id": 83550,
+        "name": "진지작성 A",
+        "rank": null
+      },
+      {
+        "id": 30550,
+        "name": "여신의 신핵 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2111550,
+        "name": "원초의 룬(한여름) A",
+        "rank": null
+      },
+      {
+        "id": 2112350,
+        "name": "한여름의 아이스크림 C",
+        "rank": null
+      },
+      {
+        "id": 2113551,
+        "name": "여름의 깊은 밤에 나는 생각한다 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 901401,
+      "name": "생명이 흘러넘치는 대해로 향하는 문",
+      "ruby": "게이트 오브 에기르",
+      "rank": "A",
+      "type": "대하보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_9014000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/901400/901400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/901400/901400b@2.png"
+  }
+}

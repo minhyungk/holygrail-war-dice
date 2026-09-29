@@ -1,0 +1,115 @@
+{
+  "servant_id": "sv_0049_lu_bu_fengxian",
+  "source_id": 49,
+  "name_ko": "여포 봉선",
+  "name_en": "Lu Bu Fengxian",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/49?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A+",
+    "end": "A+",
+    "agi": "B+",
+    "mana": "C+",
+    "luck": "C+",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2781,
+      "name": "mechanical"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 700300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54550,
+        "name": "광화 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 16450,
+        "name": "용맹 B",
+        "rank": null
+      },
+      {
+        "id": 21450,
+        "name": "반골의 상 B",
+        "rank": null
+      },
+      {
+        "id": 218550,
+        "name": "난세의 효웅 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 700301,
+      "name": "군신오병",
+      "ruby": "갓 포스",
+      "rank": "A",
+      "type": "대인, 대군, 대성보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7003000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/700300/700300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/700300/700300b@2.png"
+  }
+}

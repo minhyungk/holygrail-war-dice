@@ -1,0 +1,587 @@
+{
+  "origin": "Atlas Academy KR nice API",
+  "groups": [
+    {
+      "type": "home",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "생일",
+          "ids": [
+            "0_H010",
+            "0_H011",
+            "0_H012"
+          ],
+          "subtitle": "뭐? 생일 같은 걸 기억하고 있어?\n그거참 꽤나 성실하시군.\n그럼 백 번째가 되거든 내가 선물을 주도록 하지!",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "birthDay",
+          "cond_value": 0
+        },
+        {
+          "name": "이벤트 개최중",
+          "ids": [
+            "0_H020",
+            "0_H021",
+            "0_H022"
+          ],
+          "subtitle": "렛츠 파티!\n냄새가 난다, 냄새가 나. 노릇노릇 구워진 욕망의 잔치다!\n까다로운 입맛도 완전 만족이겠는걸?",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 11
+        },
+        {
+          "name": "대화 1",
+          "ids": [
+            "0_H030",
+            "0_H031",
+            "0_H032"
+          ],
+          "subtitle": "지루해.\n어이, 밖에 데려가줘, 플리즈.\n스태미나 쓰자고, 스태미나!",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 12
+        },
+        {
+          "name": "대화 2",
+          "ids": [
+            "0_H040",
+            "0_H041",
+            "0_H042",
+            "0_H043",
+            "0_H044"
+          ],
+          "subtitle": "가끔씩 생각하는데, 나는 어느 쪽 타입일까.\n끝까지 과묵한 타입일까, 방만하게 노는 타입일까.\n뭐, 개일까.\n개겠네.\n기세를 타고 주인을 먹어버리는 짓은 고양이라면 못 하잖아?",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 13
+        },
+        {
+          "name": "대화 3",
+          "ids": [
+            "0_H050",
+            "0_H051",
+            "0_H052",
+            "0_H053"
+          ],
+          "subtitle": "내가 언제 배신할까 걱정이야?\n뭐, 어벤저니까요?\n그 걱정은 지당합니다만?\n그 때문에 영주라는 개목걸이를 나한테 채운 거지요, 마스터?",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 14
+        },
+        {
+          "name": "좋아하는 것",
+          "ids": [
+            "0_H060",
+            "0_H061",
+            "0_H062"
+          ],
+          "subtitle": "좋아하는 것?\n그야 당연히 너, 인간이지.\n놈들이 저지르는 짓이 내 밥줄이니까.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 15
+        },
+        {
+          "name": "싫어하는 것",
+          "ids": [
+            "0_H070",
+            "0_H071",
+            "0_H072",
+            "0_H073"
+          ],
+          "subtitle": "싫어하는 것?\n……그렇군.\n골수까지 정의의 용사인 녀석은 두 번 다시 사양이야.\n먹어도 배탈 날 것 같아.",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 16
+        },
+        {
+          "name": "성배에 대하여",
+          "ids": [
+            "0_H080",
+            "0_H081",
+            "0_H082"
+          ],
+          "subtitle": "성배를 원하시거든 제게 연락을.\n조~금 고장난 복주머니라도 좋다면 얼마든지 제공할 건데?",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 17
+        },
+        {
+          "name": "인연 Lv.1",
+          "ids": [
+            "0_H090",
+            "0_H091",
+            "0_H092"
+          ],
+          "subtitle": "몇 번이나 말하지만, 서번트계 최약의 서번트.\n그게 나야.\n전투에 데려갈 생각은 하지 마?",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 1
+        },
+        {
+          "name": "인연 Lv.2",
+          "ids": [
+            "0_H100",
+            "0_H101",
+            "0_H102",
+            "0_H103"
+          ],
+          "subtitle": "아, 지쳤다.\n그보다 몇 번 죽을 뻔한 거지, 나……\n댁도 힘들지 않아?\n얼른 더 좋은 서번트를 뽑고 편해지자고.",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 2
+        },
+        {
+          "name": "인연 Lv.3",
+          "ids": [
+            "0_H110",
+            "0_H111",
+            "0_H112",
+            "0_H113",
+            "0_H114"
+          ],
+          "subtitle": "너 말이야.\n아무리 내가 완전 헐값의 무한재생 서번트라고 해도, \n너무 부려먹잖아. 이제 그만 더 쓸 만한 서번트를……\n뭐? 이렇게 되었으면 갈 데까지 가본다고?\n끝까지 데리고 다니겠다고?!",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 3
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H120",
+            "0_H121",
+            "0_H122",
+            "0_H123",
+            "0_H124"
+          ],
+          "subtitle": "……믿기지 않는군.\n나도 의외로 잘 싸우잖아.\n이상한 자신감이 생길 것 같아.\n나도 배배 꼬인 놈이지만, 마스터도 보통이 아닌가.\n어쩐지 마음이 맞는다 했더니 비슷한 놈이었잖아!",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H130",
+            "0_H131",
+            "0_H132",
+            "0_H133",
+            "0_H134"
+          ],
+          "subtitle": "……관계 없는 이야기인데.\n전에, 이런 일이 있었다나 봐.\n버림받은 존재를 포기하지 않았던 한 여자의 이야기야.\n그건…… 나하고는 이미 관계 없는 이야기지만.\n구원받은 녀석은, 분명히 있었어.",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "0_G010",
+            "0_G011"
+          ],
+          "subtitle": "레벨 업!\n나의 비굴함이 상승!",
+          "text": [
+            "레벨 업!",
+            "나의 비굴함이 상승!"
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 2",
+          "ids": [
+            "0_G020",
+            "0_G021"
+          ],
+          "subtitle": "에잇에잇,\n간편하게 강화해줘.",
+          "text": [
+            "에잇에잇",
+            "간편하게 강화해줘."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 1",
+          "ids": [
+            "0_G030",
+            "0_G031"
+          ],
+          "subtitle": "너도 참 별나잖아.\n날 키우는 게 재밌냐?",
+          "text": [
+            "너도 참 별나잖아.",
+            "날 키우는 게 재밌냐?"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 1
+        },
+        {
+          "name": "영기재림 3",
+          "ids": [
+            "0_G040",
+            "0_G041"
+          ],
+          "subtitle": "으음, 괜찮지 않아?\n마음 내킬 때까지 바쳐줘.",
+          "text": [
+            "으음, 괜찮지 않아?",
+            "마음 내킬 때까지 바쳐줘."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 3
+        },
+        {
+          "name": "영기재림 4",
+          "ids": [
+            "0_G050",
+            "0_G051",
+            "0_G052"
+          ],
+          "subtitle": "휴우!\n대단한 끈기로군, 감복했어!\n그러면 조금은 기대에 부응해보기로 할까, 마스터!",
+          "text": [
+            "휴우!",
+            "대단한 끈기로군, 감복했어!",
+            "그러면 조금은 기대에 부응해보기로 할까, 마스터!"
+          ],
+          "cond_type": "svtCountStop",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "firstGet",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "소환",
+          "ids": [
+            "0_S010",
+            "0_S011",
+            "0_S012"
+          ],
+          "subtitle": "여어!\n최약의 영령 어벤저,\n부른다고 하시길래 등장!",
+          "text": [
+            "여어!",
+            "[r]\n최약의 영령 어벤저,",
+            "\n 부른다고 하시길래 등장!"
+          ],
+          "cond_type": "svtGet",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "공격 1",
+          "ids": [
+            "0_B010"
+          ],
+          "subtitle": "샤압!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "0_B020"
+          ],
+          "subtitle": "자!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "0_B030"
+          ],
+          "subtitle": "간다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B040"
+          ],
+          "subtitle": "히~~핫~하하하하하!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "0_B080"
+          ],
+          "subtitle": "얼른 끝내자고.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "0_B090"
+          ],
+          "subtitle": "머리부터 먹어버린다!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 1",
+          "ids": [
+            "0_B100"
+          ],
+          "subtitle": "얼른 죽어보실까!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "0_B110"
+          ],
+          "subtitle": "살살 좀 해줄래?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "0_B120"
+          ],
+          "subtitle": "어이, 어이, 살아남아버렸잖아.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "0_B130"
+          ],
+          "subtitle": "한심하잖아. 수행이 부족한 거 아냐?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "0_B140"
+          ],
+          "subtitle": "끄아?!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "0_B150"
+          ],
+          "subtitle": "끄아아아, 죽겠잖아!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "0_B160"
+          ],
+          "subtitle": "칫, 또 다시 시작인가.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "0_B170"
+          ],
+          "subtitle": "매번 겪는 일이지만, 빡세잖아……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "0_B180"
+          ],
+          "subtitle": "자, 왔다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "0_B190"
+          ],
+          "subtitle": "맡겨줘.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "0_B200"
+          ],
+          "subtitle": "히히히.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B210"
+          ],
+          "subtitle": "어디, 성대하게 당해보실까!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B050",
+            "0_B051",
+            "0_B052",
+            "0_B053"
+          ],
+          "subtitle": "간다, 너의 자업자득이다!\n역으로 네가 죽어라, 베르그 아베스타!",
+          "text": [
+            "간다",
+            "너의 자업자득이다!",
+            "역으로 네가 죽어라",
+            "베르그 아베스타!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        }
+      ]
+    }
+  ]
+}

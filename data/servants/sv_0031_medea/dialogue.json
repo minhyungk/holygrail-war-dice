@@ -348,6 +348,119 @@
         },
         "text": "마지막 날이구나. ……이런 날까지 당신과 걷게 될 줄은 몰랐어.",
         "repeat": "once_per_run"
+      },
+      {
+        "id": "fgo_like",
+        "text": "모형 만들기는 고급 취미라고 생각되지 않아? 잘 만든 보틀십이 있다면 알려줘.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것…? 딱히 이유는 없지만, 잘생기기만 한 남자라던가, 짜증 나네.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배 말이지…? 후훗. 당신들 평범한 마술사라면, 꽤 편리한 물건으로 보이겠네.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "내 마술은 여신 헤카테에게 전수 받은 것. 당신들과는 차원이 달라.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "무리한 작전도, 난폭한 말투도 하지 않네. 뭐… 조금은 볼만한 구석이 있다는 걸까나?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "기다려. 그렇게 당황하지 마. 내가 옆에 있잖아, 든든히 중심 잡고 있어.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "나한테는 남동생이 있었는데, 만약 살아 있었다면 너처럼 솔직하고 근사한… 아니, 아무것도 아냐. 잊어줘.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "정말, 배신의 마녀도 다 무뎌졌네. 당신, 조금도 그런 기분이 들지 않게 해주는걸. 이렇게 되었으니 단념하고, 당신의 마녀로서 행동하도록 할까?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
       }
     ],
     "mana_supply": [
@@ -402,6 +515,113 @@
         "id": "fail_02",
         "text": "당신, 사람 기분 맞추는 데는 영 소질이 없구나.",
         "tone": "defiant"
+      }
+    ],
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "유감이야.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "이건 어때?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "절망하세요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "코뤼키온! 헤카틱 글라이어!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "꺄아아아앗!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "큭……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "괴로워해 주실까.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "손가락 하나로 숨통을 끊어줄게.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "comeback": [
+      {
+        "id": "comeback_01",
+        "text": "후훗…… 잠깐 아찔했지만, 결국 무너진 건 저쪽이네.",
+        "tone": "playful"
+      },
+      {
+        "id": "comeback_02",
+        "text": "마술사를 궁지에 몰면 어떻게 되는지, 이제 알았겠지?",
+        "tone": "cold"
+      }
+    ],
+    "weakness": [
+      {
+        "id": "weakness_01",
+        "text": "{enemy}. 네 전설의 흠은 이미 다 들여다봤어. ──그곳을 열어 줄게.",
+        "tone": "cold"
+      }
+    ],
+    "react_choice": [
+      {
+        "id": "encounter_fight",
+        "when": {
+          "event.reaction": "encounter_fight"
+        },
+        "text": "어머, 결단이 빠르네. 싫지 않아.",
+        "tone": "playful"
+      },
+      {
+        "id": "danger_run",
+        "when": {
+          "event.reaction": "danger_run"
+        },
+        "text": "현명하네. 이길 수 없는 싸움에 목숨 거는 건 바보나 하는 짓이야.",
+        "tone": "calm"
+      },
+      {
+        "id": "weakness",
+        "when": {
+          "event.reaction": "weakness"
+        },
+        "text": "흐응, 약점을 노린다라. 당신, 제법 마술사다운 발상을 하네.",
+        "tone": "playful"
       }
     ]
   }

@@ -1,0 +1,132 @@
+{
+  "servant_id": "sv_0039_kojiro",
+  "source_id": 39,
+  "name_ko": "사사키 코지로",
+  "name_en": "Sasaki Kojirou",
+  "class": "assassin",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/39?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "E",
+    "agi": "A+",
+    "mana": "E",
+    "luck": "A",
+    "np": "None"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 105,
+      "name": "classAssassin"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 401,
+      "name": "oneStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 2883,
+      "name": "FSNServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 600100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 50250,
+        "name": "기척 차단 D",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 36550,
+        "name": "심안(가짜) A",
+        "rank": null
+      },
+      {
+        "id": 79451,
+        "name": "투화 B+",
+        "rank": null
+      },
+      {
+        "id": 33450,
+        "name": "소와의 소양 B",
+        "rank": null
+      },
+      {
+        "id": 79551,
+        "name": "투화 A+",
+        "rank": null
+      },
+      {
+        "id": 33452,
+        "name": "소와의 소양 B++",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 600101,
+      "name": "츠바메가에시",
+      "ruby": "제비반전베기",
+      "rank": "-",
+      "type": "대인마검"
+    },
+    {
+      "id": 600102,
+      "name": "츠바메가에시",
+      "ruby": "제비반전베기",
+      "rank": "-",
+      "type": "대인마검"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6001000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/600100/600100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/600100/600100b@2.png"
+  }
+}

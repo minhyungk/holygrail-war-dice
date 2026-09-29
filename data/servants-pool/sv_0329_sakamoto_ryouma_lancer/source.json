@@ -1,0 +1,133 @@
+{
+  "servant_id": "sv_0329_sakamoto_ryouma_lancer",
+  "source_id": 329,
+  "name_ko": "사카모토 료마",
+  "name_en": "Sakamoto Ryouma (Lancer)",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/329?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "B+",
+    "mana": "C",
+    "luck": "A-",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1110,
+      "name": "lamia"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 2881,
+      "name": "groupServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 305000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34351,
+        "name": "대 마력 C+",
+        "rank": null
+      },
+      {
+        "id": 88650,
+        "name": "기승 EX",
+        "rank": null
+      },
+      {
+        "id": 2008550,
+        "name": "변화(오로치) A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2000550,
+        "name": "유신의 용 A",
+        "rank": null
+      },
+      {
+        "id": 2001549,
+        "name": "타카치호의 하얀 오로치 A-",
+        "rank": null
+      },
+      {
+        "id": 2002450,
+        "name": "아마사카호코(쌍) B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 305001,
+      "name": "그대여, 너른 바다를 정복하라",
+      "ruby": "용이여, 너른 바다를 정복하라",
+      "rank": "EX",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3050000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/305000/305000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/305000/305000b@2.png"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "servant_id": "sv_0312_tam_lin_lancelot",
+  "source_id": 312,
+  "name_ko": "멜뤼진",
+  "name_en": "Tam Lin Lancelot",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/312?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "A+",
+    "agi": "B",
+    "mana": "A+",
+    "luck": "B",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1177,
+      "name": "fae"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2002,
+      "name": "dragon"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2632,
+      "name": "demonicBeastServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2810,
+      "name": "fairyTaleServant"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 304800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 83451,
+        "name": "진지작성 B+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 886450,
+        "name": "드래곤 하트 B",
+        "rank": null
+      },
+      {
+        "id": 887450,
+        "name": "페리 댄서 B",
+        "rank": null
+      },
+      {
+        "id": 888550,
+        "name": "레이 호라이즌 A",
+        "rank": null
+      },
+      {
+        "id": 888575,
+        "name": "레이 호라이즌 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 304801,
+      "name": "지금은 모르는, 무구한 호광",
+      "ruby": "이노센스・아론다이트",
+      "rank": "A",
+      "type": "대인보구"
+    },
+    {
+      "id": 304802,
+      "name": "아무도 모르는, 무구한 고동",
+      "ruby": "할로우 하트・알비온",
+      "rank": "EX",
+      "type": "대계보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3048000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/304800/304800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/304800/304800b@2.png"
+  }
+}

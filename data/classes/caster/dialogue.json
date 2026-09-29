@@ -210,6 +210,78 @@
         "text": "……거기까지. 마스터의 회로가 타 버리면, 그쪽이 더 곤란하다.",
         "tone": "grim"
       }
+    ],
+    "phase_win": [
+      {
+        "id": "win_01",
+        "text": "술식, 적중.",
+        "tone": "defiant"
+      },
+      {
+        "id": "win_02",
+        "text": "──무너져라.",
+        "tone": "defiant"
+      },
+      {
+        "id": "win_03",
+        "text": "계산대로다.",
+        "tone": "defiant"
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "hit_01",
+        "text": "방벽이……!",
+        "tone": "grim"
+      },
+      {
+        "id": "hit_02",
+        "text": "흥……!",
+        "tone": "grim"
+      }
+    ],
+    "skill": [
+      {
+        "id": "skill_01",
+        "text": "술식, 전개.",
+        "tone": "defiant"
+      },
+      {
+        "id": "skill_02",
+        "text": "마력을 한 겹 더 두른다.",
+        "tone": "defiant"
+      }
+    ],
+    "comeback": [
+      {
+        "id": "comeback_01",
+        "text": "……술식은 무너지지 않았다. 무너진 것은, 저쪽이다.",
+        "tone": "defiant"
+      },
+      {
+        "id": "comeback_02",
+        "text": "궁지에 몰린 마술사만큼 위험한 것은 없다. ──배웠겠지.",
+        "tone": "defiant"
+      }
+    ],
+    "weakness": [
+      {
+        "id": "weakness_01",
+        "text": "{enemy}. 그 전설의 이음매는 이미 풀어 두었다. ──그곳을 연다.",
+        "tone": "cold"
+      },
+      {
+        "id": "weakness_02",
+        "text": "약점은 해석을 끝냈다. 이제 그 틈으로 술식을 흘려 넣는다.",
+        "tone": "cold"
+      }
+    ],
+    "intel_battle": [
+      {
+        "id": "battle_01",
+        "text": "결판은 나지 않았지만, 마력의 결은 읽어 두었다. 다음엔 해석이 끝나 있다.",
+        "tone": "calm"
+      }
     ]
   }
 }

@@ -1,0 +1,157 @@
+{
+  "servant_id": "sv_0340_daikokuten",
+  "source_id": 340,
+  "name_ko": "대흑천",
+  "name_en": "Daikokuten",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/340?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "D",
+    "mana": "A",
+    "luck": "A",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2005,
+      "name": "wildbeast"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2632,
+      "name": "demonicBeastServant"
+    },
+    {
+      "id": 2810,
+      "name": "fairyTaleServant"
+    },
+    {
+      "id": 2821,
+      "name": "havingAnimalsCharacteristics"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 2881,
+      "name": "groupServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 504700,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83150,
+        "name": "진지작성 E",
+        "rank": null
+      },
+      {
+        "id": 80250,
+        "name": "도구작성 D",
+        "rank": null
+      },
+      {
+        "id": 62149,
+        "name": "신성 E-",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2045550,
+        "name": "공덕의 봉사 A",
+        "rank": null
+      },
+      {
+        "id": 2046550,
+        "name": "이익중생 A",
+        "rank": null
+      },
+      {
+        "id": 2047450,
+        "name": "쥐의 나라 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 504701,
+      "name": "서정토",
+      "ruby": "서정토",
+      "rank": "A",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5047000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/504700/504700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/504700/504700b@2.png"
+  }
+}

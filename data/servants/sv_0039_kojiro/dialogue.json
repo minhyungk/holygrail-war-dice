@@ -345,6 +345,101 @@
         },
         "text": "마지막 날이구려. 오늘 밤의 달은, 유난히 밝을 것 같소.",
         "repeat": "once_per_run"
+      },
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "사사키 코지로라고 이름을 댔지만, 글쎄…… 그것이 소인의 진실인가 어떤가는 스스로도 알 수 없는데. 으음, 칼에 목숨을 바친 괴짜다운 말로로군.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "마스터에게 불만은 없는데? 그대에게는 마술사 특유의 교만이 없다. 난 그게 마음에 드는군.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "도구에는 도구의 행복이 있지. 나는 인간으로서 망가진 몸인지라, 그대 같은 사람이 써주는 편이 기분 좋아.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "어떤가, 가끔은 달을 안주 삼아서 술자리라도…. 뭐라고, 미성년? 아직 못 마시나? 그거 아쉽군. 그럼 앞으로 몇 년, 느긋하게 기다리도록 할까? 그때까지 나 코지로, 계속해서 그대를 지키는 검으로 있지.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "바라는 것 말인가? 그저 매일같이 검을 휘두르는 것으로 만족이네만.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "무엇을 혐오하느냐고? 추악한 것은 봐주기 힘들지. 모습이 아니라 마음의 이야기요.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배…… 달구경에는 너무 거창한 술잔이로군. 차라리 해골 쪽이 멋이 있겠어.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
       }
     ],
     "mana_supply": [
@@ -399,6 +494,121 @@
         "id": "fail_02",
         "text": "말없이 걷는 것도 풍류라면 풍류겠소마는……. 흥이 나지 않는 날도 있는 법이오.",
         "tone": "grim"
+      }
+    ],
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "흐읏.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "하아앗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "느리군!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "실력을 보여줄 때가 왔군!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_2",
+        "text": "치잇.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_1",
+        "text": "뭐라고……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "자, 공격할 때라고 봤는데, 어떤가.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "석화춘뢰, 단칼로 그 증거를 보이지.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "comeback": [
+      {
+        "id": "comeback_01",
+        "text": "허허…… 하마터면 목이 떨어질 뻔했구려. 허나, 마지막에 선 것은 이 몸이오.",
+        "tone": "playful"
+      },
+      {
+        "id": "comeback_02",
+        "text": "벼랑 끝의 한 수. ──이것이야말로 검의 풍류로다.",
+        "tone": "calm"
+      }
+    ],
+    "weakness": [
+      {
+        "id": "weakness_01",
+        "text": "{enemy}. 그대 전설의 틈은 이미 보았소. ──그 틈으로, 칼을 흘려 넣으리다.",
+        "tone": "cold"
+      }
+    ],
+    "react_choice": [
+      {
+        "id": "encounter_fight",
+        "when": {
+          "event.reaction": "encounter_fight"
+        },
+        "text": "좋소. 벨 만한 상대를 앞에 두고 물러설 까닭이 없지.",
+        "tone": "playful"
+      },
+      {
+        "id": "encounter_flee",
+        "when": {
+          "event.reaction": "encounter_flee"
+        },
+        "text": "……아깝구려. 좋은 검을 두고 물러서다니.",
+        "tone": "cold"
+      },
+      {
+        "id": "danger_fight",
+        "when": {
+          "event.reaction": "danger_fight"
+        },
+        "text": "허허, 좋소. 이 몸도 아직 벨 것이 남았으니.",
+        "tone": "defiant"
+      },
+      {
+        "id": "danger_run",
+        "when": {
+          "event.reaction": "danger_run"
+        },
+        "text": "물러서는 것도 병법이오. 살아 있어야 다음 달을 볼 수 있지.",
+        "tone": "calm"
       }
     ]
   }

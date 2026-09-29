@@ -1,0 +1,143 @@
+{
+  "servant_id": "sv_0192_circe",
+  "source_id": 192,
+  "name_ko": "키르케",
+  "name_en": "Circe",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/192?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "B",
+    "agi": "D",
+    "mana": "A+",
+    "luck": "A",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2466,
+      "name": "associatedToTheArgo"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2847,
+      "name": "levitating"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 503300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83450,
+        "name": "진지작성 B",
+        "rank": null
+      },
+      {
+        "id": 80550,
+        "name": "도구작성 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 89450,
+        "name": "고속신언 B",
+        "rank": null
+      },
+      {
+        "id": 441550,
+        "name": "독의 식찬 A",
+        "rank": null
+      },
+      {
+        "id": 442550,
+        "name": "출항의 조언 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 503301,
+      "name": "금단의 광연",
+      "ruby": "메타보 피글렛",
+      "rank": "C",
+      "type": "대인보구"
+    },
+    {
+      "id": 503302,
+      "name": "금단의 광연",
+      "ruby": "메타보 피글렛",
+      "rank": "C+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5033000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/503300/503300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/503300/503300b@2.png"
+  }
+}

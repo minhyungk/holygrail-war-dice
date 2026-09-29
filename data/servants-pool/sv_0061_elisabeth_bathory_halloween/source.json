@@ -1,0 +1,134 @@
+{
+  "servant_id": "sv_0061_elisabeth_bathory_halloween",
+  "source_id": 61,
+  "name_ko": "엘리자베트 바토리(할로윈)",
+  "name_en": "Elisabeth Báthory (Halloween)",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/61?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "D",
+    "mana": "B",
+    "luck": "C",
+    "np": "D"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2002,
+      "name": "dragon"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2847,
+      "name": "levitating"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 502600,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83450,
+        "name": "진지작성 B",
+        "rank": null
+      },
+      {
+        "id": 80550,
+        "name": "도구작성 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 53650,
+        "name": "무고의 괴물 EX",
+        "rank": null
+      },
+      {
+        "id": 106550,
+        "name": "마력방출(호박) A",
+        "rank": null
+      },
+      {
+        "id": 107550,
+        "name": "출연 속행 A",
+        "rank": null
+      },
+      {
+        "id": 2218650,
+        "name": "할로윈 스타 EX",
+        "rank": null
+      },
+      {
+        "id": 944550,
+        "name": "할로윈 앙코르! A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 502601,
+      "name": "선혈특상마양",
+      "ruby": "바토리 할로윈 에르제베트",
+      "rank": "E-",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5026000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/502600/502600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/502600/502600b@2.png"
+  }
+}

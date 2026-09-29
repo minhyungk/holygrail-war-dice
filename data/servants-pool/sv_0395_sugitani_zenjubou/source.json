@@ -1,0 +1,127 @@
+{
+  "servant_id": "sv_0395_sugitani_zenjubou",
+  "source_id": 395,
+  "name_ko": "스기타니 젠쥬보",
+  "name_en": "Sugitani Zenjubou",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/395?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "EX",
+    "agi": "C+",
+    "mana": "D",
+    "luck": "E",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 3,
+      "name": "genderUnknown"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2356,
+      "name": "feminineLookingServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 205100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34250,
+        "name": "대 마력 D",
+        "rank": null
+      },
+      {
+        "id": 20650,
+        "name": "단독행동 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2288350,
+        "name": "저격환경 C",
+        "rank": null
+      },
+      {
+        "id": 2289351,
+        "name": "재정비(재장전) C+",
+        "rank": null
+      },
+      {
+        "id": 2290450,
+        "name": "미채저격 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 205101,
+      "name": "두 발로 쏘아 드리리다",
+      "ruby": "두 발로 쏘아 드리리다",
+      "rank": "C+",
+      "type": "대인보구"
+    },
+    {
+      "id": 205102,
+      "name": "두 발로 쏘아 드리리다",
+      "ruby": "두 발로 쏘아 드리리다",
+      "rank": "C++",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2051000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/205100/205100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/205100/205100b@2.png"
+  }
+}

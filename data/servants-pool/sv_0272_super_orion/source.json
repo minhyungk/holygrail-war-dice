@@ -1,0 +1,145 @@
+{
+  "servant_id": "sv_0272_super_orion",
+  "source_id": 272,
+  "name_ko": "초인 오리온",
+  "name_en": "Super Orion",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/272?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "A",
+    "agi": "B+",
+    "mana": "C",
+    "luck": "A",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2114,
+      "name": "greekMythologyMales"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 203800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 20650,
+        "name": "단독행동 EX",
+        "rank": null
+      },
+      {
+        "id": 708450,
+        "name": "해신의 축복 B",
+        "rank": null
+      },
+      {
+        "id": 709250,
+        "name": "천갈의 저주 D",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 699451,
+        "name": "짐승성의 호완 B+",
+        "rank": null
+      },
+      {
+        "id": 700650,
+        "name": "달의 여신의 압박 EX",
+        "rank": null
+      },
+      {
+        "id": 701551,
+        "name": "삼형제별의 궁수 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 203801,
+      "name": "달의 여신의 무구한 사랑",
+      "ruby": "아르테미스 아그노스",
+      "rank": "B",
+      "type": "대군(자신) 보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2038000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/203800/203800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/203800/203800b@2.png"
+  }
+}

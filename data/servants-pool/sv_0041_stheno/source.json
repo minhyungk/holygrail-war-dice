@@ -1,0 +1,156 @@
+{
+  "servant_id": "sv_0041_stheno",
+  "source_id": 41,
+  "name_ko": "스테노",
+  "name_en": "Stheno",
+  "class": "assassin",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/41?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "B",
+    "mana": "EX",
+    "luck": "EX",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 105,
+      "name": "classAssassin"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2797,
+      "name": "divineSpirit"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 2850,
+      "name": "hasGoddessMetamorphosis"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 601000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 50551,
+        "name": "기척 차단 A+",
+        "rank": null
+      },
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 30650,
+        "name": "여신의 신핵 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 22350,
+        "name": "흡혈 C",
+        "rank": null
+      },
+      {
+        "id": 91550,
+        "name": "매혹의 미성 A",
+        "rank": null
+      },
+      {
+        "id": 230800,
+        "name": "여신의 변덕 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 601001,
+      "name": "여신의 미소",
+      "ruby": "스마일 오브 더 스테노",
+      "rank": "B",
+      "type": "대인보구"
+    },
+    {
+      "id": 601002,
+      "name": "여신의 미소",
+      "ruby": "스마일 오브 더 스테노",
+      "rank": "B+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6010000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/601000/601000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/601000/601000b@2.png"
+  }
+}

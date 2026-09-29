@@ -1,0 +1,123 @@
+{
+  "servant_id": "sv_0074_nursery_rhyme",
+  "source_id": 74,
+  "name_ko": "너서리 라임",
+  "name_en": "Nursery Rhyme",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/74?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "C",
+    "mana": "A",
+    "luck": "B",
+    "np": "C++"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2810,
+      "name": "fairyTaleServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 500400,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83550,
+        "name": "진지작성 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 71550,
+        "name": "자기개조 A",
+        "rank": null
+      },
+      {
+        "id": 25551,
+        "name": "변화 A+",
+        "rank": null
+      },
+      {
+        "id": 129550,
+        "name": "한편 그 무렵 A",
+        "rank": null
+      },
+      {
+        "id": 2384550,
+        "name": "토미 썸의 비밀 그림책 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 500401,
+      "name": "누군가를 위한 이야기",
+      "ruby": "너서리 라임",
+      "rank": "C-",
+      "type": "대인보구"
+    },
+    {
+      "id": 500402,
+      "name": "누군가를 위한 이야기",
+      "ruby": "너서리 라임",
+      "rank": "C",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5004000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/500400/500400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/500400/500400b@2.png"
+  }
+}

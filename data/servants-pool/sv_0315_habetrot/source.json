@@ -1,0 +1,145 @@
+{
+  "servant_id": "sv_0315_habetrot",
+  "source_id": 315,
+  "name_ko": "하베트롯",
+  "name_en": "Habetrot",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/315?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "D",
+    "agi": "B",
+    "mana": "C",
+    "luck": "A+",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1177,
+      "name": "fae"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2810,
+      "name": "fairyTaleServant"
+    },
+    {
+      "id": 2847,
+      "name": "levitating"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 404200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 88350,
+        "name": "기승 C",
+        "rank": null
+      },
+      {
+        "id": 80450,
+        "name": "도구작성 B",
+        "rank": null
+      },
+      {
+        "id": 877350,
+        "name": "요정안 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 889550,
+        "name": "행운의 실잣기 A",
+        "rank": null
+      },
+      {
+        "id": 890450,
+        "name": "조봉의 실잣기 B",
+        "rank": null
+      },
+      {
+        "id": 891650,
+        "name": "신부의 수호자 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 404201,
+      "name": "너에게 잣는 시간의 수레바퀴",
+      "ruby": "스핀스터・하베트롯",
+      "rank": "EX",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4042000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/404200/404200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/404200/404200b@2.png"
+  }
+}

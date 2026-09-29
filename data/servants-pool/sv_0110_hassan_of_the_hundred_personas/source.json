@@ -1,0 +1,118 @@
+{
+  "servant_id": "sv_0110_hassan_of_the_hundred_personas",
+  "source_id": 110,
+  "name_ko": "백모의 하산",
+  "name_en": "Hassan of the Hundred Personas",
+  "class": "assassin",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/110?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "D",
+    "agi": "A",
+    "mana": "C",
+    "luck": "E",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 105,
+      "name": "classAssassin"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 600300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 50550,
+        "name": "기척 차단 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 203350,
+        "name": "장지의 사서 C",
+        "rank": null
+      },
+      {
+        "id": 204551,
+        "name": "전과백반 A+",
+        "rank": null
+      },
+      {
+        "id": 205450,
+        "name": "전투 철수 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 600301,
+      "name": "망상환상",
+      "ruby": "자바니아",
+      "rank": "B+",
+      "type": "대인보구"
+    },
+    {
+      "id": 600302,
+      "name": "망상환상",
+      "ruby": "자바니아",
+      "rank": "B++",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6003000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/600300/600300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/600300/600300b@2.png"
+  }
+}

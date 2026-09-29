@@ -1,0 +1,140 @@
+{
+  "servant_id": "sv_0154_first_hassan",
+  "source_id": 154,
+  "name_ko": "“산의 노인”",
+  "name_en": "\"First Hassan\"",
+  "class": "assassin",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/154?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "A",
+    "agi": "B",
+    "mana": "E",
+    "luck": "E",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 105,
+      "name": "classAssassin"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 602500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 50550,
+        "name": "기척 차단 A",
+        "rank": null
+      },
+      {
+        "id": 20450,
+        "name": "단독행동 B",
+        "rank": null
+      },
+      {
+        "id": 304550,
+        "name": "경계에서 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 41650,
+        "name": "전투속행 EX",
+        "rank": null
+      },
+      {
+        "id": 13553,
+        "name": "신앙의 가호 A+++",
+        "rank": null
+      },
+      {
+        "id": 324650,
+        "name": "만종 EX",
+        "rank": null
+      },
+      {
+        "id": 734650,
+        "name": "죽음의 구렁 EX",
+        "rank": null
+      },
+      {
+        "id": 2203650,
+        "name": "만종, 귀로 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 602501,
+      "name": "죽음을 고하는 천사",
+      "ruby": "아즈라엘",
+      "rank": "C",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6025000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/602500/602500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/602500/602500b@2.png"
+  }
+}

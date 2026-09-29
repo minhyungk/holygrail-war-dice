@@ -1,0 +1,169 @@
+{
+  "servant_id": "sv_0011_emiya",
+  "source_id": 11,
+  "name_ko": "에미야",
+  "name_en": "Emiya",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/11?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "C",
+    "mana": "B",
+    "luck": "E",
+    "np": "?"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 2883,
+      "name": "FSNServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 200100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34250,
+        "name": "대 마력 D",
+        "rank": null
+      },
+      {
+        "id": 20450,
+        "name": "단독행동 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 37450,
+        "name": "심안(진짜) B",
+        "rank": null
+      },
+      {
+        "id": 19350,
+        "name": "천리안 C",
+        "rank": null
+      },
+      {
+        "id": 94349,
+        "name": "마술 C-",
+        "rank": null
+      },
+      {
+        "id": 37650,
+        "name": "심안(진짜) EX",
+        "rank": null
+      },
+      {
+        "id": 294451,
+        "name": "매의 눈 B+",
+        "rank": null
+      },
+      {
+        "id": 263550,
+        "name": "투영마술 A",
+        "rank": null
+      },
+      {
+        "id": 754650,
+        "name": "회로접속 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 200101,
+      "name": "무한의 검제",
+      "ruby": "언리미티드 블레이드 워크스",
+      "rank": "E~A",
+      "type": "????"
+    },
+    {
+      "id": 200102,
+      "name": "무한의 검제",
+      "ruby": "언리미티드 블레이드 워크스",
+      "rank": "E~A",
+      "type": "????"
+    },
+    {
+      "id": 200197,
+      "name": "무한의 검제",
+      "ruby": "언리미티드 블레이드 워크스",
+      "rank": "E~A",
+      "type": "????"
+    },
+    {
+      "id": 200198,
+      "name": "무한의 검제",
+      "ruby": "언리미티드 블레이드 워크스",
+      "rank": "E~A",
+      "type": "????"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2001000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/200100/200100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/200100/200100b@2.png"
+  }
+}

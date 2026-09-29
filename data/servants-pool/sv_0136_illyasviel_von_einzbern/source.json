@@ -1,0 +1,144 @@
+{
+  "servant_id": "sv_0136_illyasviel_von_einzbern",
+  "source_id": 136,
+  "name_ko": "이리야스필 폰 아인츠베른",
+  "name_en": "Illyasviel von Einzbern",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/136?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "C",
+    "agi": "D",
+    "mana": "B",
+    "luck": "A",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2355,
+      "name": "illya"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2654,
+      "name": "livingHuman"
+    },
+    {
+      "id": 2667,
+      "name": "childServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 502800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 288350,
+        "name": "무한의 마력공급 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 289550,
+        "name": "유쾌형 마술예장 A",
+        "rank": null
+      },
+      {
+        "id": 207450,
+        "name": "자연의 영아 B",
+        "rank": null
+      },
+      {
+        "id": 291550,
+        "name": "수상한 약 A",
+        "rank": null
+      },
+      {
+        "id": 916550,
+        "name": "미래를 향해 빛나는 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 502801,
+      "name": "다원중주포화포격",
+      "ruby": "퀸텟 포이어",
+      "rank": "A+",
+      "type": "대인보구"
+    },
+    {
+      "id": 502802,
+      "name": "다원중주포화포격",
+      "ruby": "퀸텟 포이어",
+      "rank": "EX",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5028000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/502800/502800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/502800/502800b@2.png"
+  }
+}

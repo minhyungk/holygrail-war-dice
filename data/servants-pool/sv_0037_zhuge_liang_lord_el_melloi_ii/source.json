@@ -1,0 +1,131 @@
+{
+  "servant_id": "sv_0037_zhuge_liang_lord_el_melloi_ii",
+  "source_id": 37,
+  "name_ko": "제갈공명(엘멜로이 2세)",
+  "name_en": "Zhuge Liang (Lord El-Melloi II)",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/37?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "D",
+    "mana": "A+",
+    "luck": "B+",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2654,
+      "name": "livingHuman"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 501900,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83550,
+        "name": "진지작성 A",
+        "rank": null
+      },
+      {
+        "id": 80450,
+        "name": "도구작성 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 82550,
+        "name": "감식안 A",
+        "rank": null
+      },
+      {
+        "id": 100551,
+        "name": "군사의 충언 A+",
+        "rank": null
+      },
+      {
+        "id": 101551,
+        "name": "군사의 지휘 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 501901,
+      "name": "석병팔진",
+      "ruby": "돌아갈 수 없는 진",
+      "rank": "C-",
+      "type": "대군보구"
+    },
+    {
+      "id": 501902,
+      "name": "석병팔진",
+      "ruby": "돌아갈 수 없는 진",
+      "rank": "C",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5019000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/501900/501900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/501900/501900b@2.png"
+  }
+}

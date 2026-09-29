@@ -1,0 +1,142 @@
+{
+  "servant_id": "sv_0304_kiichi_hogen",
+  "source_id": 304,
+  "name_ko": "키이치 호겐",
+  "name_en": "Kiichi Hogen",
+  "class": "assassin",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/304?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "A+",
+    "mana": "EX",
+    "luck": "B",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 3,
+      "name": "genderUnknown"
+    },
+    {
+      "id": 105,
+      "name": "classAssassin"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2019,
+      "name": "demonic"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2356,
+      "name": "feminineLookingServant"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 604100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 50350,
+        "name": "기척 차단 C",
+        "rank": null
+      },
+      {
+        "id": 34650,
+        "name": "대 마력 EX",
+        "rank": null
+      },
+      {
+        "id": 83451,
+        "name": "진지작성 B+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 839551,
+        "name": "천하만세의 검 A+",
+        "rank": null
+      },
+      {
+        "id": 840550,
+        "name": "음양도(법) A",
+        "rank": null
+      },
+      {
+        "id": 841650,
+        "name": "육도병법 EX",
+        "rank": null
+      },
+      {
+        "id": 840551,
+        "name": "음양도(법) A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 604101,
+      "name": "육도삼략・마왕존대우선",
+      "ruby": "육도삼략・마왕존대우선",
+      "rank": "A",
+      "type": "대성보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6041000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/604100/604100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/604100/604100b@2.png"
+  }
+}

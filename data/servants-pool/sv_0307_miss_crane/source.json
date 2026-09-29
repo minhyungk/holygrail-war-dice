@@ -1,0 +1,124 @@
+{
+  "servant_id": "sv_0307_miss_crane",
+  "source_id": 307,
+  "name_ko": "미스 크레인",
+  "name_en": "Miss Crane",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/307?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "D+",
+    "mana": "C+",
+    "luck": "D",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2810,
+      "name": "fairyTaleServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 504600,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 870351,
+        "name": "진지작성(아틀리에) C+",
+        "rank": null
+      },
+      {
+        "id": 871550,
+        "name": "도구작성(옷) A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 863650,
+        "name": "레이디의 의상한 애정 EX",
+        "rank": null
+      },
+      {
+        "id": 864450,
+        "name": "일야우직 B",
+        "rank": null
+      },
+      {
+        "id": 865550,
+        "name": "천년의 보은 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 504601,
+      "name": "천의무봉・학은석별가",
+      "ruby": "천의무봉・학의 인연, 눈물의 이별",
+      "rank": "EX",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5046000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/504600/504600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/504600/504600b@2.png"
+  }
+}

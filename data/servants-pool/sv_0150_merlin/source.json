@@ -1,0 +1,142 @@
+{
+  "servant_id": "sv_0150_merlin",
+  "source_id": 150,
+  "name_ko": "멀린",
+  "name_en": "Merlin",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/150?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "E",
+    "agi": "D",
+    "mana": "A",
+    "luck": "C",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2795,
+      "name": "knightsOfTheRound"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 500800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83350,
+        "name": "진지작성 C",
+        "rank": null
+      },
+      {
+        "id": 80350,
+        "name": "도구작성 C",
+        "rank": null
+      },
+      {
+        "id": 320650,
+        "name": "혼혈 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 321550,
+        "name": "몽환의 카리스마 A",
+        "rank": null
+      },
+      {
+        "id": 322550,
+        "name": "환술 A",
+        "rank": null
+      },
+      {
+        "id": 323650,
+        "name": "영웅 작성 EX",
+        "rank": null
+      },
+      {
+        "id": 322551,
+        "name": "환술 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 500801,
+      "name": "영원히 닫힌 이상향",
+      "ruby": "가든 오브 아발론",
+      "rank": "C",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5008000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/500800/500800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/500800/500800b@2.png"
+  }
+}

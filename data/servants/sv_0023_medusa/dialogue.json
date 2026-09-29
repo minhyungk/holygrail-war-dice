@@ -329,6 +329,119 @@
         },
         "text": "마지막 날이네요. ……읽던 책은, 끝까지 읽지 못할 것 같아요.",
         "repeat": "once_per_run"
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것…… 독서, 일까요. 수영하는 것도 좋아합니다.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것…… 에메랄드는 꺼려집니다. 아, 발에 감기는 해초…… 특히 미역은 다져버리고 싶어집니다.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배…… 키를 작게 하는 것도 이룰 수 있을까요……?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "여괴 메두사…… 뱀의 머리카락과 석화의 마안을 가진 괴물, 입니까. 그다지 틀리지는 않았네요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "이 몸은 아테나의 저주에 걸리기 전의 모습인 것 같네요…… 하지만, 언제 괴물이 될지 저도 잘 모르겠습니다. 무서우시다면 늦기 전에 계약을 끊어 주세요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "……당신은 다정한 사람이네요, 마스터. 아니면, 전 속고 있는 걸까요?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "네…… 이 키는 저주에 걸리기 전의 것이니까…… 고르곤 세 자매 중에서 저만 이렇게 큽니다……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "문득 둘러보니 책도 늘었습니다. 오랫동안 저는 당신과 함께 있었던 거군요. ……네. 앞으로도 당신이 허락하는 한, 함께 싸우겠습니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
       }
     ],
     "mana_supply": [
@@ -383,6 +496,113 @@
         "id": "fail_02",
         "text": "……죄송합니다. 무슨 말을 해야 할지, 모르겠어요.",
         "tone": "grim"
+      }
+    ],
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "훗.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "핫!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "하아아아아!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "잠드세요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_2",
+        "text": "읏……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_1",
+        "text": "그런!?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "……각오를.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "……화났습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "comeback": [
+      {
+        "id": "comeback_01",
+        "text": "……위험했습니다. 하지만, 아직 여기 있습니다.",
+        "tone": "calm"
+      },
+      {
+        "id": "comeback_02",
+        "text": "……끝까지, 서 있었습니다.",
+        "tone": "calm"
+      }
+    ],
+    "weakness": [
+      {
+        "id": "weakness_01",
+        "text": "{enemy}……. 약한 곳은, 알고 있습니다.",
+        "tone": "cold"
+      }
+    ],
+    "react_choice": [
+      {
+        "id": "encounter_fight",
+        "when": {
+          "event.reaction": "encounter_fight"
+        },
+        "text": "……알겠습니다. 가겠습니다.",
+        "tone": "calm"
+      },
+      {
+        "id": "danger_run",
+        "when": {
+          "event.reaction": "danger_run"
+        },
+        "text": "……현명한 판단입니다, 마스터.",
+        "tone": "calm"
+      },
+      {
+        "id": "weakness",
+        "when": {
+          "event.reaction": "weakness"
+        },
+        "text": "……좋은 수입니다. 그곳을 노리겠습니다.",
+        "tone": "calm"
       }
     ]
   }

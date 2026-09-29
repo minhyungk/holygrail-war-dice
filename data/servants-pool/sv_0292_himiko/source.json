@@ -1,0 +1,129 @@
+{
+  "servant_id": "sv_0292_himiko",
+  "source_id": 292,
+  "name_ko": "히미코",
+  "name_en": "Himiko",
+  "class": "ruler",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/292?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B++",
+    "end": "B",
+    "agi": "C",
+    "mana": "A",
+    "luck": "B",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 108,
+      "name": "classRuler"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 901000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 83550,
+        "name": "진지작성 A",
+        "rank": null
+      },
+      {
+        "id": 798550,
+        "name": "천연의 육체 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 790450,
+        "name": "무녀의 카리스마 B",
+        "rank": null
+      },
+      {
+        "id": 791550,
+        "name": "귀도 A",
+        "rank": null
+      },
+      {
+        "id": 792550,
+        "name": "빛의 신탁 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 901001,
+      "name": "성신을 비추는 구원경",
+      "ruby": "성신을 비추는 구원경",
+      "rank": "B",
+      "type": "결계보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_9010000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/901000/901000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/901000/901000b@2.png"
+  }
+}

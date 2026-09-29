@@ -1,0 +1,157 @@
+{
+  "servant_id": "sv_0196_ereshkigal",
+  "source_id": 196,
+  "name_ko": "에레쉬키갈",
+  "name_en": "Ereshkigal",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/196?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "B",
+    "agi": "D",
+    "mana": "B",
+    "luck": "B",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 303200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34250,
+        "name": "대 마력 D",
+        "rank": null
+      },
+      {
+        "id": 83551,
+        "name": "진지작성 A+",
+        "rank": null
+      },
+      {
+        "id": 30450,
+        "name": "여신의 신핵 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 446550,
+        "name": "숨겨진 대왕관 A",
+        "rank": null
+      },
+      {
+        "id": 447551,
+        "name": "마력방출(함) A+",
+        "rank": null
+      },
+      {
+        "id": 433650,
+        "name": "명계의 가호 EX",
+        "rank": null
+      },
+      {
+        "id": 446551,
+        "name": "숨겨진 대왕관 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 303201,
+      "name": "영봉을 밟고 끌어안는 명부의 풀무",
+      "ruby": "쿠르 키갈 이르칼라",
+      "rank": "A",
+      "type": "대산보구"
+    },
+    {
+      "id": 303202,
+      "name": "영봉을 밟고 끌어안는 명부의 풀무",
+      "ruby": "쿠르 키갈 이르칼라",
+      "rank": "A+",
+      "type": "대산보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3032000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/303200/303200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/303200/303200b@2.png"
+  }
+}

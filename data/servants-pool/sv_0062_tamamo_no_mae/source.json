@@ -1,0 +1,161 @@
+{
+  "servant_id": "sv_0062_tamamo_no_mae",
+  "source_id": 62,
+  "name_ko": "타마모노마에",
+  "name_en": "Tamamo-no-Mae",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/62?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "B",
+    "mana": "A",
+    "luck": "D",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2632,
+      "name": "demonicBeastServant"
+    },
+    {
+      "id": 2797,
+      "name": "divineSpirit"
+    },
+    {
+      "id": 2850,
+      "name": "hasGoddessMetamorphosis"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 500300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83350,
+        "name": "진지작성 C",
+        "rank": null
+      },
+      {
+        "id": 62550,
+        "name": "신성 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 23650,
+        "name": "주술 EX",
+        "rank": null
+      },
+      {
+        "id": 25550,
+        "name": "변화 A",
+        "rank": null
+      },
+      {
+        "id": 108650,
+        "name": "여우 시집가기 EX",
+        "rank": null
+      },
+      {
+        "id": 568550,
+        "name": "주층・광일조 A",
+        "rank": null
+      },
+      {
+        "id": 108655,
+        "name": "여우 시집가기 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 500301,
+      "name": "수천일광천조팔야진석",
+      "ruby": "수천일광천조팔야진석",
+      "rank": "D-",
+      "type": "대군보구"
+    },
+    {
+      "id": 500302,
+      "name": "수천일광천조팔야진석",
+      "ruby": "수천일광천조팔야진석",
+      "rank": "D",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5003000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/500300/500300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/500300/500300b@2.png"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "servant_id": "sv_0325_zenobia",
+  "source_id": 325,
+  "name_ko": "제노비아",
+  "name_en": "Zenobia",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/325?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "B+",
+    "agi": "A",
+    "mana": "D",
+    "luck": "C",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 204500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34250,
+        "name": "대 마력 D",
+        "rank": null
+      },
+      {
+        "id": 20450,
+        "name": "단독행동 B",
+        "rank": null
+      },
+      {
+        "id": 88450,
+        "name": "기승 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 948450,
+        "name": "참칭의 아우구스타 B",
+        "rank": null
+      },
+      {
+        "id": 949550,
+        "name": "아우렐리아누스의 공위(저항) A",
+        "rank": null
+      },
+      {
+        "id": 950550,
+        "name": "번영하는 팔미라 A",
+        "rank": null
+      },
+      {
+        "id": 2438650,
+        "name": "동방의 여왕 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 204501,
+      "name": "부서져라, 황금의 가쇄, 황금의 치욕",
+      "ruby": "어센틱 트라이엄프",
+      "rank": "A+",
+      "type": "극기보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2045000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/204500/204500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/204500/204500b@2.png"
+  }
+}

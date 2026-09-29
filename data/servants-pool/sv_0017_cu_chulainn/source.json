@@ -1,0 +1,156 @@
+{
+  "servant_id": "sv_0017_cu_chulainn",
+  "source_id": 17,
+  "name_ko": "쿠 훌린",
+  "name_en": "Cú Chulainn",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/17?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "A",
+    "mana": "C",
+    "luck": "E",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 2883,
+      "name": "FSNServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 300100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      },
+      {
+        "id": 62450,
+        "name": "신성 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 41550,
+        "name": "전투속행 A",
+        "rank": null
+      },
+      {
+        "id": 59450,
+        "name": "화살 회피의 가호 B",
+        "rank": null
+      },
+      {
+        "id": 12350,
+        "name": "재정비 C",
+        "rank": null
+      },
+      {
+        "id": 759550,
+        "name": "네 가지의 여울 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 300101,
+      "name": "꿰뚫는 죽음의 가시 창",
+      "ruby": "게이 볼그",
+      "rank": "B",
+      "type": "대인보구"
+    },
+    {
+      "id": 300102,
+      "name": "꿰뚫는 죽음의 가시 창",
+      "ruby": "게이 볼그",
+      "rank": "B+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3001000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/300100/300100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/300100/300100b@2.png"
+  }
+}

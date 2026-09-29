@@ -1,0 +1,124 @@
+{
+  "servant_id": "sv_0022_romulus",
+  "source_id": 22,
+  "name_ko": "로물루스",
+  "name_en": "Romulus",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/22?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "A",
+    "agi": "A",
+    "mana": "C",
+    "luck": "B",
+    "np": "A++"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 203,
+      "name": "attributeStar"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2004,
+      "name": "roman"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 301000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 26350,
+        "name": "천성의 육체 C",
+        "rank": null
+      },
+      {
+        "id": 56650,
+        "name": "황제특권 EX",
+        "rank": null
+      },
+      {
+        "id": 252550,
+        "name": "일곱 언덕 A",
+        "rank": null
+      },
+      {
+        "id": 651451,
+        "name": "로망의 바람 B+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 301001,
+      "name": "모든 것은 나의 창으로 통한다",
+      "ruby": "마그나 볼루이세 마그눔",
+      "rank": "A++",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3010000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/301000/301000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/301000/301000b@2.png"
+  }
+}

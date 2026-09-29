@@ -1,0 +1,136 @@
+{
+  "servant_id": "sv_0035_mephistopheles",
+  "source_id": 35,
+  "name_ko": "메피스토펠레스",
+  "name_en": "Mephistopheles",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/35?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "B",
+    "mana": "A",
+    "luck": "B",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 501400,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83351,
+        "name": "진지작성 C+",
+        "rank": null
+      },
+      {
+        "id": 80450,
+        "name": "도구작성 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 23550,
+        "name": "주술 A",
+        "rank": null
+      },
+      {
+        "id": 53450,
+        "name": "무고의 괴물 B",
+        "rank": null
+      },
+      {
+        "id": 216551,
+        "name": "광대의 큰 웃음 A+",
+        "rank": null
+      },
+      {
+        "id": 914451,
+        "name": "불모한 분노 B+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 501401,
+      "name": "졸고 있는 폭탄",
+      "ruby": "틱탁 봄",
+      "rank": "A",
+      "type": "대군보구"
+    },
+    {
+      "id": 501402,
+      "name": "졸고 있는 폭탄",
+      "ruby": "틱탁 봄",
+      "rank": "A+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5014000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/501400/501400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/501400/501400b@2.png"
+  }
+}

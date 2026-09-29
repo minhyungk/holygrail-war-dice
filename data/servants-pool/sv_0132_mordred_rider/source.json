@@ -1,0 +1,140 @@
+{
+  "servant_id": "sv_0132_mordred_rider",
+  "source_id": 132,
+  "name_ko": "모드레드",
+  "name_en": "Mordred (Rider)",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/132?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C+",
+    "end": "B",
+    "agi": "A+",
+    "mana": "B",
+    "luck": "A",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2002,
+      "name": "dragon"
+    },
+    {
+      "id": 2007,
+      "name": "saberface"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2795,
+      "name": "knightsOfTheRound"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 402400,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 287550,
+        "name": "서핑 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 272550,
+        "name": "세룰리안 라이드 A",
+        "rank": null
+      },
+      {
+        "id": 273551,
+        "name": "로데오 플립 A+",
+        "rank": null
+      },
+      {
+        "id": 274450,
+        "name": "끝나지 않는 여름 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 402401,
+      "name": "밀려드는 파도를 지배하는 임금님 기분!",
+      "ruby": "프리드웬 튜브 라이딩",
+      "rank": "A",
+      "type": "대파보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4024000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/402400/402400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/402400/402400b@2.png"
+  }
+}

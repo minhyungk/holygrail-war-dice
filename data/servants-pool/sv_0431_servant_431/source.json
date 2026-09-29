@@ -1,0 +1,127 @@
+{
+  "servant_id": "sv_0431_servant_431",
+  "source_id": 431,
+  "name_ko": "판타즈문",
+  "name_en": null,
+  "class": "pretender",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/431?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "A",
+    "mana": "B",
+    "luck": "EX",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 120,
+      "name": "classPretender"
+    },
+    {
+      "id": 203,
+      "name": "attributeStar"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 2923,
+      "name": "hasSupereffectiveNPAgainstAlignmentEvil"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 2800900,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 80550,
+        "name": "도구작성 A",
+        "rank": null
+      },
+      {
+        "id": 83148,
+        "name": "진지작성 -",
+        "rank": null
+      },
+      {
+        "id": 20550,
+        "name": "단독행동 A",
+        "rank": null
+      },
+      {
+        "id": 2448650,
+        "name": "성야의 화신 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2449550,
+        "name": "어스・하트 리듬 A",
+        "rank": null
+      },
+      {
+        "id": 2450650,
+        "name": "레드・스타 뱀프 EX",
+        "rank": null
+      },
+      {
+        "id": 2451650,
+        "name": "블루・글라스 문 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 2800901,
+      "name": "공상구현화・만물의 찬탈",
+      "ruby": "마블 판타즘・해피버스",
+      "rank": "A",
+      "type": "대계보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_28009000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/2800900/2800900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/2800900/2800900b@2.png"
+  }
+}

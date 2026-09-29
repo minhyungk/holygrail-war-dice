@@ -1,0 +1,128 @@
+{
+  "servant_id": "sv_0013_robin_hood",
+  "source_id": 13,
+  "name_ko": "로빈 후드",
+  "name_en": "Robin Hood",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/13?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "B",
+    "mana": "B",
+    "luck": "B",
+    "np": "D"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2810,
+      "name": "fairyTaleServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 200300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34250,
+        "name": "대 마력 D",
+        "rank": null
+      },
+      {
+        "id": 20550,
+        "name": "단독행동 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 60550,
+        "name": "파괴공작 A",
+        "rank": null
+      },
+      {
+        "id": 97150,
+        "name": "황금률 E",
+        "rank": null
+      },
+      {
+        "id": 250450,
+        "name": "5월의 왕 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 200301,
+      "name": "기원의 활",
+      "ruby": "유 바우",
+      "rank": "D",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2003000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/200300/200300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/200300/200300b@2.png"
+  }
+}

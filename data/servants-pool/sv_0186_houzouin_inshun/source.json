@@ -1,0 +1,115 @@
+{
+  "servant_id": "sv_0186_houzouin_inshun",
+  "source_id": 186,
+  "name_ko": "호조인 인슈운",
+  "name_en": "Houzouin Inshun",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/186?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "D",
+    "agi": "A",
+    "mana": "D",
+    "luck": "B",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 301400,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34251,
+        "name": "대 마력 D+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 33450,
+        "name": "소와의 소양 B",
+        "rank": null
+      },
+      {
+        "id": 420450,
+        "name": "무예의 구도 B",
+        "rank": null
+      },
+      {
+        "id": 421451,
+        "name": "선의 선 B+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 301401,
+      "name": "오보로우라즈키 십일식",
+      "ruby": "오보로우라즈키 십일식",
+      "rank": "C",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3014000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/301400/301400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/301400/301400b@2.png"
+  }
+}

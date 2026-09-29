@@ -1,0 +1,144 @@
+{
+  "servant_id": "sv_0122_tristan",
+  "source_id": 122,
+  "name_ko": "트리스탄",
+  "name_en": "Tristan",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/122?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "A",
+    "mana": "B",
+    "luck": "E",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2795,
+      "name": "knightsOfTheRound"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 200800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 20450,
+        "name": "단독행동 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 110350,
+        "name": "치유의 하프 C",
+        "rank": null
+      },
+      {
+        "id": 244450,
+        "name": "축복받지 못한 탄생 B",
+        "rank": null
+      },
+      {
+        "id": 245450,
+        "name": "기사왕에 대한 간언 B",
+        "rank": null
+      },
+      {
+        "id": 876550,
+        "name": "드높이 사랑을 찬양하리라 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 200801,
+      "name": "통곡의 환주",
+      "ruby": "페일노트",
+      "rank": "A",
+      "type": "대군보구"
+    },
+    {
+      "id": 200802,
+      "name": "통곡의 환주",
+      "ruby": "페일노트",
+      "rank": "A+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2008000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/200800/200800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/200800/200800b@2.png"
+  }
+}

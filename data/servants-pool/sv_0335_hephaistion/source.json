@@ -1,0 +1,134 @@
+{
+  "servant_id": "sv_0335_hephaistion",
+  "source_id": 335,
+  "name_ko": "헤파이스티온",
+  "name_en": "Hephaistíon",
+  "class": "pretender",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/335?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "C",
+    "mana": "A+",
+    "luck": "D",
+    "np": "B++"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 120,
+      "name": "classPretender"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 2800200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 2025000,
+        "name": "단독행동 B(EX)",
+        "rank": null
+      },
+      {
+        "id": 2026450,
+        "name": "위장 공작 B",
+        "rank": null
+      },
+      {
+        "id": 83650,
+        "name": "진지작성 EX",
+        "rank": null
+      },
+      {
+        "id": 2027000,
+        "name": "???",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2023550,
+        "name": "그 또한 이스칸다르니까(가짜) A",
+        "rank": null
+      },
+      {
+        "id": 89450,
+        "name": "고속신언 B",
+        "rank": null
+      },
+      {
+        "id": 2024650,
+        "name": "무명의 은혜 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 2800201,
+      "name": "마천의 차륜",
+      "ruby": "헤카틱 휠",
+      "rank": "C+~A+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_28002000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/2800200/2800200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/2800200/2800200b@2.png"
+  }
+}

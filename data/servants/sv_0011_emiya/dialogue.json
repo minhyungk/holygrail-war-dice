@@ -366,6 +366,106 @@
         },
         "text": "마지막 날이군. ──마스터, 저녁은 내가 만들지. 싸우기 전에 배는 채워 둬야 하니까.",
         "repeat": "once_per_run"
+      },
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "풋내기 마스터, 아니, 풋내기 마술사인가. 기분은 알아. 무력한 자신이 안타깝겠지만, 지금은 차분하게 나아가야 할 때다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "서번트가 어떤 생활을 보내냐고? 글쎄, 소환된 후로는 너희와 별다른 것이 없군. 서번트마다 개체차는 있지만, 식사나 수면을 즐기는 자도 있지. 나? 나는…… 뭐, 식사라면 즐기고 있지. 주로 만드는 쪽이지만.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "컨디션이 좋은가 보군. 조금은 자신감이 붙은 거 아닌가? 좋은 마음가짐이다. 나도 미흡하지만 도와주지.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "뭐? 가끔 일인칭이 바뀌는 건 왜냐고? ……그, 그랬나. 무의식중에 말이 새어나간 모양이야. 긴장을 풀면 본성이 나온다고 할까…… ‘나’라는 호칭은 젊었을 때의 버릇 같은 거야.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "쉬는 날에 하는 일? 무기 손질과 부엌…… 싱크대 정비 정도일까.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것 말인가? 미숙한 자신은 그냥 넘길 수 있지만, 미숙한 사상은 참을 수 없지. 음, 아니, 네 이야기가 아니야. 이쪽의 이야기다, 마스터",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배에는 관심 없어. 소원 하나 없는 따분한 남자라고 생각해 줘.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
       }
     ],
     "mana_supply": [
@@ -420,6 +520,148 @@
         "id": "fail_02",
         "text": "……할 말이 그것뿐이라면, 돌아가도 되겠나?",
         "tone": "cold"
+      }
+    ],
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "훗.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "하앗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "흐앗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "거기닷!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "비켜 있어라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "간장・막야!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "잡았다……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "거기까지다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "제법이잖아……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "큭……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "버릇이 안 좋거든.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "트레이스 온.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "이런 때이니, 확실하게 처리하지.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "comeback": [
+      {
+        "id": "comeback_01",
+        "text": "……하, 죽는 줄 알았군. 뭐, 버티는 건 익숙해서 말이야.",
+        "tone": "calm"
+      },
+      {
+        "id": "comeback_02",
+        "text": "끝까지 서 있는 쪽이 이긴다. 간단한 이치지.",
+        "tone": "cold"
+      }
+    ],
+    "weakness": [
+      {
+        "id": "weakness_01",
+        "text": "{enemy}. 네 전설의 결말은 이미 알고 있다. ──거기를 찌르지.",
+        "tone": "cold"
+      }
+    ],
+    "react_choice": [
+      {
+        "id": "encounter_fight",
+        "when": {
+          "event.reaction": "encounter_fight"
+        },
+        "text": "좋아. 판단이 빠르군.",
+        "tone": "calm"
+      },
+      {
+        "id": "danger_run",
+        "when": {
+          "event.reaction": "danger_run"
+        },
+        "text": "현명하다. 살아서 돌아가는 것도 실력이지.",
+        "tone": "calm"
+      },
+      {
+        "id": "weakness",
+        "when": {
+          "event.reaction": "weakness"
+        },
+        "text": "정보를 쓸 줄 아는군. 그래, 싸움은 이렇게 하는 거다.",
+        "tone": "calm"
       }
     ]
   }

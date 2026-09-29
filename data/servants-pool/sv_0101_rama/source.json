@@ -1,0 +1,169 @@
+{
+  "servant_id": "sv_0101_rama",
+  "source_id": 101,
+  "name_ko": "라마",
+  "name_en": "Rama",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/101?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "B",
+    "agi": "A+",
+    "mana": "B",
+    "luck": "B",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 101900,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 88551,
+        "name": "기승 A+",
+        "rank": null
+      },
+      {
+        "id": 62550,
+        "name": "신성 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 185550,
+        "name": "무의 축복 A",
+        "rank": null
+      },
+      {
+        "id": 5450,
+        "name": "카리스마 B",
+        "rank": null
+      },
+      {
+        "id": 186550,
+        "name": "이별의 저주 A",
+        "rank": null
+      },
+      {
+        "id": 2417650,
+        "name": "재연의 꿈 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 101901,
+      "name": "나찰을 꿰뚫는 불멸",
+      "ruby": "브라흐마스트라",
+      "rank": "A+",
+      "type": "대마보구"
+    },
+    {
+      "id": 101902,
+      "name": "나찰을 꿰뚫는 불멸",
+      "ruby": "브라흐마스트라",
+      "rank": "EX",
+      "type": "대마보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1019000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/101900/101900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/101900/101900b@2.png"
+  }
+}

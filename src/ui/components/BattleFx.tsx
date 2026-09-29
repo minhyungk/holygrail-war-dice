@@ -1,10 +1,10 @@
 // 전투 화면 연출 층 (D-133). 판정·규칙과 무관한 장식만 그린다.
-// 효과는 잠깐 떴다 사라지는 목록으로 관리한다: VS, 국면 배너, 기적, 베기·피해, 방어, 보구, 위험, 소멸, 결과 도장, 스킬 발동.
+// 효과는 잠깐 떴다 사라지는 목록으로 관리한다: VS, 국면 배너, 기적, 베기·피해, 방어, 보구(컷인), 위험, 소멸, 결과 도장, 스킬 발동, 약점 공략, 역전 (D-151).
 import type { CSSProperties } from 'react';
 import { clsStyle, LABELS } from './common';
 import { RubyText } from './Ruby';
 
-export type FxKind = 'vs' | 'phase' | 'miracle' | 'slash' | 'dmg' | 'guard' | 'np' | 'danger' | 'death' | 'result' | 'skill';
+export type FxKind = 'vs' | 'phase' | 'miracle' | 'slash' | 'dmg' | 'guard' | 'np' | 'danger' | 'death' | 'result' | 'skill' | 'weakness' | 'comeback';
 export interface Fx {
   id: number;
   kind: FxKind;
@@ -17,6 +17,8 @@ export interface Fx {
   tone?: 'win' | 'lose' | 'draw' | 'escape';
   /** 같은 순간에 뜬 효과의 순번 (쌓아 보이기) */
   n?: number;
+  /** 보구 컷인의 서번트 일러스트 (Atlas charaGraph, D-151) */
+  img?: string;
 }
 
 const sideStyle = (side?: 'a' | 'c'): CSSProperties => (side === 'c' ? { left: '78%' } : side === 'a' ? { left: '22%' } : {});
@@ -74,6 +76,7 @@ export function FxLayer({ fx }: { fx: Fx[] }) {
           case 'np':
             return (
               <div key={f.id} className={`fx-np ${f.side ?? ''}`} style={clsStyle(f.cls ?? null)}>
+                {f.img ? <img className="np-art" src={f.img} alt="" referrerPolicy="no-referrer" /> : null}
                 <i className="beam" />
                 <b>
                   <RubyText text={f.text ?? ''} />
@@ -96,6 +99,25 @@ export function FxLayer({ fx }: { fx: Fx[] }) {
               <div key={f.id} className={`fx-skill ${f.side ?? ''}`} style={{ ...sideStyle(f.side), ['--n' as string]: f.n ?? 0 }}>
                 <small>✦ {f.sub}</small>
                 <b>{f.text}</b>
+              </div>
+            );
+          case 'weakness':
+            // 약점 공략 (D-148): 진명을 아는 자만 쓰는 수. 금빛 사선과 국면 이름
+            return (
+              <div key={f.id} className="fx-weak">
+                <i className="cut" />
+                <small>{f.sub}</small>
+                <b>{f.text}</b>
+              </div>
+            );
+          case 'comeback':
+            // 역전승 (D-151): 위험까지 몰렸다가 이겼다
+            return (
+              <div key={f.id} className="fx-comeback" style={clsStyle(f.cls ?? null)}>
+                <i className="rays" />
+                {f.img ? <img className="cb-art" src={f.img} alt="" referrerPolicy="no-referrer" /> : null}
+                <b>{f.text}</b>
+                <small>{f.sub}</small>
               </div>
             );
           case 'result':

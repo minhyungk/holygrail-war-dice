@@ -1,0 +1,141 @@
+{
+  "servant_id": "sv_0343_charlemagne",
+  "source_id": 343,
+  "name_ko": "샤를마뉴",
+  "name_en": "Charlemagne",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/343?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "C",
+    "agi": "B",
+    "mana": "A",
+    "luck": "A",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 203,
+      "name": "attributeStar"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2004,
+      "name": "roman"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 105200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 88550,
+        "name": "기승 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2055350,
+        "name": "왕도답파 C",
+        "rank": null
+      },
+      {
+        "id": 2056650,
+        "name": "성기사제 EX",
+        "rank": null
+      },
+      {
+        "id": 2057550,
+        "name": "마력방출(빛) A",
+        "rank": null
+      },
+      {
+        "id": 2055351,
+        "name": "왕도답파 C+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 105201,
+      "name": "왕의 용맹을 보여라, 세상을 도는 열두 휘검",
+      "ruby": "주와이외즈 오르드르",
+      "rank": "EX",
+      "type": "대왕보구(자신)"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1052000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/105200/105200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/105200/105200b@2.png"
+  }
+}

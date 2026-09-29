@@ -1,0 +1,136 @@
+{
+  "servant_id": "sv_0231_red_hare",
+  "source_id": 231,
+  "name_ko": "적토마",
+  "name_en": "Red Hare",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/231?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "EX",
+    "agi": "B+",
+    "mana": "C",
+    "luck": "C",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2005,
+      "name": "wildbeast"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2632,
+      "name": "demonicBeastServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 403100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 88650,
+        "name": "기승 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 550650,
+        "name": "천리질주(말) EX",
+        "rank": null
+      },
+      {
+        "id": 551550,
+        "name": "무예백반(말) A",
+        "rank": null
+      },
+      {
+        "id": 552450,
+        "name": "전투기동(말) B",
+        "rank": null
+      },
+      {
+        "id": 551650,
+        "name": "무예백반(말) EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 403101,
+      "name": "위・군신오병",
+      "ruby": "이미테이션・갓 포스",
+      "rank": "A",
+      "type": "대인, 대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4031000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/403100/403100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/403100/403100b@2.png"
+  }
+}

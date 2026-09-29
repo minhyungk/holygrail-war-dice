@@ -1,0 +1,156 @@
+{
+  "servant_id": "sv_0215_scathach_skadi",
+  "source_id": 215,
+  "name_ko": "스카사하=스카디",
+  "name_en": "Scáthach-Skadi",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/215?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "D",
+    "agi": "C",
+    "mana": "EX",
+    "luck": "D",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2797,
+      "name": "divineSpirit"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 503900,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83650,
+        "name": "진지작성 EX",
+        "rank": null
+      },
+      {
+        "id": 80550,
+        "name": "도구작성 A",
+        "rank": null
+      },
+      {
+        "id": 30550,
+        "name": "여신의 신핵 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 127015,
+        "name": "원초의 룬",
+        "rank": null
+      },
+      {
+        "id": 497450,
+        "name": "얼어붙는 눈보라 B",
+        "rank": null
+      },
+      {
+        "id": 498451,
+        "name": "주신의 예지 B+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 503901,
+      "name": "죽음이 흘러넘치는 마경으로 향하는 문",
+      "ruby": "게이트 오브 스카이",
+      "rank": "A+",
+      "type": "대군보구, 개전보구"
+    },
+    {
+      "id": 503902,
+      "name": "죽음이 흘러넘치는 마경으로 향하는 문",
+      "ruby": "게이트 오브 스카이",
+      "rank": "EX",
+      "type": "대군보구, 개전보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5039000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/503900/503900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/503900/503900b@2.png"
+  }
+}

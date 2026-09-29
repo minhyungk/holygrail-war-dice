@@ -1,0 +1,161 @@
+{
+  "servant_id": "sv_0391_udk_barghest",
+  "source_id": 391,
+  "name_ko": "UDK-바게스트",
+  "name_en": "UDK-Barghest",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/391?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A+",
+    "end": "B",
+    "agi": "C",
+    "mana": "C",
+    "luck": "A",
+    "np": "B+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1177,
+      "name": "fae"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2632,
+      "name": "demonicBeastServant"
+    },
+    {
+      "id": 2821,
+      "name": "havingAnimalsCharacteristics"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2849,
+      "name": "defender"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 204900,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      },
+      {
+        "id": 54350,
+        "name": "광화 C",
+        "rank": null
+      },
+      {
+        "id": 2265150,
+        "name": "요정기사 E",
+        "rank": null
+      },
+      {
+        "id": 2270550,
+        "name": "뇌운포식자 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2271550,
+        "name": "수호기사연맹 A",
+        "rank": null
+      },
+      {
+        "id": 2272550,
+        "name": "퀸 키퍼 A",
+        "rank": null
+      },
+      {
+        "id": 2273450,
+        "name": "스트라이크 웨더 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 204901,
+      "name": "재해를 물리치는 일륜의 뿔",
+      "ruby": "워터 세이브・갈라틴",
+      "rank": "B+",
+      "type": "대군보구"
+    },
+    {
+      "id": 204998,
+      "name": "재해를 물리치는 일륜의 뿔",
+      "ruby": "워터 세이브・갈라틴",
+      "rank": "A",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2049000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/204900/204900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/204900/204900b@2.png"
+  }
+}

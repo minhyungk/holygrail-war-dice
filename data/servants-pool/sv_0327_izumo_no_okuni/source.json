@@ -1,0 +1,125 @@
+{
+  "servant_id": "sv_0327_izumo_no_okuni",
+  "source_id": 327,
+  "name_ko": "이즈모노 오쿠니",
+  "name_en": "Izumo-no-Okuni",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/327?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "C+",
+    "mana": "B",
+    "luck": "A",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 2881,
+      "name": "groupServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 504900,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 2003350,
+        "name": "진지작성(카구라) C",
+        "rank": null
+      },
+      {
+        "id": 2004350,
+        "name": "도구작성(기계장치) C",
+        "rank": null
+      },
+      {
+        "id": 2005650,
+        "name": "뉴 오쿠니 가부키 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 954450,
+        "name": "용맹한 춤 B",
+        "rank": null
+      },
+      {
+        "id": 955550,
+        "name": "인형 카구라 A",
+        "rank": null
+      },
+      {
+        "id": 956451,
+        "name": "봉인의 무녀 B+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 504901,
+      "name": "오쿠니 십팔번・이즈모 아라가미 가부키",
+      "ruby": "오쿠니 십팔번・이즈모 아라가미 가부키",
+      "rank": "C",
+      "type": "결계보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5049000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/504900/504900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/504900/504900b@2.png"
+  }
+}

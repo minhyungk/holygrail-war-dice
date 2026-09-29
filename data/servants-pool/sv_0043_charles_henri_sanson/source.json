@@ -1,0 +1,127 @@
+{
+  "servant_id": "sv_0043_charles_henri_sanson",
+  "source_id": 43,
+  "name_ko": "샤를=앙리 상송",
+  "name_en": "Charles-Henri Sanson",
+  "class": "assassin",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/43?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "C",
+    "mana": "D",
+    "luck": "A",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 105,
+      "name": "classAssassin"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 402,
+      "name": "twoStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 601200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 50250,
+        "name": "기척 차단 D",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 14552,
+        "name": "처형인 A++",
+        "rank": null
+      },
+      {
+        "id": 18550,
+        "name": "의술 A",
+        "rank": null
+      },
+      {
+        "id": 10450,
+        "name": "인체연구 B",
+        "rank": null
+      },
+      {
+        "id": 18551,
+        "name": "의술 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 601201,
+      "name": "죽음은 내일을 향한 희망일지니",
+      "ruby": "라 모흐 에스푸아르",
+      "rank": "A",
+      "type": "대인보구"
+    },
+    {
+      "id": 601202,
+      "name": "죽음은 내일을 향한 희망일지니",
+      "ruby": "라 모흐 에스푸아르",
+      "rank": "A+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6012000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/601200/601200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/601200/601200b@2.png"
+  }
+}

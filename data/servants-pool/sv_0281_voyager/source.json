@@ -1,0 +1,141 @@
+{
+  "servant_id": "sv_0281_voyager",
+  "source_id": 281,
+  "name_ko": "보이저",
+  "name_en": "Voyager",
+  "class": "foreigner",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/281?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "C",
+    "agi": "A+",
+    "mana": "B",
+    "luck": "A",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 117,
+      "name": "classForeigner"
+    },
+    {
+      "id": 203,
+      "name": "attributeStar"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2667,
+      "name": "childServant"
+    },
+    {
+      "id": 2731,
+      "name": "existenceOutsideTheDomain"
+    },
+    {
+      "id": 2810,
+      "name": "fairyTaleServant"
+    },
+    {
+      "id": 2847,
+      "name": "levitating"
+    },
+    {
+      "id": 2924,
+      "name": "canFlyInSpace"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 2500500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 434350,
+        "name": "영역 밖의 생명 C",
+        "rank": null
+      },
+      {
+        "id": 751550,
+        "name": "단독항해 A",
+        "rank": null
+      },
+      {
+        "id": 752250,
+        "name": "문명접촉 D",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 725550,
+        "name": "별의 항해자 A",
+        "rank": null
+      },
+      {
+        "id": 726550,
+        "name": "스윙바이 A",
+        "rank": null
+      },
+      {
+        "id": 727450,
+        "name": "땅끝의 가호(우주) B",
+        "rank": null
+      },
+      {
+        "id": 727451,
+        "name": "땅끝의 가호(우주) B+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 2500501,
+      "name": "머나먼 푸른 별이여",
+      "ruby": "페일 블루 도트",
+      "rank": "B",
+      "type": "대성보구"
+    },
+    {
+      "id": 2500502,
+      "name": "머나먼 푸른 별이여",
+      "ruby": "페일 블루 도트",
+      "rank": "B+",
+      "type": "대성보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_25005000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/2500500/2500500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/2500500/2500500b@2.png"
+  }
+}

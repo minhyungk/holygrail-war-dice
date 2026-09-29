@@ -1,0 +1,127 @@
+{
+  "servant_id": "sv_0109_emiya_assassin",
+  "source_id": 109,
+  "name_ko": "에미야(어쌔신)",
+  "name_en": "Emiya (Assassin)",
+  "class": "assassin",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/109?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "A+",
+    "mana": "C",
+    "luck": "E",
+    "np": "B++"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 105,
+      "name": "classAssassin"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 601500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 50551,
+        "name": "기척 차단 A+",
+        "rank": null
+      },
+      {
+        "id": 20550,
+        "name": "단독행동 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 94450,
+        "name": "마술 B",
+        "rank": null
+      },
+      {
+        "id": 201551,
+        "name": "성배의 총애 A+",
+        "rank": null
+      },
+      {
+        "id": 202350,
+        "name": "스케이프고트 C",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 601501,
+      "name": "시간이 있을 동안 장미를 따라",
+      "ruby": "크로노스 로즈",
+      "rank": "B",
+      "type": "대인보구"
+    },
+    {
+      "id": 601502,
+      "name": "시간이 있을 동안 장미를 따라",
+      "ruby": "크로노스 로즈",
+      "rank": "B+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6015000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/601500/601500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/601500/601500b@2.png"
+  }
+}

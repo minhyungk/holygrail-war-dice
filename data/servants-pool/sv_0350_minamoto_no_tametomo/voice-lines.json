@@ -1,0 +1,989 @@
+{
+  "origin": "Atlas Academy KR nice API",
+  "groups": [
+    {
+      "type": "home",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "인연 Lv.1",
+          "ids": [
+            "0_H090"
+          ],
+          "subtitle": "요건을.",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 1
+        },
+        {
+          "name": "인연 Lv.2",
+          "ids": [
+            "0_H100"
+          ],
+          "subtitle": "현재 대기 중. 지시를.",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 2
+        },
+        {
+          "name": "인연 Lv.3",
+          "ids": [
+            "0_H110"
+          ],
+          "subtitle": "현재 태만하게 대기 중. 무슨 일이 있다면.",
+          "text": [
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 3
+        },
+        {
+          "name": "인연 Lv.3",
+          "ids": [
+            "0_H1400",
+            "0_H1401"
+          ],
+          "subtitle": "나의 기체는, 군대 상대를 목적으로 하는 전투 기계. \n표면적으로는, 이지만.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 3
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H120",
+            "0_H121",
+            "0_H122"
+          ],
+          "subtitle": "이쪽은 타메토모. 현재 활의 조정 중. \n표적 분쇄를 위해, 파괴력을 4할 증강. \n이론 및 반론은 이쪽의 ID로 메시지를.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H1600",
+            "0_H1601"
+          ],
+          "subtitle": "나의 기체는 아득한 저편에서 표착한 기체의 부품을 원류로 삼고 있다. \n때문에 인간 상대로서는 과잉 전력이며, \n본래는 요괴를 상대하는 것을 목적으로 한다.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H130",
+            "0_H131",
+            "0_H132",
+            "0_H133",
+            "0_H134"
+          ],
+          "subtitle": "나의 토크 기능은 회화 기록으로부터 해당 답변을 추출, \n개방하고 있는 것. 그렇기에 조금, 이쪽의 상정과 어긋남이 생긴다.\n사랑한다…… 에러. 좋아한다…… 에러. 존경한다…… 해당.",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H1800",
+            "0_H1801"
+          ],
+          "subtitle": "특이점에서, 나의 기체의 다른 버전을 확인. 적대 행위에 대리 사죄한다.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        },
+        {
+          "name": "대화 1",
+          "ids": [
+            "0_H030"
+          ],
+          "subtitle": "출진 준비 중.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 12
+        },
+        {
+          "name": "대화 2",
+          "ids": [
+            "0_H040",
+            "0_H041"
+          ],
+          "subtitle": "종자, 미나모토노 타메토모. 주인, 나의 마스터. 관계성에 문제없음.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 13
+        },
+        {
+          "name": "대화 3",
+          "ids": [
+            "0_H050",
+            "0_H051"
+          ],
+          "subtitle": "마스터, 마력 공급 담당. 칼데아의 백업도 포함해서 문제없이 기능 중.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 14
+        },
+        {
+          "name": "좋아하는 것",
+          "ids": [
+            "0_H060",
+            "0_H061"
+          ],
+          "subtitle": "좋아하는 것, 특별히 없음. 전투 유닛에 오락은 불필요하다고 판단.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 15
+        },
+        {
+          "name": "싫어하는 것",
+          "ids": [
+            "0_H070",
+            "0_H071"
+          ],
+          "subtitle": "싫어하는 것, 특별히 없음. 전투에서, 피아식별과 증오식별은 별개의 것.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 16
+        },
+        {
+          "name": "성배에 대하여",
+          "ids": [
+            "0_H080",
+            "0_H081"
+          ],
+          "subtitle": "성배. 더 많은 추가 무장의 발주 허가. \n동시에, 추가 무장의 고안도 포함하도록 한다.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 17
+        },
+        {
+          "name": "대화 7",
+          "ids": [
+            "0_H170",
+            "0_H171",
+            "0_H172"
+          ],
+          "subtitle": "여포…… 원류가 다르긴 해도, 유사점 많음. \n참고 부분 다대함. 계속해서 관찰.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 21
+        },
+        {
+          "name": "대화 8",
+          "ids": [
+            "0_H180",
+            "0_H181",
+            "0_H182",
+            "0_H183"
+          ],
+          "subtitle": "항우…… 나와 다른 기술 트리로 생산된 기체. \n로스트 테크놀로지 사용된 곳 다수. 상세한 정보를 위해, 해부를 희망. \n──초살 부정. 낙담……",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 22
+        },
+        {
+          "name": "대화 9",
+          "ids": [
+            "0_H190",
+            "0_H191",
+            "0_H192"
+          ],
+          "subtitle": "나는 왕이 된 적이 없다. \n그렇기에 그 이야기는 잘못되었지만, 작품은 망설임 없이 높이 평가한다.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 23
+        },
+        {
+          "name": "대화 10",
+          "ids": [
+            "0_H200",
+            "0_H201",
+            "0_H202",
+            "0_H203"
+          ],
+          "subtitle": "오니종, 혹은 마성의 반응 있음. \n요격, 말소, 방위, 정보 전달. ……전투 불가능……? 으음, 곤란……",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 24
+        },
+        {
+          "name": "대화 11",
+          "ids": [
+            "0_H210",
+            "0_H211",
+            "0_H212",
+            "0_H213",
+            "0_H214",
+            "0_H215"
+          ],
+          "subtitle": "진명은 미나모토노 요시츠네라 추측. \n이번에는 같은 진영, 만사 친하게. 더 나아가, 당연한 말을 해둔다. \n이 미나모토노 타메토모, 목이 잘리면 죽는다. \n……경탄하는 표정으로 미루어 보아, \n잘라도 죽지 않을 거라는 심리였다고 추리. \n대답, 무슨 생각을 하는 거냐, 이 바보 녀석.",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 25
+        },
+        {
+          "name": "대화 12",
+          "ids": [
+            "0_H220",
+            "0_H221",
+            "0_H222",
+            "0_H223"
+          ],
+          "subtitle": "강철의 육체, 체내 무장도 완벽. \n모든 점에서 나의 기체와 같은 레벨이거나 혹은 스펙 이상의 \n전투 능력이라고 고찰. 경계 레벨 3. 메카에리짱 경보 기능, 신규 창설.",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 26
+        },
+        {
+          "name": "대화 13",
+          "ids": [
+            "0_H230",
+            "0_H231",
+            "0_H232"
+          ],
+          "subtitle": "내가 대갑주와 닮았다? \n……음, 시스템 에러. 톱 시크릿. 이상이다, 미안하군.",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 27
+        },
+        {
+          "name": "이벤트 개최중",
+          "ids": [
+            "0_H020"
+          ],
+          "subtitle": "행사 중. 신속한 행동을.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 11
+        },
+        {
+          "name": "생일",
+          "ids": [
+            "0_H010",
+            "0_H011"
+          ],
+          "subtitle": "제조 연월일이 오늘이라고 들었다. 축복을. \n펑! 하고 폭죽을 쏘아 올릴 것을 제안.",
+          "text": [
+            "",
+            ""
+          ],
+          "cond_type": "birthDay",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "0_G010"
+          ],
+          "subtitle": "능력 향상. 종화라는 물질의 분석 권장.",
+          "text": [
+            "능력 향상. 종화라는 물질의 분석 권장."
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "레벨 업",
+          "ids": [
+            "0_G110"
+          ],
+          "subtitle": "능력 향상. 메인터넌스 불필요.",
+          "text": [
+            "능력 향상. 메인터넌스 불필요."
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "레벨 업",
+          "ids": [
+            "0_G120"
+          ],
+          "subtitle": "능력 향상. 신규 무장 발주 완료.",
+          "text": [
+            "능력 향상. 신규 무장 발주 완료."
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 1",
+          "ids": [
+            "0_G030",
+            "0_G031",
+            "0_G032"
+          ],
+          "subtitle": "야간 전투용으로 장비 변환. 더 나은 활약이 기대된다── 훌륭하다.",
+          "text": [
+            "야간 전투용으로 장비 변환.",
+            "더 나은 활약이 기대된다──",
+            "훌륭하다."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 1
+        },
+        {
+          "name": "영기재림 2",
+          "ids": [
+            "0_G020",
+            "0_G021"
+          ],
+          "subtitle": "변화 없음. 문제없음. 신규 무장의 도착까지, 앞으로 10레벨.",
+          "text": [
+            "변화 없음. 문제없음.",
+            "신규 무장의 도착까지, 앞으로 10레벨."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 3",
+          "ids": [
+            "0_G040",
+            "0_G041",
+            "0_G042",
+            "0_G043"
+          ],
+          "subtitle": "보구 사용 형태로 상시 변경. 마력 누출 막대. \n허나, 전력을 다한 전투 가능.\n단적으로 바꿔 말해, 무지막지하게 강해졌다. 이상.",
+          "text": [
+            "보구 사용 형태로 상시 변경.",
+            "마력 누출 막대. 허나, 전력을 다한 전투 가능.",
+            "단적으로 바꿔 말해,",
+            "무지막지하게 강해졌다. 이상."
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 3
+        },
+        {
+          "name": "영기재림 4",
+          "ids": [
+            "0_G050",
+            "0_G051",
+            "0_G052"
+          ],
+          "subtitle": "마스터의 후방 지원 및 보호를 확인. \n이 일격, 이 화살 하나로써, 배를, 영웅을, 오니를 타도할지니. \n나의 이름은, 미나모토노 타메토모! ──해방한다!",
+          "text": [
+            "마스터의 후방 지원 및 보호를 확인.",
+            "이 일격, 이 화살 하나로써, 배를, 영웅을, 오니를 타도할지니.",
+            "나의 이름은, 미나모토노 타메토모! ──해방한다!"
+          ],
+          "cond_type": "svtCountStop",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "firstGet",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "소환",
+          "ids": [
+            "0_S010",
+            "0_S011",
+            "0_S012",
+            "0_S013"
+          ],
+          "subtitle": "서번트・아처. 대군전투 무사 유닛…… \n진명을…… 미나모토노 타메토모. \n전투 대기 중. 지시를.",
+          "text": [
+            "서번트・아처.",
+            "[r]\n대군전투 무사 유닛……",
+            "[r]\n진명을…… 미나모토노 타메토모.",
+            "[r]\n전투 대기 중. 지시를."
+          ],
+          "cond_type": "svtGet",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "개시 1",
+          "ids": [
+            "0_B100"
+          ],
+          "subtitle": "개전을 확인. 투지 유지 음향 유닛 기동.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "0_B110"
+          ],
+          "subtitle": "전병기 사용 허가 신청, 수리. 전투 행동을 개시한다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 3",
+          "ids": [
+            "0_B500"
+          ],
+          "subtitle": "워코드・애로 헤드. 록 해제. \n지형 탐사. 유효 사정거리를 한정. 각오하라.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "0_B080"
+          ],
+          "subtitle": "발동.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "0_B090"
+          ],
+          "subtitle": "가동 중.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 3",
+          "ids": [
+            "0_B480"
+          ],
+          "subtitle": "살육기교.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 4",
+          "ids": [
+            "0_B490"
+          ],
+          "subtitle": "지지 않는다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "0_B180"
+          ],
+          "subtitle": "알겠다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "0_B190"
+          ],
+          "subtitle": "승낙.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "0_B200"
+          ],
+          "subtitle": "제안.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B210"
+          ],
+          "subtitle": "코드・아처, 해방.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B220"
+          ],
+          "subtitle": "지금부터 수라문으로 돌입한다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 5
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B230"
+          ],
+          "subtitle": "강궁 전력 사용, 가능.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 6
+        },
+        {
+          "name": "공격 1",
+          "ids": [
+            "0_B010"
+          ],
+          "subtitle": "사출.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "0_B020"
+          ],
+          "subtitle": "교반.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "0_B030"
+          ],
+          "subtitle": "저격.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 4",
+          "ids": [
+            "0_B410"
+          ],
+          "subtitle": "탄우.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 5",
+          "ids": [
+            "0_B420"
+          ],
+          "subtitle": "구격.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 6",
+          "ids": [
+            "0_B430"
+          ],
+          "subtitle": "참.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B040"
+          ],
+          "subtitle": "관통포.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B440"
+          ],
+          "subtitle": "관통포, 레벨 3.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B840"
+          ],
+          "subtitle": "강궁, 선박 파괴.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격 4",
+          "ids": [
+            "0_B2440"
+          ],
+          "subtitle": "앵커 확인, 포격.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "0_B150"
+          ],
+          "subtitle": "손상 막대……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "0_B140"
+          ],
+          "subtitle": "문제없음.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 3",
+          "ids": [
+            "0_B550"
+          ],
+          "subtitle": "크윽, 크으으으으……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 4",
+          "ids": [
+            "0_B540"
+          ],
+          "subtitle": "평정.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "0_B160"
+          ],
+          "subtitle": "대파, 전투 속행 불가능.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "0_B170"
+          ],
+          "subtitle": "전투 속행은 불가능하다고 판단…… 지원, 거부.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 3",
+          "ids": [
+            "0_B560"
+          ],
+          "subtitle": "기체 손상. 귀공들의 분전을, 진심으로, 바란다……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 4",
+          "ids": [
+            "0_B570"
+          ],
+          "subtitle": "전투 행동 종료. 이것으로, 잠들 수 있다……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "0_B120"
+          ],
+          "subtitle": "주위에 적의 모습 없음. 계속해서, 경계를 이어간다.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "0_B130"
+          ],
+          "subtitle": "전투 종료. 손상 경미. 벙커로의 귀환을 추천.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 3",
+          "ids": [
+            "0_B520"
+          ],
+          "subtitle": "전투 종료. 휴식 개시. ……3, 2, 1, 종료.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 4",
+          "ids": [
+            "0_B530"
+          ],
+          "subtitle": "승리 조건 달성. 축포 준비.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B050",
+            "0_B051",
+            "0_B052",
+            "0_B053"
+          ],
+          "subtitle": "경월수렴, 형태 변화. \n츠쿠요미식 리볼빙 캐논── ‘굉침・궁장월’. \n카운트 개시. 3, 2, 1…… 발사!",
+          "text": [
+            "경월수렴, 형태 변화.",
+            "츠쿠요미식 리볼빙 캐논── ‘굉침・궁장월’.",
+            "카운트 개시. 3, 2, 1……",
+            "발사!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        },
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B800",
+            "0_B801",
+            "0_B802",
+            "0_B803"
+          ],
+          "subtitle": "문 샤프트 체크. 버스터 애로 시스템, 96% 충전. \n파일 드라이브 풋 록, 접속. ──처치한다!",
+          "text": [
+            "문 샤프트 체크.",
+            "버스터 애로 시스템, 96% 충전.",
+            "파일 드라이브 풋 록, 접속.",
+            "──처치한다!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 7
+        },
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B810",
+            "0_B811",
+            "0_B812"
+          ],
+          "subtitle": "위협 증대로 인해, 대 마성 무장, 해방 허가. \n달빛을 받아 나의 활은 극한에 이른다. \n즉, ‘굉침・궁장월’. \n나의 궁장월 앞에 배는 가라앉으리라!",
+          "text": [
+            "위협 증대로 인해, 대 마성 무장, 해방 허가.",
+            "달빛을 받아 나의 활은 극한에 이른다.",
+            "즉, ‘굉침・궁장월’. 나의 궁장월 앞에 배는 가라앉으리라!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 8
+        },
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B820",
+            "0_B821",
+            "0_B822",
+            "0_B823"
+          ],
+          "subtitle": "불요불굴한 나의 강궁, 이것으로 모든 것을 쓸어버린다. \n‘굉침・궁장월’. 즉, 월광대포. ──발사!",
+          "text": [
+            "불요불굴한 나의 강궁,",
+            "이것으로 모든 것을 쓸어버린다.",
+            "‘굉침・궁장월’. 즉, 월광대포.",
+            "──발사!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 9
+        }
+      ]
+    }
+  ]
+}

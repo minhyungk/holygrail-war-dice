@@ -1,0 +1,162 @@
+{
+  "servant_id": "sv_0184_tomoe_gozen",
+  "source_id": 184,
+  "name_ko": "토모에고젠",
+  "name_en": "Tomoe Gozen",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/184?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "D",
+    "agi": "C",
+    "mana": "B",
+    "luck": "A",
+    "np": "B+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1132,
+      "name": "oni"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2019,
+      "name": "demonic"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2735,
+      "name": "genji"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 202100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 20550,
+        "name": "단독행동 A",
+        "rank": null
+      },
+      {
+        "id": 54150,
+        "name": "광화 E",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 220450,
+        "name": "귀종의 마 B",
+        "rank": null
+      },
+      {
+        "id": 414450,
+        "name": "난전의 소양 B",
+        "rank": null
+      },
+      {
+        "id": 415550,
+        "name": "혈맥여기 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 202100,
+      "name": "???",
+      "ruby": "",
+      "rank": "?",
+      "type": "???"
+    },
+    {
+      "id": 202101,
+      "name": "진언・성관세음보살",
+      "ruby": "옴・아로늑계・사바하",
+      "rank": "B",
+      "type": "대인보구"
+    },
+    {
+      "id": 202102,
+      "name": "???",
+      "ruby": "",
+      "rank": "?",
+      "type": "???"
+    },
+    {
+      "id": 202103,
+      "name": "진언・성관세음보살",
+      "ruby": "옴・아로늑계・사바하",
+      "rank": "B++",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2021000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/202100/202100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/202100/202100b@2.png"
+  }
+}

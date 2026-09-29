@@ -84,8 +84,9 @@ export function narratorData(): NarratorData {
   return {
     servantDialogue: servantIds().map((id) => DialogueFile.parse(readJson(`data/servants/${id}/dialogue.json`))),
     masterDialogue: masterIds().map((id) => DialogueFile.parse(readJson(`data/masters/${id}/dialogue.json`))),
-    classDialogue: [],
+    classDialogue: readdirSync(join(ROOT, 'data/classes')).sort().map((c) => DialogueFile.parse(readJson(`data/classes/${c}/dialogue.json`))),
     narrator: DialogueFile.parse(readJson('data/common/narrator.json')),
+    speech: DialogueFile.parse(readJson('data/common/speech.json')),
     servants: d.servants,
     masters: d.masters,
     tiles: TILES,

@@ -1,0 +1,127 @@
+{
+  "servant_id": "sv_0050_spartacus",
+  "source_id": 50,
+  "name_ko": "스파르타쿠스",
+  "name_en": "Spartacus",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/50?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "EX",
+    "agi": "D",
+    "mana": "E",
+    "luck": "D",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 401,
+      "name": "oneStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2004,
+      "name": "roman"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 700500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54650,
+        "name": "광화 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 75450,
+        "name": "피학의 명예 B",
+        "rank": null
+      },
+      {
+        "id": 98550,
+        "name": "불굴의 의지 A",
+        "rank": null
+      },
+      {
+        "id": 259450,
+        "name": "검의 개선 B",
+        "rank": null
+      },
+      {
+        "id": 75451,
+        "name": "피학의 명예 B+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 700501,
+      "name": "상처 입은 짐승의 포효",
+      "ruby": "크라잉 워멍거",
+      "rank": "A",
+      "type": "대인보구"
+    },
+    {
+      "id": 700502,
+      "name": "상처 입은 짐승의 포효",
+      "ruby": "크라잉 워멍거",
+      "rank": "A+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7005000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/700500/700500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/700500/700500b@2.png"
+  }
+}

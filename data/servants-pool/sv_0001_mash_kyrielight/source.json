@@ -1,0 +1,190 @@
+{
+  "servant_id": "sv_0001_mash_kyrielight",
+  "source_id": 1,
+  "name_ko": "마슈 키리에라이트",
+  "name_en": "Mash Kyrielight",
+  "class": "shielder",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/1?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "A",
+    "agi": "D",
+    "mana": "B",
+    "luck": "C",
+    "np": "?"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 107,
+      "name": "classShielder"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2654,
+      "name": "livingHuman"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2795,
+      "name": "knightsOfTheRound"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 800100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 88350,
+        "name": "기승 C",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 1000,
+        "name": "지금은 여린 눈꽃의 벽",
+        "rank": null
+      },
+      {
+        "id": 2000,
+        "name": "때때로 흐려지는 백악의 벽",
+        "rank": null
+      },
+      {
+        "id": 133000,
+        "name": "떨쳐 일어나는 결의의 방패",
+        "rank": null
+      },
+      {
+        "id": 236000,
+        "name": "명예롭고 굳건한 눈꽃의 벽",
+        "rank": null
+      },
+      {
+        "id": 460250,
+        "name": "아말감 고트 D",
+        "rank": null
+      },
+      {
+        "id": 457000,
+        "name": "비장한 분기의 방패",
+        "rank": null
+      },
+      {
+        "id": 459550,
+        "name": "벙커 볼트 A",
+        "rank": null
+      },
+      {
+        "id": 2162350,
+        "name": "패러독스 실린더 C",
+        "rank": null
+      },
+      {
+        "id": 744450,
+        "name": "블랙 배럴 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 800100,
+      "name": "???",
+      "ruby": "???",
+      "rank": "?",
+      "type": "불명"
+    },
+    {
+      "id": 800101,
+      "name": "가상보구 의사전개 / 인리의 초석",
+      "ruby": "로드 칼데아스",
+      "rank": "D",
+      "type": "대인보구"
+    },
+    {
+      "id": 800104,
+      "name": "지금은 머나먼 이상의 성",
+      "ruby": "로드 카멜롯",
+      "rank": "B+++",
+      "type": "대악보구"
+    },
+    {
+      "id": 800105,
+      "name": "지금은 여린 몽상의 성",
+      "ruby": "몰드 카멜롯",
+      "rank": "D",
+      "type": "대인보구"
+    },
+    {
+      "id": 800106,
+      "name": "지금은 지나간 몽상의 성",
+      "ruby": "로드 카멜롯",
+      "rank": "C",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_8001000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/800100/800100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/800100/800100b@2.png"
+  }
+}

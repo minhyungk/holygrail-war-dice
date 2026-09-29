@@ -1,0 +1,115 @@
+{
+  "servant_id": "sv_0229_qin_shi_huang",
+  "source_id": 229,
+  "name_ko": "시황제",
+  "name_en": "Qin Shi Huang",
+  "class": "ruler",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/229?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B+",
+    "end": "B+",
+    "agi": "B+",
+    "mana": "B+",
+    "luck": "B+",
+    "np": "B+"
+  },
+  "traits": [
+    {
+      "id": 3,
+      "name": "genderUnknown"
+    },
+    {
+      "id": 108,
+      "name": "classRuler"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 900600,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34451,
+        "name": "대 마력 B+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 536550,
+        "name": "책은 불태워라 A",
+        "rank": null
+      },
+      {
+        "id": 537550,
+        "name": "유학자는 묻어버려라 A",
+        "rank": null
+      },
+      {
+        "id": 538550,
+        "name": "영세제위 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 900601,
+      "name": "시황제",
+      "ruby": "더 도미네이션 비기닝",
+      "rank": "B+",
+      "type": "대계보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_9006000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/900600/900600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/900600/900600b@2.png"
+  }
+}

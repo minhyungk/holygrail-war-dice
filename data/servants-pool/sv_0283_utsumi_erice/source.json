@@ -1,0 +1,146 @@
+{
+  "servant_id": "sv_0283_utsumi_erice",
+  "source_id": 283,
+  "name_ko": "우츠미 에리세",
+  "name_en": "Utsumi Erice",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/283?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "B",
+    "mana": "C",
+    "luck": "E",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2654,
+      "name": "livingHuman"
+    },
+    {
+      "id": 2667,
+      "name": "childServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 304300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 753451,
+        "name": "대 마력(영) B+",
+        "rank": null
+      },
+      {
+        "id": 88351,
+        "name": "기승 C+",
+        "rank": null
+      },
+      {
+        "id": 20450,
+        "name": "단독행동 B",
+        "rank": null
+      },
+      {
+        "id": 62150,
+        "name": "신성 E",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 731550,
+        "name": "무사영매 A",
+        "rank": null
+      },
+      {
+        "id": 732450,
+        "name": "마탄의 사수(모조) B",
+        "rank": null
+      },
+      {
+        "id": 733450,
+        "name": "사신 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 304301,
+      "name": "아메노사카호코",
+      "ruby": "아메노사카호코",
+      "rank": "B",
+      "type": "대령보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3043000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/304300/304300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/304300/304300b@2.png"
+  }
+}

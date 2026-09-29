@@ -1,0 +1,126 @@
+{
+  "servant_id": "sv_0420_xu_fu_avenger",
+  "source_id": 420,
+  "name_ko": "서복",
+  "name_en": "Xu Fu (Avenger)",
+  "class": "avenger",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/420?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "B",
+    "agi": "E",
+    "mana": "A+",
+    "luck": "A",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 110,
+      "name": "classAvenger"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 1101900,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 2394451,
+        "name": "복수자(명목) B+",
+        "rank": null
+      },
+      {
+        "id": 170650,
+        "name": "망각보정 EX",
+        "rank": null
+      },
+      {
+        "id": 348148,
+        "name": "하이 서번트 -",
+        "rank": null
+      },
+      {
+        "id": 2095650,
+        "name": "약화(우미인) EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2395551,
+        "name": "도술(인형조작) A+",
+        "rank": null
+      },
+      {
+        "id": 2396452,
+        "name": "진지진화(촌락) B++",
+        "rank": null
+      },
+      {
+        "id": 2397550,
+        "name": "만사수집 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 1101901,
+      "name": "저녁놀에 절명, 황혼에 체인소",
+      "ruby": "저녁놀에 절명, 황혼에 체인소",
+      "rank": "B+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_11019000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1101900/1101900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1101900/1101900b@2.png"
+  }
+}

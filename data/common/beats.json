@@ -1,5 +1,5 @@
 {
-  "notes": "이벤트 → 비트 템플릿 (narrative-engine.md §8.2, D-104). 태그는 임시 태그 (D-105). from: narrator / self(플레이어 서번트) / enemy(상대 서번트) / actor(이벤트 주체 서번트) / enemy_master(상대 마스터). tag_by: 사실 값에 따라 태그를 고른다. if: 이 슬롯을 쓸 조건(사실). when_has / when_lacks: 후보 대사의 when에 그 사실이 있는/없는 것만. protected: 템포 상한에 잘리지 않음 (Q-156 ②). size: big / normal / small / auto(국면 결과). style: system이면 화면에서 시스템 문구 모양으로 보인다 (호감도 변화 등).",
+  "notes": "이벤트 → 비트 템플릿 (narrative-engine.md §8.2, D-104). 태그는 임시 태그 (D-105). from: narrator / self(플레이어 서번트) / enemy(상대 서번트) / actor(이벤트 주체 서번트) / enemy_master(상대 마스터). tag_by: 사실 값에 따라 태그를 고른다. if: 이 슬롯을 쓸 조건(사실). when_has / when_lacks: 후보 대사의 when에 그 사실이 있는/없는 것만. protected: 템포 상한에 잘리지 않음 (Q-156 ②). size: big / normal / small / auto(국면 결과). style: system이면 화면에서 시스템 문구 모양으로 보인다 (호감도 변화 등). chance: text.slot_chance의 이름. 그 확률로만 슬롯을 쓴다 (D-151). affinity_reaction: 선택 반응 호감도 변화(cause react:*)용 템플릿 (D-150).",
   "beats": {
     "day_started": {
       "size": "small",
@@ -74,6 +74,14 @@
           "tag": "intel",
           "if": {
             "event.cause": "intel"
+          }
+        },
+        {
+          "slot": "line",
+          "from": "self",
+          "tag": "intel_battle",
+          "if": {
+            "event.cause": "battle"
           }
         }
       ]
@@ -187,6 +195,25 @@
           }
         },
         {
+          "slot": "line",
+          "from": "self",
+          "tag": "phase_win",
+          "if": {
+            "event.self_won": true
+          },
+          "chance": "self_phase_win"
+        },
+        {
+          "slot": "line",
+          "from": "self",
+          "tag": "phase_hit",
+          "if": {
+            "event.self_lost": true,
+            "event.condition_to": "hurt"
+          },
+          "chance": "self_phase_hit"
+        },
+        {
           "slot": "tail",
           "from": "narrator",
           "tag": "phase_defended",
@@ -245,6 +272,15 @@
       "size": "big",
       "slots": [
         {
+          "slot": "react",
+          "from": "narrator",
+          "tag": "comeback",
+          "if": {
+            "event.comeback": true
+          },
+          "protected": true
+        },
+        {
           "slot": "tail",
           "from": "narrator",
           "tag": "battle_end"
@@ -259,6 +295,17 @@
               "loss": "defeat",
               "draw": "draw"
             }
+          },
+          "if": {
+            "event.comeback": false
+          }
+        },
+        {
+          "slot": "line",
+          "from": "self",
+          "tag": "comeback",
+          "if": {
+            "event.comeback": true
           }
         }
       ]
@@ -362,6 +409,62 @@
           "slot": "tail",
           "from": "narrator",
           "tag": "final_start"
+        }
+      ]
+    },
+    "weakness_used": {
+      "size": "normal",
+      "slots": [
+        {
+          "slot": "lead",
+          "from": "narrator",
+          "tag": "weakness",
+          "protected": true
+        },
+        {
+          "slot": "line",
+          "from": "self",
+          "tag": "weakness"
+        }
+      ]
+    },
+    "affinity_reaction": {
+      "size": "small",
+      "slots": [
+        {
+          "slot": "line",
+          "from": "self",
+          "tag": "react_choice",
+          "if": {
+            "event.reaction": {
+              "in": [
+                "encounter_fight",
+                "encounter_flee",
+                "danger_fight",
+                "danger_run",
+                "weakness"
+              ]
+            }
+          }
+        },
+        {
+          "slot": "tail",
+          "from": "narrator",
+          "tag": "affinity_change"
+        }
+      ]
+    },
+    "skill_triggered": {
+      "size": "small",
+      "slots": [
+        {
+          "slot": "line",
+          "from": "actor",
+          "tag": "skill",
+          "if": {
+            "beat.actor_side": "self"
+          },
+          "chance": "self_skill"
         }
       ]
     }

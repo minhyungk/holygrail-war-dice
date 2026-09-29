@@ -1,0 +1,164 @@
+{
+  "servant_id": "sv_0006_siegfried",
+  "source_id": 6,
+  "name_ko": "지크프리트",
+  "name_en": "Siegfried",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/6?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B+",
+    "end": "A",
+    "agi": "B",
+    "mana": "C",
+    "luck": "E",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2002,
+      "name": "dragon"
+    },
+    {
+      "id": 2003,
+      "name": "dragonSlayer"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 100800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 88450,
+        "name": "기승 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 97349,
+        "name": "황금률 C-",
+        "rank": null
+      },
+      {
+        "id": 12550,
+        "name": "재정비 A",
+        "rank": null
+      },
+      {
+        "id": 103550,
+        "name": "용살자 A",
+        "rank": null
+      },
+      {
+        "id": 103552,
+        "name": "용살자 A++",
+        "rank": null
+      },
+      {
+        "id": 2077550,
+        "name": "탐욕의 황금 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 100801,
+      "name": "환상대검・천마실추",
+      "ruby": "발뭉",
+      "rank": "A+",
+      "type": "대군보구"
+    },
+    {
+      "id": 100802,
+      "name": "환상대검・천마실추",
+      "ruby": "발뭉",
+      "rank": "EX",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1008000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/100800/100800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/100800/100800b@2.png"
+  }
+}

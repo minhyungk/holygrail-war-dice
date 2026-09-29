@@ -1,0 +1,1469 @@
+{
+  "origin": "Atlas Academy KR nice API",
+  "groups": [
+    {
+      "type": "home",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "생일",
+          "ids": [
+            "0_H010",
+            "0_H011",
+            "0_H012",
+            "0_H013",
+            "0_H014",
+            "0_H015",
+            "0_H016"
+          ],
+          "subtitle": "당신이 태어난 날?\n헤에…… 뭐야, 축하해 줬으면 해? \n내가? 좋아. 듬뿍 당신을 축하해 줄게. 후후……♪",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "birthDay",
+          "cond_value": 0
+        },
+        {
+          "name": "이벤트 개최중",
+          "ids": [
+            "0_H020",
+            "0_H021",
+            "0_H022",
+            "0_H023",
+            "0_H024"
+          ],
+          "subtitle": "이벤트? 그럼 갈까.\n내가 없으면 시작을 못 하잖아? \n나는 세계의 중심이고, 나는 사람들의 선망의 대상. \n내가 걷는 곳에만 세계가 있어!",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 11
+        },
+        {
+          "name": "대화 1",
+          "ids": [
+            "0_H030",
+            "0_H031",
+            "0_H032"
+          ],
+          "subtitle": "언제까지 그렇게 멍하니 있게?\n그런 얼굴도 귀엽지만, 난 당신의 씩씩한 모습을 더 보고 싶어♪",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 12
+        },
+        {
+          "name": "대화 2",
+          "ids": [
+            "0_H040",
+            "0_H041",
+            "0_H042",
+            "0_H043",
+            "0_H044",
+            "0_H045"
+          ],
+          "subtitle": "마스터! 아아, 이럴 수가.\n바로 내가 누군가를 모시다니. \n하지만 때로는 재미있을지도 몰라. \n좋아, 잠시 동안의 시간, 나는 당신의 채찍이 되겠어.",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 13
+        },
+        {
+          "name": "대화 3",
+          "ids": [
+            "0_H050",
+            "0_H051",
+            "0_H052"
+          ],
+          "subtitle": "나를 자기 것으로 삼으려고 한 인간은\n수없이 많았지만…… 당신은 어떨까?\n나를 원해?",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 14
+        },
+        {
+          "name": "좋아하는 것",
+          "ids": [
+            "0_H060",
+            "0_H061",
+            "0_H062",
+            "0_H063",
+            "0_H064"
+          ],
+          "subtitle": "내가 좋아하는 게…… 뭐라고 생각해?\n남자. 용사. 누구보다도 강한 인간.\n그런 누군가가 나를 원하며 기뻐하는 모습은 최고야. 알겠어?",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 15
+        },
+        {
+          "name": "싫어하는 것",
+          "ids": [
+            "0_H070",
+            "0_H071",
+            "0_H072",
+            "0_H073"
+          ],
+          "subtitle": "내가 싫어하는 것은……\n내 곁에 있으려 하지 않는 자. \n이를테면 얼스터의…… 아니, 아무것도 아냐♪",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 16
+        },
+        {
+          "name": "성배에 대하여",
+          "ids": [
+            "0_H080",
+            "0_H081",
+            "0_H082",
+            "0_H083"
+          ],
+          "subtitle": "성배? 다그다의 가마솥을 말하나?\n모든 보배는 내 것이야. 그럼 그것도 내 것이 되어야지♪",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 17
+        },
+        {
+          "name": "인연 Lv.1",
+          "ids": [
+            "0_H090",
+            "0_H091",
+            "0_H092",
+            "0_H093"
+          ],
+          "subtitle": "후후. 당신, 귀여운 얼굴로 웃네.\n좋아. 더 웃어봐.\n……좋아. 그런 얼굴도 할 수 있구나? 후후후♪",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 1
+        },
+        {
+          "name": "인연 Lv.2",
+          "ids": [
+            "0_H100",
+            "0_H101",
+            "0_H102",
+            "0_H103",
+            "0_H104",
+            "0_H105"
+          ],
+          "subtitle": "내가 싫어하는 남자가 있어. 알고 있어?\n얼스터의 쿠 훌린. 내 것이 되지 않는 남자. 진정한 왕. 나는……",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 2
+        },
+        {
+          "name": "인연 Lv.3",
+          "ids": [
+            "0_H110",
+            "0_H111",
+            "0_H112",
+            "0_H113"
+          ],
+          "subtitle": "당신의 옆얼굴……\n응, 그래. 역시 멋져.\n난 당신과 단둘이서 이야기를 하고 싶어.",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 3
+        },
+        {
+          "name": "인연 Lv.4",
+          "ids": [
+            "0_H120",
+            "0_H121",
+            "0_H122",
+            "0_H123",
+            "0_H124"
+          ],
+          "subtitle": "난 많은 왕과 많은 용사,\n많은 남자를 내 것으로 삼았어.\n남자는 모두 내가 미소 지어주면 사랑에 빠져.\n……어? 나는 어떠냐고?\n그래. 사랑에…… 글쎄, 나는……",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 4
+        },
+        {
+          "name": "인연 Lv.5",
+          "ids": [
+            "0_H130",
+            "0_H131",
+            "0_H132",
+            "0_H133",
+            "0_H134",
+            "0_H135",
+            "0_H136",
+            "0_H137"
+          ],
+          "subtitle": "사람들은 말하지. 사랑 많은 여자, 여왕 메이브.\n하지만 과연 그럴까.\n사랑이란 게 뭐지?\n원한다고 생각하는 것? \n그걸로 된다면 나는 분명히 사랑 많은 여자.\n하지만…… 하지만, 정말로 내가 얻었던 것은…… 사랑이었을까……",
+          "text": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "svtFriendship",
+          "cond_value": 5
+        },
+        {
+          "name": "대화 4",
+          "ids": [
+            "0_H140",
+            "0_H141",
+            "0_H142",
+            "0_H143"
+          ],
+          "subtitle": "──쿠 훌린. 내 것이 되지 않는 남자.\n이번 생에서도 내 앞에 나타나고, \n역시나 내 것이 되지 않는 거로군요.",
+          "text": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 18
+        },
+        {
+          "name": "대화 6",
+          "ids": [
+            "0_H160",
+            "0_H161",
+            "0_H162"
+          ],
+          "subtitle": "나는 말이지. 시원시원하고 질투하지 않고 \n두려움을 모르는 용사를 좋아해!\n그런 용사, 있겠지? 여기서 소환해 주지 않겠어?!",
+          "text": [
+            "",
+            "",
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 20
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "0_G010",
+            "0_G011"
+          ],
+          "subtitle": "후후후♪\n나 한없이 사랑받는구나?",
+          "text": [
+            "후후후♪",
+            "나 한없이 사랑받는구나?"
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 2",
+          "ids": [
+            "0_G020",
+            "0_G021",
+            "0_G022"
+          ],
+          "subtitle": "기분 좋아……\n이런 식으로 변하는 건 좀처럼 맛볼 수 없는 느낌이야……♪",
+          "text": [
+            "기분 좋아……",
+            "이런 식으로 변하는 건",
+            "좀처럼 맛볼 수 없는 느낌이야……♪"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 2
+        },
+        {
+          "name": "영기재림 1",
+          "ids": [
+            "0_G030",
+            "0_G031",
+            "0_G032",
+            "0_G033"
+          ],
+          "subtitle": "당신의 취향을 반영시켜 봤는데,\n어때? 흐응…… 당신, 이런 걸 좋아하는구나……♪",
+          "text": [
+            "당신의 취향을 반영시켜 봤는데",
+            "어때?",
+            "흐응……",
+            "당신, 이런 걸 좋아하는구나……♪"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 1
+        },
+        {
+          "name": "영기재림 3",
+          "ids": [
+            "0_G040",
+            "0_G041",
+            "0_G042",
+            "0_G043"
+          ],
+          "subtitle": "눈을 돌리면 안 되잖아?\n이게 나. 이게 여왕 메이브. 자, 감상을 말해볼래?",
+          "text": [
+            "눈을 돌리면 안 되잖아?",
+            "이게 나.",
+            "이게 여왕 메이브.",
+            "자, 감상을 말해볼래?"
+          ],
+          "cond_type": "svtLimit",
+          "cond_value": 3
+        },
+        {
+          "name": "영기재림 4",
+          "ids": [
+            "0_G050",
+            "0_G051",
+            "0_G052",
+            "0_G053"
+          ],
+          "subtitle": "멋져!\n이렇게 마력이 높아지다니 처음일지도 몰라. 당신 덕분이네♪",
+          "text": [
+            "멋져!",
+            "이렇게 마력이 높아지다니",
+            "처음일지도 몰라.",
+            "당신 덕분이네♪"
+          ],
+          "cond_type": "svtCountStop",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "firstGet",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "소환",
+          "ids": [
+            "0_S010",
+            "0_S011",
+            "0_S012"
+          ],
+          "subtitle": "나는 메이브. 여왕 메이브!\n나를 위해 싸워주는 멋진 용사가 당신일까?",
+          "text": [
+            "나는 메이브. ",
+            "\n여왕 메이브!",
+            "[r]\n나를 위해 싸워주는 멋진 용사가 당신일까?"
+          ],
+          "cond_type": "svtGet",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "공격 1",
+          "ids": [
+            "0_B010"
+          ],
+          "subtitle": "안 통해.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "0_B020"
+          ],
+          "subtitle": "메이브 키~~익!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "0_B030"
+          ],
+          "subtitle": "어때, 어때!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 4",
+          "ids": [
+            "0_B410"
+          ],
+          "subtitle": "우훗!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 5",
+          "ids": [
+            "0_B420"
+          ],
+          "subtitle": "아하핫!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 6",
+          "ids": [
+            "0_B430"
+          ],
+          "subtitle": "멋져, 멋져!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 7",
+          "ids": [
+            "0_B910"
+          ],
+          "subtitle": "날 받들어 모셔, 어서!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 8",
+          "ids": [
+            "0_B920"
+          ],
+          "subtitle": "안 놓쳐!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "0_B040"
+          ],
+          "subtitle": "자, 도망쳐 봐, 도망쳐 봐!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "0_B080"
+          ],
+          "subtitle": "내 몸은 완벽해♪\n봐, 이거 봐, 아름답지?♪",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "0_B090"
+          ],
+          "subtitle": "내 목소리를 들어.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 1",
+          "ids": [
+            "0_B100"
+          ],
+          "subtitle": "사랑하는 모두들, 내게 힘을 빌려줘♪",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "0_B110"
+          ],
+          "subtitle": "내 사랑에 어울리는 용사,\n여기에는 있으려나……?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "0_B120"
+          ],
+          "subtitle": "멋진 용사, 여기에는 없는 모양이네!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "0_B130"
+          ],
+          "subtitle": "쓰러져 버리다니 아쉬워.\n그래 가지곤 내 용사가 될 수 없어.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "0_B140"
+          ],
+          "subtitle": "꺄악!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "0_B150"
+          ],
+          "subtitle": "아니, 이런……!!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "0_B160"
+          ],
+          "subtitle": "다들, 늦는, 구나……",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "0_B170"
+          ],
+          "subtitle": "나는 여왕인데~~!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "0_B180"
+          ],
+          "subtitle": "후후후♪",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "0_B190"
+          ],
+          "subtitle": "헤에, 그래?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "0_B200"
+          ],
+          "subtitle": "좋지 않아?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "0_B210"
+          ],
+          "subtitle": "특별히 보여줄게♪",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 0,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "0_B050",
+            "0_B051",
+            "0_B052",
+            "0_B053",
+            "0_B054"
+          ],
+          "subtitle": "모든 힘이 나의 힘!\n인간을 다스리는 왕권,\n인간을 괴롭히는 강철,\n인간을 떨게 하는 공포!\n──채리엇 마이 러브!",
+          "text": [
+            "모든 힘이 나의 힘!",
+            "인간을 다스리는 왕권",
+            "인간을 괴롭히는 강철",
+            "인간을 떨게 하는 공포!",
+            "──채리엇 마이 러브!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        }
+      ]
+    },
+    {
+      "type": "home",
+      "voice_prefix": 11,
+      "lines": [
+        {
+          "name": "영의에 대하여",
+          "ids": [
+            "11_H9000",
+            "11_H9001",
+            "11_H9002",
+            "11_H9003",
+            "11_H9004"
+          ],
+          "subtitle": "딱히 이런 취미는 없었다고 생각하는데, 해보니까 의외로 괜찮네. \n당신도 나랑 맞춘 옷으로 해줄까? 그래, 당연하지! \n족쇄 있는 죄수복으로! 아하하하하하!",
+          "text": [
+            "딱히 이런 취미는 없었다고 생각하는데,",
+            "해보니까 의외로 괜찮네.",
+            "당신도 나랑 맞춘 옷으로 해줄까?",
+            "그래, 당연하지! 족쇄 있는 죄수복으로!",
+            "아하하하하하!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 63
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 11,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "11_G010",
+            "11_G011"
+          ],
+          "subtitle": "우후후! 난 어디서든지 사랑받네!",
+          "text": [
+            "우후후!",
+            "난 어디서든지 사랑받네!"
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영의 개방",
+          "ids": [
+            "11_G060",
+            "11_G061",
+            "11_G062",
+            "11_G063"
+          ],
+          "subtitle": "평소랑은 전혀 다른 차림을 해봤어. 어때? 어울려? \n대답 안 해도 돼. 왜냐면…… 이게 엄청 잘 어울린다는 걸 나도 잘 알거든!",
+          "text": [
+            "평소랑은 전혀 다른 차림을 해봤어.",
+            "어때? 어울려?",
+            "대답 안 해도 돼. 왜냐면……",
+            "이게 엄청 잘 어울린다는 걸 나도 잘 알거든!"
+          ],
+          "cond_type": "costumeGet",
+          "cond_value": 11
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 11,
+      "lines": [
+        {
+          "name": "공격 1",
+          "ids": [
+            "11_B010"
+          ],
+          "subtitle": "안 통해.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "11_B020"
+          ],
+          "subtitle": "메이브 키~~익!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "11_B030"
+          ],
+          "subtitle": "어때, 어때!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 4",
+          "ids": [
+            "11_B410"
+          ],
+          "subtitle": "우훗!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 5",
+          "ids": [
+            "11_B420"
+          ],
+          "subtitle": "아하핫!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 6",
+          "ids": [
+            "11_B430"
+          ],
+          "subtitle": "멋져, 멋져!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 7",
+          "ids": [
+            "11_B910"
+          ],
+          "subtitle": "받들어 모시더라도 안 봐줄 거야! 에잇에잇!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 8",
+          "ids": [
+            "11_B920"
+          ],
+          "subtitle": "안 놓쳐!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "11_B040"
+          ],
+          "subtitle": "아프게 할게.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "11_B080"
+          ],
+          "subtitle": "어・느・것・으・로・할・까・나",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "11_B090"
+          ],
+          "subtitle": "상이 되었을까.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 1",
+          "ids": [
+            "11_B100"
+          ],
+          "subtitle": "벌을 주도록 할게. 충분히, 듬뿍!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "11_B110"
+          ],
+          "subtitle": "내 사랑에 답해주는 죄인…… 어디에 있을까?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "11_B120"
+          ],
+          "subtitle": "자, 끝이야. 어때? 더 원해?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "11_B130"
+          ],
+          "subtitle": "더욱, 더욱, 늠름해지라고. 알겠어?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "11_B150"
+          ],
+          "subtitle": "대체 뭐야……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "11_B140"
+          ],
+          "subtitle": "건방지게……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "11_B160"
+          ],
+          "subtitle": "분해…… 분해……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "11_B170"
+          ],
+          "subtitle": "탈옥수가…… 나오겠어.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "11_B180"
+          ],
+          "subtitle": "흐으응.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "11_B190"
+          ],
+          "subtitle": "어머! 건방지네!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "11_B200"
+          ],
+          "subtitle": "오싹오싹해져!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "11_B210"
+          ],
+          "subtitle": "어쩔 수 없네.",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 11,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "11_B050",
+            "11_B051",
+            "11_B052",
+            "11_B053",
+            "11_B054"
+          ],
+          "subtitle": "모든 감정이 나의 힘. 사람을 미치게 만드는 애정. 사람을 홀리는 연정. \n사람을 망가트리는 욕정! ‘사랑하는 나의 강철전차(채리엇 마이 러브)’!",
+          "text": [
+            "모든 마음이 나의 힘",
+            "사람을 미치게 하는 애정",
+            "사람을 홀리는 연정",
+            "사람을 망가뜨리는 열정!",
+            "──채리엇 마이 러브!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        }
+      ]
+    },
+    {
+      "type": "home",
+      "voice_prefix": 12,
+      "lines": [
+        {
+          "name": "영의에 대하여",
+          "ids": [
+            "12_H9000",
+            "12_H9001",
+            "12_H9002",
+            "12_H9003",
+            "12_H9004",
+            "12_H9005"
+          ],
+          "subtitle": "왜? 아아, 이 영의를 입은 내가 예쁘다고? \n우후후, 일부러 당연한 얘기 하지 않아도 돼. \n애초에 난, 그렇게 정성껏 차려입었다는 생각도 없어서…… \n뭐, 하긴 그래도. 고마워!",
+          "text": [
+            "왜?",
+            "아아, 이 영의를 입은 내가 예쁘다고?",
+            "우후후, 일부러 당연한 얘기 하지 않아도 돼.",
+            "애초에 난, 그렇게 정성껏 차려입었다는 생각도 없어서……",
+            "뭐, 하긴 그래도.",
+            "고마워!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 63
+        }
+      ]
+    },
+    {
+      "type": "groeth",
+      "voice_prefix": 12,
+      "lines": [
+        {
+          "name": "레벨 업",
+          "ids": [
+            "12_G010",
+            "12_G011"
+          ],
+          "subtitle": "후후후♪\n나 한없이 사랑받는구나?",
+          "text": [
+            "후후후♪",
+            "나 한없이 사랑받는구나?"
+          ],
+          "cond_type": "svtLevel",
+          "cond_value": 2
+        },
+        {
+          "name": "영의 개방",
+          "ids": [
+            "12_G060",
+            "12_G061",
+            "12_G062",
+            "12_G063"
+          ],
+          "subtitle": "훗훗후. 옷 갈아입기구나? \n모처럼이니 이 시대풍으로 입어봤어. 이런 것도 나쁘지 않네. \n자, 어디로 외출해 볼까!",
+          "text": [
+            "훗훗후. 옷 갈아입기구나?",
+            "모처럼이니 이 시대풍으로 입어봤어.",
+            "이런 것도 나쁘지 않네.",
+            "자, 어디로 외출해 볼까!"
+          ],
+          "cond_type": "costumeGet",
+          "cond_value": 11
+        }
+      ]
+    },
+    {
+      "type": "battle",
+      "voice_prefix": 12,
+      "lines": [
+        {
+          "name": "개시 1",
+          "ids": [
+            "12_B100"
+          ],
+          "subtitle": "기분 좋네. 특별히, 차근차근 확실하게 유린해 줄게.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "개시 2",
+          "ids": [
+            "12_B110"
+          ],
+          "subtitle": "내 사랑에 버틸 수 있는 용사, 여기에는 있을까?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 1",
+          "ids": [
+            "12_B080"
+          ],
+          "subtitle": "귀여운 데다 예쁘지?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "스킬 2",
+          "ids": [
+            "12_B090"
+          ],
+          "subtitle": "우후훗, 즐거워라!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 1",
+          "ids": [
+            "12_B180"
+          ],
+          "subtitle": "헤에, 그래?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 2",
+          "ids": [
+            "12_B190"
+          ],
+          "subtitle": "넘어가 줄게.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "커맨드 카드 3",
+          "ids": [
+            "12_B200"
+          ],
+          "subtitle": "재미있지 않아?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "보구 카드",
+          "ids": [
+            "12_B210"
+          ],
+          "subtitle": "슬슬 인내심이 한계야!",
+          "text": [
+            ""
+          ],
+          "cond_type": "flag",
+          "cond_value": 4
+        },
+        {
+          "name": "공격 1",
+          "ids": [
+            "12_B010"
+          ],
+          "subtitle": "에~잇♡",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 2",
+          "ids": [
+            "12_B020"
+          ],
+          "subtitle": "메이브 킥~!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 3",
+          "ids": [
+            "12_B030"
+          ],
+          "subtitle": "아하핫! 어때~?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 4",
+          "ids": [
+            "12_B410"
+          ],
+          "subtitle": "엿차!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 5",
+          "ids": [
+            "12_B420"
+          ],
+          "subtitle": "꺄하하!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 6",
+          "ids": [
+            "12_B430"
+          ],
+          "subtitle": "아아, 멋져!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 7",
+          "ids": [
+            "12_B910"
+          ],
+          "subtitle": "아파? 아파?!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "공격 8",
+          "ids": [
+            "12_B920"
+          ],
+          "subtitle": "멋지지?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "엑스트라 공격",
+          "ids": [
+            "12_B040"
+          ],
+          "subtitle": "죽어버리면, 미안해?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 1",
+          "ids": [
+            "12_B150"
+          ],
+          "subtitle": "바보야!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "대미지 2",
+          "ids": [
+            "12_B140"
+          ],
+          "subtitle": "아이참!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 1",
+          "ids": [
+            "12_B160"
+          ],
+          "subtitle": "세탁비 물어내……!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "전투불능 2",
+          "ids": [
+            "12_B170"
+          ],
+          "subtitle": "앗, 힐이 부러졌네?! 이거 어떡할 거야!",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 1",
+          "ids": [
+            "12_B120"
+          ],
+          "subtitle": "아아, 후련해라. 이다음 시간 비었어? 뭐라도 마시러 갈래?",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        },
+        {
+          "name": "승리 2",
+          "ids": [
+            "12_B130"
+          ],
+          "subtitle": "그래서야 쿠짱의 발밑에도 못 미치지. 그러니까 다시 태어나고 와.",
+          "text": [
+            ""
+          ],
+          "cond_type": "none",
+          "cond_value": 0
+        }
+      ]
+    },
+    {
+      "type": "treasureDevice",
+      "voice_prefix": 12,
+      "lines": [
+        {
+          "name": "보구 {0}",
+          "ids": [
+            "12_B050",
+            "12_B051",
+            "12_B052",
+            "12_B053",
+            "12_B054"
+          ],
+          "subtitle": "모든 힘이 나의 힘!\n인간을 다스리는 왕권,\n인간을 괴롭히는 강철,\n인간을 떨게 하는 공포!\n──채리엇 마이 러브!",
+          "text": [
+            "모든 힘이 나의 힘!",
+            "인간을 다스리는 왕권",
+            "인간을 괴롭히는 강철",
+            "인간을 떨게 하는 공포!",
+            "──채리엇 마이 러브!"
+          ],
+          "cond_type": "flag",
+          "cond_value": 1
+        }
+      ]
+    }
+  ]
+}

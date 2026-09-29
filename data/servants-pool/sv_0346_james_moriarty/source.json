@@ -1,0 +1,128 @@
+{
+  "servant_id": "sv_0346_james_moriarty",
+  "source_id": 346,
+  "name_ko": "제임스 모리어티",
+  "name_en": "James Moriarty",
+  "class": "ruler",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/346?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "C+",
+    "agi": "B",
+    "mana": "B",
+    "luck": "A+",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 108,
+      "name": "classRuler"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2922,
+      "name": "hasSupereffectiveNPAgainstAlignmentGood"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 901300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 20550,
+        "name": "단독행동 A",
+        "rank": null
+      },
+      {
+        "id": 2064650,
+        "name": "음모작성 EX",
+        "rank": null
+      },
+      {
+        "id": 2065351,
+        "name": "패닉 컷 C+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2066550,
+        "name": "수학적 사고 A",
+        "rank": null
+      },
+      {
+        "id": 2067452,
+        "name": "슬라이드룰・웨폰 B++",
+        "rank": null
+      },
+      {
+        "id": 2068650,
+        "name": "주사위의 선택 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 901301,
+      "name": "수리적 악성적출",
+      "ruby": "매스매티컬 멀리그넌트 어나이얼레이트",
+      "rank": "B++",
+      "type": "대인보구"
+    },
+    {
+      "id": 901302,
+      "name": "수리적 악성적출",
+      "ruby": "매스매티컬 멀리그넌트 어나이얼레이트",
+      "rank": "A",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_9013000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/901300/901300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/901300/901300b@2.png"
+  }
+}

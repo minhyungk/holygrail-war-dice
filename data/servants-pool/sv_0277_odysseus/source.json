@@ -1,0 +1,149 @@
+{
+  "servant_id": "sv_0277_odysseus",
+  "source_id": 277,
+  "name_ko": "오디세우스",
+  "name_en": "Odysseus",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/277?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "A+",
+    "agi": "D",
+    "mana": "B+",
+    "luck": "EX",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2113,
+      "name": "king"
+    },
+    {
+      "id": 2114,
+      "name": "greekMythologyMales"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 403800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 88451,
+        "name": "기승 B+",
+        "rank": null
+      },
+      {
+        "id": 721450,
+        "name": "전령신의 가호 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 722452,
+        "name": "지장의 번뜩임 B++",
+        "rank": null
+      },
+      {
+        "id": 723550,
+        "name": "일의전심(사랑) A",
+        "rank": null
+      },
+      {
+        "id": 724550,
+        "name": "신체결계 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 403801,
+      "name": "종언의 대목마",
+      "ruby": "트로이아 히포스",
+      "rank": "B++",
+      "type": "대국보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4038000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/403800/403800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/403800/403800b@2.png"
+  }
+}

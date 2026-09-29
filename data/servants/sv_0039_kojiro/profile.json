@@ -16,6 +16,12 @@
   "alignment_detail": "중립·악",
   "alignment_verified": false,
   "temperament": "assassin",
+  "reaction_overrides": {
+    "encounter_fight": 2,
+    "encounter_flee": -2,
+    "danger_fight": 2,
+    "weakness": 0
+  },
   "noble_phantasm": {
     "name_ko": "츠바메가에시",
     "ruby_ko": "제비반전베기",
@@ -28,5 +34,5 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/600100/600100b@2.png"
   },
   "sprite_id": null,
-  "notes": "레거시 servants-ko.json id 39에서 생성. alignment는 원작 설정 기준 AI 입력값 (Atlas로 검증 필요). temperament는 레거시 servantPersonality.ts를 ID가 아닌 이름으로 맞춘 값. images: Atlas Academy KR (face=맵 아이콘, summon=기본 재림 전신, final=최종 재림 전신, Q-134)."
+  "notes": "레거시 servants-ko.json id 39에서 생성. alignment는 원작 설정 기준 AI 입력값 (Atlas로 검증 필요). temperament는 레거시 servantPersonality.ts를 ID가 아닌 이름으로 맞춘 값. images: Atlas Academy KR (face=맵 아이콘, summon=기본 재림 전신, final=최종 재림 전신, Q-134). reaction_overrides: 성격은 assassin이지만 정면 승부를 즐기는 검사라 조우 전투·계속 싸움을 좋아한다 (D-150 예시, 사용자 검수 대상)."
 }

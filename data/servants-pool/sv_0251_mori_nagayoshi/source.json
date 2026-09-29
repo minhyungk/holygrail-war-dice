@@ -1,0 +1,116 @@
+{
+  "servant_id": "sv_0251_mori_nagayoshi",
+  "source_id": 251,
+  "name_ko": "모리 나가요시",
+  "name_en": "Mori Nagayoshi",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/251?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "D",
+    "mana": "E",
+    "luck": "D",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 306,
+      "name": "alignmentMadness"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 703500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54250,
+        "name": "광화 D",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 622450,
+        "name": "정신오염(흉) B",
+        "rank": null
+      },
+      {
+        "id": 623550,
+        "name": "피에 젖은 만용 A",
+        "rank": null
+      },
+      {
+        "id": 624350,
+        "name": "오니 무사시의 유언장 C",
+        "rank": null
+      },
+      {
+        "id": 623551,
+        "name": "피에 젖은 만용 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 703501,
+      "name": "인간무골",
+      "ruby": "인간무골",
+      "rank": "C",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7035000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/703500/703500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/703500/703500b@2.png"
+  }
+}

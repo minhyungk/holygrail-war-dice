@@ -1,0 +1,129 @@
+{
+  "servant_id": "sv_0131_anne_bonny_and_mary_read_archer",
+  "source_id": 131,
+  "name_ko": "앤 보니&메리 리드",
+  "name_en": "Anne Bonny & Mary Read (Archer)",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/131?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "A",
+    "mana": "D",
+    "luck": "A",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 2881,
+      "name": "groupServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 202500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34250,
+        "name": "대 마력 D",
+        "rank": null
+      },
+      {
+        "id": 20550,
+        "name": "단독행동 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 266551,
+        "name": "비치 플라워 A+",
+        "rank": null
+      },
+      {
+        "id": 271350,
+        "name": "트레저 헌트(바다) C",
+        "rank": null
+      },
+      {
+        "id": 51351,
+        "name": "해적의 명예 C+",
+        "rank": null
+      },
+      {
+        "id": 271550,
+        "name": "트레저 헌트(바다) A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 202501,
+      "name": "비익이자 연리",
+      "ruby": "캐리비언 프리 버드 액트 2",
+      "rank": "C++",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2025000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/202500/202500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/202500/202500b@2.png"
+  }
+}

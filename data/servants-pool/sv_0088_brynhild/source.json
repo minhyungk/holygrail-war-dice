@@ -1,0 +1,170 @@
+{
+  "servant_id": "sv_0088_brynhild",
+  "source_id": 88,
+  "name_ko": "브륀힐드",
+  "name_en": "Brynhild",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/88?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B+",
+    "end": "A",
+    "agi": "A",
+    "mana": "C",
+    "luck": "E",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 200,
+      "name": "attributeSky"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2797,
+      "name": "divineSpirit"
+    },
+    {
+      "id": 2837,
+      "name": "valkyrie"
+    },
+    {
+      "id": 2847,
+      "name": "levitating"
+    },
+    {
+      "id": 2851,
+      "name": "servantsWithSkyAttribute"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 301200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 88550,
+        "name": "기승 A",
+        "rank": null
+      },
+      {
+        "id": 62150,
+        "name": "신성 E",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 149450,
+        "name": "마력방출(불꽃) B",
+        "rank": null
+      },
+      {
+        "id": 127005,
+        "name": "원초의 룬",
+        "rank": null
+      },
+      {
+        "id": 157350,
+        "name": "영웅의 하인 C",
+        "rank": null
+      },
+      {
+        "id": 127020,
+        "name": "원초의 룬",
+        "rank": null
+      },
+      {
+        "id": 157352,
+        "name": "영웅의 하인 C++",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 301201,
+      "name": "죽음이 두 사람을 갈라놓을 때까지",
+      "ruby": "브륀힐드 로맨시아",
+      "rank": "B",
+      "type": "대인보구"
+    },
+    {
+      "id": 301202,
+      "name": "죽음이 두 사람을 갈라놓을 때까지",
+      "ruby": "브륀힐드 로맨시아",
+      "rank": "B+",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3012000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/301200/301200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/301200/301200b@2.png"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "servant_id": "sv_0348_zhang_jue",
+  "source_id": 348,
+  "name_ko": "장각",
+  "name_en": "Zhang Jue",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/348?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "D",
+    "mana": "A+",
+    "luck": "A",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 505100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83450,
+        "name": "진지작성 B",
+        "rank": null
+      },
+      {
+        "id": 80450,
+        "name": "도구작성 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2073449,
+        "name": "천공장군 B-",
+        "rank": null
+      },
+      {
+        "id": 2074550,
+        "name": "대현량사 A",
+        "rank": null
+      },
+      {
+        "id": 2075650,
+        "name": "태평요술 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 505101,
+      "name": "창천이사, 황천당립",
+      "ruby": "푸른 하늘은 이미 죽었으니, 누런 하늘이 이제 일어서리라",
+      "rank": "A",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5051000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/505100/505100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/505100/505100b@2.png"
+  }
+}

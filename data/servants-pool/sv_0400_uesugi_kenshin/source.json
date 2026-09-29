@@ -1,0 +1,142 @@
+{
+  "servant_id": "sv_0400_uesugi_kenshin",
+  "source_id": 400,
+  "name_ko": "우에스기 켄신",
+  "name_en": "Uesugi Kenshin",
+  "class": "ruler",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/400?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "A",
+    "mana": "B",
+    "luck": "C",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 108,
+      "name": "classRuler"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2000,
+      "name": "divine"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2040,
+      "name": "divineOrDemonOrUndead"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 901800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 88550,
+        "name": "기승 A",
+        "rank": null
+      },
+      {
+        "id": 62550,
+        "name": "신성 A",
+        "rank": null
+      },
+      {
+        "id": 2291450,
+        "name": "보재심 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2292550,
+        "name": "운은 하늘에, 갑옷은 가슴에, 공적은 다리에 A",
+        "rank": null
+      },
+      {
+        "id": 2293550,
+        "name": "하얀 불꽃 A",
+        "rank": null
+      },
+      {
+        "id": 2294350,
+        "name": "비천보탑 C",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 901801,
+      "name": "비천팔상・시라누이",
+      "ruby": "비천팔상・시라누이",
+      "rank": "A",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_9018000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/901800/901800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/901800/901800b@2.png"
+  }
+}

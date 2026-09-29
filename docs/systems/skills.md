@@ -22,7 +22,7 @@
 |---|---|---|
 | `hk_day_intel` | 낮 | 정보 수집 굴림 |
 | `hk_day_move` | 낮 | 이동 범위 계산 / 이동 굴림 |
-| `hk_day_craft` | 낮 | 진지 작성 / 아이템 제작 |
+| ~~`hk_day_craft`~~ | 낮 | ~~진지 작성 / 아이템 제작~~ 진지 폐기 (D-146) |
 | `hk_day_mana_supply` | 낮 | 마력 공급 |
 | `hk_day_bond` | 낮 | 서번트 교류 |
 | `hk_enc_sight` | 조우 | 시야 / 발견 판정 |
@@ -52,7 +52,7 @@
 | `resource_change` | resource, amount | 마력/영주/운명점 증감. 구현: 마력 (최대 `mana.max`) |
 
 ## 5. 조건 종류
-**구현 [임시값] (D-142):** `skills.json`의 `when` 객체 (모두 만족해야 발동). `phase`(국면 목록), `role`(attacker/defender), `phase_index`, `self_condition`, `camp`(진지 보정을 받는 중), `escaper`(도주하는 쪽), `foe_dropped`(상대 상태 하락), `would_fall`(위험에서 쓰러지려 함). 아래는 기존 메모.
+**구현 [임시값] (D-142):** `skills.json`의 `when` 객체 (모두 만족해야 발동). `phase`(국면 목록), `role`(attacker/defender), `phase_index`, `self_condition`, `leyline`(영맥 칸에서 싸우는 중, D-146), `escaper`(도주하는 쪽), `foe_dropped`(상대 상태 하락), `would_fall`(위험에서 쓰러지려 함). 아래는 기존 메모.
 시작 7기의 스킬 목록(`content/servants-5th.md` §4)을 정리한 뒤 정한다 (Q-17).
 - `condition_types` 데이터로 관리. **조건은 자유 문장으로 쓰지 않는다.** 종류 + 값.
 - 후보 [제안]: 상태 단계, 굴림 결과(기적), 상대 클래스, 상대 보구 종류, 시간대, 지형, 호감도 단계
@@ -101,7 +101,7 @@
 | 심안(가짜) | 판정 | 선제/회피·즉사/우연 | 자기 +major |
 | 단독행동 | 판정 | — | 자기 음수 호감도 보정 무효 |
 | 기척 차단 | 판정 | 국면 1의 선제/회피 | 자기 +major |
-| 진지작성 | 판정 | 진지 보정을 받는 중 | 자기 +major |
+| 진지작성 | 판정 | 영맥 칸에서 싸우는 중 (D-146) | 자기 +major |
 | 용의 노심 | 판정 | 정면 격돌·보구 격돌 | 자기 +major |
 | 빛나는 길 | 판정 | 자기 상태 위험 | 자기 +major |
 | 심안(진짜) | 판정 | 방어측 | 자기 +major |

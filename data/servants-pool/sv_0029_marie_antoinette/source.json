@@ -1,0 +1,132 @@
+{
+  "servant_id": "sv_0029_marie_antoinette",
+  "source_id": 29,
+  "name_ko": "마리 앙투아네트",
+  "name_en": "Marie Antoinette",
+  "class": "rider",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/29?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "B",
+    "mana": "B",
+    "luck": "B+",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 103,
+      "name": "classRider"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 401700,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34350,
+        "name": "대 마력 C",
+        "rank": null
+      },
+      {
+        "id": 88551,
+        "name": "기승 A+",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 91350,
+        "name": "매혹의 미성 C",
+        "rank": null
+      },
+      {
+        "id": 95550,
+        "name": "아름다운 공주 A",
+        "rank": null
+      },
+      {
+        "id": 61450,
+        "name": "신의 은총 B",
+        "rank": null
+      },
+      {
+        "id": 714451,
+        "name": "왕통의 음색 B+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 401701,
+      "name": "백합의 왕관에 영광이 있으라",
+      "ruby": "기요틴 브레이커",
+      "rank": "A",
+      "type": "대군보구"
+    },
+    {
+      "id": 401702,
+      "name": "백합의 왕관에 영광이 있으라",
+      "ruby": "기요틴 브레이커",
+      "rank": "A+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4017000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/401700/401700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/401700/401700b@2.png"
+  }
+}

@@ -246,3 +246,71 @@ describe('클래스 대사 (§6.1, D-143)', () => {
     expect(line.speaker).toBe(SV.artoria);
   });
 });
+
+describe('전투 외침·선택 반응·약점·역전승 대사 (D-150, D-151)', () => {
+  const said: string[] = [];
+  const heracles: string[] = [];
+  for (let seed = 1; seed <= 60; seed++) {
+    const r = simulateRun({ seed, data: runData(), servantIds: servantIds(), masterIds: masterIds() });
+    const n = new Narrator(data, seed);
+    for (const e of r.log.events) {
+      const b = n.consume(e);
+      for (const l of b?.lines ?? []) {
+        said.push(l.textId);
+        if (l.speaker === SV.heracles) heracles.push(l.textId);
+      }
+    }
+  }
+  const has = (part: string) => said.some((t) => t.includes(part));
+  it('국면 승리·피격 외침(FGO 보이스)과 스킬 외침이 나온다', () => {
+    expect(has('_phase_win_fgo_')).toBe(true);
+    expect(has('_phase_hit_')).toBe(true);
+    expect(has('_skill_')).toBe(true);
+  });
+  it('외침은 확률 슬롯이라 매 국면 나오지는 않는다 (text.slot_chance)', () => {
+    const wins = said.filter((t) => t.includes('_phase_win_')).length;
+    const phases = said.filter((t) => t.includes('_phase_result_')).length;
+    expect(wins).toBeGreaterThan(0);
+    expect(wins).toBeLessThan(phases);
+  });
+  it('선택 반응 대사와 약점 공략 서술이 나온다', () => {
+    expect(has('_react_choice_')).toBe(true);
+    expect(has('tx_common_weakness_')).toBe(true);
+  });
+  it('말하지 않는 헤라클레스는 공통 대사(말)로 떨어지지 않는다', () => {
+    expect(heracles.some((t) => t.startsWith('tx_common_speech_'))).toBe(false);
+  });
+});
+
+describe('역전승 (D-151)', () => {
+  const setup = () => {
+    const log = new EventLog({ day: 2, time: 'night', action: 1 });
+    const fs = (faction: string, sv: string, controller: 'player' | 'ai'): FactionSetup => ({
+      faction, servant_id: sv, master_id: null, controller, tile: 'tl_r2c2', condition: 'full', mana: 0, seals: 3, fate_points: 3, affinity: controller === 'player' ? 35 : null,
+    });
+    log.emit('run_started', [], { seed: 1, player: 'fc_player', summon: 'random', factions: [fs('fc_player', SV.artoria, 'player'), fs('fc_e1', SV.cu, 'ai')] });
+    log.emit('battle_started', ['fc_player', 'fc_e1'], { battle_id: 'bt_001', tile: 'tl_r2c2', terrain: 'urban', is_final: false, ambusher: null, sides: ['fc_player', 'fc_e1'] });
+    return log;
+  };
+  const end = (log: EventLog) =>
+    log.emit('battle_ended', ['fc_player', 'fc_e1'], { battle_id: 'bt_001', result: 'win', winner: 'fc_player', loser: 'fc_e1', dead: 'fc_e1', escaped: null, phases: 3 });
+  it('위험까지 몰렸다가 이기면 역전승 서술과 대사, 평소 승리 대사는 없다', () => {
+    const log = setup();
+    log.emit('condition_changed', ['fc_player'], { battle_id: 'bt_001', faction: 'fc_player', from: 'hurt', to: 'danger' });
+    end(log);
+    const n = new Narrator(data, 3);
+    const beats = log.events.map((e) => n.consume(e));
+    const ids = beats.at(-1)!.lines.map((l) => l.textId);
+    expect(ids.some((t) => t.startsWith('tx_common_comeback_'))).toBe(true);
+    expect(ids.some((t) => t.startsWith(`tx_${SV.artoria}_comeback_`))).toBe(true);
+    expect(ids.some((t) => t.includes('_victory_'))).toBe(false);
+  });
+  it('위험 없이 이기면 평소 승리 대사', () => {
+    const log = setup();
+    end(log);
+    const n = new Narrator(data, 3);
+    const ids = log.events.map((e) => n.consume(e)).at(-1)!.lines.map((l) => l.textId);
+    expect(ids.some((t) => t.includes('_comeback_'))).toBe(false);
+    expect(ids.some((t) => t.includes('_victory_'))).toBe(true);
+  });
+});

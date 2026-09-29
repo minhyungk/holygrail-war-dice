@@ -1,0 +1,123 @@
+{
+  "servant_id": "sv_0102_li_shuwen",
+  "source_id": 102,
+  "name_ko": "이서문",
+  "name_en": "Li Shuwen",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/102?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "A",
+    "mana": "E",
+    "luck": "E",
+    "np": "None"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 301700,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34250,
+        "name": "대 마력 D",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 187553,
+        "name": "중국 무술(육합대창) A+++",
+        "rank": null
+      },
+      {
+        "id": 188450,
+        "name": "권경 B",
+        "rank": null
+      },
+      {
+        "id": 189450,
+        "name": "절초 B",
+        "rank": null
+      },
+      {
+        "id": 189452,
+        "name": "절초 B++",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 301701,
+      "name": "신창 무이타",
+      "ruby": "신창 무이타",
+      "rank": "-",
+      "type": "대인보구"
+    },
+    {
+      "id": 301702,
+      "name": "신창 무이타",
+      "ruby": "신창 무이타",
+      "rank": "-",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3017000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/301700/301700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/301700/301700b@2.png"
+  }
+}

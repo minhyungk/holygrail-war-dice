@@ -1,0 +1,133 @@
+{
+  "servant_id": "sv_0103_thomas_edison",
+  "source_id": 103,
+  "name_ko": "토머스 에디슨",
+  "name_en": "Thomas Edison",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/103?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "EX",
+    "agi": "E",
+    "mana": "EX",
+    "luck": "A",
+    "np": "EX"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 502500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83900,
+        "name": "진지작성 EX(D 상당)",
+        "rank": null
+      },
+      {
+        "id": 80900,
+        "name": "도구작성 EX(D 상당)",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 25350,
+        "name": "변화 C",
+        "rank": null
+      },
+      {
+        "id": 190550,
+        "name": "대량생산 A",
+        "rank": null
+      },
+      {
+        "id": 191551,
+        "name": "개념 개량 A+",
+        "rank": null
+      },
+      {
+        "id": 581550,
+        "name": "멘로파크의 마술사 A",
+        "rank": null
+      },
+      {
+        "id": 190551,
+        "name": "대량생산 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 502501,
+      "name": "Ｗ·F·D",
+      "ruby": "월드 페이스 도미네이션",
+      "rank": "EX",
+      "type": "대민보구"
+    },
+    {
+      "id": 502502,
+      "name": "Ｗ·F·D",
+      "ruby": "월드 페이스 도미네이션",
+      "rank": "EX",
+      "type": "대민보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5025000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/502500/502500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/502500/502500b@2.png"
+  }
+}

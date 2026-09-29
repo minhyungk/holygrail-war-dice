@@ -1,0 +1,121 @@
+{
+  "servant_id": "sv_0399_saika_magoichi",
+  "source_id": 399,
+  "name_ko": "사이카 마고이치",
+  "name_en": "Saika Magoichi",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/399?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "D",
+    "agi": "B",
+    "mana": "D",
+    "luck": "C",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 205200,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34250,
+        "name": "대 마력 D",
+        "rank": null
+      },
+      {
+        "id": 20550,
+        "name": "단독행동 A",
+        "rank": null
+      },
+      {
+        "id": 2304250,
+        "name": "도구작성(총) D",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2300450,
+        "name": "야타가라스의 눈 B",
+        "rank": null
+      },
+      {
+        "id": 2301550,
+        "name": "사이카류 거합총술 A",
+        "rank": null
+      },
+      {
+        "id": 2302450,
+        "name": "반딧불 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 205201,
+      "name": "총신・야타가라스",
+      "ruby": "총신・야타가라스",
+      "rank": "C",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2052000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/205200/205200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/205200/205200b@2.png"
+  }
+}

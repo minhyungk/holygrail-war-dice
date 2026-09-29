@@ -1,0 +1,145 @@
+{
+  "servant_id": "sv_0270_astolfo_saber",
+  "source_id": 270,
+  "name_ko": "아스톨포",
+  "name_en": "Astolfo (Saber)",
+  "class": "saber",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/270?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C+",
+    "end": "C",
+    "agi": "A",
+    "mana": "B",
+    "luck": "A++",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 3,
+      "name": "genderUnknown"
+    },
+    {
+      "id": 100,
+      "name": "classSaber"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2009,
+      "name": "riding"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2075,
+      "name": "saberClassServant"
+    },
+    {
+      "id": 2356,
+      "name": "feminineLookingServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 2919,
+      "name": "bunnyServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 104100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 88550,
+        "name": "기승 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 692350,
+        "name": "파각선언 C",
+        "rank": null
+      },
+      {
+        "id": 693350,
+        "name": "공황을 불러일으키는 마적 C",
+        "rank": null
+      },
+      {
+        "id": 694650,
+        "name": "위풍당당한 개선 EX",
+        "rank": null
+      },
+      {
+        "id": 893451,
+        "name": "파각선언(강) B+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 104101,
+      "name": "요행의 구인망",
+      "ruby": "불카노 칼리고란테",
+      "rank": "B",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1041000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/104100/104100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/104100/104100b@2.png"
+  }
+}

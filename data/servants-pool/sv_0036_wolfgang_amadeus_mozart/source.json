@@ -1,0 +1,116 @@
+{
+  "servant_id": "sv_0036_wolfgang_amadeus_mozart",
+  "source_id": 36,
+  "name_ko": "볼프강 아마데우스 모차르트",
+  "name_en": "Wolfgang Amadeus Mozart",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/36?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "E",
+    "agi": "B",
+    "mana": "B+",
+    "luck": "D",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 203,
+      "name": "attributeStar"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 401,
+      "name": "oneStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 501500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83450,
+        "name": "진지작성 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 84650,
+        "name": "음악신의 가호(가짜) EX",
+        "rank": null
+      },
+      {
+        "id": 74450,
+        "name": "예술심미 B",
+        "rank": null
+      },
+      {
+        "id": 253650,
+        "name": "소야곡 EX",
+        "rank": null
+      },
+      {
+        "id": 910550,
+        "name": "천사의 선율 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 501501,
+      "name": "사신을 위한 장송곡",
+      "ruby": "레퀴엠 포 데스",
+      "rank": "B",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5015000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/501500/501500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/501500/501500b@2.png"
+  }
+}

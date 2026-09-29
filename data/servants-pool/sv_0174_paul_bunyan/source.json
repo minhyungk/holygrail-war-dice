@@ -1,0 +1,142 @@
+{
+  "servant_id": "sv_0174_paul_bunyan",
+  "source_id": 174,
+  "name_ko": "폴 버니언",
+  "name_en": "Paul Bunyan",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/174?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "A",
+    "agi": "C",
+    "mana": "E",
+    "luck": "E",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 401,
+      "name": "oneStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2666,
+      "name": "giant"
+    },
+    {
+      "id": 2667,
+      "name": "childServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2810,
+      "name": "fairyTaleServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 702800,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54250,
+        "name": "광화 D",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 375550,
+        "name": "유쾌한 동료들 A",
+        "rank": null
+      },
+      {
+        "id": 376550,
+        "name": "콩 수프 호수 A",
+        "rank": null
+      },
+      {
+        "id": 377450,
+        "name": "팝콘 눈보라 B",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 702801,
+      "name": "놀랄 만한 위업",
+      "ruby": "마블러스 익스플로이츠",
+      "rank": "A",
+      "type": "대군보구"
+    },
+    {
+      "id": 702802,
+      "name": "놀랄 만한 위업",
+      "ruby": "마블러스 익스플로이츠",
+      "rank": "A+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7028000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/702800/702800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/702800/702800b@2.png"
+  }
+}

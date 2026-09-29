@@ -39,7 +39,9 @@
 | 관계 | 명령 거부, 배신, 배신 저지 | |
 | 적 마스터 | 조우, 전투 중, 영주 사용, 처치당할 때, 탈락 (`master_*`, `content/masters.md` §4) | |
 - 서번트당 필수 태그와 최소 대사 수(검증 기준): [TBD]
-- 시작 7기 데이터에서 임시로 쓰는 태그 ID: `summon`, `battle_start`, `np_open`, `victory`, `defeat`, `draw`, `crisis`, `seal_use`, `execute`, `release`, `intel`, `day_bond` (Q-50 확정 전 임시)
+- 시작 7기 데이터에서 임시로 쓰는 태그 ID: `summon`, `battle_start`, `np_open`, `victory`, `defeat`, `draw`, `crisis`, `seal_use`, `execute`, `release`, `intel`, `day_bond`, `day_bond_fail`, `mana_supply` (Q-50 확정 전 임시)
+- D-151로 추가한 태그 (모두 플레이어 서번트의 말): `phase_win`(국면 승리 외침, FGO 공격 보이스), `phase_hit`(피격, FGO 대미지 보이스), `skill`(스킬 발동 외침), `comeback`(역전승), `weakness`(약점 공략), `intel_battle`(결판 없는 전투로 얻은 정보), `react_choice`(선택 반응, D-150). 적의 외침은 넣지 않는다: 보구·스킬 이름이 진명을 드러낼 수 있다
+- FGO 보이스 자동 수집: `scripts/fetch-voices.mjs` (D-151). 인연 Lv.1~2 → 중립 이상, Lv.3 → 호감 이상, Lv.4~5 → 충성에서만 나온다
 
 ### 3.5 VN 타이핑 출력
 - 규격: `03-ui-style.md` §6

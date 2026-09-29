@@ -1,0 +1,140 @@
+{
+  "servant_id": "sv_0255_paris",
+  "source_id": 255,
+  "name_ko": "파리스",
+  "name_en": "Paris",
+  "class": "archer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/255?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "B",
+    "mana": "B+",
+    "luck": "A",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 102,
+      "name": "classArcher"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 302,
+      "name": "alignmentNeutral"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 402,
+      "name": "twoStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2114,
+      "name": "greekMythologyMales"
+    },
+    {
+      "id": 2466,
+      "name": "associatedToTheArgo"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2667,
+      "name": "childServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 203500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34450,
+        "name": "대 마력 B",
+        "rank": null
+      },
+      {
+        "id": 20650,
+        "name": "단독행동 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 635451,
+        "name": "태양신의 눈(가짜) B+",
+        "rank": null
+      },
+      {
+        "id": 636450,
+        "name": "남신의 총애 B",
+        "rank": null
+      },
+      {
+        "id": 637650,
+        "name": "불화를 일으키는 황금 사과 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 203501,
+      "name": "눈부시게 빛나는 종천의 화살",
+      "ruby": "트로이아 베로스",
+      "rank": "A",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2035000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/203500/203500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/203500/203500b@2.png"
+  }
+}

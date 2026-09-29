@@ -1,0 +1,145 @@
+{
+  "servant_id": "sv_0134_kiyohime_lancer",
+  "source_id": 134,
+  "name_ko": "키요히메",
+  "name_en": "Kiyohime (Lancer)",
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/134?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "B",
+    "mana": "E",
+    "luck": "A+",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 404,
+      "name": "fourStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1110,
+      "name": "lamia"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2002,
+      "name": "dragon"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2667,
+      "name": "childServant"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 302500,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 54650,
+        "name": "광화 EX",
+        "rank": null
+      },
+      {
+        "id": 34250,
+        "name": "대 마력 D",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 280550,
+        "name": "정열의 한여름 A",
+        "rank": null
+      },
+      {
+        "id": 281550,
+        "name": "수욕전신 A",
+        "rank": null
+      },
+      {
+        "id": 282550,
+        "name": "사랑의 추적자 A",
+        "rank": null
+      },
+      {
+        "id": 280551,
+        "name": "정열의 한여름 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 302501,
+      "name": "도성사종백팔식화룡치",
+      "ruby": "도성사종백팔식화룡치",
+      "rank": "A",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3025000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/302500/302500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/302500/302500b@2.png"
+  }
+}

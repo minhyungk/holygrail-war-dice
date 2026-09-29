@@ -1,0 +1,143 @@
+{
+  "servant_id": "sv_0353_lady_avalon",
+  "source_id": 353,
+  "name_ko": "레이디 아발론",
+  "name_en": "Lady Avalon",
+  "class": "pretender",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/353?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "C",
+    "mana": "A++",
+    "luck": "A",
+    "np": "A"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 120,
+      "name": "classPretender"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2795,
+      "name": "knightsOfTheRound"
+    },
+    {
+      "id": 2838,
+      "name": "summerModeServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 2800300,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83250,
+        "name": "진지작성 D",
+        "rank": null
+      },
+      {
+        "id": 80551,
+        "name": "도구작성 A+",
+        "rank": null
+      },
+      {
+        "id": 320650,
+        "name": "혼혈 EX",
+        "rank": null
+      },
+      {
+        "id": 2107650,
+        "name": "고속영창(요) EX",
+        "rank": null
+      },
+      {
+        "id": 161550,
+        "name": "단독현현 A",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2104450,
+        "name": "그 손에 빛을 B",
+        "rank": null
+      },
+      {
+        "id": 2105250,
+        "name": "여름밤에 피는 꽃 D",
+        "rank": null
+      },
+      {
+        "id": 2106650,
+        "name": "몽마의 곁 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 2800301,
+      "name": "저 너머로 손짓하는 이상향",
+      "ruby": "윈즈 오브 아발론",
+      "rank": "A",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_28003000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/2800300/2800300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/2800300/2800300b@2.png"
+  }
+}

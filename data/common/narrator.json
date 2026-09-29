@@ -1203,6 +1203,54 @@
         "text": "중앙 공원. 모여든 기척들 사이로, 누구도 먼저 입을 열지 않는다. 이제 남은 것은 단 하나의 결말뿐.",
         "slot": "tail"
       }
+    ],
+    "weakness": [
+      {
+        "id": "clash",
+        "when": {
+          "event.phase_id": "ph_clash"
+        },
+        "text": "정면. 힘과 힘이 맞붙는 자리야말로, {enemy}의 전설이 가장 얇아지는 곳이다.",
+        "slot": "lead"
+      },
+      {
+        "id": "initiative",
+        "when": {
+          "event.phase_id": "ph_initiative"
+        },
+        "text": "속도. {enemy}{이/가} 한 박자 늦는 순간을──{servant}{은/는}, 이미 알고 있다.",
+        "slot": "lead"
+      },
+      {
+        "id": "sorcery",
+        "when": {
+          "event.phase_id": "ph_sorcery"
+        },
+        "text": "술식. 신비의 결이 가장 성긴 곳으로, {servant}{이/가} 싸움을 끌고 간다.",
+        "slot": "lead"
+      },
+      {
+        "id": "base",
+        "text": "진명은 곧 약점이다. 전설이 끝난 자리를 아는 자는, 그 끝을 다시 불러낼 수 있다.",
+        "slot": "lead"
+      }
+    ],
+    "comeback": [
+      {
+        "id": "base_01",
+        "text": "──쓰러졌어야 했다. 누구의 눈에도, 승부는 이미 끝나 있었다. 그런데도 마지막에 서 있는 것은──{servant}.",
+        "slot": "react"
+      },
+      {
+        "id": "base_02",
+        "text": "부서지기 직전의 영기가, 한 번 더 빛났다. 그 한 번이, 전부를 뒤집었다.",
+        "slot": "react"
+      },
+      {
+        "id": "base_03",
+        "text": "벼랑 끝에서 내민 한 수. ──기적이라 부르기엔, 너무도 필사적인 일격이었다.",
+        "slot": "react"
+      }
     ]
   }
 }

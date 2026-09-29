@@ -1,0 +1,136 @@
+{
+  "servant_id": "sv_0079_paracelsus_von_hohenheim",
+  "source_id": 79,
+  "name_ko": "반 호엔하임 파라켈수스",
+  "name_en": "Paracelsus von Hohenheim",
+  "class": "caster",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/79?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "D",
+    "end": "E",
+    "agi": "C",
+    "mana": "A",
+    "luck": "B",
+    "np": "A+"
+  },
+  "traits": [
+    {
+      "id": 1,
+      "name": "genderMale"
+    },
+    {
+      "id": 104,
+      "name": "classCaster"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 403,
+      "name": "threeStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2012,
+      "name": "brynhildsBeloved"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2780,
+      "name": "hasCostume"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 501000,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 83550,
+        "name": "진지작성 A",
+        "rank": null
+      },
+      {
+        "id": 80650,
+        "name": "도구작성 EX",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 90550,
+        "name": "고속영창 A",
+        "rank": null
+      },
+      {
+        "id": 143551,
+        "name": "엘리멘탈 A+",
+        "rank": null
+      },
+      {
+        "id": 144550,
+        "name": "현자의 돌 A",
+        "rank": null
+      },
+      {
+        "id": 144551,
+        "name": "현자의 돌 A+",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 501001,
+      "name": "원소술사의 마검",
+      "ruby": "소드 오브 파라켈수스",
+      "rank": "A+",
+      "type": "대군보구"
+    },
+    {
+      "id": 501002,
+      "name": "원소술사의 마검",
+      "ruby": "소드 오브 파라켈수스",
+      "rank": "A+",
+      "type": "대군보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5010000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/501000/501000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/501000/501000b@2.png"
+  }
+}

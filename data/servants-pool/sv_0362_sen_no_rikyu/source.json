@@ -1,0 +1,130 @@
+{
+  "servant_id": "sv_0362_sen_no_rikyu",
+  "source_id": 362,
+  "name_ko": "센노 리큐",
+  "name_en": "Sen-no-Rikyu",
+  "class": "berserker",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/362?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C+",
+    "end": "C",
+    "agi": "C",
+    "mana": "B",
+    "luck": "B-",
+    "np": "C"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 106,
+      "name": "classBerserker"
+    },
+    {
+      "id": 202,
+      "name": "attributeHuman"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 304,
+      "name": "alignmentEvil"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2631,
+      "name": "hominidaeServant"
+    },
+    {
+      "id": 2847,
+      "name": "levitating"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 704400,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 2126650,
+        "name": "광화(아취) EX",
+        "rank": null
+      },
+      {
+        "id": 2127550,
+        "name": "진지작성(정취) A",
+        "rank": null
+      },
+      {
+        "id": 2140550,
+        "name": "예술심미(차) A",
+        "rank": null
+      },
+      {
+        "id": 2141450,
+        "name": "융통무애 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2129549,
+        "name": "수수한 멋의 극 A-",
+        "rank": null
+      },
+      {
+        "id": 2130450,
+        "name": "한 송이 꽃 B",
+        "rank": null
+      },
+      {
+        "id": 2131550,
+        "name": "유현한 흑색 A",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 704401,
+      "name": "일기일회",
+      "ruby": "일기일회",
+      "rank": "C",
+      "type": "결계보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7044000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/704400/704400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/704400/704400b@2.png"
+  }
+}

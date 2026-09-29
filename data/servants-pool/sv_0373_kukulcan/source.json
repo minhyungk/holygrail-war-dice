@@ -1,0 +1,112 @@
+{
+  "servant_id": "sv_0373_kukulcan",
+  "source_id": 373,
+  "name_ko": "쿠쿨칸",
+  "name_en": "Kukulcan",
+  "class": "foreigner",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/373?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "B",
+    "mana": "EX",
+    "luck": "A",
+    "np": "B++"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 117,
+      "name": "classForeigner"
+    },
+    {
+      "id": 203,
+      "name": "attributeStar"
+    },
+    {
+      "id": 300,
+      "name": "alignmentLawful"
+    },
+    {
+      "id": 303,
+      "name": "alignmentGood"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2835,
+      "name": "immuneToPigify"
+    },
+    {
+      "id": 2924,
+      "name": "canFlyInSpace"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 2501100,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 2187650,
+        "name": "문명작성 EX",
+        "rank": null
+      },
+      {
+        "id": 2188000,
+        "name": "???",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2189551,
+        "name": "비취의 카리스마 A+",
+        "rank": null
+      },
+      {
+        "id": 2190650,
+        "name": "우리, 날개 달린 뱀 EX",
+        "rank": null
+      },
+      {
+        "id": 2191650,
+        "name": "황금수해기행 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 2501101,
+      "name": "별, 우주에서 떨어지다",
+      "ruby": "키니치 아하우 임팩트",
+      "rank": "EX",
+      "type": "대계보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_25011000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/2501100/2501100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/2501100/2501100b@2.png"
+  }
+}

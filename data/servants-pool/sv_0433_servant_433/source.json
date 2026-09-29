@@ -1,0 +1,150 @@
+{
+  "servant_id": "sv_0433_servant_433",
+  "source_id": 433,
+  "name_ko": "비쇼네",
+  "name_en": null,
+  "class": "lancer",
+  "atlas_url": "https://api.atlasacademy.io/nice/KR/servant/433?lore=true",
+  "source": "Atlas Academy KR nice API",
+  "ranks": {
+    "str": "A",
+    "end": "B",
+    "agi": "C",
+    "mana": "A",
+    "luck": "D",
+    "np": "B"
+  },
+  "traits": [
+    {
+      "id": 2,
+      "name": "genderFemale"
+    },
+    {
+      "id": 101,
+      "name": "classLancer"
+    },
+    {
+      "id": 201,
+      "name": "attributeEarth"
+    },
+    {
+      "id": 301,
+      "name": "alignmentChaotic"
+    },
+    {
+      "id": 305,
+      "name": "alignmentBalanced"
+    },
+    {
+      "id": 405,
+      "name": "fiveStarServant"
+    },
+    {
+      "id": 1000,
+      "name": "servant"
+    },
+    {
+      "id": 1110,
+      "name": "lamia"
+    },
+    {
+      "id": 2001,
+      "name": "humanoid"
+    },
+    {
+      "id": 2002,
+      "name": "dragon"
+    },
+    {
+      "id": 2008,
+      "name": "weakToEnumaElish"
+    },
+    {
+      "id": 2011,
+      "name": "skyOrEarthServant"
+    },
+    {
+      "id": 2019,
+      "name": "demonic"
+    },
+    {
+      "id": 2037,
+      "name": "skyOrEarthExceptPseudoAndDemiServant"
+    },
+    {
+      "id": 2632,
+      "name": "demonicBeastServant"
+    },
+    {
+      "id": 2821,
+      "name": "havingAnimalsCharacteristics"
+    },
+    {
+      "id": 2858,
+      "name": "standardClassServant"
+    },
+    {
+      "id": 5000,
+      "name": "canBeInBattle"
+    },
+    {
+      "id": 305700,
+      "name": "unknown"
+    }
+  ],
+  "skills": {
+    "class_passive": [
+      {
+        "id": 34550,
+        "name": "대 마력 A",
+        "rank": null
+      },
+      {
+        "id": 50450,
+        "name": "기척 차단 B",
+        "rank": null
+      },
+      {
+        "id": 20350,
+        "name": "단독행동 C",
+        "rank": null
+      },
+      {
+        "id": 809450,
+        "name": "용종 B",
+        "rank": null
+      }
+    ],
+    "personal": [
+      {
+        "id": 2456550,
+        "name": "유독의 환상 A",
+        "rank": null
+      },
+      {
+        "id": 2457450,
+        "name": "마력방출(용) B",
+        "rank": null
+      },
+      {
+        "id": 2458650,
+        "name": "문장의 뱀 EX",
+        "rank": null
+      }
+    ]
+  },
+  "noble_phantasms": [
+    {
+      "id": 305701,
+      "name": "미란사룡・문장교합",
+      "ruby": "비스콘티・아센차",
+      "rank": "B",
+      "type": "대인보구"
+    }
+  ],
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3057000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/305700/305700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/305700/305700b@2.png"
+  }
+}

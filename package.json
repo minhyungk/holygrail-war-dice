@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
+    "prepare:servants": "node scripts/prepare-servants.mjs",
     "typecheck": "tsc --noEmit",
     "sim:battle": "SIM_REPORT=1 vitest run src/engine/sim.test.ts --disableConsoleIntercept"
   },

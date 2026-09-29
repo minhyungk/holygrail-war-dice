@@ -303,19 +303,19 @@
     },
     {
       "key": "day.actions_day",
-      "value": 3,
+      "value": 1,
       "unit": "회",
       "doc_ref": "day-loop.md §3",
       "status": "확정",
-      "note": "D-048"
+      "note": "D-145 (D-048 대체). 낮은 메뉴 1회"
     },
     {
       "key": "day.actions_night",
-      "value": 3,
+      "value": 2,
       "unit": "회",
       "doc_ref": "day-loop.md §3",
       "status": "확정",
-      "note": "D-048"
+      "note": "D-145 (D-048 대체)"
     },
     {
       "key": "day.move_base",
@@ -352,14 +352,14 @@
       "key": "day.intel_mod",
       "value": [
         0,
+        0,
         1,
-        2,
-        3
+        2
       ],
       "unit": "보정",
       "doc_ref": "day-loop.md §4.3",
       "status": "확정",
-      "note": "정보 단계별 그 진영과의 판정 보정 (D-049)"
+      "note": "D-147. 클래스(1단계)는 보정 없음, 스테이터스 +1, 진명 +2"
     },
     {
       "key": "day.intel_dc",
@@ -383,20 +383,16 @@
       "note": "D-138. 2d6 전환"
     },
     {
-      "key": "day.craft_dc",
-      "value": 12,
-      "unit": "판정값",
-      "doc_ref": "day-loop.md §13",
+      "key": "day.role_bonus",
+      "value": {
+        "intel": 2,
+        "bond": 2,
+        "leyline": 2
+      },
+      "unit": "판정",
+      "doc_ref": "day-loop.md §4.1",
       "status": "임시값",
-      "note": "D-138. 2d6 전환"
-    },
-    {
-      "key": "day.camp_bonus",
-      "value": 2,
-      "unit": "보정",
-      "doc_ref": "day-loop.md §13",
-      "status": "임시값",
-      "note": "진지 타일에서 벌어진 전투의 플레이어 판정 보정 (D-109)"
+      "note": "D-145. 밤을 마친 칸의 역할 보너스: 정보 → 정보 수집, 교류 → 교류, 영맥 → 아침 마력 공급"
     },
     {
       "key": "day.ambush_margin",
@@ -554,6 +550,87 @@
       "note": "선: 방면 +, 처치 -. 악: 반대. 중립: 0 (D-109)"
     },
     {
+      "key": "affinity.reaction",
+      "value": {
+        "cheerful": {
+          "encounter_fight": 2,
+          "encounter_flee": -1,
+          "danger_fight": 2,
+          "danger_seal": 0,
+          "danger_run": -1,
+          "np_open": 2,
+          "weakness": 1
+        },
+        "saint": {
+          "encounter_fight": 0,
+          "encounter_flee": 1,
+          "danger_fight": -1,
+          "danger_seal": 2,
+          "danger_run": 1,
+          "np_open": 1,
+          "weakness": 0
+        },
+        "tsundere": {
+          "encounter_fight": 1,
+          "encounter_flee": -1,
+          "danger_fight": 2,
+          "danger_seal": -1,
+          "danger_run": -2,
+          "np_open": 2,
+          "weakness": 1
+        },
+        "cool": {
+          "encounter_fight": 1,
+          "encounter_flee": 0,
+          "danger_fight": 0,
+          "danger_seal": 1,
+          "danger_run": 1,
+          "np_open": 1,
+          "weakness": 2
+        },
+        "royal": {
+          "encounter_fight": 2,
+          "encounter_flee": -2,
+          "danger_fight": 3,
+          "danger_seal": -1,
+          "danger_run": -3,
+          "np_open": 2,
+          "weakness": -1
+        },
+        "berserker": {
+          "encounter_fight": 3,
+          "encounter_flee": -3,
+          "danger_fight": 3,
+          "danger_seal": -2,
+          "danger_run": -3,
+          "np_open": 3,
+          "weakness": 0
+        },
+        "avenger": {
+          "encounter_fight": 2,
+          "encounter_flee": -1,
+          "danger_fight": 2,
+          "danger_seal": -1,
+          "danger_run": -2,
+          "np_open": 3,
+          "weakness": 2
+        },
+        "assassin": {
+          "encounter_fight": -1,
+          "encounter_flee": 2,
+          "danger_fight": -1,
+          "danger_seal": 2,
+          "danger_run": 2,
+          "np_open": 1,
+          "weakness": 3
+        }
+      },
+      "unit": "호감도",
+      "doc_ref": "affinity.md §3.6",
+      "status": "임시값",
+      "note": "D-150. 플레이어 선택에 대한 성격별 반응. 성격 계수를 곱하지 않는다. 서번트 예외는 profile.reaction_overrides"
+    },
+    {
       "key": "mana.supply_result",
       "value": [
         {
@@ -599,14 +676,14 @@
       "key": "ai.accept",
       "value": {
         "aggressive": 1,
-        "proud": 0.8,
-        "cautious": 0.4,
-        "cunning": 0.2
+        "proud": 0.9,
+        "cautious": 0.6,
+        "cunning": 0.4
       },
       "unit": "확률",
       "doc_ref": "masters.md §2",
       "status": "임시값",
-      "note": "조우 시 전투 수락. 교활은 예상 승률이 ai.cunning_win_rate 이상이면 항상 수락, 아니면 이 값 (D-109)"
+      "note": "D-149 시뮬 튜닝 (기존 1/0.8/0.4/0.2)"
     },
     {
       "key": "ai.cunning_win_rate",
@@ -655,6 +732,18 @@
       "doc_ref": "narrative-engine.md §8.5",
       "status": "임시값",
       "note": "D-071"
+    },
+    {
+      "key": "text.slot_chance",
+      "value": {
+        "self_phase_win": 0.7,
+        "self_phase_hit": 0.7,
+        "self_skill": 0.35
+      },
+      "unit": "확률",
+      "doc_ref": "narrative-engine.md §8.2",
+      "status": "임시값",
+      "note": "D-151. beats.json 슬롯의 chance 이름 → 그 슬롯을 쓸 확률 (서술 RNG). 짧은 외침이 매 국면 나오지 않게"
     },
     {
       "key": "text.small_margin",
@@ -754,16 +843,40 @@
     {
       "key": "ai.retreat_chance",
       "value": {
-        "aggressive": 0.1,
-        "proud": 0.4,
-        "cautious": 0.9,
-        "cunning": 0.3,
-        "cunning_behind": 0.9
+        "aggressive": 0.05,
+        "proud": 0.2,
+        "cautious": 0.5,
+        "cunning": 0.15,
+        "cunning_behind": 0.5
       },
       "unit": "확률",
       "doc_ref": "combat.md §3.4",
       "status": "임시값",
-      "note": "적 AI가 위험에 들어설 때 퇴각할 확률 (마스터 성향별). 교활은 상대보다 상태가 나쁘면 cunning_behind (D-134)"
+      "note": "D-149 시뮬 튜닝 (기존 0.1/0.4/0.9/0.3/0.9). 위험 진입 시 퇴각 확률"
+    },
+    {
+      "key": "ai.seal_retreat_max",
+      "value": 1,
+      "unit": "회",
+      "doc_ref": "day-loop.md §7",
+      "status": "임시값",
+      "note": "D-149. 적 AI 진영당 판 전체에서 영주로 퇴각할 수 있는 횟수. 이후 퇴각은 일반 도주"
+    },
+    {
+      "key": "ai.hunt_from_day",
+      "value": 3,
+      "unit": "일차",
+      "doc_ref": "day-loop.md §7",
+      "status": "임시값",
+      "note": "D-149. 이 일차부터 적 AI가 가장 가까운 진영 쪽으로 이동"
+    },
+    {
+      "key": "ai.hunt_chance",
+      "value": 0.6,
+      "unit": "확률",
+      "doc_ref": "day-loop.md §7",
+      "status": "임시값",
+      "note": "D-149. 추적 일차 이후 한 행동에서 추적 이동할 확률 (나머지는 무작위 이동)"
     },
     {
       "key": "text.vn_keep",
