@@ -50,17 +50,17 @@ function repeatOk(c: Candidate, mem: Memory): boolean {
 }
 
 /**
- * §6: 조건을 전부 만족하는 후보 → 점수(조건 수) 최고 → 같은 점수면 서번트 > 클래스 > 공통 →
- * 반복 규칙 제외 → 직전 대사 제외 → 가중치 추첨. 후보가 없으면 null.
+ * §6: 조건을 전부 만족하고 반복 규칙을 통과한 후보 → 가장 구체적인 계층(서번트 > 클래스 > 공통, D-144) →
+ * 그 안에서 점수(조건 수) 최고 → 직전 대사 제외 → 가중치 추첨. 후보가 없으면 null.
  */
 export function pick(cands: readonly Candidate[], facts: Facts, mem: Memory, rng: Rng, poolKey: string): Candidate | null {
   const ok = cands.filter((c) => !c.line.text.includes('[[PLACEHOLDER') && whenOk(c.line.when, facts) && repeatOk(c, mem));
   if (!ok.length) return null;
+  const layer = Math.min(...ok.map((c) => c.layer));
+  const inLayer = ok.filter((c) => c.layer === layer);
   const score = (c: Candidate) => Object.keys(c.line.when ?? {}).length;
-  const top = Math.max(...ok.map(score));
-  let best = ok.filter((c) => score(c) === top);
-  const layer = Math.min(...best.map((c) => c.layer));
-  best = best.filter((c) => c.layer === layer);
+  const top = Math.max(...inLayer.map(score));
+  let best = inLayer.filter((c) => score(c) === top);
   const last = mem.lastInPool.get(poolKey);
   if (best.length > 1 && last) best = best.filter((c) => c.textId !== last);
   const chosen = best[rng.weighted(best.map((c) => c.line.weight ?? 1))]!;

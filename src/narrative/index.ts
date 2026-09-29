@@ -414,7 +414,8 @@ export class Narrator {
   private candidates(owner: string, tag: string, narration: boolean): Candidate[] {
     const out = [...(this.lines.get(`${narration ? `narrator@${owner}` : owner}|${tag}`) ?? [])];
     const sv = this.data.servants[owner];
-    if (sv && !narration) out.push(...(this.lines.get(`class:${sv.class}|${tag}`) ?? []));
+    // 클래스 대사의 화자도 그 서번트다 (화면의 화자 색·beat.line.speaker가 서번트 ID로 판단한다)
+    if (sv && !narration) out.push(...(this.lines.get(`class:${sv.class}|${tag}`) ?? []).map((c) => ({ ...c, speaker: owner })));
     return out;
   }
   /** 나레이션 후보: 관련 서번트 파일의 서술문(§5.2) + 공통 나레이션 */

@@ -1,6 +1,6 @@
 // docs/systems/narrative-engine.md §13 예시 + §8 규칙
 import { describe, expect, it } from 'vitest';
-import type { Line } from '../data/schema';
+import { DialogueFile, type Line } from '../data/schema';
 import { EventLog, type FactionSetup } from '../engine/events';
 import { createRng } from '../engine/rng';
 import { masterIds, narratorData, runData, servantIds, SV } from '../testkit';
@@ -33,8 +33,19 @@ describe('선택 규칙 (§6, §13 예시 1·2)', () => {
   it('조건 하나라도 틀리면 후보가 아니다', () => {
     expect(pick([C], { ...facts, 'mem.met_before': false }, mem(), createRng(1), 'p')).toBeNull();
   });
-  it('같은 점수면 서번트 > 클래스 > 공통 (§6.1)', () => {
+  it('계층이 먼저: 서번트 > 클래스 > 공통 (§6.1, D-144)', () => {
     expect(pick([cand('cls', 1), cand('common', 2)], {}, mem(), createRng(1), 'p')!.textId).toBe('tx_cls');
+    // 조건이 더 많은 클래스 대사도 서번트 대사를 이기지 못한다
+    const cls = cand('cls_align', 1, { 'self.alignment': 'good', 'mem.released': true });
+    expect(pick([cand('sv', 0), cls], { 'self.alignment': 'good', 'mem.released': true }, mem(), createRng(1), 'p')!.textId).toBe('tx_sv');
+  });
+  it('서번트 대사가 전부 조건·반복에 걸리면 클래스로 떨어진다 (§6.1)', () => {
+    const sv = cand('sv_once', 0, undefined, 'once_per_run');
+    const m = mem();
+    expect(pick([sv, cand('cls', 1)], {}, m, createRng(1), 'p')!.textId).toBe('tx_sv_once');
+    m.beat += 1;
+    expect(pick([sv, cand('cls', 1)], {}, m, createRng(1), 'p')!.textId).toBe('tx_cls');
+    expect(pick([cand('sv_good', 0, { 'self.alignment': 'good' }), cand('cls', 1)], { 'self.alignment': 'evil' }, mem(), createRng(1), 'p')!.textId).toBe('tx_cls');
   });
   it('연산자: gte, lt, in, not', () => {
     const g = cand('g', 0, { n: { gte: 5 } });
@@ -206,5 +217,32 @@ describe('판정 행동의 도입 나레이션 (D-141)', () => {
     // 공통 나레이션도 화자가 narrator다 (대사처럼 따옴표로 보이지 않게)
     expect(start!.lines[0]!.speaker).toBe('narrator');
     expect(result?.lines.some((l) => l.slot === 'lead') ?? false).toBe(false);
+  });
+});
+
+describe('클래스 대사 (§6.1, D-143)', () => {
+  it('전용 대사가 없는 서번트는 클래스 대사를 쓰고, 화자는 그 서번트다', () => {
+    const cls = DialogueFile.parse({
+      speaker: 'class:saber',
+      scope: 'class:saber',
+      defaults: {},
+      tags: { day_bond: [{ id: 'bond_01', text: '클래스 교류' }], summon: [{ id: 'summon_01', text: '클래스 소환' }] },
+    });
+    const d = { ...data, servantDialogue: data.servantDialogue.filter((f) => f.speaker !== SV.artoria), classDialogue: [cls] };
+    const n = new Narrator(d, 3);
+    const summon = n.summonLine(SV.artoria)!;
+    expect(summon.text).toBe('클래스 소환');
+    expect(summon.speaker).toBe(SV.artoria);
+
+    const log = new EventLog({ day: 1, time: 'day', action: 0 });
+    const fs = (faction: string, sv: string, controller: 'player' | 'ai'): FactionSetup => ({
+      faction, servant_id: sv, master_id: null, controller, tile: 'tl_r2c2', condition: 'full', mana: 0, seals: 3, fate_points: 3, affinity: controller === 'player' ? 35 : null,
+    });
+    log.emit('run_started', [], { seed: 1, player: 'fc_player', summon: 'random', factions: [fs('fc_player', SV.artoria, 'player'), fs('fc_e1', SV.cu, 'ai')] });
+    log.emit('bond', ['fc_player'], { faction: 'fc_player', result: 'success', roll: { dice: [3, 4], natural: 7, miracle: false, modifier: 0, applied_modifier: 0, total: 7, faction: 'fc_player', stats: [], parts: {}, rerolls: 0 }, dc: 7 });
+    const [, bond] = log.events.map((e) => n.consume(e));
+    const line = bond!.lines.find((l) => l.slot === 'line')!;
+    expect(line.textId).toBe('tx_class:saber_day_bond_bond_01');
+    expect(line.speaker).toBe(SV.artoria);
   });
 });
