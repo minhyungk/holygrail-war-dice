@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0206_achilles",
+  "source_id": 206,
+  "name_ko": "아킬레우스",
+  "name_short_ko": "아킬레우스",
+  "class": "rider",
+  "ranks": {
+    "str": "B+",
+    "end": "A",
+    "agi": "A+",
+    "mana": "C",
+    "luck": "D",
+    "np": "A+"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "질서·중용",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "질풍노도의 불사전차",
+    "ruby_ko": "트로이아스・트라고이디아",
+    "rank": "A+",
+    "type_ko": "대군보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4029000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/402900/402900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/402900/402900b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

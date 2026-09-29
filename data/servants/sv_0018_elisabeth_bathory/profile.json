@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0018_elisabeth_bathory",
+  "source_id": 18,
+  "name_ko": "엘리자베트 바토리",
+  "name_short_ko": "엘리자베트",
+  "class": "lancer",
+  "ranks": {
+    "str": "C",
+    "end": "D",
+    "agi": "E",
+    "mana": "A",
+    "luck": "B",
+    "np": "D"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "tsundere",
+  "noble_phantasm": {
+    "name_ko": "선혈마양",
+    "ruby_ko": "바토리 에르제베트",
+    "rank": "E+",
+    "type_ko": "대인보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3005000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/300500/300500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/300500/300500b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

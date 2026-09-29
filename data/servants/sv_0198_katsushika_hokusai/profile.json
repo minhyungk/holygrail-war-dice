@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0198_katsushika_hokusai",
+  "source_id": 198,
+  "name_ko": "카츠시카 호쿠사이",
+  "name_short_ko": "호쿠사이",
+  "class": "foreigner",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "B",
+    "mana": "B",
+    "luck": "A",
+    "np": "A"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "후가쿠 삼십육경",
+    "ruby_ko": "후가쿠 삼십육경",
+    "rank": "A+",
+    "type_ko": "대군보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_25002000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/2500200/2500200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/2500200/2500200b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

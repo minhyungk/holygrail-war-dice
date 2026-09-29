@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0150_merlin",
+  "skills": [
+    {
+      "skill_id": "sk_territory_creation",
+      "name_ko": "진지작성",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_item_construction",
+      "name_ko": "도구작성",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_mixed_blood",
+      "name_ko": "혼혈",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_dreamlike_charisma",
+      "name_ko": "몽환의 카리스마",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_illusion",
+      "name_ko": "환술",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_hero_creation",
+      "name_ko": "영웅 작성",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

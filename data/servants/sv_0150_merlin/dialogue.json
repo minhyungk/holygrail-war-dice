@@ -1,0 +1,323 @@
+{
+  "speaker": "sv_0150_merlin",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "흠.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "어떨까.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "에잇.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "이쪽 것이 특기거든.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "별것 아냐, 서비스야.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "훗, 핫",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "나랑은 안 맞지만……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "그러면 진짜 실력을 발휘하기로 하지.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "난폭하구나, 너는……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "음……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "맡겨줘, 꿈처럼 정리하지.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "이 근처를 손대는 게 좋지 않을까?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "네가 가는 길을 믿겠어. 자아, 가도록 해.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "뭘, 무슨 일이든 하면 되는 법이야.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_5",
+        "text": "[멀린] : “맡겨줘. 꿈처럼 정리하지” [포우] : “포우!” [멀린] : “부하앗!”",
+        "when": {
+          "self.intel_level": 3
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_6",
+        "text": "[멀린] : “이 근처를 손대는 게 좋지 않을까?” [포우] : “포~우!” [멀린] : “부포웃!”",
+        "when": {
+          "self.intel_level": 3
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "지금까지 멀리서 지켜보았지만, 앞으로는 함께 걸어가는 동료야. 의지해 줘. 특히나 사랑 고민이라든가, 그런 쪽 이야기라면 대환영인데?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "꽃의 마술사라고 불리는 건 단순히 내가 꽃을 좋아해서 그래. 걷기만 해도 꽃이 피어나다니, 나도 좀 아니라고 생각하지만.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "내가 선하냐 악하냐? 그런 건 네가 정해줘. 나는 기본적으로 미래로 이어지는 인간에게밖에 보이지 않는 요정 같은 위치거든?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "힘든 싸움이 계속되네. 하지만 힘들지 않은 싸움은 싸움이 아니라 단순한 작업이고. 괴롭고 힘든 것도 소중한 것이라고 생각하면 돼.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "너와의 여행도 꽤나 길어졌군. 처음에는 작은 호기심으로 손을 빌려주었지만, 지금 너는 내게 잊기 어려운 존재가 되었어. 마이 로드. 네가 가는 길에 꽃의 축복이 있기를.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것? 인간과 장난과 여자인데? 아니, 장난치면 재미있잖아?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것 ……은 딱히 없지만, 구태여 말하자면 그랜드 캐스터일까. 물론 나 자신도 포함하지만, 그 점은 좀 이해해 줘.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "인간이 꿈을 꾸는 한, 성장하려고 바라는 한, 성배는 만들 수 있어. 그건 나쁜 일이 아냐. 문제는 어느 시대든 꿈이란 것은 현실보다 너무 크다는 점이야.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "좋아, 싸움이다! 서툴긴 하지만 전력으로 갈까!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "진정하자, 진정해. 주문 외우다가 혀 깨무니까.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "내가 나설 차례인가? 아니, 이건 만만찮아 보이네.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "별의 내해, 전망대, 낙원의 가장자리에서 네게 들려주지. 너희의 이야기는 축복으로 가득하다고. 죄 없는 자만이 들어가도록 하라─── 가든 오브 아발론.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "그곳은 벽도 없고 성도 없는, 나라조차 없는 시작의 하늘. 땅 밑바닥에서 반짝이는 원초의 별. ──혼의 모습을 보이도록 할까. ‘영원히 닫힌 이상향(가든 오브 아발론)’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "수고했어. 그럼 다음으로 갈까.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "아야야야…… 오래간만의 운동은 힘드네……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "철수, 철수. 뒷일은 맡길게.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "정말로 도움이 안 되어서 미안!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

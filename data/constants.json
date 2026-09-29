@@ -736,14 +736,24 @@
     {
       "key": "text.slot_chance",
       "value": {
-        "self_phase_win": 0.7,
-        "self_phase_hit": 0.7,
-        "self_skill": 0.35
+        "self_phase_win": 0.9,
+        "self_phase_hit": 0.9,
+        "enemy_phase_win": 0.9,
+        "enemy_phase_hit": 0.9,
+        "battle_skill": 0.7
       },
       "unit": "확률",
       "doc_ref": "narrative-engine.md §8.2",
       "status": "임시값",
-      "note": "D-151. beats.json 슬롯의 chance 이름 → 그 슬롯을 쓸 확률 (서술 RNG). 짧은 외침이 매 국면 나오지 않게"
+      "note": "D-153. 양측 전투 외침 빈도. beats.json 슬롯의 chance 이름 → 서술 RNG 확률"
+    },
+    {
+      "key": "text.death_fx",
+      "value": { "particles": 32, "duration_ms": 3200, "spread_px": 180, "rise_px": 165, "stagger_ms": 28 },
+      "unit": "입자·ms·px",
+      "doc_ref": "03-ui-style.md §8",
+      "status": "임시값",
+      "note": "D-154. 금빛 소멸 입자 연출"
     },
     {
       "key": "text.small_margin",
@@ -950,6 +960,22 @@
       "doc_ref": "skills.md §4",
       "status": "임시값",
       "note": "D-142. 랭크 문자 기준 (+/- 무시). major = 주력 스킬, minor = 보조 스킬"
+    },
+    {
+      "key": "skill.rank_mana",
+      "value": { "E": 5, "D": 8, "C": 10, "B": 15, "A": 20, "EX": 30 },
+      "unit": "마력",
+      "doc_ref": "skills.md §13",
+      "status": "임시값",
+      "note": "D-157. scaling mana: Atlas NP 획득 계열 스킬이 전투 첫 국면에 얻는 마력 (랭크 문자 기준)"
+    },
+    {
+      "key": "run.extra_class_chance",
+      "value": 0.2,
+      "unit": "확률",
+      "doc_ref": "00-overview.md §3",
+      "status": "확정",
+      "note": "D-157. 판 시작 시 정규 클래스 하나를 엑스트라 클래스 1기가 대체하는 난입 소환 확률"
     },
     {
       "key": "skill.fixed_amount",

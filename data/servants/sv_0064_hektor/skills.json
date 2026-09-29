@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0064_hektor",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_guardian_of_troy",
+      "name_ko": "트로이의 수호자",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_proof_of_friendship",
+      "name_ko": "우의의 증명",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_a2419550",
+      "name_ko": "수세의 카리스마",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

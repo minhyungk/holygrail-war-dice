@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0006_siegfried",
+  "source_id": 6,
+  "name_ko": "지크프리트",
+  "name_short_ko": "지크프리트",
+  "class": "saber",
+  "ranks": {
+    "str": "B+",
+    "end": "A",
+    "agi": "B",
+    "mana": "C",
+    "luck": "E",
+    "np": "A"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "환상대검・천마실추",
+    "ruby_ko": "발뭉",
+    "rank": "EX",
+    "type_ko": "대군보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1008000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/100800/100800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/100800/100800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

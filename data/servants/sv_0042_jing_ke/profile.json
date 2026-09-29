@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0042_jing_ke",
+  "source_id": 42,
+  "name_ko": "형가",
+  "name_short_ko": "형가",
+  "class": "assassin",
+  "ranks": {
+    "str": "D",
+    "end": "E",
+    "agi": "A",
+    "mana": "E",
+    "luck": "D",
+    "np": "B"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "assassin",
+  "noble_phantasm": {
+    "name_ko": "불환비수",
+    "ruby_ko": "그저 죽일 뿐",
+    "rank": "B+",
+    "type_ko": "대인보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6011000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/601100/601100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/601100/601100b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

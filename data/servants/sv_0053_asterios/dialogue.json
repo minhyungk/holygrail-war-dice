@@ -1,0 +1,362 @@
+{
+  "speaker": "sv_0053_asterios",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "우웃!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "그아앗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "우오오오!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "짓뭉개져라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "으으으으음!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "부서져라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "죽어라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_8",
+        "text": "사라져라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_9",
+        "text": "거기다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_10",
+        "text": "으음!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "죽어라, 죽어라, 죽어……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "먹어, 치운다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "이거나, 먹어라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "구누웃!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "구웃!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "받아라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "누으으!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "이건가……?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "으음!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "먹어버린다……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "우웅……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "웅, 우웅……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "흠……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "먹어버린다……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "가만히, 내버려, 둬……",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "상관하지, 마……",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "필요 없어!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "죽인, 다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "싸운, 다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "힘낸, 다……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "길을 잃어라…… 헤매어라, 그리고, 죽어!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "이것이, 미궁이다…… 미궁이다아아!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "영원히, 길을 잃어, 버려라아아아!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "죽였다아!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "먹었, 다아!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "이겼다…… 이겼다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "죽는다…… 멀, 어……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "미안, 합니다……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "우오오오!!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

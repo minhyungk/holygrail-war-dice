@@ -94,7 +94,8 @@
         "id": "legacy_vs_medea_01",
         "when": {
           "enemy.servant": "sv_0031_medea",
-          "enemy.intel_level": 3
+          "enemy.intel_level": 3,
+          "self.intel_level": 3
         },
         "text": "콜키스의 마녀... 그 높은 마력, 간장막야로 꿰뚫을 수 있을까?",
         "source": "legacy",
@@ -563,7 +564,10 @@
         "text": "간장・막야!",
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
-        "quote_verified": true
+        "quote_verified": true,
+        "when": {
+          "self.intel_level": 3
+        }
       },
       {
         "id": "fgo_ex_1",

@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0157_emiya_alter",
+  "source_id": 157,
+  "name_ko": "에미야(얼터)",
+  "name_short_ko": "에미야 얼터",
+  "class": "archer",
+  "ranks": {
+    "str": "C",
+    "end": "B",
+    "agi": "D",
+    "mana": "B",
+    "luck": "E",
+    "np": "?"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "무한의 검제",
+    "ruby_ko": "언리미티드 로스트 워크스",
+    "rank": "E~A",
+    "type_ko": "대인보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2016000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/201600/201600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/201600/201600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

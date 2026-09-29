@@ -1,0 +1,334 @@
+{
+  "speaker": "sv_0052_vlad_iii",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "피를 원한다……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "절규하라.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "하앗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "어리석구나!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "도망치지 마라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "포착했다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "자, 꼬챙이에 꿰일 시간이다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "스러져라, 나의 적!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "자, 아직 숨은 붙어 있나.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "불찰!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "누웃!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "성대한 대접을 맡기도록 하지.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "나는 어둠에 있으나 어둠이 아니도다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "시체를 쌓아 올려라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "오탁의 전승이라 해도──!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "무례한 놈. 다음은 없다고 생각해라.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "집요한 녀석…… 목숨이 아깝지 않을 줄이야……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "알았다, 알았다! 내가 특별히 용서하지. 정말이지.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "마스터, 만질 것이라면 그만큼의 피를 달라. 이걸로 대등해진다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "── 네놈, 나와 함께 영원을 살 것인가? 어찌됐건 영원은 따분한 것이지만. 너 같은 녀석이 있으면 앞으로는 지루하지 않겠지.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "삶의 기쁨? 피를 마시는 것 이외의 즐거움은 없겠지.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것? 강제당하는 것이다. 그 이상으로 굴욕적인 것은 없다.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배에 피를 쏟고, 목을 축인다. 흠, 최고의 사치야.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "어둠의 시간이다. 피의 만찬이로다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "그럼 세계에 저주스러운 나의 이름을 외치도록 하지.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "짐은 흡혈귀가 아니다…… 만, 지금은 그 힘조차도 행사하지.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "이기기 위해서 짐의 전력을 보여주마.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "피로 얼룩진 나의 인생을 여기 바친다! 카지클 베이.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "내 안에 있는 말뚝을 해방하지…… ‘악마 같은 피투성이 왕(카지클 베이)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "절망의 말뚝으로 꼬챙이형을 내리마…… 짐은 비탄을 마시는 자다!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "피를 마셔라. 이는 보상이다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "수천수만의 피를 흘려, 나에게 바치거라.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "여기까진가……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "망집이 도달한 끝이여……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "서번트, 여기에 왔다. 짐에게 피를 바칠 마스터는 네놈인가?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

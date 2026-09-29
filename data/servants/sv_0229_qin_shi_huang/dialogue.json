@@ -1,0 +1,222 @@
+{
+  "speaker": "sv_0229_qin_shi_huang",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "으음!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "핫!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "이것을 하사하마.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "무릎을 꿇도록 하라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "적당히 못 하겠느냐!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "꼴사납다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "으음으음.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "그렇게 나왔나!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "짐과 그대는, 언젠가 패권을 다투게 되겠지만, 그 모습을, 다름 아닌 짐이 곁에서 지켜본다는 것은 꽤나 재미있어 보이는 취향이로구나. 그때는 부디, 특등석에서 관전하게 하거라. 지금의 짐이 지닌 기억과 같은 결말을 맞이할지 어떨지…… 후후후후후후…… 기대되는구나!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "이봐라, 그대는 말이지…… 차라리 이 세계 전부를 공터로 만든 뒤에, 자신의 새로운 치정을 연다는 발상은 없는 것이냐? ……? ……흠, 없나…… 으~음…….",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것, 흠…… 굳이 말하자면, 수은일까? 썩지 않고, 마르지 않고, 굳지 않고, 영원불멸을 상징하는 것 같은 그 모습. 참으로 짐에게 걸맞은 아름다움이지 않겠느냐.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것, 흠…… 굳이 말하자면, 수은일까~ 그거 진짜로 맛이 없어서 말이다, 두 번 다시 입에 대고 싶지 않구나.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배? 호오, 만능의 원망기라고? 뭐냐, 그렇게 편리한 물건이 있다면, 2천 년은 빨리 내놓으란 말이다. 죽어가던 시절의 짐이라면, 기꺼이 헌상받았을 텐데.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "참으로 구제할 길이 없구나.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "짐의 손을 번거롭게 하지 말거라.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "하늘과 땅의 틈새에, 인간은 이와 같이 있어야 마땅하다고. 이곳에! 새로운 법령을 펼치노라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "삼황을 초월하고, 오제를 능가한 패자. 그것이야말로 시황제, 즉 짐이다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "당연한 결말이니라.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "어전이다! 하다못해 넙죽 엎드리거라.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "무엄하기 그지없다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "짐을 뭐라고 생각하는 게냐…… 천치 녀석!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "오래간만이구나, 백성이자 인간인 자여. ……어라? 짐을 본 적이 없다고? 흠, 뭔가 시계열의 인과에 어긋남이 발생했나. 아니, 신경 쓰지 말거라. 짐은 시황제. 지금은 단지 룰러 서번트라고만 알아두면 된다.",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": 3
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

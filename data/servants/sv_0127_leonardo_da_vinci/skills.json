@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0127_leonardo_da_vinci",
+  "skills": [
+    {
+      "skill_id": "sk_territory_creation",
+      "name_ko": "진지작성",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_item_construction",
+      "name_ko": "도구작성",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_brilliance_of_a_genius",
+      "name_ko": "총명예지",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_mona_lisa",
+      "name_ko": "모나리자",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_pioneer_of_the_stars",
+      "name_ko": "별의 개척자",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

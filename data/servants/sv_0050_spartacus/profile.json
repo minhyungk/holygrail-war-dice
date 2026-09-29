@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0050_spartacus",
+  "source_id": 50,
+  "name_ko": "스파르타쿠스",
+  "name_short_ko": "스파르타쿠스",
+  "class": "berserker",
+  "ranks": {
+    "str": "A",
+    "end": "EX",
+    "agi": "D",
+    "mana": "E",
+    "luck": "D",
+    "np": "C"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "중립·중용",
+  "alignment_verified": false,
+  "temperament": "berserker",
+  "noble_phantasm": {
+    "name_ko": "상처 입은 짐승의 포효",
+    "ruby_ko": "크라잉 워멍거",
+    "rank": "A+",
+    "type_ko": "대인보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7005000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/700500/700500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/700500/700500b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

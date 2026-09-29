@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0069_oda_nobunaga",
+  "source_id": 69,
+  "name_ko": "오다 노부나가",
+  "name_short_ko": "노부나가",
+  "class": "archer",
+  "ranks": {
+    "str": "C",
+    "end": "B",
+    "agi": "C",
+    "mana": "B",
+    "luck": "B",
+    "np": "?"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "질서·중용",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "삼천세계",
+    "ruby_ko": "삼단 사격",
+    "rank": "E~A",
+    "type_ko": "대군보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2024000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/202400/202400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/202400/202400b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

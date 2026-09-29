@@ -1,0 +1,257 @@
+{
+  "speaker": "sv_0110_hassan_of_the_hundred_personas",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "싱겁다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "샤압!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "목숨, 받아 가마!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "싸움은 숫자로 하는 것이다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_2",
+        "text": "끄아?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_1",
+        "text": "뭐라고?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "기술의 숫자, 지모의 숫자, 아무리 발버둥 쳐도 미치지 못한다……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "우리를 적으로 돌렸군……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것, 바람, 말입니까. 언젠가 정적 속에서 잠들고 싶습니다. 뇌리에 울리는 수많은 목소리를 모두 조용히 가라앉히고.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것이라니, 호호홋. 누군가가 서투른 일은 누군가의 전문. 그것이 우리의 장기이기에.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배…… 우리가 원하는 포상 따윈 사소한 것…… 부디 괘념치 마십시오.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "이해하시기 어려울지도 모릅니다만, 제 안의 수많은 저는 저 자신도 다루기 어렵습니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "우리 안의 과반수가 이번 마스터에게 찬동하고 있습니다. 즉 저라는 서번트의 충성을 얻어내었다는 겁니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "베풀어주시는 배려를 생각해 보면, 마스터는 우리 하나하나의 특성을 적확하게 이해하신 듯하군요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "모실 수 있어서 영광입니다. 한 명의 말이 아니라 이구동성의 찬사라고 생각해 주십시오.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "나의 주인이여…… 우리의 총의로서 그렇게 부르도록 하겠습니다. 반대하는 자는 한 명도 없습니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "우리의 총 숫자를 읽을 수 있을까?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "크큭, 포위되었다고 알았을 땐 이미 늦었다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "나는 복수이며 단수, 단수이며 복수, 백 가지 얼굴을 가졌고 천 가지, 만 가지로 변하는 그림자들── 간다, ‘망상환상(자바니아)’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "1대1이라고 생각한 네 잘못이다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "내 기술을 다 보일 것도 없었네.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "이럴 수가, 우리가…… 하나도 남김없이……?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "이래도 미치지 못한다고?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "우리 그림자들을 거느린 이상 승리도 틀림없습니다. 안심하십시오, 마스터.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

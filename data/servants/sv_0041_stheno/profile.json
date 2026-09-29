@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0041_stheno",
+  "source_id": 41,
+  "name_ko": "스테노",
+  "name_short_ko": "스테노",
+  "class": "assassin",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "B",
+    "mana": "EX",
+    "luck": "EX",
+    "np": "B"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "여신의 미소",
+    "ruby_ko": "스마일 오브 더 스테노",
+    "rank": "B+",
+    "type_ko": "대인보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6010000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/601000/601000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/601000/601000b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

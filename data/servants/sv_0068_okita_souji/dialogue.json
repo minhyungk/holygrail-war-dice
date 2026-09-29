@@ -1,0 +1,382 @@
+{
+  "speaker": "sv_0068_okita_souji",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "하압!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "에잇!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "거기다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "놓치지 않는다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "훗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "방해됩니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "이걸로, ──끝입니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "늦어…… 하앗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "어디를 보고 있는 겁니까…… 이쪽입니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "커흑!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "치잇!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "크으으으으윽……?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "이 정도쯤……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "신속하게, 예리하게!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "내 검으로 적을 친다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "각오해라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "쿨럭! ……괜찮아, 할 수 있습니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "천재 검사, 입니까? 으음, 그렇다고는 생각하지 않는데요…… 애초에 칼싸움은 기합이 전부입니다. 검이 부러지면 칼집으로, 칼집이 부러지면 맨손으로, 전장에서는 아무도 기다려 주지 않습니다. 아무튼 기합이지요, 기합.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "연애…… 말입니까? 으음, 저는 그런 쪽에 둔한 모양이라서 아무래도…… 히지카타 씨는 그런 걸 좋아했던 것 같았지만요. 아니, 지나칠 정도였지만요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "마스터는 다정하군요. 칼잡이인 저를 편하게 대해준 건 부근의 아이들 정도였습니다…… 아, 아뇨, 결코 마스터가 애 같다는 소리를 하고 싶었던 건 아니거든요?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "저기, 이런 말 하기는 그렇지만, 마스터랑 있으면 왠지 마음이 놓인다고 할까, 저기, 가슴이 뛴다고 말할까요. 이상하네요, 이런 일은 생전에 한 번도 없었습니다만…… 또 열이라도 나려는 걸까요?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal",
+          "self.intel_level": 3
+        },
+        "text": "이제 오키타 씨에게 망설임은 없습니다! 마스터가 가는 곳, 설령 땅끝, 바다 끝, 설령 이 몸이 다하더라도 지옥 끝까지 함께하겠습니다!!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것 말입니까? 경단이나 별사탕, 단것은 의외로 좋아합니다. 아, 말이 나온 김에 지금 먹으러 가지 않겠습니까?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것 말입니까? 으음, 구태여 말하자면 단무지…… 일까요. 아뇨, 싫어하는 정도는 아니지만, 솔직히 질렸다고 해야 할지, 뭐라고 해야 할지.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "병이 낫는단 말인가요? 와아! 예? 영령으로서의 스킬은 안 낫는다? 소원이 이루어진다고 하지 않았습니까, 너무해!!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "전장에 선악은 없으니, 그저 벨 뿐!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "신속하게 끝내겠습니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "공무를 집행하러 왔다, 맞서는 자는 모조리 베어 넘겨라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "신선조 1번대 대장, 오키타 소지, 간다!",
+        "when": {
+          "self.intel_level": 3
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "첫 걸음에 소리를 뛰어넘고, 두 걸음에 간격을 없애고, 세 걸음에 절단! ……무명 삼단 찌르기!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "이것으로 끝낸다…… 잡았다! ‘무명 삼단 찌르기’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "빠르게, 빠르게…… 빠르게! ‘무명 삼단 찌르기’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "정리되었군요. 다친 곳은 없습니까, 마스터?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "오키타 씨 대승리! 예, 몸은 괜찮습니다, 더 싸울 수 있습니다! 커흑~!",
+        "when": {
+          "self.intel_level": 3
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "휴우…… 자 그러면, 경단이라도 먹으면서 돌아갈까요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_4",
+        "text": "오키타 씨 대승리~! 예, 몸은 괜찮습니다, 더 싸울 수 있습니다!",
+        "when": {
+          "self.intel_level": 3
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "아직…… 아직 쓰러질 수는……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "저는 아직…… 싸울 수…… 있습니다……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "움직여…… 움직여 주세요…… 나의 몸……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "신선조 1번대 대장 오키타 소지 등장! 당신이 제 마스터입니까? ……네? 하오리? 그게 어딘가로 사라져 버려서……",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": 3
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

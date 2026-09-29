@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0088_brynhild",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_divinity",
+      "name_ko": "신성",
+      "rank": "E",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_mana_burst_flame",
+      "name_ko": "마력방출(불꽃)",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_primordial_rune",
+      "name_ko": "원초의 룬",
+      "rank": null,
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_hero_s_assistant",
+      "name_ko": "영웅의 하인",
+      "rank": "C++",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

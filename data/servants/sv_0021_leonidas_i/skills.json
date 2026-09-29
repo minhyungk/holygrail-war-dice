@@ -1,0 +1,34 @@
+{
+  "servant_id": "sv_0021_leonidas_i",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_rear_guard_s_pride",
+      "name_ko": "최후미의 긍지",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_endurance_of_the_three_hundred",
+      "name_ko": "삼백의 분투",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_warrior_s_war_cry",
+      "name_ko": "전사의 포효",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

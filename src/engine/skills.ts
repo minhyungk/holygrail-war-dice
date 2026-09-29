@@ -23,6 +23,8 @@ export interface SkillCtx {
   escaper?: boolean;
   foeDropped?: boolean;
   wouldFall?: boolean;
+  /** 상대 서번트의 클래스 */
+  foeClass: string;
 }
 
 /** 보유 스킬 중 그 훅에 붙은 것 (보유 목록 순서) */
@@ -44,6 +46,8 @@ export function whenOk(w: ActiveSkillDef['when'], c: SkillCtx): boolean {
   if (w.escaper && !c.escaper) return false;
   if (w.foe_dropped && !c.foeDropped) return false;
   if (w.would_fall && !c.wouldFall) return false;
+  if (w.foe_class && !w.foe_class.includes(c.foeClass)) return false;
+  if (w.any_of && !w.any_of.some((alt) => whenOk(alt, c))) return false;
   return true;
 }
 
@@ -53,6 +57,9 @@ export function skillAmount(s: ActiveSkill): number {
     case 'major':
     case 'minor':
       return s.rank ? K['skill.rank_amount'][s.def.scaling][parseRank(s.rank).letter] : 0;
+    case 'mana':
+      // 마력 획득량 (D-157: Atlas NP 획득 스킬의 자동 배정)
+      return s.rank ? K['skill.rank_mana'][parseRank(s.rank).letter] : 0;
     case 'fixed':
       return K['skill.fixed_amount'][s.skill_id] ?? 0;
     case 'none':

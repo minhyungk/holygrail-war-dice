@@ -2,7 +2,7 @@
 // 판정 엔진이 만든 이벤트를 순서대로 읽어 비트(대사·나레이션 묶음)를 만든다. 게임 결과에는 관여하지 않는다.
 // 무작위는 판정과 분리된 서술 스트림을 쓴다 (§2).
 import { K } from '../data/constants';
-import type { BeatsFile, DialogueFile, LabelsFile, Line, MasterProfile, ServantProfile, SlotDef, Tile } from '../data/schema';
+import type { BeatsFile, DialogueFile, LabelsFile, Line, MasterProfile, ServantProfile, ServantSkillsFile, SlotDef, Tile } from '../data/schema';
 import type { AnyEvent, GameEvent } from '../engine/events';
 import { createRng, deriveSeed, type Rng } from '../engine/rng';
 import { distance } from '../engine/map';
@@ -18,6 +18,8 @@ export interface NarratorData {
   /** 서번트 공통 대사 (3층, D-143·D-151). 서번트·클래스 대사가 없을 때 */
   speech?: DialogueFile;
   servants: Record<string, ServantProfile>;
+  /** 스킬 이름 (스킬 해설, D-153) */
+  skills: Record<string, ServantSkillsFile>;
   masters: Record<string, MasterProfile>;
   tiles: readonly Tile[];
   labels: LabelsFile;
@@ -92,6 +94,9 @@ export class Narrator {
   private phaseDefender: string | null = null;
   /** 이번 플레이어 전투에서 내 서번트가 위험까지 갔나 (역전승 판단, D-151) */
   private dangerThisBattle = false;
+  private skillName = '';
+  /** 이번 플레이어 전투에서 이미 해설한 스킬 (진영|skill_id) */
+  private skillsTold = new Set<string>();
 
   constructor(
     private readonly data: NarratorData,
@@ -128,6 +133,12 @@ export class Narrator {
   summonLine(servantId: string): BeatLine | null {
     const c = pick(this.candidates(servantId, 'summon', false), {}, this.mem, this.rng, `${servantId}|summon`);
     return c ? this.toLine('line', c, null, {}, new Set()) : null;
+  }
+
+  /** 난입 소환 (D-157): 소환 직후 '성배 오류'를 암시하는 나레이션. 누가 어느 자리를 대체했는지는 말하지 않는다 */
+  irregularLine(): BeatLine | null {
+    const c = pick(this.candidates('common', 'summon_irregular', true), {}, this.mem, this.rng, 'narrator|summon_irregular');
+    return c ? this.toLine('lead', c, null, {}, new Set()) : null;
   }
 
   /** 이벤트를 순서대로 모두 넣는다. 비트가 없으면 null */
@@ -227,6 +238,7 @@ export class Narrator {
         this.playerBattle = e.data.battle_id;
         this.battleTile = e.data.tile;
         this.dangerThisBattle = before.factions[P]?.condition === 'danger';
+        this.skillsTold.clear();
         const enemy = e.data.sides.find((f) => f !== P)!;
         if (this.opponent !== enemy) {
           // 강제 전투는 조우 없이 시작한다
@@ -268,13 +280,30 @@ export class Narrator {
         ctx.enemy = e.data.target;
         ctx.event = { phase_id: e.data.phase_id };
         break;
-      case 'skill_triggered':
-        // 스킬 발동 외침 (D-151): 내 서번트만. 적의 외침은 스킬 이름이 진명을 드러낼 수 있다
-        if (this.playerBattle !== e.data.battle_id || e.data.faction !== P) return null;
+      case 'skill_triggered': {
+        // 스킬 해설 (D-153): 전투마다 스킬별 첫 발동만 해설한다. 적 스킬은 진명(정보 3단계) 전엔 이름·스킬 ID를 가린다
+        if (this.playerBattle !== e.data.battle_id) return null;
+        const known = e.data.faction === P || (this.view.intel[e.data.faction] ?? 0) >= 3;
+        // 가려진 스킬은 이름이 없으니 진영당 한 번만 해설한다
+        const key = `${e.data.faction}|${known ? e.data.skill_id : '?'}`;
+        const first = !this.skillsTold.has(key);
+        this.skillsTold.add(key);
         ctx.actor = e.data.faction;
-        ctx.beat = { actor_side: 'self' };
-        ctx.event = { skill_id: e.data.skill_id, effect: e.data.effect };
+        ctx.names.actor = e.data.faction;
+        ctx.names.target = e.data.target;
+        ctx.beat = { actor_side: e.data.faction === P ? 'self' : 'enemy' };
+        ctx.event = {
+          skill_id: known ? e.data.skill_id : null,
+          skill_known: known,
+          first,
+          effect: e.data.effect,
+          amount: e.data.amount,
+          target_side: e.data.target === e.data.faction ? 'self' : 'enemy',
+        };
+        const sid = this.view.factions[e.data.faction]?.servant_id ?? '';
+        this.skillName = (known ? this.data.skills[sid]?.skills.find((x) => x.skill_id === e.data.skill_id)?.name_ko : null) ?? this.data.labels.unknown_skill;
         break;
+      }
       case 'np_opened':
         if (this.playerBattle !== e.data.battle_id) return null;
         ctx.actor = e.data.faction;
@@ -601,6 +630,8 @@ export class Narrator {
         }
         case 'day':
           return String(v.day);
+        case 'skill':
+          return this.skillName;
         case 'np': {
           const f = refs.servant ? v.factions[refs.servant] : null;
           const np = f ? this.data.servants[f.servant_id]?.noble_phantasm : null;

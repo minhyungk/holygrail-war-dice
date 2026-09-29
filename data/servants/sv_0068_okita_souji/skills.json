@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0068_okita_souji",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "E",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "E",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_shukuchi",
+      "name_ko": "축지",
+      "rank": "B+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_zettou",
+      "name_ko": "절도",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_mind_eye_fake",
+      "name_ko": "심안(가짜)",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

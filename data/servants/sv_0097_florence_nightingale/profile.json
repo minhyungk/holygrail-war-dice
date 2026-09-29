@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0097_florence_nightingale",
+  "source_id": 97,
+  "name_ko": "나이팅게일",
+  "name_short_ko": "나이팅게일",
+  "class": "berserker",
+  "ranks": {
+    "str": "B+",
+    "end": "A+",
+    "agi": "B+",
+    "mana": "D+",
+    "luck": "A+",
+    "np": "D"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "나는 모든 독 있는 것, 해 있는 것을 없앤다",
+    "ruby_ko": "나이팅게일 플레지",
+    "rank": "C+",
+    "type_ko": "대군보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7014000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/701400/701400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/701400/701400b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

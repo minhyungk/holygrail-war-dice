@@ -1,0 +1,34 @@
+{
+  "servant_id": "sv_0032_gilles_de_rais",
+  "skills": [
+    {
+      "skill_id": "sk_territory_creation",
+      "name_ko": "진지작성",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_mental_corruption",
+      "name_ko": "정신오염",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_sacrilegious_appreciation",
+      "name_ko": "모독심미",
+      "rank": "C+++",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_evil_eye_of_the_abyss",
+      "name_ko": "심연의 사시",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

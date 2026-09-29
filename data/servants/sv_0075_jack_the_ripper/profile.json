@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0075_jack_the_ripper",
+  "source_id": 75,
+  "name_ko": "잭 더 리퍼",
+  "name_short_ko": "잭",
+  "class": "assassin",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "A",
+    "mana": "C",
+    "luck": "E",
+    "np": "C"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "assassin",
+  "noble_phantasm": {
+    "name_ko": "해체성모",
+    "ruby_ko": "마리아 더 리퍼",
+    "rank": "D+",
+    "type_ko": "대인보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6005000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/600500/600500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/600500/600500b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

@@ -1,0 +1,34 @@
+{
+  "servant_id": "sv_0071_diarmuid_ua_duibhne",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_mind_eye_true",
+      "name_ko": "심안(진짜)",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_love_spot",
+      "name_ko": "사랑의 점",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_profusion_of_tragic_love",
+      "name_ko": "비련요란",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

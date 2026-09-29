@@ -1,0 +1,749 @@
+{
+  "notes": "D-157 신규 93기 분류 초안 (author: ai, 사용자 검수 전). temperament 근거: legacy = 레거시 성격표, ai = 원작 성격 판단, class = 클래스 기본값",
+  "servants": {
+    "sv_0003_altria_pendragon_alter": {
+      "name_short_ko": "알트리아 얼터",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "얼터 상태에서도 왕의 위엄과 지휘 성향"
+    },
+    "sv_0005_nero_claudius": {
+      "name_short_ko": "네로",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "royal",
+      "temperament_source": "legacy",
+      "reason": "레거시 네로 성격표: 황제의 자부심"
+    },
+    "sv_0006_siegfried": {
+      "name_short_ko": "지크프리트",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "타인을 위해 자신을 희생하는 영웅"
+    },
+    "sv_0008_altera": {
+      "name_short_ko": "알테라",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "royal",
+      "temperament_source": "legacy",
+      "reason": "레거시 알테라 성격표"
+    },
+    "sv_0010_chevalier_d_eon": {
+      "name_short_ko": "데옹",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "왕가를 섬기는 침착한 기사"
+    },
+    "sv_0068_okita_souji": {
+      "name_short_ko": "오키타",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "평소 밝고 장난스러운 신선조 검사"
+    },
+    "sv_0076_mordred": {
+      "name_short_ko": "모드레드",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "tsundere",
+      "temperament_source": "legacy",
+      "reason": "레거시 모드레드 성격표"
+    },
+    "sv_0121_lancelot": {
+      "name_short_ko": "랜슬롯",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cool",
+      "temperament_source": "legacy",
+      "reason": "레거시 랜슬롯(세이버) 성격표"
+    },
+    "sv_0123_gawain": {
+      "name_short_ko": "가웨인",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "태양의 기사다운 위엄과 충성"
+    },
+    "sv_0153_miyamoto_musashi": {
+      "name_short_ko": "무사시",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "자유분방하고 호쾌한 검객"
+    },
+    "sv_0160_arthur_pendragon_prototype": {
+      "name_short_ko": "아서",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "royal",
+      "temperament_source": "legacy",
+      "reason": "레거시 아서 성격표"
+    },
+    "sv_0012_gilgamesh": {
+      "name_short_ko": "길가메시",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "royal",
+      "temperament_source": "legacy",
+      "reason": "레거시 길가메시 성격표"
+    },
+    "sv_0013_robin_hood": {
+      "name_short_ko": "로빈 후드",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cool",
+      "temperament_source": "legacy",
+      "reason": "레거시 로빈 후드 성격표"
+    },
+    "sv_0014_atalante": {
+      "name_short_ko": "아탈란테",
+      "alignment": "evil",
+      "alignment_detail": "중립·악",
+      "temperament": "tsundere",
+      "temperament_source": "legacy",
+      "reason": "레거시 아탈란테 성격표"
+    },
+    "sv_0016_arash": {
+      "name_short_ko": "아라쉬",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "호방하고 소탈한 영웅"
+    },
+    "sv_0069_oda_nobunaga": {
+      "name_short_ko": "노부나가",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "마왕을 자처하는 군주"
+    },
+    "sv_0077_nikola_tesla": {
+      "name_short_ko": "테슬라",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "천재 발명가로서의 강한 자부심"
+    },
+    "sv_0084_arjuna": {
+      "name_short_ko": "아르주나",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "tsundere",
+      "temperament_source": "legacy",
+      "reason": "레거시 아르주나 성격표"
+    },
+    "sv_0122_tristan": {
+      "name_short_ko": "트리스탄",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cool",
+      "temperament_source": "legacy",
+      "reason": "레거시 트리스탄 성격표"
+    },
+    "sv_0137_chloe_von_einzbern": {
+      "name_short_ko": "클로에",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cheerful",
+      "temperament_source": "legacy",
+      "reason": "레거시 클로에 성격표"
+    },
+    "sv_0157_emiya_alter": {
+      "name_short_ko": "에미야 얼터",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "감정을 억누르는 얼터의 냉정함"
+    },
+    "sv_0207_chiron": {
+      "name_short_ko": "케이론",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "차분하게 가르치는 스승"
+    },
+    "sv_0018_elisabeth_bathory": {
+      "name_short_ko": "엘리자베트",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "자기애 강한 아이돌 기질, 레거시 표에 없음 (검토에서 수정)"
+    },
+    "sv_0020_cu_chulainn_prototype": {
+      "name_short_ko": "쿠 훌린 프로토",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "cheerful",
+      "temperament_source": "legacy",
+      "reason": "레거시 쿠 훌린 프로토타입 성격표"
+    },
+    "sv_0021_leonidas_i": {
+      "name_short_ko": "레오니다스",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "cheerful",
+      "temperament_source": "legacy",
+      "reason": "레거시 레오니다스 성격표"
+    },
+    "sv_0022_romulus": {
+      "name_short_ko": "로물루스",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "로마의 시조라는 군주 의식"
+    },
+    "sv_0064_hektor": {
+      "name_short_ko": "헥토르",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "노련하고 신중한 장수"
+    },
+    "sv_0070_scathach": {
+      "name_short_ko": "스카사하",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cheerful",
+      "temperament_source": "legacy",
+      "reason": "레거시 스카사하 성격표"
+    },
+    "sv_0071_diarmuid_ua_duibhne": {
+      "name_short_ko": "디어뮈드",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "cool",
+      "temperament_source": "legacy",
+      "reason": "레거시 디어뮈드 성격표"
+    },
+    "sv_0085_karna": {
+      "name_short_ko": "카르나",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "사심 없이 의무를 다하는 영웅"
+    },
+    "sv_0088_brynhild": {
+      "name_short_ko": "브륀힐드",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "saint",
+      "temperament_source": "legacy",
+      "reason": "레거시 브륀힐드 성격표"
+    },
+    "sv_0140_vlad_iii_extra": {
+      "name_short_ko": "블라드 EXTRA",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "신앙과 통치에 대한 강한 신념"
+    },
+    "sv_0143_enkidu": {
+      "name_short_ko": "엘키두",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "cool",
+      "temperament_source": "legacy",
+      "reason": "레거시 엘키두 성격표"
+    },
+    "sv_0024_georgios": {
+      "name_short_ko": "게오르기우스",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "성인으로서 남을 보호하는 태도"
+    },
+    "sv_0025_edward_teach": {
+      "name_short_ko": "티치",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "해적다운 호방함과 익살"
+    },
+    "sv_0026_boudica": {
+      "name_short_ko": "부디카",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "tsundere",
+      "temperament_source": "legacy",
+      "reason": "레거시 부디카 성격표"
+    },
+    "sv_0027_ushiwakamaru": {
+      "name_short_ko": "우시와카마루",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "cheerful",
+      "temperament_source": "legacy",
+      "reason": "레거시 우시와카마루 성격표"
+    },
+    "sv_0029_marie_antoinette": {
+      "name_short_ko": "마리",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cheerful",
+      "temperament_source": "legacy",
+      "reason": "레거시 마리 성격표"
+    },
+    "sv_0030_martha": {
+      "name_short_ko": "마르타",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "성녀로서의 보호와 자비"
+    },
+    "sv_0065_francis_drake": {
+      "name_short_ko": "드레이크",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "cheerful",
+      "temperament_source": "legacy",
+      "reason": "레거시 드레이크 성격표"
+    },
+    "sv_0094_astolfo": {
+      "name_short_ko": "아스톨포",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cheerful",
+      "temperament_source": "legacy",
+      "reason": "레거시 아스톨포 성격표"
+    },
+    "sv_0108_iskandar": {
+      "name_short_ko": "이스칸다르",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "royal",
+      "temperament_source": "legacy",
+      "reason": "레거시 이스칸다르 성격표"
+    },
+    "sv_0118_ozymandias": {
+      "name_short_ko": "오지만디아스",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "royal",
+      "temperament_source": "legacy",
+      "reason": "레거시 오지만디아스 성격표"
+    },
+    "sv_0206_achilles": {
+      "name_short_ko": "아킬레우스",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "호쾌한 전사의 기질"
+    },
+    "sv_0032_gilles_de_rais": {
+      "name_short_ko": "질 드 레",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "berserker",
+      "temperament_source": "ai",
+      "reason": "광신에 사로잡힌 모습"
+    },
+    "sv_0033_hans_christian_andersen": {
+      "name_short_ko": "안데르센",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "saint",
+      "temperament_source": "legacy",
+      "reason": "레거시 안데르센 성격표"
+    },
+    "sv_0034_william_shakespeare": {
+      "name_short_ko": "셰익스피어",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "cheerful",
+      "temperament_source": "legacy",
+      "reason": "레거시 셰익스피어 성격표"
+    },
+    "sv_0037_zhuge_liang_lord_el_melloi_ii": {
+      "name_short_ko": "엘멜로이 2세",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cool",
+      "temperament_source": "legacy",
+      "reason": "레거시 제갈공명(웨이버) 성격표"
+    },
+    "sv_0038_cu_chulainn": {
+      "name_short_ko": "쿠 훌린 캐스터",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "cool",
+      "temperament_source": "legacy",
+      "reason": "레거시 쿠 훌린(캐스터) 성격표"
+    },
+    "sv_0062_tamamo_no_mae": {
+      "name_short_ko": "타마모",
+      "alignment": "evil",
+      "alignment_detail": "중립·악",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "애정 표현과 반발이 교차하는 태도"
+    },
+    "sv_0111_irisviel_holy_grail": {
+      "name_short_ko": "아이리스필",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "saint",
+      "temperament_source": "legacy",
+      "reason": "레거시 아이리스필 성격표"
+    },
+    "sv_0127_leonardo_da_vinci": {
+      "name_short_ko": "다 빈치",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "사교적이고 장난기 있는 천재"
+    },
+    "sv_0136_illyasviel_von_einzbern": {
+      "name_short_ko": "이리야",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "소녀다운 밝고 적극적인 태도"
+    },
+    "sv_0150_merlin": {
+      "name_short_ko": "멀린",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cool",
+      "temperament_source": "legacy",
+      "reason": "레거시 멀린 성격표"
+    },
+    "sv_0203_avicebron": {
+      "name_short_ko": "아비케브론",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "cool",
+      "temperament_source": "class",
+      "reason": "레거시 caster 클래스 기본 성격"
+    },
+    "sv_0040_hassan_of_the_cursed_arm": {
+      "name_short_ko": "주완의 하산",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "assassin",
+      "temperament_source": "legacy",
+      "reason": "레거시 주완의 하산 성격표"
+    },
+    "sv_0041_stheno": {
+      "name_short_ko": "스테노",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cheerful",
+      "temperament_source": "legacy",
+      "reason": "레거시 스테노 성격표"
+    },
+    "sv_0042_jing_ke": {
+      "name_short_ko": "형가",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "목표를 조용히 노리는 암살자"
+    },
+    "sv_0044_phantom_of_the_opera": {
+      "name_short_ko": "팬텀",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "tsundere",
+      "temperament_source": "legacy",
+      "reason": "레거시 팬텀 성격표"
+    },
+    "sv_0045_mata_hari": {
+      "name_short_ko": "마타 하리",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "cheerful",
+      "temperament_source": "legacy",
+      "reason": "레거시 마타 하리 성격표"
+    },
+    "sv_0075_jack_the_ripper": {
+      "name_short_ko": "잭",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "assassin",
+      "temperament_source": "legacy",
+      "reason": "레거시 잭 더 리퍼 성격표"
+    },
+    "sv_0092_ryougi_shiki_assassin": {
+      "name_short_ko": "시키",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cool",
+      "temperament_source": "legacy",
+      "reason": "레거시 료기 시키 성격표"
+    },
+    "sv_0109_emiya_assassin": {
+      "name_short_ko": "키리츠구",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "assassin",
+      "temperament_source": "legacy",
+      "reason": "레거시 에미야(어쌔신) 성격표"
+    },
+    "sv_0110_hassan_of_the_hundred_personas": {
+      "name_short_ko": "백모의 하산",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "assassin",
+      "temperament_source": "class",
+      "reason": "레거시 assassin 클래스 기본 성격"
+    },
+    "sv_0154_first_hassan": {
+      "name_short_ko": "산의 노인",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "assassin",
+      "temperament_source": "legacy",
+      "reason": "레거시 산의 노인 성격표"
+    },
+    "sv_0199_semiramis": {
+      "name_short_ko": "세미라미스",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "여제로서 오만하고 위압적인 태도"
+    },
+    "sv_0048_lancelot": {
+      "name_short_ko": "랜슬롯 버서커",
+      "alignment": "neutral",
+      "alignment_detail": "질서·광기",
+      "temperament": "berserker",
+      "temperament_source": "legacy",
+      "reason": "레거시 랜슬롯(버서커) 성격표"
+    },
+    "sv_0049_lu_bu_fengxian": {
+      "name_short_ko": "여포",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "berserker",
+      "temperament_source": "legacy",
+      "reason": "레거시 여포 성격표"
+    },
+    "sv_0050_spartacus": {
+      "name_short_ko": "스파르타쿠스",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "berserker",
+      "temperament_source": "legacy",
+      "reason": "레거시 스파르타쿠스 성격표"
+    },
+    "sv_0051_sakata_kintoki": {
+      "name_short_ko": "킨토키",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "berserker",
+      "temperament_source": "legacy",
+      "reason": "레거시 킨토키 성격표"
+    },
+    "sv_0052_vlad_iii": {
+      "name_short_ko": "블라드 버서커",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "berserker",
+      "temperament_source": "legacy",
+      "reason": "레거시 블라드(버서커) 성격표"
+    },
+    "sv_0053_asterios": {
+      "name_short_ko": "아스테리오스",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "cheerful",
+      "temperament_source": "legacy",
+      "reason": "레거시 아스테리오스 성격표"
+    },
+    "sv_0082_frankenstein": {
+      "name_short_ko": "프랑",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "berserker",
+      "temperament_source": "class",
+      "reason": "레거시 berserker 클래스 기본 성격"
+    },
+    "sv_0089_beowulf": {
+      "name_short_ko": "베오울프",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "정면 승부를 즐기는 호걸"
+    },
+    "sv_0097_florence_nightingale": {
+      "name_short_ko": "나이팅게일",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "환자를 구하려는 강박적인 헌신"
+    },
+    "sv_0098_cu_chulainn_alter": {
+      "name_short_ko": "쿠 훌린 얼터",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "말수가 적고 냉혹한 얼터"
+    },
+    "sv_0161_hijikata_toshizo": {
+      "name_short_ko": "히지카타",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "신선조 부장으로서의 엄격한 지휘"
+    },
+    "sv_0059_jeanne_d_arc": {
+      "name_short_ko": "잔 다르크",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "legacy",
+      "reason": "레거시 잔 다르크 성격표"
+    },
+    "sv_0093_amakusa_shirou": {
+      "name_short_ko": "아마쿠사",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "구원을 추구하는 종교적 신념"
+    },
+    "sv_0173_sherlock_holmes": {
+      "name_short_ko": "홈즈",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cool",
+      "temperament_source": "legacy",
+      "reason": "레거시 셜록 홈즈 성격표"
+    },
+    "sv_0229_qin_shi_huang": {
+      "name_short_ko": "시황제",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cool",
+      "temperament_source": "legacy",
+      "reason": "레거시 시황제 성격표"
+    },
+    "sv_0096_edmond_dantes": {
+      "name_short_ko": "암굴왕",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "avenger",
+      "temperament_source": "legacy",
+      "reason": "레거시 암굴왕 성격표"
+    },
+    "sv_0106_jeanne_d_arc_alter": {
+      "name_short_ko": "잔 얼터",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "avenger",
+      "temperament_source": "legacy",
+      "reason": "레거시 잔 얼터 성격표"
+    },
+    "sv_0107_a_ra_mainiiu": {
+      "name_short_ko": "앙리 마유",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "avenger",
+      "temperament_source": "legacy",
+      "reason": "레거시 앙리 마유 성격표"
+    },
+    "sv_0204_antonio_salieri": {
+      "name_short_ko": "살리에리",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "avenger",
+      "temperament_source": "legacy",
+      "reason": "레거시 살리에리 성격표"
+    },
+    "sv_0163_meltryllis": {
+      "name_short_ko": "멜트릴리스",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "가시 돋친 태도와 애정의 공존"
+    },
+    "sv_0164_passionlip": {
+      "name_short_ko": "패션립",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "수줍음과 강한 감정의 충돌"
+    },
+    "sv_0167_sessyoin_kiara": {
+      "name_short_ko": "키아라",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "avenger",
+      "temperament_source": "ai",
+      "reason": "타인을 도구로 대하는 적대성"
+    },
+    "sv_0297_ashiya_douman": {
+      "name_short_ko": "도만",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "음모와 기만을 즐기는 음양사"
+    },
+    "sv_0166_bb": {
+      "name_short_ko": "BB",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "장난과 반발로 감정을 감추는 태도"
+    },
+    "sv_0195_abigail_williams": {
+      "name_short_ko": "애비게일",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "불안 속에서도 조심스러운 태도"
+    },
+    "sv_0198_katsushika_hokusai": {
+      "name_short_ko": "호쿠사이",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "활달한 화가의 기질"
+    },
+    "sv_0316_oberon": {
+      "name_short_ko": "오베론",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "avenger",
+      "temperament_source": "ai",
+      "reason": "파멸을 향한 복수심과 기만"
+    }
+  }
+}

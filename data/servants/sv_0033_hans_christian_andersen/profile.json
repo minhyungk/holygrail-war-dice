@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0033_hans_christian_andersen",
+  "source_id": 33,
+  "name_ko": "한스 크리스티안 안데르센",
+  "name_short_ko": "안데르센",
+  "class": "caster",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "E",
+    "mana": "EX",
+    "luck": "E",
+    "np": "C"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "질서·중용",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "당신을 위한 이야기",
+    "ruby_ko": "메르헨 마이네스 레이벤스",
+    "rank": "C+",
+    "type_ko": "대인보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5005000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/500500/500500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/500500/500500b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

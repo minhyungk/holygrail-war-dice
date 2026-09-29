@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0085_karna",
+  "source_id": 85,
+  "name_ko": "카르나",
+  "name_short_ko": "카르나",
+  "class": "lancer",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "A",
+    "mana": "B",
+    "luck": "D",
+    "np": "EX"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "일륜이여, 죽음에 복종하여라",
+    "ruby_ko": "바사비 샤크티",
+    "rank": "EX",
+    "type_ko": "대신보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3004000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/300400/300400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/300400/300400b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

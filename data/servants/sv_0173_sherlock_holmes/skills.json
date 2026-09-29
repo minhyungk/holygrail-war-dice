@@ -1,0 +1,34 @@
+{
+  "servant_id": "sv_0173_sherlock_holmes",
+  "skills": [
+    {
+      "skill_id": "sk_territory_creation",
+      "name_ko": "진지작성",
+      "rank": "EX",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_gift_of_insight",
+      "name_ko": "천부의 견식",
+      "rank": "A+++",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_revealer",
+      "name_ko": "해명하는 자",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_baritsu",
+      "name_ko": "바리츠",
+      "rank": "B++",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

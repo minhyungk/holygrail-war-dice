@@ -1,0 +1,62 @@
+{
+  "servant_id": "sv_0316_oberon",
+  "skills": [
+    {
+      "skill_id": "sk_a900250",
+      "name_ko": "???",
+      "rank": null,
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_territory_creation",
+      "name_ko": "진지작성",
+      "rank": "E-",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_item_construction",
+      "name_ko": "도구작성",
+      "rank": "A+",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_midsummer_night_s_dream",
+      "name_ko": "한여름 밤의 꿈",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_evening_shroud",
+      "name_ko": "밤의 장막",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_morning_lark",
+      "name_ko": "아침의 종다리",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_ending_of_dreams",
+      "name_ko": "꿈의 끝",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

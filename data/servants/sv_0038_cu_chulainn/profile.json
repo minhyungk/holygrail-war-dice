@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0038_cu_chulainn",
+  "source_id": 38,
+  "name_ko": "쿠 훌린",
+  "name_short_ko": "쿠 훌린 캐스터",
+  "class": "caster",
+  "ranks": {
+    "str": "E",
+    "end": "D",
+    "agi": "C",
+    "mana": "B",
+    "luck": "D",
+    "np": "B"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "질서·중용",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "불사르는 불꽃의 우리",
+    "ruby_ko": "위커 맨",
+    "rank": "B+",
+    "type_ko": "대군보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5021000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/502100/502100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/502100/502100b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

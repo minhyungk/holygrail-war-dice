@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0005_nero_claudius",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_chalice_of_wealth",
+      "name_ko": "부의 잔",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_imperial_privilege_applause",
+      "name_ko": "황제특권(갈채)",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_invictus_spiritus",
+      "name_ko": "세 번, 낙일을 맞이할지라도",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

@@ -2,9 +2,9 @@
 export const JOSA_PAIRS = ['이/가', '은/는', '을/를', '와/과', '으로/로'] as const;
 export type JosaPair = (typeof JOSA_PAIRS)[number];
 
-/** 마지막 글자의 종성 번호 (0 = 받침 없음). 한글이 아니면 null */
+/** 마지막 글자의 종성 번호 (0 = 받침 없음). 한글이 아니면 null. 끝의 괄호 표기는 읽지 않는다: "심안(가짜)" → "심안" */
 export function finalConsonant(word: string): number | null {
-  const c = word.trim().slice(-1);
+  const c = word.trim().replace(/\s*\([^()]*\)$/, '').slice(-1);
   if (!c || c < '가' || c > '힣') return null;
   return (c.charCodeAt(0) - 0xac00) % 28;
 }

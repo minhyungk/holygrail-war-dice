@@ -1,0 +1,264 @@
+{
+  "speaker": "sv_0118_ozymandias",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "하핫!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "약하다!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "나약하구나, 나약해!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "파라오에 맞서는 어리석은 놈이!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_2",
+        "text": "이 정도인가!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_1",
+        "text": "좋구나, 하하! 조금은 실력이 있군!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "파라오의 신위를 보라! 하하! 하하하하하!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "지상에서 파라오에게 불가능이란 없다! 만물 만상, 나의 수중에 있노라!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_like",
+        "text": "파라오란 바로 지상의 지배자이다. 따라서 지배하는 모든 것의 가치는 평등하다. 우열 따위를 가릴 것도 없다.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "……짐이 증오하는 것은 단 하나. 지상에서의 짐의 육체가 허약한 것이다. 빛나는 태양이자, 최대 최강의 파라오인 짐은 결코 쇠해서는 안 된다. 하지만 과거에도 지금도 이 육체는 마땅한 이상과는 거리가 멀구나……",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          },
+          "self.intel_level": 3
+        },
+        "text": "성배란 죄 많은 것이로구나. 당찮게도 짐을 유혹하다니. 전능한 신조차 공포에 떨게 만드는 이 오지만디아스를.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "……흐음. 어떠한 무용을 자랑하는 영웅도, 신비를 행사하는 마술사도 짐의 흥미의 대상이 되지 못한다. 어느 쪽도 평등하게 파라오에게 지배를 받는 중생에 지나지 않아. 보잘것없는 존재다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "짐의 흥미를 이끄는 것은 그리 많지 않다. 왕의 기풍을 가진 자. 왕가의 혈통으로 태어난 자, 그러한 것을 말하는 것이 아니다. 태어나면서부터 왕의 힘을 가지고, 그 책무를 이해하는 자다. 그리고……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "왕이란 절대자인 파라오에 비할 바는 아니지만, 파라오가 아닌 왕을 이끄는 것도 가끔은 좋겠지. ……아니, 네놈의 이야기가 아니다. 네놈은 왕의 기풍을 가진 자인가?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "흠…… 네놈, 다소 짐의 흥미를 끄는구나. 고작 마술사 따위에게 이렇게나 짐이…… 어째서지? 허하노라, 가까이 오라. 네놈의 얼굴이 보고 싶다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "왕의 기풍은 아니지만──네놈에게는 어떤 기풍이 있는 것 같구나. 혹시 그것은 짐의 옛 형제인…… 아니, 설마. 그보다 짐에게 얼굴을 더 보여라. 눈동자가 보고 싶다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "신성한 파라오의 무용을 보여주지. 절망에 따른 죽음을 허한다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "태양의 빛으로! 너를 불태워 주마, 지금 여기서!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "전능한 신이여, 나의 위업을 보라! 그리고 머리를 조아려라! 나의 무한한 광휘, 태양은 여기에 강림하나니! ──라메세움 텐티리스!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "하늘을 우러르라. 땅을 기어라. 네가 올려다보는 태양의 빛이 바로 짐이노라.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "……시시하구나. 이 정도면 짐이 나설 필요도 없었다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "이럴 수가…… 파라오의 옥체에, 상처를……?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "이…… 오지만디아스인 짐을…… 쓰러트린…… 건가……?",
+        "when": {
+          "self.intel_level": 3
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "나의 이름은 오지만디아스. 왕 중의 왕. 전능한 신이여, 나의 위업을 보라── 그리고 절망하라!",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": 3
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

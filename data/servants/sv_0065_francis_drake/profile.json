@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0065_francis_drake",
+  "source_id": 65,
+  "name_ko": "프랜시스 드레이크",
+  "name_short_ko": "드레이크",
+  "class": "rider",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "B",
+    "mana": "E",
+    "luck": "EX",
+    "np": "A+"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "황금 사슴과 폭풍의 밤",
+    "ruby_ko": "골든 와일드 헌트",
+    "rank": "A+",
+    "type_ko": "대군보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4003000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/400300/400300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/400300/400300b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

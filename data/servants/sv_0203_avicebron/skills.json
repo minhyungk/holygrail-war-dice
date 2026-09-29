@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0203_avicebron",
+  "skills": [
+    {
+      "skill_id": "sk_territory_creation",
+      "name_ko": "진지작성",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_item_construction",
+      "name_ko": "도구작성",
+      "rank": "B+",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_numerology",
+      "name_ko": "수비술",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_rapid_casting",
+      "name_ko": "고속영창",
+      "rank": "B+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_tranquil_fig",
+      "name_ko": "평온의 무화과",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

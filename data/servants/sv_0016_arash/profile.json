@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0016_arash",
+  "source_id": 16,
+  "name_ko": "아라쉬",
+  "name_short_ko": "아라쉬",
+  "class": "archer",
+  "ranks": {
+    "str": "B",
+    "end": "A",
+    "agi": "B+",
+    "mana": "E",
+    "luck": "D",
+    "np": "B++"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "유성일조",
+    "ruby_ko": "스텔라",
+    "rank": "A",
+    "type_ko": "대군보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2013000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/201300/201300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/201300/201300b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

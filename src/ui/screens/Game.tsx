@@ -395,7 +395,8 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
           const v = session.narrator.state;
           const known = (fc: string) => (fc === me ? 3 : (v.intel[fc] ?? 0));
           const clsOf = (fc: string) => (known(fc) >= 1 ? session.data.servants[v.factions[fc]!.servant_id]!.class : null);
-          pushFx({ kind: 'vs', a: { name: name(me), cls: clsOf(me) }, c: { name: name(enemy), cls: clsOf(enemy) }, sub: e.data.is_final ? T.time.final : tileOf(e.data.tile ?? v.factions[me]!.tile).name_ko }, 2300);
+          const faceOf = (fc: string) => known(fc) >= 3 ? session.data.servants[v.factions[fc]!.servant_id]!.images.face : undefined;
+          pushFx({ kind: 'vs', a: { name: name(me), cls: clsOf(me), img: faceOf(me) }, c: { name: name(enemy), cls: clsOf(enemy), img: faceOf(enemy) }, sub: e.data.is_final ? T.time.final : tileOf(e.data.tile ?? v.factions[me]!.tile).name_ko }, 2300);
           await wait(1900);
         }
         return;
@@ -483,7 +484,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
         }
         if (e.data.to === 'dead') {
           doShake(true);
-          pushFx({ kind: 'death', side }, 2200);
+          pushFx({ kind: 'death', side }, K['text.death_fx'].duration_ms);
           await wait(900);
         }
         await wait(700);
@@ -659,14 +660,14 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
         // 낮 메뉴 (D-145): 정보 수집 / 교류. 오늘 칸 보너스를 보여 준다
         const t = tileOf(prompt.tile);
         const n = K['day.role_bonus'][prompt.role];
-        const bonus = n ? T.dayBonus(T.roleBonus[prompt.role]!, n) : '';
+        const bonus = n ? T.dayBonus(T.roleBonus[prompt.role]!) : '';
         return {
           q: T.dayQ(prompt.day, t.name_ko, `${ROLE_ICON[prompt.role]} ${T.role[prompt.role]}`, bonus),
           opts: [
             prompt.intel_open
-              ? { label: T.dayIntel(prompt.bonus.intel), value: { action: 'intel' }, primary: prompt.bonus.intel > 0 }
-              : { label: T.dayIntel(0), value: { action: 'intel' }, blocked: T.dayIntelWhy },
-            { label: T.dayBond(meSv.name_ko, prompt.bonus.bond), value: { action: 'bond' }, primary: prompt.bonus.bond > 0 || !prompt.intel_open },
+              ? { label: T.dayIntel(prompt.bonus.intel > 0), value: { action: 'intel' }, primary: prompt.bonus.intel > 0 }
+              : { label: T.dayIntel(false), value: { action: 'intel' }, blocked: T.dayIntelWhy },
+            { label: T.dayBond(meSv.name_ko, prompt.bonus.bond > 0), value: { action: 'bond' }, primary: prompt.bonus.bond > 0 || !prompt.intel_open },
           ],
         };
       }
@@ -881,7 +882,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
                   const esv = session.data.servants[f.servant_id]!;
                   return (
                     <div key={f.id} className="token enemy" style={tokenPos(f.tile, f.tile === meF.tile ? 4 + i * 3 : i * 3)}>
-                      {lv >= 3 ? <Art src={esv.images.face} cls={esv.class} /> : lv >= 1 ? LABELS.glyph[esv.class] : '?'}
+                      {lv >= 3 ? <Art src={esv.images.face} cls={esv.class} /> : lv >= 1 ? <Glyph cls={esv.class} /> : '?'}
                     </div>
                   );
                 })}
@@ -939,7 +940,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
           <div className="role-legend">
             {(Object.keys(T.role) as TileRole[]).map((r) => (
               <span key={r}>
-                {ROLE_ICON[r]} {T.role[r]} · {T.roleBonus[r]}{K['day.role_bonus'][r]}
+                {ROLE_ICON[r]} {T.role[r]} · {T.roleBonus[r]}
               </span>
             ))}
             <span className="hud-sub">{T.roleHint}</span>
@@ -1084,9 +1085,7 @@ function Profile({ fc, view, session }: { fc: string; view: RunView; session: Se
   return (
     <div className={`bprofile ${mine ? 'bp-me' : 'bp-enemy'}`}>
       <div className="bp-head">
-        <span className="mb-face" aria-hidden="true">
-          {name.slice(0, 1)}
-        </span>
+        <MasterFace name={name} src={m?.portrait.local ?? m?.portrait.atlas_url ?? null} />
         <div className="mb-info">
           <b>{name}</b>
           <small>{sub}</small>
@@ -1109,6 +1108,11 @@ function Profile({ fc, view, session }: { fc: string; view: RunView; session: Se
       </div>
     </div>
   );
+}
+
+function MasterFace({ name, src }: { name: string; src: string | null }) {
+  const [failed, setFailed] = useState(false);
+  return <span className="mb-face" aria-hidden="true">{src && !failed ? <img src={src} alt="" referrerPolicy="no-referrer" onError={() => setFailed(true)} /> : name.slice(0, 1)}</span>;
 }
 
 /**

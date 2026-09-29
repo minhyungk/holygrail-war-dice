@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0077_nikola_tesla",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_independent_action",
+      "name_ko": "단독행동",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_tesla_coil",
+      "name_ko": "테슬라 코일",
+      "rank": "A++",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_inherent_wisdom",
+      "name_ko": "천부의 예지",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_pioneer_of_the_stars",
+      "name_ko": "별의 개척자",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

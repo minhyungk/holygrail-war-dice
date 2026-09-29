@@ -88,6 +88,7 @@ export function narratorData(): NarratorData {
     narrator: DialogueFile.parse(readJson('data/common/narrator.json')),
     speech: DialogueFile.parse(readJson('data/common/speech.json')),
     servants: d.servants,
+    skills: d.skills,
     masters: d.masters,
     tiles: TILES,
     labels: LabelsFile.parse(readJson('data/common/labels.json')),

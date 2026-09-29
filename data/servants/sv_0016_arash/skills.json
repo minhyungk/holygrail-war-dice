@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0016_arash",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_independent_action",
+      "name_ko": "단독행동",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_toughness",
+      "name_ko": "강건",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_clairvoyance",
+      "name_ko": "천리안",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_arrow_construction",
+      "name_ko": "궁시작성",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

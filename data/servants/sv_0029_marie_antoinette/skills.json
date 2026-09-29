@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0029_marie_antoinette",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "A+",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_royal_melody",
+      "name_ko": "왕통의 음색",
+      "rank": "B+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_beautiful_princess",
+      "name_ko": "아름다운 공주",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_god_s_grace",
+      "name_ko": "신의 은총",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

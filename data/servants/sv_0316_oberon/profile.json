@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0316_oberon",
+  "source_id": 316,
+  "name_ko": "오베론",
+  "name_short_ko": "오베론",
+  "class": "pretender",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "A+",
+    "mana": "A",
+    "luck": "EX",
+    "np": "EX"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "avenger",
+  "noble_phantasm": {
+    "name_ko": "저편으로 드리우는 꿈 이야기",
+    "ruby_ko": "라이 라임 굿펠로우",
+    "rank": "E",
+    "type_ko": "대인보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_28001000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/2800100/2800100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/2800100/2800100b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

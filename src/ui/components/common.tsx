@@ -3,19 +3,23 @@ import type { CSSProperties, ReactNode } from 'react';
 import { useEffect, useState } from 'react';
 import { pipLayout, pipRadius } from '../fx/pips';
 
-export const LABELS = { glyph: {} as Record<string, string>, cls: {} as Record<string, string>, unknown: '' };
-export const setLabels = (l: { class_glyph: Record<string, string>; class_name: Record<string, string>; unknown_servant: string }) => {
+export const LABELS = { glyph: {} as Record<string, string>, icon: {} as Record<string, string>, cls: {} as Record<string, string>, unknown: '', grail: '' };
+export const setLabels = (l: { class_glyph: Record<string, string>; class_icon: Record<string, string>; class_name: Record<string, string>; unknown_servant: string; grail_image: string }) => {
   Object.assign(LABELS.glyph, l.class_glyph);
+  Object.assign(LABELS.icon, l.class_icon);
   Object.assign(LABELS.cls, l.class_name);
   LABELS.unknown = l.unknown_servant;
+  LABELS.grail = l.grail_image;
 };
 export const clsVar = (c: string) => `var(--class-${c})`;
 export const clsStyle = (c: string | null): CSSProperties => (c ? ({ ['--cls' as string]: clsVar(c) } as CSSProperties) : {});
 
 export function Glyph({ cls, hidden, style }: { cls: string; hidden?: boolean; style?: CSSProperties }) {
+  const [failed, setFailed] = useState(false);
+  const icon = hidden ? null : LABELS.icon[cls];
   return (
     <span className="glyph" style={{ ...clsStyle(hidden ? null : cls), ...style }}>
-      {hidden ? '?' : (LABELS.glyph[cls] ?? '?')}
+      {icon && !failed ? <img src={icon} alt="" onError={() => setFailed(true)} /> : hidden ? '?' : (LABELS.glyph[cls] ?? '?')}
     </span>
   );
 }

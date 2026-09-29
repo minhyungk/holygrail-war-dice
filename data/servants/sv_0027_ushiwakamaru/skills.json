@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0027_ushiwakamaru",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "A+",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_tengu_s_strategy",
+      "name_ko": "텐구의 병법",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_rikutou_secret_technique_rapid_change",
+      "name_ko": "육도비술・신뢰풍열",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_art_of_the_swallow",
+      "name_ko": "제비의 날쌘 재주",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

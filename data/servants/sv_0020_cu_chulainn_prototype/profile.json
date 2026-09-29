@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0020_cu_chulainn_prototype",
+  "source_id": 20,
+  "name_ko": "쿠 훌린(프로토타입)",
+  "name_short_ko": "쿠 훌린 프로토",
+  "class": "lancer",
+  "ranks": {
+    "str": "A",
+    "end": "C",
+    "agi": "A+",
+    "mana": "B",
+    "luck": "D",
+    "np": "B"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "질서·중용",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "꿰뚫는 붉은 창",
+    "ruby_ko": "게이 볼그",
+    "rank": "B+",
+    "type_ko": "대인보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3007000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/300700/300700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/300700/300700b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

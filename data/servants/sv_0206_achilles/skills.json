@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0206_achilles",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "A+",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_divinity",
+      "name_ko": "신성",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_dr_mos_kom_t_s",
+      "name_ko": "혜성주법",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_andre_os_am_rantos",
+      "name_ko": "용사의 시들지 않는 꽃",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_diatrekh_n_ast_r_lonkh",
+      "name_ko": "하늘을 달리는 별의 창끝",
+      "rank": "B+",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

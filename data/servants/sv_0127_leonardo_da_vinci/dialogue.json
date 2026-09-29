@@ -1,0 +1,267 @@
+{
+  "speaker": "sv_0127_leonardo_da_vinci",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "에잇!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "계속해서 간다~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "화려하게 가볼까!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "레오나르도 펀-치! 예술을 알도록 해!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_2",
+        "text": "아파팟!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_1",
+        "text": "좋다 좋아! 너무나……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "대개 나는 만능이란 말이지.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "어디부터 손대야 할까나……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_like",
+        "text": "나는 내가 좋아! 이 외모가 좋아! 아름다워…… 아름답도록 만들었으니 당연하지만! 후후.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "나는 모든 것을 동등하게 좋아하지만…… 아아, 세계를 소각하고자 하는 녀석들은 좋아할 수가 없네. 그건.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배에는 흥미가 있다마다. 학술적인 탐구심의 대상으로서 말이야. 소원? 아니, 그런 것은 딱히 없어. 나는 만능이니까. 하지만, 그래도 소원이라고 한다면…",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "뭐니, 마스터? ……‘마스터’라고 이 내가 다른 사람을 부르게 될 줄은 생각 못 했어. 훗 그래도 그럭저럭 나쁘지 않네.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "내가 마술을 쓰는 것이 신기하니? 아아, 그렇네. 나는 과학자나 예술가로서 알려져 있으니까 말이야. 하지만 생각해 봐? 내가 마술을 쓰는 건, 부자연스러운 게 아니라고?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          },
+          "self.intel_level": 3
+        },
+        "text": "나는 대충 만능이다. 그렇게 나는 되어 있고, 그렇게 사람들에게 빌어진 것이기도 해. 그러니까, 응? 다 빈치짱에게 불가능은 거의 없어. 마술을 행사하는 것도 말야.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "너를 오니솝터에 태워주고 싶네~. 하늘을 나는 기계야. 라이더 클래스로 소환됐으면, 여러 가지에 태웠을 테지만…… 캐스터로의 현계로는 소환에 조금 손이 많이 가네.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "이 모습으로 있는 걸 정한 건, 나 자신. 그것에 후회하진 않았고, 하지도 않을 거야… 어때, 마스터? 너에게 혹시 취미가 있다면, 그 모습이 되는 것도 가능하다구? 가슴이라던가, 이 정도면 될까?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "다 빈치짱 등장! 자, 만물의 구성 요소를 얘기해 보자구.",
+        "when": {
+          "self.intel_level": 3
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "전투 결과는 알고 있어. 수식 같은 거지.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "동방의 세 박사. 북구의 위대한 신. 지혜의 과실. 나의 예지, 나의 만능은 모든 예지를 능가한다! ───워모 우니베르살레!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "벌써 끝이야? 다른 것도 시험해보고 싶은 게 있었는데…",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "나를 쓰러뜨리는 자는 나를 뛰어넘도록 만능인 자뿐이야. 너로서는 쬐~끔 모자랐네.",
+        "when": {
+          "self.intel_level": 3
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "이런, 한 발 부족했나…… 유언이란 중요한 거지……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "이 얼마나 재미있는지…… 내 계산을 뛰어넘었어……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "다시 한번, 잘 부탁해. 서번트 레오나르도 다 빈치. 그래────지금부터는, 너만의 다 빈치짱이란 말이지!",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": 3
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

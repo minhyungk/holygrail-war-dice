@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0085_karna",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_divinity",
+      "name_ko": "신성",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_knowledge_of_the_deprived",
+      "name_ko": "빈자의 식견",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_mana_burst_flame",
+      "name_ko": "마력방출(불꽃)",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_fruits_of_benefaction",
+      "name_ko": "희사의 끝",
+      "rank": null,
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

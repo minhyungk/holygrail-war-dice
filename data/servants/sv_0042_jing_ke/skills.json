@@ -1,0 +1,34 @@
+{
+  "servant_id": "sv_0042_jing_ke",
+  "skills": [
+    {
+      "skill_id": "sk_presence_concealment",
+      "name_ko": "기척 차단",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_restrain",
+      "name_ko": "억제",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_sh_b_sh_y_r_n",
+      "name_ko": "십보살일인",
+      "rank": "B+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_insolent",
+      "name_ko": "방약무인",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

@@ -8,12 +8,14 @@ const root = join(__dirname, '..', '..');
 const folder = join(root, 'data/servants-pool');
 const read = (path: string) => JSON.parse(readFileSync(join(folder, path), 'utf8'));
 
-it('Atlas 준비 자료는 전원 ID·출처·대사가 있고 게임 로더에서는 제외된다 (D-152)', () => {
+it('Atlas 준비 자료는 전원 ID·출처·대사가 있고, 게임 로더에는 편입 명단만 들어간다 (D-152, D-157)', () => {
   const manifest = read('manifest.json');
-  const ids = readdirSync(folder, { withFileTypes: true }).filter((e) => e.isDirectory()).map((e) => e.name);
+  // activation/은 편입 명단·분류표 폴더 (D-157)
+  const ids = readdirSync(folder, { withFileTypes: true }).filter((e) => e.isDirectory() && e.name.startsWith('sv_')).map((e) => e.name);
   expect(ids.length).toBe(manifest.prepared);
   expect(manifest.failed_details).toEqual([]);
-  expect(availableServantIds().sort()).toEqual([...manifest.active_game_servants].sort());
+  const roster: { servant_id: string }[] = read('activation/roster.json').servants;
+  expect(availableServantIds().sort()).toEqual(roster.map((s) => s.servant_id).sort());
 
   const missingVoices: string[] = [];
   const incompleteImages: string[] = [];

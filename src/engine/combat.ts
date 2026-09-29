@@ -181,7 +181,8 @@ export function* battle(input: BattleInput, dice: BattleDice, log: EventLog): Ba
   for (const s of ['a', 'b'] as const) if (!CONDITIONS.includes(F[s].condition)) throw new Error(`전투할 수 없는 상태: ${F[s].faction}`);
 
   const forecast = (completed: number, current?: BattleCheckpoint['current']): { forecast?: BattleInput } => input.captureForecast ? {
-    forecast: { ...input, captureForecast: false, a: { ...F.a }, b: { ...F.b }, checkpoint: {
+    // 예측 입력에는 선택 알림(onChoice)을 넣지 않는다: 예측 실행의 가상 선택이 실제 호감도를 바꾸면 안 된다
+    forecast: { ...input, captureForecast: false, onChoice: undefined, a: { ...F.a }, b: { ...F.b }, checkpoint: {
       completed, npUsed: { ...npUsed }, skillUses: { a: { ...skillUses.a }, b: { ...skillUses.b } }, weaknessUsed: { ...weaknessUsed },
       ...(current ? { current: { ...current, opened: { ...current.opened } } } : {}),
     } },
@@ -216,7 +217,7 @@ export function* battle(input: BattleInput, dice: BattleDice, log: EventLog): Ba
 
   // ── 스킬 (skills.md, D-142): 훅마다 양측 스킬을 보유 순서대로, a → b 순으로 판단한다 ──
   const ctxOf = (s: Side, phaseIndex: number, extra: Partial<SkillCtx> = {}): SkillCtx => ({
-    phaseIndex, selfCondition: F[s].condition, leyline: input.leyline ?? false, ...extra,
+    phaseIndex, selfCondition: F[s].condition, leyline: input.leyline ?? false, foeClass: F[other(s)].servant.class, ...extra,
   });
   const trigger = (s: Side, sk: ActiveSkill, phaseIndex: number, amount: number, target: Side, manaAfter: number | null = null) =>
     log.emit('skill_triggered', [F[s].faction], {

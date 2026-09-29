@@ -1,0 +1,288 @@
+{
+  "speaker": "sv_0153_miyamoto_musashi",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "훗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "키엣!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "이 정도야!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "받아낼 수 있을까……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_2",
+        "text": "크으!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_1",
+        "text": "진짜로 한다 이거지───!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "좋아, 거기를 노릴 테니까~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "음. 갑자기 떠올랐어!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "네 동네에는 여검사가 별로 없나…… 아니, 내 쪽 동네에서도 드물었지만. 아무튼 잘 부탁해, 마스터. 후후. 좋네, 이 마스터라는 말!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "이도류가 아니냐고? 으음, 이천일류는 딱히 두 자루를 쓰는 게 아니라, 뭐든지 한다는 방향이지만. 그리고…… 아버지에 대한 앙갚음일까.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "최근 묘하게 시선을 느끼는데…… 마스터, 내 검이 아니라 몸에 관심이 있는 걸까? 후후…… 그런 거라면 더 수행을 해야겠네. 나를 쓰러뜨릴 정도로 강해지겠어, 마스터?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "우…… 미안, 미안, 잠깐 기다려! 단둘일 때에 밀착하는 건 금지~~! 그렇습니다, 미소년은 좋아하지만 남녀 관계에는 서투릅니다! 아니, 가정을 갖게 되면 검 실력이 떨어진다고 부처님이 그랬거든요?!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "우우, 이제 안 돼. 번뇌를 끊어야 한다……! 설마 이쪽이 먼저 끌리게 되다니…… 잠깐 폭포물로 머리를 식히고 오겠습니다…… 하, 하지만, 싫은 건 아니니까! 그런 미묘한 검사의 마음을 이해하도록~!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것? 그야 물론 미소─── 아니, 아무것도 아냐. 검. 검의 수행 같은 걸 좋아하거든?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 거라…… 그거일까. 남의 긍지를 자기 재미를 위해 짓밟는 놈은 논외. 또 배고플 때 공격해 오는 놈!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배? 훗, 그러고 보니 나, 어릴 적에 관음님의 밥그릇으로 밥을 먹어버린 적이 있어~! ……내가 마구잡이로 세계를 옮겨 다니게 된 이유는 혹시 그건가~!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "일도삼배, 수련의 끝에 무한에 이르다───",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "목숨을 걸고 싸우다니, 일이 귀찮게 됐네……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "일도삼배. 무한을 깨고 영에 이른다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "나무, 천만대자재천신─── 인왕구리가라, 소천상───! 간다, 검굉발도!！ 이사나, 대천상───!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "나무, 천만대자재천신─── 검기로써 그 기세를 벤다……! 이 일격이야말로 나의 공도, 나의 생애! 이사나, 대천상───!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "나무, 천만대자재천신─── 마두관음, 분노로써 모든 악을 벤다……! 이 일격이야말로 나의 공도, 나의 생애! 이사나, 대천상───!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "좋아, 이번에도 살아남았네! 우동 먹으러 갈까!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "나의 검, 아직도 공에 이르지 못했나……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "공이란 즉, 무의 관념. 무념무상조차 벤다…… 라고 하다니, 내가 너무 거만해진 걸까?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "……도움이 못 되어서, 미안해.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "나도 아직 수행이 부족하네……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "신멘 무사시노카미 후지와라노 하루노부……?! 미안, 다시! 서번트, 세이버, 신멘 무사시, 여기에 등장! 재미있고 즐겁게 지내게 해 줘, 마스터!",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": 3
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

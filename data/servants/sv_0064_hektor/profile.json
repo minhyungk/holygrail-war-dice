@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0064_hektor",
+  "source_id": 64,
+  "name_ko": "헥토르",
+  "name_short_ko": "헥토르",
+  "class": "lancer",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "A",
+    "mana": "B",
+    "luck": "B",
+    "np": "B"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "질서·중용",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "불훼의 극창",
+    "ruby_ko": "두린다나",
+    "rank": "A",
+    "type_ko": "대군보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3016000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/301600/301600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/301600/301600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

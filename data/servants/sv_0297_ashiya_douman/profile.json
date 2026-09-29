@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0297_ashiya_douman",
+  "source_id": 297,
+  "name_ko": "아시야 도만",
+  "name_short_ko": "도만",
+  "class": "alterEgo",
+  "ranks": {
+    "str": "C",
+    "end": "D",
+    "agi": "E",
+    "mana": "EX",
+    "luck": "B",
+    "np": "B"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "assassin",
+  "noble_phantasm": {
+    "name_ko": "광란노도・악령좌부",
+    "ruby_ko": "광란노도・악령좌부",
+    "rank": "B",
+    "type_ko": "대도시보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_10010000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1001000/1001000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1001000/1001000b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

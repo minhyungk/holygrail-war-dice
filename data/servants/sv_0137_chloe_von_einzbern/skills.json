@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0137_chloe_von_einzbern",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_independent_action",
+      "name_ko": "단독행동",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_mind_eye_fake",
+      "name_ko": "심안(가짜)",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_projection",
+      "name_ko": "투영마술",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_kissing_freak",
+      "name_ko": "키스마",
+      "rank": "B++",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

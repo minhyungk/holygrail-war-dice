@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0059_jeanne_d_arc",
+  "source_id": 59,
+  "name_ko": "잔 다르크",
+  "name_short_ko": "잔 다르크",
+  "class": "ruler",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "A",
+    "mana": "A",
+    "luck": "C",
+    "np": "A++"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "나의 신은 여기에 있나니",
+    "ruby_ko": "뤼미노지테 에테르넬",
+    "rank": "A",
+    "type_ko": "결계보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_9001000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/900100/900100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/900100/900100b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

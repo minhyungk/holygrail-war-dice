@@ -3,33 +3,79 @@
 // 마법진·카드·시트 위에 소환 연출을 얹는다.
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { K } from '../../data/constants';
-import { STAT_IDS, type ServantProfile } from '../../data/schema';
+import { CLASSES, EXTRA_CLASSES, STAT_IDS, type ServantProfile } from '../../data/schema';
 import { createRng } from '../../engine/rng';
 import type { RunPlan } from '../../engine/run';
 import { parseRank } from '../../engine/stats';
-import { Art, clsStyle, LABELS } from '../components/common';
+import { Art, clsStyle, Glyph, LABELS } from '../components/common';
+import { matchScore } from '../search';
 import { RubyText } from '../components/Ruby';
 import { Vn } from '../components/Vn';
 import { drawCircle, REDUCED } from '../fx/circle';
 import type { Session, ShownLine } from '../session';
 import { T } from '../strings';
 
+/**
+ * 촉매 소환 (D-157): 서번트가 많아도 고를 수 있게 스크롤 목록 + 클래스 필터 + 이름 검색(초성·입력 중 글자).
+ * 엑스트라 클래스를 고르면 난입 소환이 된다 (정규 클래스 한 자리를 대체)
+ */
 export function CatalystPick({ servants, onPick }: { servants: ServantProfile[]; onPick: (id: string) => void }) {
+  const [query, setQuery] = useState('');
+  const [cls, setCls] = useState<string | null>(null);
+  const classes = useMemo(() => CLASSES.filter((c) => servants.some((s) => s.class === c)), [servants]);
+  const order = (c: string) => (CLASSES as readonly string[]).indexOf(c);
+  const shown = useMemo(() => {
+    const scored = servants
+      .filter((s) => !cls || s.class === cls)
+      .map((s) => ({ s, score: Math.max(matchScore(s.name_ko, query), s.name_short_ko ? matchScore(s.name_short_ko, query) : 0) }))
+      .filter((x) => x.score > 0);
+    return scored.sort((a, b) => b.score - a.score || order(a.s.class) - order(b.s.class) || a.s.source_id - b.s.source_id).map((x) => x.s);
+  }, [servants, cls, query]); // eslint-disable-line react-hooks/exhaustive-deps
   return (
     <section className="screen s-summon">
       <div className="catalyst">
         <h2>{T.catalystTitle}</h2>
         <p>{T.catalystHint}</p>
-        <div className="cat-grid">
-          {servants.map((s) => (
-            <button key={s.servant_id} className="cat-item" onClick={() => onPick(s.servant_id)}>
-              <Art src={s.images.face} cls={s.class} />
-              <span>
-                <b>{s.name_ko}</b>
-                <span>{LABELS.cls[s.class]}</span>
-              </span>
+        <input
+          className="cat-search"
+          type="search"
+          value={query}
+          placeholder={T.catalystSearch}
+          autoFocus
+          onChange={(e) => setQuery(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' && shown[0]) onPick(shown[0].servant_id);
+          }}
+        />
+        <div className="cat-filter" role="group">
+          <button className={`chip ${cls === null ? 'on' : ''}`} onClick={() => setCls(null)}>
+            {T.catalystAll}
+          </button>
+          {classes.map((c) => (
+            <button key={c} className={`chip ${cls === c ? 'on' : ''}`} style={clsStyle(c)} onClick={() => setCls(cls === c ? null : c)} title={LABELS.cls[c]}>
+              <Glyph cls={c} />
+              <span>{LABELS.cls[c]}</span>
             </button>
           ))}
+        </div>
+        <small className="cat-count">{T.catalystCount(shown.length)}</small>
+        <div className="cat-list">
+          {shown.length ? (
+            shown.map((s) => (
+              <button key={s.servant_id} className="cat-item" style={clsStyle(s.class)} onClick={() => onPick(s.servant_id)}>
+                <Art src={s.images.face} cls={s.class} />
+                <span>
+                  <b>{s.name_ko}</b>
+                  <span>
+                    {LABELS.cls[s.class]}
+                    {(EXTRA_CLASSES as readonly string[]).includes(s.class) ? ` · ${T.catalystExtra}` : ''}
+                  </span>
+                </span>
+              </button>
+            ))
+          ) : (
+            <p className="cat-none">{T.catalystNone}</p>
+          )}
         </div>
       </div>
     </section>
@@ -180,6 +226,8 @@ export function SummonReveal({ plan, session, chant, onStart }: { plan: RunPlan;
   }, [stage, chant, lineIdx, chars]);
 
   const line = useMemo(() => (session ? session.narrator.summonLine(plan.player_servant_id) : null), [session, plan.player_servant_id]);
+  // 난입 소환이면 소환 대사 앞에 '성배 오류' 나레이션 (D-157)
+  const omen = useMemo(() => (session && plan.irregular ? session.narrator.irregularLine() : null), [session, plan.irregular]);
 
   if (stage !== 'reveal' || !s || !session) {
     return (
@@ -261,7 +309,7 @@ export function SummonReveal({ plan, session, chant, onStart }: { plan: RunPlan;
             <RubyText text={`‘${s.noble_phantasm.name_ko}(${s.noble_phantasm.ruby_ko})’`} /> {s.noble_phantasm.rank}
             <small>{s.noble_phantasm.type_ko}</small>
           </div>
-          {lineDone || !line ? (
+          {lineDone || (!line && !omen) ? (
             <div className="summon-next stagger" style={{ animationDelay: '0.1s' }}>
               <button className="btn primary" onClick={onStart}>
                 {T.startWar}
@@ -273,18 +321,29 @@ export function SummonReveal({ plan, session, chant, onStart }: { plan: RunPlan;
           ) : null}
         </div>
       </div>
-      {line && !lineDone ? <DelayedVn delay={TIMING.line_delay_ms} line={{ kind: 'line', speaker: s.name_ko, text: line.text, draft: line.status === 'draft', voice: 'self' }} onDone={() => setLineDone(true)} /> : null}
+      {(line || omen) && !lineDone ? (
+        <DelayedVn
+          delay={TIMING.line_delay_ms}
+          lines={[
+            ...(omen ? [{ kind: 'narration' as const, speaker: null, text: omen.text, draft: omen.status === 'draft' }] : []),
+            ...(line ? [{ kind: 'line' as const, speaker: s.name_ko, text: line.text, draft: line.status === 'draft', voice: 'self' as const }] : []),
+          ]}
+          onDone={() => setLineDone(true)}
+        />
+      ) : null}
     </section>
   );
 }
 
-/** 카드가 다 나타난 뒤 소환 대사 */
-function DelayedVn({ delay, line, onDone }: { delay: number; line: ShownLine; onDone: () => void }) {
+/** 카드가 다 나타난 뒤 (난입 소환 나레이션 →) 소환 대사. 한 줄씩 탭해서 넘긴다 */
+function DelayedVn({ delay, lines, onDone }: { delay: number; lines: ShownLine[]; onDone: () => void }) {
   const [on, setOn] = useState(REDUCED);
+  const [n, setN] = useState(1);
   useEffect(() => {
     const t = window.setTimeout(() => setOn(true), delay);
     return () => window.clearTimeout(t);
   }, [delay]);
+  const next = useCallback(() => (n < lines.length ? setN(n + 1) : onDone()), [n, lines.length, onDone]);
   // 소환 대사는 탭해야 넘어간다 (자동 진행 끔)
-  return on ? <Vn log={[line]} typing onLineDone={onDone} onLog={() => undefined} autoDefault={false} /> : null;
+  return on ? <Vn log={lines.slice(0, n)} typing onLineDone={next} onLog={() => undefined} autoDefault={false} /> : null;
 }

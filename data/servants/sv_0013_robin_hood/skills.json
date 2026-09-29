@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0013_robin_hood",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "D",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_independent_action",
+      "name_ko": "단독행동",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_sabotage",
+      "name_ko": "파괴공작",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_golden_rule",
+      "name_ko": "황금률",
+      "rank": "E",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_may_king",
+      "name_ko": "5월의 왕",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0014_atalante",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "D",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_independent_action",
+      "name_ko": "단독행동",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_beyond_arcadia",
+      "name_ko": "아르카디아 너머",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_hunter_s_aesthetic",
+      "name_ko": "몰이사냥의 미학",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_calydonian_hunt",
+      "name_ko": "칼리돈 사냥",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

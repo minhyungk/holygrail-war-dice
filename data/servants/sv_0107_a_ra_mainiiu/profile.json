@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0107_a_ra_mainiiu",
+  "source_id": 107,
+  "name_ko": "앙리 마유",
+  "name_short_ko": "앙리 마유",
+  "class": "avenger",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "A",
+    "mana": "D",
+    "luck": "E+",
+    "np": "C"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "avenger",
+  "noble_phantasm": {
+    "name_ko": "거짓을 베끼는 만상",
+    "ruby_ko": "베르그 아베스타",
+    "rank": "C-",
+    "type_ko": "대인보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_11001000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1100100/1100100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1100100/1100100b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

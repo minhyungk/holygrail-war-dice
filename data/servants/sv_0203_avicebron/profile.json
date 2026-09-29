@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0203_avicebron",
+  "source_id": 203,
+  "name_ko": "아비케브론",
+  "name_short_ko": "아비케브론",
+  "class": "caster",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "D",
+    "mana": "A",
+    "luck": "B",
+    "np": "A+"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "질서·중용",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "왕관 : 예지의 빛",
+    "ruby_ko": "골렘・케테르 말쿠트",
+    "rank": "EX",
+    "type_ko": "대군보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5036000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/503600/503600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/503600/503600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 class), 사용자 검수 전."
+}

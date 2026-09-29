@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0204_antonio_salieri",
+  "source_id": 204,
+  "name_ko": "안토니오 살리에리",
+  "name_short_ko": "살리에리",
+  "class": "avenger",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "A",
+    "mana": "C",
+    "luck": "B",
+    "np": "C"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "avenger",
+  "noble_phantasm": {
+    "name_ko": "존귀하신 주여, 저를 긍휼히 여기소서",
+    "ruby_ko": "디오 산티시모 미제리코르디아 디 미",
+    "rank": "C++",
+    "type_ko": "대군보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_11006000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1100600/1100600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1100600/1100600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

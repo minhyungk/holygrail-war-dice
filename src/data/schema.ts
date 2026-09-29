@@ -5,7 +5,7 @@ export const SERVANT_ID = /^sv_\d{4}_[a-z0-9_]+$/; // D-066
 export const MASTER_ID = /^ms_[a-z0-9_]+$/;
 export const FACT_NAMESPACES = ['event', 'self', 'enemy', 'world', 'battle', 'beat', 'scene', 'mem', 'pair'] as const;
 // narrative-engine.md §7.1
-export const PLACEHOLDERS = ['master', 'servant', 'enemy', 'enemy_master', 'place', 'day', 'np', 'actor', 'target', 'winner', 'loser', 'servant_class'] as const;
+export const PLACEHOLDERS = ['master', 'servant', 'enemy', 'enemy_master', 'place', 'day', 'np', 'actor', 'target', 'winner', 'loser', 'servant_class', 'skill'] as const;
 export const JOSA = ['이/가', '은/는', '을/를', '와/과', '으로/로'] as const;
 
 const factKey = z.string().refine((k) => (FACT_NAMESPACES as readonly string[]).includes(k.split('.')[0]!), {
@@ -60,6 +60,10 @@ export const STAT_IDS = ['str', 'end', 'agi', 'mana', 'luck', 'np'] as const; //
 export type StatId = (typeof STAT_IDS)[number];
 export const RANK_LETTERS = ['E', 'D', 'C', 'B', 'A', 'EX'] as const; // stats.md §3.1
 export type RankLetter = (typeof RANK_LETTERS)[number];
+/** 정규 7클래스 (한 판에 클래스당 1기) + 엑스트라 클래스 (난입 소환으로만 참전, D-157) */
+export const STANDARD_CLASSES = ['saber', 'archer', 'lancer', 'rider', 'caster', 'assassin', 'berserker'] as const;
+export const EXTRA_CLASSES = ['ruler', 'avenger', 'alterEgo', 'moonCancer', 'foreigner', 'pretender'] as const;
+export const CLASSES = [...STANDARD_CLASSES, ...EXTRA_CLASSES] as const;
 export const TERRAINS = ['open', 'urban', 'forest', 'river'] as const; // content/map-fuyuki.md §2
 export type Terrain = (typeof TERRAINS)[number];
 export const PHASE_IDS = ['ph_clash', 'ph_initiative', 'ph_sorcery', 'ph_fate', 'ph_np_clash', 'ph_np_attack'] as const; // phases.md §2
@@ -76,7 +80,7 @@ export const ServantProfile = z
     name_ko: z.string().min(1),
     /** 한 비트 안에서 두 번째 호칭 (Q-156 ③). 없으면 name_ko 그대로 */
     name_short_ko: z.string().min(1).optional(),
-    class: z.enum(['saber', 'lancer', 'archer', 'rider', 'caster', 'assassin', 'berserker']),
+    class: z.enum(CLASSES),
     ranks: z.object(Object.fromEntries(STAT_IDS.map((s) => [s, z.string().min(1)])) as Record<StatId, z.ZodString>).strict(),
     alignment: z.enum(['good', 'neutral', 'evil']).nullable(),
     alignment_detail: z.string(),
@@ -109,7 +113,7 @@ export const PhasesFile = z.object({ notes: z.string().optional(), phases: z.arr
 
 export const ConstantEntry = z
   .object({
-    key: z.string().regex(/^(dice|combat|phase|affinity|mana|day|ai|skill|text|stats)\.[a-z0-9_]+$/),
+    key: z.string().regex(/^(dice|combat|phase|affinity|mana|day|ai|skill|text|stats|run)\.[a-z0-9_]+$/),
     value: z.unknown(),
     unit: z.string(),
     doc_ref: z.string(),
@@ -161,7 +165,7 @@ export type SkillLink = z.infer<typeof SkillLink>;
 
 // ── 스킬 효과 정의 (skills.md §3~§6, data/common/skills.json, D-142) ──
 export const HOOK_IDS = ['hk_battle_phase_select', 'hk_battle_phase_roll', 'hk_battle_escape', 'hk_battle_condition_change'] as const;
-export const SkillWhen = z
+const SkillWhenBase = z
   .object({
     phase: z.array(z.enum(['ph_clash', 'ph_initiative', 'ph_sorcery', 'ph_fate', 'ph_np_clash', 'ph_np_attack'])).optional(),
     role: z.enum(['attacker', 'defender']).optional(),
@@ -172,8 +176,12 @@ export const SkillWhen = z
     escaper: z.literal(true).optional(),
     foe_dropped: z.literal(true).optional(),
     would_fall: z.literal(true).optional(),
+    /** 상대 서번트의 클래스 (D-156: 대마력은 캐스터 상대로) */
+    foe_class: z.array(z.string()).min(1).optional(),
   })
   .strict();
+/** any_of: 나머지 조건을 모두 만족하고, 그중 하나 이상의 묶음을 만족하면 발동 (D-156) */
+export const SkillWhen = SkillWhenBase.extend({ any_of: z.array(SkillWhenBase).min(2).optional() }).strict();
 export const SkillEffect = z.discriminatedUnion('type', [
   z.object({ type: z.literal('roll_mod'), target: z.enum(['self', 'foe']), sign: z.literal(-1).optional() }).strict(),
   z.object({ type: z.literal('event_negate'), target: z.enum(['self', 'foe']), kind: z.enum(['affinity_penalty', 'intel']) }).strict(),
@@ -188,7 +196,7 @@ export const SkillDef = z.union([
       hook: z.enum(HOOK_IDS),
       when: SkillWhen,
       effect: SkillEffect,
-      scaling: z.enum(['major', 'minor', 'fixed', 'none']),
+      scaling: z.enum(['major', 'minor', 'mana', 'fixed', 'none']),
       uses_per_battle: z.number().int().positive().optional(),
       notes: z.string().optional(),
     })
@@ -204,8 +212,11 @@ export const LabelsFile = z
     notes: z.string().optional(),
     class_name: z.record(z.string(), z.string()),
     unknown_servant: z.string(),
+    unknown_skill: z.string(),
     player_master: z.string(),
     class_glyph: z.record(z.string(), z.string()),
+    class_icon: z.record(z.string(), z.string()),
+    grail_image: z.string(),
     image_tokens: z.record(z.string(), z.string()),
   })
   .strict();

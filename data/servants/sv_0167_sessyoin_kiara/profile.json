@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0167_sessyoin_kiara",
+  "source_id": 167,
+  "name_ko": "셋쇼인 키아라",
+  "name_short_ko": "키아라",
+  "class": "alterEgo",
+  "ranks": {
+    "str": "D",
+    "end": "A+",
+    "agi": "B+",
+    "mana": "EX",
+    "luck": "E",
+    "np": "EX"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "avenger",
+  "noble_phantasm": {
+    "name_ko": "쾌락천・태장만다라",
+    "ruby_ko": "아미다 아미달라・헤븐즈 홀",
+    "rank": "EX",
+    "type_ko": "대인보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_10003000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1000300/1000300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1000300/1000300b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0022_romulus",
+  "source_id": 22,
+  "name_ko": "로물루스",
+  "name_short_ko": "로물루스",
+  "class": "lancer",
+  "ranks": {
+    "str": "B",
+    "end": "A",
+    "agi": "A",
+    "mana": "C",
+    "luck": "B",
+    "np": "A++"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "모든 것은 나의 창으로 통한다",
+    "ruby_ko": "마그나 볼루이세 마그눔",
+    "rank": "A++",
+    "type_ko": "대군보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3010000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/301000/301000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/301000/301000b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

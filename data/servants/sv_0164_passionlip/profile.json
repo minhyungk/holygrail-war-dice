@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0164_passionlip",
+  "source_id": 164,
+  "name_ko": "패션립",
+  "name_short_ko": "패션립",
+  "class": "alterEgo",
+  "ranks": {
+    "str": "A+",
+    "end": "A",
+    "agi": "C",
+    "mana": "B",
+    "luck": "E",
+    "np": "C"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "질서·중용",
+  "alignment_verified": false,
+  "temperament": "tsundere",
+  "noble_phantasm": {
+    "name_ko": "죽음이 두 사람을 갈라놓을지라도",
+    "ruby_ko": "브륀힐드 로맨시아",
+    "rank": "C+",
+    "type_ko": "대인보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_10001000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1000100/1000100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1000100/1000100b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

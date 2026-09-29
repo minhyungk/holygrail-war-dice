@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0106_jeanne_d_arc_alter",
+  "source_id": 106,
+  "name_ko": "잔 다르크(얼터)",
+  "name_short_ko": "잔 얼터",
+  "class": "avenger",
+  "ranks": {
+    "str": "A",
+    "end": "C",
+    "agi": "A",
+    "mana": "A+",
+    "luck": "E",
+    "np": "A+"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "avenger",
+  "noble_phantasm": {
+    "name_ko": "울부짖으라, 나의 분노",
+    "ruby_ko": "라 그롱드망 뒤 엔",
+    "rank": "EX",
+    "type_ko": "대군보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_11003000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1100300/1100300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1100300/1100300b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

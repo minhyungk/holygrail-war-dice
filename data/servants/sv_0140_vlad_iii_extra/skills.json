@@ -1,0 +1,34 @@
+{
+  "servant_id": "sv_0140_vlad_iii_extra",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_protection_of_the_faith",
+      "name_ko": "신앙의 가호",
+      "rank": "A+++",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_demonic_tactics",
+      "name_ko": "악마의 군략",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_innocent_monster",
+      "name_ko": "무고의 괴물",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

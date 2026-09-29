@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0143_enkidu",
+  "source_id": 143,
+  "name_ko": "엘키두",
+  "name_short_ko": "엘키두",
+  "class": "lancer",
+  "ranks": {
+    "str": "?",
+    "end": "?",
+    "agi": "?",
+    "mana": "?",
+    "luck": "?",
+    "np": "A++"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "중립·중용",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "인간이여, 신을 붙들어 두자",
+    "ruby_ko": "에누마 엘리시",
+    "rank": "EX",
+    "type_ko": "대숙정보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3008000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/300800/300800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/300800/300800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

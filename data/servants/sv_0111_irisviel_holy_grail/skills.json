@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0111_irisviel_holy_grail",
+  "skills": [
+    {
+      "skill_id": "sk_territory_creation",
+      "name_ko": "진지작성",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_core_of_the_goddess",
+      "name_ko": "여신의 신핵",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_goblet_of_heaven",
+      "name_ko": "하늘의 잔",
+      "rank": "E",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_child_of_nature",
+      "name_ko": "자연의 영아",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_magical_healing",
+      "name_ko": "마술의료",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0053_asterios",
+  "source_id": 53,
+  "name_ko": "아스테리오스",
+  "name_short_ko": "아스테리오스",
+  "class": "berserker",
+  "ranks": {
+    "str": "A++",
+    "end": "A++",
+    "agi": "C",
+    "mana": "D",
+    "luck": "E",
+    "np": "A"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "만고불역의 미궁",
+    "ruby_ko": "케이오스 라비린토스",
+    "rank": "EX",
+    "type_ko": "미궁보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7009000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/700900/700900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/700900/700900b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

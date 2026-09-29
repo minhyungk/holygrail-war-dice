@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0199_semiramis",
+  "source_id": 199,
+  "name_ko": "세미라미스",
+  "name_short_ko": "세미라미스",
+  "class": "assassin",
+  "ranks": {
+    "str": "E",
+    "end": "D",
+    "agi": "D",
+    "mana": "A",
+    "luck": "A",
+    "np": "B"
+  },
+  "alignment": "evil",
+  "alignment_detail": "질서·악",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "허영의 공중정원",
+    "ruby_ko": "행잉 가든즈 오브 바빌론",
+    "rank": "EX",
+    "type_ko": "대계보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6032000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/603200/603200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/603200/603200b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

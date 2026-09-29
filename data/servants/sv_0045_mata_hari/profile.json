@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0045_mata_hari",
+  "source_id": 45,
+  "name_ko": "마타 하리",
+  "name_short_ko": "마타 하리",
+  "class": "assassin",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "E",
+    "mana": "E",
+    "luck": "D",
+    "np": "A+"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "태양의 눈을 가진 여자",
+    "ruby_ko": "마타 하리",
+    "rank": "A",
+    "type_ko": "대군보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6014000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/601400/601400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/601400/601400b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0048_lancelot",
+  "skills": [
+    {
+      "skill_id": "sk_mad_enhancement",
+      "name_ko": "광화",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "E",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_eternal_arms_mastery",
+      "name_ko": "무궁의 무련",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_protection_of_the_spirits",
+      "name_ko": "정령의 가호",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_mana_reversal",
+      "name_ko": "마력 역류",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

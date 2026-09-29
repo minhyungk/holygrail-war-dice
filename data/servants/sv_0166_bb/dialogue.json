@@ -1,0 +1,241 @@
+{
+  "speaker": "sv_0166_bb",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "쨍쨍♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "벌칙 게임, 입니다♡",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "안 놓칠 거에요♡",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "자~ 사쿠라 비~~임♡",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "후후, 돼지가 되어라~♡",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "개미처럼~♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "우우, 무슨 짓을 하는 건가요!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "꺄악?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "없었던 일로 할게요♡",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "뭐든지 할 수 있는, 최종 보스 계열 후배입니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것? 물론 선배입니다! 아, 하지만 선배에도 종류가 있어서, “이건 무리야. 존귀해” 계열 선배하고, “어쩔 수 없네, 도와드릴까요” 계열 선배가 있고 그렇거든요. 마스터 씨가 어느 쪽인지는 상상에 맡기겠습니다♡",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것은 인간인데요? 당연하지 않나요.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "좋지요, 성배! 무슨 소원이라도 이루어준다는, 머리 나빠 보이는 캐치프레이즈가 최고에요! 자업자득, 무덤을 파는 것은 인간만의 기능이니까요. 자, 한눈팔지도 말고 자폭해 주세요~!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          },
+          "self.intel_level": 3
+        },
+        "text": "상당한 배틀 스코어네요. 글러 먹은 마스터는 글러 먹은 마스터 나름 노력한다는 소리네요! 아직 BB짱의 이상에는 한참 모자랍니다만, 앞으로도 질리지 말고 발버둥 쳐주세요!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "………… 마스터 씨, 인간 주제에 차별이나 편견이 없네요. 머리가 이상한 거 아닌가요? 조금 더 화산처럼 감정적으로, 개미처럼 쬐끄만 기량을 보여줘도 괜찮은데요? 아니, 안 그러면…… 싫어할 이유가 없어지잖아요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal",
+          "self.intel_level": 3
+        },
+        "text": "……하아. 오늘도 전투 후의 회복, 감사합니다. 그리고 달콤한 것을 양보해 주신 것도. 제가 단것을 좋아한다는 걸 누가 가르쳐줬나요? 네? 왠지 모르게 알았다? BB 검정 1급? 그, 그런가요. 삼류 마스터치고 괜찮은 관찰안이네요!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "징벌 타임, 시작입니다♡",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "보고 있으세요, 선배♡",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "BB~ 채널~! 이거 큰일입니다! 하지만 안심하세요. BB짱에게 맡겨주세요! 절대회복─── 커스드 큐피드 클렌저♡ ……후후. 주사, 아팠나요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "자, 기뻐하세요. 목소리는 고요하게, 나의 그림자는 세계를 뒤덮는다─── 흐물흐물하게 만들어 드릴게요. 커스드 큐피드 클렌저! ……후후. 도망칠 수 있다고 생각했나요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "이리하여, 그레이트 데빌 BB짱은 오늘도 귀여운 것이었습니다~☆",
+        "when": {
+          "self.intel_level": 3
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "오퍼레이션, 완료입니다. 격의 차이, 이해해 주셨나요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "굴욕입니다…… 선배 이외의 사람에게, 쓰러지다니……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "방심했습니다…… 미안해요, 마스터 씨……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "servant_id": "sv_0052_vlad_iii",
+  "skills": [
+    {
+      "skill_id": "sk_mad_enhancement",
+      "name_ko": "광화",
+      "rank": "EX",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_vampirism",
+      "name_ko": "흡혈",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_legend_of_dracula",
+      "name_ko": "선혈의 전승",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_terrifying_undead",
+      "name_ko": "전율의 불사자",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

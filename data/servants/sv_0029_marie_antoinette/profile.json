@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0029_marie_antoinette",
+  "source_id": 29,
+  "name_ko": "마리 앙투아네트",
+  "name_short_ko": "마리",
+  "class": "rider",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "B",
+    "mana": "B",
+    "luck": "B+",
+    "np": "A+"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "백합의 왕관에 영광이 있으라",
+    "ruby_ko": "기요틴 브레이커",
+    "rank": "A+",
+    "type_ko": "대군보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4017000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/401700/401700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/401700/401700b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0024_georgios",
+  "source_id": 24,
+  "name_ko": "게오르기우스",
+  "name_short_ko": "게오르기우스",
+  "class": "rider",
+  "ranks": {
+    "str": "D",
+    "end": "A+",
+    "agi": "C++",
+    "mana": "D",
+    "luck": "A+",
+    "np": "C"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "힘을 타파하는 축복의 검",
+    "ruby_ko": "아스칼론",
+    "rank": "B",
+    "type_ko": "대인보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4006000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/400600/400600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/400600/400600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

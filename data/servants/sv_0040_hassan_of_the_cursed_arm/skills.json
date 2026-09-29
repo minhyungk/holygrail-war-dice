@@ -1,0 +1,34 @@
+{
+  "servant_id": "sv_0040_hassan_of_the_cursed_arm",
+  "skills": [
+    {
+      "skill_id": "sk_presence_concealment",
+      "name_ko": "기척 차단",
+      "rank": "A+",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_throw_retrieve",
+      "name_ko": "투척/회수",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_self_modification",
+      "name_ko": "자기개조",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_protection_against_the_wind",
+      "name_ko": "바람막이의 가호",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

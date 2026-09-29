@@ -1,10 +1,10 @@
 // 헤드리스 시뮬 (roadmap P1). 화면 없이 전투를 대량으로 돌려 분포를 본다.
 // autoPolicy는 시뮬레이션용 선택 규칙이며 게임 규칙이 아니다 (적 AI 규칙은 combat.ts 안에 있다).
-import { TERRAINS, type ServantProfile, type Terrain } from '../data/schema';
+import { type SkillLink, TERRAINS, type ServantProfile, type Terrain } from '../data/schema';
 import { type BattleOutcome, createFighter, type Fighter, type Policy, rngDice, runBattle } from './combat';
 import { EventLog } from './events';
 import { createRng, deriveSeed } from './rng';
-import { planRun, playRun, type RunAnswer, type RunData, type RunPrompt, type RunResult } from './run';
+import { planRun, playRun, type RunAnswer, type RunData, type RunPlan, type RunPrompt, type RunResult } from './run';
 
 /** 플레이어 자리를 대신 두는 정책: 보구는 열 수 있으면 열고(아니면 약점 공략), 지고 있으면 재굴림, 도주는 영주 우선 */
 export const autoPolicy: Policy = (p) => {
@@ -27,6 +27,9 @@ export interface SimBattle {
   terrain: Terrain;
   aController?: Fighter['controller'];
   isFinal?: boolean;
+  /** 보유 스킬 (없으면 스킬 없이 스탯만으로) */
+  aSkills?: readonly SkillLink[];
+  bSkills?: readonly SkillLink[];
 }
 
 export function simulateBattle(s: SimBattle): { outcome: BattleOutcome; log: EventLog } {
@@ -35,8 +38,8 @@ export function simulateBattle(s: SimBattle): { outcome: BattleOutcome; log: Eve
   const outcome = runBattle(
     {
       battleId: `bt_sim_${s.seed}`,
-      a: createFighter('fc_a', s.a, s.aController ?? 'ai'),
-      b: createFighter('fc_b', s.b, 'ai'),
+      a: createFighter('fc_a', s.a, s.aController ?? 'ai', { skills: s.aSkills ?? [] }),
+      b: createFighter('fc_b', s.b, 'ai', { skills: s.bSkills ?? [] }),
       terrain: s.terrain,
       isFinal: s.isFinal ?? false,
     },
@@ -60,12 +63,12 @@ export interface MatchupStats {
 }
 
 /** a vs b를 n번. 지형은 4종을 번갈아 쓴다 */
-export function matchup(a: ServantProfile, b: ServantProfile, n: number, opts: { seed?: number; aController?: Fighter['controller']; isFinal?: boolean } = {}): MatchupStats {
+export function matchup(a: ServantProfile, b: ServantProfile, n: number, opts: { seed?: number; aController?: Fighter['controller']; isFinal?: boolean; skills?: Record<string, { skills: readonly SkillLink[] }> } = {}): MatchupStats {
   const st: MatchupStats = { n, aWin: 0, bWin: 0, draw: 0, aEscaped: 0, bEscaped: 0, aEscapeFailed: 0, twoStepRate: 0 };
   let decided = 0;
   let twoStep = 0;
   for (let i = 0; i < n; i++) {
-    const { outcome: o, log } = simulateBattle({ seed: (opts.seed ?? 0) + i, a, b, terrain: TERRAINS[i % TERRAINS.length]!, aController: opts.aController, isFinal: opts.isFinal });
+    const { outcome: o, log } = simulateBattle({ seed: (opts.seed ?? 0) + i, a, b, terrain: TERRAINS[i % TERRAINS.length]!, aController: opts.aController, isFinal: opts.isFinal, aSkills: opts.skills?.[a.servant_id]?.skills, bSkills: opts.skills?.[b.servant_id]?.skills });
     if (o.result === 'win') o.winner === 'fc_a' ? st.aWin++ : st.bWin++;
     else if (o.result === 'draw') st.draw++;
     else if (o.result === 'escape') o.escaped === 'fc_a' ? st.aEscaped++ : st.bEscaped++;
@@ -109,8 +112,8 @@ export function autoRunPolicy(seed: number): (p: RunPrompt) => RunAnswer {
 }
 
 /** 판 하나를 끝까지 자동으로 돌린다 */
-export function simulateRun(opts: { seed: number; data: RunData; servantIds: string[]; masterIds: string[]; fatePoints?: number }): { result: RunResult; log: EventLog; prompts: number } {
-  const plan = planRun({ seed: opts.seed, summon: 'random', servantIds: opts.servantIds, masterIds: opts.masterIds });
+export function simulateRun(opts: { seed: number; data: RunData; servantIds: string[]; masterIds: string[]; fatePoints?: number; catalyst?: string }): { result: RunResult; log: EventLog; prompts: number; plan: RunPlan } {
+  const plan = planRun({ seed: opts.seed, summon: opts.catalyst ? 'catalyst' : 'random', catalyst: opts.catalyst, servants: opts.servantIds.map((id) => opts.data.servants[id]!), masterIds: opts.masterIds });
   const log = new EventLog();
   const gen = playRun(plan, opts.data, { fatePoints: opts.fatePoints ?? 3 }, log);
   const policy = autoRunPolicy(opts.seed);
@@ -120,5 +123,5 @@ export function simulateRun(opts: { seed: number; data: RunData; servantIds: str
     prompts++;
     step = gen.next(policy(step.value));
   }
-  return { result: step.value, log, prompts };
+  return { result: step.value, log, prompts, plan };
 }

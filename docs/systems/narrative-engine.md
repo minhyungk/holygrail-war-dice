@@ -68,7 +68,7 @@ GameEvent ─► ① 사실 수집 ─► ② 후보 필터 ─► ③ 점수·�
 | | `phase_resolved` | 승자·패자, 차이, 피해 단계, 실제 도달 상태, skipped/defended. 위험 진입은 danger, 위험에서 패배는 below (D-137) |
 | | `condition_changed` | 진영, 이전/이후 상태 |
 | | `seal_used` | 용도(`np`/`escape`/`block_betrayal`), 남은 획수. `buff`는 D-142로 폐지 |
-| | `skill_triggered` | 스킬 자동 발동: 진영, skill_id, 랭크, 효과 종류, 효과량, 받은 진영, 마력 변화 뒤 값 (D-142). 판정 보정은 굴림보다 먼저 기록한다. 비트·대사는 아직 없음 |
+| | `skill_triggered` | 스킬 자동 발동: 진영, skill_id, 랭크, 효과 종류, 효과량, 받은 진영, 마력 변화 뒤 값 (D-142). 판정 보정은 굴림보다 먼저 기록한다. 효과 해설과 양측 외침 비트 (D-153) |
 | | `battle_ended` | 결과(`win`/`draw`/`escape`/`escape_failed`), 승자·패자·사망·도주 진영 |
 | | `danger_decided` | 위험 진입 시 선택(fight/seal/run) |
 | | `post_choice` | `execute`/`release`, 대상 |
@@ -204,6 +204,7 @@ data/
 | `{day}` | 일차 |
 | `{np}` | 화자 보구 이름 |
 | `{servant_class}` | 화자 진영 서번트의 클래스명. 적 마스터가 자기 서번트를 부를 때 (`content/masters.md` §4.1) [제안] |
+| `{skill}` | 발동한 스킬 이름 (`skill_triggered`). 진명 전의 적 스킬은 `labels.unknown_skill` (D-153) |
 | `{actor}` `{target}` | 이벤트의 주체 / 대상 서번트 (나레이션용) [제안] |
 | `{winner}` `{loser}` | 국면·전투의 승자 / 패자 서번트 (나레이션용) [제안] |
 - 레거시 `{A}`, `{B}`, `{보구명}` 등은 들여올 때 위 이름으로 바꾼다
@@ -255,7 +256,7 @@ data/
 | `phase_resolved` | react(공방 묘사) → (line: 국면 승리 `phase_win` / 피격 `phase_hit`, 확률) → (tail: 상태 변화) → (line: 위기) |
 | `np_opened` | lead(마력 집중) → line(영창) → react(정체 공개) |
 | `weakness_used` | lead(약점 서술, 국면 유형별) → line(`weakness`) (D-148) |
-| `skill_triggered` | 내 서번트만: line(`skill`, 확률) (D-151) |
+| `skill_triggered` | 전투마다 스킬별 첫 발동만: react(`skill_effect`: 스킬 전용 → 효과별 범용, 미공개 적은 `event.skill_known: false` 해설) → line(`skill`, 확률, 발동한 서번트) (D-153) |
 | `affinity_changed` (선택 반응) | `affinity_reaction` 템플릿: line(`react_choice`) → tail(호감도 변화) (D-150) |
 | 기적 발생 | react |
 | `battle_ended` | tail → line(승리/패배/무승부). 역전승이면 react(`comeback`) → tail → line(`comeback`) (D-151) |

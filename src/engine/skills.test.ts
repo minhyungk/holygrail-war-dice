@@ -29,9 +29,12 @@ function fight(a: Fighter, b: Fighter, rolls: number[], draws: number[]) {
 
 describe('스킬 정의 (D-142)', () => {
   it('시작 7기의 스킬 43개가 모두 정의돼 있다 (전투 효과가 없으면 hook: null과 이유)', () => {
-    const owned = servantIds().flatMap((id) => data.skills[id]!.skills.map((s) => s.skill_id));
+    const owned = Object.values(SV).flatMap((id) => data.skills[id]!.skills.map((s) => s.skill_id));
     expect(owned).toHaveLength(43);
     for (const id of owned) expect(SKILLS[id], id).toBeDefined();
+  });
+  it('편입 서번트 전원의 보유 스킬이 정의돼 있다 (D-157 자동 배정 포함)', () => {
+    for (const id of servantIds()) for (const s of data.skills[id]!.skills) expect(SKILLS[s.skill_id], `${id} ${s.skill_id}`).toBeDefined();
   });
 });
 
@@ -43,6 +46,17 @@ describe('판정 보정 (hk_battle_phase_roll)', () => {
     // 발동 기록이 굴림보다 먼저 남는다 (화면에서 먼저 보인다)
     const seqTrig = r.log.ofType('skill_triggered').find((e) => e.data.skill_id === 'sk_magic_resistance')!.seq;
     expect(seqTrig).toBeLessThan(r.log.ofType('phase_rolled')[0]!.seq);
+  });
+
+  it('대마력: 상대가 캐스터면 정면 격돌에서도 발동한다 (D-156)', () => {
+    const r = fight(fighter('fc_a', SV.artoria), fighter('fc_c', SV.medea), TIES, [DRAW.clash, 0, DRAW.clash, 0, DRAW.clash, 0]);
+    const artoria = r.log.ofType('phase_rolled')[0]!.data.rolls.find((x) => x.faction === 'fc_a')!;
+    expect(r.log.ofType('phase_started')[0]!.data.phase_id).toBe('ph_clash');
+    expect(artoria.parts.sk_magic_resistance).toBe(K['skill.rank_amount'].major.A);
+  });
+  it('대마력: 캐스터가 아닌 상대와의 정면 격돌에서는 발동하지 않는다', () => {
+    const r = fight(fighter('fc_a', SV.artoria), fighter('fc_c', SV.cu), TIES, [DRAW.clash, 0, DRAW.clash, 0, DRAW.clash, 0]);
+    expect(r.skills.some((s) => s.skill_id === 'sk_magic_resistance')).toBe(false);
   });
 
   it('마안 A+: 즉사/우연에서 공격측 메두사가 방어측 판정을 깎는다 (foe:)', () => {

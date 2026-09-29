@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0108_iskandar",
+  "source_id": 108,
+  "name_ko": "이스칸다르",
+  "name_short_ko": "이스칸다르",
+  "class": "rider",
+  "ranks": {
+    "str": "B",
+    "end": "A",
+    "agi": "D",
+    "mana": "C",
+    "luck": "A+",
+    "np": "A++"
+  },
+  "alignment": "good",
+  "alignment_detail": "중립·선",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "왕의 군세",
+    "ruby_ko": "아이오니언 헤타이로이",
+    "rank": "EX",
+    "type_ko": "대군보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4002000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/400200/400200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/400200/400200b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

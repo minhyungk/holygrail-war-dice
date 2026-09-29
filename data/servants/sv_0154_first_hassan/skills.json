@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0154_first_hassan",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_presence_concealment",
+      "name_ko": "기척 차단",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_independent_action",
+      "name_ko": "단독행동",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_on_the_boundary",
+      "name_ko": "경계에서",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_death_s_abyss",
+      "name_ko": "죽음의 구렁",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_protection_of_the_faith",
+      "name_ko": "신앙의 가호",
+      "rank": "A+++",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_evening_bell_homeward",
+      "name_ko": "만종, 귀로",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

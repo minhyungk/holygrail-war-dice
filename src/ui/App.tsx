@@ -39,7 +39,7 @@ export function App() {
 
   const summon = (mode: 'random' | 'catalyst', catalyst?: string) => {
     if (mode === 'catalyst' && !catalyst) return setStage({ s: 'catalyst' });
-    const plan = makePlan(newSeed(), mode, catalyst);
+    const plan = makePlan(catalog!, newSeed(), mode, catalyst);
     setStage({ s: 'summon', plan, session: null });
     startSession(plan, fatePoints).then(
       (session) => setStage((st) => (st.s === 'summon' && st.plan === plan ? { ...st, session } : st)),

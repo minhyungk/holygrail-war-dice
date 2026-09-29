@@ -1,7 +1,8 @@
 // 전투 화면 연출 층 (D-133). 판정·규칙과 무관한 장식만 그린다.
 // 효과는 잠깐 떴다 사라지는 목록으로 관리한다: VS, 국면 배너, 기적, 베기·피해, 방어, 보구(컷인), 위험, 소멸, 결과 도장, 스킬 발동, 약점 공략, 역전 (D-151).
 import type { CSSProperties } from 'react';
-import { clsStyle, LABELS } from './common';
+import { K } from '../../data/constants';
+import { Art, clsStyle, Glyph } from './common';
 import { RubyText } from './Ruby';
 
 export type FxKind = 'vs' | 'phase' | 'miracle' | 'slash' | 'dmg' | 'guard' | 'np' | 'danger' | 'death' | 'result' | 'skill' | 'weakness' | 'comeback';
@@ -11,8 +12,8 @@ export interface Fx {
   side?: 'a' | 'c';
   text?: string;
   sub?: string;
-  a?: { name: string; cls: string | null };
-  c?: { name: string; cls: string | null };
+  a?: { name: string; cls: string | null; img?: string };
+  c?: { name: string; cls: string | null; img?: string };
   cls?: string | null;
   tone?: 'win' | 'lose' | 'draw' | 'escape';
   /** 같은 순간에 뜬 효과의 순번 (쌓아 보이기) */
@@ -32,12 +33,12 @@ export function FxLayer({ fx }: { fx: Fx[] }) {
             return (
               <div key={f.id} className="fx-vs">
                 <div className="vs-side a" style={clsStyle(f.a?.cls ?? null)}>
-                  <span className="vs-glyph">{f.a?.cls ? LABELS.glyph[f.a.cls] : '?'}</span>
+                  {f.a?.img && f.a.cls ? <Art src={f.a.img} cls={f.a.cls} className="vs-glyph vs-face" /> : f.a?.cls ? <Glyph cls={f.a.cls} /> : <span className="vs-glyph">?</span>}
                   <b>{f.a?.name}</b>
                 </div>
                 <div className="vs-mark">VS</div>
                 <div className="vs-side c" style={clsStyle(f.c?.cls ?? null)}>
-                  <span className="vs-glyph">{f.c?.cls ? LABELS.glyph[f.c.cls] : '?'}</span>
+                  {f.c?.img && f.c.cls ? <Art src={f.c.img} cls={f.c.cls} className="vs-glyph vs-face" /> : f.c?.cls ? <Glyph cls={f.c.cls} /> : <span className="vs-glyph">?</span>}
                   <b>{f.c?.name}</b>
                 </div>
                 {f.sub ? <div className="vs-sub">{f.sub}</div> : null}
@@ -86,13 +87,17 @@ export function FxLayer({ fx }: { fx: Fx[] }) {
           case 'danger':
             return <div key={f.id} className="fx-danger" />;
           case 'death':
+            {
+              const cfg = K['text.death_fx'];
             return (
-              <div key={f.id} className="fx-death" style={sideStyle(f.side)}>
-                {Array.from({ length: 14 }, (_, i) => (
-                  <i key={i} style={{ ['--k' as string]: i }} />
+              <div key={f.id} className="fx-death" style={{ ...sideStyle(f.side), ['--death-duration' as string]: `${cfg.duration_ms}ms` }}>
+                <b className="fx-death-flare" />
+                {Array.from({ length: cfg.particles }, (_, i) => (
+                  <i key={i} style={{ ['--dx' as string]: `${Math.cos((i / cfg.particles) * Math.PI * 2) * cfg.spread_px}px`, ['--dy' as string]: `${Math.sin((i / cfg.particles) * Math.PI * 2) * cfg.spread_px - cfg.rise_px}px`, ['--delay' as string]: `${i * cfg.stagger_ms}ms` }} />
                 ))}
               </div>
             );
+            }
           case 'skill':
             // 스킬 발동 (D-142): 발동한 쪽 카드 위에 이름표. 같은 순간 여러 개면 아래로 쌓인다 (n = 순번)
             return (

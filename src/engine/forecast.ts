@@ -18,7 +18,8 @@ export function forecastBattle(input: BattleInput, faction: string): BattleForec
   const log = new EventLog();
   for (let i = 0; i < samples; i++) {
     log.events.length = 0;
-    const outcome = runBattle({ ...input, captureForecast: false }, dice, log,
+    // 선택 알림(onChoice)은 떼어 낸다: 가상 선택이 실제 호감도·로그에 닿지 않게
+    const outcome = runBattle({ ...input, captureForecast: false, onChoice: undefined }, dice, log,
       (p) => p.kind === 'phase_command' ? 'none' : p.kind === 'danger_decision' ? 'fight' : false);
     // 무승부·퇴각은 세지 않는다
     if (outcome.winner === faction) win++;

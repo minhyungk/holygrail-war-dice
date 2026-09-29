@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0098_cu_chulainn_alter",
+  "source_id": 98,
+  "name_ko": "쿠 훌린(얼터)",
+  "name_short_ko": "쿠 훌린 얼터",
+  "class": "berserker",
+  "ranks": {
+    "str": "A",
+    "end": "B+",
+    "agi": "A+",
+    "mana": "C",
+    "luck": "D",
+    "np": "A"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "씹어 으깨는 죽음의 송곳니 짐승",
+    "ruby_ko": "쿠루드 코인헨 ",
+    "rank": "A+",
+    "type_ko": "대인보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7020000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/702000/702000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/702000/702000b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

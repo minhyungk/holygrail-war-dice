@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0111_irisviel_holy_grail",
+  "source_id": 111,
+  "name_ko": "아이리스필(하늘의 옷)",
+  "name_short_ko": "아이리스필",
+  "class": "caster",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "C",
+    "mana": "A+",
+    "luck": "B",
+    "np": "B"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "하얀 성배여, 칭송하라",
+    "ruby_ko": "송 오브 그레일",
+    "rank": "B",
+    "type_ko": "마술보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5020000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/502000/502000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/502000/502000b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

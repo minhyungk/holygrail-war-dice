@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0088_brynhild",
+  "source_id": 88,
+  "name_ko": "브륀힐드",
+  "name_short_ko": "브륀힐드",
+  "class": "lancer",
+  "ranks": {
+    "str": "B+",
+    "end": "A",
+    "agi": "A",
+    "mana": "C",
+    "luck": "E",
+    "np": "A"
+  },
+  "alignment": "good",
+  "alignment_detail": "중립·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "죽음이 두 사람을 갈라놓을 때까지",
+    "ruby_ko": "브륀힐드 로맨시아",
+    "rank": "B+",
+    "type_ko": "대인보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3012000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/301200/301200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/301200/301200b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

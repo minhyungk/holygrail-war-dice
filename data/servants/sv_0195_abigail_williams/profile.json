@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0195_abigail_williams",
+  "source_id": 195,
+  "name_ko": "애비게일 윌리엄스",
+  "name_short_ko": "애비게일",
+  "class": "foreigner",
+  "ranks": {
+    "str": "B",
+    "end": "A",
+    "agi": "C",
+    "mana": "B",
+    "luck": "C",
+    "np": "A"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "빛의 껍질을 두른 허무의 나무",
+    "ruby_ko": "클리포・라이좀",
+    "rank": "EX",
+    "type_ko": "대인보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_25001000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/2500100/2500100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/2500100/2500100b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

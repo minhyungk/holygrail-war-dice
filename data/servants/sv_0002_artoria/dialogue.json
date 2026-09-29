@@ -609,14 +609,20 @@
         "text": "풍왕철퇴(스트라이크 에어)!",
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
-        "quote_verified": true
+        "quote_verified": true,
+        "when": {
+          "self.intel_level": 3
+        }
       },
       {
         "id": "fgo_ex_3",
         "text": "간다, 스트라이크 칼리번!",
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
-        "quote_verified": true
+        "quote_verified": true,
+        "when": {
+          "self.intel_level": 3
+        }
       },
       {
         "id": "fgo_ex_4",

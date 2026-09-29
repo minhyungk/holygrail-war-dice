@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0034_william_shakespeare",
+  "source_id": 34,
+  "name_ko": "윌리엄 셰익스피어",
+  "name_short_ko": "셰익스피어",
+  "class": "caster",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "D",
+    "mana": "C++",
+    "luck": "B",
+    "np": "C+"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "중립·중용",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "막을 올릴 때가 왔으니, 여기에 우레 같은 갈채를",
+    "ruby_ko": "퍼스트 폴리오",
+    "rank": "B+",
+    "type_ko": "대인보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5007000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/500700/500700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/500700/500700b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

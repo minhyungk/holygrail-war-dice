@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0166_bb",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_item_construction",
+      "name_ko": "도구작성",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_territory_creation",
+      "name_ko": "진지작성",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_domina_cornam",
+      "name_ko": "열 개의 왕관",
+      "rank": "D",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_aurea_poculum",
+      "name_ko": "황금의 잔",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_self_modification_infatuation",
+      "name_ko": "자기개조(연)",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

@@ -1,0 +1,34 @@
+{
+  "servant_id": "sv_0050_spartacus",
+  "skills": [
+    {
+      "skill_id": "sk_mad_enhancement",
+      "name_ko": "광화",
+      "rank": "EX",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_honor_of_suffering",
+      "name_ko": "피학의 명예",
+      "rank": "B+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_unyielding_will",
+      "name_ko": "불굴의 의지",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_triumphant_return_of_the_sword",
+      "name_ko": "검의 개선",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

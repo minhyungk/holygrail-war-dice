@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0077_nikola_tesla",
+  "source_id": 77,
+  "name_ko": "니콜라 테슬라",
+  "name_short_ko": "테슬라",
+  "class": "archer",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "C",
+    "mana": "B",
+    "luck": "D",
+    "np": "EX"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "인류신화 뇌전강림",
+    "ruby_ko": "시스템 케라우노스",
+    "rank": "EX",
+    "type_ko": "대성보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2011000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/201100/201100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/201100/201100b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

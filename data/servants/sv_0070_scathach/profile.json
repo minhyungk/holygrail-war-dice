@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0070_scathach",
+  "source_id": 70,
+  "name_ko": "스카사하",
+  "name_short_ko": "스카사하",
+  "class": "lancer",
+  "ranks": {
+    "str": "B",
+    "end": "A",
+    "agi": "A",
+    "mana": "C",
+    "luck": "D",
+    "np": "A+"
+  },
+  "alignment": "good",
+  "alignment_detail": "중립·선",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "꿰뚫는 죽음의 투창",
+    "ruby_ko": "게이 볼그 얼터너티브",
+    "rank": "B+",
+    "type_ko": "대인보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3013000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/301300/301300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/301300/301300b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

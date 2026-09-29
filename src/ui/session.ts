@@ -24,8 +24,8 @@ export function newSeed(): number {
   return (Date.now() ^ (performance.now() * 1000)) >>> 0;
 }
 
-export function makePlan(seed: number, summon: 'random' | 'catalyst', catalyst?: string): RunPlan {
-  return planRun({ seed, summon, catalyst, servantIds: availableServantIds(), masterIds: availableMasterIds() });
+export function makePlan(catalog: Catalog, seed: number, summon: 'random' | 'catalyst', catalyst?: string): RunPlan {
+  return planRun({ seed, summon, catalyst, servants: catalog.servants, masterIds: availableMasterIds() });
 }
 
 export class Session {
@@ -95,6 +95,7 @@ export async function startSession(plan: RunPlan, fatePoints: number): Promise<S
       narrator: dialogue.narrator,
       speech: dialogue.speech,
       servants: data.servants,
+      skills: data.skills,
       masters: data.masters,
       tiles: TILES,
       labels: common.labels,

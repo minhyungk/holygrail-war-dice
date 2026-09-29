@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0150_merlin",
+  "source_id": 150,
+  "name_ko": "멀린",
+  "name_short_ko": "멀린",
+  "class": "caster",
+  "ranks": {
+    "str": "B",
+    "end": "E",
+    "agi": "D",
+    "mana": "A",
+    "luck": "C",
+    "np": "C"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "영원히 닫힌 이상향",
+    "ruby_ko": "가든 오브 아발론",
+    "rank": "C",
+    "type_ko": "대인보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5008000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/500800/500800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/500800/500800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

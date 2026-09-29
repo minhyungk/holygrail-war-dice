@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0199_semiramis",
+  "skills": [
+    {
+      "skill_id": "sk_presence_concealment",
+      "name_ko": "기척 차단",
+      "rank": "C+",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_territory_creation",
+      "name_ko": "진지작성",
+      "rank": "EX",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_item_construction",
+      "name_ko": "도구작성",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_divinity",
+      "name_ko": "신성",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_familiar_dove",
+      "name_ko": "사역마(비둘기)",
+      "rank": "D",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_double_summon",
+      "name_ko": "이중소환",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_a453550",
+      "name_ko": "교만왕의 미주",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

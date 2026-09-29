@@ -1,0 +1,34 @@
+{
+  "servant_id": "sv_0006_siegfried",
+  "skills": [
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_avaricious_gold",
+      "name_ko": "탐욕의 황금",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_disengage",
+      "name_ko": "재정비",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_dragon_slayer",
+      "name_ko": "용살자",
+      "rank": "A++",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

@@ -20,6 +20,20 @@ const lastPhase = (): BattleInput => ({
 });
 
 describe('전투 예상 승률 (D-139)', () => {
+  it('예측 실행의 가상 선택은 실제 선택 알림(호감도 반응)을 부르지 않는다', () => {
+    const calls: string[] = [];
+    const state = { ...input(), onChoice: (_f: string, r: string) => calls.push(r) };
+    forecastBattle(state, 'fc_a');
+    expect(calls).toEqual([]);
+    // 실제 전투에서 저장한 예측 입력에도 들어 있지 않다
+    const log = new EventLog();
+    runBattle({ ...state, captureForecast: true }, rngDice(createRng(3)), log, policy);
+    for (const e of log.events) {
+      const f = (e.data as { forecast?: BattleInput }).forecast;
+      if (f) expect(f.onChoice).toBeUndefined();
+    }
+  });
+
   it('한 국면 남은 만전끼리는 승부가 날 수 없다: 승/패 없음 (전투를 새로 시작하지 않는다)', () => {
     const state = lastPhase();
     state.checkpoint!.current!.phase!.id = 'ph_clash';

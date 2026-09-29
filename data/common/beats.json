@@ -204,6 +204,13 @@
           "chance": "self_phase_win"
         },
         {
+          "slot": "answer",
+          "from": "enemy",
+          "tag": "phase_win",
+          "if": { "event.self_lost": true },
+          "chance": "enemy_phase_win"
+        },
+        {
           "slot": "line",
           "from": "self",
           "tag": "phase_hit",
@@ -212,6 +219,13 @@
             "event.condition_to": "hurt"
           },
           "chance": "self_phase_hit"
+        },
+        {
+          "slot": "answer",
+          "from": "enemy",
+          "tag": "phase_hit",
+          "if": { "event.self_won": true, "event.condition_to": { "in": ["hurt", "danger"] } },
+          "chance": "enemy_phase_hit"
         },
         {
           "slot": "tail",
@@ -455,16 +469,21 @@
       ]
     },
     "skill_triggered": {
-      "size": "small",
+      "size": "normal",
       "slots": [
+        {
+          "slot": "react",
+          "from": "narrator",
+          "tag": "skill_effect",
+          "if": { "event.first": true },
+          "protected": true
+        },
         {
           "slot": "line",
           "from": "actor",
           "tag": "skill",
-          "if": {
-            "beat.actor_side": "self"
-          },
-          "chance": "self_skill"
+          "if": { "event.first": true },
+          "chance": "battle_skill"
         }
       ]
     }

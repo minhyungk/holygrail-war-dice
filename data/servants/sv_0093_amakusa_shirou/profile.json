@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0093_amakusa_shirou",
+  "source_id": 93,
+  "name_ko": "아마쿠사 시로",
+  "name_short_ko": "아마쿠사",
+  "class": "ruler",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "B",
+    "mana": "A",
+    "luck": "B",
+    "np": "D"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "쌍완 영차집속",
+    "ruby_ko": "트윈 암 빅 크런치",
+    "rank": "EX",
+    "type_ko": "대군보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_9002000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/900200/900200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/900200/900200b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

@@ -1,0 +1,34 @@
+{
+  "servant_id": "sv_0059_jeanne_d_arc",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "EX",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_after_pure_prayer",
+      "name_ko": "청렬한 기도의 끝에",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_restoration_of_the_radiant_holy_light",
+      "name_ko": "찬연한 성광의 복권",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_divine_judgment",
+      "name_ko": "신명재결",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

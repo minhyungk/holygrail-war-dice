@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0026_boudica",
+  "source_id": 26,
+  "name_ko": "부디카",
+  "name_short_ko": "부디카",
+  "class": "rider",
+  "ranks": {
+    "str": "C",
+    "end": "B+",
+    "agi": "C",
+    "mana": "D",
+    "luck": "D",
+    "np": "B+"
+  },
+  "alignment": "good",
+  "alignment_detail": "중립·선",
+  "alignment_verified": false,
+  "temperament": "tsundere",
+  "noble_phantasm": {
+    "name_ko": "약속되지 않은 수호의 바퀴",
+    "ruby_ko": "채리엇 오브 부디카",
+    "rank": "B++",
+    "type_ko": "대군보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4011000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/401100/401100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/401100/401100b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

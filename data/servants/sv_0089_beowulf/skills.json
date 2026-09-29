@@ -1,0 +1,34 @@
+{
+  "servant_id": "sv_0089_beowulf",
+  "skills": [
+    {
+      "skill_id": "sk_mad_enhancement",
+      "name_ko": "광화",
+      "rank": "E-",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_berserk",
+      "name_ko": "베르세르크",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_invigorated_hero",
+      "name_ko": "분기의 용사",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_perseverance_of_old_age",
+      "name_ko": "견인의 노경",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

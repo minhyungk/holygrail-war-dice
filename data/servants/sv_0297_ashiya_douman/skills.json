@@ -1,0 +1,69 @@
+{
+  "servant_id": "sv_0297_ashiya_douman",
+  "skills": [
+    {
+      "skill_id": "sk_territory_creation",
+      "name_ko": "진지작성",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_item_construction",
+      "name_ko": "도구작성",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_core_of_darkness",
+      "name_ko": "암흑의 신핵",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_high_servant",
+      "name_ko": "하이 서번트",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_hedonism",
+      "name_ko": "쾌락주의",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_ridicule_cat",
+      "name_ko": "리디큘 캣",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_onyx_life",
+      "name_ko": "검은 생명",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_douman_s_curse",
+      "name_ko": "도만의 저주",
+      "rank": "A++",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

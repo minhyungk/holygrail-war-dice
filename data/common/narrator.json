@@ -10,7 +10,52 @@
   },
   "notes": "공통 나레이션 임시 초안. 태그는 이벤트 이름 기반 임시 ID (Q-50). 시점은 3인칭 관찰자 (D-069). 이름은 자리표시자로만 쓴다 (정보 가림).",
   "tags": {
+    "summon_irregular": [
+      {"id": "error_01", "slot": "lead", "text": "──영창의 마지막 소절이 끝나는 순간, 마법진의 빛이 한 번 검게 뒤틀렸다. 성배가 무언가를 잘못 삼킨 것처럼."},
+      {"id": "error_02", "slot": "lead", "text": "소환은 성공했다. 그런데도 공기 어딘가가 삐걱거린다. 이번 전쟁의 일곱 자리 중 하나가, 본래와 다른 무언가로 채워졌다는 감각."},
+      {"id": "error_03", "slot": "lead", "text": "마법진이 멎은 뒤에도, 대기 중의 마력이 좀처럼 가라앉지 않는다. ──이번 성배는, 무언가 어긋난 채로 일곱 자리를 채웠다."}
+    ],
+    "skill_effect": [
+      {"id": "magic_resistance", "slot": "react", "when": {"event.skill_id": "sk_magic_resistance", "event.effect": "roll_mod", "event.target_side": "self"}, "text": "술식이 {actor}의 몸에 닿기 전에 풀려 흩어진다. {skill}── 신비를 거부하는 영령의 체질이, 마술의 칼날을 무디게 한다."},
+      {"id": "divinity", "slot": "react", "when": {"event.skill_id": "sk_divinity", "event.effect": "roll_mod", "event.target_side": "self"}, "text": "보구의 빛이 부딪치는 자리에서, {actor}의 피에 섞인 신의 기척이 깨어난다. {skill}. 신화에 닿은 혈통은 신비의 격돌에서 물러서지 않는다."},
+      {"id": "charisma", "slot": "react", "when": {"event.skill_id": "sk_charisma", "event.effect": "roll_mod", "event.target_side": "self"}, "text": "첫 합을 앞두고 {actor}{이/가} 한 걸음 나선다. {skill}── 군세를 이끌던 자의 기백이, 싸움의 첫머리를 제 쪽으로 끌어당긴다."},
+      {"id": "mind_eye_fake", "slot": "react", "when": {"event.skill_id": "sk_mind_eye_fake", "event.effect": "roll_mod", "event.target_side": "self"}, "text": "{actor}의 {skill}{이/가} 날아드는 살기를 한발 먼저 짚어 낸다. 배워서 얻은 것이 아니다. 몸이 먼저 위험을 아는, 천성의 감각이다."},
+      {"id": "mind_eye_true", "slot": "react", "when": {"event.skill_id": "sk_mind_eye_true", "event.effect": "roll_mod", "event.target_side": "self"}, "text": "{actor}의 {skill}{이/가} 쏟아지는 공격의 궤적을 하나하나 읽어 낸다. 수없는 사선을 넘으며 쌓아 올린 전투의 이치── 궁지에서야말로 살 길을 찾아내는 눈이다."},
+      {"id": "presence_concealment", "slot": "react", "when": {"event.skill_id": "sk_presence_concealment", "event.effect": "roll_mod", "event.target_side": "self"}, "text": "{actor}의 기척이 밤공기에 녹아 사라진다. {skill}── 첫 일격이 닿기 전까지, 상대는 그곳에 누가 있는지조차 알지 못한다."},
+      {"id": "territory_creation", "slot": "react", "when": {"event.skill_id": "sk_territory_creation", "event.effect": "roll_mod", "event.target_side": "self"}, "text": "대지 아래를 흐르는 영맥이 {actor}의 발밑으로 모여든다. {skill}── 제 영역을 세우는 마술사에게, 이 땅은 이미 공방(工房)이다."},
+      {"id": "dragon_core", "slot": "react", "when": {"event.skill_id": "sk_dragon_core", "event.effect": "roll_mod", "event.target_side": "self"}, "text": "{actor}의 가슴 깊은 곳에서 노심이 포효한다. {skill}── 숨결만으로 마력을 자아내는 용의 심장이, 일격에 폭발하는 힘을 싣는다."},
+      {"id": "shining_path", "slot": "react", "when": {"event.skill_id": "sk_shining_path", "event.effect": "roll_mod", "event.target_side": "self"}, "text": "쓰러져야 할 몸이, 아직 무기를 놓지 않는다. {actor}의 {skill}── 끝이 보이는 자리에서야말로 앞을 비추는, 꺼지지 않는 빛."},
+      {"id": "hawk_eye", "slot": "react", "when": {"event.skill_id": "sk_hawk_eye", "event.effect": "roll_mod", "event.target_side": "self"}, "text": "{actor}의 {skill}{이/가} 어둠 너머의 움직임을 먼저 포착한다. 멀리서 과녁을 겨누는 자에게, 선수(先手)는 이미 정해져 있다."},
+      {"id": "circuit_connection", "slot": "react", "when": {"event.skill_id": "sk_circuit_connection", "event.effect": "roll_mod", "event.target_side": "self"}, "text": "{actor}의 마술회로가 한꺼번에 불을 켠다. {skill}── 회로를 잇고 또 이어, 한 번의 술식에 실리는 마력을 끌어올린다."},
+      {"id": "four_fords", "slot": "react", "when": {"event.skill_id": "sk_four_fords", "event.effect": "roll_mod", "event.target_side": "self"}, "text": "{actor}의 {skill}{이/가} 정면의 일대일을 제 싸움터로 바꾼다. 여울을 지키던 전사의 맹약── 물러설 길을 끊은 결투에서, 이 창은 꺾이지 않는다."},
+      {"id": "protection_from_arrows", "slot": "react", "when": {"event.skill_id": "sk_protection_from_arrows", "event.effect": "roll_mod", "event.target_side": "self"}, "text": "날아든 공격이 {actor}의 몸을 비껴 지나간다. {skill}── 눈에 담긴 공격은 닿지 않는다는, 전장의 가호다."},
+      {"id": "disengage", "slot": "react", "when": {"event.skill_id": "sk_disengage", "event.effect": "roll_mod", "event.target_side": "self"}, "text": "{actor}{이/가} 한 걸음 물러나 호흡을 고른다. {skill}── 불리한 흐름을 끊고, 싸움터를 빠져나갈 틈을 만든다."},
+      {"id": "mystic_eyes", "slot": "react", "when": {"event.skill_id": "sk_mystic_eyes", "event.effect": "roll_mod", "event.target_side": "enemy"}, "text": "{actor}의 {skill}{이/가} {target}{을/를} 붙잡는다. 시선이 닿은 곳부터 몸이 무거워진다── 보는 것만으로 생명을 묶는, 마성의 눈."},
+      {"id": "monstrous_strength", "slot": "react", "when": {"event.skill_id": "sk_monstrous_strength", "event.effect": "roll_mod", "event.target_side": "self"}, "text": "{actor}의 일격에 상식을 벗어난 무게가 실린다. {skill}── 마성(魔性)이 깃든 자의 완력이, 정면의 격돌을 짓누른다."},
+      {"id": "blood_temple", "slot": "react", "when": {"event.skill_id": "sk_blood_temple", "event.effect": "resource_change", "event.target_side": "self"}, "text": "흘러나온 피가 {actor}의 발밑으로 스며든다. {skill}── 무너진 자의 생명이, 그대로 마력이 되어 차오른다."},
+      {"id": "high_speed_divine_words", "slot": "react", "when": {"event.skill_id": "sk_high_speed_divine_words", "event.effect": "roll_mod", "event.target_side": "self"}, "text": "단 한 마디. {actor}의 {skill}{이/가} 긴 영창을 한 음절로 접는다. 신대의 언어로 짜인 술식이, 현대의 마술로는 따라올 수 없는 속도로 완성된다."},
+      {"id": "golden_fleece", "slot": "react", "when": {"event.skill_id": "sk_golden_fleece", "event.effect": "roll_mod", "event.target_side": "self"}, "text": "{actor}의 앞에 황금빛이 번진다. {skill}── 전설의 보물이 드리운 가호가, 정면에서 날아든 일격을 받아 낸다."},
+      {"id": "circes_teaching", "slot": "react", "when": {"event.skill_id": "sk_circes_teaching", "event.effect": "resource_change", "event.target_side": "self"}, "text": "{actor}의 손끝에서 마력이 조용히 재편된다. {skill}── 몸에 새긴 마술의 가르침이, 싸움의 틈마다 마력을 되찾아 온다."},
+      {"id": "vitrification", "slot": "react", "when": {"event.skill_id": "sk_vitrification", "event.effect": "roll_mod", "event.target_side": "self"}, "text": "{actor}의 눈빛이 흔들리지 않는다. {skill}── 어떤 위기 앞에서도 흐트러지지 않는 마음이, 생사의 갈림길에서 칼끝을 곧게 세운다."},
+      {"id": "knowledge_of_harmony", "slot": "react", "when": {"event.skill_id": "sk_knowledge_of_harmony", "event.effect": "event_negate", "event.target_side": "enemy"}, "text": "{target}{이/가} 읽어 둔 검로(劍路)가 한순간에 빗나간다. {actor}의 {skill}── 형태에 얽매이지 않는 검은, 알고 있어도 막을 수 없다."},
+      {"id": "independent_action", "slot": "react", "when": {"event.skill_id": "sk_independent_action", "event.effect": "event_negate", "event.target_side": "self"}, "text": "마스터와의 사이가 벌어져 있어도, {actor}의 손끝은 흐트러지지 않는다. {skill}── 누구의 지시 없이도 싸울 수 있는 자의, 흔들리지 않는 자립."},
+      {"id": "valor", "slot": "react", "when": {"event.skill_id": "sk_valor", "event.effect": "roll_mod", "event.target_side": "self"}, "text": "{actor}{이/가} 정면에서 맞선다. {skill}── 두려움을 모르는 투지가, 부딪침의 무게를 그대로 되돌려 준다."},
+      {"id": "battle_continuation", "slot": "react", "when": {"event.skill_id": "sk_battle_continuation", "event.effect": "condition_guard", "event.target_side": "self"}, "text": "쓰러져야 했다. 그런데도 {actor}{이/가} 다시 일어선다. {skill}── 치명상을 입고도 싸움을 멈추지 않는, 불굴의 생명력."},
+      {"id": "roll_self_1", "slot": "react", "when": {"event.effect": "roll_mod", "event.target_side": "self"}, "text": "{actor}의 {skill}{이/가} 공방의 흐름을 바꾼다. 다음 일합은 {actor}의 편으로 기운다."},
+      {"id": "roll_self_2", "slot": "react", "when": {"event.effect": "roll_mod", "event.target_side": "self"}, "text": "{actor}{이/가} {skill}{을/를} 펼친다. 한 박자 앞선 움직임이, 승부의 저울을 끌어당긴다."},
+      {"id": "roll_enemy", "slot": "react", "when": {"event.effect": "roll_mod", "event.target_side": "enemy"}, "text": "{actor}의 {skill}{이/가} {target}의 움직임을 옭아맨다. 다음 일합, {target}의 손발이 무겁다."},
+      {"id": "negate", "slot": "react", "when": {"event.effect": "event_negate"}, "text": "{actor}의 {skill}{이/가} 불리한 흐름을 지운다. 막혔던 싸움이 다시 이어진다."},
+      {"id": "mana", "slot": "react", "when": {"event.effect": "resource_change"}, "text": "{actor}의 {skill}{이/가} 발동한다. 비어 가던 마력이 다시 차오른다."},
+      {"id": "guard", "slot": "react", "when": {"event.effect": "condition_guard"}, "text": "{actor}의 {skill}{이/가} 치명적인 일격을 버텨 낸다. 무너질 듯한 몸이, 다시 선다."},
+      {"id": "hidden_roll_self_1", "slot": "react", "when": {"event.effect": "roll_mod", "event.target_side": "self", "event.skill_known": false}, "text": "{actor}의 움직임이 한순간 달라진다. 정체 모를 기술이, 다음 일합의 흐름을 끌어당긴다."},
+      {"id": "hidden_roll_self_2", "slot": "react", "when": {"event.effect": "roll_mod", "event.target_side": "self", "event.skill_known": false}, "text": "{actor}의 주위로 마력이 일렁인다. 무엇인지는 알 수 없다. 다만, 저쪽이 한 수 앞섰다."},
+      {"id": "hidden_roll_enemy", "slot": "react", "when": {"event.effect": "roll_mod", "event.target_side": "enemy", "event.skill_known": false}, "text": "{target}의 몸이 무거워진다. {actor}{이/가} 무언가를 걸었다── 정체를 알 수 없는 힘이, 판정을 짓누른다."},
+      {"id": "hidden_negate", "slot": "react", "when": {"event.effect": "event_negate", "event.skill_known": false}, "text": "무언가가 닿기 전에 흩어진다. {actor}의 알 수 없는 기술이, 흐름 하나를 지웠다."},
+      {"id": "hidden_mana", "slot": "react", "when": {"event.effect": "resource_change", "event.skill_known": false}, "text": "{actor}의 주위로 마력이 모여든다. 어디선가, 힘을 길어 올리고 있다."},
+      {"id": "hidden_guard", "slot": "react", "when": {"event.effect": "condition_guard", "event.skill_known": false}, "text": "쓰러져야 할 {actor}{이/가}, 무언가에 붙들린 듯 버티고 선다. 알 수 없는 가호가 치명상을 비껴 냈다."}
+    ],
     "phase_defended": [
+      {"id": "defended_04", "slot": "react", "text": "빛의 해일이 {target}{을/를} 덮친다. ──그리고 걷힌다. 그 자리에는, 여전히 버티고 선 그림자가 있었다."},
       {
         "id": "defended_01",
         "slot": "react",
@@ -416,6 +461,27 @@
       }
     ],
     "day_bond": [
+      {"id": "lead_quiet", "slot": "lead", "text": "전쟁 중의 한낮. {servant}{와/과} 나란히, 목적 없는 길을 걷는다."},
+      {"id": "lead_hurt", "slot": "lead", "when": {"self.condition": "hurt"}, "text": "{servant}의 걸음이 조금 느리다. 지난밤의 상처가, 아직 몸 어딘가에 남아 있다."},
+      {"id": "lead_late", "slot": "lead", "when": {"world.day": {"gte": 4}}, "text": "남은 진영은 많지 않다. 그래서일까, 오늘의 햇빛은 유난히 선명하다."},
+      {"id": "urban_2", "slot": "lead", "when": {"world.terrain": "urban"}, "text": "상점가의 소음이 귓가를 스친다. 사람들 사이를 걷는 {servant}의 모습은, 누구의 눈에도 평범해 보인다."},
+      {"id": "river_2", "slot": "lead", "when": {"world.terrain": "river"}, "text": "강둑의 바람이 차다. {servant}{은/는} 흐르는 물을 잠시 바라본다."},
+      {"id": "forest_2", "slot": "lead", "when": {"world.terrain": "forest"}, "text": "숲길의 흙냄새가 짙다. 발밑에서 마른 가지가 부러지는 소리만이 울린다."},
+      {"id": "open_2", "slot": "lead", "when": {"world.terrain": "open"}, "text": "탁 트인 들판. 숨을 곳이 없다는 것은, 숨길 것도 없다는 뜻이기도 하다."},
+      {"id": "lead_hostile", "slot": "lead", "when": {"self.affinity_tier": "hostile"}, "text": "{servant}{은/는} 앞만 보고 걷는다. 말을 건네기엔, 공기가 너무 차갑다."},
+      {"id": "lead_wary", "slot": "lead", "when": {"self.affinity_tier": "wary"}, "text": "한 걸음 뒤에서 따라오는 {servant}. 그 거리가, 지금 둘 사이의 거리다."},
+      {"id": "lead_close", "slot": "lead", "when": {"self.affinity_tier": {"in": ["friendly", "loyal"]}}, "text": "{servant}{이/가} 먼저 걸음을 맞춘다. 언제부터였는지, 그것이 당연해졌다."},
+      {"id": "react_default_1", "slot": "react", "text": "짧은 대화가 오간다. 그것만으로, 전장에서 굳어 있던 무언가가 조금 풀린다."},
+      {"id": "react_default_2", "slot": "react", "text": "{servant}의 목소리가 바람에 섞여 흩어진다. 한동안, 둘은 말없이 걷는다."},
+      {"id": "react_defiant", "slot": "react", "when": {"beat.line.tone": "defiant"}, "text": "당당한 목소리. 싸움 밖에서도, {servant}{은/는} 제 자신을 굽히지 않는다."},
+      {"id": "react_grim_ok", "slot": "react", "when": {"beat.line.tone": "grim"}, "text": "무거운 말이었다. 그래도 {servant}{은/는}, 그것을 마스터에게 털어놓았다."},
+      {"id": "react_roar", "slot": "react", "when": {"beat.line.tone": "roar"}, "text": "말은 없다. 낮게 울리는 숨결이 대답을 대신한다. 그 눈빛이, 아주 조금 누그러졌다."},
+      {"id": "react_calm_2", "slot": "react", "when": {"beat.line.tone": "calm"}, "text": "담담한 말투. 그러나 그 안에, 이전에는 없던 온기가 섞여 있다."},
+      {"id": "react_tender_2", "slot": "react", "when": {"beat.line.tone": "tender"}, "text": "{servant}{이/가} 작게 웃는다. 전장에서는 한 번도 본 적 없는 얼굴이었다."},
+      {"id": "react_loyal", "slot": "react", "when": {"self.affinity_tier": "loyal"}, "text": "더 이상의 말은 필요 없었다. 나란히 선 두 그림자가, 같은 방향으로 길게 늘어진다."},
+      { "id": "lead_step", "slot": "lead", "text": "전투의 소음이 닿지 않는 길. {servant}{와/과} 마스터는 잠시 같은 보폭으로 걷는다." },
+      { "id": "react_calm_new", "slot": "react", "when": { "beat.line.tone": "calm" }, "text": "대답은 짧았지만, 침묵은 불편하지 않았다. 걸음이 나란히 이어진다." },
+      { "id": "react_playful_new", "slot": "react", "when": { "beat.line.tone": "playful" }, "text": "가벼운 말끝에 웃음이 남는다. 전쟁의 한낮에도 이런 틈은 있다." },
       {
         "id": "urban",
         "slot": "lead",
@@ -578,6 +644,12 @@
       }
     ],
     "phase_start": [
+      {"id": "clash_2", "slot": "lead", "when": {"event.phase_id": "ph_clash"}, "text": "거리가 사라진다. 남은 것은 무기와 무기, 그리고 의지뿐."},
+      {"id": "initiative_2", "slot": "lead", "when": {"event.phase_id": "ph_initiative"}, "text": "숨을 들이쉬는 소리마저 늦다. 먼저 닿는 쪽이, 이 합의 주인이다."},
+      {"id": "sorcery_2", "slot": "lead", "when": {"event.phase_id": "ph_sorcery"}, "text": "공기가 무거워진다. 보이지 않는 술식의 실이, 전장 위로 팽팽하게 당겨진다."},
+      {"id": "fate_2", "slot": "lead", "when": {"event.phase_id": "ph_fate"}, "text": "살아남을 이유도, 쓰러질 이유도 없다. 오직 운명의 저울만이 흔들린다."},
+      {"id": "np_clash_2", "slot": "lead", "when": {"event.phase_id": "ph_np_clash"}, "text": "진명이 불린다. 두 개의 신비가, 세계의 질감을 비틀며 부풀어 오른다."},
+      {"id": "np_attack_2", "slot": "lead", "when": {"event.phase_id": "ph_np_attack"}, "text": "전설의 빛이 한쪽에서만 차오른다. 맞서는 쪽에 남은 것은, 버틸 각오뿐."},
       {
         "id": "clash",
         "slot": "lead",
@@ -628,6 +700,25 @@
       }
     ],
     "phase_result": [
+      {"id": "small_2", "slot": "react", "when": {"event.margin": {"lt": 5}}, "text": "승부를 가른 것은 한 호흡. {loser}의 무기가, 반 뼘 늦었다."},
+      {"id": "big_2", "slot": "react", "when": {"event.margin": {"gte": 5}}, "text": "{winner}{이/가} 압도한다. {loser}에게는, 맞받아칠 틈조차 주어지지 않았다."},
+      {"id": "clash_small", "slot": "react", "when": {"event.phase_id": "ph_clash", "event.margin": {"lt": 5}}, "text": "무기가 맞부딪치고, 불꽃이 튄다. 버텨 낸 쪽은 {winner}── {loser}의 발이 한 치 밀려난다."},
+      {"id": "initiative_small", "slot": "react", "when": {"event.phase_id": "ph_initiative", "event.margin": {"lt": 5}}, "text": "동시에 움직였다. 아니──{winner}{이/가} 아주 조금, 빨랐다."},
+      {"id": "sorcery_small", "slot": "react", "when": {"event.phase_id": "ph_sorcery", "event.margin": {"lt": 5}}, "text": "술식과 술식이 서로의 틈을 파고든다. 먼저 한 줄이 끊긴 것은 {loser} 쪽."},
+      {"id": "fate_fail_2", "slot": "react", "when": {"event.phase_id": "ph_fate", "event.result": "resolved"}, "text": "주사위는 굴러갔다. 그 눈은, {loser}에게 미소 짓지 않았다."},
+      {"id": "fate_skip_2", "slot": "react", "when": {"event.phase_id": "ph_fate", "event.result": "skipped"}, "text": "죽음의 기척이 스쳤을 뿐. 둘 다, 아직 이 밤에 서 있다."},
+      {"id": "np_clash_2", "slot": "react", "when": {"event.phase_id": "ph_np_clash", "event.result": "resolved"}, "text": "빛이 빛을 갉아먹는다. 세계가 삐걱거리는 소리 끝에, {winner}의 전설이 남는다."},
+      {"id": "np_attack_2", "slot": "react", "when": {"event.phase_id": "ph_np_attack", "event.result": "resolved"}, "text": "막아 낼 수 없는 일격이었다. 빛이 걷힌 자리에, {loser}{이/가} 무릎을 꿇고 있다."},
+      {"id": "skip_2", "slot": "react", "when": {"event.result": "skipped"}, "text": "서로의 무기가 허공만을 가른다. 이 합은, 헛되이 지나갔다."},
+      {"id": "clash_1_2", "slot": "react", "when": {"event.phase_id": "ph_clash", "event.drop": 1}, "text": "정면에서 맞선 힘이 {loser}의 방어를 비틀어 연다. 얕지만, 분명한 상처."},
+      {"id": "initiative_1_2", "slot": "react", "when": {"event.phase_id": "ph_initiative", "event.drop": 1}, "text": "{loser}{이/가} 돌아섰을 때, 이미 옷자락이 베여 있었다. 선수(先手)는 {winner}의 것이었다."},
+      {"id": "sorcery_1_2", "slot": "react", "when": {"event.phase_id": "ph_sorcery", "event.drop": 1}, "text": "마력의 파도가 {loser}의 방벽을 두드린다. 한 겹이 깨지고, 회로가 뜨겁게 달아오른다."},
+      {"id": "to_hurt_2", "slot": "tail", "when": {"event.condition_to": "hurt"}, "text": "상처는 얕지 않다. 그러나 {loser}의 눈은, 아직 꺾이지 않았다."},
+      {"id": "to_danger_2", "slot": "tail", "when": {"event.condition_to": "danger"}, "text": "{loser}의 윤곽이 흔들린다. 영기가, 비명을 지르고 있다."},
+      {"id": "below_2", "slot": "tail", "when": {"event.condition_to": null, "event.result": "resolved"}, "text": "무기가 손에서 미끄러진다. {loser}의 몸이, 천천히 무너져 내린다."},
+      { "id": "narrow_step", "slot": "react", "when": { "event.margin": { "lt": 5 }, "event.result": "resolved" }, "text": "발끝이 반 치 움직인다. {winner}{이/가} 그 작은 간격으로 {loser}의 빈틈을 잡는다." },
+      { "id": "heavy_guard", "slot": "react", "when": { "event.drop": 2 }, "text": "받아 낸 팔이 밀린다. {loser}의 자세가 무너지고, 뒤늦게 충격이 온몸을 지난다." },
+      { "id": "danger_breath", "slot": "tail", "when": { "event.condition_to": "danger" }, "text": "호흡이 끊긴다. 다음 일격을 버틸 수 있을지는, 아직 모른다." },
       {
         "id": "skip",
         "slot": "react",
@@ -814,6 +905,7 @@
       }
     ],
     "miracle": [
+      {"id": "base_03", "slot": "react", "text": "누구도 예상하지 못한 눈. {winner}의 손에 떨어진 것은, 기적이었다."},
       {
         "id": "base_01",
         "slot": "react",
@@ -882,6 +974,10 @@
       }
     ],
     "battle_end": [
+      {"id": "win_2", "slot": "tail", "when": {"event.result": "win"}, "text": "싸움의 열기가 빠져나간다. 남은 것은 거친 숨소리와, 차가운 밤바람."},
+      {"id": "draw_2", "slot": "tail", "when": {"event.result": "draw"}, "text": "어느 쪽도 쓰러지지 않았다. 결판은, 다음 밤으로 미뤄진다."},
+      {"id": "enemy_dead_02", "slot": "tail", "when": {"event.result": "win", "event.dead_side": "enemy"}, "text": "{loser}의 몸이 금빛 입자로 풀려 간다. 한 영령의 전설이, 이 전쟁에서 막을 내렸다."},
+      {"id": "escape_self_2", "slot": "tail", "when": {"event.result": "escape", "event.escaped_side": "self"}, "text": "등 뒤로 추격의 기척이 멀어진다. 살아남았다. 그러나 싸움은, 아직 끝나지 않았다."},
       {
         "id": "win",
         "slot": "tail",
@@ -1083,6 +1179,15 @@
       }
     ],
     "day_bond_fail": [
+      {"id": "react_04", "slot": "react", "text": "{servant}{은/는} 대답 대신 먼 곳을 본다. 대화는, 거기서 끊겼다."},
+      {"id": "react_05", "slot": "react", "text": "몇 마디가 허공에 떠돌다 사라진다. 전쟁의 한가운데서, 마음을 여는 일은 쉽지 않다."},
+      {"id": "react_defiant", "slot": "react", "when": {"beat.line.tone": "defiant"}, "text": "날 선 대답이 돌아온다. {servant}{은/는} 그 이상의 접근을 허락하지 않는다."},
+      {"id": "react_playful", "slot": "react", "when": {"beat.line.tone": "playful"}, "text": "가벼운 말로 넘겨 버린다. 웃음 뒤에 숨긴 것까지는, 끝내 보이지 않았다."},
+      {"id": "react_roar", "slot": "react", "when": {"beat.line.tone": "roar"}, "text": "낮은 으르렁거림. 그것이 거절인지조차, 알 수 없다."},
+      {"id": "react_calm", "slot": "react", "when": {"beat.line.tone": "calm"}, "text": "정중한 대답. 그러나 딱 그만큼의 거리를, {servant}{은/는} 정확히 지키고 있다."},
+      {"id": "react_distrust", "slot": "react", "when": {"self.affinity_tier": {"in": ["hostile", "wary"]}}, "text": "{servant}의 시선은 차갑다. 신뢰는, 아직 그 어디에도 없다."},
+      { "id": "react_missed_step", "slot": "react", "text": "걸음이 한 번 어긋난다. 말을 건넬 틈이 있었지만, 그 틈은 그대로 지나갔다." },
+      { "id": "react_grim_new", "slot": "react", "when": { "beat.line.tone": "grim" }, "text": "대답 뒤로 침묵이 길게 남는다. 전장에서의 거리가 이곳까지 따라왔다." },
       {
         "id": "react_01",
         "text": "대화는 이어지지 않았다. 같은 길을 걷고 있는데도, 둘 사이의 거리는 좁혀지지 않는다.",

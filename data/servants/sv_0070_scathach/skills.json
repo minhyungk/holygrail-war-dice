@@ -1,0 +1,34 @@
+{
+  "servant_id": "sv_0070_scathach",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_wisdom_of_d_n_sc_ith",
+      "name_ko": "마경의 지혜",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_primordial_rune",
+      "name_ko": "원초의 룬",
+      "rank": null,
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_god_slayer",
+      "name_ko": "신살자",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

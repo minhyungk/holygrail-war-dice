@@ -22,9 +22,16 @@ const OFF_CONTEXT = /인리|칼데아|인류|세계를 구|특이점|레이시�
 const clean = (t) => (t ?? '').replace(/\s*\n\s*/g, ' ').replace(/\s{2,}/g, ' ').trim();
 const lineText = (vl) => clean(vl.subtitle || (vl.text && vl.text.join(' ')) || '');
 
-/** 보이스 그룹 → 태그별 줄 */
-function extract(voices) {
-  const out = { phase_win: [], phase_hit: [], skill: [], day_bond: [] };
+/**
+ * 보이스 그룹 → 태그별 줄.
+ * D-157: 개시 → battle_start, 보구 → np_open, 승리 → victory, 전투불능 → defeat, 소환 → summon 추가.
+ * 자기 진명·짧은 이름·보구명을 말하는 줄은 정보 3단계 전엔 나오지 않게 `self.intel_level: 3`을 단다 (D-156). 보구 영창은 개방이 곧 공개라 가리지 않는다
+ */
+function extract(voices, profile) {
+  const out = { phase_win: [], phase_hit: [], skill: [], day_bond: [], battle_start: [], np_open: [], victory: [], defeat: [], summon: [] };
+  const np = profile.noble_phantasm;
+  const secrets = [profile.name_ko, profile.name_short_ko, np?.name_ko, np?.ruby_ko].filter((w) => w && w.length >= 2);
+  const guard = (l, tag) => (tag !== 'np_open' && secrets.some((w) => l.text.includes(w)) ? { ...l, when: { ...(l.when ?? {}), 'self.intel_level': 3 } } : l);
   for (const vg of voices) {
     if (vg.voicePrefix && vg.voicePrefix !== 0) continue; // 1재림 기준
     for (const vl of vg.voiceLines) {
@@ -37,6 +44,13 @@ function extract(voices) {
         else if (/^엑스트라 공격/.test(name)) out.phase_win.push({ id: `fgo_ex_${out.phase_win.filter((l) => l.id.startsWith('fgo_ex')).length + 1}`, text });
         else if ((m = /^대미지 (\d+)$/.exec(name))) out.phase_hit.push({ id: `fgo_dmg_${m[1]}`, text });
         else if ((m = /^스킬 (\d+)$/.exec(name))) out.skill.push({ id: `fgo_skill_${m[1]}`, text });
+        else if ((m = /^개시 (\d+)$/.exec(name))) out.battle_start.push({ id: `fgo_start_${m[1]}`, text });
+        else if ((m = /^승리 (\d+)$/.exec(name))) out.victory.push({ id: `fgo_win_${m[1]}`, text });
+        else if ((m = /^전투불능 (\d+)$/.exec(name))) out.defeat.push({ id: `fgo_down_${m[1]}`, text });
+      } else if (vg.type === 'treasureDevice') {
+        if (/^보구/.test(name)) out.np_open.push({ id: `fgo_np_${out.np_open.length + 1}`, text });
+      } else if (vg.type === 'firstGet') {
+        if (name === '소환') out.summon.push({ id: 'fgo_summon', text, repeat: 'once_per_run' });
       } else if (vg.type === 'home') {
         let m;
         // 인연 대사는 호감도 단계에 맞춰 나온다: Lv.1~2 중립 이상, Lv.3 호감 이상, Lv.4~5 충성 (affinity.md §3.2)
@@ -50,6 +64,7 @@ function extract(voices) {
       }
     }
   }
+  for (const [tag, list] of Object.entries(out)) out[tag] = list.map((l) => guard(l, tag));
   return out;
 }
 
@@ -63,7 +78,7 @@ for (const id of dirs) {
     continue;
   }
   const nice = await res.json();
-  const got = extract(nice.profile?.voices ?? []);
+  const got = extract(nice.profile?.voices ?? [], profile);
   const path = join(dir, 'dialogue.json');
   const file = JSON.parse(readFileSync(path, 'utf-8'));
   let added = 0;

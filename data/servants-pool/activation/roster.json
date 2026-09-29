@@ -1,0 +1,605 @@
+{
+ "notes": "D-157 편입 100기. 정규 7클래스 각 12기(원작 성배전쟁 참전 영령 우선 + FGO 대표 영령), 엑스트라 클래스 16기(난입 소환 전용). AI 선정 초안",
+ "servants": [
+  {
+   "servant_id": "sv_0002_artoria",
+   "source_id": 2,
+   "name_ko": "알트리아 펜드래곤",
+   "class": "saber"
+  },
+  {
+   "servant_id": "sv_0003_altria_pendragon_alter",
+   "source_id": 3,
+   "name_ko": "알트리아 펜드래곤(얼터)",
+   "class": "saber"
+  },
+  {
+   "servant_id": "sv_0005_nero_claudius",
+   "source_id": 5,
+   "name_ko": "네로 클라우디우스",
+   "class": "saber"
+  },
+  {
+   "servant_id": "sv_0006_siegfried",
+   "source_id": 6,
+   "name_ko": "지크프리트",
+   "class": "saber"
+  },
+  {
+   "servant_id": "sv_0008_altera",
+   "source_id": 8,
+   "name_ko": "알테라",
+   "class": "saber"
+  },
+  {
+   "servant_id": "sv_0010_chevalier_d_eon",
+   "source_id": 10,
+   "name_ko": "슈발리에 데옹",
+   "class": "saber"
+  },
+  {
+   "servant_id": "sv_0068_okita_souji",
+   "source_id": 68,
+   "name_ko": "오키타 소지",
+   "class": "saber"
+  },
+  {
+   "servant_id": "sv_0076_mordred",
+   "source_id": 76,
+   "name_ko": "모드레드",
+   "class": "saber"
+  },
+  {
+   "servant_id": "sv_0121_lancelot",
+   "source_id": 121,
+   "name_ko": "랜슬롯",
+   "class": "saber"
+  },
+  {
+   "servant_id": "sv_0123_gawain",
+   "source_id": 123,
+   "name_ko": "가웨인",
+   "class": "saber"
+  },
+  {
+   "servant_id": "sv_0153_miyamoto_musashi",
+   "source_id": 153,
+   "name_ko": "미야모토 무사시",
+   "class": "saber"
+  },
+  {
+   "servant_id": "sv_0160_arthur_pendragon_prototype",
+   "source_id": 160,
+   "name_ko": "아서 펜드래곤(프로토타입)",
+   "class": "saber"
+  },
+  {
+   "servant_id": "sv_0011_emiya",
+   "source_id": 11,
+   "name_ko": "에미야",
+   "class": "archer"
+  },
+  {
+   "servant_id": "sv_0012_gilgamesh",
+   "source_id": 12,
+   "name_ko": "길가메시",
+   "class": "archer"
+  },
+  {
+   "servant_id": "sv_0013_robin_hood",
+   "source_id": 13,
+   "name_ko": "로빈 후드",
+   "class": "archer"
+  },
+  {
+   "servant_id": "sv_0014_atalante",
+   "source_id": 14,
+   "name_ko": "아탈란테",
+   "class": "archer"
+  },
+  {
+   "servant_id": "sv_0016_arash",
+   "source_id": 16,
+   "name_ko": "아라쉬",
+   "class": "archer"
+  },
+  {
+   "servant_id": "sv_0069_oda_nobunaga",
+   "source_id": 69,
+   "name_ko": "오다 노부나가",
+   "class": "archer"
+  },
+  {
+   "servant_id": "sv_0077_nikola_tesla",
+   "source_id": 77,
+   "name_ko": "니콜라 테슬라",
+   "class": "archer"
+  },
+  {
+   "servant_id": "sv_0084_arjuna",
+   "source_id": 84,
+   "name_ko": "아르주나",
+   "class": "archer"
+  },
+  {
+   "servant_id": "sv_0122_tristan",
+   "source_id": 122,
+   "name_ko": "트리스탄",
+   "class": "archer"
+  },
+  {
+   "servant_id": "sv_0137_chloe_von_einzbern",
+   "source_id": 137,
+   "name_ko": "클로에 폰 아인츠베른",
+   "class": "archer"
+  },
+  {
+   "servant_id": "sv_0157_emiya_alter",
+   "source_id": 157,
+   "name_ko": "에미야(얼터)",
+   "class": "archer"
+  },
+  {
+   "servant_id": "sv_0207_chiron",
+   "source_id": 207,
+   "name_ko": "케이론",
+   "class": "archer"
+  },
+  {
+   "servant_id": "sv_0017_cu_chulainn",
+   "source_id": 17,
+   "name_ko": "쿠 훌린",
+   "class": "lancer"
+  },
+  {
+   "servant_id": "sv_0018_elisabeth_bathory",
+   "source_id": 18,
+   "name_ko": "엘리자베트 바토리",
+   "class": "lancer"
+  },
+  {
+   "servant_id": "sv_0020_cu_chulainn_prototype",
+   "source_id": 20,
+   "name_ko": "쿠 훌린(프로토타입)",
+   "class": "lancer"
+  },
+  {
+   "servant_id": "sv_0021_leonidas_i",
+   "source_id": 21,
+   "name_ko": "레오니다스 1세",
+   "class": "lancer"
+  },
+  {
+   "servant_id": "sv_0022_romulus",
+   "source_id": 22,
+   "name_ko": "로물루스",
+   "class": "lancer"
+  },
+  {
+   "servant_id": "sv_0064_hektor",
+   "source_id": 64,
+   "name_ko": "헥토르",
+   "class": "lancer"
+  },
+  {
+   "servant_id": "sv_0070_scathach",
+   "source_id": 70,
+   "name_ko": "스카사하",
+   "class": "lancer"
+  },
+  {
+   "servant_id": "sv_0071_diarmuid_ua_duibhne",
+   "source_id": 71,
+   "name_ko": "디어뮈드 오 디나",
+   "class": "lancer"
+  },
+  {
+   "servant_id": "sv_0085_karna",
+   "source_id": 85,
+   "name_ko": "카르나",
+   "class": "lancer"
+  },
+  {
+   "servant_id": "sv_0088_brynhild",
+   "source_id": 88,
+   "name_ko": "브륀힐드",
+   "class": "lancer"
+  },
+  {
+   "servant_id": "sv_0140_vlad_iii_extra",
+   "source_id": 140,
+   "name_ko": "블라드 3세(EXTRA)",
+   "class": "lancer"
+  },
+  {
+   "servant_id": "sv_0143_enkidu",
+   "source_id": 143,
+   "name_ko": "엘키두",
+   "class": "lancer"
+  },
+  {
+   "servant_id": "sv_0023_medusa",
+   "source_id": 23,
+   "name_ko": "메두사",
+   "class": "rider"
+  },
+  {
+   "servant_id": "sv_0024_georgios",
+   "source_id": 24,
+   "name_ko": "게오르기우스",
+   "class": "rider"
+  },
+  {
+   "servant_id": "sv_0025_edward_teach",
+   "source_id": 25,
+   "name_ko": "에드워드 티치",
+   "class": "rider"
+  },
+  {
+   "servant_id": "sv_0026_boudica",
+   "source_id": 26,
+   "name_ko": "부디카",
+   "class": "rider"
+  },
+  {
+   "servant_id": "sv_0027_ushiwakamaru",
+   "source_id": 27,
+   "name_ko": "우시와카마루",
+   "class": "rider"
+  },
+  {
+   "servant_id": "sv_0029_marie_antoinette",
+   "source_id": 29,
+   "name_ko": "마리 앙투아네트",
+   "class": "rider"
+  },
+  {
+   "servant_id": "sv_0030_martha",
+   "source_id": 30,
+   "name_ko": "마르타",
+   "class": "rider"
+  },
+  {
+   "servant_id": "sv_0065_francis_drake",
+   "source_id": 65,
+   "name_ko": "프랜시스 드레이크",
+   "class": "rider"
+  },
+  {
+   "servant_id": "sv_0094_astolfo",
+   "source_id": 94,
+   "name_ko": "아스톨포",
+   "class": "rider"
+  },
+  {
+   "servant_id": "sv_0108_iskandar",
+   "source_id": 108,
+   "name_ko": "이스칸다르",
+   "class": "rider"
+  },
+  {
+   "servant_id": "sv_0118_ozymandias",
+   "source_id": 118,
+   "name_ko": "오지만디아스",
+   "class": "rider"
+  },
+  {
+   "servant_id": "sv_0206_achilles",
+   "source_id": 206,
+   "name_ko": "아킬레우스",
+   "class": "rider"
+  },
+  {
+   "servant_id": "sv_0031_medea",
+   "source_id": 31,
+   "name_ko": "메데이아",
+   "class": "caster"
+  },
+  {
+   "servant_id": "sv_0032_gilles_de_rais",
+   "source_id": 32,
+   "name_ko": "질 드 레",
+   "class": "caster"
+  },
+  {
+   "servant_id": "sv_0033_hans_christian_andersen",
+   "source_id": 33,
+   "name_ko": "한스 크리스티안 안데르센",
+   "class": "caster"
+  },
+  {
+   "servant_id": "sv_0034_william_shakespeare",
+   "source_id": 34,
+   "name_ko": "윌리엄 셰익스피어",
+   "class": "caster"
+  },
+  {
+   "servant_id": "sv_0037_zhuge_liang_lord_el_melloi_ii",
+   "source_id": 37,
+   "name_ko": "제갈공명(엘멜로이 2세)",
+   "class": "caster"
+  },
+  {
+   "servant_id": "sv_0038_cu_chulainn",
+   "source_id": 38,
+   "name_ko": "쿠 훌린",
+   "class": "caster"
+  },
+  {
+   "servant_id": "sv_0062_tamamo_no_mae",
+   "source_id": 62,
+   "name_ko": "타마모노마에",
+   "class": "caster"
+  },
+  {
+   "servant_id": "sv_0111_irisviel_holy_grail",
+   "source_id": 111,
+   "name_ko": "아이리스필(하늘의 옷)",
+   "class": "caster"
+  },
+  {
+   "servant_id": "sv_0127_leonardo_da_vinci",
+   "source_id": 127,
+   "name_ko": "레오나르도 다 빈치",
+   "class": "caster"
+  },
+  {
+   "servant_id": "sv_0136_illyasviel_von_einzbern",
+   "source_id": 136,
+   "name_ko": "이리야스필 폰 아인츠베른",
+   "class": "caster"
+  },
+  {
+   "servant_id": "sv_0150_merlin",
+   "source_id": 150,
+   "name_ko": "멀린",
+   "class": "caster"
+  },
+  {
+   "servant_id": "sv_0203_avicebron",
+   "source_id": 203,
+   "name_ko": "아비케브론",
+   "class": "caster"
+  },
+  {
+   "servant_id": "sv_0039_kojiro",
+   "source_id": 39,
+   "name_ko": "사사키 코지로",
+   "class": "assassin"
+  },
+  {
+   "servant_id": "sv_0040_hassan_of_the_cursed_arm",
+   "source_id": 40,
+   "name_ko": "주완의 하산",
+   "class": "assassin"
+  },
+  {
+   "servant_id": "sv_0041_stheno",
+   "source_id": 41,
+   "name_ko": "스테노",
+   "class": "assassin"
+  },
+  {
+   "servant_id": "sv_0042_jing_ke",
+   "source_id": 42,
+   "name_ko": "형가",
+   "class": "assassin"
+  },
+  {
+   "servant_id": "sv_0044_phantom_of_the_opera",
+   "source_id": 44,
+   "name_ko": "팬텀 오브 디 오페라",
+   "class": "assassin"
+  },
+  {
+   "servant_id": "sv_0045_mata_hari",
+   "source_id": 45,
+   "name_ko": "마타 하리",
+   "class": "assassin"
+  },
+  {
+   "servant_id": "sv_0075_jack_the_ripper",
+   "source_id": 75,
+   "name_ko": "잭 더 리퍼",
+   "class": "assassin"
+  },
+  {
+   "servant_id": "sv_0092_ryougi_shiki_assassin",
+   "source_id": 92,
+   "name_ko": "료기 시키",
+   "class": "assassin"
+  },
+  {
+   "servant_id": "sv_0109_emiya_assassin",
+   "source_id": 109,
+   "name_ko": "에미야(어쌔신)",
+   "class": "assassin"
+  },
+  {
+   "servant_id": "sv_0110_hassan_of_the_hundred_personas",
+   "source_id": 110,
+   "name_ko": "백모의 하산",
+   "class": "assassin"
+  },
+  {
+   "servant_id": "sv_0154_first_hassan",
+   "source_id": 154,
+   "name_ko": "“산의 노인”",
+   "class": "assassin"
+  },
+  {
+   "servant_id": "sv_0199_semiramis",
+   "source_id": 199,
+   "name_ko": "세미라미스",
+   "class": "assassin"
+  },
+  {
+   "servant_id": "sv_0047_heracles",
+   "source_id": 47,
+   "name_ko": "헤라클레스",
+   "class": "berserker"
+  },
+  {
+   "servant_id": "sv_0048_lancelot",
+   "source_id": 48,
+   "name_ko": "랜슬롯",
+   "class": "berserker"
+  },
+  {
+   "servant_id": "sv_0049_lu_bu_fengxian",
+   "source_id": 49,
+   "name_ko": "여포 봉선",
+   "class": "berserker"
+  },
+  {
+   "servant_id": "sv_0050_spartacus",
+   "source_id": 50,
+   "name_ko": "스파르타쿠스",
+   "class": "berserker"
+  },
+  {
+   "servant_id": "sv_0051_sakata_kintoki",
+   "source_id": 51,
+   "name_ko": "사카타 킨토키",
+   "class": "berserker"
+  },
+  {
+   "servant_id": "sv_0052_vlad_iii",
+   "source_id": 52,
+   "name_ko": "블라드 3세",
+   "class": "berserker"
+  },
+  {
+   "servant_id": "sv_0053_asterios",
+   "source_id": 53,
+   "name_ko": "아스테리오스",
+   "class": "berserker"
+  },
+  {
+   "servant_id": "sv_0082_frankenstein",
+   "source_id": 82,
+   "name_ko": "프랑켄슈타인",
+   "class": "berserker"
+  },
+  {
+   "servant_id": "sv_0089_beowulf",
+   "source_id": 89,
+   "name_ko": "베오울프",
+   "class": "berserker"
+  },
+  {
+   "servant_id": "sv_0097_florence_nightingale",
+   "source_id": 97,
+   "name_ko": "나이팅게일",
+   "class": "berserker"
+  },
+  {
+   "servant_id": "sv_0098_cu_chulainn_alter",
+   "source_id": 98,
+   "name_ko": "쿠 훌린(얼터)",
+   "class": "berserker"
+  },
+  {
+   "servant_id": "sv_0161_hijikata_toshizo",
+   "source_id": 161,
+   "name_ko": "히지카타 토시조",
+   "class": "berserker"
+  },
+  {
+   "servant_id": "sv_0059_jeanne_d_arc",
+   "source_id": 59,
+   "name_ko": "잔 다르크",
+   "class": "ruler"
+  },
+  {
+   "servant_id": "sv_0093_amakusa_shirou",
+   "source_id": 93,
+   "name_ko": "아마쿠사 시로",
+   "class": "ruler"
+  },
+  {
+   "servant_id": "sv_0173_sherlock_holmes",
+   "source_id": 173,
+   "name_ko": "셜록 홈즈",
+   "class": "ruler"
+  },
+  {
+   "servant_id": "sv_0229_qin_shi_huang",
+   "source_id": 229,
+   "name_ko": "시황제",
+   "class": "ruler"
+  },
+  {
+   "servant_id": "sv_0096_edmond_dantes",
+   "source_id": 96,
+   "name_ko": "암굴왕",
+   "class": "avenger"
+  },
+  {
+   "servant_id": "sv_0106_jeanne_d_arc_alter",
+   "source_id": 106,
+   "name_ko": "잔 다르크(얼터)",
+   "class": "avenger"
+  },
+  {
+   "servant_id": "sv_0107_a_ra_mainiiu",
+   "source_id": 107,
+   "name_ko": "앙리 마유",
+   "class": "avenger"
+  },
+  {
+   "servant_id": "sv_0204_antonio_salieri",
+   "source_id": 204,
+   "name_ko": "안토니오 살리에리",
+   "class": "avenger"
+  },
+  {
+   "servant_id": "sv_0163_meltryllis",
+   "source_id": 163,
+   "name_ko": "멜트릴리스",
+   "class": "alterEgo"
+  },
+  {
+   "servant_id": "sv_0164_passionlip",
+   "source_id": 164,
+   "name_ko": "패션립",
+   "class": "alterEgo"
+  },
+  {
+   "servant_id": "sv_0167_sessyoin_kiara",
+   "source_id": 167,
+   "name_ko": "셋쇼인 키아라",
+   "class": "alterEgo"
+  },
+  {
+   "servant_id": "sv_0297_ashiya_douman",
+   "source_id": 297,
+   "name_ko": "아시야 도만",
+   "class": "alterEgo"
+  },
+  {
+   "servant_id": "sv_0166_bb",
+   "source_id": 166,
+   "name_ko": "BB",
+   "class": "moonCancer"
+  },
+  {
+   "servant_id": "sv_0195_abigail_williams",
+   "source_id": 195,
+   "name_ko": "애비게일 윌리엄스",
+   "class": "foreigner"
+  },
+  {
+   "servant_id": "sv_0198_katsushika_hokusai",
+   "source_id": 198,
+   "name_ko": "카츠시카 호쿠사이",
+   "class": "foreigner"
+  },
+  {
+   "servant_id": "sv_0316_oberon",
+   "source_id": 316,
+   "name_ko": "오베론",
+   "class": "pretender"
+  }
+ ]
+}

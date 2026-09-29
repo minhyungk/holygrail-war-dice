@@ -3,7 +3,7 @@
 // 판 전체가 하나의 제너레이터다. 플레이어가 고를 때마다 RunPrompt를 내보내고 답을 받아 이어 간다.
 // 플레이어가 탈락하면 같은 제너레이터가 적 AI 규칙만으로 끝까지 진행한다 (패배 빨리감기, D-043).
 import { K } from '../data/constants';
-import type { MasterProfile, Reaction, ServantProfile, ServantSkillsFile, StatId } from '../data/schema';
+import { EXTRA_CLASSES, type MasterProfile, type Reaction, type ServantProfile, type ServantSkillsFile, STANDARD_CLASSES, type StatId } from '../data/schema';
 import { addClamped, applyDelta, betrayalChance, initialAffinity, postChoiceDelta, reactionDelta, refusalChance, rollMod, tierOf } from './affinity';
 import { battle, type BattleInput, type BattleOutcome, type BattleDice, chance, createFighter, type Fighter, NO_BONUS, type Prompt, type PromptAnswer, rngDice, runBattle } from './combat';
 import { check, contest, type NaturalRoll } from './dice';
@@ -45,21 +45,46 @@ export interface RunPlan {
   summon: 'random' | 'catalyst';
   player_servant_id: string;
   enemies: EnemyPlan[];
+  /** 난입 소환 (D-157): 엑스트라 클래스 1기가 정규 클래스 한 자리를 대체했다. 없으면 null */
+  irregular: { servant_id: string; replaced_class: string } | null;
 }
 
 /**
- * 소환과 적 진영 구성 (S1_SUMMON). 랜덤 소환은 순수 랜덤, 촉매 소환은 고른 서번트.
- * 적은 남은 서번트 전부와, 마스터 풀에서 뽑은 같은 수의 마스터를 무작위로 짝짓는다 (D-045, D-109).
+ * 소환과 진영 구성 (S1_SUMMON, D-157). 정규 7클래스에서 클래스당 1기를 뽑는다.
+ * 확률 `run.extra_class_chance`로 정규 클래스 하나를 엑스트라 클래스 1기가 대체한다 (난입 소환). 촉매로 엑스트라 클래스를 고르면 반드시 난입이다.
+ * 랜덤 소환은 뽑힌 7기 중 하나, 촉매 소환은 고른 서번트가 플레이어 몫이다. 적은 마스터 풀에서 뽑은 마스터와 무작위로 짝짓는다 (D-045, D-109).
  */
-export function planRun(opts: { seed: number; summon: 'random' | 'catalyst'; catalyst?: string; servantIds: readonly string[]; masterIds: readonly string[] }): RunPlan {
+export function planRun(opts: { seed: number; summon: 'random' | 'catalyst'; catalyst?: string; servants: readonly { servant_id: string; class: string }[]; masterIds: readonly string[] }): RunPlan {
   const rng = createRng(deriveSeed(opts.seed, 'plan'));
-  const servants = [...opts.servantIds].sort();
-  let player: string;
+  const all = [...opts.servants].sort((x, y) => (x.servant_id < y.servant_id ? -1 : 1));
+  const classOf = new Map(all.map((s) => [s.servant_id, s.class]));
+  const pickFrom = <T>(arr: readonly T[]): T => arr[rng.int(0, arr.length - 1)]!;
+  const isExtra = (c: string) => (EXTRA_CLASSES as readonly string[]).includes(c);
+  let catalyst: string | null = null;
   if (opts.summon === 'catalyst') {
-    if (!opts.catalyst || !servants.includes(opts.catalyst)) throw new Error(`촉매 소환 대상이 없다: ${opts.catalyst}`);
-    player = opts.catalyst;
-  } else player = servants[rng.int(0, servants.length - 1)]!;
-  const rest = shuffle(servants.filter((s) => s !== player), rng);
+    if (!opts.catalyst || !classOf.has(opts.catalyst)) throw new Error(`촉매 소환 대상이 없다: ${opts.catalyst}`);
+    catalyst = opts.catalyst;
+  }
+  const pool = (c: string) => all.filter((s) => s.class === c).map((s) => s.servant_id);
+  const standard = STANDARD_CLASSES.filter((c) => pool(c).length > 0);
+  const extras = all.filter((s) => isExtra(s.class)).map((s) => s.servant_id);
+  // 난입 소환: 촉매가 엑스트라면 반드시, 아니면 확률로 (엑스트라 풀이 있을 때만)
+  const roll = rng.next();
+  let irregular: RunPlan['irregular'] = null;
+  if (catalyst && isExtra(classOf.get(catalyst)!)) {
+    irregular = { servant_id: catalyst, replaced_class: pickFrom(standard) };
+  } else if (extras.length && roll < K['run.extra_class_chance']) {
+    const open = standard.filter((c) => !catalyst || classOf.get(catalyst) !== c);
+    irregular = { servant_id: pickFrom(extras), replaced_class: pickFrom(open) };
+  }
+  const lineup: string[] = [];
+  for (const c of standard) {
+    if (irregular?.replaced_class === c) lineup.push(irregular.servant_id);
+    else if (catalyst && classOf.get(catalyst) === c) lineup.push(catalyst);
+    else lineup.push(pickFrom(pool(c)));
+  }
+  const player = catalyst ?? pickFrom(lineup);
+  const rest = shuffle(lineup.filter((s) => s !== player), rng);
   const masters = shuffle([...opts.masterIds].sort(), rng);
   if (masters.length < rest.length) throw new Error(`마스터가 모자란다: ${masters.length} < ${rest.length}`);
   return {
@@ -67,6 +92,7 @@ export function planRun(opts: { seed: number; summon: 'random' | 'catalyst'; cat
     summon: opts.summon,
     player_servant_id: player,
     enemies: rest.map((sv, i) => ({ faction: `fc_e${i + 1}`, servant_id: sv, master_id: masters[i]! })),
+    irregular,
   };
 }
 

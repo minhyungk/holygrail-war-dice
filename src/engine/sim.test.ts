@@ -24,26 +24,29 @@ describe('헤드리스 시뮬', () => {
   });
 
   it.runIf(process.env.SIM_REPORT)('상성표 출력', () => {
-    const ids = servantIds();
+    // 100기 전체 표는 무거우니 기본은 시작 7기. 전체는 SIM_ALL=1
+    const ids = process.env.SIM_ALL ? servantIds() : Object.values(SV);
     const n = Number(process.env.SIM_N ?? 2000);
     const pct = (x: number) => `${((x / n) * 100).toFixed(1)}%`;
+    // 실제 게임처럼 보유 스킬을 넣는다 (D-142). 스킬 없는 표는 SIM_NO_SKILLS=1
+    const skills = process.env.SIM_NO_SKILLS ? undefined : runData().skills;
     const rows: Record<string, Record<string, string>> = {};
     for (const a of ids) {
       rows[servant(a).name_ko] = {};
       for (const b of ids) {
         if (a === b) continue;
-        const st = matchup(servant(a), servant(b), n, { isFinal: true });
+        const st = matchup(servant(a), servant(b), n, { isFinal: true, skills });
         rows[servant(a).name_ko]![servant(b).name_ko] = pct(st.aWin);
       }
     }
-    console.log(`\n강제 전투(결판까지) 행 서번트의 승률, 지형 4종 균등, 대전당 ${n}회`);
+    console.log(`\n강제 전투(결판까지) 행 서번트의 승률, 지형 4종 균등, 대전당 ${n}회, 스킬 ${skills ? '포함' : '없음'}`);
     console.table(rows);
     const normal: Record<string, Record<string, string>> = {};
     for (const a of ids) {
       normal[servant(a).name_ko] = {};
       for (const b of ids) {
         if (a === b) continue;
-        const st = matchup(servant(a), servant(b), n);
+        const st = matchup(servant(a), servant(b), n, { skills });
         normal[servant(a).name_ko]![servant(b).name_ko] = `${pct(st.aWin)} / ${pct(st.draw)} / ${pct(st.aEscaped + st.bEscaped)}`;
       }
     }

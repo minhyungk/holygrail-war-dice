@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0013_robin_hood",
+  "source_id": 13,
+  "name_ko": "로빈 후드",
+  "name_short_ko": "로빈 후드",
+  "class": "archer",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "B",
+    "mana": "B",
+    "luck": "B",
+    "np": "D"
+  },
+  "alignment": "good",
+  "alignment_detail": "중립·선",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "기원의 활",
+    "ruby_ko": "유 바우",
+    "rank": "D",
+    "type_ko": "대인보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2003000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/200300/200300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/200300/200300b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

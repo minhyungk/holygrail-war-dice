@@ -1,0 +1,34 @@
+{
+  "servant_id": "sv_0229_qin_shi_huang",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "B+",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_scripts_should_be_burned",
+      "name_ko": "책은 불태워라",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_confucianism_should_be_suppressed",
+      "name_ko": "유학자는 묻어버려라",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_eternal_reign",
+      "name_ko": "영세제위",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

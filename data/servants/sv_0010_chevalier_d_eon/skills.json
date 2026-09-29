@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0010_chevalier_d_eon",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_mind_eye_true",
+      "name_ko": "심안(진짜)",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_a2447551",
+      "name_ko": "흰 백합에 빛을",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_beautiful_appearance",
+      "name_ko": "아름다운 풍모",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

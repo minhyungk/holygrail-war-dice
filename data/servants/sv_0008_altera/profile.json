@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0008_altera",
+  "source_id": 8,
+  "name_ko": "알테라",
+  "name_short_ko": "알테라",
+  "class": "saber",
+  "ranks": {
+    "str": "B",
+    "end": "A",
+    "agi": "A",
+    "mana": "B",
+    "luck": "A",
+    "np": "A+"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "군신의 검",
+    "ruby_ko": "포톤 레이",
+    "rank": "A",
+    "type_ko": "대군보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1018000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/101800/101800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/101800/101800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+}

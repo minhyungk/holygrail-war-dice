@@ -207,7 +207,7 @@ data/
 | 시스템 | 3층 범용 | 2층 유형·특성 | 1층 오버라이드 | 현재 상태 |
 |---|---|---|---|---|
 | 대사 | 공통 나레이션 `common/narrator.json`, 서번트 공통 대사 `common/speech.json` | 클래스 대사 `classes/{class}/dialogue.json`, Atlas 보이스 자동 수집 (`scripts/fetch-voices.mjs`) | 서번트 `dialogue.json`, 조합 대사, `voice.md` | 3층 모두 구현 (D-144, D-151). 클래스·공통 대사는 draft |
-| 스킬 | 정의 없는 고유 스킬의 처리 [TBD] | 범용 스킬 (`kind: generic`, 랭크 연동) | 고유 스킬·보구 개별 정의 | 43개 정의 (D-142). 현재 검증은 보유 스킬 전부의 정의를 요구한다 |
+| 스킬 | Atlas 버프 종류 → 규칙표 자동 배정 (D-157, `skills.md` §14) | 범용 스킬 (`kind: generic`, 랭크 연동) | 고유 스킬·보구 개별 정의 | 43개 정의 (D-142). 현재 검증은 보유 스킬 전부의 정의를 요구한다 |
 | 호감도 | 공통 증감 `affinity.delta_*` | 성격별 초기값·계수, 성향별 처치/방면, 성격별 선택 반응 `affinity.reaction` (D-150) | `profile.json` `reaction_overrides` (예: 코지로) | 구현 |
 | 약점 | 진명을 알면 전투당 1회 가장 유리한 국면으로 (D-148) | Atlas 특성 상성 [제안] | 개별 약점 [제안] | 3층 구현 |
 | 프로필·이미지 | Atlas 자동 수집 | — | — | 7기 생성 완료. 수집 스크립트 확장 필요 (`05-legacy.md` §3) |
@@ -219,10 +219,10 @@ data/
 | 권장 | FGO 보이스 대사 (전투 외침·인연·좋아하는 것 등) | `node scripts/fetch-voices.mjs {servant_id}` (D-151) |
 | 필수 | `temperament` 분류 (현재 8종, `affinity.init_by_temperament`), `alignment` 검증 | AI 초안 → 사용자 검수 |
 | 선택 | 전용 대사, `voice.md`, 고유 스킬 효과, 약점, 조합 대사 | 직접 작성 (유명 서번트만) |
-- 검증 [제안]: 필수 데이터만 있는 가상 서번트로 한 판을 헤드리스 실행해 오류와 빈 대사 슬롯이 없는지 확인한다. 현재 미구현.
+- 검증 (D-157 구현): 편입 서번트 전원을 촉매로 골라 한 판씩 헤드리스 실행해 오류·빈 자리표시자·진명 누출이 없는지 확인한다 (`narrative.test.ts`).
 
 ### 7.4 확장용 원본 보관 [확정] (D-152)
 `data/servants-pool/{servant_id}/`는 Atlas KR 원본을 서번트별로 보관하는 준비 영역이다. `source.json`에 프로필·스킬 이름·특성·Atlas 이미지 URL, `voice-lines.json`에 음성 대사 원문과 원본 상황명·보이스 ID를 둔다. 음성 파일은 보관하지 않는다. 레거시 `servants-ko.json`·`dialogues-ko.json`은 Atlas 누락 항목의 보조 자료로 쓴다.
 재수집 명령은 `npm run prepare:servants`다. `manifest.json`에 상세 응답 실패와 원본 대사·이미지 누락을 기록한다.
 
-이 영역은 `data/servants/`와 분리한다. 현재 플레이 가능 서번트는 기존 7기 그대로이며, 준비 자료는 판 로더에 포함되지 않는다. 신규 서번트를 활성화할 때는 스키마에 맞춘 파일을 `data/servants/{id}/`로 생성하고 성향·성격·스킬 효과·대사 검수 등 §7.3의 미정 항목을 먼저 해결한다. 클래스 범위 확장도 별도 결정이 필요하다. 준비 원본의 대사는 검수 전 게임 대사로 사용하지 않는다.
+이 영역은 `data/servants/`와 분리한다. 편입은 D-157로 100기를 했다: 명단 `activation/roster.json`, 분류표 `activation/meta.json`(AI 초안), 순서는 `node scripts/activate-profiles.mjs` → `node scripts/activate-skills.mjs` → `node scripts/fetch-voices.mjs {id…}`. 준비 자료 자체는 판 로더에 포함되지 않는다. 신규 서번트를 활성화할 때는 스키마에 맞춘 파일을 `data/servants/{id}/`로 생성하고 성향·성격·스킬 효과·대사 검수 등 §7.3의 미정 항목을 먼저 해결한다. 클래스 범위 확장도 별도 결정이 필요하다. 준비 원본의 대사는 검수 전 게임 대사로 사용하지 않는다.

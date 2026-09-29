@@ -1,0 +1,274 @@
+{
+  "speaker": "sv_0136_illyasviel_von_einzbern",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "포이어!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "슈나이든!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "에잇!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "“간다~! 샷!”",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "“한정 인클루드, 버서커! 야아아앗!”",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "“우~ 슈트!”",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "격추한다……! 이거는 어때? 비장의 카드…… 니까!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_2",
+        "text": "아읏!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_1",
+        "text": "정말 어른스럽지 못하잖아?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "루비, 부탁해!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "맡겨 주세요~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "[루비] : “루비짱의 차례네요~♪” [이리야] : “불안밖에 느껴지지 않아……”",
+        "when": {
+          "self.intel_level": 3
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_like",
+        "text": "나는 여름이 좋아. 여름에 태어났으니까. 커다란 적란운을 보면 달리고 싶어져!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫은 것이라면…… 뭔가 나쁜 꿍꿍이가 있을 때의 쿠로, 일까…… 너무한걸! 쿠로가 한 짓인데 얼굴이 닮았다는 이유로 내 탓이 되기도 하고……! 휴, 언니로서 엄하게 주의해야지. 응, 언니로서!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "뭐든지 소원이 이루어지는 성배…… 쉽게 믿기는 어렵지만, 혹시 정말 그런 게 있다면 분명히 많은 사람이 행복해질 수 있을 거야. 사람들의 미래가 아주 조금이라도 좋아진다면 멋지겠다고 생각해.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          },
+          "self.intel_level": 3
+        },
+        "text": "[이리야] : 응응~ 루비, 뭔가 시간 때우기 좋은 거 없어? [루비] : 흐~음, 그러면, 몰래 모아두던 이리야 씨의 자는 얼굴 사진 슬라이드쇼라도…… [이리야] : 지금 바로 삭제해버려!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          },
+          "self.intel_level": 3
+        },
+        "text": "[이리야] : 나, 제대로 도움이 되고 있어……? 미안해, 나도 애니메이션 속의 마법소녀처럼 좀 더 파바바밧! 하고 차르륵! 하는 느낌이 되면 좋겠지만…… [루비] : 이리야 씨의 마법소녀관은 여전히 래디컬하고 테리블하네요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "나, 무섭지 않아. 아무리 강한 적이라도…… 이 앞에 어떤 운명이 기다리고 있더라도, 마스터 씨는 분명히 그것보다 더 강해. 나는 그렇게 믿고 있어.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "응…… 에헤헤, 마스터 씨가 머리를 쓰다듬어주는 건 좋아. 아, 다음에 목욕하고 나서 머리카락 말려줬으면 좋겠어~ 농담이야…… 뭐?! 모, 목욕을 같이하는 건…… 안 돼…… 아직……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "[이리야] : 필요한 싸움…… 이지? 응! 가자, 루비！ [루비] : 파밧 하고 해치워버리자고요!",
+        "when": {
+          "self.intel_level": 3
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "[이리야] : 어, 어째 강해 보이는데……! [루비] : 이런, 철수는 허가 할 수 없는데요?",
+        "when": {
+          "self.intel_level": 3
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "[루비] : 근육계, 신경계, 혈관계, 림프계. 의사 마술회로 변환…… 완료! [이리야] : 이것이 나의 모든 것…… 퀸텟 포이어!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_2",
+        "text": "후에…… 이젠 틀렸구나 싶었어…… 하지만 많이 노력했으니, 칭찬해 주려나?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "강해…… 져야해…… 더……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "오빠……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "저기, 이리야라고 합니다. 초등학교 5학년입니다. 일단…… 마법소녀, 하고 있습니다, 네. 으으, 저 같은 게 무슨 도움이 될지 모르겠지만…… 하지만 열심히, 노력하겠습니다! 루비짱도 있습니다! 재미있고 귀엽게 해나가죠, 그랜드 마스터!",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": 3
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

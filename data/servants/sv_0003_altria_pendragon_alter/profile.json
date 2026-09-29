@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0003_altria_pendragon_alter",
+  "source_id": 3,
+  "name_ko": "알트리아 펜드래곤(얼터)",
+  "name_short_ko": "알트리아 얼터",
+  "class": "saber",
+  "ranks": {
+    "str": "A",
+    "end": "A",
+    "agi": "D",
+    "mana": "A++",
+    "luck": "C",
+    "np": "A++"
+  },
+  "alignment": "evil",
+  "alignment_detail": "질서·악",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "약속된 승리의 검",
+    "ruby_ko": "엑스칼리버 모르간",
+    "rank": "A++",
+    "type_ko": "대성보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1002000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/100200/100200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/100200/100200b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

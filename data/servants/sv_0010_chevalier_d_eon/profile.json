@@ -1,0 +1,32 @@
+{
+  "servant_id": "sv_0010_chevalier_d_eon",
+  "source_id": 10,
+  "name_ko": "슈발리에 데옹",
+  "name_short_ko": "데옹",
+  "class": "saber",
+  "ranks": {
+    "str": "A",
+    "end": "B",
+    "agi": "B",
+    "mana": "C",
+    "luck": "A",
+    "np": "C"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "중립·중용",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "백합꽃 활짝 피는 호화찬란",
+    "ruby_ko": "플뢰르 드 리스",
+    "rank": "C+",
+    "type_ko": "대군보구"
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1026000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/102600/102600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/102600/102600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+}

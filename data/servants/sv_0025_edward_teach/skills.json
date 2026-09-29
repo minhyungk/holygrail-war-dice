@@ -1,0 +1,34 @@
+{
+  "servant_id": "sv_0025_edward_teach",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "E",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_voyager_of_the_storm",
+      "name_ko": "폭풍의 항해자",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_pirate_s_glory",
+      "name_ko": "해적의 명예",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_gentlemanly_love",
+      "name_ko": "신사적인 사랑",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

@@ -1,5 +1,6 @@
 // docs/systems/narrative-engine.md §13 예시 + §8 규칙
 import { describe, expect, it } from 'vitest';
+import { isActiveSkill, SKILLS } from '../data/constants';
 import { DialogueFile, type Line } from '../data/schema';
 import { EventLog, type FactionSetup } from '../engine/events';
 import { createRng } from '../engine/rng';
@@ -73,6 +74,8 @@ describe('조사 (§7.3, §13 예시 4)', () => {
     ['코지로', '으로/로', '로'],
     ['알', '으로/로', '로'], // ㄹ 받침
     ['집', '으로/로', '으로'],
+    ['심안(가짜)', '이/가', '이'], // 끝의 괄호 표기는 읽지 않는다
+    ['약속된 승리의 검(엑스칼리버)', '을/를', '을'],
   ] as const)('%s + %s → %s', (w, p, j) => expect(josa(w, p)).toBe(j));
 });
 
@@ -163,11 +166,36 @@ describe('한 판 전체 서술 (헤드리스)', () => {
             // 적 서번트 자신의 대사 본문(자기 이름)은 제외하고, 이름표·나레이션에서 진명이 새지 않아야 한다
             if (l.speaker === 'narrator') expect(l.text, `${seed} ${l.textId}`).not.toContain(name);
             if (l.speakerName) expect(l.speakerName).not.toBe(name);
+            // 미공개 적 서번트의 대사도 자기 진명·보구명을 말하지 않는다 (D-153: 정체 노출 줄은 self.intel_level 3 조건)
+            if (l.speaker === f.servant_id) {
+              const np = data.servants[f.servant_id]!.noble_phantasm;
+              for (const w of [name, np?.name_ko, np?.ruby_ko].filter(Boolean)) expect(l.text, `${seed} ${l.textId}`).not.toContain(w);
+            }
           }
         }
         expect(b.lines.length).toBeLessThanOrEqual(6);
       }
       expect(n.spoken.length).toBeGreaterThan(0);
+    }
+  });
+  it('편입 서번트 전원: 촉매로 골라 한 판을 끝까지 돌려도 오류·빈 자리표시자·진명 누출이 없다 (D-157, 04-data-schema.md §7.3)', () => {
+    const rd = runData();
+    for (const [i, id] of servantIds().entries()) {
+      const seed = 1000 + i;
+      const r = simulateRun({ seed, data: rd, servantIds: servantIds(), masterIds: masterIds(), catalyst: id });
+      const n = new Narrator(data, seed);
+      n.summonLine(id); // 소환 대사가 없으면 null (클래스·공통층으로 떨어지지 않는 태그)
+      for (const e of r.log.events) {
+        const b = n.consume(e);
+        for (const l of b?.lines ?? []) {
+          expect(l.text, `${id} ${l.textId}`).not.toMatch(/\{[a-z_]+\}/);
+          for (const [fc, f] of Object.entries(n.state.factions)) {
+            if (fc === n.state.player || (n.state.intel[fc] ?? 0) >= 3 || l.speaker !== f.servant_id) continue;
+            const sv = data.servants[f.servant_id]!;
+            for (const w of [sv.name_ko, sv.noble_phantasm.name_ko].filter((x) => x.length >= 2)) expect(l.text, `${id} ${l.textId}`).not.toContain(w);
+          }
+        }
+      }
     }
   });
   it('같은 시드 = 같은 서술 (§1)', () => {
@@ -177,6 +205,45 @@ describe('한 판 전체 서술 (헤드리스)', () => {
       return r.log.events.map((e) => n.consume(e)?.lines.map((l) => l.text).join('|') ?? '').join('\n');
     };
     expect(tell()).toBe(tell());
+  });
+});
+
+describe('스킬 해설 (D-153)', () => {
+  it('전투마다 스킬별 첫 발동만 해설하고, 미공개 적 스킬은 이름 없이 진영당 한 번', () => {
+    let known = 0;
+    let hidden = 0;
+    for (let seed = 1; seed <= 20; seed++) {
+      const r = simulateRun({ seed, data: runData(), servantIds: servantIds(), masterIds: masterIds() });
+      const n = new Narrator(data, seed);
+      let told = new Set<string>();
+      for (const e of r.log.events) {
+        const b = n.consume(e);
+        if (e.type === 'battle_started') told = new Set();
+        if (e.type !== 'skill_triggered' || !b) continue;
+        const react = b.lines.find((l) => l.textId.startsWith('tx_common_skill_effect_'));
+        if (!react) continue;
+        const isHidden = react.textId.includes('_hidden_');
+        const key = `${e.data.faction}|${isHidden ? '?' : e.data.skill_id}`;
+        expect(told.has(key), `${seed} ${key}`).toBe(false);
+        told.add(key);
+        const sk = data.skills[n.state.factions[e.data.faction]!.servant_id]!.skills.find((x) => x.skill_id === e.data.skill_id)!;
+        const visible = e.data.faction === n.state.player || (n.state.intel[e.data.faction] ?? 0) >= 3;
+        expect(isHidden).toBe(!visible);
+        if (visible) (known++, expect(react.text).toContain(sk.name_ko));
+        else (hidden++, expect(react.text).not.toContain(sk.name_ko));
+      }
+    }
+    expect(known).toBeGreaterThan(0);
+    expect(hidden).toBeGreaterThan(0);
+  });
+  it('전용 해설이 없는 스킬도 효과 종류별 범용·미공개 해설로 나온다 (D-143)', () => {
+    const lines = data.narrator.tags.skill_effect!;
+    for (const def of Object.values(SKILLS)) {
+      if (!isActiveSkill(def)) continue;
+      const general = lines.filter((l) => l.when?.['event.effect'] === def.effect.type && !l.when?.['event.skill_id']);
+      expect(general.some((l) => l.when?.['event.skill_known'] === undefined), def.skill_id).toBe(true);
+      expect(general.some((l) => l.when?.['event.skill_known'] === false), def.skill_id).toBe(true);
+    }
   });
 });
 

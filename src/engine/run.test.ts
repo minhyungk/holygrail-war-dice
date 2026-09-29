@@ -2,7 +2,7 @@
 import { describe, expect, it } from 'vitest';
 import { K } from '../data/constants';
 import { masterIds, runData, servant, servantIds, SV } from '../testkit';
-import type { Reaction } from '../data/schema';
+import { EXTRA_CLASSES, type Reaction, STANDARD_CLASSES } from '../data/schema';
 import { applyDelta, postChoiceDelta, reactionDelta, tierOf } from './affinity';
 import { distance, moveRange, reachable, tile, visible } from './map';
 const tileRole = (id: string) => tile(id).role;
@@ -15,19 +15,47 @@ const sim = (seed: number) => simulateRun({ seed, data, servantIds: servantIds()
 
 describe('소환과 진영 구성 (02-screens-flow.md S1)', () => {
   it('랜덤 소환: 적 6진영, 서번트는 겹치지 않고 마스터도 겹치지 않는다', () => {
-    const p = planRun({ seed: 1, summon: 'random', servantIds: servantIds(), masterIds: masterIds() });
+    const p = planRun({ seed: 1, summon: 'random', servants: Object.values(data.servants), masterIds: masterIds() });
     expect(p.enemies).toHaveLength(6);
     const svs = [p.player_servant_id, ...p.enemies.map((e) => e.servant_id)];
     expect(new Set(svs).size).toBe(7);
     expect(new Set(p.enemies.map((e) => e.master_id)).size).toBe(6);
   });
   it('촉매 소환: 고른 서번트가 나온다', () => {
-    const p = planRun({ seed: 1, summon: 'catalyst', catalyst: SV.kojiro, servantIds: servantIds(), masterIds: masterIds() });
+    const p = planRun({ seed: 1, summon: 'catalyst', catalyst: SV.kojiro, servants: Object.values(data.servants), masterIds: masterIds() });
     expect(p.player_servant_id).toBe(SV.kojiro);
   });
+  it('정규 7클래스에서 클래스당 1기, 난입 소환이면 한 자리를 엑스트라 클래스가 대체한다 (D-157)', () => {
+    let irregular = 0;
+    const N = 400;
+    for (let seed = 1; seed <= N; seed++) {
+      const p = planRun({ seed, summon: 'random', servants: Object.values(data.servants), masterIds: masterIds() });
+      const cls = [p.player_servant_id, ...p.enemies.map((e) => e.servant_id)].map((id) => data.servants[id]!.class);
+      expect(cls).toHaveLength(7);
+      const std = cls.filter((c) => (STANDARD_CLASSES as readonly string[]).includes(c));
+      expect(new Set(std).size).toBe(std.length);
+      if (p.irregular) {
+        irregular++;
+        expect(std).toHaveLength(6);
+        expect(std).not.toContain(p.irregular.replaced_class);
+        expect((EXTRA_CLASSES as readonly string[]).includes(data.servants[p.irregular.servant_id]!.class)).toBe(true);
+      } else expect(std).toHaveLength(7);
+    }
+    // 확률 run.extra_class_chance (0.2) 근처
+    expect(Math.abs(irregular / N - K['run.extra_class_chance'])).toBeLessThan(0.06);
+  });
+  it('촉매로 엑스트라 클래스를 고르면 반드시 난입 소환이고, 정규 클래스를 고르면 그 클래스 자리는 플레이어 몫이다', () => {
+    const extra = Object.values(data.servants).find((s) => (EXTRA_CLASSES as readonly string[]).includes(s.class))!;
+    for (let seed = 1; seed <= 20; seed++) {
+      const p = planRun({ seed, summon: 'catalyst', catalyst: extra.servant_id, servants: Object.values(data.servants), masterIds: masterIds() });
+      expect(p.irregular?.servant_id).toBe(extra.servant_id);
+      const q = planRun({ seed, summon: 'catalyst', catalyst: SV.kojiro, servants: Object.values(data.servants), masterIds: masterIds() });
+      expect(q.enemies.map((e) => data.servants[e.servant_id]!.class)).not.toContain('assassin');
+    }
+  });
   it('같은 시드 = 같은 구성', () => {
-    const a = planRun({ seed: 9, summon: 'random', servantIds: servantIds(), masterIds: masterIds() });
-    expect(planRun({ seed: 9, summon: 'random', servantIds: servantIds(), masterIds: masterIds() })).toEqual(a);
+    const a = planRun({ seed: 9, summon: 'random', servants: Object.values(data.servants), masterIds: masterIds() });
+    expect(planRun({ seed: 9, summon: 'random', servants: Object.values(data.servants), masterIds: masterIds() })).toEqual(a);
   });
 });
 
