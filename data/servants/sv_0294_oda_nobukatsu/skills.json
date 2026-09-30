@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0294_oda_nobukatsu",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "D",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_independent_action",
+      "name_ko": "단독행동",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_immature_scheme",
+      "name_ko": "치졸한 모략",
+      "rank": "D",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_i_shall_die_for_the_heavens",
+      "name_ko": "나, 마천을 위해 죽으리",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_adabana_of_war",
+      "name_ko": "전란의 도화",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

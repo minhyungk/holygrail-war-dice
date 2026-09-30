@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0257_bartholomew_roberts",
+  "skills": [
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "D",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "E",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_voyager_of_the_storm",
+      "name_ko": "폭풍의 항해자",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_pirate_gentleman",
+      "name_ko": "해적신사",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_swift_pillager",
+      "name_ko": "질풍의 약탈",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

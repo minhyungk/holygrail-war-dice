@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0415_kuonji_alice",
+  "skills": [
+    {
+      "skill_id": "sk_territory_creation",
+      "name_ko": "진지작성",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_item_construction",
+      "name_ko": "도구작성",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_folklore_defense",
+      "name_ko": "전승방어",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_yumina",
+      "name_ko": "유미나",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_diddle_diddle",
+      "name_ko": "밤의 향연",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_thames_troll",
+      "name_ko": "다리의 거인",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_lost_robin_rondo",
+      "name_ko": "울새의 살인",
+      "rank": "E",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

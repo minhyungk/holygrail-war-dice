@@ -1,0 +1,54 @@
+{
+  "servant_id": "sv_0200_asagami_fujino",
+  "source_id": 200,
+  "name_ko": "아사가미 후지노",
+  "name_short_ko": "후지노",
+  "class": "archer",
+  "ranks": {
+    "str": "E",
+    "end": "B",
+    "agi": "D",
+    "mana": "A",
+    "luck": "C",
+    "np": "EX"
+  },
+  "alignment": "evil",
+  "alignment_detail": "질서·악",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "유식・왜곡의 마안",
+    "ruby_ko": "유식・왜곡의 마안",
+    "rank": "EX",
+    "type_ko": "대계보구",
+    "special_attack": [
+      2076
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2029000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/202900/202900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/202900/202900b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    102,
+    202,
+    300,
+    304,
+    404,
+    1000,
+    2001,
+    2631,
+    2654,
+    2858,
+    5000,
+    202900
+  ],
+  "lore": {
+    "detail": "변이특이점・경계식에서 발견된 소녀.\n엄격한 교육방침의 여학교의 교복, 사려 깊은 말씨, 과단성이 지나치다 싶은 행동력. 그 모든 것이 일상적이면서도 어딘지 모르게 잘못 위치한 듯한 위태로움을 풍긴다.\n시야에 보이는 것이라면 경도, 구조, 규모를 무시하고 비틀어 구부러뜨릴 수 있는 \"왜곡의 마안\"의 소유자.\n아사가미라는 성씨는 지금과는 다른 한자로 표기하는, 신(이능력)과 소통하는 무녀 집안이었다고 한다."
+  },
+  "instant_death": false
+}

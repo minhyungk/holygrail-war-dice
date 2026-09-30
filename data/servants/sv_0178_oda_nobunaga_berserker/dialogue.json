@@ -1,0 +1,295 @@
+{
+  "speaker": "sv_0178_oda_nobunaga_berserker",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "GET YOU!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "우하하하하하하하!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "분위기 탔다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "죽어라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "노~부~나~가~ 파!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "나의 필살의…… 제육천마옥염파!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_2",
+        "text": "노부아?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_1",
+        "text": "노자자자자자자자자?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "나의 비트가 하늘을 찌른다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "다 불타버릴 정도로 혼노지!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것 말인가? 그렇군, 여름이라면 역시 바닷가 가게의 야키소바나 라멘일까. 왠지 그건 맛없는 듯하면서 맛있단 말이야.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것? 으음, 그거로군. 맛이 밍밍한 음식은 틀렸어. 일본인이라면 고기든 생선이든, 간장을 좍좍, 밥을 퍽퍽 먹어야지! 음, 배도 고프니 점심을 먹을까!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배라…… 아니, 내 해골잔 쪽이 멋지지 않나? 어? 그건 좀 아냐? ───그러한가.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "어? 화승총은 어쨌냐고? 화승총은 두고 왔다. 물가의 싸움에는 따라올 수 없을 테니까. 습기 차고. 그 대신 봐라! 나도 잘 모르는 기계가 가득한 뉴 놋부 웨폰을! 베어도 좋고, 때려도 좋고, 스크래치해도 좋고. ───음, 이건 대체 뭘까!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "뭐? 그 빨간 티셔츠 후줄근하지 않냐고? 후……, 그대도 아직 어린애로군. 이 화려한 빨강에서 은근히 배어나오는 버스터 느낌의 수수한 멋을 모르다니……! 참고로 녹색과 파랑도 있는 고로, 그대도 어떤가?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "그런데 말이지, 그대, 어라? 놋부는 의외로 가슴이 있네, 라고 생각했지? 흐흥! 그렇지, 그렇지. 나도 이렇게 보여도 의외로 글러머러스 놋부니까! 그거겠지, 평소에는 숨겨져서 안 보이는 보드라운 피부니까, 슬쩍 보였을 때의 감사함은 한층 더 큰 법이다! ───알겠나, 정말로 똑똑한 자는 그 똑똑함을 사람들에게 들키지 않는다. 잘 기억해둬라.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "물가의~ 제육~천마왕~♪ ───자, 그대도 나와 함께 춤추지 않겠나. 뭐? 조금 창피해? 우하하하하하! 항상 그렇지만 그대는 참 사랑스러운 녀석이로구나. 어? 나? 나는 그대와 춤추는 게 유쾌통쾌천하포무다! ……뭐, 그러니까, 자, 조금 더 가까이 붙어라…… 멍청한 것……, 이럴 때는 가만히 손을 잡아야지. 뭐? 부끄러워하는 게 아니다! 제, 제육천마왕인 내가 그대 따위에게 부끄러워할 리가 없으니 말이다!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "휴우…… 좀 심하게 놀았나. 잠깐 쉬기로 할까. ……왜 그러냐? 멍하니 있지 말고 앉아, 자, 가까이에. ……그대와는 오래 알고 지냈군. 후후…… 나도 그대와 이런 시간을 보내게 될 줄은 생각도 못했지. ……좋은 바람이다. ……조금 더 함께 이 꿈을 지켜보는 것도 나쁘지 않겠어. ……그렇지, 마스터.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "물가의 제육천마왕, 온 더 스테이지다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "멀리 있는 자는 자알 들어라, 가까이 있는 자는 나를 봐라! 이제부터가 제육천마왕, 오다 노부나가의 패도다!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "삼계신불회신으로 돌아가라, 나야말로 제육천마왕 파순, 오다 노부나가! 오오오오오오오오! 노부나가 THE 로큰로───올! 이에이!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "인생 오십년, 하천의 세월과 비교하면 꿈인가 환상인가 하노라! 에브리바디 아츠모리! 노부나가 THE 로큰로───올! 어쩔 수 없지!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "목숨이 아까운 놈부터 없어져라, 이제부터는 대초열이든가 무간지옥! 삼계신불회신으로 돌아가라! 나야말로 제육천마왕 파순! ──오다, 노부나가!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "천지에 울리는, 내 영혼의 로큰로오오오올!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "우하하하핫! 제육천마왕에게서는 도망칠 수 없다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "내가 완전히 불타버리…… 다니……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "어, 어쩔 수…… 없, 네……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "이예───이! 분위기 탔구나! 나야말로 해변의 제육천마왕, 그래, 노부나가 THE 로큰롤러다! 어? 어디가 록이냐고? 아니, 수영복에 여름은 록이겠지. 이런 건 필링이다, 생각하지 마라, 느끼는 거다! 아, 클래스는 버서커이니 잘 부탁해.",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

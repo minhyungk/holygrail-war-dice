@@ -1,0 +1,59 @@
+{
+  "servant_id": "sv_0215_scathach_skadi",
+  "source_id": 215,
+  "name_ko": "스카사하=스카디",
+  "name_short_ko": "스카디",
+  "class": "caster",
+  "ranks": {
+    "str": "B",
+    "end": "D",
+    "agi": "C",
+    "mana": "EX",
+    "luck": "D",
+    "np": "A"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "죽음이 흘러넘치는 마경으로 향하는 문",
+    "ruby_ko": "게이트 오브 스카이",
+    "rank": "EX",
+    "type_ko": "대군보구, 개전보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5039000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/503900/503900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/503900/503900b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    200,
+    301,
+    303,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2040,
+    2113,
+    2797,
+    2835,
+    2851,
+    2858,
+    5000,
+    503900
+  ],
+  "lore": {
+    "detail": "북유럽 이문대에서 유래된 서번트. 범인류사의 스카사하와는 ‘완전히 다른 사람’이며, 이문대에서만 성립하는 신, 여왕으로서의 성질에 크게 치우쳐 있는 존재다.\n켈트의 영웅 스카사하와 동일한 유래를 가진 북유럽의 거인, 산의 여신──스카디(스카지)의 특성이 많이 드러나 있다.\n스카디의 측면이 짙은 스카사하, 라기보다는 ‘스카사하의 성질을 일부 가진 스카디’라고 표현해야 할까."
+  },
+  "instant_death": false
+}

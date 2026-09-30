@@ -1,0 +1,57 @@
+{
+  "servant_id": "sv_0380_kashin_koji",
+  "source_id": 380,
+  "name_ko": "카신 거사",
+  "name_short_ko": "카신 거사",
+  "class": "assassin",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "B",
+    "mana": "B+",
+    "luck": "A",
+    "np": "B"
+  },
+  "alignment": "evil",
+  "alignment_detail": "중립·악",
+  "alignment_verified": false,
+  "temperament": "assassin",
+  "noble_phantasm": {
+    "name_ko": "꼭두각시 외법・사자분신",
+    "ruby_ko": "꼭두각시 외법・사자분신",
+    "rank": "B",
+    "type_ko": "대인/대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6049000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/604900/604900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/604900/604900b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    3,
+    105,
+    201,
+    302,
+    304,
+    405,
+    1000,
+    1132,
+    2008,
+    2011,
+    2019,
+    2037,
+    2356,
+    2781,
+    2835,
+    2858,
+    5000,
+    604900
+  ],
+  "lore": {
+    "detail": "전설의 환술(외술)사. 요술사. 그 실력은 어마어마해서, 죽은 자를 일시적으로 되살려냈다고 여겨질 정도였다고 한다.\n특히 간사이 지방의 카미가타 방면에서 상당한 지명도가 있었던 모양.\n닌자였다는 이야기도 전해지지만, 누구를 섬기고, 어떠한 활동을 했는지는 확실치 않다.\n───그 왼쪽 눈동자는, 마성을 나타내는 진홍."
+  },
+  "instant_death": true
+}

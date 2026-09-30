@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0346_james_moriarty",
+  "skills": [
+    {
+      "skill_id": "sk_independent_action",
+      "name_ko": "단독행동",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_conspiracy_formation",
+      "name_ko": "음모작성",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_panic_cut",
+      "name_ko": "패닉 컷",
+      "rank": "C+",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_mathematical_thinking",
+      "name_ko": "수학적 사고",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_slide_rule_weapon",
+      "name_ko": "슬라이드룰・웨폰",
+      "rank": "B++",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_roll_of_the_dice",
+      "name_ko": "주사위의 선택",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

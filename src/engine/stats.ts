@@ -1,6 +1,6 @@
 // 스탯 랭크 → 수치 (docs/systems/stats.md), 마력량 (docs/systems/mana.md §3.1).
 import { K } from '../data/constants';
-import { type RankLetter, type ServantProfile, type StatId } from '../data/schema';
+import { type RankLetter, type ServantProfile, STAT_IDS, type StatId } from '../data/schema';
 
 export interface ParsedRank {
   /** 판정 보정으로 쓰는 수치 (D-035) */
@@ -38,6 +38,16 @@ export const statValue = (servant: ServantProfile, stat: StatId): number => pars
 
 /** 여러 스탯이면 합산 (D-018) */
 export const statSum = (servant: ServantProfile, stats: readonly StatId[]): number => stats.reduce((s, id) => s + statValue(servant, id), 0);
+
+/** 스탯 6종 수치의 합. 전투 시작 시 약자를 정하는 기준 (dice.md §3.4, D-166) */
+export const statTotal = (servant: ServantProfile): number => statSum(servant, STAT_IDS);
+
+/** 기적을 쓸 수 있는 쪽 (D-166): 스탯 합이 낮은 쪽. 같으면 null (양쪽 모두 기적 없음) */
+export function underdogOf(a: ServantProfile, b: ServantProfile): 'a' | 'b' | null {
+  const ta = statTotal(a);
+  const tb = statTotal(b);
+  return ta < tb ? 'a' : tb < ta ? 'b' : null;
+}
 
 /** 기적이 발동하는 자연값 목록 (dice.md §3.4) */
 export const miracleNaturals = (servant: ServantProfile): readonly number[] => K['dice.miracle_range'][parseRank(servant.ranks.luck).letter];

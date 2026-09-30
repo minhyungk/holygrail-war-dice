@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0378_locusta",
+  "skills": [
+    {
+      "skill_id": "sk_presence_concealment",
+      "name_ko": "기척 차단",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_mental_corruption_poison",
+      "name_ko": "정신오염(독)",
+      "rank": "D",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_poison_mixing",
+      "name_ko": "독약조합",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_toughness_poison",
+      "name_ko": "강건(독)",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_cooking_mushroom",
+      "name_ko": "조리(버섯)",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

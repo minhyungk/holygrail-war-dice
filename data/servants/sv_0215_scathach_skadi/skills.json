@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0215_scathach_skadi",
+  "skills": [
+    {
+      "skill_id": "sk_territory_creation",
+      "name_ko": "진지작성",
+      "rank": "EX",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_item_construction",
+      "name_ko": "도구작성",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_core_of_the_goddess",
+      "name_ko": "여신의 신핵",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_primordial_rune",
+      "name_ko": "원초의 룬",
+      "rank": null,
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_shivering_blizzard",
+      "name_ko": "얼어붙는 눈보라",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_allfather_s_wisdom",
+      "name_ko": "주신의 예지",
+      "rank": "B+",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

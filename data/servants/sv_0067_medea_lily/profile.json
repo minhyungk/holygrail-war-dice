@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0067_medea_lily",
+  "source_id": 67,
+  "name_ko": "메데이아(릴리)",
+  "name_short_ko": "메데이아 릴리",
+  "class": "caster",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "D",
+    "mana": "A",
+    "luck": "A",
+    "np": "C"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "보수해야 할 모든 상처",
+    "ruby_ko": "페인 브레이커",
+    "rank": "C",
+    "type_ko": "대마술보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5017000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/501700/501700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/501700/501700b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    201,
+    300,
+    303,
+    404,
+    1000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2466,
+    2631,
+    2858,
+    5000,
+    501700
+  ],
+  "lore": {
+    "detail": "콜키스의 왕녀 메데이아, 그녀가 ‘마녀’라 불리기 전인 어린 시절의 메데이아로 소환되었다. 순진무구하고 가련한 소녀였던 그녀에게 ‘콜키스의 마녀’의 모습은 아직 보이지 않는다."
+  },
+  "instant_death": false
+}

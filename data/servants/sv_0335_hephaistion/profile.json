@@ -1,0 +1,54 @@
+{
+  "servant_id": "sv_0335_hephaistion",
+  "source_id": 335,
+  "name_ko": "헤파이스티온",
+  "name_short_ko": "헤파이스티온",
+  "class": "pretender",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "C",
+    "mana": "A+",
+    "luck": "D",
+    "np": "B++"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "중립·중용",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "마천의 차륜",
+    "ruby_ko": "헤카틱 휠",
+    "rank": "C+~A+",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_28002000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/2800200/2800200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/2800200/2800200b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    120,
+    201,
+    302,
+    305,
+    404,
+    1000,
+    2001,
+    2008,
+    2011,
+    2012,
+    2037,
+    2631,
+    5000,
+    2800200
+  ],
+  "lore": {
+    "detail": "정복왕 이스칸다르가 가장 총애했다고 알려진 심복 헤파이스티온.\n그녀는 그 헤파이스티온…… 이 아니다.\n이스칸다르에게 한없는 충성을 맹세하면서도, 동시에 이스칸다르와 왕의 군세를 누구보다도 증오하는 수수께끼 많은 신대의 마술사."
+  },
+  "instant_death": false
+}

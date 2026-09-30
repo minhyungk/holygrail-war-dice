@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0352_xu_fu",
+  "skills": [
+    {
+      "skill_id": "sk_settlement_creation",
+      "name_ko": "촌락작성",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_item_construction",
+      "name_ko": "도구작성",
+      "rank": "B+",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_high_servant",
+      "name_ko": "하이 서번트",
+      "rank": "D",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_debuff_yu_mei_ren",
+      "name_ko": "약화(우미인)",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_five_grain_praise",
+      "name_ko": "오곡예찬",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_taoist_arts_out",
+      "name_ko": "도술(외)",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_legend_of_xu_fu",
+      "name_ko": "서복전설",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

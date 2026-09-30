@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0253_leonardo_da_vinci",
+  "skills": [
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_territory_creation",
+      "name_ko": "진지작성",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_overhaul",
+      "name_ko": "오버홀",
+      "rank": "E",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_a2426650",
+      "name_ko": "만물의 궤적",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_accel_turn",
+      "name_ko": "액셀 턴",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_dream_upon_the_star",
+      "name_ko": "별에 꿈을",
+      "rank": "D",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

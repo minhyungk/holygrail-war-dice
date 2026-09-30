@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0142_ishtar",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_independent_action",
+      "name_ko": "단독행동",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_core_of_the_goddess",
+      "name_ko": "여신의 신핵",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_manifestation_of_beauty",
+      "name_ko": "미의 현현",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_shining_majestic_crown",
+      "name_ko": "빛나는 큰 왕관",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_mana_burst_gem",
+      "name_ko": "마력방출(보석)",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

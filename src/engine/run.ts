@@ -11,7 +11,7 @@ import { check, contest, type NaturalRoll } from './dice';
 import { type Condition, EventLog, type FactionSetup, type RollRecord, type SupplyResult } from './events';
 import { allTileIds, centerTileId, distance, moveRange, neighbors, reachable, tile } from './map';
 import { createRng, deriveSeed, type Rng } from './rng';
-import { manaByRank, miracleNaturals, parseRank, statSum } from './stats';
+import { manaByRank, parseRank, statSum } from './stats';
 
 export const PLAYER_FACTION = 'fc_player';
 /** 칸 역할: 밤을 마친 칸의 역할이 다음 날 보너스가 된다 (D-145) */
@@ -268,7 +268,7 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
     const aff = rollMod(player.affinity ?? 0);
     if (aff) parts.affinity = aff;
     const mod = statSum(player.servant, stats) + Object.values(parts).reduce((a, b) => a + b, 0);
-    const mir = miracleNaturals(player.servant);
+    const mir: number[] = []; // 기적은 전투 국면 판정에만 (D-167): 마력 공급·낮 행동에는 없다
     let roll = dice.roll();
     let rerolls = 0;
     while (!auto && player.fatePoints > 0) {
@@ -293,7 +293,8 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
     const mod = (f: FactionState) => statSum(f.servant, ['agi']) + (f === player ? rollMod(player.affinity ?? 0) : 0);
     const rolls: Record<string, NaturalRoll> = { [a.id]: dice.roll(), [b.id]: dice.roll() };
     const rerolls: Record<string, number> = { [a.id]: 0, [b.id]: 0 };
-    const judge = () => contest({ roll: rolls[a.id]!, modifier: mod(a), miracle: miracleNaturals(a.servant) }, { roll: rolls[b.id]!, modifier: mod(b), miracle: miracleNaturals(b.servant) });
+    // 기적은 전투 국면 판정에만 있다. 조우 도주·기습 판정에는 없다 (dice.md §3.4, D-167)
+    const judge = () => contest({ roll: rolls[a.id]!, modifier: mod(a), miracle: [] }, { roll: rolls[b.id]!, modifier: mod(b), miracle: [] });
     if (allowReroll === player) {
       const me = player === a ? 'a' : 'b';
       while (player.fatePoints > 0) {
@@ -612,6 +613,7 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
           result: outcome ? outcome.result : 'none',
           winner: outcome?.winner ?? null,
           loser: outcome?.loser ?? null,
+          dead: outcome?.dead ?? null,
         });
     }
   }
@@ -631,6 +633,14 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
 
     log.clock = { day, time: 'night', action: 0 };
     log.emit('night_started', [], { day });
+    // 상태 1단계 회복 (combat.md §3.4-6, D-167): 밤에 다치면 다음 날 낮은 그대로 보내고, 그다음 밤에 들어갈 때 회복한다
+    for (const f of alive()) {
+      const i = ['full', 'hurt', 'danger'].indexOf(f.condition);
+      const to = (['full', 'hurt', 'danger'] as const)[Math.max(0, i - K['combat.night_recovery'])]!;
+      if (to === f.condition) continue;
+      log.emit('condition_recovered', [f.id], { faction: f.id, from: f.condition, to, cause: 'night' });
+      f.condition = to;
+    }
     for (const f of alive()) {
       // 밤 진입 시 마력 자연 회복 (mana.md §3.1). 플레이어 서번트는 회복하지 않는다: 마력은 마력 공급으로만 (D-111)
       if (f === player) continue;
@@ -648,7 +658,7 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
     }
     if (over()) break;
 
-    // 밤이 끝날 때: 배신 판정 (affinity.md §3.4) → 상태 1단계 회복 (combat.md §3.4-6)
+    // 밤이 끝날 때: 배신 판정 (affinity.md §3.4). 상태 회복은 다음 밤에 들어갈 때 (D-167)
     log.clock = { day, time: 'night', action: K['day.actions_night'] + 1 };
     if (playerActive() && chance(dice, betrayalChance(player.affinity ?? 0))) {
       log.emit('betrayal_attempted', [player.id], { faction: player.id });
@@ -658,13 +668,6 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
         log.emit('seal_used', [player.id], { battle_id: null, faction: player.id, purpose: 'block_betrayal', seals_left: player.seals });
         log.emit('betrayal_blocked', [player.id], { faction: player.id, seals_left: player.seals });
       } else eliminate(player, 'betrayal', null); // 서번트에게 살해당하고 패배 (D-108)
-    }
-    for (const f of alive()) {
-      const i = ['full', 'hurt', 'danger'].indexOf(f.condition);
-      const to = (['full', 'hurt', 'danger'] as const)[Math.max(0, i - K['combat.night_recovery'])]!;
-      if (to === f.condition) continue;
-      log.emit('condition_recovered', [f.id], { faction: f.id, from: f.condition, to, cause: 'night' });
-      f.condition = to;
     }
   }
 

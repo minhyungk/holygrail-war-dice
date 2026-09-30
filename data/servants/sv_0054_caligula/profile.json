@@ -1,0 +1,54 @@
+{
+  "servant_id": "sv_0054_caligula",
+  "source_id": 54,
+  "name_ko": "칼리굴라",
+  "name_short_ko": "칼리굴라",
+  "class": "berserker",
+  "ranks": {
+    "str": "A+",
+    "end": "B+",
+    "agi": "B+",
+    "mana": "D+",
+    "luck": "D+",
+    "np": "C"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "berserker",
+  "noble_phantasm": {
+    "name_ko": "나의 마음을 먹어라, 달빛",
+    "ruby_ko": "플룩티쿨루스 디아나",
+    "rank": "C+",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7010000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/701000/701000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/701000/701000b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    106,
+    202,
+    301,
+    304,
+    402,
+    1000,
+    2001,
+    2004,
+    2008,
+    2113,
+    2631,
+    2858,
+    5000,
+    701000
+  ],
+  "lore": {
+    "detail": "포학한 전설을 지닌 고대 로마제국 제3대 황제. 1세기 인물. 황제 네로의 백부.\n처음에는 명군으로 사람들의 사랑을 받았지만 갑자기 달의 사랑을 받아──광기에 빠졌다.\n암살되기까지 수년간 그는 제국을 공포로 지배했다."
+  },
+  "instant_death": false
+}

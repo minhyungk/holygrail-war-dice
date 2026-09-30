@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0081_henry_jekyll_and_hyde",
+  "source_id": 81,
+  "name_ko": "헨리 지킬&하이드",
+  "name_short_ko": "지킬&하이드",
+  "class": "assassin",
+  "ranks": {
+    "str": "C+",
+    "end": "E",
+    "agi": "A+",
+    "mana": "E",
+    "luck": "C",
+    "np": "C"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "비밀스러운 죄의 유희",
+    "ruby_ko": "데인저러스 게임",
+    "rank": "C+",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6007000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/600700/600700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/600700/600700b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    105,
+    201,
+    300,
+    303,
+    403,
+    1000,
+    2001,
+    2008,
+    2011,
+    2012,
+    2037,
+    2631,
+    2858,
+    5000,
+    600700
+  ],
+  "lore": {
+    "detail": "19세기의 소설 “지킬 박사와 하이드 씨”의 등장인물──혹은 그 모델이 된 인물. 자신의 인격에서 ‘악’을 분리하려 했던 그는 ‘악’을 구현화시킨 인격을 드러내고 말았고 결국에는 살인을 저질러 자멸했다고 한다."
+  },
+  "instant_death": false
+}

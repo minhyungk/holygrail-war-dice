@@ -1,0 +1,356 @@
+{
+  "speaker": "sv_0266_mysterious_alter_ego",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "가도록 해!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "눈은 떠야지?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "악셀!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "러츠.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "플립.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_8",
+        "text": "영~차!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_9",
+        "text": "때가 왔어!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_10",
+        "text": "좋은 파도야, 흥분되잖아!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_11",
+        "text": "최고야! 최고!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "여름인걸, 날아갈게!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "멜트 스트라이크!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "어쩜 이렇게 야만스럽기 짝이 없담.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "칫……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "대청소를 해 볼까.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "도망칠 곳? 있을 리가 없잖아.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "클린!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "최고의 엣지를 보여 줄게!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_5",
+        "text": "더블로 가겠어.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          },
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "거리낌 없이 말 걸지 마. 나는 수수께끼의 얼터에고・Λ. 베가스의 한여름에 강림한 물의 여신. 보잘것없는 인간이 거리낌 없이 말을 걸어도 될 만한 존재가 아니라는 걸 모르겠어? ……뭐, 다른 사람의 눈이 없는 곳이라면 얘기는 다르지만. 여기서는 Λ, 혹은 람다릴리스라고 부르도록 해.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "흐~응, 나름대로 봐줄 만한 면이 있잖아. 몸과 마음을 다한 박수는 당연하다고 보고, 대기실에 보내는 꽃다발, 하루 한 통의 격려 메일. 조심스럽게 말하자면 나쁘지 않아, 좀 더 해. 아, 하지만 프로그램이 끝난 뒤에 링크에 대량의 봉제 인형을 던지는 짓은 하지 마. ……소녀 취향이라고 여겨질 거 아냐?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "오늘로 몇 번째 스테이지였을까? 항상 응원하느라 수고 많아. 당신도 조금은 피겨스케이트가 무엇인지 이해한 모양이네. 응? 선글라스는 어떻게 한 거냐, 스타가 얼굴을 보여 줘도 되는 거냐, 라고? ……흥, 필요 없으니까 벗었을 뿐이야, 특별한 의미는 없어.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "잠깐, 모처럼 방에 돌아왔는데, 거리가 너무 멀지 않아? 나도 한가하지 않은데 말이죠. 다음 공연을 기다리는 동안, 좀 더 가까이에서 얼굴을 보여 줘. 그 정도가 아니면 만족할 수 없어, 시원찮은 조형이니까.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "욕망의 도시와 어리석은 마스터…… 생각보다 나쁘지 않은 조합이었어. 나는 쾌락의 에고, 원하는 것에는 그에 걸맞은 사랑을 표현해 줄게. 그래, 말 그대로 쓰나미가 되어 모든 것을 집어삼켜 버릴 듯한. 어머, 얼굴이 창백해져서 왜 그래? 이제 와서 도중하차는 할 수 없어. 그도 그럴 것이, 도시 바깥은 전~부 바다로 만들어 버렸는걸. 안심해? 여름이 끝날 때까지는 넘치지 않을 테니까. 그때까지의 시간 동안 느긋하게 괴롭혀서, 내 노예로 만들어 줄게.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "스윔과 스케이트를 합친 완전히 새로운 종합예술. 아름다움이라는 개념 그 자체. 그것이 나야.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것은 매너가 되먹지 못한 관객입니다. 나의 연기 중에 휴대 전화 따윌 보고 있으면, 콩알 크기로 축소시켜 주겠어.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "내가 의식해 줬으면 좋겠어? 그렇다면, 성배를 두 번, 나에게 사용해. 뭣하면 일곱 번도 괜찮아.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "금방 끝나니까, 꽃다발을 준비해 둬.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "서펜타인의 발기술, 보여 줄게.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "진짜 영광으로 생각하도록 해. 진짜 굉장하니까.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "쓰레기 같은 상대야. 가차 없이 다져 주겠어.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "이것으로 피니쉬! 어머나, 너희도 같이? 라스트 스트로크! ‘그 여름 이슬은 유리처럼(블루 서머 팔라디온)’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "헤어져야겠네, 마지막에 사랑을 알려줄게. 슬프고 비참한 물의 노예…… 나의 가시로, 작별이야!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "자, 끝. 키스 앤 크라이의 준비는 다 됐어?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "좋은 스테이지였어. 올 드레인만은 봐 줄게.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "굴욕이야…… 링크에 엉덩방아를 찧게 만들다니……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "기억해 둬. 다음에는 더블 스코어로 이길 테니까!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "상상 이상으로 초라한 소환실이네…… 뭐, 괜찮겠지. 기뻐하도록 해, 이 별에서 가장 아름다운 백조가 와 줬어. 아, 하지만 거리낌 없이 말 걸지는 마. 나, 톱스타니까. 스캔들은 피하고 싶어. 그렇지…… 나는 수수께끼의 얼터에고・Λ라고 불러 주겠어?",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

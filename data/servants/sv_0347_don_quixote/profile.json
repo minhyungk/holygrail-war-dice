@@ -1,0 +1,60 @@
+{
+  "servant_id": "sv_0347_don_quixote",
+  "source_id": 347,
+  "name_ko": "돈키호테",
+  "name_short_ko": "돈키호테",
+  "class": "lancer",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "C",
+    "mana": "C",
+    "luck": "EX",
+    "np": "EX"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "아아, 사랑스런 공주에게 바치리라, 나의 창을!",
+    "ruby_ko": "발리엔테 아살토 데디카도 아 라 프린세사",
+    "rank": "D++",
+    "type_ko": "대거인보구",
+    "special_attack": [
+      2666
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3051000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/305100/305100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/305100/305100b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    101,
+    201,
+    300,
+    303,
+    404,
+    1000,
+    2001,
+    2008,
+    2009,
+    2011,
+    2012,
+    2037,
+    2631,
+    2821,
+    2858,
+    2881,
+    5000,
+    305100
+  ],
+  "lore": {
+    "detail": "고결한 편력기사, 위대한 영웅. 가련한 둘시네아 공주의 이야기를 널리 알리기 위해, 시종인 산초를 데리고, 지금 출진! 거인이나 기사와 전투를 펼쳐, 전 세계에 이름을 새긴, 위대한 노기사.\n───이 정도의 내용이면 괜찮을까요, 나리?"
+  },
+  "instant_death": false
+}

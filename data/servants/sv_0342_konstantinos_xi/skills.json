@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0342_konstantinos_xi",
+  "skills": [
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "B+",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "B+",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_independent_action",
+      "name_ko": "단독행동",
+      "rank": "C++",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_hagia_sophia_s_prayer",
+      "name_ko": "하기아 소피아의 기도",
+      "rank": "C-",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_empire_s_decline",
+      "name_ko": "낙일의 제국",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_demise_privilege",
+      "name_ko": "종언특권",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

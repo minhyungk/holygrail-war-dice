@@ -1,0 +1,34 @@
+{
+  "servant_id": "sv_0055_darius_iii",
+  "skills": [
+    {
+      "skill_id": "sk_mad_enhancement",
+      "name_ko": "광화",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_golden_rule",
+      "name_ko": "황금률",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_disengage",
+      "name_ko": "재정비",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_pride_of_an_achaemenid",
+      "name_ko": "아케메네스의 긍지",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

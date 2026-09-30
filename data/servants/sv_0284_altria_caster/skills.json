@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0284_altria_caster",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_territory_creation",
+      "name_ko": "진지작성",
+      "rank": "EX",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_unique_magecraft",
+      "name_ko": "독자마술",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_charisma_of_hope",
+      "name_ko": "희망의 카리스마",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_protection_of_the_lake",
+      "name_ko": "호수의 가호",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_sword_of_selection",
+      "name_ko": "선정의 검",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

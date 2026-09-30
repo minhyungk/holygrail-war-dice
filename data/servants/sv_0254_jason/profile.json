@@ -1,0 +1,59 @@
+{
+  "servant_id": "sv_0254_jason",
+  "source_id": 254,
+  "name_ko": "이아손",
+  "name_short_ko": "이아손",
+  "class": "saber",
+  "ranks": {
+    "str": "C",
+    "end": "B",
+    "agi": "B+",
+    "mana": "D",
+    "luck": "A+",
+    "np": "A"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "천상을 가르는 찬란한 배",
+    "ruby_ko": "아스트랍시테 아르고",
+    "rank": "B+++",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1038000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/103800/103800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/103800/103800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    100,
+    201,
+    300,
+    303,
+    401,
+    1000,
+    2001,
+    2008,
+    2009,
+    2011,
+    2012,
+    2037,
+    2075,
+    2114,
+    2466,
+    2631,
+    2858,
+    5000,
+    103800
+  ],
+  "lore": {
+    "detail": "이올코스의 왕 아이손의 아들, 원래는 디오메데스라는 이름이었지만, 케이론에게 맡겨졌을 때, 이아손으로 개명했다. 아르고호의 선장으로서, 수많은 모험을 펼쳤다."
+  },
+  "instant_death": false
+}

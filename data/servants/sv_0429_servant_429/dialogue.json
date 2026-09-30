@@ -1,0 +1,456 @@
+{
+  "speaker": "sv_0429_servant_429",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "(쀼쀼이!)",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "일광욕이나 할까~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "때려라, 페이코!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "오우, 한눈파냐~?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "간드!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "불행해져라아아아~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "우랴랴랴앗! 하와!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_8",
+        "text": "꼬챙이에 꿸 거야! 흐갸악.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_9",
+        "text": "아우린코! 쿠!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_10",
+        "text": "천의 화륜! 공의 거울!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_11",
+        "text": "후라~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_13",
+        "text": "쪽♡ 다시 준비해서나 와.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_14",
+        "text": "흥, 색시라면 안 준다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "가라앉혀라, 투리사스!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "하앗, 깨부수어라, 투리사스!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "엿차, 든든히 먹어~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_4",
+        "text": "양현 전진 최대~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "흐갸아아악!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "흐갸악!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "하이스타 파스카……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "페르켈레……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "아아아~오우!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "찡, 찡, 찌잉! 후우~!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "하아~ 땀 쫙 뺐다아……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "코코, 꼬꼬~ 꼬꼬댁, 꼬꼬코코?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_5",
+        "text": "헛둘 셋넷~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_6",
+        "text": "살미살미아~키!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "지금은 이미, 전설로만 전해지는 북쪽 나라의 이름. 그것이 포흐욜라. 사위에게는 수오미…… 핀란드의 북쪽에 펼쳐진 북극권, 이라고 말하면 전해질까? 눈과 얼음, 극야의 암흑에 갇히고, 그럼에도 짧고 근사한 여름도 있어. 그런 벽지인데다 하는 일이 뜻대로 풀리지 않는 불편한 땅이지만…… 인간의 일생도 으레 그런 법이야.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          },
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "이 병아리는 화염의 독수리 코코. 그리고 요정인 톤투들이나 도깨비 페이코, 바다 괴물 투리사스도 같이 있어. 포흐욜라에 사는, 로우히 가족의 일원이야. 모~두들 서로 도우며 사는 거야.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          },
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "서번트가 되어서 로우히도 많이 젊어졌어. 혹시 딸들의 영기가 살짝 섞였나……? 어찌 되었든 어깨도 허리도 편해서 좋네. 흐랴아! 냐암. 자랑스러운 치아도 최고로 날카로워! 아…… 미안, 살짝 피가 나와버렸네.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal",
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "아항~ 그렇구나. 사위도 예장으로 ‘간드’ 마술을 쓰나. 포흐욜라 말은 아니지만 북쪽 민족의 특기인 저주가 전부 뭉뚱그려 ‘간드’라고 불리며 두려움을 사는 건 알아. 그렇다면 로우히도 그렇게 부르도록 하겠어. 그렇다기보다 말이다~? 오히려 이 로우히가 간드 그 자체라고. 상처든 병이든, 좌우지간 불행하게 만들고 싶은 녀석, 사위가 복수할 상대가 있으면 알려주기만 해. 재기불능이 될 한 방을 날려주겠어.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal",
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "모이! 사위. 잠깐 이리로 와서 로우히의 뿔 가는 걸 도와. ……하아…… 그래그래, 기분 좋네. ……응? 딱딱하고 흐릿하게 빛나서 보석 같은데…… 벨벳 같은 감촉도 있다? 그, 그래. 후후…… 우훼히훼훼…… 칭찬해도 안 줄 거야.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "……흠흠. 코코는 뇌조가 정말 싫대. 그 목에 꽉 찬 깃털이. 그렇겠지~ 노니이. 로우히는 배이내뫼이넨이 싫어! 그밖에는…… 실은 말이지…… 으음, 음…… 충치가 무서워……",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          },
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "로우히가 바라는 건 소박해. 그 그리운 포흐욜라에서 평화롭게 살고 싶어. 그렇지만…… 그게 도무지 이루어지지가 않아.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "모이! 맞받아주겠다~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "모이카~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "살~짝 놀아주기나 할까?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "뭐냐, 뭔데? 못 말려라~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "셀바! 깨어나라, 삼포! 포흐욜라 깊이 뿌리를 뻗은 세계의 기둥. 만천의 가마솥에 소용돌이를 일으키고 무한한 부로 땅을 채워라. 로우히의 날갯짓의 원천이 되어라! ‘극성천구각순환(폴라리스 서큘레이션)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "돌거라, 삼포. 아홉 개의 자물쇠, 열 개의 빗장 아래, 너는 별이 가득한 하늘의 마력을 모았다. 이제 그만 생명의 양식과 보물을 마련하여 하늘의 쐐기별이 되거라. ‘극성천구각순환(폴라리스 서큘레이션)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "잘했다~! 우리 딸을 색시로 줄게!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "모이모이~! 다들 열심히 했어.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "카흐비타우코, 커피의 시간이야.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_4",
+        "text": "이피~ 사탕 먹어라?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "보이보이……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "바보 멍청이~! 배이내뫼이넨 다음으로 바보~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "이제 추운 건 지긋지긋해……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_4",
+        "text": "살미아키가 다 떨어졌어……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "모이! ‘로우히’야~! 독수리의 마녀이자 극북의 땅 ‘포흐욜라’를 다스리는 여주인! 오늘부터 너도, 이 로우히의 가족의 일원이 되는 것이니 똑~바로 수행에 힘쓰는 거야, 사위!",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

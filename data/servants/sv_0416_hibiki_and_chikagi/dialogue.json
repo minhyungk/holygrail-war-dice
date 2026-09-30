@@ -1,0 +1,426 @@
+{
+  "speaker": "sv_0416_hibiki_and_chikagi",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "[히비키] : 하나~ 둘, [치카기] : 으랏차──!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "[히비키] : 어서 오세요! [치카기] : 또 오세요!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "[치카기] : 히비키! [히비키] : 맡겨줘!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "[치카기] : 파도 쏟기! [히비키] : 파도 베기!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "[치카기] : 어떻게든 되어라! [히비키] : 하나 더 콰쾅~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "[치카기] : 찬물이나 뒤집어써! [히비키] : 기분 상쾌~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "[히비키] : 치카짱 킥──! [치카기] : 우랴~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_8",
+        "text": "[히비키] : 하나, 둘! [치카기] : 못 해 먹겠다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_9",
+        "text": "[히비키] : 하나~ 둘 하면 쏠 거거든? [치카기] : 너어엇?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_10",
+        "text": "[히비키] : 섞여서! [치카기] : 녹아라! [히비키&치카기] : 마멀레이드!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_11",
+        "text": "[치카기] : 에에잇! 시끄러워! [히비키] : 엿차, 나이스 캐치!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_12",
+        "text": "[치카기] : 진지하게…… 해!! [히비키] : 아앗, 스마트폰 씨가?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_13",
+        "text": "[치카기] : 바다 매점 살법! [히비키] : 조개잡이~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_14",
+        "text": "[치카기] : 두근두근하며! [히비키] : 풍덩~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "[치카기] : 서브! [히비키] : 리시브! [히비키&치카기] : 어택───!!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "[치카기] : 전자레인지로! [히비키] : 띵 돌려서! [히비키&치카기] : KO다───!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "[치카기] : 안 되겠는데, 이거───?!! [히비키] : 와히~~~?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "잠깐 기다려!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "[치카기] : 이거 틀림없이 죽는 거───?!! [히비키] : 아히~~~?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "아얏!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "[히비키&치카기] : 마블, 마블, 루루루루루~",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "[히비키] : 힘내자, 치카짱! [치카기] : 윽, 두통이……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "[히비키] : 뭔가 나왔다──?! [치카기] : 아니 진지하게 뭔데 이거.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "[히비키] : 좋~아, 지금부터 진심으로 한다! [치카기] : 계속 진심으로 하고 있는데……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_5",
+        "text": "[히비키] : 어서 오세요~! [치카기] : 손님이 아니라니깐……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_6",
+        "text": "[히비키&치카기] : 비나이다~ 비나이다~",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "[히비키] : 카가미사키 고등학교 1학년 4반, 히비노 히비키입니다! 과자 같은 거 만들 수 있습니다! [치카기] : 같은 소속의, 카츠라기 치카기다. 과자 같은 거 먹을 수 있습니다. ……새삼스럽지만 우리, 엄청나게 엉뚱한 곳에 와 있지 않나? 이거 괜찮은 거야? [히비키] : 무슨 소릴 하고 있는 거래, 요 치카짱은! 우리, 서번트가 됐거든? 더 딱 부러지게 해야지! [치카기] : 의사 서번트라고, 의사. 일종의 대리 같은 거잖아. ……뭐, 나는 적당히 열심히 할 거니까, 너도 적당히 기대하고 있어. [히비키] : 넵, 그러면 우리들의 자기소개는 여기까지! 이번에는 당신에 대해 알려줬으면 좋겠는데! 많은 이야기, 들려주세요!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "[히비키] : 점장님~ 수고했어요! 슬슬 차 한 잔 하지 않을래요? 오늘의 다과는─── 믹스 베리와 크림치즈의 파이입니다~! [치카기] : 좋~아, 하나도 안 지쳤지만 받기로 할까. ……뭐? 나는 요리에 관심은 없느냐고? 그쪽은 히비키에 맡기고 있거든. 나는 정리 전문이야. [히비키] : 에헤헤헤, 만드는 건 즐겁지만, 저, 뒷정리만큼은 영 서툴러서…… [치카기] : 이 녀석더러 하라고 하면 피해가 커져서 말이지…… 아무튼 무엇에나 적재적소란 게 있다는 말씀. 안 그래?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "[치카기] : 잠자는 것을 좋아해. 뭐하면 스무 시간 정도는 자고 싶어. ……뭐, 그것 말고~? 그 밖에는 뭐…… 단것, 이라든가? [히비키] : 넵! 알파카는 복슬복슬해서 아주 좋다고 생각됩니다! [치카기] : 그 녀석들 뭔가 뱉어대잖아, 생물병기 같은 거. [히비키] : 그런 점도 귀엽다고 생각하는데?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "[히비키] : 점장님은, 뭔가 안 좋아하는 음식은 있나요? 참고로 치카짱은 피망을 싫어하거든요? [치카기] : 그런 이야기는 안 해도 돼. ……저기, 한번 물어보고 싶었는데, 히비키는 꺼리는 게 있어? [히비키] : 아~ 음…… 화났을 때의 치카짱, 이라든가.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "[치카기] : 뭐든지 소원을 이루어주는 성배라…… 좋아, 그렇다면 1억 엔! ……같은 걸 받아봤자 어디에다 쓸 생각인데. 난 바보냐. [히비키] : 헛헛허…… 이거, 빌 소원을 찾기도 어려운 일이로구려. [치카기] : 너에게도 뭔가 있을 거 아냐? 뭐든지 이루어준다는데? [히비키] : 으~음…… 그러면 치카짱의 편식을 고쳐 달라고 할까~ [치카기] : 쓸데없는 데 낭비하지 마!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "[히비키] : 안녕하세~ 모플~! [치카기] : 그거 유행 못 하는 거 아닐까……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "[히비키] : 카가미사키~ [치카기] : 파, 파이팅! 아자……?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "[치카기] : 뭐가 어째서 이렇게 됐냐…… [히비키] : 슬슬 받아들이자~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "[치카기] : 만주의 빛, 하늘에 차오르며. [히비키] : 간주의 빛, 땅에 빛나매. [치카기] : 신대에 닫힌 바다에 길을 내어. [히비키] : 연결하는 것은, 이 양과의 명주라. [히비키&치카기] : 와다츠미의 위업을, 지금 이 순간! ‘바다의 경계를 여는 만간주’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "[치카기] : 만주의 빛, 하늘에 차오르며. [히비키] : 간주의 빛, 땅에 빛나매. [히비키&치카기] : 와다츠미의 위업을, 지금 이 순간! ‘바다의 경계를 여는 만간주’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "[치카기] : 나의 손에서 춤추어라, 조만주. [히비키] : 나의 손에서 노래하라, 조간주. [치카기] : 채우라고 빌면, 물이 차오르고. [히비키] : 닫으라고 빌면, 땅이 솟으리라. [히비키&치카기] : 이것이야말로 와다츠미의 여의보주! ‘바다의 경계를 여는 만간주’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_4",
+        "text": "[치카기] : 나의 손에서 춤추어라, 조만주. [히비키] : 나의 손에서 노래하라, 조간주. [히비키&치카기] : 이것이야말로 와다츠미의 여의보주! ‘바다의 경계를 여는 만간주’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_5",
+        "text": "[히비키] : 치카짱, 그것을 쓰자! [치카기] : 아니 몰라몰라. 아무 소리도 못 들었어~! [히비키] : 와다츠미 게이트, 오픈! 참배 고! 으랏차──! 보은의 비이이이───임!! [치카기] : 그 이름 촌스러워어어어어!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_6",
+        "text": "[히비키&치카기] : 히비치카~~ 타──임!! [치카기] : ……이 아니거든? 대체 뭐가 시작된 건데?! [히비키] : 에~ 전자의 요정 패케시 씨가 보내주신 편지입니다! “요새 기쁜 일이 있었습니다.” 에~ 뭘까뭘까~? [치카기] : 지금 그 이야기 안 해도 돼! 못…… 해 먹겠다~~~~!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "[치카기] : 좋~아, 이것으로 폐점이다. 돌아가, 돌아가. [히비키] : 들러주셔서, 감사했습니다~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "[히비키] : 오늘 하루도, 수고했어~! [치카기] : 가는 길에 라멘이라도 먹고 갈까?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "[히비키] : 해냈다, 대승리! 점장님, 칭찬해 줘, 칭찬! [치카기] : 특별 보너스, 기대하고 있다구~?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "[치카기] : 으헤에…… 미안, 실수했어. [히비키] : 미안해, 점장님……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "[치카기] : 역시 무리라고, 이거! [히비키] : 오늘은 폐점합니다~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "[치카기] : 당했다, 뭔가 모르겠지만 당했어! [히비키] : 참으로 면목이 없소이다~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_4",
+        "text": "[히비키] : 아, 스나오짱이다~…… [치카기] : 야, 왜 십자를 긋고 그래, 하지 마!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "[히비키] : 소환, 감사합니다! 아즈미노 이소라입니다! 앗, 잠깐잠깐. 맞아요. 주문, 이걸로 맞으니까요. 놀랍게도 우리, 신의 빙의체가 되었거든요. 엄청나죠! 제가 히비노 히비키, 그리고 이쪽이 친구인…… [치카기] : 아~…… 카츠라기 치카기다, 입니다. 이런 게 대리를 맡아서 미안해. 이래저래 폐를 끼칠 거라 생각하지만, 뭐…… 앞으로 잘 부탁한다, 라는 것으로? [히비키] : 그러면 정식으로…… 소환에 응해서 찾아왔습니다! 둘이 모여, 아즈미노 이소라! 최선을 다해 열심히 일하겠습니다!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

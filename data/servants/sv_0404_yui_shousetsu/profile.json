@@ -1,0 +1,52 @@
+{
+  "servant_id": "sv_0404_yui_shousetsu",
+  "source_id": 404,
+  "name_ko": "유이 쇼세츠",
+  "name_short_ko": "유이 쇼세츠",
+  "class": "caster",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "C",
+    "mana": "A",
+    "luck": "B+",
+    "np": "C+"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "열사순명・불석신명",
+    "ruby_ko": "열사순명・불석신명",
+    "rank": "C",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5054000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/505400/505400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/505400/505400b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    202,
+    301,
+    303,
+    404,
+    1000,
+    2001,
+    2008,
+    2631,
+    2858,
+    5000,
+    505400
+  ],
+  "lore": {
+    "detail": "말총머리의 젊은 무사. 무사로서 행동하기 위해 남자를 가장하지만, 심신은 여자.\n그 정체는 시마바라의 난의 수괴・아마쿠사의 심복이었던 모리 소이켄이 연금술로 만들어낸 인조인간, 일종의 호문쿨루스. 다만 모체가 인간 여성이었기 때문에, 정확하게는 의사적인 호문쿨루스라고 할 수 있다.\n나이는 서른을 넘었지만, 외모는 십대 후반으로 보인다. 인조적인 마술회로를 지녔으며, 모리 소이켄으로부터 서양마술의 기초를 배웠다.\n시마바라의 난으로 소이켄이 세상을 떠난 뒤에는 무가의 인간으로서 양육되었으며, 에도에서 군학자로서 명성을 떨치다가 이윽고 막부로부터 등용 제의를 받기에 이르고───\n그리고 마침내 ‘영월 의식’의 존재를 알게 되었다.\n……범인류사가 아닌, 평행세계에서 벌어진 의사적인 성배전쟁에서 싸워나간, 마스터 중 한 명."
+  },
+  "instant_death": false
+}

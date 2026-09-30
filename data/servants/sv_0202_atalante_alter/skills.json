@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0202_atalante_alter",
+  "skills": [
+    {
+      "skill_id": "sk_therianthropy",
+      "name_ko": "수화",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_independent_action",
+      "name_ko": "단독행동",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_demonic_acclimatization",
+      "name_ko": "마성순화",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_beyond_arcadia",
+      "name_ko": "아르카디아 너머",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_feral_logic",
+      "name_ko": "야수의 논리",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

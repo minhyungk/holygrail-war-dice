@@ -1,0 +1,59 @@
+{
+  "servant_id": "sv_0095_gilgamesh_child",
+  "source_id": 95,
+  "name_ko": "꼬마 길",
+  "name_short_ko": "꼬마 길",
+  "class": "archer",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "C",
+    "mana": "C",
+    "luck": "A",
+    "np": "EX"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "왕의 재보",
+    "ruby_ko": "게이트 오브 바빌론",
+    "rank": "B++",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2018000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/201800/201800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/201800/201800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    102,
+    200,
+    301,
+    303,
+    403,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2040,
+    2113,
+    2631,
+    2667,
+    2851,
+    2858,
+    5000,
+    201800
+  ],
+  "lore": {
+    "detail": "우루크의 영웅왕. 인류의 가장 오래된 영웅. 악독하고 무정. 다른 사람의 말을 듣지 않고 자신의 기준만을 절대적이라 여기는 폭군── 이라는 성질은 이 모습의 그에게는 맞지 않는다.\n기본적으로는 예의 바르고 겸허한 소년."
+  },
+  "instant_death": false
+}

@@ -1,0 +1,360 @@
+{
+  "speaker": "sv_0337_hai_ba_trung",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "물잠자리!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "[쯩짝&쯩니] : 둘이 함께!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "쓸 수 있는 것은 뭐든 쓸 거야!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "[쯩짝&쯩니] : 합체! 메콩 델타!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "지리의 이점은 여기에!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "[쯩니] : 언니, 부탁해! [쯩짝] : 에에~잇!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "무겁고 아픈 거, 해버리자!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "괜찮아, 언니는 가벼워.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "[쯩짝&쯩니] : 우리는, 지지 않아!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "윽! 다른 사람들은?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "예상했어",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "언니만은……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "용서할 수 없어!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "진정해.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "집중……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "[쯩짝] : 날렵하게. [쯩니] : 유연하게.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "[쯩짝] : 귀~여~워~라~! [쯩니] : 언니도 그래……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "나는, 언니를 지키기 위해 여기 있어. 언니는 상냥하고 유순한 임금님일지도 모르지만, 내가 있는 한 멋대로 이용할 수 있겠다고 생각하지 않는 게 좋을 거야.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "으~음 ……후~ 찌릿! …후~ 앗, 아, 아, 아니에요, 마스터. 이것은…… 딱히, 사람들 앞에 나설 때를 대비한 표정 연습…… 같은 게 아니라, 그게…… 아, 저기~ 미, 미용을 위한 얼굴 근육 운동! ……같은 거랄까요?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "어디 보자…… 오늘 언니의 귀여웠던 포인트, “코끼리와 포우가 노는 모습을 보고서, 멋대로 일인이역으로 대사를 넣고 있던 게 최고”…… 라고. 헉! 마, 마스터, 언제부터?! 으으…… 기억이 생생할 때 적으려고 했는데, 역시, 방에 돌아가고 나서 쓸 걸 그랬어. 일기……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "[쯩니] : 언니, 코끼리가. [쯩짝] : 앗! 얘도 참, 안 돼~ 멋대로 마스터의 머리에 올라가면! ……네? ‘가끔은 괜찮아’…? 죄송해요, 그렇게 말씀해 주시다니… [쯩니] : 왠지 의기양양한 얼굴을 하고 있네. 지금까지 포우를 부러워하며 보고 있던 거야? [쯩짝] : 우후훗! 마스터의 머리 위에 작은 코끼리…… 이런 것도, 귀여워! ……헉! 이것은…… 사진! 포토 찬스가 아닐까? 기다려봐요, 마스터. 게오르기우스 씨를 부를 테니까, 잠시 그대로!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "여기서만 하는 이야기인데. 왕으로 어울리지 않는다는 건 처음부터 알고 있었어. 그밖에 될 만한 다른 사람이 없었을 뿐. 착각은 하지 마. 싫었던 것도, 후회가 있는 것도 아니야. 나는 닛짱과 함께, 마지막까지 열심히 걸었어. 적성이 있었는지 어떤지는 몰라도, 우리는 분명히, 해야 할 일을 온 힘을 다해서 해냈다고 생각해. 그것만은 사실이고, 자랑스럽게 생각해. 그러니까 이번에도 마찬가지. 무엇을 할 수 있을지는 몰라도, 이번에는 당신과…… 함께, 당신이 바라는 길을, 마지막까지 자랑스럽게 걸어가고 싶어. ……그렇게, 생각하고 있습니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "조금 부끄럽지만, 귀여운 걸 좋아해요. 하지만 닛짱이 말하기로는 저, 귀여움에 관한 센스가 좀 어긋난 모양이라…… 아, 이 코끼리들은 둘 다 좋아한답니다? 같이 있어 줘서, 무척 치유받고 있어요. 네? 정체? 글쎄요……?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것은…… 언니가 싫어하는 것과 언니가 슬퍼하는 것과 언니가 불쾌해지는 것과 언니가 곤란해지는 것과 언니가── 듣고 있어?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "무슨 소원이라도 들어주는 성배, 인가요? 으~음, 괜한 분쟁이 일어날 것 같아서 무서울…… 지도요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "신 짜오~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "언니와 함께라면.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "다들, 다치지 마.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "지키고 싶은 게, 있어.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "[쯩짝] : ───쯩왕의 이름으로 명합니다. [쯩니] : 일어나라, 핍박받는 백성들이여!! [쯩짝] : 모두의 힘이 이 땅을 바로잡고, 육십오성의 분기에 이르리라! [쯩짝&쯩니] : ‘분기의 육십오성(함께 걸어가자, 우리들의 나라를)!!’",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "[쯩니] : 악랄한 무법자들이여, 물럿거라! [쯩짝] : 바라는 것은 그저, 모두가 바르게 살아갈 수 있는 안녕의 땅. [쯩니] : 그걸 위해서라면, 우리는 어디까지든 나아간다! [쯩짝&쯩니] : ‘분기의 육십오성(함께 걸어가자, 우리들의 나라를)──’",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "[쯩짝] : 적의 모습 발견! 전력 공격! 뿌우~~우! [쯩니] : 어, 언니……? 괜찮아? 다들 보고 있는데? [쯩짝] : 어, 말도 안 돼?! 으, 으흠. 진지하게, 진지하게…… 에──잇! ──휴. 리더답게 잘 해낼 수 있었을까……?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_4",
+        "text": "[쯩짝] : 적의 모습 발견! 전력 공격! 뿌우~~우! [쯩니] : 어, 언니……? 괜찮아? 다들 보고 있는데? [쯩짝] : 어, 말도 안 돼?! 으, 으흠. 진지하게, 진지하게…… 에──잇! [쯩니] : ……역시 우리 언니는 귀엽구나……! 뿌우~우……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "아직 멀었어, 방심하면 안 돼.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "이것으로 다들, 행복하게……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "역시…… 아니.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "계속…… 함께야.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "[쯩짝] : 안녕하세요, 저는 쯩짝. 이 아이는 여동생인 쯩니. 둘이 합쳐서 하이바쯩이나 쯩 자매라고 불리고 있는 모양인데…… 마음에 드는 호칭으로 불러도 괜찮아요. [쯩니] : 하지만, 언니는…… 언니께선 왕이셔. 너무 친근하게 굴면, 안 돼. [쯩짝] : 정말이지, 닛짱도 참…… 하여간, 앞으로 신세 질게요.",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

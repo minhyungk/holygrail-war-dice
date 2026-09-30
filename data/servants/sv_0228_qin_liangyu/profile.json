@@ -1,0 +1,53 @@
+{
+  "servant_id": "sv_0228_qin_liangyu",
+  "source_id": 228,
+  "name_ko": "진양옥",
+  "name_short_ko": "진양옥",
+  "class": "lancer",
+  "ranks": {
+    "str": "C",
+    "end": "B",
+    "agi": "A",
+    "mana": "D",
+    "luck": "A",
+    "np": "B"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "숭정제사시가",
+    "ruby_ko": "무욕이자 충의의 노래",
+    "rank": "B",
+    "type_ko": "대인보구(자신)",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3035000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/303500/303500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/303500/303500b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 class), 사용자 검수 전.",
+  "traits": [
+    2,
+    101,
+    202,
+    300,
+    303,
+    404,
+    1000,
+    2001,
+    2008,
+    2012,
+    2631,
+    2858,
+    5000,
+    303500
+  ],
+  "lore": {
+    "detail": "중국의 정통 역사서인 ‘이십사사’. 그중 하나인 ‘명사’의 열전에서 유일한 ‘여성 무장’으로서 이름을 남긴 자가 진양옥이다."
+  },
+  "instant_death": false
+}

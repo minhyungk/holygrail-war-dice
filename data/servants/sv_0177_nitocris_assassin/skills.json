@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0177_nitocris_assassin",
+  "skills": [
+    {
+      "skill_id": "sk_presence_concealment",
+      "name_ko": "기척 차단",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_divinity",
+      "name_ko": "신성",
+      "rank": "B+",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_white_imperial_garments",
+      "name_ko": "흰색 어의",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_beach_panic",
+      "name_ko": "비치 패닉",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_high_road_of_the_hot_sands",
+      "name_ko": "열사의 왕도",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

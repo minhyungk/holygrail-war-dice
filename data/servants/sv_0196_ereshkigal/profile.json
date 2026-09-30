@@ -1,0 +1,60 @@
+{
+  "servant_id": "sv_0196_ereshkigal",
+  "source_id": 196,
+  "name_ko": "에레쉬키갈",
+  "name_short_ko": "에레쉬키갈",
+  "class": "lancer",
+  "ranks": {
+    "str": "A",
+    "end": "B",
+    "agi": "D",
+    "mana": "B",
+    "luck": "B",
+    "np": "A"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "tsundere",
+  "noble_phantasm": {
+    "name_ko": "영봉을 밟고 끌어안는 명부의 풀무",
+    "ruby_ko": "쿠르 키갈 이르칼라",
+    "rank": "A+",
+    "type_ko": "대산보구",
+    "special_attack": [
+      201
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3032000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/303200/303200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/303200/303200b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    101,
+    201,
+    301,
+    304,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2040,
+    2113,
+    2631,
+    2780,
+    2835,
+    2858,
+    5000,
+    303200
+  ],
+  "lore": {
+    "detail": "수메르 신화에 등장하는 명계의 신. 창처럼 생긴 새장을 자유자재로 다루고 어떤 때에는 적을 찔러 죽이기도 하며, 어떤 때에는 영혼을 가두기도 하고, 어떤 때에는 번개를 불러일으키는 무시무시한 명계의 지배자.\n그 탄생 비화 때문에 명계를 관리하는 직무를 맡게 됐고, 지상과 자유를 알지 못한 채 신대와 함께 사라진 여신.\n이 모습은 에레쉬키갈 여신으로서의 모습이 아니라 그녀와 파장이 비슷한 인간의 영혼을 매체로 삼은 의사 서번트 상태.\n명계의 여신답게 인간을 감시하는 것이 역할이라고 말하지만,\n“……너무 많은 사람이 명계에 와도 곤란하단 말이야…… 영혼을 가두는 우리를 만드는 것도 쉬운 일이 아니고…… 편하게 지낼 수 있는 거처를 제공할 수 있을까……”\n이처럼, 다른 이를 잘 돌보는 성품을 숨기지 못한다. 그야말로 명계의 (붉은) 천사."
+  },
+  "instant_death": false
+}

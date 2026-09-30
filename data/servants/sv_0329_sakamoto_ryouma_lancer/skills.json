@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0329_sakamoto_ryouma_lancer",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "C+",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "EX",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_morph_orochi",
+      "name_ko": "변화(오로치)",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_dragon_of_reform",
+      "name_ko": "유신의 용",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_white_orochi_of_takachiho",
+      "name_ko": "타카치호의 하얀 오로치",
+      "rank": "A-",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_ama_no_sakahoko_pair",
+      "name_ko": "아마사카호코(쌍)",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

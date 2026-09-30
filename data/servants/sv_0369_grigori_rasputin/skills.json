@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0369_grigori_rasputin",
+  "skills": [
+    {
+      "skill_id": "sk_territory_creation",
+      "name_ko": "진지작성",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_executor",
+      "name_ko": "대행자",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_baptismal_rite",
+      "name_ko": "세례비적",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_poison_resistance_secret",
+      "name_ko": "내독(기밀)",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_protection_of_faith_unique",
+      "name_ko": "신앙의 가호(독)",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_malicious_feast",
+      "name_ko": "악심축제",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_a2173900",
+      "name_ko": "죽지 않는 발루",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

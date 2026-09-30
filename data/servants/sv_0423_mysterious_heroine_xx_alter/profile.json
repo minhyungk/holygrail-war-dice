@@ -1,0 +1,61 @@
+{
+  "servant_id": "sv_0423_mysterious_heroine_xx_alter",
+  "source_id": 423,
+  "name_ko": "수수께끼의 히로인 XX(얼터)",
+  "name_short_ko": "히로인 XX 얼터",
+  "class": "foreigner",
+  "ranks": {
+    "str": "A+",
+    "end": "A+",
+    "agi": "C+",
+    "mana": "C",
+    "luck": "E-",
+    "np": "A+"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "창시섬광, 어지러워지면 혼돈",
+    "ruby_ko": "창시섬광, 어지러워지면 혼돈",
+    "rank": "A+",
+    "type_ko": "대인보구",
+    "special_attack": [
+      108,
+      1000
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_25016000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/2501600/2501600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/2501600/2501600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    117,
+    203,
+    301,
+    304,
+    404,
+    1000,
+    2001,
+    2002,
+    2007,
+    2010,
+    2113,
+    2631,
+    2731,
+    2795,
+    2838,
+    2924,
+    5000,
+    2501600
+  ],
+  "lore": {
+    "detail": "“엣짱…… 그렇게 불린 적도 있었죠.”\n운명의 소용돌이가 갈라놓은 것은 기억, 유대, 그리고 희망─── 그럼에도 여전히 은하에 맞서는 빌런의 긍지가 중력의 심연에서 그녀를 돌아오게 만들었다.\n무자비한 갑주를 두르고, 그래비티한 여름 옷차림도 잘 어울리는 빌런・포리너로서."
+  },
+  "instant_death": false
+}

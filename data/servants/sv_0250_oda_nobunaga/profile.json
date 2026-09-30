@@ -1,0 +1,58 @@
+{
+  "servant_id": "sv_0250_oda_nobunaga",
+  "source_id": 250,
+  "name_ko": "마왕 노부나가",
+  "name_short_ko": "마왕 노부나가",
+  "class": "avenger",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "C",
+    "mana": "B",
+    "luck": "B",
+    "np": "A-"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "avenger",
+  "noble_phantasm": {
+    "name_ko": "파순변생・삼천대천천마왕",
+    "ruby_ko": "파순변생・삼천대천천마왕",
+    "rank": "A-",
+    "type_ko": "대신보구",
+    "special_attack": [
+      2000
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_11007000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1100700/1100700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1100700/1100700b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    3,
+    110,
+    201,
+    301,
+    305,
+    405,
+    1000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2113,
+    2356,
+    2631,
+    2721,
+    5000,
+    1100700
+  ],
+  "lore": {
+    "detail": "제육천마왕・오다 노부나가. 과거, 현재, 미래에 걸쳐 다양한 노부나가가 지닌 가능성의 집합체라고도 할 수 있는 영기를 지녔다.\n어떤 특수한 공간에서만 현현 가능하다고 여겨지는 지극히 특이한 영령이지만, 어떻게 된 영문인지 지금 이곳에 현계를 이루었다."
+  },
+  "instant_death": false
+}

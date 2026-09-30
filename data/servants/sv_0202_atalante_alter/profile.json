@@ -1,0 +1,56 @@
+{
+  "servant_id": "sv_0202_atalante_alter",
+  "source_id": 202,
+  "name_ko": "아탈란테(얼터)",
+  "name_short_ko": "아탈란테 얼터",
+  "class": "berserker",
+  "ranks": {
+    "str": "C++",
+    "end": "C++",
+    "agi": "A+",
+    "mana": "B",
+    "luck": "E",
+    "np": "B+"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "berserker",
+  "noble_phantasm": {
+    "name_ko": "암천식사",
+    "ruby_ko": "타우로폴로스・스키아・세르모크라시아",
+    "rank": "A",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7030000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/703000/703000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/703000/703000b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    106,
+    201,
+    301,
+    304,
+    404,
+    1000,
+    2001,
+    2005,
+    2008,
+    2011,
+    2037,
+    2466,
+    2631,
+    2858,
+    5000,
+    703000
+  ],
+  "lore": {
+    "detail": "아탈란테가 자신의 보구인 칼리돈의 모피로 변신한 모습. 아탈란테 메타모로제라고도 한다."
+  },
+  "instant_death": false
+}

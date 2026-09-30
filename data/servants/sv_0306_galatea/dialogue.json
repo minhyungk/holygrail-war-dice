@@ -1,0 +1,318 @@
+{
+  "speaker": "sv_0306_galatea",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "점토를 반죽합니다. 쿠쾅.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "단숨에 깎아 냅니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "대담하게 부수죠.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "마스터피스를 향한 한 번의 끌질.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "단거리 유도 치즐, 발사.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "조각 기동을 보여드리겠습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "이 작은 수고가 중요한 겁니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "망가지지 않습니다. 아마도.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "완성은 빈틈없이.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_4",
+        "text": "풀 오픈 스컬프처.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "이렇게…… 난폭하게 취급하다니……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "파손에, 주의하세요……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "잠시 집중하겠습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "어라? 영차!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "이상적인 모습으로, 머물러 있어야만 해.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "손질은 중요합니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "지금의 저는 조각상이면서 인간이기도 합니다. 상황에 따라 적절한 취급을 하시는 게 좋겠지요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "저는 피그말리온 왕의 사랑과 아프로디테 님의 가호로 태어난 존재입니다. 지금의 제 복장과 장비에는 그 가호가 강하게 반영된 것이겠지죠. 직접 만나 뵌 적은 물론 없습니다만, 아프로디테 님에게는 진심으로 감사드리고 있습니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "극동에서는 오래된 물건이 요괴가 된다는 츠쿠모가미라는 개념이 있는 모양이더군요. 기물에 자아가 깃들고, 의사를 갖고 움직인다…… 무척 흥미롭습니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "최종 목표는 명확하게 존재합니다만, 그 이외에 특별히 좋아하는 모티프는 없습니다. 모든 것이 습작이라고 할 수 있지요. 리퀘스트가 있다면, 마스터가 좋아하시는 형태를 만들 수도 있겠습니다만…… 그것이 당신의 진실한 사랑을 받아들일 수 있을지는 미지수입니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "저는 이해합니다. 이렇게까지 마음이 맞는 이상, 역시 당신께서도 저희와 같은 방향성을 지니고 계시겠지요. 보증하겠습니다. 길은 멀더라도, 반드시 당신께서도 진실한 사랑에 도달할 수 있을거라고요. ……예, 당신께서도 언젠가 만나게 될 것입니다. 처음에는 생명이 없는 것이라도, 머지않아 인간으로서 만날 수 있을 겁니다. 그분과 인사할 수 있게 되는 날을, 저는 기대하고 있습니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것 말인가요? 물론 첫 번째는 피그말리온 왕입니다. 그것은 절대 흔들리지 않습니다. 움직이지 않는 조각상처럼. ──네 물론 지금 그건 농담인데 문제라도?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "물건을 함부로 다루는 사람은 싫습니다. 무생물이니까 상관없겠지, 라면서 난폭하게 던지거나, 차거나, 그런 짓을 하는 사람은 신용할 수 없습니다. 조심스럽게 말해서 물건 이하의 쓰레기이며, 따라서 만 번 죽어 마땅하다는 표현은 쓸 수 없습니다. 곤란하네요. 아니요, 표현은 몰라도 벌은 죽을 만큼 주겠습니다만.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "제 소원은 하나입니다. 그저, 그것이 성배로 이룰 수 있는 것인지 아닌지는 모르겠습니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "조각을 개시합니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "아프로디테 유닛 기동. 여신이여, 소원을 들어주소서. 저의 사랑으로써 조각상에 생명을 불어넣어 주소서. 조각되는 것은 재회의 기원. 신착종횡, ‘이상을 새기는 왕의 끌(피그말리온・치즐 아웃)’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "아프로디테 유닛 기동. 전 시스템 이상 없음. 목표 포착. 에어리얼・스컬프처 머누버를 실행합니다. 키프로스의 바람처럼, 지금── ‘이상을 새기는 왕의 끌(피그말리온・치즐 아웃)’! ……조각은 폭발합니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "일단 완성했습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "완성도는…… 노코멘트하겠습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "수복…… 불가능……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "왕이여…… 저는……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "처음 뵙겠습니다. 제 이름은 갈라테아라고 합니다. ……네, 알고 있습니다. 저를 소환할 수 있었다는 말은 곧, 당신께서도 피그말리온 왕과 같은 사랑을 지니고 계실 테지요. 서로, 진실한 사랑을 얻는 그때까지, 한결같이 끌을 휘두르도록 하겠습니다────",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "servant_id": "sv_0115_sakata_kintoki_rider",
+  "source_id": 115,
+  "name_ko": "사카타 킨토키",
+  "name_short_ko": "킨토키 라이더",
+  "class": "rider",
+  "ranks": {
+    "str": "A+",
+    "end": "B",
+    "agi": "B+",
+    "mana": "C",
+    "luck": "C",
+    "np": "B"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "야랑사구・황금질주",
+    "ruby_ko": "골든 드라이브 굿 나이트",
+    "rank": "B",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4023000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/402300/402300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/402300/402300b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    103,
+    201,
+    300,
+    303,
+    404,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2012,
+    2037,
+    2040,
+    2631,
+    2735,
+    2810,
+    2858,
+    5000,
+    402300
+  ],
+  "lore": {
+    "detail": "근사한 가죽 재킷. 쫙쫙 세운 헤어스타일. 그리고 허리에 빛나는 무시무시한 버클. 어디를 뜯어봐도 일본 분위기는 느껴지지 않는 번개의 라이더 Mr.골든, 즉 사카타 킨토키, 여기 등장!\n“나와 같이 타겠어? 그럼 헬멧과 슈트 체크 똑바로 하라고! 번개가 네 간덩이를 채가는 것보다 빨리 네 하트를 콱 붙들 거니까 말이야!”"
+  },
+  "instant_death": false
+}

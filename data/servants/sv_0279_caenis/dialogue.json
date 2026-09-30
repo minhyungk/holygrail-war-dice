@@ -1,0 +1,369 @@
+{
+  "speaker": "sv_0279_caenis",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "으랏!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "차핫!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "받아라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "죽어!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "이얍!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "이거면…… 어떠냐!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "이거나 먹어라, 먹고 죽어, 망할 놈아!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "포세이돈 템페스트!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "망할 것이!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "어엇차.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "좋은데, 좋은데!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "통하겠냐!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "해 주겠다고.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "나는 강해! 너는 죽는다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "칼날은 닿지 않아. 나에게는 일절!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          },
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "아앙? 신령 카이니스라고 했잖냐?! 아? 전승에 나오는 참주 카이니스는 신이 아니었다? 뭐 그야 그렇지. 왕을 자칭한 적은 있지만 신을 자칭한 적은 없었으니. 그런데 왜냐고? 그야 간단하지! 그런데 술이나 고기 없냐?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "후~ 현대의 술도 나쁘지 않구만. 그래서, 무슨 이야기 중이었더라? 아아, 신령입네 뭐네. 그야 간단해. 나는 그 망할 바다 얼간이, 해신 포세이돈에게 빌어먹을 가호를 받았어. 신의 힘이지. 심지어 그 녀석은 자신의 일부까지 나에게 넘겼어. 트라이던트 말이야, 해신의 삼지창. 해신 포세이돈의 상징 같은 물건이지. 그것을 내가 들고 있다는 것은 말이야. 성질이 뻗치긴 하지만, 나는 실질적으로 바다의 신이란 뜻이야. 하하하, 그렇지 않냐!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "포세이돈 이야기? 안 해. 왜 그 망할 놈 이야기 따위를. 아? 가호나 트라이던트를 받을 정도니까, 어지간히 깊은 관계가 있지 않냐고? 흐하하하하하하하하, 죽여 버린다! 그 이상 아무 말도 하지 마. 죽여 버린다!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal",
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "저, 바다를 보는 것을 좋아했었어요, 아주 옛날에는. 하지만, 어느 날 해변에서…… 아뇨, 아무것도 아니에요. 저는, 테살리아의 여자 카이니스는, 분명 그 날 죽고, 때로는 참주, 때로는 영웅 중 한 명으로서 이야기 되는 카이네우스가 태어난 것이겠지요. 그런데도, 이런 식으로, 카이니스의 이름으로 현계해 버린 것은, 어째서…… 인지……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal",
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "아? 여자 같았다? 내가? 네가 뭔가 착각한 거겠지? 흐하하하, 재미있는 소리를 다 하는구나, 너! 한 번만 더 말해 봐, 입을 떼기도 전에 모가지를 날려주마. 응? 농담이 아니야? 그런가, 그렇다면 그건, 카이니스의 잔재 같은 거겠지. 아니, 나도 지금은 진명 카이니스지만 말이야, 나 원 참…… 귀찮게 됐네, 정말. 뭐야, 그 얼굴, 어이, 야, 너, 짐작이든 상상이든 맘대로 해도 되는데, 동정만은 하지 말아 달라고, 마스터. 한 식구가 그런 짓을 했다간, 깜빡 죽여 버리는 수가 있으니까.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "새는 좋지. 좋아해. 아니거든, 닭고기를 말하는 거 아니라고. ……멍청한 자식.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "바다는 별로 좋아하지 않아. 바다 죽어.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배라…… 별로 느낌이 오질 않는단 말이지. 뭐, 술 따르는 데에는 쓸 수 있을까?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "나는, 신령이다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "이쪽은 진즉에 준비 완료다. 싸우자구.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "죽인다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "하하하하하하! 죽인다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "날아라, 날아라, 날아라! 어디까지라도, 나는 갈 수 있어! 그렇잖아?! ‘비상하라, 나의 금빛 큰 날개(라피타이・카이네우스)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "보고 있냐, 포세이돈! 아무도 누구도, 나의 높이까지 도달하지 못해! 날갯짓하겠어! ‘비상하라, 나의 금빛 큰 날개(라피타이・카이네우스)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "핫하앗! 내, 승리다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "너는 거기 죽어 있어.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "당연한 결과 아니겠냐!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_4",
+        "text": "나에게, 이길 수 있는 녀석은 없다고!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "칫…… 뭐냐고.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "더, 해 보자구……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "빌어먹을……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_4",
+        "text": "나는…… 나는, 이런……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "카이니스다. 진명 카이니스, 신령이다. …………칫. 뭐가 카이니스야. 웃기고 있네.",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

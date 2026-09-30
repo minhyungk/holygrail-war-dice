@@ -1,0 +1,57 @@
+{
+  "servant_id": "sv_0350_minamoto_no_tametomo",
+  "source_id": 350,
+  "name_ko": "미나모토노 타메토모",
+  "name_short_ko": "미나모토노 타메토모",
+  "class": "archer",
+  "ranks": {
+    "str": "A",
+    "end": "B++",
+    "agi": "B",
+    "mana": "D",
+    "luck": "EX",
+    "np": "A"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "중립·중용",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "굉침・궁장월",
+    "ruby_ko": "굉침・궁장월",
+    "rank": "B+",
+    "type_ko": "대함보구",
+    "special_attack": [
+      300
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2046000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/204600/204600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/204600/204600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    102,
+    202,
+    302,
+    305,
+    405,
+    1000,
+    2001,
+    2008,
+    2012,
+    2735,
+    2781,
+    2835,
+    2858,
+    5000,
+    204600
+  ],
+  "lore": {
+    "detail": "격이 다른 기량, 탁월한 완력, 그리고 인간을 벗어난 체격. 전란의 시대에 갑자기 출현한 전투 기계.\n친제이 하치로라고 자칭한 그 남자를, 사람들은 두려워하고, 혹은 경외했다. 시대에 동떨어졌고, 본래부터 인간의 영역에서도 동떨어져 있던 영웅.\n───그 화살은, 본래 무엇을 쏘는 것이었던가."
+  },
+  "instant_death": false
+}

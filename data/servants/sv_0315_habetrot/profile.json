@@ -1,0 +1,58 @@
+{
+  "servant_id": "sv_0315_habetrot",
+  "source_id": 315,
+  "name_ko": "하베트롯",
+  "name_short_ko": "하베트롯",
+  "class": "rider",
+  "ranks": {
+    "str": "E",
+    "end": "D",
+    "agi": "B",
+    "mana": "C",
+    "luck": "A+",
+    "np": "B"
+  },
+  "alignment": "good",
+  "alignment_detail": "중립·선",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "너에게 잣는 시간의 수레바퀴",
+    "ruby_ko": "스핀스터・하베트롯",
+    "rank": "EX",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4042000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/404200/404200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/404200/404200b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    103,
+    201,
+    302,
+    303,
+    404,
+    1000,
+    1177,
+    2001,
+    2008,
+    2009,
+    2011,
+    2012,
+    2037,
+    2810,
+    2847,
+    2858,
+    5000,
+    404200
+  ],
+  "lore": {
+    "detail": "스코틀랜드에 전해지는, 실 잣는 요정.\n목화나 아마 섬유에서 실을 잣고, 천을 짜서, 옷을 만든다고 알려져 있다.\n기본적으로 허리가 굽은 노파의 모습을 하고 있으며, 그 몸은 무척 작아서, 인간 어린아이 정도의 크기다.\n신부 수업을 하는 여성을 돕는 요정이기도 하며, 결혼을 앞두고 분주한 신부를 위해, 대신 신부 의상을 만들어 주는 꿈의 브라이덜 페어리."
+  },
+  "instant_death": false
+}

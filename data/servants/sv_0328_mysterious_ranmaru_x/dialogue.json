@@ -1,0 +1,360 @@
+{
+  "speaker": "sv_0328_mysterious_ranmaru_x",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "고 고!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "고우~ 고~우!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "에이, 야압!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "란마니움 광선!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "란란라안~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "에에~잇!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "쳐죽이지 말입니다~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "란마루 슈트랄! 죽어라~~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "란마니움 입자, 풀 버스트!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "아야야야야야야얏……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "큐웃!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "아프지 말입니다~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "하흥!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "하나, 두이…… 뭐였더라?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "으음…… 아, 생각났다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "란라란~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "가겠습니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "아무리 주인님이라 해도, 절도는 지켜주셔야지요! 주인의 응석을 받아주는 것만이 시동의 역할이 아닙니다! 때로 엄히 대해야 진정한 시동이지 말입니다!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "초 A급 시동인 란마루는, 주인의 온갖 수발을 들기 위한 기술을 체득하고 있지 말입니다! 그 증거가, 이 초 A급 시동 라이선스인데─── 어, 어라? 없어……! 호, 혹시, 어딘가의 별에 떨어트렸나……?! 재, 재발급받는 거 엄청 고생스러운데~……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "……주인님, 손톱이 길지 말입니다. 자, 자, 이 란마루가 깎아드리겠으니 이리로 오세요. 네, 움직이지 말아 주세요~? 이 후도 유키미츠의 날이 삐끗하면 큰일이…… 하나, 둘, 에에에에잇!! ……후, 이걸로 됐지 말입니다! 으흠? 왜 그러시나요? 땀을 잔뜩 흘리시고. ……아! 깎은 손톱은 숫자를 세어가며 전부 모아두어야지요!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "주인님, 주인님! 란마루의 비밀인 오른눈을 보여드릴까요? 그러면 옆으로 다가오시기를! 좀 더! ……네에! 어떤가요? 에헤헤. 란마루의 오른눈을 본 자는 란마루에게 죽거나, 주인이 되는 길 말고는 없습니다! 이로써 명실공히, 주인님은 란마루의 주인이지 말입니다!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "고향 별을 멀리 떠난지 가없는 세월…… 이 란마루도 마침내 평생의 주인을 얻을 수 있었습니다. 란마루들이 어째서 주인을 바라는지, 그것은 란마루도 알지 못했었습니다만, 이 별에서 주인님과 만나 뵈어, 비로소 이해한 기분이 들지 말입니다. ……네. 쭈욱……── 쭈욱 란마루를, 곁에 있게 해주세요, 주인님.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것 말입니까~? 물론 주인님이지 말입니다! 모든 란마루는 자신의 주인을 위해 살고, 주인을 위해서 죽는다. 그것이 란마루로 태어난 자의 운명이니까요!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것 말입니까~? 그거야 당연히 모반자죠! 네, 이것만큼은 모든 란마루의 총의입니다! 그 녀석들, 보이는 대로 싹 다 죽여버리지 말입니다……! 그 밖에는, 고추냉이 같은 것일까요? 코, 코가 찡하지 말입니다……",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배에 대한 소원 말입니까? ……그러네요. 어떤 일이 있어도, 주인님의 목숨을 지켜내는 것이지 말입니다. 모든 란마루가 그런 소원을 품고, 그렇게 살아가고 있습니다──",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "은하를 달리는 초 A급 시동! 수수께끼의 란마루 X, 지금 등장~!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "란마루가 싸우는 모습, 잘 지켜봐 주시기를. 주인님!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "좋~~았어! 썰어버리겠지 말입니다~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "모든 란마루의 마음을 모아! 불구대천의 저 녀석에게 SHOOT!! ‘란마루 X(오──키드 라운즈으으・엑────스)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "가지 말입니다~! 란란란란란룬! 란마루, 엑─────스!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "끝없는 여로 끝에, 간신히 발견한 보물. ──란마루는, 여기에! ‘란마루 X(오──키드 라운즈으으・엑────스)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "해냈다~! 이겼다아~! 주인님! 란마루는 해냈지 말입니다?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "자아, 수급의 수를 세어놔야……! 으엑?! 그런 건 됐다?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "주인님께 대적하다니, 콱 죽어도 당연합니다! 그렇죠~?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "라, 란마루에게는…… 아직 할 일이……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "이번에는 꼭…… 곁에서……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "부디…… 란마루……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "간신히, 간신히 찾아냈습니다…… 당신이 란마루의 주인이었습니까. 네! 이 란마루가 평생 곁에서 섬기겠으니, 뭐든지 분부만 내려 주시기를.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

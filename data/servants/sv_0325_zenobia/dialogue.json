@@ -1,0 +1,304 @@
+{
+  "speaker": "sv_0325_zenobia",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "싸울 방법은 있다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "길을 열어라.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "놓치지는 않는다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "이런 사용법도 있나.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "만만히 봤나 보구나!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "하아앗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "여왕이 명령한다. 쏴라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "모래폭풍조차 관통하리라──!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "그 패배와 비교하면, 이까짓 것……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "윽!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "동방의 여왕, 여기에 있나니.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "이 무게야말로, 나를……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "기죽지 마라, 반격!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "나의 소원은, 이 몸에 들러붙은 치욕을 털어내는 것이다. 그 점을 잊지 마라.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "이 모습은 물론 자랑할 만한 것이 아니다. 하지만 참담함과 치욕만을 곱씹을 뿐이냐고 하면, 그것도 조금 다르지. 그 이전의 문제다. 이것은, 내가 극복해야 할 사실 그 자체다. 전장에서 새겨진 패배의 상처를, 진실로 용기 있는 전사라면 감추지 않고 눈을 돌리지도 않는다. 요컨대 그런 뜻이지.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "너는 나를 상스러운 전사라고 여길지도 모르지만, 나는, 정숙함이란 중요한 것이라 여긴다. 함부로 이성과 접촉하거나, 노출이 많은 옷을 입는 것은…… 그…… 좋지 않아. 아니, 하고 싶은 말은 이해한다. 그래도다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "나는 패배 후, 목숨을 구걸하고 로마의 백성으로서 살아갔다고 전해지나 보더군. 나 자신은 기억하지 못한다. 내 기억은, 이 황금의 구속구와 사슬로, 개선식에 조리돌림당하던 시점까지다. 아마도 그 뒤에…… 너무나 큰 치욕에, 필시 나는 죽은 것일 테지. 내 마음이, 죽은 거다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "후세에 전해지는 나의 말로가 팔미라를 헐뜯기 위한 날조라면 그나마 낫다. 하지만 정말로 비굴하게 목숨을 부지한 것이라면, 나는 견딜 수가 없어. 나는 그 가능성을 부정하고 싶다. 최후까지 전사인 여왕으로서 싸우고, 치욕을 털어냈다고 믿고 싶다. 그러니까…… 싸우게 해다오. 내가, 결코 로마에게 받은 치욕에 굴복하지 않았다고, 나 자신이 확신할 수 있도록 자랑스러운 싸움을 하게 해다오. 네게도 안 좋은 이야기는 아닐 거다. 내가 추한 황금의 가쇄를 떨쳐낸 순간, 분명 너에게도 승리가 찾아올 테니. 그것은 필시 찬란할 거다. 이런 황금보다, 훨씬 더 말이야.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "대추야자를 알고 있나? 팔미라에도 많이 나던 야자나무 과일인데 말이지. 달아서 맛있다.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것이라…… 어리석고 무능한 로마 황제는 싫군. 그래서 우리가 통치하는 편이 낫다며 봉기하게 된 거다.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "위대한 힘을 가진, 성배…… 그것이 있으면, 팔미라는 로마에게 이겼을까……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "조아릴 마음은 없나 보군.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "전 부대, 전개!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "증명 개시── 전장에서 용맹한 여왕을 본 자여, 그대들의 몽상이 나의 가쇄를 부순다. 이 구속에서 해방됨으로써, 나는 나를 부정한다! ‘부서져라, 황금의 가쇄, 황금의 치욕(어센틱 트라이엄프)’!! 진정한 개선의 주인을 맞이하라……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "부정 개시── 천지에 증명할 것은 나의 환상의 무용. 그러므로 그 광채에 가쇄는 풀려 사라지리. 존재할 수 없는 이상으로써 나는 나를 증명한다! ‘부서져라, 황금의 가쇄, 황금의 치욕(어센틱 트라이엄프)’!! 갈채하라, 여왕의 개선이다──",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "원하는 것은 눈앞에 있다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "승리의 함성을 질러라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "더한 수모를, 받을 줄이야……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "미안하다…… 승리는, 또다시 멀리……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "나는 팔미라의 여왕 제노비아. 아처다. ……‘저 복장은 뭐지’라고 생각했군? 걱정 마라, 나도 그렇게 생각하고 있으니. 하지만 문제는 없다. 이것은 어쩔 수 없는 일이야. 이 구속도 신경 쓰지 마라. 나는 이 모습이라도 당당히 싸울 수 있다. 필시 그 사실을 증명하기 위해서─── 나는 지금, 이 자리에 있는 것이다.",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

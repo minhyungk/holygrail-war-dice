@@ -1,0 +1,62 @@
+{
+  "servant_id": "sv_0247_arjuna_alter",
+  "source_id": 247,
+  "name_ko": "아르주나(얼터)",
+  "name_short_ko": "아르주나 얼터",
+  "class": "berserker",
+  "ranks": {
+    "str": "A",
+    "end": "A+",
+    "agi": "A",
+    "mana": "A++",
+    "luck": "C",
+    "np": "EX"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "귀멸을 재정하는 회검",
+    "ruby_ko": "마하・프랄라야",
+    "rank": "EX",
+    "type_ko": "대계보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7033000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/703300/703300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/703300/703300b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    106,
+    200,
+    300,
+    303,
+    304,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2040,
+    2631,
+    2780,
+    2797,
+    2835,
+    2847,
+    2851,
+    2858,
+    5000,
+    703300
+  ],
+  "lore": {
+    "detail": "인간을 버리고, 땅을 버리고, 신이 되어, 하늘에 달했다. 완전하며 완벽한 세계를 위해 군림하는, 멸망의 신."
+  },
+  "instant_death": false
+}

@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0280_romulus_quirinus",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_independent_action",
+      "name_ko": "단독행동",
+      "rank": "B+",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_core_of_the_king_of_gods",
+      "name_ko": "주신의 신핵",
+      "rank": "B+",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_throne_of_quirinus",
+      "name_ko": "퀴리누스의 옥좌",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_divinity_transformation",
+      "name_ko": "신격전성",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_nine_lives_rome",
+      "name_ko": "사살하는 백 개의 머리・로마식",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

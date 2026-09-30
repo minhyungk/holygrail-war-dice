@@ -1,0 +1,57 @@
+{
+  "servant_id": "sv_0148_jaguar_warrior",
+  "source_id": 148,
+  "name_ko": "재규어맨",
+  "name_short_ko": "재규어맨",
+  "class": "lancer",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "B",
+    "mana": "E",
+    "luck": "B",
+    "np": "B"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "피할 수 없는 죽음의 발톱",
+    "ruby_ko": "그레이트 데스 크로",
+    "rank": "B",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3028000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/302800/302800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/302800/302800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    101,
+    201,
+    301,
+    305,
+    403,
+    1000,
+    2000,
+    2001,
+    2005,
+    2008,
+    2011,
+    2040,
+    2631,
+    2654,
+    2858,
+    5000,
+    302800
+  ],
+  "lore": {
+    "detail": "중남미에 전해지는 오랜 신령 중 하나. 재규어란 즉 ‘싸움’과 ‘죽음’을 상징하고, 각 시대의 중남미 문명에서 오랫동안 떠받들어진 존재이며, 과거에는 이따금 지상에 모습을 드러냈다고 한다. 선고전기의 올멕 문명에서는 재규어 신, 인간과 재규어의 혼혈…… “재규어 인간(재규어맨/웨어재규어)”상 등의 형태로 기렸다."
+  },
+  "instant_death": false
+}

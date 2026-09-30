@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0362_sen_no_rikyu",
+  "source_id": 362,
+  "name_ko": "센노 리큐",
+  "name_short_ko": "센노 리큐",
+  "class": "berserker",
+  "ranks": {
+    "str": "C+",
+    "end": "C",
+    "agi": "C",
+    "mana": "B",
+    "luck": "B-",
+    "np": "C"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "일기일회",
+    "ruby_ko": "일기일회",
+    "rank": "C",
+    "type_ko": "결계보구",
+    "special_attack": [
+      202
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7044000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/704400/704400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/704400/704400b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    106,
+    202,
+    301,
+    304,
+    405,
+    1000,
+    2001,
+    2008,
+    2631,
+    2847,
+    2858,
+    5000,
+    704400
+  ],
+  "lore": {
+    "detail": "전국시대부터 아즈치모모야마 시대에 걸쳐 널리 이름을 떨친 상인이자 다도인.\n아명은 타나카 요시로, 훗날의 법명은 센노 소에키, 호는 호센사이로 칭했다. 널리 알려진 리큐라는 이름은 거사로서의 호.\n‘와비차’라 불리는 일본 다도 중심 사상의 완성자로도 알려져 있다. 명물을 중시하는 기성의 가치관을 부정하고, 획기적인 변혁과 새로운 가치관을 자신의 차로 표현하여 세상에 내놓았다.\n또한 그 시대를 지배했던 도요토미 히데요시의 측근으로서 여러 다이묘에게도 은연한 영향력을 지니고 있었다."
+  },
+  "instant_death": false
+}

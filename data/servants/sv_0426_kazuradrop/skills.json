@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0426_kazuradrop",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_territory_creation",
+      "name_ko": "진지작성",
+      "rank": "EX",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_aversion_to_the_self",
+      "name_ko": "동속혐오",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_high_servant",
+      "name_ko": "하이 서번트",
+      "rank": "E",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_pixie_finger",
+      "name_ko": "픽시 핑거",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_sakura_eater",
+      "name_ko": "사쿠라 이터",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_moon_pupa",
+      "name_ko": "달의 번데기",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0001_mash_kyrielight",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_black_barrel",
+      "name_ko": "블랙 배럴",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_amalgam_goad",
+      "name_ko": "아말감 고트",
+      "rank": "D",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_paradox_cylinder",
+      "name_ko": "패러독스 실린더",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

@@ -1,0 +1,54 @@
+{
+  "servant_id": "sv_0055_darius_iii",
+  "source_id": 55,
+  "name_ko": "다리우스 3세",
+  "name_short_ko": "다리우스",
+  "class": "berserker",
+  "ranks": {
+    "str": "A",
+    "end": "A+",
+    "agi": "B",
+    "mana": "E",
+    "luck": "D",
+    "np": "A"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "질서·중용",
+  "alignment_verified": false,
+  "temperament": "berserker",
+  "noble_phantasm": {
+    "name_ko": "불사의 일만 기병",
+    "ruby_ko": "아타나토이 텐 사우전드",
+    "rank": "A+",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7011000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/701100/701100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/701100/701100b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    106,
+    202,
+    300,
+    305,
+    403,
+    1000,
+    2001,
+    2008,
+    2113,
+    2631,
+    2666,
+    2858,
+    5000,
+    701100
+  ],
+  "lore": {
+    "detail": "용맹한 고대 페르시아 왕. 기원전 4세기의 인물. 아케메네스조 페르시아 최후의 왕으로 알려진다. 마케도니아의 정복왕 이스칸다르의 “호적수”로 몇 번이나 그의 앞을 가로막았다."
+  },
+  "instant_death": false
+}

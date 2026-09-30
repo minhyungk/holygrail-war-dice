@@ -1,0 +1,52 @@
+{
+  "servant_id": "sv_0375_takasugi_shinsaku",
+  "source_id": 375,
+  "name_ko": "타카스기 신사쿠",
+  "name_short_ko": "타카스기 신사쿠",
+  "class": "archer",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "B",
+    "mana": "C",
+    "luck": "B-",
+    "np": "B+"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "초급유신・기병대",
+    "ruby_ko": "초급유신・기병대",
+    "rank": "B+",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2047000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/204700/204700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/204700/204700b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    102,
+    202,
+    301,
+    303,
+    405,
+    1000,
+    2001,
+    2008,
+    2631,
+    2858,
+    5000,
+    204700
+  ],
+  "lore": {
+    "detail": "막부 말기, 초슈에 위풍당당하게 나타난 유신 지사이자 이단아.\n요시다 쇼인이 주재한 학당 쇼카손주쿠의 문하생이며, 쿠사카 겐즈이, 요시다 토시마로, 이리에 쿠이치 등과 함께 쇼카손주쿠 사천왕으로 불리며 장래가 촉망되었다.\n언뜻 보기에는 차분하고 이지적인 미남 같지만, 실상은 파격적이며 재미만 있으면 뭐든 괜찮다는 난감한 성격이다.\n여하튼 자유분방하고, 독단적 행동을 당연히 여기는 독불장군 사장."
+  },
+  "instant_death": false
+}

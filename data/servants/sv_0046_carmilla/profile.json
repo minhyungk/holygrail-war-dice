@@ -1,0 +1,56 @@
+{
+  "servant_id": "sv_0046_carmilla",
+  "source_id": 46,
+  "name_ko": "카밀라",
+  "name_short_ko": "카밀라",
+  "class": "assassin",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "A",
+    "mana": "C",
+    "luck": "D",
+    "np": "B"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "assassin",
+  "noble_phantasm": {
+    "name_ko": "환상의 강철처녀",
+    "ruby_ko": "팬텀 메이든",
+    "rank": "C+",
+    "type_ko": "대인보구",
+    "special_attack": [
+      2
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6017000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/601700/601700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/601700/601700b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    2,
+    105,
+    201,
+    301,
+    304,
+    404,
+    1000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2631,
+    2858,
+    5000,
+    601700
+  ],
+  "lore": {
+    "detail": "그렇지만 아무도 말해주지 않았어! 아무도 이게 틀렸다고 말해주지 않았다고! 그래서 난 이런 꼴이 되어 버렸는데! 아아, 나의 진명은──엘리자베트 바토리!"
+  },
+  "instant_death": false
+}

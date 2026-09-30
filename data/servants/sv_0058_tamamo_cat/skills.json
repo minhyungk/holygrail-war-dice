@@ -1,0 +1,34 @@
+{
+  "servant_id": "sv_0058_tamamo_cat",
+  "skills": [
+    {
+      "skill_id": "sk_mad_enhancement",
+      "name_ko": "광화",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_monstrous_strength",
+      "name_ko": "괴력",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_malediction_cat_sunshine",
+      "name_ko": "주층・묘일조",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_morph_lunch",
+      "name_ko": "변화(런치)",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

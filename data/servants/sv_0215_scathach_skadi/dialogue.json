@@ -1,0 +1,297 @@
+{
+  "speaker": "sv_0215_scathach_skadi",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "앗하하.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "여리군, 여려.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "이렇게다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "후후후.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "어떨까.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "여이차.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "흐흥. 조촐하게.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_8",
+        "text": "투쾅~☆",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "건방지구나! 신 앞에 조아려라.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "오딘, 나에게 힘을 다오.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "허락하마. 여기서 너는 끝나거라.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "아아아아아아아아아!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "윽!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "어~느~것~으~로~할~까~나~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "옛 룬이여.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "후훗. 이런 것도 할 수 있다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          },
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "응? ……아니, 그게 아니다. 스카사하가 아니다. 스카사하 님이니라. 스카사하=스카디다. ……보도록 해라. 피부의 탄력으로는 내 쪽이 분명히 더 낫지. ……헉. 그만, 그만. 함부로 서슴없이 다가오지 마라. 나는 인간의 열을 그다지 좋아하지 않는다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "더~워~ ……헉. 뭐, 뭐냐, 그만두거라. 방금 말은 듣지 못한 것으로 해라. ……죽어. 얼어 죽어랏. 얼음이 되어 나를 차게 식히지 못할까.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "너에게…… 한 가지 비밀을 밝혀두지. 이문대의 나는 많은 신들에게 사랑받으며 끊임없이 구혼 받던 여신이었으나…… 정신이 들고 보니 라그나로크 끝에 모든 신들은 자취를 감추고 있었다. 나는 북유럽 세계에 남은 마지막 신이 되고 만 것이야. 즉…… 그러니까…… 말이다. ‘노처녀’라거나 ‘혼기를 놓쳤다’ 같은 말은, 내 앞에서 함부로 입에 담지 말거라. 알겠지……? 알~겠~지~? 대답은?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "겨울은 좋아…… 생명이 고요한 잠에 들어. 봄도 좋다. 생명이 화사하게 싹트지. 양쪽 다, 좋은 것이다.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "불은 별로 좋아하지 않아. 사람에게는 필요한 것이라고 오딘은 말했지만.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배 따위 불필요. 나는 신이다. 바라는 자가 아니라, 바람을 들어주는 자이다. ……허, 허나…… 꼭 좀 받아달라면 못 받아줄 것도 없다만?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "사랑할 것인가, 죽일 것인가……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "정했다…… 너는…… 나의 성의 그림자에 녹아 버릴 수밖에 없겠구나.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "나의 이름에 이어져있는 힘, 나의 목소리에 응하여 문을 열어라…… 오너라, 나의 성, 그림자의 성. “죽음이 흘러넘치는 마경으로 향하는 문(게이트 오브 스카이)”! 자, 나의 수하들이여! 나의 적을 죽여라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "내가 모르는 그림자의 성. 내가 소유한 그림자의 성. 하늘로부터 오라, 여기로 오라. “죽음이 흘러넘치는 마경으로 향하는 문(게이트 오브 스카이)”! 나에게, 승리를 가져오도록 하라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "나의 이름에 이어져있는 힘, 나의 목소리에 응답하여 문을 열어라…… 오너라, 나의 성, 그림자의 성. “죽음이 흘러넘치는 마경으로 향하는 문(게이트 오브 스카이)”! 자, 나의 수하들이여! 나의 적을 죽여라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "무언가, 밟아버린 건가?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "떨고, 얼어붙어, 산산조각 날 때까지. 포기하는 것은 허락하지 않겠다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "힘이, 모자랐나…… 윽, 꼴사납군……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "누구…… 누구 없느냐? 나를 구할 자는……?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "……어라, 작은 존재인가. 죽음의 빙설에 군림하는 이 몸을 부른 것은. 나는 신령 스카사하=스카디. 북유럽 옛 신들의 신부이자, 과거에 여왕이었던 이문대 서번트다.",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

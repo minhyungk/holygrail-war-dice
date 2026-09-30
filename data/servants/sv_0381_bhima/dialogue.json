@@ -1,0 +1,421 @@
+{
+  "speaker": "sv_0381_bhima",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "하늘까지 날아가라!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "자, 자, 찔러 죽여 버린다!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "이걸로 갈까!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "접어 주마!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "소용돌이쳐라, 바람이여!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "맨손으로 즐겨 보자고!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "쓸 수만 있으면 뭐든 상관없어!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "바유의 아들, 비마다!!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "오늘 바람은~ 날뛴다고!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "좋은 스파이스군!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "어이쿠!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "팔팔하군!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "제법인데.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "우오오오오오!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "좋은 바람이 부는군……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "음, 음…… 맛있다! 한 잔 더!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "음, 음…… 크으~! 잘 받는데!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_5",
+        "text": "하누만…… 하울링!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "나는 왕자지만 딱딱한 격식은 별로 좋아하지 않아. 말투는 좀 거칠어도 딱히 경의를 보내지 않는 건 아냐. 뭐, 익숙해지면 괜찮아.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "나는 요리가 취미거든. 배가 고파지면 언제든 말해라? 재료만 있으면 휴대 식량 따위보다는 나은 것을 먹어줄 수 있어.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "요즘 깨달은 건데…… 네 옆은 언제나 좋은 바람이 부는 기분이 들어. 이유는 모르겠지만, 나쁘지 않아.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "무기 따윈 솔직히 말해 아무거나 상관없지만, 아무래도 바유의 가호가 나에게 이 기창을 들게 해준 모양이야. 이것은 역시나 감사히 쓰고 있지. 뭐, 흥분하면 주변의 나무라도 뽑아다가 쓰겠지만.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "나에 대해선 믿음직한 형님이라고 생각해. 뭐, 동생이기도 하지만 그 부분은 넘어가고. 하여간에 힘과 몸을 쓰는 일이라면 나한테 맡겨. 나찰이라도 둘로 접어 주마.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "알면서 왜 그래? 좋아하는 것은 요리야. 뭐, 먹는 쪽도 좋아하지만. 미안한데 나는 무지막지하게 먹는다구?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "도박은 싫어. 전혀 잘하지도 못하는데 도박을 좋아하고, 금세 푹 빠져버리는 가족이 있어서 말이야. 정말 난리도 아니었지…… 아니, 진짜로……",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배라. 그만한 힘이 있는 그릇을 쓰면 혹시 본 적도 없는 요리를 만들 수 있을지도…… 엉? 벌써 사고가 한 번 났었다고? ……핫핫핫핫하! 나 말고도 그런 호기로운 생각을 하는 녀석이 있었을 줄이야!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "힘이나 겨뤄볼까!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "어이, 이봐, 즐거워 보이는데!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "그 용기는 가상한걸?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "조리, 개시다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "나의 피에 잠든 풍신의 힘이여, 지금에야말로 눈을 번쩍 떠라! 오오오오오오오옷!! ‘풍신의 아이, 여기 있노라(마루티 바유푸트라)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "나는 풍신의 아들, 강력무쌍을 나타내는 자! 폭풍의 힘이여, 모여서 나의 손에!! 날아가라!! ‘풍신의 아이, 여기 있노라(마루티 바유푸트라)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "자~ 조리를 시작하기로 할까! 도구는…… 이거다! 간다, 짜식아!! 강불로 이렇게 하면, 완성이다!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_4",
+        "text": "나의 피에 잠든 풍신의 힘이여, 지금에야말로 눈을 번쩍 떠라! 오오오오오오오옷!! ───아직 안 끝났다!! 초・풍신갑옷, 장착! 놓치지 않는다구! ‘풍신의 아이, 여기 있노라(마루티 바유푸트라)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_5",
+        "text": "나는 풍신의 아들, 강력무쌍을 나타내는 자! 폭풍의 힘이여, 모여서 나의 손에!! 날아가라!! ───아직 안 끝났다!! 초・풍신갑옷, 장착! 놓치지 않는다구! ‘풍신의 아이, 여기 있노라(마루티 바유푸트라)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_6",
+        "text": "나의 피에 잠든 풍신의 힘이여, 지금에야말로 눈을 번쩍 떠라! 오오오오오오오옷!! ───아직 부족할 테지? 더 먹으라고! 배를 가득…… 채워라!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_7",
+        "text": "자~ 그러면 조리를 시작하기로 할까! 도구는…… 이거다! 간다, 짜식아!! ───아직 이 정도로는 안 끝난다!! 마지막 마무리다! 맛있어져~라! 비밀의 맛 펀~치!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "운동했더니 배가 고파졌는걸.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "더 먹고 싶다고? 좋지!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "그래, 뭘 먹고 싶냐?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_4",
+        "text": "잘 먹었습니다, 요!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "배, 고파졌네……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "진짜냐……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "미안…… 방심했다……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_4",
+        "text": "다음번에는 죽인다……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "그래, 비마다. 잘 부탁한다. 아니, 첫인사 정도는 제대로 해야 하려나? 형제들이 보고 있을지도 모르니. ……나는 판다바 오왕자 중 한 명이자 풍신의 아들, 비마. 귀하의 힘이 되고자 찾아왔다. 앞으로 잘 부탁한다. ……이 정도면 되나? 그건 그렇고, 뭔가 먹겠냐?",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

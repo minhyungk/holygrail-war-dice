@@ -1,0 +1,59 @@
+{
+  "servant_id": "sv_0099_queen_medb",
+  "source_id": 99,
+  "name_ko": "여왕 메이브",
+  "name_short_ko": "메이브",
+  "class": "rider",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "B",
+    "mana": "C",
+    "luck": "EX",
+    "np": "A+"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "사랑하는 나의 강철전차",
+    "ruby_ko": "채리엇 마이 러브",
+    "rank": "B+",
+    "type_ko": "대군보구",
+    "special_attack": [
+      1
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4013000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/401300/401300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/401300/401300b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    103,
+    201,
+    301,
+    304,
+    405,
+    1000,
+    2001,
+    2008,
+    2009,
+    2011,
+    2037,
+    2113,
+    2631,
+    2780,
+    2858,
+    5000,
+    401300
+  ],
+  "lore": {
+    "detail": "켈트 신화, 얼스터 전설에 등장하는 코노트의 여왕. 수많은 왕이나 용사와 약혼하고 결혼하며, 때로는 육체적인 관계만을 쌓은 사랑 많은 소녀. 영원한 귀부인.\n얼스터 전설 최대의 전쟁을 일으킨 장본인으로, 자신을 거역한 얼스터의 용사 쿠 훌린의 목숨을 노렸다."
+  },
+  "instant_death": false
+}

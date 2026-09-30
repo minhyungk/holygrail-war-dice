@@ -1,0 +1,56 @@
+{
+  "servant_id": "sv_0019_musashibou_benkei",
+  "source_id": 19,
+  "name_ko": "무사시보 벤케이",
+  "name_short_ko": "벤케이",
+  "class": "lancer",
+  "ranks": {
+    "str": "A",
+    "end": "B+",
+    "agi": "C",
+    "mana": "D",
+    "luck": "C",
+    "np": "C"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "오백나한 보타락도해",
+    "ruby_ko": "오백나한 보타락도해",
+    "rank": "EX",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3006000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/300600/300600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/300600/300600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    101,
+    202,
+    301,
+    303,
+    402,
+    1000,
+    2001,
+    2008,
+    2012,
+    2631,
+    2735,
+    2810,
+    2849,
+    2858,
+    5000,
+    300600
+  ],
+  "lore": {
+    "detail": "미나모토노 요시츠네와 함께 활약한 일본 역사상 가장 유명한 승병. 현대에 이르러서도 가부키나 노래 등 폭넓은 이야기를 통해 사랑받고 있다. 벤케이의 우뚝 서기, 벤케이의 약점 등 현재 전해지고 있는 고사도 많다."
+  },
+  "instant_death": false
+}

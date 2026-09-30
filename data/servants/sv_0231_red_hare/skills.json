@@ -1,0 +1,34 @@
+{
+  "servant_id": "sv_0231_red_hare",
+  "skills": [
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "EX",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_running_a_thousand_li_horse",
+      "name_ko": "천리질주(말)",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_various_martial_arts_horse",
+      "name_ko": "무예백반(말)",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_battle_maneuver_horse",
+      "name_ko": "전투기동(말)",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

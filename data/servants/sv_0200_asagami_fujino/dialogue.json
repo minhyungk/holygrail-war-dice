@@ -1,0 +1,267 @@
+{
+  "speaker": "sv_0200_asagami_fujino",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "휘어져라.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "거기군요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "핫, 흡! 우후훗, 우후훗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "위험해요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "보이는 장소에 있으니까요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "우윽…… 으아아아앗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_2",
+        "text": "윽.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_1",
+        "text": "지독한 짓을 하시는군요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "내가 더 강해.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "너무 부산스럽게 움직이지 마세요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것. 굳이 말하자면, 공포영화일까요. 사람의 다양한 감정을 보는 것은 많은 공부가 됩니다. 그 화면도 빨개서 자극적이잖아요?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것은 잘 모르겠습니다. 저는 통각…… 오감 중의 촉각이 마비됐기 때문인지, 희로애락을 잘 느끼지 못해요. 그것은 그렇다 치고, 무서운 것은 시키 씨입니다.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "소원을 이루어 주는 마법. 그런 것이 있다고는 생각하지 않지만, 성배가 있다면 저의 몸도 고칠 수 있을까요. 하지만 몸이 고쳐지면, 저는……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "저는 서번트로써 당신에게 소환되었습니다. 시키 씨와 마찬가지로 세계가 종말을 맞이한 동안만 허락된, 쓰다 버릴 전력…… 인 거지요? 저기, 오해하고 계신 것 같으니 말씀드릴게요. 저는 지금의 제가 싫지 않아요. 그러니까 부디 당신도 가슴을 펴세요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "에잇! 이얍! 합! ……앗, 보…… 보고 계셨나요, 지금 것?! ……네, 서번트가 되고 난 뒤로는 이렇게…… 원래의 자신과는 다른 내가 된 기분이라…… 솔직히 조금 설레요. 저도 시키 씨처럼 씩씩하게 싸울 수 있을지도 모른다는 생각이 들어서…… 후후훗, 참 철이 덜 들었네요, 저도.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "왜곡의 마안의 원리가 궁금하다고요? 저의 눈은 물체를 평면적으로 인식합니다. 가만히 집중해서 보면, 그 대상이 종이 위에 그려진 것처럼 보이고…… 그 뒤에 에잇하고 그 종이를 집어 들어 비틀어 버린다는 느낌이죠…… 그러니까 조금, 곤란해요. 최근에는 그…… 당신이 캔버스에 그려진 사람처럼 보이기 시작해서……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal",
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "식사는 하셨나요? 물통에 따뜻한 차는요? 만일의 경우에 대비한 연락 수단은? ……좋아요, 전부 잘 챙기셨군요. 그렇다면 저도 안심입니다. 그러면 가 볼까요, 마스터. 가는 곳에 무엇이 나타나더라도 걱정하지 마세요. 제가 있는 한, 당신을 위험에 처하게 만들지 않겠습니다. 그리고 가끔은 아사가미 씨가 아니라…… 후지노, 라고 불러 주시지 않겠어요?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "네, 저는 보고만 있을 테니, 부디 하고 싶은 대로 하세요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "하나, 둘, 셋. 조금, 적은 게 아닌가 싶네요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "휘어져라…… 휘어져라…… 휘어져어어어어!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "아파, 아파요…… 선배…… 전부…… 부서져 버려!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "난폭한 분들이시군요. 저, 당신들이 싫어요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "여러분, 예의 바른 분들이라 다행입니다. 일망타진이라는 것이군요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "몸이 움직이지 않아. 저, 이미 부서져 있었군요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "조금, 잘게요……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "안녕하세요, 젊은 마술사 씨. 아사가미 후지노라고 합니다. 그러니까…… 클래스는 아처, 라고 말씀드리면 될까요…… 할 줄 아는 것은 물건을 구부리는 마술 같은 초능력뿐이라…… 저, 도움이 될 수 있을까요……",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

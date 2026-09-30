@@ -2,7 +2,7 @@
 // 규칙 계산은 하지 않는다 (06-repo-structure.md §2).
 import { INTEL } from '../engine/intel';
 import { PHASES, TILES } from '../data/constants';
-import { availableMasterIds, availableServantIds, loadClassDialogue, loadMasterProfiles, loadNarrationCommon, loadRunDialogue, loadServantProfiles, loadServantSkills } from '../data/load';
+import { availableMasterIds, loadAllServantProfiles, loadClassDialogue, loadMasterProfiles, loadNarrationCommon, loadRunDialogue, loadServantProfiles, loadServantSkills } from '../data/load';
 import type { ServantProfile } from '../data/schema';
 import { type AnyEvent, EventLog } from '../engine/events';
 import { planRun, playRun, type RunAnswer, type RunData, type RunPlan, type RunPrompt, type RunResult } from '../engine/run';
@@ -16,8 +16,7 @@ export interface Catalog {
 
 /** 메인·소환 화면용: 서번트 목록 (프로필만) */
 export async function loadCatalog(): Promise<Catalog> {
-  const servants = await loadServantProfiles(availableServantIds().sort());
-  return { servants };
+  return { servants: await loadAllServantProfiles() };
 }
 
 export function newSeed(): number {
@@ -219,7 +218,7 @@ export function play(s: Session, e: AnyEvent, labels: { unknown: string; cls: Re
         }
         break;
       case 'condition_recovered':
-        if (e.data.faction === P) lines.push(sys(T.sys.recovered(T.condition[e.data.from]!, T.condition[e.data.to]!)));
+        if (e.data.faction === P) lines.push(sys(T.sys.recovered(T.condition[e.data.from]!, T.condition[e.data.to]!, e.data.cause)));
         break;
       case 'betrayal_attempted':
         lines.push(sys(T.sys.betrayal));

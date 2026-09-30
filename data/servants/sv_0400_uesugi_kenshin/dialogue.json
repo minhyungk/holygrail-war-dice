@@ -1,0 +1,482 @@
+{
+  "speaker": "sv_0400_uesugi_kenshin",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "뛰어라! 호쇼츠키게!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "방해됩니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "아하하하하하!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "하나둘, 콰~앙!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "냐───!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "두둥──!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "뚫고 간다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_8",
+        "text": "날아가 버려───!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_9",
+        "text": "냐냐냐냐, 냐───!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_10",
+        "text": "죽어라───!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_11",
+        "text": "아하하하! 불태워라~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_12",
+        "text": "비천대포!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_13",
+        "text": "느려느려느려!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_14",
+        "text": "쓱싹 켄신!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_15",
+        "text": "흐아~앗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "앗하하하하하! 박살 내라───!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "켄신 필살, 1인 차륜진!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "달려라, 호쇼츠키게! 냐───!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_4",
+        "text": "하나, 둘, 셋, 이후로 생략! 이얍───!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "이 정도로 쓰러질 켄신이, 아닙니다……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "냐앗.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "으으으으음……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "뭐라고?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "에치고에서 왔습니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "역시 말은 좋네요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "운은 하늘에, 갑옷은 가슴에, 공적은 발에 달렸노라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "전력으로 갑니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_5",
+        "text": "읏차. 딱 한 잔, 딱 한 잔만이니까요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_6",
+        "text": "워워, 조금 진정하죠.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "네, 이번에는 룰러로 현계했습니다. 솔직히 라이더라도 랜서라도, 뭐하면 세이버라도 문제없다고 생각합니다만, 이렇게 전방위로 싸움을 건다면 재정자인 룰러가 괜찮을까 싶었거든요. 아, 혹시나 해서 말해두겠습니다만, 분별없다는 소리 같은 건 하기 없기예요?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "네, 재정자로서 꼼꼼히 감시하고 있으니 안심하시길. 이 켄신이 있는 한, 전장에서의 룰 위반은 허락하지 않습니다. 발견되자마자 즉시 죽일 테니, 다들 안심하고 서로 죽여주세요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "아하하하하하! 네? 눈이 웃지 않는다? 그런가요. 으음…… 저는 잘 모르겠습니다만, 유쾌한 기분인 건 사실이랍니다. 어째서일까요? 당신과 있을 때 저는 문득 그런 기분이 들게 되더라고요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "신기한 일이네요. 비사문천의 화신으로서 숭상받고, 인간이지만 인간이 아닌 존재로서 가신들에게도 두려움을 사던 저를, 어떻게 이렇게 아무렇지도 않게 대할 수 있는지…… 아뇨, 당신에게 그건 아무것도 아닌 일이겠지요. 그런 모습이야말로 당신이 당신인 이유. 후훗, 부디 그런 자세를 잃지 마시길.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "당신과 같이 싸우고, 간신히 알 것 같다는 기분이 듭니다. 이기지 못해도 싸우고, 패배한다 해도 저항한다. 소중한 무언가를, 살리기 위해 산다…… 인간의 마음을 모르는 저에게, 당신이 가르쳐준 겁니다. 그래요, 의란, 인간이 인간일 때의 아름다움이로군요. 당신과 만난 이 운명에, 감사를.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것 말인가요? 술은 일단 제쳐두도록 하고, 마음껏 내달리는 것일까요. 말은 물론이고 오토바이로 하는 것도 나쁘지 않습니다. 어떤가요? 저와 한번 함께 고갯길이라도 달려 보는 건. 에치고 라이더 켄신의 코너링, 제대로 보여드리지요!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫은 것…… 지는 건 싫습니다! 뭐 이렇게 말해도, 저는 진 적이 없지만요. 네, 생애 무패의 군신이라서요. 네? 두 번 정도 패배했다는 기록이 있다고요? 앗하하하하하하! 안 들립니다~",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배에 빌 소원은 딱히 떠오르지 않습니다만, 성배를 건 대전이라면 이야기는 별개지요. 그 어떤 고금의 명장들이 모이더라도 이 켄신의 승리에 흔들림은 없습니다. 어, 룰러는 참가 못 한다? 판정만 내려야 한다? ……그, 그럴 수가…… 재미없다냥……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "켄신 등장! 그래서 나쁜 사람은 어느 분인가요? 흐음흐음…… 그러면 한꺼번에 죽여버리죠!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "나야말로 비사문천의 화신이자 에치고의 군신, 우에스기 켄신! 모든 전장에서, 나의 의를 보이겠다!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "비사문천의 가호가 있기를! 닥치는 대로 베라베라베라───!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "자, 그러면 이번 싸움, 이 켄신이 나서기에 합당할지 어떨지. 후후후후.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "전신─── 지금, 여기서, 모든 것을……! 비사문천의 한 자루 칼, ‘시라누이’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "전신───! 이 순간 비사문천이 신위를 빼어 드나니! 비천팔상・시라누이의 태도!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "보탑이여, 나의 명운을 개척하라. 간다, 비사문천의 가호 있으리! ‘비천팔상・시라누이’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_4",
+        "text": "무기 따윈 상대가 죽는다면 뭐든 좋습니다. 그러므로 이번에는 이것! ‘비천팔상・시라누이’! 냐───!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "나야말로 불패의 군신, 우에스기 켄신!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "어라? 항복인가요? 그러면 물러나세요. 예, 복수하러 찾아오는 건 언제든 환영입니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "몇 명이라도 나의 의 앞을 막아설 수 없을지니!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_4",
+        "text": "냐냐냥~! 이 켄신짱에게 패배는 없습니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "조금, 지나치게 신을 내버렸나요…… 냐, 냐……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "몰라도, 된다…… 그래, 몰라도……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "훌륭한 솜씨로군요, 이번에는 물러나도록 하지요. ……다음에는 죽이겠습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_4",
+        "text": "제가, 과음을 했다, 고요……?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "나야말로 비사문천의 화신이자, 에치고의 군신, 우에스기 켄신! 지금부터 그대를 수호하고, 그 길을 막아서는 모든 걸 멸하겠습니다. 네, 드디어 최강무적, 영겁불패의 완전형태로 격을 올린 카게토라짱, 다시 말해 켄신짱을 잘 부탁드리겠습니다, 마스터!",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

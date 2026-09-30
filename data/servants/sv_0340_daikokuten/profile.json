@@ -1,0 +1,63 @@
+{
+  "servant_id": "sv_0340_daikokuten",
+  "source_id": 340,
+  "name_ko": "대흑천",
+  "name_short_ko": "대흑천",
+  "class": "caster",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "D",
+    "mana": "A",
+    "luck": "A",
+    "np": "C"
+  },
+  "alignment": "good",
+  "alignment_detail": "중립·선",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "서정토",
+    "ruby_ko": "서정토",
+    "rank": "A",
+    "type_ko": "대군보구",
+    "special_attack": [
+      201
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5047000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/504700/504700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/504700/504700b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    200,
+    302,
+    303,
+    404,
+    1000,
+    2000,
+    2001,
+    2005,
+    2008,
+    2011,
+    2037,
+    2040,
+    2632,
+    2810,
+    2821,
+    2851,
+    2858,
+    2881,
+    5000,
+    504700
+  ],
+  "lore": {
+    "detail": "일본에서는 칠복신 중 하나로서 친숙한 복신. 단, 이번에 서번트로서 현계한 것은 신 본체가 아니라 심부름꾼인 쥐들.\n따라서 본래 모습보다 영격은 상당히 낮으며, 할 수 있는 일도 한정적이다. 구체적으로는───\n“주먹밥이라면, 잘~ 쥐어서 드리겠어요” “번식이라면, 맡겨주세요!”\n───얼쑤, 경사로구나, 경사로구나."
+  },
+  "instant_death": false
+}

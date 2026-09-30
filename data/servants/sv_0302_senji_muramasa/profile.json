@@ -1,0 +1,54 @@
+{
+  "servant_id": "sv_0302_senji_muramasa",
+  "source_id": 302,
+  "name_ko": "센지 무라마사",
+  "name_short_ko": "무라마사",
+  "class": "saber",
+  "ranks": {
+    "str": "B",
+    "end": "A",
+    "agi": "D",
+    "mana": "E",
+    "luck": "B",
+    "np": "A+"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "무원의 검제",
+    "ruby_ko": "츠무카리 무라마사",
+    "rank": "A+",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1049000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/104900/104900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/104900/104900b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    100,
+    202,
+    301,
+    305,
+    405,
+    1000,
+    2001,
+    2008,
+    2075,
+    2631,
+    2654,
+    2858,
+    5000,
+    104900
+  ],
+  "lore": {
+    "detail": "이세노쿠니 쿠와나의 도공. 분키 무렵(1500년 초)의 호칭은 우에몬노죠. 전국시대에 가장 날카로운 칼을 만들던 도공 가문의 초대로 여겨진다.\n(조지 무렵(1360년대)의 무라마사가 초대이며 오에이 무렵(1400년대 초엽)까지 3대가 이어졌다는 에도 시기의 자료도 있지만, 무라마사 가문이 제작한 칼 중에서 확인되는 가장 오래된 칼은 분키 원년(1501년)에 제작된 것. 이 때문에 본 작품에서는 분키 연간의 무라마사를 초대로 삼았다)\n‘영령검호 칠번승부’에서는 억지력이 파견한 영령으로서, 백지화 지구에서는 ‘이성의 신’에게 소환된 영령으로서 등장. 그 내면, 그 진상은, 과연───\n“어엉? 수수께끼고 신비고 뭣도 없어! 나는 납득이 가는 결과물을 만들 수 있다면 그걸로 족해!”"
+  },
+  "instant_death": false
+}

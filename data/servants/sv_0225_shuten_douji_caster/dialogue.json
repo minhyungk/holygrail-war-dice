@@ -1,0 +1,290 @@
+{
+  "speaker": "sv_0225_shuten_douji_caster",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "엿~차 엿~차.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "후후후훗.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "어떨랑공.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "후훗, 골든 뭐시기~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "그레 나올 기가?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "못됐데이……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "꼴깍꼴깍…… 푸하아, 끓어오르네.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "자, 앉아라. 착하데이, 착해.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "이 모습? 호법소녀인데, 그게 뭐 문제 있나? 당신 취향하고 다르다카마 좀 봐도고. 응~ 와? 후훗. 뭐꼬. 우예 돼있나 궁금하나?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "이게 뭔지는 알제? 그래그래, 이바라키가 안 있나, 무슨 ‘테레비’라 카는 걸 보다가 오니한테는 저런 거 없나~? 카길래, 뭐 없는 것도 아이라 캤지. 방편? 꼭 그런 것도 아인데 말이제. 후후훗.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "인간 세상은 인간이 지키는 법이제? 검비위사니, 무사니, 와 있다 아이가. 그라마 오니 세상은 우예 돼 있겠노. 뭐. 검비위사 같은 건 없다만. 비슷한 기야, 있기는 있거든. 아~ 이름은 뭐라 카더라?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "요새는 우예 됐을랑공. 나는 잘 모르겠다. 오니, 한 마리도 없는 건 아이지 싶은데, 오니 세상이 우째우째 이어지고 있으마, 검비위사 비스므리한 것도 있겠제. 그카이 뭐 그기 바로 지금의 영기를 가진 내라꼬 친다마. 어떻겠노? 후후훗.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "나도 공부해봤는데 안 있나. 서방님? 이~런 히로인은 시키가미 같은 걸 사역하는 기제? ‘사역마라며 저어쭈 있다’ 카믄서? ……못됐데이. 이 하쿠는 빈껍데기라. 내 마력 같은 걸로 엮은 인형 같은 거이끼네 사역마하고는 다르다꼬. 그레 됐으이 서방님? 잠깐 동안 내 사역마 함 해보마 어떻겠노? 별로 아프게는 안 하께?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "이 옷 참 괘않타카이. 평소의 내 같으마 천이 너무 많은 건 안 좋아했겠지만. 후훗, 가끔 이런 것도 괘않겠데이.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "오니한테는 오니의 도리가 있으이끼네, 도리에 안 맞는 짓은 그냥 못 넘어간데이. 오니는 오니, 인간이 아인 법. 인간맨치로 살고, 인간맨치로 좋아하고, 인간맨치로 죽으마 안 된데이. 안 그렇나? 내사 잔소리 너무 많은 건 별로다만, 지금의 나는, 후훗, 호법소녀 아이가.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "하아~ 함 보자. 다음에는 금빛 나는 잔, 그거 빨가이 옻칠해가 내 거 했으마 좋겠는데.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "거기까지 해라. 내가 말~케 깨끗하이 치워뿔끼끼네이.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "호법소녀 등장. 뭉개버릴 낀데, 함 봐도고?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "그라마, 간데이. 꼴깍꼴깍…… 푸하아. 찢고 부수고 녹이고. ‘호법소녀・구두룡오살’. 덤으로 이것도 듬~뿍 먹어봐래이!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "하아~ 역시 끊을 수가 없다, 끓어오른다카이. 찢고 부수고 녹이고. ‘호법소녀・구두룡오살’. 당신을 전~부, 술로 만들 끼다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "그라마, 간데이. 꼴깍꼴깍…… 푸하아. 찢고 부수고 녹이고. ‘호법소녀・구두룡오살’. [이바라키] : “흐흥~ ……뭣이~?!”",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_4",
+        "text": "하아, 끓어오르는구마. 찢고 부수고 녹이고. ‘호법소녀・구두룡오살’. [이바라키] : “흐흥~ ……뭣이~?!”",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_5",
+        "text": "하아,",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "퇴치! 라 캐야 될랑가, 농담이데이, 농담",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "이런 것도 가끔은 괘않네.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "서번트는, 맘대로 안 되는 법인가배.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "호법소녀, 실격이구마.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "그라마 다시 인사하꾸마. 캐스터, 슈텐도지. 잘 부탁한데이. 뭐, 캐스터라꼬 변하는 기 있는 것도 아이지만…… 응? 왜? 그렇제. 이 옷 벗을 때까지, 나는 가련한 호법의 소녀인 기라.",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

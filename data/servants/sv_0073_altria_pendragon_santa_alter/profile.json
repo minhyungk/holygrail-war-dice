@@ -1,0 +1,58 @@
+{
+  "servant_id": "sv_0073_altria_pendragon_santa_alter",
+  "source_id": 73,
+  "name_ko": "알트리아 펜드래곤(산타 얼터)",
+  "name_short_ko": "알트리아 산타 얼터",
+  "class": "rider",
+  "ranks": {
+    "str": "A",
+    "end": "C",
+    "agi": "D",
+    "mana": "B",
+    "luck": "A",
+    "np": "A++"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "약속된 승리의 검",
+    "ruby_ko": "엑스칼리버 모르간",
+    "rank": "A++",
+    "type_ko": "대성보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4022000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/402200/402200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/402200/402200b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    103,
+    202,
+    300,
+    303,
+    404,
+    1000,
+    2001,
+    2002,
+    2007,
+    2008,
+    2009,
+    2010,
+    2113,
+    2631,
+    2795,
+    2858,
+    5000,
+    402200
+  ],
+  "lore": {
+    "detail": "알트리아 얼터가 자신의 이미지를 불식하고자 하는 일념으로, 아이들의 편인 산타클로스로 활동하려 한 모습.\n손에 든 보따리에는 그녀가 1년 동안 부지런히 모은 엄선된 선물이 가득 들어 있다."
+  },
+  "instant_death": false
+}

@@ -1,0 +1,53 @@
+{
+  "servant_id": "sv_0294_oda_nobukatsu",
+  "source_id": 294,
+  "name_ko": "오다 노부카츠",
+  "name_short_ko": "오다 노부카츠",
+  "class": "archer",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "C",
+    "mana": "E",
+    "luck": "E",
+    "np": "D"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "tsundere",
+  "noble_phantasm": {
+    "name_ko": "마왕회천・만주사화",
+    "ruby_ko": "마왕회천・만주사화",
+    "rank": "D",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2041000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/204100/204100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/204100/204100b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    102,
+    202,
+    301,
+    303,
+    401,
+    1000,
+    2001,
+    2008,
+    2631,
+    2780,
+    2858,
+    5000,
+    204100
+  ],
+  "lore": {
+    "detail": "전국 시대의 패왕으로 이름 높은 오다 노부나가의 동생.\n역사상으로도 오다 노부나가의 동생이라는 사실 이외에는 딱히 전해지는 게 없는 연약하고 빈약한 영기. 본래라면 영령으로서 소환될 수는 없었을 테지만, 어떠한 이유로 영기를 얻어서 현계하게 되었다."
+  },
+  "instant_death": false
+}

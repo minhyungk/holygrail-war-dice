@@ -85,7 +85,7 @@ GameEvent ─► ① 사실 수집 ─► ② 후보 필터 ─► ③ 점수·�
 | 네임스페이스 | 예 |
 |---|---|
 | `event.*` | `event.type`, `event.phase_id`, `event.margin`, `event.miracle`, `event.result`(`success`/`fail`, 낮 행동 결과), `event.intel_level`(정보 수집으로 오른 단계), `event.purpose`(영주 용도), `event.phase_id`, `event.condition_to`(`full`/`hurt`/`danger`), `event.choice`(`execute`/`release`), `event.rumor`, `event.rumor_known`(소문의 당사자를 플레이어가 아는가) |
-| `self.*` (화자 진영) | `self.servant`, `self.class`, `self.condition`(`full`/`hurt`/`danger`), `self.affinity_tier`(`hostile`/`wary`/`neutral`/`friendly`/`loyal`), `self.mana`, `self.seals`, `self.alignment`, `self.intel_level`(플레이어가 화자에 대해 아는 정보 단계. 플레이어 서번트면 3), `self.phase_won`(화자 진영이 이번 국면을 이겼나) |
+| `self.*` (화자 진영) | `self.servant`, `self.class`, `self.condition`(`full`/`hurt`/`danger`), `self.affinity_tier`(`hostile`/`wary`/`neutral`/`friendly`/`loyal`), `self.mana`, `self.seals`, `self.alignment`, `self.temperament`(성격 8종, D-166), `self.intel_level`(플레이어가 화자에 대해 아는 정보 단계. 플레이어 서번트면 3), `self.phase_won`(화자 진영이 이번 국면을 이겼나) |
 | `enemy.*` (상대 진영) | `enemy.servant`, `enemy.class`, `enemy.condition`, `enemy.intel_level`, `enemy.master` |
 | `world.*` | `world.day`, `world.time`, `world.terrain`(`open`/`urban`/`forest`/`river`), `world.tile`, `world.factions_alive` |
 | `battle.*` | `battle.phase_index`, `battle.lead`(앞선 쪽), `battle.is_final` |
@@ -302,6 +302,7 @@ data/
 
 ### 8.7 소문 (현재 구현, D-130)
 적끼리 실제 전투가 있으면 그 밤 간접 묘사를 보여 주고, 인접 여부에 따라 문장이 달라진다. 싸우지 않고 헤어진 조우(`result: none`)는 생략한다. 적 전투의 승리·탈락 소문은 모아 다음 날 아침 첫 건을 lead에 사용한다. 정보 단계가 낮으면 당사자를 가린다 (§7.2).
+- **맵 흔적 연출** (D-166): 간접 묘사와 함께 그 전투가 벌어진 칸을 맵에서 반짝인다. 먼 칸·안개 속도 **전부** 표시한다. 소멸이 있으면 폭발 섬광·충격파·금빛 입자(`text.trace_fx.death_ms`), 무승부·도주 실패는 중간 섬광과 불꽃(`draw_ms`), 퇴각은 약한 섬광(`retreat_ms`) [임시값]. 이벤트 `npc_battle_resolved.dead`로 구분한다. 플레이어가 탈락했거나 동작 줄이기 설정이면 생략
 
 ### 8.8 나레이션 데이터
 - 공통 나레이션: `data/common/narrator.json` (형식은 §5.2와 같고, 줄마다 `slot` 필드)
@@ -319,7 +320,7 @@ data/
 ## 10. 작성 방식 [확정] (D-060)
 1. AI가 초안을 쓴다 (`status: draft`, `author: ai`)
 2. 사용자가 검수하면 `status: reviewed`
-3. 정식 빌드는 `reviewed`만 사용하도록 할 예정이나 **필터는 현재 미구현**이다. 현재 빌드는 draft도 출력하며 대사 옆에 draft 표시를 붙인다. 검수 완료로 간주하지 않는다
+3. 정식 빌드는 `reviewed`만 사용하도록 할 예정이나 **필터는 현재 미구현**이다. 현재 빌드는 draft도 출력한다. 화면의 draft 표시는 없앴다 (D-166). 데이터의 `status: draft`는 그대로 두며 검수 완료로 간주하지 않는다
 4. FGO·레거시 대사는 `source`로 구분해 들여온다
 5. 문체·말투·인용 규칙: `.claude/skills/typemoon-dialogue/SKILL.md` (D-062)
 - AI 초안 작성은 사용자가 범위(서번트, 태그)를 지정해 요청할 때 한다 (AGENTS.md 규칙 7)

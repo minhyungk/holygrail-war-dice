@@ -1,0 +1,58 @@
+{
+  "servant_id": "sv_0176_frankenstein_saber",
+  "source_id": 176,
+  "name_ko": "프랑켄슈타인",
+  "name_short_ko": "프랑 세이버",
+  "class": "saber",
+  "ranks": {
+    "str": "C++",
+    "end": "B",
+    "agi": "C",
+    "mana": "D",
+    "luck": "A",
+    "np": "B"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "중립·여름",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "꿰뚫는 번개칼날",
+    "ruby_ko": "스큐어드 플라즈마 블레이드",
+    "rank": "D~B",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1031000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/103100/103100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/103100/103100b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    100,
+    201,
+    302,
+    308,
+    404,
+    1000,
+    2001,
+    2008,
+    2009,
+    2011,
+    2037,
+    2075,
+    2631,
+    2781,
+    2838,
+    2858,
+    5000,
+    103100
+  ],
+  "lore": {
+    "detail": "서머 시즌 도래!! “더워! 나른해! 움직이기 싫어!”\n여름을 많이 타는 인조인간 프랑짱, 시원함을 찾기 위해 수영복으로 갈아입고 레이스에 도전한다!\n파트너는 수상한 50대 중년과 트랜스모프 하는 거대 로봇 배비지.\n여름의 블록버스터 영화 같아!"
+  },
+  "instant_death": false
+}

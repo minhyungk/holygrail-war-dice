@@ -1,0 +1,58 @@
+{
+  "servant_id": "sv_0349_kyokutei_bakin",
+  "source_id": 349,
+  "name_ko": "쿄쿠테이 바킨",
+  "name_short_ko": "쿄쿠테이 바킨",
+  "class": "rider",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "B+",
+    "mana": "B+",
+    "luck": "C-",
+    "np": "A"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "질서·중용",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "난소 사토미 팔견전",
+    "ruby_ko": "난소 사토미 팔견전",
+    "rank": "A",
+    "type_ko": "대인보구",
+    "special_attack": [
+      304
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4048000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/404800/404800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/404800/404800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    103,
+    202,
+    300,
+    305,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2009,
+    2040,
+    2631,
+    2858,
+    2923,
+    5000,
+    404800
+  ],
+  "lore": {
+    "detail": "에도 시대 후기의, 일본을 대표하는 작가의 1인.\n그 저작은, ‘난소 사토미 팔견전’, ‘춘설궁장월’. 거기에 ‘경성수호전’, ‘근세설 미소년록’ 등 다수.\n당시 매우 큰 인기를 얻은 ‘춘설궁장월’을 포함해, 우키요에 화가・카츠시카 호쿠사이가 삽화를 담당한 작품도 많다.\n무사 집안에서 태어나, 그 긍지를 가슴에 품고 있으면서도 바킨은 천부적 재능을 발휘해 게사쿠 작가로서 명성을 떨쳤으며, 일본 최초의 전업 작가이기도 하다."
+  },
+  "instant_death": false
+}

@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0414_sizuki_soujyuro",
+  "skills": [
+    {
+      "skill_id": "sk_presence_concealment",
+      "name_ko": "기척 차단",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_knowledge_of_harmony",
+      "name_ko": "소와의 소양",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_curse",
+      "name_ko": "주술",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_mushi_fusatsu_henro",
+      "name_ko": "무사불살편로",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_shakutenrin_jizai_fuza",
+      "name_ko": "차전륜자재부좌",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_hyakkotsu_bansei_sentou_shugen",
+      "name_ko": "백골만세천탑수험",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

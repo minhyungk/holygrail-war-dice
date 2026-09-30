@@ -1,0 +1,52 @@
+{
+  "servant_id": "sv_0416_hibiki_and_chikagi",
+  "source_id": 416,
+  "name_ko": "히비키&치카기",
+  "name_short_ko": "히비키&치카기",
+  "class": "alterEgo",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "C",
+    "mana": "EX",
+    "luck": "C",
+    "np": "A"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "불명",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "바다의 경계를 여는 만간주",
+    "ruby_ko": "바다의 경계를 여는 만간주",
+    "rank": "A",
+    "type_ko": "대군보구",
+    "special_attack": [
+      301
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_10017000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1001700/1001700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1001700/1001700b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    109,
+    202,
+    405,
+    1000,
+    2000,
+    2001,
+    2797,
+    2835,
+    2848,
+    5000,
+    1001700
+  ],
+  "lore": {
+    "detail": "‘고사기’나 ‘일본서기’ 같은 사서에는 등장하지 않지만, 큐슈 북부의 전승을 중심으로 이름을 남긴 바다의 신, 아즈미노 이소라.\n오랜 세월을 바닷속에서 지낸 탓에 온몸에 굴과 전복이 달라붙은 추한 모습이었다고 전해지며, 두루마리 그림이나 카구라에서는 하얀 천으로 얼굴을 가린 모습으로 자주 등장한다.\n고대에 어느 황후가 일본 전역의 신들을 소집했을 때 어째서인지 아즈미노 이소라만은 나타나지 않았다.\n자신의 추한 외모를 부끄러워한 이소라가 밖으로 나오기를 거부했기 때문이다.\n난처해진 신들은 꾀를 내어 음악을 좋아하는 이소라를 위해 카구라를 연주하며 그를 기다렸다. 그 음색에 홀린 이소라는 마침내 바닷속에서 모습을 드러냈고, 황후에게 두 개의 보옥을 선사하게 된다.\n이 두 알의 명주야말로 조수의 흐름을 다스리는 와다츠미의 비보───\n바로 ‘조만주’와 ‘조간주’다."
+  },
+  "instant_death": false
+}

@@ -1,0 +1,56 @@
+{
+  "servant_id": "sv_0001_mash_kyrielight",
+  "source_id": 1,
+  "name_ko": "마슈 키리에라이트",
+  "name_short_ko": "마슈",
+  "class": "shielder",
+  "ranks": {
+    "str": "C",
+    "end": "A",
+    "agi": "D",
+    "mana": "B",
+    "luck": "C",
+    "np": "?"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "지금은 지나간 몽상의 성",
+    "ruby_ko": "로드 카멜롯",
+    "rank": "C",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_8001000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/800100/800100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/800100/800100b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    107,
+    201,
+    300,
+    303,
+    403,
+    1000,
+    2001,
+    2008,
+    2009,
+    2011,
+    2631,
+    2654,
+    2780,
+    2795,
+    5000,
+    800100
+  ],
+  "lore": {
+    "detail": "칼데아 국원, 마슈 키리에라이트가 서번트와 빙의 융합한 모습. 데미 서번트로 불린다."
+  },
+  "instant_death": false
+}

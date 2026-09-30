@@ -1,0 +1,59 @@
+{
+  "servant_id": "sv_0248_asvatthaman",
+  "source_id": 248,
+  "name_ko": "아슈바타만",
+  "name_short_ko": "아슈바타만",
+  "class": "archer",
+  "ranks": {
+    "str": "B",
+    "end": "A",
+    "agi": "A++",
+    "mana": "B",
+    "luck": "A",
+    "np": "A+"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "berserker",
+  "noble_phantasm": {
+    "name_ko": "전륜이여, 분염을 일으켜라",
+    "ruby_ko": "수다르샨차크라・얌라지",
+    "rank": "A+",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2033000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/203300/203300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/203300/203300b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    102,
+    200,
+    301,
+    305,
+    404,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2012,
+    2037,
+    2040,
+    2631,
+    2835,
+    2851,
+    2858,
+    5000,
+    203300
+  ],
+  "lore": {
+    "detail": "분노하고, 싸우리라. 마하바라타에서 카르나와 쌍벽을 이루는 바라문 최강의 전사. 분노의 화신…… 즉, 아슈바타만이다."
+  },
+  "instant_death": false
+}

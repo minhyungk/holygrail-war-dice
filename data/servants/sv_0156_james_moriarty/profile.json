@@ -1,0 +1,53 @@
+{
+  "servant_id": "sv_0156_james_moriarty",
+  "source_id": 156,
+  "name_ko": "제임스 모리어티",
+  "name_short_ko": "모리어티 아처",
+  "class": "archer",
+  "ranks": {
+    "str": "C",
+    "end": "D",
+    "agi": "A",
+    "mana": "B",
+    "luck": "A",
+    "np": "C"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "assassin",
+  "noble_phantasm": {
+    "name_ko": "종국적 범죄",
+    "ruby_ko": "더 다이내믹스 오브 언 애스터로이드",
+    "rank": "A+",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2023000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/202300/202300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/202300/202300b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    102,
+    202,
+    301,
+    304,
+    405,
+    1000,
+    2001,
+    2008,
+    2631,
+    2780,
+    2858,
+    5000,
+    202300
+  ],
+  "lore": {
+    "detail": "아니, 나는 평범하다고, 자네. 아주 조금, 아주 조금만 악랄할 뿐이야! 나의 마탄으로 자네를 도와주도록 하지. 단, 마탄에는 한도가 있으니 주의하시게나!"
+  },
+  "instant_death": false
+}

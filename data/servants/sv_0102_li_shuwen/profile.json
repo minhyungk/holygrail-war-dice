@@ -1,0 +1,52 @@
+{
+  "servant_id": "sv_0102_li_shuwen",
+  "source_id": 102,
+  "name_ko": "이서문",
+  "name_short_ko": "이서문 랜서",
+  "class": "lancer",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "A",
+    "mana": "E",
+    "luck": "E",
+    "np": "None"
+  },
+  "alignment": "evil",
+  "alignment_detail": "중립·악",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "신창 무이타",
+    "ruby_ko": "신창 무이타",
+    "rank": "-",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3017000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/301700/301700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/301700/301700b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 class), 사용자 검수 전.",
+  "traits": [
+    1,
+    101,
+    202,
+    302,
+    304,
+    404,
+    1000,
+    2001,
+    2008,
+    2631,
+    2858,
+    5000,
+    301700
+  ],
+  "lore": {
+    "detail": "랜서로 소환된, 육체가 전성기인 이서문.\n근대 태생임에도 수많은 전설을 남긴 중국의 전설적인 무술가. 물론 팔극권의 명수로도 유명하지만, 정교한 창술은 ‘신창’이라 칭송받는 수준의 실력."
+  },
+  "instant_death": true
+}

@@ -1,0 +1,385 @@
+{
+  "speaker": "sv_0349_kyokutei_bakin",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "빠르기가 마치 애염명왕의 화살 같으니.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "에잇! 얍! 잡았다~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "회오리바람의 모래를 휘감듯이.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "신선 희술~ 부유하는 나비!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "물럿거라, 이 어리석은 것!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "먼저 이 칼날에 물어보거라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "사나운 새가 작은 새를 사냥하듯이!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "다들~ 싸워라~! 싸워~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "되고 안 되고는 개에게 맡긴다! 잘 보아라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "자아! 구원의 무사가 왔도다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_4",
+        "text": "도우, 다이, 겐, 소우, 코부, 케노, 시노, 신베에~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "버드나무에, 눈이 쌓여 부러지겠는가!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "우왓!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "실수, 천만!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "이까짓 것~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "후~ 쿠와바라 쿠와바라.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "결코 게을리하지 말지니…… 라.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "차라리 멋을 부려볼까!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "비나이다, 비나이다~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "내가 가끔씩 인용하는 명전자성이란, 간단히 말하자면 만사가 이름을 따라간다는 뜻이다. 또 바꿔 말하자면 사람에게는 각자 하늘이 준 운명이 있다는 것이지. 마스터 자신의 이름도 그래. 이 기회에 한번, 숙고해 보시게나.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "잘난 체가 심하고, 답답하고 까다로운 성격…… 그런 험담을 듣는 데는 익숙해. 타고난 성격을 그리 쉽게 바꿀 수 있는 것도 아니고~ 하하하하! ……허나, 적어도 마스터님의 온정에만 응석 부리지 않도록, 스스로 경계해야겠지.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "쓰윽, 쓰윽, 쓰윽…… 응, 이것은 일기라네. 매일. 빠트리지 않고 적고 있지. 타키자와 가문에 속한 자로서의 책무일세. 마스터 님은 가족이나 마찬가지, 보셔도 상관없네. 애초에 피가 끓고 가슴 뛰는 게사쿠와는 반대로 쓸데없는 일만 적혀 있지. 외출한 곳, 만난 사람, 식사의 종류, 장 본 것에 날씨, 기르던 새의 상태 등등 말일세. 최근에는 대부분 팔견사들이 저지른 말썽과 마스터 님의 일상에 관해서 적혀 있지만, 그리 평온한 일들만 있지는 않지 않겠나~ 하하하하!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "일목요연하지만, 이 신체는 미치의 것이야. 아들인 소하쿠의 아내이고, 미치라는 이름도 시집올 때 내가 붙여준 이름이야. 미치에게는 그야말로 적잖은 고생을 하게 만들었어. 늙어서 눈이 먼 나의 새로운 눈이 되고, 붓을 휘두르는 손이 되어주지 않았다면 ‘팔견전’은 결코 완성에 이르지 못했을 테지. 그렇기에 이 몸으로 현계한 것도 의미가 있다고 납득이 가네. 미치에게는 미안하지만, 이번에도 둘이 하나인 이인삼각으로 가볼까.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "나는 한 번은 무사의 신분을 내팽개쳤던 몸. 모시기에 합당한 주인을 얻어서 간신히 무사의 기개를 만회했다고, 그런 생각이 드는구먼. 그리고 그렇기에 후회투성이의 내 생애를 같이 받아주신다면, 온 정성을 다해서 책무를 다하도록 하지!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "사실 내가 무엇보다 좋아하는 것은 새지. 세자면 60종 남짓, 한 번에 100마리를 키운 적도 있다네. 평생을 함께 보낸 카나리아는 특히 인상에 깊이 남았지. 이 카나리아, 서양 말로는 개를 의미한다고 들었어. 흐흥~ 이것 역시 명전자성, 신기한 인연이로군.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배……! ……에잇, 그러고 있을 때가 아니다! 여봐라, 신베에, 도세츠, 장난도 적당히 하지 못하겠느냐! 케노, 시노, 너희들은 또 싸움질이나 하고~! ……코분고는 언제까지 먹을 게냐~ 으으음, 다이카쿠는 착한 아이로구나~ 겐파치와 소스케를 깨워다오…… 오오, 마스터 님이 복슬복슬한 털에……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "나의 검술과 권법! 잘 지켜보아라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "자, 그러면 붓 길들이기를 해볼까!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "이 몸에 대해 적자면 토토・쿄쿠테이 바킨이라 한다. 잘 기억해 두어라~!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "부디 살살 부탁드립니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "인의예지 충신효제! 하늘에 모인 여덟 개의 구슬! 구름을 가르고, 바람을 부르고, 인간의 진심을 지금이야말로 깨닫는다! 어둠을 찢고 길을 밝히는 달빛이로다! ‘난소 사토미 팔견전’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "인의, 예지, 충신, 효제! 하늘에 흐르는 여덟 개의 빛. 이에 의해 마음에 용기가 깃든다! 은혜는 비가 적시듯이…… ‘난소 사토미 팔견전’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "참으로 훌륭하다! 축하해야지, 축하해야지!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "이것으로 한 건 해결~! 껄껄~ 껄껄!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "깨달았느냐! 파사현정의 붓 솜씨를!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_4",
+        "text": "용서해 주세요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "작별이다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "참으로 부끄럽기 한량없구려……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "참으로 면목 없구려……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_4",
+        "text": "그러면! 용서하시게!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "라이더 쿄쿠테이 바킨, 처음 뵙겠네!! 나를 아는 자, 그건 그저 ‘팔견전’을 통함인가! 나를 모르는 자, 그 역시 그저 ‘팔견전’을 통함인가! 게사쿠는 내 손을 떠나, 독자적인 생명을 갖기에 이른 것이다! ……허나, 이렇게 나 자신이 서번트가 될 줄이야. 참으로 기이하구나…… 기이하구나!",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

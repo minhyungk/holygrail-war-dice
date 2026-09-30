@@ -62,10 +62,15 @@ export function SealIcon({ n, max }: { n: number; max: number }) {
 }
 
 /** Atlas 이미지. 불러오지 못하면 클래스 문장으로 대체 (Q-135) */
+/**
+ * 외부(Atlas) 이미지. 화면에 가까워질 때 불러오고(목록 수백 장을 한꺼번에 요청하지 않게), 실패하면 한 번 다시 시도한 뒤
+ * 클래스 문자로 대체한다 (D-166: 촉매 목록에서 얼굴이 기본 아이콘으로 굳던 문제)
+ */
 export function Art({ src, cls, className, hidden }: { src: string; cls: string; className?: string; hidden?: boolean }) {
-  const [failed, setFailed] = useState(false);
-  if (hidden || failed) return <Glyph cls={cls} hidden={hidden} />;
-  return <img className={className} src={src} alt="" referrerPolicy="no-referrer" onError={() => setFailed(true)} />;
+  const [tries, setTries] = useState(0);
+  if (hidden || tries > 1) return <Glyph cls={cls} hidden={hidden} />;
+  const url = tries === 0 ? src : `${src}${src.includes('?') ? '&' : '?'}retry=1`;
+  return <img key={url} className={className} src={url} alt="" loading="lazy" decoding="async" referrerPolicy="no-referrer" onError={() => setTries((t) => t + 1)} />;
 }
 
 /** 합산 줄의 주사위 한 개: 숫자 대신 눈. 값을 모르면(상대가 굴리는 중) '?' */

@@ -1,0 +1,306 @@
+{
+  "speaker": "sv_0261_miyamoto_musashi_berserker",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "세잇! 타압!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "선풍, 나선굉!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "공파!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "3연 무너트리기!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "하나, 둘, 쾅!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "순역자재!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "자, 결전의 섬으로!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "좋~았어, 타고 가 볼까!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "여름의 폭풍이네……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "칫.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "면발이 다르다구요, 면발이!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "으음~ 끝내주네~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "칼싸움 좋지! 팍팍 간다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "이천일류, 여름의 기세라고 할까!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "버서커인 나에게도 익숙해지기 시작한 모양이라 참으로 바람직해. ……뭐? 어째서 세이버가 아니냐고? 그, 그건 그 왜 , 부처님의 인도라고 할지, 늘 있는 트러블이라고 할지. 가능한 한 신경 쓰지 않아 줬으면 기쁘겠는데~",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "그러고 보니, 마스터는 헤엄칠 줄 알아? ……그렇게 잘하진 않는다? 평범해? 얏호! 그런 일이라면, 내가 하나하나 자상하게 알려 줄게! 이득이네 이득!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "전에 서부에 잘못 흘러 들어갔을 때는, 건맨들과 격전을 벌였었어. 그때부터, 아, 총도 재미있을 것 같다고 생각했지. 무예 백반! 서양의 무기도 사용할 줄 알아야 무사시인 것입니다!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "이런 휴양지에서 마스터와 만나고, 수영복 차림으로 재잘거리고, 다른 사람들과 법석을 떨고. ……후후, 즐겁지만, 조금 그러네, 나답지 않게 마음이 약해져 버렸어",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "혼자 황야에 내던져졌을 때는 어떻게 되나 싶었는데…… 덕분에 너와 재회할 수 있어서, 즐거운 여름의 모험도 할 수 있어서, 왠지 웃음이 나버렸습니다. 이런 행운이, 아직 나에게도 남아 있을 줄이야. 여자 무사시의 앞날은 이미 정해져 있습니다만, 그것은 다른 얘기. 이런 기이한 우연을 내려주신 부처님에게 감사하며, 마스터 군과 사이좋게 카지노에 가는, 저였습니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것은 스포츠 찬바라! 하여간 즐거워! 다양한 수법을 시험해 볼 수 있으니까. 이번에 만든 무사시코시라에도 투박하지만, 마음에 들었달까.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것은 놀 수 없는 나, 일까. 그야 검의 길로 끝을 보겠다고 결심했지만, 놀 마음이 없는 경지라니 그건 좀 봐줘.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배란 황금의 솥. 만약 네가 허기에 허덕이고 있을 때, 이것을 사용하지 않을 이유가 있을까? 아니 없어. ……그래, 한때의 흔들림에 의해 성배로 우동을 끓이는 것도 그리 이상한 일은 아닌 거야, 마스터.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "수영복 검호, 자, 간다! ……라고 말해 버릴까~ 나!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "해결사, 여기 등장! 만족할 때까지 원없이 놀겠습니다~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "검압으로 바다를 가른다! 망루와 같은 포장막, 다이뉴도 등장! 자, 마검 격파, 받아라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "시원한 검호 시작했습니다! 휘유! 예이! 이것이야말로 수공의 진! ‘이사나수천상’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "수상전이 뭐가 대수랴! 어디에서든 싸울 수 있는 것이 이천일류입니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "갈색의 햇살, 흐르는 피부의 물방울, 귀여운 남자아이! 으응~! 여름 최고~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "장비에 노잣돈을 너무 많이 썼나……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "버서커니까 분하지 않습니다~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "해냈다! 버서커, 무사시 미야모토, 이곳에 소환! 그런데, 드디어 나도 수영복 데뷔인가…… 후후, 실은 전부터 흥미가 있었던 터라 엄청 럭키입니다! 한여름의 모험, 잘 부탁해, 마스터!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

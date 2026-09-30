@@ -20,6 +20,13 @@ const cand = (id: string, layer: number, when?: Line['when'], repeat?: Line['rep
 });
 const mem = (): Memory => ({ said: new Map(), beat: 0, lastInPool: new Map() });
 
+/** 화면 줄의 textId → 공통 나레이션 원본 줄. 나레이션은 묶음마다 여러 줄이라(D-166) id 대신 조건으로 판정한다 */
+const NARR = new Map<string, Line>(Object.entries(data.narrator.tags).flatMap(([tag, ls]) => ls.map((l): [string, Line] => [`tx_common_${tag}_${l.id}`, l])));
+const src = (textId: string | undefined) => (textId ? NARR.get(textId) : undefined);
+/** 이름이 문장에 나오나. 두 글자 이하 이름(예: 나타)은 뒤에 조사·문장부호가 올 때만 이름으로 본다 ('나타난다' 오탐 방지) */
+const mentions = (text: string, name: string) =>
+  name.length > 2 ? text.includes(name) : new RegExp(`${name}(?=[이가은는을를의와과도에게께,.!?…\\s」』)─]|$)`).test(text);
+
 describe('선택 규칙 (§6, §13 예시 1·2)', () => {
   const facts = { 'self.servant': SV.emiya, 'enemy.servant': SV.cu, 'mem.met_before': true };
   const A = cand('common', 2);
@@ -90,7 +97,7 @@ function scenario(cuIntel: number) {
   if (cuIntel) log.emit('intel_gained', [], { target: 'fc_e1', level_from: 0, level_to: cuIntel, result: 'success', cause: 'np', roll: null, dc: null });
   log.clock = { day: 1, time: 'night', action: 1 };
   log.emit('encounter', [], { tile: 'tl_r2c2', terrain: 'river', factions: ['fc_player', 'fc_e1'], bystanders: [], ambusher: null, ambush_rolls: [] });
-  log.emit('battle_started', [], { battle_id: 'bt_001', tile: 'tl_r2c2', terrain: 'river', is_final: false, ambusher: null, sides: ['fc_player', 'fc_e1'] });
+  log.emit('battle_started', [], { battle_id: 'bt_001', tile: 'tl_r2c2', terrain: 'river', is_final: false, ambusher: null, sides: ['fc_player', 'fc_e1'], underdog: null });
   return log;
 }
 
@@ -103,8 +110,10 @@ describe('비트 (§8, §13 예시 3·5)', () => {
       expect(b.size).toBe('big');
       const slots = b.lines.map((l) => l.slot);
       expect(slots.slice(0, 2)).toEqual(['lead', 'lead']);
-      expect(b.lines[0]!.textId).toBe('tx_common_battle_start_place_river');
-      expect(b.lines[1]!.text).toBe('랜서. 드러난 것은 클래스뿐. 그 이상은, 칼끝이 밝혀낼 것이다.');
+      expect(src(b.lines[0]!.textId)?.when?.['world.terrain']).toBe('river');
+      expect(src(b.lines[1]!.textId)?.when?.['enemy.intel_level']).toEqual({ in: [1, 2] });
+      expect(b.lines[1]!.text).toContain('랜서');
+      expect(b.lines[1]!.text).not.toContain('쿠 훌린');
       expect(slots).toContain('line');
       expect(slots.indexOf('answer')).toBeGreaterThan(slots.indexOf('line'));
       expect(b.lines.length).toBeLessThanOrEqual(6);
@@ -135,15 +144,16 @@ describe('비트 (§8, §13 예시 3·5)', () => {
       const b = scenario(lv).events.map((e) => n.consume(e)).find((x) => x?.type === 'battle_started')!;
       return b.lines[1]!.text;
     };
-    expect(lead(0)).toContain('정체를 알 수 없는');
-    expect(lead(1)).toMatch(/^랜서\./);
-    expect(lead(3)).toMatch(/^쿠 훌린\./);
+    expect(lead(0)).not.toMatch(/랜서|쿠 훌린/);
+    expect(lead(1)).toContain('랜서');
+    expect(lead(1)).not.toContain('쿠 훌린');
+    expect(lead(3)).toContain('쿠 훌린');
   });
   it('장소 묘사는 장면당 한 번 (§8.5)', () => {
     const n = new Narrator(data, 5);
     const log = scenario(1);
     const beats = log.events.map((e) => n.consume(e));
-    const place = beats.flatMap((b) => b?.lines ?? []).filter((l) => l.textId.includes('_place_'));
+    const place = beats.flatMap((b) => b?.lines ?? []).filter((l) => src(l.textId)?.when?.['world.terrain'] !== undefined);
     expect(place).toHaveLength(1);
   });
 });
@@ -165,12 +175,12 @@ describe('한 판 전체 서술 (헤드리스)', () => {
             if (fc === n.state.player || (n.state.intel[fc] ?? 0) >= INTEL.name) continue;
             const name = data.servants[f.servant_id]!.name_ko;
             // 적 서번트 자신의 대사 본문(자기 이름)은 제외하고, 이름표·나레이션에서 진명이 새지 않아야 한다
-            if (l.speaker === 'narrator') expect(l.text, `${seed} ${l.textId}`).not.toContain(name);
+            if (l.speaker === 'narrator') expect(mentions(l.text, name), `${seed} ${l.textId}: ${l.text}`).toBe(false);
             if (l.speakerName) expect(l.speakerName).not.toBe(name);
             // 미공개 적 서번트의 대사도 자기 진명·보구명을 말하지 않는다 (D-153: 정체 노출 줄은 self.intel_level {gte: 2} 조건, D-158)
             if (l.speaker === f.servant_id) {
               const np = data.servants[f.servant_id]!.noble_phantasm;
-              for (const w of [name, np?.name_ko, np?.ruby_ko].filter(Boolean)) expect(l.text, `${seed} ${l.textId}`).not.toContain(w);
+              for (const w of [name, np?.name_ko, np?.ruby_ko].filter(Boolean)) expect(mentions(l.text, w!), `${seed} ${l.textId}: ${l.text}`).toBe(false);
             }
           }
         }
@@ -193,7 +203,7 @@ describe('한 판 전체 서술 (헤드리스)', () => {
           for (const [fc, f] of Object.entries(n.state.factions)) {
             if (fc === n.state.player || (n.state.intel[fc] ?? 0) >= INTEL.name || l.speaker !== f.servant_id) continue;
             const sv = data.servants[f.servant_id]!;
-            for (const w of [sv.name_ko, sv.noble_phantasm.name_ko].filter((x) => x.length >= 2)) expect(l.text, `${id} ${l.textId}`).not.toContain(w);
+            for (const w of [sv.name_ko, sv.noble_phantasm.name_ko].filter((x) => x.length >= 2)) expect(mentions(l.text, w), `${id} ${l.textId}: ${l.text}`).toBe(false);
           }
         }
       }
@@ -223,7 +233,7 @@ describe('스킬 해설 (D-153)', () => {
         if (e.type !== 'skill_triggered' || !b) continue;
         const react = b.lines.find((l) => l.textId.startsWith('tx_common_skill_effect_'));
         if (!react) continue;
-        const isHidden = react.textId.includes('_hidden_');
+        const isHidden = src(react.textId)?.when?.['event.skill_known'] === false;
         const key = `${e.data.faction}|${isHidden ? '?' : e.data.skill_id}`;
         expect(told.has(key), `${seed} ${key}`).toBe(false);
         told.add(key);
@@ -258,10 +268,13 @@ describe('호감도 변화 문구 (D-121)', () => {
   it('시스템 문구 모양으로, 방향에 맞는 문구가 나온다', () => {
     const up = beatFor(35, 37, 'bond');
     expect(up.style).toBe('system');
-    expect(up.lines[0]!.textId).toMatch(/_(up_small_\d|bond_up)$/);
+    const upWhen = src(up.lines[0]!.textId)?.when ?? {};
+    expect(upWhen['event.direction']).toBe('up');
+    expect(upWhen['event.magnitude'] === 'small' || upWhen['event.cause'] === 'bond').toBe(true);
     const down = beatFor(35, 25, 'supply');
-    expect(down.lines[0]!.textId).toMatch(/tier_down_wary$/);
-    expect(down.lines[0]!.text).toContain('알트리아');
+    const downLine = src(down.lines[0]!.textId)!;
+    expect(downLine.when).toMatchObject({ 'event.direction': 'down', 'event.tier_to': 'wary' });
+    if (downLine.text.includes('{servant}')) expect(down.lines[0]!.text).toContain('알트리아');
   });
 });
 
@@ -357,7 +370,7 @@ describe('역전승 (D-151)', () => {
       faction, servant_id: sv, master_id: null, controller, tile: 'tl_r2c2', condition: 'full', mana: 0, seals: 3, fate_points: 3, affinity: controller === 'player' ? 35 : null,
     });
     log.emit('run_started', [], { seed: 1, player: 'fc_player', summon: 'random', factions: [fs('fc_player', SV.artoria, 'player'), fs('fc_e1', SV.cu, 'ai')] });
-    log.emit('battle_started', ['fc_player', 'fc_e1'], { battle_id: 'bt_001', tile: 'tl_r2c2', terrain: 'urban', is_final: false, ambusher: null, sides: ['fc_player', 'fc_e1'] });
+    log.emit('battle_started', ['fc_player', 'fc_e1'], { battle_id: 'bt_001', tile: 'tl_r2c2', terrain: 'urban', is_final: false, ambusher: null, sides: ['fc_player', 'fc_e1'], underdog: null });
     return log;
   };
   const end = (log: EventLog) =>
@@ -392,9 +405,10 @@ describe('정보 공개 서술 (D-158, D-165)', () => {
   it('보구 개방으로 처음 진명이 드러날 때만 진명 공개 나레이션이 나온다 (이미 알면 다시 나오지 않는다)', () => {
     for (let seed = 1; seed <= 10; seed++) {
       const first = npBeat(new Narrator(data, seed), scenario(1));
-      expect(first.lines.some((l) => l.textId === 'tx_common_np_open_reveal_enemy'), `${seed}`).toBe(true);
+      const reveal = (l: { textId: string }) => src(l.textId)?.when?.['event.revealed'] === true;
+      expect(first.lines.some(reveal), `${seed}`).toBe(true);
       const again = npBeat(new Narrator(data, seed), scenario(2));
-      expect(again.lines.some((l) => l.textId === 'tx_common_np_open_reveal_enemy'), `${seed}`).toBe(false);
+      expect(again.lines.some(reveal), `${seed}`).toBe(false);
     }
   });
   it('약점(3단계)을 알게 되면 대상의 캐릭터 상세를 읽어 준다. 진명(2단계)에서는 읽지 않는다', () => {
@@ -406,9 +420,10 @@ describe('정보 공개 서술 (D-158, D-165)', () => {
       return log.events.map((e) => n.consume(e)).at(-1);
     };
     const weak = beatAt(INTEL.weakness)!;
-    const read = weak.lines.find((l) => l.textId === 'tx_common_intel_weakness_lore')!;
+    const isLore = (l: { textId: string }) => l.textId.startsWith('tx_common_intel_weakness_');
+    const read = weak.lines.find(isLore)!;
     expect(read.speaker).toBe('narrator');
-    expect(read.text).toBe((lore.weakness ?? lore.detail).replace(/\s+/g, ' ').trim());
-    expect(beatAt(INTEL.name)?.lines.some((l) => l.textId === 'tx_common_intel_weakness_lore') ?? false).toBe(false);
+    expect(read.text.endsWith((lore.weakness ?? lore.detail).replace(/\s+/g, ' ').trim())).toBe(true);
+    expect(beatAt(INTEL.name)?.lines.some(isLore) ?? false).toBe(false);
   });
 });

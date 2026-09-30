@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0262_osakabehime_archer",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_independent_action",
+      "name_ko": "단독행동",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_divinity",
+      "name_ko": "신성",
+      "rank": "C-",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_fortress_construction",
+      "name_ko": "요새구축",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_shooting_fps",
+      "name_ko": "사격(FPS)",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_princess_summer_vacation_fake",
+      "name_ko": "프린세스 서머 베케이션(가짜)",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_chiyogami_battalion_commander",
+      "name_ko": "치요가미 대대장",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

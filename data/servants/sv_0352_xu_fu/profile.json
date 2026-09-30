@@ -1,0 +1,51 @@
+{
+  "servant_id": "sv_0352_xu_fu",
+  "source_id": 352,
+  "name_ko": "서복",
+  "name_short_ko": "서복 얼터 에고",
+  "class": "alterEgo",
+  "ranks": {
+    "str": "E",
+    "end": "D",
+    "agi": "D",
+    "mana": "A+",
+    "luck": "B",
+    "np": "B"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "이는 불로불사의 영약일지니 <거짓말>",
+    "ruby_ko": "이것이 바로 불로불사의 영약, 거짓말이지만요",
+    "rank": "C++",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_10014000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1001400/1001400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1001400/1001400b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    109,
+    202,
+    301,
+    305,
+    403,
+    1000,
+    2001,
+    2008,
+    2631,
+    5000,
+    1001400
+  ],
+  "lore": {
+    "detail": "진나라에 임관했던 도사(방사).\n불로불사의 영약을 원한 시황제의 명령에 의해, 3000명의 소년소녀를 데리고 동방으로 여행을 떠났다. 일본에 도착했지만, 결국 진나라로 돌아가지 않고 숨을 거두었다.\n일본의 여러 지역에 서복 전설이 남겨져 있으며, 그때 의약품과 도예 기술 등을 일본에 전수했다…… 고 여겨지고 있다."
+  },
+  "instant_death": false
+}

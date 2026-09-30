@@ -1,0 +1,57 @@
+{
+  "servant_id": "sv_0310_tam_lin_gawain",
+  "source_id": 310,
+  "name_ko": "바게스트",
+  "name_short_ko": "바게스트",
+  "class": "saber",
+  "ranks": {
+    "str": "B+",
+    "end": "A",
+    "agi": "A",
+    "mana": "C",
+    "luck": "C",
+    "np": "B+"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "포식하는 일륜의 뿔",
+    "ruby_ko": "블랙독・갈라틴",
+    "rank": "A",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1050000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/105000/105000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/105000/105000b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    100,
+    201,
+    301,
+    303,
+    404,
+    1000,
+    1177,
+    2001,
+    2008,
+    2011,
+    2012,
+    2037,
+    2075,
+    2632,
+    2858,
+    5000,
+    105000
+  ],
+  "lore": {
+    "detail": "요정국 브리튼에서의 원탁의 기사, 그중 하나. 범인류사에서의 원탁의 기사・가웨인의 영기를 착명한 요정기사.\n강인한 육체를 지닌 ‘송곳니의 씨족’에 속하지만, 겉모습은 인간형의 영기로 이루어져 있다.\n‘바람기 많은 가웨인’, ‘대식가 가웨인’이라고도 불린다."
+  },
+  "instant_death": false
+}

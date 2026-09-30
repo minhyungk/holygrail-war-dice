@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0406_andromeda",
+  "skills": [
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "A+",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_hero_aspiration",
+      "name_ko": "영웅원망",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_good_swimmer",
+      "name_ko": "수영능숙",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_daughter_of_cassiopeia",
+      "name_ko": "카시오페이아의 딸",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_sacrificial_maiden",
+      "name_ko": "제물이 된 소녀",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_oracle_s_chains_nereids",
+      "name_ko": "신탁쇄 네레이데스",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

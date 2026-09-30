@@ -1,0 +1,54 @@
+{
+  "servant_id": "sv_0307_miss_crane",
+  "source_id": 307,
+  "name_ko": "미스 크레인",
+  "name_short_ko": "미스 크레인",
+  "class": "caster",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "D+",
+    "mana": "C+",
+    "luck": "D",
+    "np": "EX"
+  },
+  "alignment": "good",
+  "alignment_detail": "중립·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "천의무봉・학은석별가",
+    "ruby_ko": "천의무봉・학의 인연, 눈물의 이별",
+    "rank": "EX",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5046000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/504600/504600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/504600/504600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    201,
+    302,
+    303,
+    405,
+    1000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2810,
+    2858,
+    5000,
+    504600
+  ],
+  "lore": {
+    "detail": "“옷을 지어 드리겠습니다. 다만, 하나만 약속해주시길. 작업 중의 제 모습은, 절대 봐서는 안 된답니다.”\n달각달각 스윽~ 하고 실을 잣는다. 통통, 샤악~ 하고 베를 짠다. 그렇게 완성된 옷감으로 근사한 옷을 만들겠습니다. 요즘 시대풍의 야회복? 신사처럼 스리피스? 아방가르드도 맡겨주시길. 어떤 옷이라도, 당신의 분부대로.\n왜냐하면, 그것이 저의 은혜 갚기. 당신에게 보답하는, 온 마음을 다한 은혜 갚기."
+  },
+  "instant_death": false
+}

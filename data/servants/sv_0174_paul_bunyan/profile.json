@@ -1,0 +1,58 @@
+{
+  "servant_id": "sv_0174_paul_bunyan",
+  "source_id": 174,
+  "name_ko": "폴 버니언",
+  "name_short_ko": "폴 버니언",
+  "class": "berserker",
+  "ranks": {
+    "str": "C",
+    "end": "A",
+    "agi": "C",
+    "mana": "E",
+    "luck": "E",
+    "np": "C"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "중립·중용",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "놀랄 만한 위업",
+    "ruby_ko": "마블러스 익스플로이츠",
+    "rank": "A+",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7028000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/702800/702800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/702800/702800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    106,
+    201,
+    302,
+    305,
+    401,
+    1000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2631,
+    2666,
+    2667,
+    2780,
+    2810,
+    2858,
+    5000,
+    702800
+  ],
+  "lore": {
+    "detail": "아메리카 합중국 개척시대의 톨 테일(거짓말 같은 이야기)에 등장하는 나무꾼으로, 구름까지도 닿을 정도의 거인으로 이야기된다.\n그 거대함을 살린 어마어마하게 커다란 스케일의 전설이 다수 존재하며, 북아메리카의 특징적 지형 대다수는 버니언이 행동한 영향으로 태어났다고 여겨지고 있다.\n어린 소녀 모습으로 소환된 이유는 불명."
+  },
+  "instant_death": false
+}

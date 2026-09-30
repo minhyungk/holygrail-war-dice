@@ -1,0 +1,60 @@
+{
+  "servant_id": "sv_0004_altria_pendragon_lily",
+  "source_id": 4,
+  "name_ko": "알트리아 펜드래곤(릴리)",
+  "name_short_ko": "알트리아 릴리",
+  "class": "saber",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "B",
+    "mana": "A",
+    "luck": "A+",
+    "np": "B"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "승리해야 할 황금의 검",
+    "ruby_ko": "칼리번",
+    "rank": "B+",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1003000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/100300/100300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/100300/100300b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    2,
+    100,
+    201,
+    300,
+    303,
+    404,
+    1000,
+    2001,
+    2002,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2037,
+    2075,
+    2113,
+    2631,
+    2858,
+    5000,
+    100300
+  ],
+  "lore": {
+    "detail": "선정의 검 칼리번을 뽑고, 왕으로서의 길을 막 걷기 시작한 알트리아의 모습. 아직은 미숙한 소녀 기사.\n그 모습은 사랑스러운 백합과 같으며, 눈동자 또한 찬란한 희망으로 가득 차 있다. 많은 것을 경험하기 위해 전국을 떠돌아다니며 많은 모험담을 남겼다. 그녀에게 도움을 받은 사람들은 그녀의 화려한 모습을 보고 기사 공주라 불렀다고 한다."
+  },
+  "instant_death": false
+}

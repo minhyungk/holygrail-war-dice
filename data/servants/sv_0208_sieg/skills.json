@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0208_sieg",
+  "skills": [
+    {
+      "skill_id": "sk_independent_action",
+      "name_ko": "단독행동",
+      "rank": "EX",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_homunculus",
+      "name_ko": "호문쿨루스",
+      "rank": "C+",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_artificial_hero_fake",
+      "name_ko": "인공영웅(가짜)",
+      "rank": "B+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_magecraft",
+      "name_ko": "마술",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_dead_count_shapeshifter",
+      "name_ko": "용고영주",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

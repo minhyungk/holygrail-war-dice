@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0254_jason",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_the_desired_argon_coin",
+      "name_ko": "추구했던 황금양모",
+      "rank": null,
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_inspiration_at_death_s_door",
+      "name_ko": "위기 앞의 번뜩임",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_conquering_the_sea_with_friends",
+      "name_ko": "친구와 함께 하는 머나먼 바닷길",
+      "rank": "B++",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

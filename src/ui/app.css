@@ -231,8 +231,8 @@ button:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--accent
 .stepper button:disabled { opacity: .35; cursor: default; }
 .stepper b { min-width: 3ch; font-size: 22px; font-weight: 800; font-variant-numeric: tabular-nums; }
 .vn .txt.sys { color: var(--accent); }
-.vn .draft { font-size: 10px; font-weight: 400; color: var(--text-muted); border: 1px solid var(--line-soft); border-radius: 3px; padding: 0 4px; margin-left: 6px; }
 .intel li.out { opacity: .45; text-decoration: line-through; }
+.intel li.weak, .intel li.weak span { color: var(--danger); font-weight: 700; } /* 약점 해금 강조 (D-166) */
 .s-end { align-items: center; overflow-y: auto; padding-block: 56px 40px; gap: 16px; text-align: center; }
 .s-end .title { font-size: clamp(34px, 8vw, 56px); }
 .s-end .panel { width: min(560px, 100%); box-sizing: border-box; text-align: left; }
@@ -422,7 +422,7 @@ rt.in { opacity: .95; transform: none; }
 
 /* ───────── 전투 연출 (D-133) ───────── */
 .s-battle { position: relative; isolation: isolate; }
-.s-battle > *:not(.battle-backdrop):not(.fx-layer) { position: relative; z-index: 1; }
+.s-battle > *:not(.battle-backdrop):not(.fx-layer):not(.death-front) { position: relative; z-index: 1; }
 .battle-backdrop { position: absolute; inset: 0 -16px; z-index: 0; overflow: hidden; pointer-events: none; }
 .bd-circle { position: absolute; left: 50%; top: 46%; width: min(120vmin, 900px); aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%;
   background: repeating-conic-gradient(from 0deg, rgba(201,164,92,.06) 0 3deg, transparent 3deg 15deg), radial-gradient(circle, transparent 38%, rgba(201,164,92,.10) 39%, transparent 40%, transparent 58%, rgba(201,164,92,.08) 59%, transparent 60%);
@@ -615,3 +615,70 @@ rt.in { opacity: .95; transform: none; }
 
 @media (prefers-reduced-motion: reduce) { .stand-art.dying { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .fx-np .np-art, .stand-art, .stand-art.danger, .s-battle.shake, .s-battle.shake-heavy, .fx-weak, .fx-comeback, .fx-comeback .rays { animation: none; } }
+
+/* 맵의 적 정보 카드 (D-166) */
+.token.enemy { pointer-events: auto; cursor: pointer; padding: 0; border: 0; }
+.token.enemy.weak { box-shadow: 0 0 0 3px var(--danger), 0 0 22px rgba(192,57,43,.95); }
+.intel li button { all: unset; display: flex; justify-content: space-between; width: 100%; cursor: pointer; border-radius: 4px; }
+.intel li button:hover b, .intel li button:hover { color: var(--accent); }
+.intel li button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.intel-card { width: min(440px, 100%); max-height: 88dvh; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; border-top: 3px solid var(--cls, var(--line)); }
+.ic-head { display: flex; align-items: center; gap: 12px; }
+.ic-head img, .ic-head .glyph { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; flex: none; }
+.ic-head h3 { margin: 0; }
+.ic-sub { font-size: 12px; color: var(--text-muted); }
+.ic-lv { margin-left: auto; font-size: 11px; white-space: nowrap; color: var(--text-muted); border: 1px solid var(--line-soft); border-radius: 999px; padding: 3px 9px; }
+.ic-lv.weak { color: var(--danger); border-color: var(--danger); font-weight: 700; }
+.ic-none, .ic-hint { margin: 0; font-size: 12px; color: var(--text-muted); }
+.ic-weak { border: 1px solid var(--danger); border-radius: 6px; padding: 10px 12px; background: rgba(192,57,43,.08); }
+.ic-weak small { color: var(--danger); font-weight: 700; letter-spacing: .08em; }
+.ic-weak p { margin: 6px 0 0; font-size: 13px; line-height: 1.65; }
+.intel-card .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+
+/* 소멸 일러스트는 판정 카드·주사위 앞(입자 연출 바로 아래)에서 사라진다 (D-166) */
+.death-front { position: absolute; inset: 0; z-index: 29; pointer-events: none; overflow: hidden; }
+.death-front .df { position: absolute; top: 6%; bottom: 4%; width: 60%; }
+.death-front .df.a { left: 0; } .death-front .df.c { right: 0; }
+.death-front .stand-art { left: 50% !important; right: auto !important; height: 100%; max-width: 100%; translate: -50% 0; }
+.death-front .df.c .stand-art { transform: scaleX(-1); }
+
+/* 적끼리 전투의 흔적 (D-166): 소멸 = 폭발 섬광 + 충격파 + 금빛 입자, 무승부 = 중간 섬광·불꽃, 퇴각 = 약한 섬광 */
+.trace { position: absolute; width: 16%; aspect-ratio: 1; transform: translate(-50%, -50%); pointer-events: none; z-index: 3; animation: trace-life var(--trace-ms) linear forwards; }
+.trace i, .trace b { position: absolute; left: 50%; top: 50%; border-radius: 50%; translate: -50% -50%; }
+.trace .flash { width: 70%; height: 70%; background: radial-gradient(circle, #fff 0%, rgba(255,214,120,.95) 30%, rgba(255,120,40,.5) 55%, transparent 72%); animation: trace-flash calc(var(--trace-ms) * .45) ease-out forwards; }
+.trace .ring { width: 40%; height: 40%; border: 2px solid rgba(255,210,120,.9); box-shadow: 0 0 12px rgba(255,190,90,.8); animation: trace-ring calc(var(--trace-ms) * .6) ease-out forwards; }
+.trace b { width: 5px; height: 5px; background: #ffd889; box-shadow: 0 0 8px #ffb347; --a: calc(var(--k) * 30deg); animation: trace-spark calc(var(--trace-ms) * .8) ease-out forwards; }
+.trace.draw b { --a: calc(var(--k) * 60deg); }
+.trace.death .flash { width: 100%; height: 100%; }
+.trace.death .ring { border-width: 3px; }
+.trace.death b { width: 6px; height: 6px; animation-name: trace-spark, trace-rise; animation-duration: calc(var(--trace-ms) * .45), calc(var(--trace-ms) * .55); animation-delay: 0s, calc(var(--trace-ms) * .45); animation-timing-function: ease-out, ease-in; animation-fill-mode: forwards, forwards; }
+.trace.retreat .flash { width: 45%; height: 45%; opacity: .55; background: radial-gradient(circle, rgba(255,255,255,.8) 0%, rgba(160,190,255,.45) 45%, transparent 70%); }
+.trace.retreat .ring { border-color: rgba(170,195,255,.6); box-shadow: none; border-width: 1px; }
+@keyframes trace-life { to { opacity: 1; } }
+@keyframes trace-flash { 0% { scale: .2; opacity: 0; } 15% { scale: 1.15; opacity: 1; } 100% { scale: 1.4; opacity: 0; } }
+@keyframes trace-ring { 0% { scale: .3; opacity: 1; } 100% { scale: 3; opacity: 0; } }
+@keyframes trace-spark { 0% { transform: rotate(var(--a)) translateX(0); opacity: 1; } 100% { transform: rotate(var(--a)) translateX(210%); opacity: .9; } }
+@keyframes trace-rise { from { transform: rotate(var(--a)) translateX(210%); top: 50%; opacity: .9; } to { transform: rotate(var(--a)) translateX(210%); top: 0%; opacity: 0; filter: blur(1px); } }
+
+/* 전쟁 연대기 (D-166) */
+.chronicle { width: min(560px, 100%); text-align: left; }
+.chronicle h4 { margin-bottom: 10px; }
+.ch-sec + .ch-sec { margin-top: 12px; }
+.ch-sec h5 { margin: 0 0 6px; font-size: 12px; letter-spacing: .08em; color: var(--accent); }
+.ch-sec ul { list-style: none; margin: 0; padding: 0 0 0 10px; border-left: 1px solid var(--line-soft); display: flex; flex-direction: column; gap: 6px; }
+.ch-sec li { display: flex; align-items: center; gap: 8px; font-size: 13px; line-height: 1.5; }
+.ch-faces { display: inline-flex; flex: none; }
+.ch-faces img, .ch-faces .glyph { width: 24px; height: 24px; border-radius: 50%; object-fit: cover; font-size: 11px; }
+.ch-faces > * + * { margin-left: -6px; }
+.ch-tag { font-size: 10px; font-weight: 700; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 0 6px; margin-right: 6px; }
+.ch-sec li.dead .ch-text { color: var(--text-primary); }
+.ch-sec li.ch-out .ch-text { color: var(--danger); }
+.ch-sec li.ch-final .ch-text { color: var(--miracle, var(--accent)); font-weight: 700; }
+.ch-sec li:not(.mine):not(.ch-out):not(.ch-final) .ch-text { color: var(--text-muted); }
+
+/* 전투 카드 스테이터스 (D-167): 서번트 이름 아래 */
+.bp-stats { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 2px; margin: 0; }
+.bp-stats div { display: flex; flex-direction: column; align-items: center; padding: 2px 0; border-radius: 4px; background: var(--bg-panel-2); min-width: 0; }
+.bp-stats dt { font-size: 9px; color: var(--text-muted); line-height: 1.2; white-space: nowrap; }
+.bp-stats dd { margin: 0; font-size: 12px; font-weight: 800; line-height: 1.2; font-variant-numeric: tabular-nums; white-space: nowrap; }
+@media (max-width: 420px) { .bp-stats dt { font-size: 8px; } .bp-stats dd { font-size: 11px; } }

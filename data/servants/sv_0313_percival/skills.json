@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0313_percival",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "B++",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "C+",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_protection_of_the_holy_grail",
+      "name_ko": "성배의 가호",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_guardian_knight_sacred_lance",
+      "name_ko": "수호기사(성창)",
+      "rank": "B+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_light_of_salvation",
+      "name_ko": "구제의 빛",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0365_huyan_zhuo",
+  "skills": [
+    {
+      "skill_id": "sk_presence_concealment",
+      "name_ko": "기척 차단",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_phantasmal_possession",
+      "name_ko": "환수빙의",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_double_bian",
+      "name_ko": "쌍편",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_prestige_star_of_heaven",
+      "name_ko": "천위성",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_sensitive_mentality",
+      "name_ko": "센시티브 멘탈",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

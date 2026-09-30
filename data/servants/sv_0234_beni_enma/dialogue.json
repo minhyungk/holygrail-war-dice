@@ -1,0 +1,376 @@
+{
+  "speaker": "sv_0234_beni_enma",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "일하쩨요!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "느려!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "실례!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "염작 병아리오름!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "이어서 풍풍!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "작육륜!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "가겠쩌여!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_8",
+        "text": "쭌식!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_9",
+        "text": "염작 인삭!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_10",
+        "text": "짜앗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_11",
+        "text": "새는 나무에서 떨어지지 않쯤미다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_12",
+        "text": "염작 영우!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_13",
+        "text": "하~앗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_14",
+        "text": "잔상 저 멀리!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "그 혀, 포를 뜨겠쩌여!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "염작발도술, 오의 첫 번째!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "참새의 일침…… 대선풍!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "참아내쩨여……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "끄악.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "우선 한 잔, 어떠쩨여?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "염작발도술, 간다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "어느 쪽 옷농이 좋으쩨여?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "선물은 여기 있쯤니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          },
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "마스터든, 영령이든, 제 앞에서 자기 몸을 챙기지 않는 건 용납하지 않으니 그렇게 아쩨여. 손님께는 정중하게. 모시는 주인께는 엄격하게. 그것이 베니엔마식 봉사술이람니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "후훗, 마스터로서 제법이라 감복했쯤니다. 싸움에서의 상황 판단은 흠잡을 데가 없쯤니다. 이제 조금만 더 생활 습관이 규칙적이라면 좋겠는데여…… 뭐, 이렇게 하루하루가 바빠서야 어쩔 수 없겠지여. 주인님의 건강은 제가 착실하게 지켜드리겠쯤니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal",
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "휴, 휴가를 주신다고여? 주인님, 내일 세상을 떠나시는 건가여?! 째, 째짹? 그냥, 쉬는 날? 평소의 답례…… 라고여……? 지옥에 태어난 지 수없는 세월, 철이 들었을 적부터 공무를 맡던 저에게는, 더없는 사치임니다만…… 베니엔마는 주인님의 수발을 드는 편이, 더 기쁘다고여……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal",
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "여기에 오길 잘했쯤니다. 아니, 여기에 올 수 있어서 다행이다, 라고 해야겠네여. 저는 지옥의 옥졸. 본래대로라면 두려움을 사는 오니인데, 저에게 보여주시는 얼굴은 늘 따스한 것이었쯤니다. 주인님도 그렇고, 할아버지도 그렇고, 착한 사람들과 만날 수 있어서 베니는 정말 행복해여. 이 은혜는 죽을 때까지, 아니 죽고 나서도 갚기로 결심했쯤니다! 주인님이 지옥에 떨어졌을 때, 이 베니엔마, 법정에서 치고 베는 대활약을 펼치겠쩌여!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "벼를 참 좋아해여. 많은 요리를 공부했찌만, 마지막에 이르는 곳은 흰쌀 주먹밥이더라고여.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "약한 자를 괴롭히면 용서 못 함니다! ……응? 거짓말쟁이는 괜찮은 거냐고여? 거짓말을 하는 건 어쩔 수 없는 일이에여. 문제는, 그 거짓말이 남에게 폐를 끼치느냐 끼치치 않느냐이니까여. ……저는 홀로, 주위를 행복하게 만들고 자기만 고독했던 착한 거짓말쟁이를 알고 있담니다.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "소원을 이루어 주는 성배. 째짹, 서양에는 그런 게 있군여. 하지만 아직 멀었쯤니다. 일본에는 놀랍게도 무한히 쌀이 나오는 쌀가마니가 있거든여.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "어라? 제 차례인가여? 그러면 요리를 시작하겠쯤니다",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "짹짹짹. 혀 잘린 참새 베니엔마, 먹여주고 재워주신 은혜를 갚겠쯤니다!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "[베니엔마] : 참새의 조사, 등롱 흘려보내기. 목숨은 빼앗지 않쯤니다! 하지만, 그 한 입으로 두말하는 혀는 용서 못 함니다! 옷농의 도행, 이것으로 폐정! [참새 십걸] : 예~이!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "[베니엔마] : 염작재봉발도술, 오의 세 번째. 죄과가 있으면 이는 필멸의 심판이라. ‘시왕판결・옷농의 도행’! [참새 십걸] : 예~이!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "[베니엔마] : 물렀거라, 물렀거라, 염마께서 지나가찐다! 참새 하기도 맛에 달린 법. 처음부터 다시 시작하쩨여! [참새 십걸] : 예~이!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "참새라고 얕보셨군여? 이것이 최속・최소・최단의 발도술임니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "이 정도인가여. 집에 돌아가면 손 씻고, 양치질을 꼭 하쩨여, 마스터.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "할아버지…… 불행하게 만들어서, 죄송해여……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "칼날이 무뎌졌었네여……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "염마정에 어서 오쩨여. 환영함니다, 손님. ……이 아니겠찌여. 서번트 세이버. 혀 잘린 참새 베니엔마, 이곳에서 봉사하게 되었쯤니다. 앞으로 잘 부탁드려여.",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

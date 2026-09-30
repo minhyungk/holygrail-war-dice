@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0091_ryougi_shiki_saber",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_independent_manifestation",
+      "name_ko": "단독현현",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_connection_to_the_root",
+      "name_ko": "근원접속",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_morning_star",
+      "name_ko": "샛별",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_unyou",
+      "name_ko": "운요",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_yin_yang",
+      "name_ko": "음양어",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

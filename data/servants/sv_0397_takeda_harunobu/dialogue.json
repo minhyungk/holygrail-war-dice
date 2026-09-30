@@ -1,0 +1,472 @@
+{
+  "speaker": "sv_0397_takeda_harunobu",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "뒤다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "숲과 같이.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "놓치지 않아.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "거칠게 가볼까.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "흐으으압!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "불과 같이!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "움직이지 마.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_8",
+        "text": "산과 같이!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_9",
+        "text": "풀 스로틀이다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_10",
+        "text": "미안하지만, 멈춰라.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_11",
+        "text": "어이쿠, 너무 빨랐나.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_12",
+        "text": "바람과 같이!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_13",
+        "text": "거슬린다, 사라져라.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_14",
+        "text": "얼쩡대지, 마!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_15",
+        "text": "크윽!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "이것이─── 타케다의 주먹이다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "흐으으읏…… 압!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "확실하게 마무리하지, 받아라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_4",
+        "text": "타케다의 불꽃은, 꺼지지 않는다!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "치잇…… 아무리 그래도 아프군!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "우옷?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "타케다는…… 무너지지 않아!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "크읍?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "스읍…… 후우……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "안심해라, 내가 있다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "내가 성이다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "격의 차이를, 가르쳐 주마!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_5",
+        "text": "그래, 타케다의 붉은색이다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_6",
+        "text": "좋은 소리지?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "내가 라이더인 건 당연한 일이야. 타케다의 기마대를 이끄는 나 이외에 적임자가 있다면 알려줬으면 싶군. ……뭐? 이곳에는 기마에 뛰어난 자들이 많이 있다고? ……재미있군. 전부 모아서 레이스라도 해볼까.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "차는 좋아. 내가 살던 시대에는 없던 물건이지만, 이 녀석을 타고 달릴 수 있는 것만으로도 너에게 소환된 가치가 있다 싶을 정도야. 바람을 가르는 주행, 난폭한 힘을 감춘 모습, 포효하는 엔진. 내가 타고 달리기에 합당한 강철의 기마다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "나는 붉은색을 좋아해. 붉은색이란 타케다이자, 불꽃의 붉은색이며, 이어받은 피의 붉은색이다. 이것만은 바꿀 수 없는 나의 근본이겠지. 그러니까 나는 붉은색을 몸에 두르고, 이 피를 불태우고, 전장에 선다. 그리고…… 붉은색은 멋지잖아.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "너인가? 그렇군, 잠깐 같이 가자. 멀리 외출…… 아니, 드라이브를 나가볼까. 알았으면 빨리 준비해. ……훗, 내 옆자리에 어울리는 녀석 따윈 평생 나타나지 않을 줄 알았는데, 설마 이 몸이 영령이 되고 난 뒤에 나타날 줄이야. 자, 오늘은 갈 수 있는 곳까지 가볼 거다. 마음 단단히 먹으라구.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "나는 태어났을 때부터 타케다를 짊어지고 타케다를 위해 살아왔다. 그 이외의 삶은 나에게 허락되지 않았고, 그럴 생각도 없었지. 그 끝에 기다리던 결말도, 다소의 후회는 있지만 받아들이고 있어. 그런 내가 기이한 인연에 이끌려 지금 이렇게 네 앞에 서 있다. 네가 짊어진 것은 그날 내가 짊어졌던 것보다 훨씬 클 테지. 그래도 네가 짊어지고 앞으로 나아가겠다면, 타케다가 아니라 한 명의 남자로서 나는 너를 지지하겠다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것? 그렇군…… 차도 나쁘지 않지만, 다른 걸 들자면 온천인가? 카이에도 숨겨진 온천을 몇 개 가지고 있거든. 전쟁터에서 입은 상처를 치유하는 데는 온천만 한 게 없어. 원한다면 안내해 줄까?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "내가 애벌레를 무서워한다고……? 누구냐, 그런 시시한 소리를 너한테 이야기한 사람이. 어디서 들었는지는 모르겠지만………… 아니, 인정하지. 확실히 말해서 싫어해. 이러면 됐나? ───어이, 잠깐 기다려. 설마 가지고 있는 건 아니겠지? 아니, 가지고 있어도 꺼내지 않아도 괜찮아. ……진짜 꺼내지 마라?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "소원을 이루어주는 성배인가…… 아무래도 수상쩍은 선전 문구 같은데, 그렇게 빤히 보이는 미끼로 유인해서 사람들을 서로 싸우게 하다니, 마술세계도 전국시대와 별반 다르지 않은 모양이군.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "여기는 못 지나간다, 다른 곳을 알아봐. 정 지나가겠다면─── 타케다를 상대해야 할 거야.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "네놈들이 타케다를 상대할 수 있다는 거냐?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "내 앞에 선다는 것은 타케다 앞에 선다는 것. 장난으로 끝나지 않을 거다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "타케다의 싸움, 알려주마!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "신속함은 바람과 같이. 천천히 함은 숲과 같이. 침략할 때는 불과 같이! 멈춰 있을 때는 산과 같이!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "이 일전을 결정짓는 건, 타케다의 긍지. 아니, 나의 각오다! 우오오오오오! ‘풍림화산’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "바람과 함께 살고, 숲과 함께 자라며, 불과 함께 걷다가, 산과 함께 정벌한다. 삼라만상, 천연자연의 이치를 여기에! ‘풍림화산’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_4",
+        "text": "하겠다고 하면 반드시 해낸다, 그것이 나의 법칙이다! 들어 올려라, 깃발을! 타케다의 깃발을! ‘풍림…… 화산’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "전국 최강의 이름은 장식이 아니야. 신경 쓰지 마. 나에게 패배하는 건 부끄러운 일이 아니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "타케다를 상대하기에는, 십 년은 일렀구나.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "전장의 승리는 5할이면 훌륭, 7할이면 그럭저럭. 이 정도로 해 두마.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_4",
+        "text": "멍청한 놈. 속고 속이는 건 난세의 일상사다. 주둥이 놀릴 시간이 있으면 덤비기나 해.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "원한은 적…… 인가.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "타케다는 죽지 않는다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "나를…… 무릎 꿇리다니……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_4",
+        "text": "담뱃불…… 있나?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "라이더 타케다…… 하루노부다. 네 소환에 응해 대령했다. 풍림화산의 깃발 아래, 전국 최강 타케다의 힘, 마음껏 휘두르도록 하지. 그런데─── 불, 갖고 있나?",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,379 @@
+{
+  "speaker": "sv_0364_iyo",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "갑니다~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "이얍!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "타타타탓! 타하압~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "이요, 레이저~!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "───어둠이여.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "떨어져라───!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "전부 한꺼번에, 뚫어라~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "2대 필살! 이요 킥~!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "영원한 어둠을 거닐어라…… 성월야───!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "싫어싫어싫어싫어싫어~……!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "아얏?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "으으으으으으으으음~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "히잉~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "영원한 어둠의 예지여, 나에게 오라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "기잉, 번쩍☆",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "하나~ 둘, 이욧차!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "나라가 멸망할 때란, 한 사람의 힘으로 어떻게 되는 것이 아닙니다…… 켜켜이 쌓인 앙금은, 어느 순간을 경계로 땅에서 흘러나와 병처럼 전파되어 모든 것을 썩게 만들지요…… 그런 법이랍니다……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "이야~ 저도 좋아서 멸망시킨 게 아니거든요? 야마타이국…… 그런데 다들 “히미코 님이라면 이랬다~”라느니, “히미코 님이라면 저랬다~”라느니. 그런 건 저도 다 안다구요~…… 선대가 그렇게나 위대하면 2대째는 고생한단 말이죠……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal",
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "죄송합니다…… 조금 긴장이 풀리면 저도 모르게 저절로 푸념이…… 그야 히미코 님과 비교하면 대단할 것 없다 싶지만, 저도 꽤 한다고 생각하거든요? ……네?! 미래 씨도 그렇게 생각한다고요?! 진짜로?! 뭔가 좀 아시네요~! ……우후후! 그렇다면 오늘 밤은 이요가 날 샐 때까지 함께 있어 드릴게요~! 자, 가죠, 가~!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "어두운 밤의 어둠에도 달빛은 닿습니다…… 그것은 어둡고, 희미한 빛일지도 모르지요. ……하지만 그것은 분명히 밝히고 있는 것이에요…… 머나먼 앞날까지 이어지는, 시간의 여행길을─── ……네. 제가 당신을 미래로 인도하겠습니다…… 이 몸은, 그러기 위해서 영원한 어둠으로부터 태어난 것이니까요───",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것이요? 몸을 움직이는 건 좋아하는데요? 자기 입으로 말하기도 뭐하지만 춤도 특기예요! 달밤에 혼자서 춤을 추고 있으면 아주 마음이 차분해져요…… 그것 말고는, 도토리라든가…… 네, 도토리.",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 거요~? 그러네요, 어리석은 민중이라든가…… 네? 그렇게 무거운 거 말고……? 그렇다면 일찍 일어나는 것일까요? 어째서 그런지 아침에 약하단 말이죠~ 저…… 밤에는 무지무지 강한데요……",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "소원을 이루어주는 성배라고요~? 그러네요…… 그렇다면 조금 더 살이 붙고 싶다고 할지, 뭐라고 할지…… 저는 먹어도 먹어도 몸에 살이 붙지를 않아서…… 먹으면 먹은 만큼 살이 붙는 히미코 님이 부러워요~…… 이 말을 하면 늘 뭐라 말할 수 없는 표정을 짓지만요, 히미코 님……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "어둠의 여왕, 이요…… 어두운 달의 빛으로, 영원한 밤을 비추겠노라───",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "말귀를 못 알아듣는 놈들은, 발로 차서 날려버리죠!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "야마타이국 2대 여왕, 이요…… 저승의 어둠에서 찾아뵙습니다───",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "저요저요~! 이요입니다~!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "시천에 영원한 밤, 시조에 짐승. 별이여 떨어져라, 천지여 가라앉아라─── ‘어스름에 저무는 달의 구슬’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "땅을 기는 빛, 하늘을 가리는 어둠. 시간조차 닿지 않는 심연에 가라앉아라───! ‘어스름에 저무는 달의 구슬’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "최대해방, ‘어스름에 저무는 달의 구슬’…… 하여간 이요가 하는 말을 들으세요…… 들으세요…… 들으세요……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "이것이 야마타이국 2대 여왕의 힘입니다! 흐흥~! 저도 맘만 먹으면 할 수 있거든요!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "새로운 달의 빛이, 우리의 미래를 밝히기를───",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "이요, 이겼습니다~! 자아! 일도 끝났으니 가는 길에 쇼핑이라도 하고 돌아가죠! 그렇게 하죠!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "역시, 실패했어요…… 훌쩍.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "멸망이란, 피할 수 없는 것일까요……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "돌아가서 밥 먹고 씻고 자겠습니다~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "나의 이름은 야마타이국 2대 여왕, 이요. 영원한 밤의 무녀이자 역월의 아이. 어두운 빛, 찬란한 어둠으로써 당신의 미래를 축복하겠습니다. 그렇게 되었으니, 오래~도록 잘 부탁드릴게요, 미래 씨!",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

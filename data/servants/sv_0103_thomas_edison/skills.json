@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0103_thomas_edison",
+  "skills": [
+    {
+      "skill_id": "sk_territory_creation_ex_d_equivalent",
+      "name_ko": "진지작성 EX(D 상당)",
+      "rank": null,
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_item_construction_ex_d_equivalent",
+      "name_ko": "도구작성 EX(D 상당)",
+      "rank": null,
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_wizard_of_menlo_park",
+      "name_ko": "멘로파크의 마술사",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_mass_production",
+      "name_ko": "대량생산",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_concept_improvement",
+      "name_ko": "개념 개량",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

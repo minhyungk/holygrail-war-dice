@@ -254,10 +254,22 @@ describe('즉사/우연 (phases.md §5-4 ~ 8, D-097, D-163)', () => {
     expect(r.totals[0]).toEqual([9.5]);
     expect(r.log.ofType('phase_resolved')[0]!.data.skipped).toBe(true);
   });
-  it('6. 쿠 훌린 자연값 12 → 기적 +3 → 18 → 성공', () => {
+  it('6. 쿠 훌린 자연값 12지만 약자가 아니라 기적 없음 → 15 → 성공 (D-166)', () => {
     const r = fate(12);
-    expect(r.totals[0]).toEqual([18]);
+    expect(r.log.ofType('battle_started')[0]!.data.underdog).toBe('fc_h');
+    expect(r.log.ofType('phase_rolled')[0]!.data.rolls[0]!.miracle).toBe(false);
+    expect(r.totals[0]).toEqual([15]);
     expect(r.log.ofType('phase_resolved')[0]!.data.skipped).toBe(true);
+  });
+  it('6-1. 방어측 하산(약자) 자연값 12 → 기적 +3 → 18 → 성공 (D-166)', () => {
+    const r = run(
+      { a: fighter('fc_h', HASSAN, 'ai'), b: fighter('fc_c', SV.cu, 'ai'), terrain: 'forest' },
+      [12, ...tail.rolls],
+      [95, 1, ...tail.draws], // 공격측 추첨 1 = b = 쿠 훌린
+    );
+    expect(r.log.ofType('phase_started')[0]!.data).toMatchObject({ phase_id: 'ph_fate', attacker: 'fc_c', defender: 'fc_h' });
+    expect(r.log.ofType('phase_rolled')[0]!.data.rolls[0]!.miracle).toBe(true);
+    expect(r.totals[0]).toEqual([18]);
   });
   /** 국면 1의 유형·공격측만 본다: 첫 굴림(판정) 직전에 멈춘다 */
   const firstPhase = (input: Omit<BattleInput, 'battleId'>, draws: number[]) => {

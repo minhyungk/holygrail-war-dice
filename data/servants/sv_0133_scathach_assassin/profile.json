@@ -1,0 +1,54 @@
+{
+  "servant_id": "sv_0133_scathach_assassin",
+  "source_id": 133,
+  "name_ko": "스카사하",
+  "name_short_ko": "스카사하 어쌔신",
+  "class": "assassin",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "A+",
+    "mana": "C",
+    "luck": "D",
+    "np": "A+"
+  },
+  "alignment": "good",
+  "alignment_detail": "중립·선",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "걷어차 뚫는 죽음의 투창",
+    "ruby_ko": "게이 볼그 얼터너티브",
+    "rank": "B+",
+    "type_ko": "대인/대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6024000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/602400/602400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/602400/602400b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    105,
+    203,
+    302,
+    303,
+    404,
+    1000,
+    2001,
+    2008,
+    2113,
+    2631,
+    2838,
+    2858,
+    5000,
+    602400
+  ],
+  "lore": {
+    "detail": "이경 마경 ‘그림자 나라’의 여왕이자 용사의 스승인 스카사하 본인───이겠지만, 이번 환경에 대응한다며 자신과 주변 여성 서번트 여럿을 수영복으로 갈아입힌다는 폭거에 나섰다.\n결과는 보시다시피 여름 분위기가 가득하다. “가끔은 이런 것도 좋겠지”라는 스카사하 본인의 말."
+  },
+  "instant_death": true
+}

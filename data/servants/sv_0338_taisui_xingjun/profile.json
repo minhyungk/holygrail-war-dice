@@ -1,0 +1,59 @@
+{
+  "servant_id": "sv_0338_taisui_xingjun",
+  "source_id": 338,
+  "name_ko": "태세성군",
+  "name_short_ko": "태세성군",
+  "class": "alterEgo",
+  "ranks": {
+    "str": "A",
+    "end": "EX",
+    "agi": "D",
+    "mana": "B",
+    "luck": "D",
+    "np": "EX"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "중립·중용",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "태세두상동토",
+    "ruby_ko": "타이수이・어웨이큰",
+    "rank": "A",
+    "type_ko": "재액보구",
+    "special_attack": [
+      202
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_10012000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1001200/1001200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1001200/1001200b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    109,
+    201,
+    302,
+    305,
+    404,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2019,
+    2037,
+    2040,
+    2667,
+    2835,
+    5000,
+    1001200
+  ],
+  "lore": {
+    "detail": "태세성군은 태세신이라고도 불리고, 태세(목성의 거울상으로서 상상한 가상의 천체)가 신격화된 존재다.\n태세는 땅속에서 꿈틀대는 살덩어리(시육이라고도 불린다)와 동일시되며, 재앙을 가지고 온다는 그 살덩어리의 전승에 따라, 재앙신으로서의 성질도 지니고 있다.\n태세신은 그 해의 십이지 방향에 위치한 방위신이며, 그 방향에서 벌어지는 행위의 길흉과 관련되어 있다고 한다."
+  },
+  "instant_death": false
+}

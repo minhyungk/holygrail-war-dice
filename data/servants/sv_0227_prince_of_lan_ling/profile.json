@@ -1,0 +1,56 @@
+{
+  "servant_id": "sv_0227_prince_of_lan_ling",
+  "source_id": 227,
+  "name_ko": "난릉왕",
+  "name_short_ko": "난릉왕",
+  "class": "saber",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "A+",
+    "mana": "D",
+    "luck": "D",
+    "np": "B"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "난릉왕입진곡",
+    "ruby_ko": "용맹한 가면 쓴 자, 음용겸미의 난릉왕이로다",
+    "rank": "C+",
+    "type_ko": "대군보구(자신의진영)",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1036000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/103600/103600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/103600/103600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    100,
+    202,
+    300,
+    303,
+    404,
+    1000,
+    2001,
+    2008,
+    2009,
+    2012,
+    2075,
+    2631,
+    2780,
+    2858,
+    5000,
+    103600
+  ],
+  "lore": {
+    "detail": "중국 남북조시대, 북제를 섬기던 무장. 그 미모와 용맹함으로 유명하며, 제의 군신으로 칭송받았다. 하사받은 물품은 과일 하나라도 부하들과 나누었다고 한다. 사후에는 난릉무왕이라는 시호를 받았다."
+  },
+  "instant_death": false
+}

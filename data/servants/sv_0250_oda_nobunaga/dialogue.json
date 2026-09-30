@@ -1,0 +1,395 @@
+{
+  "speaker": "sv_0250_oda_nobunaga",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "받아라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "사라져라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "짜자자자자자~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "가소롭다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "준비! 쏴라~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "이렇게다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "그럼 죽어라! 차아앗──!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "내장을, 쏟아내라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "간다! 엉망진창 살법, 제육천마난사!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_4",
+        "text": "지금이다! 파이널 놋부 스페셜───!!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "우왓따따따따! 건방 떨지 마라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "아얏!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "우와아아아아악~~?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "제법이지 않느냐!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "우하하하하아!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "재미있군!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "어쩔 수 없다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "덧없는 꿈과 같구나!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "뭐냐, 네놈이 나에게 감히 간언하겠다는 게냐? 호오, 나에게 말이지. 그 분수 모르는 행태를 보아, 일단 듣기는 해주마. 뭘, 시시한 이야기라면 이 헤시키리를 뽑을 뿐이다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "일군의 장수가 경솔하게 앞으로 나서지 마라. 앞으로 나가더라도 공적을 세우면 부하의 공을 빼앗는 꼴이 되겠지. 그렇다고 실수를 저지르면 부하의 마음도 떠날 게야. 따라서 장수는 경솔하게 앞으로 나서서는 안 된다는 얘기다. ……응? 오케하자마? 난 그런 거 모른다!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "날 때부터 재능이 있는 자는, 재능에 의존해 연마하기를 게을리하지. 허나 날 때부터 재능이 없는 자는, 자신의 무력함 때문에 단련하지 않느냐? 하루하루를 사는 각오가 다르다는 게야. 이 점이 중요하다, 마스터.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "──눈치채고 있느냐? 나의 몸…… 그래. 공허해질 때가 있지. 본래, 나는 이 세계에서는 이 형태로 고정되지 못한다. 그럼에도 어떻게든 현계하고 있는 것은, 그대라는 쐐기가 있기 때문이지. 내가 아닌 내가 폐를 끼칠 때도 있겠지만, 뭘, 그 녀석들도 그대를 위해서 있는 게야. 용서하거라……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "우하하하~!! 그대는 참으로 귀여운 녀석이로구나! 자, 가까이 오너라! 좀 더! 대체 뭘까~ 그대에게는 뭐라고 할지, 묘한 매력이 있구먼. 말하자면 수수한 멋이 있는 찻잔이라고 할까 뭐랄까, 뭐라 표현할 수 없는 맛이 있어. ……뭐, 나에게 귀여움 받을 수 있는 것도 어엿한 재능이지. 자랑스러워하거라! 으음~…… 촉감 또한 대명물이로구먼…… 어, 뺨을 부비지 말라고? 어허~ 부끄러워하지 말거라, 요놈, 요놈~!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것 말이냐? 새로운 것이라면 따질 것 없이 저절로 신경이 쓰이지. 그 있지 않느냐, 최신 게임이라든가 맛있는 남만 과자라든가, 뭐, 그런 게 있잖느냐? 어서 가져오지 못할까! 아무튼 간에, 나는 인간의 혁신을 좋아한다. 이 다음은 어떻게 되어 있을까, 그것이야말로 인간이 인간인 이유지. 그대도 그리 되도록 하는 게 좋을 게야.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것 말이냐? 어디 보자, 신에게 의존하기만 하는 녀석이려나. 신불이란 존중이야 해도 의존할 상대가 아니지. 인간의 가능성은 인간의 것이다. 그대, 결코 게을러져서는 안 된다?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배라…… 원망기 운운하는 소리는 둘째치고, 뭐라고 할까, 생긴 것에 수수한 멋이 없지 않느냐? 저렇게 번쩍거리면 멋스러운 것과도 거리가 있고 말이지. 저런 형태를 좋아하는 것은 원숭이 정도이지 않을까? ……아아, 응. 원숭이라면 기꺼이 품속에 넣으려 들겠구먼.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "출진이다! 이 노부나가의 싸움, 그 눈에 새기도록 하라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "내가 제육천마왕, 오다 노부나가다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "옛것에 새것을 깐다. 그것이 나의 천하포무다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "어떠한 신불화생이라 할지라도, 나를 막을 수는 없다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "삼계신불회신으로 돌아가라── ‘파순변생・삼천대천천마왕’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "육천을 모아 사해를 뒤덮는다── ‘파순변생・삼천대천천마왕’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "과거・현재・미래── 모든 내가 모여, 연다! ‘파순변생・삼천대천천마왕’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_4",
+        "text": "‘파순변생・삼천대천천마왕’!! 이것이 나의, 전력전개다아아아!!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "웃핫핫하~! 나야말로 신불중생의 적, 제육천마왕・오다 노부나가로다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "이길 만해서 이긴다. 마왕의 싸움이란 이래야 하는 법이지!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "이겼다! 천하포무, 끝!! ……아니, 끝나지는 않았나. 자, 다음 싸움이다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_4",
+        "text": "예~이! 보고 있느냐, 마스터! 나도 참, 마왕으로 착각할 만큼 강했지? 뭐, 마왕 맞지만! 테헤☆",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "……훗. 덧없는 꿈과 같은, 법이로구나……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "제법이지 않느냐……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "엉망진창이구먼…… 뭐, 어쩔 수 없나……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_4",
+        "text": "용케 버텼다고 해야 할까……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "이 몸이 어벤저가 되다니…… 우하하하! 참으로 업이 깊은 일이로구나. 좋다! 제육천마왕 노부나가가 사는 모습, 그대의 혼에 두루 새기거라!",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0391_udk_barghest",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_mad_enhancement",
+      "name_ko": "광화",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_tam_lin",
+      "name_ko": "요정기사",
+      "rank": "E",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_thundercloud_devourer",
+      "name_ko": "뇌운포식자",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_union_defence_knights",
+      "name_ko": "수호기사연맹",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_queen_keeper",
+      "name_ko": "퀸 키퍼",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_strike_weather",
+      "name_ko": "스트라이크 웨더",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

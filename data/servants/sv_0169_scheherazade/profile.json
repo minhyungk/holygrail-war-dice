@@ -1,0 +1,54 @@
+{
+  "servant_id": "sv_0169_scheherazade",
+  "source_id": 169,
+  "name_ko": "셰에라자드",
+  "name_short_ko": "셰에라자드",
+  "class": "caster",
+  "ranks": {
+    "str": "E",
+    "end": "D",
+    "agi": "E",
+    "mana": "C",
+    "luck": "EX",
+    "np": "EX"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "질서·중용",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "천일야화",
+    "ruby_ko": "알프 라일라 와 라일라",
+    "rank": "EX",
+    "type_ko": "대왕보구",
+    "special_attack": [
+      2113
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5030000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/503000/503000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/503000/503000b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    202,
+    300,
+    305,
+    405,
+    1000,
+    2001,
+    2008,
+    2631,
+    2858,
+    5000,
+    503000
+  ],
+  "lore": {
+    "detail": "……그렇습니까. 불려오고, 말았습니까…… 휴우…… (한숨) 적재적소, 는 아실 터. 전장보다는 당신의 방에서──"
+  },
+  "instant_death": false
+}

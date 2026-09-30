@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0319_charlotte_corday_caster",
+  "skills": [
+    {
+      "skill_id": "sk_magic_show_field",
+      "name_ko": "매직 쇼・필드",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_create_magic_goods",
+      "name_ko": "매직 굿즈・크리에이트",
+      "rank": "C+",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_illusionist_imposter",
+      "name_ko": "일루셔니스트(가짜)",
+      "rank": "C+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_haphazard_show_planning",
+      "name_ko": "엉터리 쇼・플래닝",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_stage_magician_angel",
+      "name_ko": "기술의 천사",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0272_super_orion",
+  "skills": [
+    {
+      "skill_id": "sk_independent_action",
+      "name_ko": "단독행동",
+      "rank": "EX",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_blessing_of_the_sea_god",
+      "name_ko": "해신의 축복",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_curse_of_the_celestial_scorpion",
+      "name_ko": "천갈의 저주",
+      "rank": "D",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_stout_arm_of_brutality",
+      "name_ko": "짐승성의 호완",
+      "rank": "B+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_moon_goddess_s_pressure",
+      "name_ko": "달의 여신의 압박",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_tri_star_archer",
+      "name_ko": "삼형제별의 궁수",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

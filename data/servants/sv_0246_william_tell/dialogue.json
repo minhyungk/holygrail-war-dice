@@ -1,0 +1,290 @@
+{
+  "speaker": "sv_0246_william_tell",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "급소를 꿰뚫는다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "조금 난폭하게 간다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "숨통을 끊지!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "이것이 사냥이라는 거라구.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "아낌없이, 팍팍 써보도록 할까!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "눈치챘나? 너희들이 사냥감이다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "어마어마한 사냥감인 모양이군……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "으윽.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "초조해할 필요 없어.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "잠깐 쉬자고.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "자, 그러면, 무엇을 쏘지?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "‘우리’, ‘슈비츠’, ‘니트발덴’. 과거에 우리들은 살아남기 위해서 영원한 맹약을 맺었지. 지금도 스위스라는 나라가 되어서 남아 있잖아? 감개무량하네. 뭐, 요컨대 신뢰가 있다면 그런 강고한 관계도 구축할 수 있다는 얘기지. 그건 그렇고, 나와 댁 사이에 그런 신뢰가 생길지 어떨지는, 앞으로 진득하게 확인해 나갈 수밖에 없을까~",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "나는 가능하다면 쏴야만 하는 것 외에는 쏘고 싶지 않아. 산 짐승이나, 혹은, 내 화살만이 막을 수 있는 악당이나. 잘못된 것을 쏘게 하지는 말아 줘. 부탁한다구.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "알아 둬 줬으면 하는데 말이지, 총독의 심장도, 아들의 머리 위에 놓인 사과도, 쏴서 즐거운 것이 아니라는 것이야. 만약 또 같은 상황이 오면, 같은 일을 하겠지만 말야.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "이 담배 말인가? 물론, 원래는 피지 않았는데, 어쩐지 취향에 맞아서 말이지. 뭐, 사냥에 방해가 될 냄새는 풍기지 않을 테니 안심해 줘. 아무리 그래도 그런 부분은 신경 쓰고 있다구.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "나는, 영웅 같은 게 아니야. 평범한 사냥꾼이고 평범한 아버지지만, 그래도, 지켜야만 하는 것을 위해 싸우지 않으면 안 될 때가 있어. 댁의 올곧은 눈을 보고, 그것이 떠오르더라고. 그러니까, 뭐, 앞으로 잘 부탁할게.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것? ……그렇지. 산에 들어가서 짐승을 사냥하고, 집에 돌아오면 가족이 맞이해 준다. 그런 당연한 나날이 최고야. ……헷헷. 따분한 대답이라 미안하게 됐어.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "쓸데없이 잘난 척하는 녀석 같은 건 그다지 좋아하지 않아. 아니, 제대로 된 임금님이라면 경의를 표한다니까? 자기 모자에 머리를 숙이게 만드는, 꼴사나운 관리의 얘기였어.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "무엇이든 소원이 이루어지는 성배? ……나는, 평범한 사람이라서 말이야. 나와 가족이 행복하게 살 수 있기를── 이 정도의, 쪼그마한 소원만 이루어지면, 그것으로 충분해. 손쉽게 팔 수 있는 모피 한 장 쪽이, 더 고맙지.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "사냥의 시간이다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "뭐, 느긋하게 가자구.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "맞힌다고. 그 이외에 무슨 말을 할 필요가 있지? ‘발사된 신뢰의 첫 번째 화살(압펠 쉬센)’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "빗나간다면? 아아…… 그때 역시, 실력을 보일 때지. ‘발사된 신뢰의 첫 번째 화살(압펠 쉬센)’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "헷헷. 빗나갈 리가 있겠냐고.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "사냥에는 물러날 때도 중요하다구.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "이 녀석은…… 안 되겠어……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "우리산에…… 돌아가자……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "불렀나? 내 이름은 윌리엄 텔이다. 숲의 짐승을 쏴줬으면 한다…… 는 표정은 아닌 것 같군. 이거야 원.",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

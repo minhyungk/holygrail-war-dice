@@ -1,0 +1,406 @@
+{
+  "speaker": "sv_0385_aesc_the_rain_witch",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "속죄의 비여!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "지역에 따라, 칼날!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "스프라이트 노커!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "앞만, 보고 있네요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "에흐으시커!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "말 울음소리처럼!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "발을 멈추고, 목을 벤다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_8",
+        "text": "눈부시게 빛나는, 바반 시!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_9",
+        "text": "마녀의, 일격!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_10",
+        "text": "여기는…… 이렇게네요!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_11",
+        "text": "춤은, 서투릅니다만!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_12",
+        "text": "빈틈 확인! 훗, 타아앗!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_13",
+        "text": "아하이슈키!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_14",
+        "text": "광채처럼.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "스프라이트! 페어리 링・머시룸! 사라지세요!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "마무리 짓겠습니다! 눈 깜빡이는 사이에, 선명하게! 결말은, 화려하게!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "눈을 감아! 이렇게 난폭한 일은, 흔적도 없이, 없던 일로!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "우아아아아아앗?!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "우왓?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "이 주변이 좋겠네요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "아주 살짝, 궁리를.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "동료가 있는 것은 좋은 일입니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "그렇게 날뛰지 마, 날뛰지 마.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_5",
+        "text": "결전술식!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_6",
+        "text": "분쟁은, 여기까지입니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          },
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "정식으로 자기소개를. 마녀라고 말하긴 했습니다만, 저는 비의 나라에서 자란 요정입니다. 물푸레나무라는 뜻의 ‘토네리코’는, 왕비님께 받은 이름이에요. 세계수처럼, 머지않아 나라를 지켜보는 왕녀가 되어주기를 바란다…… 라는. 굉장한 목표지요? 팔불출도 적당히 해줬으면 싶어요. ……어흠. 이야기가 잠깐 샜습니다. 당신은 인간 마술사, 저는 요정 마술사. 마술사끼리 사이좋게 지내주시겠어요?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "요정이 마술을 쓴다…… 는 것은 이상한 이야기입니다만, 이것은 저의 요정으로서의 특성을 감추기 위한 것이기도 합니다. ……후훗, 여러 가지로 비밀이 많은 마녀거든요? 저는.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "어떤 마술을 쓰느냐고요? 그러네요…… 저에게 마술이란 이야기, 한 권의 책 내용을 응축해서 현상으로 재현한다…… 고나 할까요. 비의 나라에는 마술 선생님이 없었기에 스스로 익힌 저만의 마술입니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "요정이 인간에게 참견하는 이유, 약간 이해가 되기 시작했습니다. 즐겁고, 웃기고 싶고, 곤란하게 만들고 싶고, 이쪽을 봐줬으면 하고, 만나고 싶어진다. 당신과 만약 비의 나라에서 만났더라면…… 아뇨, 그거야말로 낙원의 요정이 할 소리가 아니겠지요. 꿈같은 이야기는, 책 안에만 담아두기로 해요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것은…… 아버님, 어머님, 비의 나라의 요정들. 그리고 도서실과 빗물이 떨어지는 소리예요.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것은, 기름진 음식일까요. 고기는 좀 거북하네요. 식당에서 자주 보는 감자튀김도 꽤나 악성이고요. 그런 것을 좋아하면 낙원의 요정으로서 문제다 싶은데.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배는 뛰어난 마력 자원이자 귀중한 일화입니다. 성배는 자연계의 마력인 마나뿐만이 아니라 지성체로부터 만들어지는 마력인 오드가 응축되어 생기는 것. 소원을 이루기 전에, 기적을 바라는 마음이 있기에 형태를 이루지요. 별의 내해에서 성배가 만들어지지 않는 것은 그렇기 때문이 아닐까요?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "전투로군요? 시작하죠!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "각오는, 충분히 하셨고요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "되도록 신중하게, 가능한 한 효율적으로. 모처럼 생긴 재료잖아요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "준비는 언제든 되어 있습니다. 이번에는 어떻게?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "이상의 나라, 이상의 왕. 백악의 성에 모이는 것은 청렴하며 무쌍인 기사. 가슴 설레는 환상을, 새가 엮노라! ‘성검의 아득한 꿈의 흔적(메모리 오브 론디니움)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "물거울, 최대 전개! 낙원의 요정의 이름 아래에, 찬란한 미래를 보이겠습니다! 약속된 승리의 검, 수많은 희망은, 지금, 하나로!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "무사히 끝났습니다. 내용, 어땠나요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "승리의 대가로, 당신의 눈물을 한 방울.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "피아를 불문하고 상처의 치료를. 살아 있으면, 다른 운명도 돌아옵니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "어느 사이에, 이런……?! 지나치게, 열중했었습니다……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "미안해요, 미안해요미안해요……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "도중, 퇴장인가요…… 다음에 경험을 활용할 수 있으면 좋겠습니다만……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "안녕하세요. 당신이 저의 소환자, 이지요? 저는 토네리코. 비의 나라의 마녀, 토네리코. 식물계 마술은 서투릅니다만 적을 쓰러뜨리는 마술, 분쟁에 대비하는 마술, 장애물을 파괴하는 마술에는 자신이 있습니다. 성 밖의 세계는 익숙치 않습니다만, 부디 잘 부탁드릴게요.",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

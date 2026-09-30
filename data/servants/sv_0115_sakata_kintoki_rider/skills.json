@@ -1,0 +1,34 @@
+{
+  "servant_id": "sv_0115_sakata_kintoki_rider",
+  "skills": [
+    {
+      "skill_id": "sk_divinity",
+      "name_ko": "신성",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_long_distance_dash",
+      "name_ko": "천리 질주",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_animal_communication",
+      "name_ko": "동물 회화",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_natural_body",
+      "name_ko": "천성의 육체",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

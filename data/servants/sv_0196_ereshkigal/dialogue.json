@@ -1,0 +1,396 @@
+{
+  "speaker": "sv_0196_ereshkigal",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "공격이야!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "공격하는 거야!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "안 놓쳐!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "놓치지는 않아!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "거기, 움직이지 마!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "거기, 움직이면 안 돼!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "후후, 가둬줄게.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_8",
+        "text": "수면에서 튀어 올라라, 쿠룰루!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_9",
+        "text": "나의 이름 하에───",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_10",
+        "text": "땅을 흔들어라, 쿠사리쿠!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_11",
+        "text": "되살아나라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_12",
+        "text": "땅은 하늘에! 하늘은 땅에!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "명계의 붉은 벼락이여!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "내, 내 것이 되도록 해~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "여차! 명계의 붉은 벼락이여!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_4",
+        "text": "엿차! 내, 내 것이 되도록 해~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_5",
+        "text": "방열, 발전! 대조명!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_6",
+        "text": "엿차……! 방열, 발전! 에네르기야앗~!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "이 정도로, 쓰러질 것 같습니까!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "왓!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "이런 거…… 아프지 않아!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "땅의 여신, 에레쉬키갈이 명합니다!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "배짱 좋네, 마음에 들었어!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "안 된다니까! 지금 폼 잡고 있으니까!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "아니, 잡아당기지 마, 진짜!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것? 그거야 뻔하…… 따, 딱히 없어. 나는 명계의 여주인. 취미는 등산과 감옥 제작 정도인, 속 시커먼 여자인걸. 여기는 너무 반짝거려서 조금 힘들 정도야.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 건 당연히 이슈타르와 사치와 한심한 인간이야. ……어? 나도 꽤 한심한 인간이고 사치를 좋아합니다, 라고? ……정말? 당신 생각해 보니 꽤나 바보 같은 구석이 있었지, 이거 내가 제대로 교육해 줘야겠네.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배? 흥미는 있어. 뛰어난 마력 리소스라면 뭣에든 유용하게 활용할 수 있겠고. 낭비하지 않을 거면 저금은 많이 할수록 좋다고 생각해, 나는.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          },
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "그런고로 이 빙의체로 소환된 이상, 명계에서 살짝쿵 도와주러 온 에레쉬키갈이야. ……우, ……우우우, ……우우우우우, 뭐, 뭐야, 그 싱글거리는 얼굴! 평소라면 권능을 절반 받아 가겠지만, 당신은 인간이니까 이번에는 관대하게 봐줄 테니 감사해!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "지상에서 싸우는 건 힘드네…… 솔직히 얕보고 있었어. 하지만 지치는 것 이상으로 재미있는 게 많이 있어서 나는 마음에 드는데? 꽃도 바람도 별도 물도 색채가 선명하고…… 무엇보다 당신들의 삶에서는 배우는 게 있어. 나도 언젠가 지상에 지지 않는 도시를 만들 거니까.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "마스터? 이, 이야기할 게 있는데…… 아까 다른 영령에게 “꽤나 마스터에게 부려 먹히는데, 무슨 짓 했어?” 라는 소리를 들었는데…… 호, 혹시 내가 모르는 사이에 당신에게 저주라도 걸었던 걸까……! 어? 아냐? 친구로서 도움을 받을 뿐? ……친구?! ……그, 그래, 우리는 친구야!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "싸움이 계속되는 한 함께 있을 수 있는 건 좋은데, 싸움이 계속되면 당신은 상처 입어. 즐거운 일이 많아서 생각도 안 했지만, 나는 한시라도 빨리 당신이 원래 생활로 돌아갈 수 있도록 노력해야만 해…… 이럴 거면 아예 명계에 가둬서……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "미안해, 얼마 전에 이상한 소리를 했는데, 그건 잊어줄래? 당신은 현대를 사는 마스터, 나는 그걸 동경하는 땅 밑의 여신이야. 당신의 기쁨이 나의 목적. 빛은 언젠가 사라지는 것이니까, 그때까지 그림자에서 당신을 계속 지킬게. 명계의 여신으로서가 아니라 둘도 없는 친구로서.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "내 차례네. 보고 있어. 장엄하게 끝낼 테니까!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "싸우기로 했으면 봐줄 수는 없어. 각오해.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "부탁할게, 메슬람타에아! 명계의 가호를 알도록 해! 나와라, 발열신전. 이것이 나의 “영봉을 밟고 끌어안는 명부의 풀무(쿠르 키갈 이르칼라)”!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "하늘에는 먼 바다, 땅에는 감옥. 내 발뒤꿈치야말로 명부의 분노! 나와라, 발열신전. 반성하도록 해! “영봉을 밟고 끌어안는 명부의 풀무(쿠르 키갈 이르칼라)”!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "다들 무사해? 그래, 그럼 다행이네. 계속 조심해서 가자.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "내 손에 걸리면 이 정도거든? ……뭐, 마스터의 지시가 좋았던 것도 있지만.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "모처럼 불러줬는데…… 미안해……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "윽……! 역시 나로는 당신의 힘이……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "서번트 랜서. 명계의 여주인, 에레쉬키갈. 소환에 응해 찾아왔어. 개인에게 힘을 빌려주는 건 내키지 않지만, 불려 온 이상 도와줄게. 감사하도록 해. …… ………… ……………… 아, 아니 왜 말이 없는 거야? 난 번듯한 여신이거든요!",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "servant_id": "sv_0139_cleopatra",
+  "source_id": 139,
+  "name_ko": "클레오파트라",
+  "name_short_ko": "클레오파트라",
+  "class": "assassin",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "A",
+    "mana": "D",
+    "luck": "D",
+    "np": "A"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "질서·중용",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "새벽녘을 끝내는 뱀이여, 여기에",
+    "ruby_ko": "우라에우스 아스트라페",
+    "rank": "A+",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6008000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/600800/600800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/600800/600800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    105,
+    202,
+    300,
+    305,
+    405,
+    1000,
+    1110,
+    2000,
+    2001,
+    2008,
+    2040,
+    2113,
+    2631,
+    2847,
+    2858,
+    5000,
+    600800
+  ],
+  "lore": {
+    "detail": "역사에 그 아름다움을 남긴 비극의 여왕 클레오파트라 7세. 프톨레마이오스 왕조 이집트의 마지막 여왕이자 실질적인 고대 이집트의 마지막 파라오. 많은 창작물에서는 사랑에 빠져 나라를 사유화한 요염한 미녀로 알려졌지만, 사실은 정반대. 지성이 뛰어나고, 특히 경제 수완이 천재적이어서 군사력이 떨어지던 프톨레마이오스 왕조 이집트를 세계 유수의 경제 국가로 키워낸 톱 레이디."
+  },
+  "instant_death": false
+}

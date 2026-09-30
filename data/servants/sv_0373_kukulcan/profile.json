@@ -1,0 +1,53 @@
+{
+  "servant_id": "sv_0373_kukulcan",
+  "source_id": 373,
+  "name_ko": "쿠쿨칸",
+  "name_short_ko": "쿠쿨칸",
+  "class": "foreigner",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "B",
+    "mana": "EX",
+    "luck": "A",
+    "np": "B++"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "별, 우주에서 떨어지다",
+    "ruby_ko": "키니치 아하우 임팩트",
+    "rank": "EX",
+    "type_ko": "대계보구",
+    "special_attack": [
+      201
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_25011000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/2501100/2501100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/2501100/2501100b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    117,
+    203,
+    300,
+    303,
+    405,
+    1000,
+    2001,
+    2835,
+    2924,
+    5000,
+    2501100
+  ],
+  "lore": {
+    "detail": "중남미, 마야 신화에서 선한 신이자 창조신. 인류를 비호하는 선한 신이며, 바람과 풍양을 관장한다. 쿠쿨칸이란 유카텍 마야어로 ‘깃털 달린 뱀’, ‘날개 달린 뱀’을 의미한다. 키체 마야어로는 동일한 의미를 지닌 구쿠마츠라는 이름으로 불린다.\n“그렇군요, 알겠습니다! 하여간 대단한 신이란 뜻이네요! 그러면 그렇게 행동할게요~!”\n……이 쿠쿨칸, 뭔가 이상하지 않아?"
+  },
+  "instant_death": false
+}

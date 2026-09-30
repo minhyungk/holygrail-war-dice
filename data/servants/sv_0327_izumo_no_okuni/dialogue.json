@@ -1,0 +1,422 @@
+{
+  "speaker": "sv_0327_izumo_no_okuni",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "[이즈모노 오쿠니] : 가~자, 가자가자! [잔자부로] : 하앗!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "얍! 홋! 하아!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "[이즈모노 오쿠니] : 지금이야! [잔자부로] : 잔!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "연무삼연!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "이요옷~! 자!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "이즈모 블래스터!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "끝을 맺는! 하이퍼 이즈모, 블래스터!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "쾌도! 난마를 베다! 이로써 작별!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "[이즈모노 오쿠니] : 잔자부로! [잔자부로] : 이요~! 하앗!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "으그그그그~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "가혹하셔라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "우아아아앗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "워밧!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "자~ 자~ 각오는 되셨습니까?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "[이즈모노 오쿠니] : 요오~! [잔자부로] : 잔!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "오쿠니의 춤, 똑똑히 봐주소서?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "이엿차! 절경이로다, 절경이로다, 로군요!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          },
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "[이즈모노 오쿠니] : 나고야 산자부로? 잔자부로를 잘못 안 게 아닌지? 아항, 보아하니 오쿠니 씨의 일화, 살짝 와전된 모양이군요. 잔자부로가 미남 창잡이라는 건 확실히 맞는 이야기입니다만. [잔자부로] : 잔!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          },
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "[이즈모노 오쿠니] : 네, 원래는 이즈모의 어느 마을의 무녀였지요. 본래라면 마을을 나가기란 불가능한 신세. ……그렇지만, 역시나 더~럽게 재미없는 마을이었기에 마음 다잡고 각오. 잔자부로를 끌고 다니며 세상 나들이, 요괴 퇴치의 정처 없는 여행…… 이라는 것이지요! 아뇨, 잔자부로는 멋대로 꺼내 온 것이지만요! [잔자부로] : 마아아아……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "……그나저나 이 시대의 가부키나 예능, 실로 흥미진진합니다! 넵, 새로운 것은 팍팍 부지런히 도입해야 오쿠니 가부키! 마스터 님과의 여로에서, 더 높은 경지를 개척해내겠습니다!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal",
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "[이즈모노 오쿠니] : 틀에 박힌다는 것은, 중요한 사항이기도 하며 위험한 일이기도 합니다. 자유로운 상태로는 어느 쪽으로 가야 할지 알 수 없지요. 그렇지만 틀에 갇히면 주위도 보지 못하며 막다른 골목. 다시 말해, 그때그때 따라서 편한 대로 자신을 바꿔나가면 됩니다. 이야말로 오쿠니 가부키의 진수입지요. ……네? 그거, 편의주의가 아니냐고요? 넵, 정답입니다! [잔자부로] : 잔자……!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "자, 자, 마스터 님. 이리로 슥 오시길. 오늘 밤은 마스터 님께만 선보여드릴, 비밀의 오쿠니 가부키── 네? 그런 건 됐고 이야기를…… 흐음. 그러면, 가까이 실례를. 으음~ 무대에서 바라보는 얼굴도 좋습니다만, 여기서 보는 얼굴도 참으로 그윽한 맛이 있군요, 마스터 님은. 아뇨, 아뇨, 이상한 의미가 아니랍니다, 진짜로. ……자, 그러면 무엇부터 이야기할까요? 음후후── 오늘 밤은 아침까지 돌려보내지 않을 거랍니다?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것 말입니까. 그거야 물론, 새로운 것이지요! 오쿠니 가부키는, 언제나 새바람을 받아들여 여러분께 더한 즐거움을 선보이기를 지향하고 있으므로! ……네, 아랫것들의 자유로운 창작 의욕에 트집을 잡는 시답잖은 윗분에게는 정말 진절머리가 났거든요. 어라? 싫어하는 것 쪽 이야기였던가요?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것 말인가요? 산통 깨는 윗분들이란 말은, 이미 했던가요? 그러네요…… 그 밖에는, 우는 얼굴일까요. 울고 있는 얼굴을 보면 어떻게든 웃게 해주고 싶어져서. ……그렇지요. 웃음이야말로 사람의 삶을 밝게 비추어 주는 것, 이니까요!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          },
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "[이즈모노 오쿠니] : 무엇이든 소원을 이루어 주는 성배 말인가요?! 그것은 엑설런트! 부디 오쿠니 씨의 가부키 춤을 전 세계의 사람들에게 보여드릴 수 있었으면! 아~ 음, 뭐였던가요? 인터넷 방송이었던가요? ‘오쿠니 씨가 춤춰 봤다’ 같은 거, 해버릴까요?! 어때, 잔자부로! [잔자부로] : 자~안……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "자~ 자, 똑똑히 보시라! 이즈모노 오쿠니, 일생일대의 가부키를!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "[이즈모노 오쿠니] : 웨이크 업, 잔자부로! 솜씨를 한 번 보여드리겠습니다! [잔자부로] : 휘이이이이!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "모르신다면 춤을 춰 보이리다! 천하공인의 요괴 헌터, 이즈모노 오쿠니가 이 사람이외다!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "[이즈모노 오쿠니] : 저의 십팔번으로 그랜드 피날레! 화려하게 마무리 짓겠습니다! ‘이즈모 아라가미 가부키’!! [잔자부로] : 오오오오오오오옷~~!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "[이즈모노 오쿠니] : 간난신고를 넘어서서, 고대하시던 역전극! 일발역전! ‘이즈모 아라가미 가부키’!! [잔자부로] : 이엽~ 핫!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "[이즈모노 오쿠니] : 이곳이 수라장의 명장면! 화려하게 선보이는 나의 보구! ‘오쿠니 십팔번・이즈모 아라가미 가부키’!! [잔자부로] : 오오오오오오오옷~~!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "[이즈모노 오쿠니] : 악귀도 울지 않으면 베이지 않거늘…… 아니, 울지 않아도 벨 거지만 말이죠! [잔자부로] : 오오오……?",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "[이즈모노 오쿠니] : 이로써, 한 건 해결! [잔자부로] : 이요오오오옷~~!!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "이 세상의 요괴, 모조리 다 토막을 내드리겠소이다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "며, 면목이 없습니다……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "[이즈모노 오쿠니] : 자, 잔자부로……! [잔자부로] : 아아, 이이, 아아……",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "이로써, 무대를 접겠습니다……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "[이즈모노 오쿠니] : 캐스터, 이즈모노 오쿠니, 여기에 찾아뵙습니다. 소문이 자자한 오쿠니 가부키, 마음껏 즐겨주시지요. 그러면 오랜 지원과 성원을 부탁드리겠습니다. 아차, 깜빡했습니다. 오쿠니 씨 뒤에 서 있는 것은 잔자부로, 이쪽도 함께 잘 부탁드립니다. [잔자부로] : 잔!",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

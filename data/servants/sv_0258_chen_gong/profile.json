@@ -1,0 +1,52 @@
+{
+  "servant_id": "sv_0258_chen_gong",
+  "source_id": 258,
+  "name_ko": "진궁",
+  "name_short_ko": "진궁",
+  "class": "caster",
+  "ranks": {
+    "str": "C",
+    "end": "D",
+    "agi": "B",
+    "mana": "B",
+    "luck": "C",
+    "np": "C"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "기각일진",
+    "ruby_ko": "기각일진",
+    "rank": "C",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5044000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/504400/504400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/504400/504400b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    104,
+    202,
+    301,
+    303,
+    402,
+    1000,
+    2001,
+    2008,
+    2631,
+    2858,
+    5000,
+    504400
+  ],
+  "lore": {
+    "detail": "중국 후한시대 말기의 무장. 연주 동군동무양현(현재의 산둥성 랴오청시 신현) 사람. 천하동란의 시대에 이름을 날린 군사 중 한 명.\n이후 패왕이 되는 조조를 섬기며 그 신뢰를 받고 있었지만, 이에 반역하고, 난세의 효웅이라 불린 여포를 주군으로 섬기며 조조와 패권을 다투었다. 몇 번의 패전 끝에, 하비에서 여포와 함께 목숨을 잃는다.\n그 최후는 조조가 직접 문답을 나누고 형이 집행되었다고 한다."
+  },
+  "instant_death": false
+}

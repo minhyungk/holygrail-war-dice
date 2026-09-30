@@ -1,0 +1,54 @@
+{
+  "servant_id": "sv_0415_kuonji_alice",
+  "source_id": 415,
+  "name_ko": "쿠온지 아리스",
+  "name_short_ko": "쿠온지 아리스",
+  "class": "caster",
+  "ranks": {
+    "str": "E",
+    "end": "B+",
+    "agi": "E",
+    "mana": "A++",
+    "luck": "A",
+    "np": "A+"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·불명",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "동화의 괴물, 달의 기름",
+    "ruby_ko": "그레이트 쓰리, 플랫 스나크",
+    "rank": "A+",
+    "type_ko": "대인보구",
+    "special_attack": [
+      202
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5055000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/505500/505500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/505500/505500b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    202,
+    301,
+    405,
+    1000,
+    2001,
+    2008,
+    2631,
+    2654,
+    2858,
+    5000,
+    505500
+  ],
+  "lore": {
+    "detail": "현대에 숨어 사는 마녀. 최후의 새.\n어릴 적부터 마술세계에서 살아온 소녀. 어떤 사정으로 인해 고향인 영국을 떠나 일본의 지방 도시에 정착했다.\n무수한 ‘동화의 괴물’을 사역마로 다루는, 천성적인 마녀. 과묵하고, 다른 사람과 관계를 맺고 싶어 하지 않기에 혼자뿐이어도 아무런 불편 없이 살고 있다."
+  },
+  "instant_death": false
+}

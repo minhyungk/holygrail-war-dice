@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0147_gorgon",
+  "source_id": 147,
+  "name_ko": "고르곤",
+  "name_short_ko": "고르곤",
+  "class": "avenger",
+  "ranks": {
+    "str": "A++",
+    "end": "A++",
+    "agi": "B",
+    "mana": "B",
+    "luck": "D",
+    "np": "A"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "avenger",
+  "noble_phantasm": {
+    "name_ko": "강제봉인 만마신전",
+    "ruby_ko": "판데모니움 케투스",
+    "rank": "A+",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_11004000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1100400/1100400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1100400/1100400b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    110,
+    201,
+    301,
+    304,
+    404,
+    1000,
+    1110,
+    2001,
+    2008,
+    2011,
+    2037,
+    2632,
+    2797,
+    5000,
+    1100400
+  ],
+  "lore": {
+    "detail": "그리스 신화의 고르곤 세 자매의 막내. 원래 진명은 메두사. 저주받은 성장의 슬픈 말로. 어떠한 요인으로 근본(오리지널)인 괴물의 성질이 현저히 강조된 상태. 여신에서 완전한 마물, 괴물인 ‘고르곤’으로 완전히 변하기 직전 단계이며, 원래는 서번트로 소환되지 않는다.\n───이제는 마수의 여왕이라고 불러야 할 존재."
+  },
+  "instant_death": false
+}

@@ -323,3 +323,44 @@ describe('한 판 끝까지 (헤드리스)', () => {
     for (const r of runs) for (const e of r.log.ofType('seal_used')) if (e.data.faction !== PLAYER_FACTION) expect(e.data.purpose).toBe('escape');
   });
 });
+
+describe('상태 회복 시점 (combat.md §3.4-6, D-167)', () => {
+  it('밤에 들어갈 때만 회복한다: 밤에 다치면 다음 날 낮은 그대로, 그다음 밤 시작에 1단계', () => {
+    let nights = 0;
+    for (let seed = 1; seed <= 30; seed++) {
+      const { log } = sim(seed);
+      for (const e of log.ofType('condition_recovered')) {
+        if (e.data.cause !== 'night') continue;
+        nights++;
+        expect([e.time, e.action], `${seed} ${e.seq}`).toEqual(['night', 0]);
+        // 회복 직전 이벤트들은 같은 날 밤의 시작(night_started)이다
+        const start = log.events.filter((x) => x.seq < e.seq && x.type === 'night_started').at(-1)!;
+        expect(start.day).toBe(e.day);
+        expect(e.day).toBeGreaterThan(1);
+      }
+      // 낮에는 밤 회복이 없다
+      expect(log.ofType('condition_recovered').some((x) => x.data.cause === 'night' && x.time === 'day')).toBe(false);
+    }
+    expect(nights).toBeGreaterThan(0);
+  });
+});
+
+describe('기적은 전투 국면 판정의 약자만 (dice.md §3.4, D-166, D-167)', () => {
+  it('마력 공급·낮 행동·도주 판정에는 기적이 없고, 국면 기적은 약자 쪽에서만 나온다', () => {
+    let phaseMiracles = 0;
+    for (let seed = 1; seed <= 40; seed++) {
+      const { log } = sim(seed);
+      for (const e of log.ofType('mana_supplied')) expect(e.data.roll.miracle).toBe(false);
+      for (const e of log.ofType('escape_attempted')) for (const r of e.data.rolls) expect(r.miracle).toBe(false);
+      const underdog = new Map(log.ofType('battle_started').map((b) => [b.data.battle_id, b.data.underdog]));
+      for (const e of log.ofType('phase_rolled')) {
+        for (const r of e.data.rolls) {
+          if (!r.miracle) continue;
+          phaseMiracles++;
+          expect(r.faction, `${seed} ${e.data.battle_id}`).toBe(underdog.get(e.data.battle_id));
+        }
+      }
+    }
+    expect(phaseMiracles).toBeGreaterThan(0);
+  });
+});

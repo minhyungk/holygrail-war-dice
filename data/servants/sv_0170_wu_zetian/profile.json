@@ -1,0 +1,54 @@
+{
+  "servant_id": "sv_0170_wu_zetian",
+  "source_id": 170,
+  "name_ko": "무측천",
+  "name_short_ko": "무측천",
+  "class": "assassin",
+  "ranks": {
+    "str": "D",
+    "end": "E",
+    "agi": "A",
+    "mana": "B",
+    "luck": "A",
+    "np": "B"
+  },
+  "alignment": "evil",
+  "alignment_detail": "질서·악",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "고밀라직경",
+    "ruby_ko": "고밀라직경",
+    "rank": "B+",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6027000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/602700/602700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/602700/602700b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    105,
+    202,
+    300,
+    304,
+    404,
+    1000,
+    2001,
+    2008,
+    2113,
+    2631,
+    2667,
+    2858,
+    5000,
+    602700
+  ],
+  "lore": {
+    "detail": "사람에 대한 태도는 오만불손, 행동은 더없이 자기 위주. 근본적으로 화려한 것을 좋아하는 아이.\n“쿠후후, 내가 누구보다도 고저스하고 반짝거리는 것은 당연하겠지? ……그건 그렇고, 나를 함부로 아이라고 부르다니. 이 멍청한 것~!”"
+  },
+  "instant_death": false
+}

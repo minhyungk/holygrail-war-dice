@@ -1,0 +1,53 @@
+{
+  "servant_id": "sv_0235_li_shuwen",
+  "source_id": 235,
+  "name_ko": "이서문",
+  "name_short_ko": "이서문 어쌔신",
+  "class": "assassin",
+  "ranks": {
+    "str": "C",
+    "end": "D",
+    "agi": "A+",
+    "mana": "E",
+    "luck": "E",
+    "np": "None"
+  },
+  "alignment": "evil",
+  "alignment_detail": "중립·악",
+  "alignment_verified": false,
+  "temperament": "assassin",
+  "noble_phantasm": {
+    "name_ko": "무이타",
+    "ruby_ko": "두 번 칠 필요는 없으니",
+    "rank": "-",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6036000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/603600/603600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/603600/603600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 class), 사용자 검수 전.",
+  "traits": [
+    1,
+    105,
+    202,
+    302,
+    304,
+    405,
+    1000,
+    2001,
+    2008,
+    2631,
+    2780,
+    2858,
+    5000,
+    603600
+  ],
+  "lore": {
+    "detail": "랜서로서 소환된 이서문. 그 다른 측면으로서 소환된 것이 노인 이서문이다. 하지만 그 흉권에는 한 점 흐림도 없고, 싸우면 반드시 죽인다는 결과에도 변함은 없다.\n정신적인 면에서 전성기를 맞이한, 권의 노인."
+  },
+  "instant_death": true
+}

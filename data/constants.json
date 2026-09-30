@@ -749,11 +749,44 @@
     },
     {
       "key": "text.death_fx",
-      "value": { "particles": 40, "duration_ms": 3400, "gild_ms": 800, "span_px": 300, "spread_px": 150, "rise_px": 120 },
+      "value": {
+        "particles": 40,
+        "duration_ms": 3400,
+        "gild_ms": 800,
+        "span_px": 300,
+        "spread_px": 150,
+        "rise_px": 120
+      },
       "unit": "입자·ms·px",
       "doc_ref": "03-ui-style.md §8",
       "status": "임시값",
       "note": "D-164. 전신이 gild_ms 동안 금빛으로 물든 뒤 남은 시간 동안 아래에서 위로 사라진다. 입자는 사라지는 경계(span_px 높이를 올라감)에서 spread_px 폭으로 피어올라 rise_px만큼 떠오른다"
+    },
+    {
+      "key": "text.main_fx",
+      "value": {
+        "silhouette_ms": 4200,
+        "crossfade_ms": 1400,
+        "class_light_ms": 420,
+        "circle_spin_ms": 2600,
+        "summon_flash_ms": 900
+      },
+      "unit": "ms",
+      "doc_ref": "02-screens-flow.md S0_MAIN",
+      "status": "임시값",
+      "note": "D-166. 메인화면: 서번트 실루엣 1장 노출 시간·교차 전환, 7클래스 아이콘이 하나씩 켜지는 간격, 7개가 다 켜진 뒤 마법진 회전, 소환 버튼을 누른 뒤 실루엣이 금빛으로 갈라지는 시간"
+    },
+    {
+      "key": "text.trace_fx",
+      "value": {
+        "death_ms": 2600,
+        "retreat_ms": 1600,
+        "draw_ms": 1900
+      },
+      "unit": "ms",
+      "doc_ref": "03-ui-style.md §8",
+      "status": "임시값",
+      "note": "D-166. 적끼리 전투가 벌어진 타일의 흔적 연출 시간: 소멸(폭발+금빛 입자) > 무승부 > 퇴각(약한 섬광)"
     },
     {
       "key": "text.small_margin",
@@ -979,7 +1012,14 @@
     },
     {
       "key": "skill.rank_mana",
-      "value": { "E": 5, "D": 8, "C": 10, "B": 15, "A": 20, "EX": 30 },
+      "value": {
+        "E": 5,
+        "D": 8,
+        "C": 10,
+        "B": 15,
+        "A": 20,
+        "EX": 30
+      },
       "unit": "마력",
       "doc_ref": "skills.md §13",
       "status": "임시값",

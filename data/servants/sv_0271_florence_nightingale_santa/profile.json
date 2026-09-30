@@ -1,0 +1,52 @@
+{
+  "servant_id": "sv_0271_florence_nightingale_santa",
+  "source_id": 271,
+  "name_ko": "나이팅게일[산타]",
+  "name_short_ko": "나이팅게일 산타",
+  "class": "archer",
+  "ranks": {
+    "str": "D+",
+    "end": "B+",
+    "agi": "B+",
+    "mana": "D+",
+    "luck": "A+",
+    "np": "B"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "천사는 외치고, 악마는 그림자 속으로 사라진다",
+    "ruby_ko": "어설트 메디슨 풀버스트 파티",
+    "rank": "B",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2039000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/203900/203900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/203900/203900b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    102,
+    202,
+    300,
+    303,
+    404,
+    1000,
+    2001,
+    2008,
+    2631,
+    2858,
+    5000,
+    203900
+  ],
+  "lore": {
+    "detail": "봉사와 헌신을 신조로 삼는 크리미아의 천사. 강철 같은 신념. 사람을 구하는 자. 작은 육군성. 인물상은 버서커 때와 ‘거의’ 같다.\n총처럼도 보이고 우산처럼도 보이는 수수께끼의 대형 사격 무기를 소지하고 있으며, 클래스는 아처로 변화했다.\n붉은색을 기조로 삼은 복장으로 보면…… 산타 계열의 서번트…… 인 것 같은데……?"
+  },
+  "instant_death": false
+}

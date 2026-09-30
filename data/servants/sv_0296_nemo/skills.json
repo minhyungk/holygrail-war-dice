@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0296_nemo",
+  "skills": [
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "A+",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_divinity",
+      "name_ko": "신성",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_protection_of_the_sea_god",
+      "name_ko": "해신의 가호",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_voyager_of_the_storm",
+      "name_ko": "폭풍의 항해자",
+      "rank": "C++",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_battle_continuation",
+      "name_ko": "불요불굴",
+      "rank": "B+",
+      "kind": "generic",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_guide_for_travel",
+      "name_ko": "여행의 인도",
+      "rank": "C++",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

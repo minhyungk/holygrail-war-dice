@@ -1,0 +1,57 @@
+{
+  "servant_id": "sv_0325_zenobia",
+  "source_id": 325,
+  "name_ko": "제노비아",
+  "name_short_ko": "제노비아",
+  "class": "archer",
+  "ranks": {
+    "str": "A",
+    "end": "B+",
+    "agi": "A",
+    "mana": "D",
+    "luck": "C",
+    "np": "B"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "부서져라, 황금의 가쇄, 황금의 치욕",
+    "ruby_ko": "어센틱 트라이엄프",
+    "rank": "A+",
+    "type_ko": "극기보구",
+    "special_attack": [
+      2113
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2045000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/204500/204500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/204500/204500b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    102,
+    202,
+    300,
+    303,
+    404,
+    1000,
+    2001,
+    2008,
+    2009,
+    2012,
+    2113,
+    2631,
+    2858,
+    5000,
+    204500
+  ],
+  "lore": {
+    "detail": "3세기, 현재의 시리아 부근에 존재했던 팔미라 제국(왕국)의 여왕.\n팔미라는 로마 제국의 지배권에 포함되어 있었지만, 훗날 이집트 등을 포함한 광대한 지역을 정복했고 그 실질적인 지배자였던 제노비아는 아들과 함께 ‘황제’를 참칭하며 로마 제국과의 대립각을 세웠다.\n하지만 로마 제국을 재건하기 위해서 즉위한 군인 황제 아우렐리아누스의 친정에 의해 팔미라 제국은 함락되고 제노비아도 포로가 된다.\n그녀는 아우렐리아누스의 개선식에서 눈부신 황금의 사슬과 구속구, 보석으로 장식된 모습으로 로마 시내를 끌려다니며 굴욕적인 구경거리 취급을 받았다고 한다.\n그 뒤에 그녀는 죽었다고도, 혹은 로마 시민이 되어 행복하게 살았다고도 전해지지만……?"
+  },
+  "instant_death": false
+}

@@ -4,8 +4,10 @@ import path from 'node:path';
 import { foeTraitCondition, servantTraitIds } from './lib/atlas-profile.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
-const atlas = '/private/tmp/claude-501/-Users-michaelkwon-Desktop-fsn6-docs/0c18cccd-6b29-4e5c-a70a-83953400345f/scratchpad/atlas';
-const traitAtlas = process.argv.includes('--atlas') ? process.argv[process.argv.indexOf('--atlas') + 1] : path.join(atlas, 'KR');
+// --atlas <캐시>/KR. NA 원본은 같은 캐시의 형제 폴더(<캐시>/NA)에서 읽는다
+if (!process.argv.includes('--atlas')) throw new Error('사용법: node scripts/activate-skills.mjs --atlas <캐시>/KR');
+const traitAtlas = path.resolve(process.argv[process.argv.indexOf('--atlas') + 1]);
+const atlas = path.dirname(traitAtlas);
 const servantTraits = servantTraitIds(traitAtlas);
 const read = (file) => JSON.parse(fs.readFileSync(file, 'utf8'));
 const normalize = (name) => name.replace(/\s+/g, '');

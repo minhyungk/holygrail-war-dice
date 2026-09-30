@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0409_monte_cristo",
+  "skills": [
+    {
+      "skill_id": "sk_avenger",
+      "name_ko": "복수자",
+      "rank": "B+",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_oblivion_correction",
+      "name_ko": "망각보정",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_self_restoration_magical_energy",
+      "name_ko": "자기회복(마력)",
+      "rank": "D",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_iron_determination_flame",
+      "name_ko": "강철의 결의(불꽃)",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_monte_cristo_mythology",
+      "name_ko": "암굴왕",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_fourteen_stones",
+      "name_ko": "14의 돌",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

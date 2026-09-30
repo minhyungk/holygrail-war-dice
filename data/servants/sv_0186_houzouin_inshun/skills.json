@@ -1,0 +1,34 @@
+{
+  "servant_id": "sv_0186_houzouin_inshun",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "D+",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_knowledge_of_harmony",
+      "name_ko": "소와의 소양",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_seeking_the_truth_of_martial_arts",
+      "name_ko": "무예의 구도",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_planning_ahead",
+      "name_ko": "선의 선",
+      "rank": "B+",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

@@ -1,0 +1,54 @@
+{
+  "servant_id": "sv_0237_murasaki_shikibu",
+  "source_id": 237,
+  "name_ko": "무라사키 시키부",
+  "name_short_ko": "무라사키 시키부",
+  "class": "caster",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "D",
+    "mana": "B",
+    "luck": "A+",
+    "np": "C"
+  },
+  "alignment": "good",
+  "alignment_detail": "중립·선",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "겐지 모노가타리・아오이・모노노케",
+    "ruby_ko": "겐지 모노가타리・아오이・모노노케",
+    "rank": "C",
+    "type_ko": "시가보구",
+    "special_attack": [
+      2019
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5042000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/504200/504200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/504200/504200b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    202,
+    302,
+    303,
+    405,
+    1000,
+    2001,
+    2008,
+    2631,
+    2858,
+    5000,
+    504200
+  ],
+  "lore": {
+    "detail": "헤이안 시대의 작가이자 가인. 상세한 생몰년은 불명. ‘겐지 모노가타리’, ‘시키부집’, ‘시키부 일기’ 등을 저술했다. ‘후습유와카집’ 이하의 칙찬집(왕의 명령으로 편찬된 서적)에는 수십 수의 시가 채용되었다."
+  },
+  "instant_death": false
+}

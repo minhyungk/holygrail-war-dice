@@ -1,0 +1,58 @@
+{
+  "servant_id": "sv_0063_david",
+  "source_id": 63,
+  "name_ko": "다윗",
+  "name_short_ko": "다윗",
+  "class": "archer",
+  "ranks": {
+    "str": "C",
+    "end": "D",
+    "agi": "B",
+    "mana": "C",
+    "luck": "A",
+    "np": "B"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "질서·중용",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "다섯 개의 돌",
+    "ruby_ko": "하메쉬 아바님",
+    "rank": "B",
+    "type_ko": "대인보구",
+    "special_attack": [
+      2666
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2006000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/200600/200600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/200600/200600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    102,
+    200,
+    300,
+    305,
+    403,
+    1000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2113,
+    2631,
+    2851,
+    2858,
+    5000,
+    200600
+  ],
+  "lore": {
+    "detail": "다윗은 구약성서에 등장하는 이스라엘의 왕. 본디 목동으로 거인 골리앗과 홀로 싸워 그를 쓰러뜨렸다. 그 이후, 당시의 왕과 이런저런 문제가 있었지만 즉위한 후에는 뛰어난 통치력을 보였다고 한다."
+  },
+  "instant_death": false
+}

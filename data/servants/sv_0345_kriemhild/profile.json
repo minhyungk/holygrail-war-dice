@@ -1,0 +1,56 @@
+{
+  "servant_id": "sv_0345_kriemhild",
+  "source_id": 345,
+  "name_ko": "크림힐트",
+  "name_short_ko": "크림힐트",
+  "class": "berserker",
+  "ranks": {
+    "str": "C++",
+    "end": "D",
+    "agi": "C",
+    "mana": "A",
+    "luck": "EX",
+    "np": "A"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "avenger",
+  "noble_phantasm": {
+    "name_ko": "유리마검・성비실추",
+    "ruby_ko": "발뭉・크림힐트",
+    "rank": "A+",
+    "type_ko": "대인보구",
+    "special_attack": [
+      2002
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7042000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/704200/704200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/704200/704200b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    106,
+    201,
+    301,
+    305,
+    404,
+    1000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2631,
+    2858,
+    5000,
+    704200
+  ],
+  "lore": {
+    "detail": "크림힐트는 니벨룽겐의 노래, 즉, 지크프리트 전설에서 지크프리트의 아내이며, 그가 암살된 뒤에는 복수를 맹세하고 온갖 책략과 집념으로써 그것을 이루었다.\n광기의 복수자이자, 얼어붙을 것만 같은 잔인성을 겸비한 고귀하고 아름다운 왕비."
+  },
+  "instant_death": false
+}

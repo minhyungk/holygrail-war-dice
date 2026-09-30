@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0009_gilles_de_rais",
+  "source_id": 9,
+  "name_ko": "질 드 레",
+  "name_short_ko": "질 드 레 세이버",
+  "class": "saber",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "C",
+    "mana": "D",
+    "luck": "D",
+    "np": "B"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "berserker",
+  "noble_phantasm": {
+    "name_ko": "신성한 깃발로 모여 외쳐라",
+    "ruby_ko": "세인트 워 오더",
+    "rank": "B",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1022000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/102200/102200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/102200/102200b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    100,
+    202,
+    300,
+    303,
+    403,
+    1000,
+    2001,
+    2008,
+    2009,
+    2012,
+    2075,
+    2631,
+    2858,
+    5000,
+    102200
+  ],
+  "lore": {
+    "detail": "신장/체중: 186cm・91kg 출전: 역사적 사실 지역: 프랑스 속성: 질서・선 부속성: 인 성별: 남성 다소 깡마른 남자. 아직 분위기가 차분하던 시절."
+  },
+  "instant_death": false
+}

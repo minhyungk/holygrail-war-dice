@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0322_caenis_rider",
+  "skills": [
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "EX",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_core_of_the_sea_god",
+      "name_ko": "해신의 신핵",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_beach_crisis_poseidon",
+      "name_ko": "비치 크라이시스(포세이돈)",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_sea_king_style",
+      "name_ko": "해왕류",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_summertime_combat",
+      "name_ko": "서머 타임・컴뱃",
+      "rank": "B+",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

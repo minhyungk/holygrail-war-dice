@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0307_miss_crane",
+  "skills": [
+    {
+      "skill_id": "sk_territory_creation_atelier",
+      "name_ko": "진지작성(아틀리에)",
+      "rank": "C+",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_item_creation_cloth",
+      "name_ko": "도구작성(옷)",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_lady_s_affection_for_garments",
+      "name_ko": "레이디의 의상한 애정",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_overnight_haori",
+      "name_ko": "일야우직",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_thousand_year_gratitude",
+      "name_ko": "천년의 보은",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

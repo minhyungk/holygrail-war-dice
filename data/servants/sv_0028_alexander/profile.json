@@ -1,0 +1,58 @@
+{
+  "servant_id": "sv_0028_alexander",
+  "source_id": 28,
+  "name_ko": "알렉산더",
+  "name_short_ko": "알렉산더",
+  "class": "rider",
+  "ranks": {
+    "str": "C",
+    "end": "B",
+    "agi": "B",
+    "mana": "C",
+    "luck": "A+",
+    "np": "B+"
+  },
+  "alignment": "good",
+  "alignment_detail": "중립·선",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "시작의 유린제패",
+    "ruby_ko": "부케팔로스",
+    "rank": "B++",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4015000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/401500/401500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/401500/401500b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    103,
+    202,
+    302,
+    303,
+    403,
+    1000,
+    2000,
+    2001,
+    2008,
+    2009,
+    2040,
+    2113,
+    2114,
+    2631,
+    2667,
+    2858,
+    5000,
+    401500
+  ],
+  "lore": {
+    "detail": "기원전 4세기, 마케도니아 왕국의 젊은 왕자. 절세의 미소년으로, 철학자 아리스토텔레스를 시작으로 여러 현자들이 찾아낸 천재이며, 서사시 ‘일리아스’를 진심으로 사랑한 천진한 아이. 가능성의 구현이라고도 할 수 있는 존재."
+  },
+  "instant_death": false
+}

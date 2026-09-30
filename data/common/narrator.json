@@ -13,7 +13,9 @@
     "summon_irregular": [
       {"id": "error_01", "slot": "lead", "text": "──영창의 마지막 소절이 끝나는 순간, 마법진의 빛이 한 번 검게 뒤틀렸다. 성배가 무언가를 잘못 삼킨 것처럼."},
       {"id": "error_02", "slot": "lead", "text": "소환은 성공했다. 그런데도 공기 어딘가가 삐걱거린다. 이번 전쟁의 일곱 자리 중 하나가, 본래와 다른 무언가로 채워졌다는 감각."},
-      {"id": "error_03", "slot": "lead", "text": "마법진이 멎은 뒤에도, 대기 중의 마력이 좀처럼 가라앉지 않는다. ──이번 성배는, 무언가 어긋난 채로 일곱 자리를 채웠다."}
+      {"id": "error_03", "slot": "lead", "text": "마법진이 멎은 뒤에도, 대기 중의 마력이 좀처럼 가라앉지 않는다. ──이번 성배는, 무언가 어긋난 채로 일곱 자리를 채웠다."},
+      {"id": "variant_03", "text": "마법진의 가장자리가 어긋난다. 예정된 자리 밖에서, 낯선 빛이 솟았다.", "slot": "lead"},
+      {"id": "variant_04", "text": "영창은 끝났는데 소환진이 꺼지지 않는다. 빛 속에서 다른 기척이 일어났다.", "slot": "lead"}
     ],
     "skill_effect": [
       {"id": "magic_resistance", "slot": "react", "when": {"event.skill_id": "sk_magic_resistance", "event.effect": "roll_mod", "event.target_side": "self"}, "text": "술식이 {actor}의 몸에 닿기 전에 풀려 흩어진다. {skill}── 신비를 거부하는 영령의 체질이, 마술의 칼날을 무디게 한다."},
@@ -52,413 +54,200 @@
       {"id": "hidden_roll_enemy", "slot": "react", "when": {"event.effect": "roll_mod", "event.target_side": "enemy", "event.skill_known": false}, "text": "{target}의 몸이 무거워진다. {actor}{이/가} 무언가를 걸었다── 정체를 알 수 없는 힘이, 판정을 짓누른다."},
       {"id": "hidden_negate", "slot": "react", "when": {"event.effect": "event_negate", "event.skill_known": false}, "text": "무언가가 닿기 전에 흩어진다. {actor}의 알 수 없는 기술이, 흐름 하나를 지웠다."},
       {"id": "hidden_mana", "slot": "react", "when": {"event.effect": "resource_change", "event.skill_known": false}, "text": "{actor}의 주위로 마력이 모여든다. 어디선가, 힘을 길어 올리고 있다."},
-      {"id": "hidden_guard", "slot": "react", "when": {"event.effect": "condition_guard", "event.skill_known": false}, "text": "쓰러져야 할 {actor}{이/가}, 무언가에 붙들린 듯 버티고 선다. 알 수 없는 가호가 치명상을 비껴 냈다."}
+      {"id": "hidden_guard", "slot": "react", "when": {"event.effect": "condition_guard", "event.skill_known": false}, "text": "쓰러져야 할 {actor}{이/가}, 무언가에 붙들린 듯 버티고 선다. 알 수 없는 가호가 치명상을 비껴 냈다."},
+      {"id": "variant_03", "text": "{skill}{이/가} 발동하자 {actor}의 움직임이 한 박자 빨라진다.", "slot": "react", "when": {"event.effect": "roll_mod", "event.target_side": "self"}},
+      {"id": "variant_04", "text": "흐트러졌던 {actor}의 자세가 잡힌다. {skill}의 힘이 공방을 밀어 올린다.", "slot": "react", "when": {"event.effect": "roll_mod", "event.target_side": "self"}},
+      {"id": "variant_05", "text": "{actor}의 일격에 힘이 실린다. {skill}의 효과가 드러났다.", "slot": "react", "when": {"event.effect": "roll_mod", "event.target_side": "self"}},
+      {"id": "variant_06", "text": "{target}의 발이 반 박자 늦어진다. {skill}의 영향이다.", "slot": "react", "when": {"event.effect": "roll_mod", "event.target_side": "enemy"}},
+      {"id": "variant_07", "text": "{actor}의 손짓 뒤로 {target}의 움직임이 둔해진다. {skill}{이/가} 작동했다.", "slot": "react", "when": {"event.effect": "roll_mod", "event.target_side": "enemy"}},
+      {"id": "variant_08", "text": "{target}의 공세가 허공에서 무거워진다. {skill}{이/가} 흐름을 눌렀다.", "slot": "react", "when": {"event.effect": "roll_mod", "event.target_side": "enemy"}},
+      {"id": "variant_09", "text": "다음 일합. {target}의 타이밍만 어긋난다. {skill}의 간섭이다.", "slot": "react", "when": {"event.effect": "roll_mod", "event.target_side": "enemy"}},
+      {"id": "variant_10", "text": "불리한 기척이 닿기도 전에 사라진다. {skill}{이/가} 그것을 지웠다.", "slot": "react", "when": {"event.effect": "event_negate"}},
+      {"id": "variant_11", "text": "막다른 곳에서 길이 열린다. {actor}의 {skill}{이/가} 길을 냈다.", "slot": "react", "when": {"event.effect": "event_negate"}},
+      {"id": "variant_12", "text": "들어오던 흐름 하나가 끊긴다. {skill}의 발동과 동시에 일어난 일이다.", "slot": "react", "when": {"event.effect": "event_negate"}},
+      {"id": "variant_13", "text": "위기를 알리는 기척이 스쳐 지나간다. {actor}의 {skill}{이/가} 가로막았다.", "slot": "react", "when": {"event.effect": "event_negate"}},
+      {"id": "variant_14", "text": "메말랐던 {actor}의 영기에 마력이 다시 돈다. {skill}의 작용이다.", "slot": "react", "when": {"event.effect": "resource_change"}},
+      {"id": "variant_15", "text": "{actor}의 주위로 흩어진 마력이 되돌아온다. {skill}{이/가} 그 흐름을 붙잡았다.", "slot": "react", "when": {"event.effect": "resource_change"}},
+      {"id": "variant_16", "text": "계약의 선에서 잠시 빛이 짙어진다. {skill}{이/가} {actor}의 마력을 채운다.", "slot": "react", "when": {"event.effect": "resource_change"}},
+      {"id": "variant_17", "text": "비어 있던 마력의 자리가 메워진다. {skill}{이/가} 응답했다.", "slot": "react", "when": {"event.effect": "resource_change"}},
+      {"id": "variant_18", "text": "치명타가 닿은 자리에서 {actor}의 영기가 버틴다. {skill}의 보호가 남아 있었다.", "slot": "react", "when": {"event.effect": "condition_guard"}},
+      {"id": "variant_19", "text": "쓰러지는 대신 {actor}의 발이 땅을 딛는다. {skill}{이/가} 한 번 더 버티게 했다.", "slot": "react", "when": {"event.effect": "condition_guard"}},
+      {"id": "variant_20", "text": "끝이어야 할 일격. 그러나 {skill}{이/가} {actor}의 윤곽을 붙들었다.", "slot": "react", "when": {"event.effect": "condition_guard"}},
+      {"id": "variant_21", "text": "갈라진 영기가 다시 모인다. {skill}{이/가} 붕괴를 멈췄다.", "slot": "react", "when": {"event.effect": "condition_guard"}},
+      {"id": "variant_22", "text": "{actor}의 움직임이 예고 없이 한 박자 빨라진다.", "slot": "react", "when": {"event.effect": "roll_mod", "event.skill_known": false, "event.target_side": "self"}},
+      {"id": "variant_23", "text": "흐트러졌던 {actor}의 자세가 잡힌다. 이유는 보이지 않는다.", "slot": "react", "when": {"event.effect": "roll_mod", "event.skill_known": false, "event.target_side": "self"}},
+      {"id": "variant_24", "text": "{actor}의 일격에 힘이 실린다. 숨겨진 기술의 흔적이다.", "slot": "react", "when": {"event.effect": "roll_mod", "event.skill_known": false, "event.target_side": "self"}},
+      {"id": "variant_25", "text": "{target}의 발이 반 박자 늦어진다. 원인을 짚을 수 없다.", "slot": "react", "when": {"event.effect": "roll_mod", "event.skill_known": false, "event.target_side": "enemy"}},
+      {"id": "variant_26", "text": "{actor}의 손짓 뒤로 {target}의 움직임이 둔해진다. 술식의 정체는 가려져 있다.", "slot": "react", "when": {"event.effect": "roll_mod", "event.skill_known": false, "event.target_side": "enemy"}},
+      {"id": "variant_27", "text": "{target}의 공세가 허공에서 무거워진다. 보이지 않는 방해가 끼어들었다.", "slot": "react", "when": {"event.effect": "roll_mod", "event.skill_known": false, "event.target_side": "enemy"}},
+      {"id": "variant_28", "text": "다음 일합. {target}의 타이밍만 어긋난다. 그 까닭은 아직 모른다.", "slot": "react", "when": {"event.effect": "roll_mod", "event.skill_known": false, "event.target_side": "enemy"}},
+      {"id": "variant_29", "text": "불리한 기척이 닿기도 전에 사라진다. 어떤 기술인지는 보이지 않는다.", "slot": "react", "when": {"event.effect": "event_negate", "event.skill_known": false}},
+      {"id": "variant_30", "text": "막다른 곳에서 길이 열린다. {actor}에게 감춰 둔 수가 있었다.", "slot": "react", "when": {"event.effect": "event_negate", "event.skill_known": false}},
+      {"id": "variant_31", "text": "들어오던 흐름 하나가 끊긴다. 원인은 짐작할 수 없다.", "slot": "react", "when": {"event.effect": "event_negate", "event.skill_known": false}},
+      {"id": "variant_32", "text": "위기를 알리는 기척이 스쳐 지나간다. {actor}의 힘이 보이지 않게 개입했다.", "slot": "react", "when": {"event.effect": "event_negate", "event.skill_known": false}},
+      {"id": "variant_33", "text": "메말랐던 {actor}의 영기에 마력이 다시 돈다. 경로는 보이지 않는다.", "slot": "react", "when": {"event.effect": "resource_change", "event.skill_known": false}},
+      {"id": "variant_34", "text": "{actor}의 주위로 흩어진 마력이 되돌아온다. 이유는 드러나지 않았다.", "slot": "react", "when": {"event.effect": "resource_change", "event.skill_known": false}},
+      {"id": "variant_35", "text": "계약의 선에서 잠시 빛이 짙어진다. {actor}의 마력이 차오른다.", "slot": "react", "when": {"event.effect": "resource_change", "event.skill_known": false}},
+      {"id": "variant_36", "text": "비어 있던 마력의 자리가 메워진다. 숨은 기술이 움직였다.", "slot": "react", "when": {"event.effect": "resource_change", "event.skill_known": false}},
+      {"id": "variant_37", "text": "치명타가 닿은 자리에서 {actor}의 영기가 버틴다. 이유는 알 수 없다.", "slot": "react", "when": {"event.effect": "condition_guard", "event.skill_known": false}},
+      {"id": "variant_38", "text": "쓰러지는 대신 {actor}의 발이 땅을 딛는다. 보이지 않는 힘이 받쳤다.", "slot": "react", "when": {"event.effect": "condition_guard", "event.skill_known": false}},
+      {"id": "variant_39", "text": "끝이어야 할 일격. 그러나 {actor}의 윤곽은 무너지지 않았다.", "slot": "react", "when": {"event.effect": "condition_guard", "event.skill_known": false}},
+      {"id": "variant_40", "text": "갈라진 영기가 다시 모인다. 무엇이 막았는지는 가려져 있다.", "slot": "react", "when": {"event.effect": "condition_guard", "event.skill_known": false}}
     ],
     "phase_defended": [
       {"id": "defended_04", "slot": "react", "text": "빛의 해일이 {target}{을/를} 덮친다. ──그리고 걷힌다. 그 자리에는, 여전히 버티고 선 그림자가 있었다."},
-      {
-        "id": "defended_01",
-        "slot": "react",
-        "text": "전설이 쏟아진다. ──그러나 {target}{은/는} 쓰러지지 않았다. 버텨 냈다. 그것만으로, 이 국면은 끝났다.",
-        "notes": "일방 보구를 막아 냄 (D-120)"
-      },
-      {
-        "id": "defended_02",
-        "slot": "react",
-        "text": "빛이 걷힌 자리에, {target}{이/가} 서 있다. 피한 것인지, 견딘 것인지──어느 쪽이든, 일격은 닿지 않았다."
-      },
-      {
-        "id": "defended_03",
-        "slot": "react",
-        "text": "{actor}의 보구가 허공을 가른다. 한 발, 아주 한 발. {target}{은/는} 이미 그 궤적 밖에 있었다."
-      },
-      {
-        "id": "defended_np_clash",
-        "slot": "tail",
-        "text": "막아 냈다. 그러나 마력의 잔향이, 아직 공기를 태우고 있다."
-      }
+      {"id": "defended_01", "slot": "react", "text": "전설이 쏟아진다. ──그러나 {target}{은/는} 쓰러지지 않았다. 버텨 냈다. 그것만으로, 이 국면은 끝났다.", "notes": "일방 보구를 막아 냄 (D-120)"},
+      {"id": "defended_02", "slot": "react", "text": "빛이 걷힌 자리에, {target}{이/가} 서 있다. 피한 것인지, 견딘 것인지──어느 쪽이든, 일격은 닿지 않았다."},
+      {"id": "defended_03", "slot": "react", "text": "{actor}의 보구가 허공을 가른다. 한 발, 아주 한 발. {target}{은/는} 이미 그 궤적 밖에 있었다."},
+      {"id": "defended_np_clash", "slot": "tail", "text": "막아 냈다. 그러나 마력의 잔향이, 아직 공기를 태우고 있다."},
+      {"id": "variant_03", "text": "섬광이 지나간 뒤에도 {target}의 자세는 무너지지 않았다.", "slot": "react"},
+      {"id": "variant_04", "text": "보구의 여파가 잦아든다. 버텨 낸 자리에 아직 열기가 남았다.", "slot": "tail"},
+      {"id": "variant_05", "text": "막아 낸 다음에야 공기가 다시 흐른다.", "slot": "tail"},
+      {"id": "variant_06", "text": "맞부딪친 신비의 잔향이 늦게 사라졌다.", "slot": "tail"},
+      {"id": "variant_07", "text": "결판은 나지 않았다. 일격의 흔적만 전장에 남았다.", "slot": "tail"}
     ],
     "affinity_change": [
-      {
-        "id": "up_small_1",
-        "slot": "tail",
-        "text": "{servant}의 표정이 아주 조금 누그러진 듯하다.",
-        "when": {
-          "event.direction": "up",
-          "event.magnitude": "small"
-        },
-        "notes": "호감도 변화 시스템 문구 (D-121)"
-      },
-      {
-        "id": "up_small_2",
-        "slot": "tail",
-        "text": "{servant}{이/가} 약간 우호적으로 변한 듯하다.",
-        "when": {
-          "event.direction": "up",
-          "event.magnitude": "small"
-        }
-      },
-      {
-        "id": "up_small_3",
-        "slot": "tail",
-        "text": "{servant}의 말투에서 가시가 하나 빠진 것 같다.",
-        "when": {
-          "event.direction": "up",
-          "event.magnitude": "small"
-        }
-      },
-      {
-        "id": "up_mid_1",
-        "slot": "tail",
-        "text": "{servant}{이/가} 마스터를 조금 더 믿게 된 것 같다.",
-        "when": {
-          "event.direction": "up",
-          "event.magnitude": "mid"
-        }
-      },
-      {
-        "id": "up_mid_2",
-        "slot": "tail",
-        "text": "{servant}{와/과}의 거리가 한 걸음 가까워졌다.",
-        "when": {
-          "event.direction": "up",
-          "event.magnitude": "mid"
-        }
-      },
-      {
-        "id": "up_mid_3",
-        "slot": "tail",
-        "text": "{servant}의 시선이 전보다 부드럽다.",
-        "when": {
-          "event.direction": "up",
-          "event.magnitude": "mid"
-        }
-      },
-      {
-        "id": "up_big_1",
-        "slot": "tail",
-        "text": "{servant}{이/가} 마스터를 확실히 다시 보게 된 듯하다.",
-        "when": {
-          "event.direction": "up",
-          "event.magnitude": "big"
-        }
-      },
-      {
-        "id": "up_big_2",
-        "slot": "tail",
-        "text": "{servant}{와/과}의 사이에, 분명한 신뢰가 싹텄다.",
-        "when": {
-          "event.direction": "up",
-          "event.magnitude": "big"
-        }
-      },
-      {
-        "id": "up_big_3",
-        "slot": "tail",
-        "text": "{servant}{이/가} 처음으로, 진심으로 웃은 것 같다.",
-        "when": {
-          "event.direction": "up",
-          "event.magnitude": "big"
-        }
-      },
-      {
-        "id": "down_small_1",
-        "slot": "tail",
-        "text": "{servant}{이/가} 약간 언짢아 보인다.",
-        "when": {
-          "event.direction": "down",
-          "event.magnitude": "small"
-        }
-      },
-      {
-        "id": "down_small_2",
-        "slot": "tail",
-        "text": "{servant}의 대답이 조금 짧아졌다.",
-        "when": {
-          "event.direction": "down",
-          "event.magnitude": "small"
-        }
-      },
-      {
-        "id": "down_small_3",
-        "slot": "tail",
-        "text": "{servant}{이/가} 작게 한숨을 쉰 것 같다.",
-        "when": {
-          "event.direction": "down",
-          "event.magnitude": "small"
-        }
-      },
-      {
-        "id": "down_mid_1",
-        "slot": "tail",
-        "text": "{servant}{이/가} 마스터에게 실망한 듯하다.",
-        "when": {
-          "event.direction": "down",
-          "event.magnitude": "mid"
-        }
-      },
-      {
-        "id": "down_mid_2",
-        "slot": "tail",
-        "text": "{servant}{와/과}의 사이에 서늘한 공기가 흐른다.",
-        "when": {
-          "event.direction": "down",
-          "event.magnitude": "mid"
-        }
-      },
-      {
-        "id": "down_mid_3",
-        "slot": "tail",
-        "text": "{servant}{이/가} 눈을 마주치려 하지 않는다.",
-        "when": {
-          "event.direction": "down",
-          "event.magnitude": "mid"
-        }
-      },
-      {
-        "id": "down_big_1",
-        "slot": "tail",
-        "text": "{servant}{이/가} 마스터를 차갑게 쳐다본다. 무언가가 크게 어긋났다.",
-        "when": {
-          "event.direction": "down",
-          "event.magnitude": "big"
-        }
-      },
-      {
-        "id": "down_big_2",
-        "slot": "tail",
-        "text": "{servant}의 신뢰가 눈에 띄게 식었다.",
-        "when": {
-          "event.direction": "down",
-          "event.magnitude": "big"
-        }
-      },
-      {
-        "id": "down_big_3",
-        "slot": "tail",
-        "text": "계약의 선 너머로, {servant}의 분노가 전해져 온다.",
-        "when": {
-          "event.direction": "down",
-          "event.magnitude": "big"
-        }
-      },
-      {
-        "id": "tier_up_wary",
-        "slot": "tail",
-        "text": "{servant}의 적의가 한풀 꺾였다.",
-        "when": {
-          "event.direction": "up",
-          "event.tier_changed": true,
-          "event.tier_to": "wary"
-        }
-      },
-      {
-        "id": "tier_up_neutral",
-        "slot": "tail",
-        "text": "{servant}의 경계심이 조금 풀렸다.",
-        "when": {
-          "event.direction": "up",
-          "event.tier_changed": true,
-          "event.tier_to": "neutral"
-        }
-      },
-      {
-        "id": "tier_up_friendly",
-        "slot": "tail",
-        "text": "{servant}{이/가} 마스터를 동료로 인정하기 시작했다.",
-        "when": {
-          "event.direction": "up",
-          "event.tier_changed": true,
-          "event.tier_to": "friendly"
-        }
-      },
-      {
-        "id": "tier_up_loyal",
-        "slot": "tail",
-        "text": "{servant}{은/는} 이제 마스터를 위해서라면 무엇이든 할 것 같다.",
-        "when": {
-          "event.direction": "up",
-          "event.tier_changed": true,
-          "event.tier_to": "loyal"
-        }
-      },
-      {
-        "id": "tier_down_friendly",
-        "slot": "tail",
-        "text": "{servant}{이/가} 마스터에게 품었던 깊은 신뢰가 흔들린다.",
-        "when": {
-          "event.direction": "down",
-          "event.tier_changed": true,
-          "event.tier_to": "friendly"
-        }
-      },
-      {
-        "id": "tier_down_neutral",
-        "slot": "tail",
-        "text": "{servant}{이/가} 마스터와 한 발 거리를 두기 시작했다.",
-        "when": {
-          "event.direction": "down",
-          "event.tier_changed": true,
-          "event.tier_to": "neutral"
-        }
-      },
-      {
-        "id": "tier_down_wary",
-        "slot": "tail",
-        "text": "{servant}{이/가} 마스터를 경계하기 시작했다. 명령을 따르지 않을지도 모른다.",
-        "when": {
-          "event.direction": "down",
-          "event.tier_changed": true,
-          "event.tier_to": "wary"
-        }
-      },
-      {
-        "id": "tier_down_hostile",
-        "slot": "tail",
-        "text": "{servant}의 눈에 적의가 서렸다. ──배신의 기척이 느껴진다.",
-        "when": {
-          "event.direction": "down",
-          "event.tier_changed": true,
-          "event.tier_to": "hostile"
-        }
-      },
-      {
-        "id": "release_up",
-        "slot": "tail",
-        "text": "자비를 택한 마스터를 보고, {servant}{이/가} 작게 고개를 끄덕였다.",
-        "when": {
-          "event.direction": "up",
-          "event.cause": "release"
-        }
-      },
-      {
-        "id": "release_down",
-        "slot": "tail",
-        "text": "{servant}{은/는} 적을 살려 보낸 결정이 못마땅한 듯하다.",
-        "when": {
-          "event.direction": "down",
-          "event.cause": "release"
-        }
-      },
-      {
-        "id": "execute_up",
-        "slot": "tail",
-        "text": "{servant}{은/는} 망설임 없는 결단을 마음에 들어 하는 것 같다.",
-        "when": {
-          "event.direction": "up",
-          "event.cause": "execute"
-        }
-      },
-      {
-        "id": "execute_down",
-        "slot": "tail",
-        "text": "{servant}{이/가} 처치를 명한 마스터를 말없이 바라본다.",
-        "when": {
-          "event.direction": "down",
-          "event.cause": "execute"
-        }
-      },
-      {
-        "id": "supply_up",
-        "slot": "tail",
-        "text": "마력과 함께, 무언가 따뜻한 것이 전해진 것 같다.",
-        "when": {
-          "event.direction": "up",
-          "event.cause": "supply"
-        }
-      },
-      {
-        "id": "supply_down",
-        "slot": "tail",
-        "text": "{servant}{이/가} 어색하게 시선을 피한다.",
-        "when": {
-          "event.direction": "down",
-          "event.cause": "supply"
-        }
-      },
-      {
-        "id": "bond_up",
-        "slot": "tail",
-        "text": "함께 보낸 시간이, {servant}의 마음을 조금 열었다.",
-        "when": {
-          "event.direction": "up",
-          "event.cause": "bond"
-        }
-      },
-      {
-        "id": "bond_down",
-        "slot": "tail",
-        "text": "{servant}{은/는} 오늘의 동행이 즐겁지 않았던 모양이다.",
-        "when": {
-          "event.direction": "down",
-          "event.cause": "bond"
-        }
-      }
+      {"id": "up_small_1", "slot": "tail", "text": "{servant}의 표정이 아주 조금 누그러진 듯하다.", "when": {"event.direction": "up", "event.magnitude": "small"}, "notes": "호감도 변화 시스템 문구 (D-121)"},
+      {"id": "up_small_2", "slot": "tail", "text": "{servant}{이/가} 약간 우호적으로 변한 듯하다.", "when": {"event.direction": "up", "event.magnitude": "small"}},
+      {"id": "up_small_3", "slot": "tail", "text": "{servant}의 말투에서 가시가 하나 빠진 것 같다.", "when": {"event.direction": "up", "event.magnitude": "small"}},
+      {"id": "up_mid_1", "slot": "tail", "text": "{servant}{이/가} 마스터를 조금 더 믿게 된 것 같다.", "when": {"event.direction": "up", "event.magnitude": "mid"}},
+      {"id": "up_mid_2", "slot": "tail", "text": "{servant}{와/과}의 거리가 한 걸음 가까워졌다.", "when": {"event.direction": "up", "event.magnitude": "mid"}},
+      {"id": "up_mid_3", "slot": "tail", "text": "{servant}의 시선이 전보다 부드럽다.", "when": {"event.direction": "up", "event.magnitude": "mid"}},
+      {"id": "up_big_1", "slot": "tail", "text": "{servant}{이/가} 마스터를 확실히 다시 보게 된 듯하다.", "when": {"event.direction": "up", "event.magnitude": "big"}},
+      {"id": "up_big_2", "slot": "tail", "text": "{servant}{와/과}의 사이에, 분명한 신뢰가 싹텄다.", "when": {"event.direction": "up", "event.magnitude": "big"}},
+      {"id": "up_big_3", "slot": "tail", "text": "{servant}{이/가} 처음으로, 진심으로 웃은 것 같다.", "when": {"event.direction": "up", "event.magnitude": "big"}},
+      {"id": "down_small_1", "slot": "tail", "text": "{servant}{이/가} 약간 언짢아 보인다.", "when": {"event.direction": "down", "event.magnitude": "small"}},
+      {"id": "down_small_2", "slot": "tail", "text": "{servant}의 대답이 조금 짧아졌다.", "when": {"event.direction": "down", "event.magnitude": "small"}},
+      {"id": "down_small_3", "slot": "tail", "text": "{servant}{이/가} 작게 한숨을 쉰 것 같다.", "when": {"event.direction": "down", "event.magnitude": "small"}},
+      {"id": "down_mid_1", "slot": "tail", "text": "{servant}{이/가} 마스터에게 실망한 듯하다.", "when": {"event.direction": "down", "event.magnitude": "mid"}},
+      {"id": "down_mid_2", "slot": "tail", "text": "{servant}{와/과}의 사이에 서늘한 공기가 흐른다.", "when": {"event.direction": "down", "event.magnitude": "mid"}},
+      {"id": "down_mid_3", "slot": "tail", "text": "{servant}{이/가} 눈을 마주치려 하지 않는다.", "when": {"event.direction": "down", "event.magnitude": "mid"}},
+      {"id": "down_big_1", "slot": "tail", "text": "{servant}{이/가} 마스터를 차갑게 쳐다본다. 무언가가 크게 어긋났다.", "when": {"event.direction": "down", "event.magnitude": "big"}},
+      {"id": "down_big_2", "slot": "tail", "text": "{servant}의 신뢰가 눈에 띄게 식었다.", "when": {"event.direction": "down", "event.magnitude": "big"}},
+      {"id": "down_big_3", "slot": "tail", "text": "계약의 선 너머로, {servant}의 분노가 전해져 온다.", "when": {"event.direction": "down", "event.magnitude": "big"}},
+      {"id": "tier_up_wary", "slot": "tail", "text": "{servant}의 적의가 한풀 꺾였다.", "when": {"event.direction": "up", "event.tier_changed": true, "event.tier_to": "wary"}},
+      {"id": "tier_up_neutral", "slot": "tail", "text": "{servant}의 경계심이 조금 풀렸다.", "when": {"event.direction": "up", "event.tier_changed": true, "event.tier_to": "neutral"}},
+      {"id": "tier_up_friendly", "slot": "tail", "text": "{servant}{이/가} 마스터를 동료로 인정하기 시작했다.", "when": {"event.direction": "up", "event.tier_changed": true, "event.tier_to": "friendly"}},
+      {"id": "tier_up_loyal", "slot": "tail", "text": "{servant}{은/는} 이제 마스터를 위해서라면 무엇이든 할 것 같다.", "when": {"event.direction": "up", "event.tier_changed": true, "event.tier_to": "loyal"}},
+      {"id": "tier_down_friendly", "slot": "tail", "text": "{servant}{이/가} 마스터에게 품었던 깊은 신뢰가 흔들린다.", "when": {"event.direction": "down", "event.tier_changed": true, "event.tier_to": "friendly"}},
+      {"id": "tier_down_neutral", "slot": "tail", "text": "{servant}{이/가} 마스터와 한 발 거리를 두기 시작했다.", "when": {"event.direction": "down", "event.tier_changed": true, "event.tier_to": "neutral"}},
+      {"id": "tier_down_wary", "slot": "tail", "text": "{servant}{이/가} 마스터를 경계하기 시작했다. 명령을 따르지 않을지도 모른다.", "when": {"event.direction": "down", "event.tier_changed": true, "event.tier_to": "wary"}},
+      {"id": "tier_down_hostile", "slot": "tail", "text": "{servant}의 눈에 적의가 서렸다. ──배신의 기척이 느껴진다.", "when": {"event.direction": "down", "event.tier_changed": true, "event.tier_to": "hostile"}},
+      {"id": "release_up", "slot": "tail", "text": "자비를 택한 마스터를 보고, {servant}{이/가} 작게 고개를 끄덕였다.", "when": {"event.direction": "up", "event.cause": "release"}},
+      {"id": "release_down", "slot": "tail", "text": "{servant}{은/는} 적을 살려 보낸 결정이 못마땅한 듯하다.", "when": {"event.direction": "down", "event.cause": "release"}},
+      {"id": "execute_up", "slot": "tail", "text": "{servant}{은/는} 망설임 없는 결단을 마음에 들어 하는 것 같다.", "when": {"event.direction": "up", "event.cause": "execute"}},
+      {"id": "execute_down", "slot": "tail", "text": "{servant}{이/가} 처치를 명한 마스터를 말없이 바라본다.", "when": {"event.direction": "down", "event.cause": "execute"}},
+      {"id": "supply_up", "slot": "tail", "text": "마력과 함께, 무언가 따뜻한 것이 전해진 것 같다.", "when": {"event.direction": "up", "event.cause": "supply"}},
+      {"id": "supply_down", "slot": "tail", "text": "{servant}{이/가} 어색하게 시선을 피한다.", "when": {"event.direction": "down", "event.cause": "supply"}},
+      {"id": "bond_up", "slot": "tail", "text": "함께 보낸 시간이, {servant}의 마음을 조금 열었다.", "when": {"event.direction": "up", "event.cause": "bond"}},
+      {"id": "bond_down", "slot": "tail", "text": "{servant}{은/는} 오늘의 동행이 즐겁지 않았던 모양이다.", "when": {"event.direction": "down", "event.cause": "bond"}},
+      {"id": "variant_03", "text": "{servant}의 시선이 잠시 부드러워진다.", "slot": "tail", "when": {"event.direction": "up", "event.magnitude": "small"}},
+      {"id": "variant_04", "text": "대답의 끝에서 {servant}의 목소리가 조금 누그러졌다.", "slot": "tail", "when": {"event.direction": "up", "event.magnitude": "small"}},
+      {"id": "variant_05", "text": "{servant}{이/가} 마스터의 말에 고개를 끄덕인다.", "slot": "tail", "when": {"event.direction": "up", "event.magnitude": "mid"}},
+      {"id": "variant_06", "text": "{servant}의 걸음이 마스터와 나란해졌다.", "slot": "tail", "when": {"event.direction": "up", "event.magnitude": "mid"}},
+      {"id": "variant_07", "text": "{servant}{이/가} 마스터 앞에서 무기를 내린다.", "slot": "tail", "when": {"event.direction": "up", "event.magnitude": "big"}},
+      {"id": "variant_08", "text": "계약의 선보다 분명한 신뢰가 두 사람 사이에 자리 잡는다.", "slot": "tail", "when": {"event.direction": "up", "event.magnitude": "big"}},
+      {"id": "variant_09", "text": "{servant}의 표정이 잠시 굳는다.", "slot": "tail", "when": {"event.direction": "down", "event.magnitude": "small"}},
+      {"id": "variant_10", "text": "짧은 대답 뒤에 차가운 틈이 남았다.", "slot": "tail", "when": {"event.direction": "down", "event.magnitude": "small"}},
+      {"id": "variant_11", "text": "{servant}의 대답에서 온기가 빠진다.", "slot": "tail", "when": {"event.direction": "down", "event.magnitude": "mid"}},
+      {"id": "variant_12", "text": "나란했던 두 걸음이 조금씩 벌어진다.", "slot": "tail", "when": {"event.direction": "down", "event.magnitude": "mid"}},
+      {"id": "variant_13", "text": "{servant}{이/가} 등을 돌린다. 둘 사이에 긴 침묵이 내려앉는다.", "slot": "tail", "when": {"event.direction": "down", "event.magnitude": "big"}},
+      {"id": "variant_14", "text": "계약은 이어져 있지만, {servant}의 눈은 멀어졌다.", "slot": "tail", "when": {"event.direction": "down", "event.magnitude": "big"}},
+      {"id": "variant_15", "text": "{servant}{이/가} 날 선 시선을 거둔다.", "slot": "tail", "when": {"event.direction": "up", "event.tier_changed": true, "event.tier_to": "wary"}},
+      {"id": "variant_16", "text": "대답에 남아 있던 적의가 조금 누그러졌다.", "slot": "tail", "when": {"event.direction": "up", "event.tier_changed": true, "event.tier_to": "wary"}},
+      {"id": "variant_17", "text": "{servant}의 손이 무기에서 잠시 떨어진다.", "slot": "tail", "when": {"event.direction": "up", "event.tier_changed": true, "event.tier_to": "wary"}},
+      {"id": "variant_18", "text": "마스터가 다가서도 {servant}{은/는} 물러나지 않는다.", "slot": "tail", "when": {"event.direction": "up", "event.tier_changed": true, "event.tier_to": "wary"}},
+      {"id": "variant_19", "text": "{servant}{이/가} 경계하던 거리를 조금 줄인다.", "slot": "tail", "when": {"event.direction": "up", "event.tier_changed": true, "event.tier_to": "neutral"}},
+      {"id": "variant_20", "text": "{servant}의 대답에서 가시가 빠졌다.", "slot": "tail", "when": {"event.direction": "up", "event.tier_changed": true, "event.tier_to": "neutral"}},
+      {"id": "variant_21", "text": "나란히 선 두 사람 사이에 전보다 적은 틈이 남았다.", "slot": "tail", "when": {"event.direction": "up", "event.tier_changed": true, "event.tier_to": "neutral"}},
+      {"id": "variant_22", "text": "{servant}{은/는} 마스터의 말을 끝까지 듣는다.", "slot": "tail", "when": {"event.direction": "up", "event.tier_changed": true, "event.tier_to": "neutral"}},
+      {"id": "variant_23", "text": "{servant}{이/가} 먼저 마스터에게 말을 건넨다.", "slot": "tail", "when": {"event.direction": "up", "event.tier_changed": true, "event.tier_to": "friendly"}},
+      {"id": "variant_24", "text": "{servant}의 눈길에 분명한 친근함이 스친다.", "slot": "tail", "when": {"event.direction": "up", "event.tier_changed": true, "event.tier_to": "friendly"}},
+      {"id": "variant_25", "text": "두 사람의 걸음이 자연스럽게 나란해졌다.", "slot": "tail", "when": {"event.direction": "up", "event.tier_changed": true, "event.tier_to": "friendly"}},
+      {"id": "variant_26", "text": "{servant}{은/는} 마스터 곁에 자리를 잡는다.", "slot": "tail", "when": {"event.direction": "up", "event.tier_changed": true, "event.tier_to": "friendly"}},
+      {"id": "variant_27", "text": "{servant}{이/가} 망설임 없이 마스터의 곁에 선다.", "slot": "tail", "when": {"event.direction": "up", "event.tier_changed": true, "event.tier_to": "loyal"}},
+      {"id": "variant_28", "text": "마스터가 움직이자 {servant}{은/는} 같은 방향을 향한다.", "slot": "tail", "when": {"event.direction": "up", "event.tier_changed": true, "event.tier_to": "loyal"}},
+      {"id": "variant_29", "text": "계약의 선보다 굳은 신뢰가 두 사람의 태도에 드러난다.", "slot": "tail", "when": {"event.direction": "up", "event.tier_changed": true, "event.tier_to": "loyal"}},
+      {"id": "variant_30", "text": "{servant}{은/는} 마스터의 등 뒤를 조용히 지킨다.", "slot": "tail", "when": {"event.direction": "up", "event.tier_changed": true, "event.tier_to": "loyal"}},
+      {"id": "variant_31", "text": "{servant}{이/가} 마스터와 눈을 맞추지 않는다.", "slot": "tail", "when": {"event.direction": "down", "event.tier_changed": true, "event.tier_to": "friendly"}},
+      {"id": "variant_32", "text": "친근했던 대답에 조심스러운 틈이 생겼다.", "slot": "tail", "when": {"event.direction": "down", "event.tier_changed": true, "event.tier_to": "friendly"}},
+      {"id": "variant_33", "text": "나란하던 두 사람의 걸음이 조금 어긋난다.", "slot": "tail", "when": {"event.direction": "down", "event.tier_changed": true, "event.tier_to": "friendly"}},
+      {"id": "variant_34", "text": "{servant}{은/는} 한 발 떨어진 곳에 선다.", "slot": "tail", "when": {"event.direction": "down", "event.tier_changed": true, "event.tier_to": "friendly"}},
+      {"id": "variant_35", "text": "{servant}의 목소리에서 친근함이 사라졌다.", "slot": "tail", "when": {"event.direction": "down", "event.tier_changed": true, "event.tier_to": "neutral"}},
+      {"id": "variant_36", "text": "{servant}{은/는} 다시 일정한 거리를 남긴다.", "slot": "tail", "when": {"event.direction": "down", "event.tier_changed": true, "event.tier_to": "neutral"}},
+      {"id": "variant_37", "text": "함께 걷던 발소리가 서로 다른 속도로 멀어진다.", "slot": "tail", "when": {"event.direction": "down", "event.tier_changed": true, "event.tier_to": "neutral"}},
+      {"id": "variant_38", "text": "마스터의 말에 {servant}의 대답이 짧아졌다.", "slot": "tail", "when": {"event.direction": "down", "event.tier_changed": true, "event.tier_to": "neutral"}},
+      {"id": "variant_39", "text": "{servant}의 눈길에 다시 경계가 선다.", "slot": "tail", "when": {"event.direction": "down", "event.tier_changed": true, "event.tier_to": "wary"}},
+      {"id": "variant_40", "text": "{servant}{은/는} 마스터에게서 반 발 물러난다.", "slot": "tail", "when": {"event.direction": "down", "event.tier_changed": true, "event.tier_to": "wary"}},
+      {"id": "variant_41", "text": "대답 전에 긴 침묵이 끼어든다.", "slot": "tail", "when": {"event.direction": "down", "event.tier_changed": true, "event.tier_to": "wary"}},
+      {"id": "variant_42", "text": "{servant}의 손이 무기 가까이 머문다.", "slot": "tail", "when": {"event.direction": "down", "event.tier_changed": true, "event.tier_to": "wary"}},
+      {"id": "variant_43", "text": "{servant}의 시선이 날카롭게 굳는다.", "slot": "tail", "when": {"event.direction": "down", "event.tier_changed": true, "event.tier_to": "hostile"}},
+      {"id": "variant_44", "text": "마스터가 다가서자 {servant}{이/가} 등을 돌린다.", "slot": "tail", "when": {"event.direction": "down", "event.tier_changed": true, "event.tier_to": "hostile"}},
+      {"id": "variant_45", "text": "둘 사이에 적의가 분명해졌다.", "slot": "tail", "when": {"event.direction": "down", "event.tier_changed": true, "event.tier_to": "hostile"}},
+      {"id": "variant_46", "text": "{servant}의 목소리가 전장의 상대를 향할 때처럼 차갑다.", "slot": "tail", "when": {"event.direction": "down", "event.tier_changed": true, "event.tier_to": "hostile"}},
+      {"id": "variant_47", "text": "패배한 마스터가 떠나는 동안 {servant}{은/는} 조용히 지켜본다.", "slot": "tail", "when": {"event.cause": "release", "event.direction": "up"}},
+      {"id": "variant_48", "text": "살려 보낸 자의 발소리가 멀어진다. {servant}의 표정이 누그러졌다.", "slot": "tail", "when": {"event.cause": "release", "event.direction": "up"}},
+      {"id": "variant_49", "text": "{servant}{이/가} 마스터의 선택에 짧게 고개를 숙인다.", "slot": "tail", "when": {"event.cause": "release", "event.direction": "up"}},
+      {"id": "variant_50", "text": "검을 거둔 뒤, {servant}의 시선이 마스터에게 머문다.", "slot": "tail", "when": {"event.cause": "release", "event.direction": "up"}},
+      {"id": "variant_51", "text": "패배한 마스터가 떠나자 {servant}의 턱이 굳었다.", "slot": "tail", "when": {"event.cause": "release", "event.direction": "down"}},
+      {"id": "variant_52", "text": "{servant}{은/는} 달아나는 뒷모습에서 눈을 떼지 않는다.", "slot": "tail", "when": {"event.cause": "release", "event.direction": "down"}},
+      {"id": "variant_53", "text": "거둔 무기 끝에서 불만이 지워지지 않는다.", "slot": "tail", "when": {"event.cause": "release", "event.direction": "down"}},
+      {"id": "variant_54", "text": "{servant}의 짧은 침묵이 방면에 대한 대답이었다.", "slot": "tail", "when": {"event.cause": "release", "event.direction": "down"}},
+      {"id": "variant_55", "text": "마스터의 결단이 내려지자 {servant}{은/는} 흔들림 없이 따른다.", "slot": "tail", "when": {"event.cause": "execute", "event.direction": "up"}},
+      {"id": "variant_56", "text": "{servant}{이/가} 명령을 듣고 고개를 끄덕였다.", "slot": "tail", "when": {"event.cause": "execute", "event.direction": "up"}},
+      {"id": "variant_57", "text": "돌이킬 수 없는 선택 앞에서도 {servant}의 자세는 곧다.", "slot": "tail", "when": {"event.cause": "execute", "event.direction": "up"}},
+      {"id": "variant_58", "text": "{servant}{은/는} 끝난 자리를 돌아보지 않는다.", "slot": "tail", "when": {"event.cause": "execute", "event.direction": "up"}},
+      {"id": "variant_59", "text": "처치가 끝난 뒤 {servant}{은/는} 마스터와 눈을 맞추지 않는다.", "slot": "tail", "when": {"event.cause": "execute", "event.direction": "down"}},
+      {"id": "variant_60", "text": "{servant}의 표정에 잠시 그늘이 지난다.", "slot": "tail", "when": {"event.cause": "execute", "event.direction": "down"}},
+      {"id": "variant_61", "text": "명령은 이행됐다. 그러나 {servant}의 대답은 돌아오지 않는다.", "slot": "tail", "when": {"event.cause": "execute", "event.direction": "down"}},
+      {"id": "variant_62", "text": "{servant}{이/가} 무기를 거둔 손을 오래 내려다본다.", "slot": "tail", "when": {"event.cause": "execute", "event.direction": "down"}},
+      {"id": "variant_63", "text": "마력의 흐름이 멎은 뒤에도 서번트의 손은 잠시 머문다.", "slot": "tail", "when": {"event.cause": "supply", "event.direction": "up"}},
+      {"id": "variant_64", "text": "계약의 선이 가라앉자 {servant}{이/가} 마스터를 바라본다.", "slot": "tail", "when": {"event.cause": "supply", "event.direction": "up"}},
+      {"id": "variant_65", "text": "서번트의 어깨에서 긴장이 조금 빠졌다.", "slot": "tail", "when": {"event.cause": "supply", "event.direction": "up"}},
+      {"id": "variant_66", "text": "짧은 눈맞춤이 마력 공급의 끝을 잇는다.", "slot": "tail", "when": {"event.cause": "supply", "event.direction": "up"}},
+      {"id": "variant_67", "text": "마력의 흐름이 끊기자 {servant}{이/가} 물러섰다.", "slot": "tail", "when": {"event.cause": "supply", "event.direction": "down"}},
+      {"id": "variant_68", "text": "공급은 끝났지만 두 사람의 호흡은 어긋나 있었다.", "slot": "tail", "when": {"event.cause": "supply", "event.direction": "down"}},
+      {"id": "variant_69", "text": "{servant}의 손이 먼저 떨어진다.", "slot": "tail", "when": {"event.cause": "supply", "event.direction": "down"}},
+      {"id": "variant_70", "text": "계약의 빛이 꺼지고, 어색한 침묵이 남았다.", "slot": "tail", "when": {"event.cause": "supply", "event.direction": "down"}},
+      {"id": "variant_71", "text": "동행의 끝에서 {servant}{이/가} 먼저 말을 붙였다.", "slot": "tail", "when": {"event.cause": "bond", "event.direction": "up"}},
+      {"id": "variant_72", "text": "돌아오는 길의 발걸음이 어느새 나란하다.", "slot": "tail", "when": {"event.cause": "bond", "event.direction": "up"}},
+      {"id": "variant_73", "text": "{servant}의 대답이 한마디 길어졌다.", "slot": "tail", "when": {"event.cause": "bond", "event.direction": "up"}},
+      {"id": "variant_74", "text": "헤어질 때 {servant}{은/는} 한 번 더 돌아보았다.", "slot": "tail", "when": {"event.cause": "bond", "event.direction": "up"}},
+      {"id": "variant_75", "text": "돌아오는 길에 {servant}{은/는} 앞서 걷는다.", "slot": "tail", "when": {"event.cause": "bond", "event.direction": "down"}},
+      {"id": "variant_76", "text": "함께 있던 시간의 끝에 남은 것은 침묵이다.", "slot": "tail", "when": {"event.cause": "bond", "event.direction": "down"}},
+      {"id": "variant_77", "text": "{servant}의 짧은 인사 뒤로 거리가 벌어진다.", "slot": "tail", "when": {"event.cause": "bond", "event.direction": "down"}},
+      {"id": "variant_78", "text": "나란히 걷던 발소리가 어긋났다.", "slot": "tail", "when": {"event.cause": "bond", "event.direction": "down"}}
     ],
     "day_started": [
-      {
-        "id": "base",
-        "slot": "lead",
-        "text": "아침. 후유키의 하늘은, 어젯밤의 일 따위 모른다는 듯 맑았다."
-      },
-      {
-        "id": "day1",
-        "slot": "lead",
-        "text": "성배전쟁, 첫째 날. ──아직 아무것도 시작되지 않은 척, 도시는 평소처럼 숨을 쉰다.",
-        "when": {
-          "world.day": 1
-        },
-        "repeat": "once_per_run"
-      },
-      {
-        "id": "day7",
-        "slot": "lead",
-        "text": "일곱째 날. 남은 것은 오늘 하루, 그리고 오늘 밤.",
-        "when": {
-          "world.day": 7
-        },
-        "repeat": "once_per_run"
-      },
-      {
-        "id": "rumor_vague",
-        "slot": "lead",
-        "text": "밤사이 도시 어딘가에서, 거대한 마력이 충돌했다고 한다. 누가 누구와──그것까지는 알 수 없다.",
-        "when": {
-          "event.rumor": true,
-          "event.rumor_known": false
-        },
-        "notes": "소문 (§8.7). 정보 부족"
-      },
-      {
-        "id": "rumor_known",
-        "slot": "lead",
-        "text": "{loser}의 기척이 끊겼다. 밤사이, 또 하나의 진영이 무너졌다.",
-        "when": {
-          "event.rumor": true,
-          "event.rumor_known": true
-        },
-        "notes": "소문 (§8.7)"
-      }
+      {"id": "base", "slot": "lead", "text": "아침. 후유키의 하늘은, 어젯밤의 일 따위 모른다는 듯 맑았다."},
+      {"id": "day1", "slot": "lead", "text": "성배전쟁, 첫째 날. ──아직 아무것도 시작되지 않은 척, 도시는 평소처럼 숨을 쉰다.", "when": {"world.day": 1}, "repeat": "once_per_run"},
+      {"id": "day7", "slot": "lead", "text": "일곱째 날. 남은 것은 오늘 하루, 그리고 오늘 밤.", "when": {"world.day": 7}, "repeat": "once_per_run"},
+      {"id": "rumor_vague", "slot": "lead", "text": "밤사이 도시 어딘가에서, 거대한 마력이 충돌했다고 한다. 누가 누구와──그것까지는 알 수 없다.", "when": {"event.rumor": true, "event.rumor_known": false}, "notes": "소문 (§8.7). 정보 부족"},
+      {"id": "rumor_known", "slot": "lead", "text": "{loser}의 기척이 끊겼다. 밤사이, 또 하나의 진영이 무너졌다.", "when": {"event.rumor": true, "event.rumor_known": true}, "notes": "소문 (§8.7)"},
+      {"id": "variant_03", "text": "동이 튼다. 밤의 흔적은 골목의 그림자 속에만 남아 있다.", "slot": "lead"},
+      {"id": "variant_04", "text": "햇빛이 창턱에 닿는다. 도시는 아무 일도 없었다는 얼굴이다.", "slot": "lead"},
+      {"id": "variant_05", "text": "새벽의 냉기가 물러난다. 후유키는 다시 일상의 소리를 낸다.", "slot": "lead"},
+      {"id": "variant_06", "text": "밤을 지나온 자들에게도 아침은 똑같이 찾아왔다.", "slot": "lead"},
+      {"id": "variant_07", "text": "새벽 무렵, 먼 곳에서 굉음이 났다는 소문만 돈다.", "slot": "lead", "when": {"event.rumor": true, "event.rumor_known": false}},
+      {"id": "variant_08", "text": "밤사이 어느 구역의 하늘이 빛났다고 한다. 당사자는 알려지지 않았다.", "slot": "lead", "when": {"event.rumor": true, "event.rumor_known": false}},
+      {"id": "variant_09", "text": "사람들은 충격음을 이야기한다. 그곳에서 누가 싸웠는지는 알 길이 없다.", "slot": "lead", "when": {"event.rumor": true, "event.rumor_known": false}},
+      {"id": "variant_10", "text": "마력의 잔향만 도시를 떠돈다. 남은 이름은 아직 없다.", "slot": "lead", "when": {"event.rumor": true, "event.rumor_known": false}},
+      {"id": "variant_11", "text": "밤사이 {loser}의 마력이 사라졌다. 전쟁의 빈자리가 하나 늘었다.", "slot": "lead", "when": {"event.rumor": true, "event.rumor_known": true}},
+      {"id": "variant_12", "text": "{loser}의 마지막 기척을 확인한 아침. 도시는 여전히 조용하다.", "slot": "lead", "when": {"event.rumor": true, "event.rumor_known": true}},
+      {"id": "variant_13", "text": "알려진 소식은 하나. {loser}{은/는} 더는 이 전쟁에 남아 있지 않다.", "slot": "lead", "when": {"event.rumor": true, "event.rumor_known": true}},
+      {"id": "variant_14", "text": "새벽이 밝기 전, {loser}의 진영이 끊어졌다.", "slot": "lead", "when": {"event.rumor": true, "event.rumor_known": true}}
     ],
     "night_started": [
-      {
-        "id": "base_01",
-        "slot": "lead",
-        "text": "해가 진다. 사람의 시간이 끝나고, 영령의 시간이 시작된다."
-      },
-      {
-        "id": "base_02",
-        "slot": "lead",
-        "text": "밤. 거리에서 인기척이 사라진다. 남은 것은, 공기에 밴 마력의 잔향뿐."
-      },
-      {
-        "id": "hurt",
-        "slot": "lead",
-        "text": "상처가 채 아물지 않은 채로, 또 밤이 온다.",
-        "when": {
-          "self.condition": "hurt"
-        }
-      }
+      {"id": "base_01", "slot": "lead", "text": "해가 진다. 사람의 시간이 끝나고, 영령의 시간이 시작된다."},
+      {"id": "base_02", "slot": "lead", "text": "밤. 거리에서 인기척이 사라진다. 남은 것은, 공기에 밴 마력의 잔향뿐."},
+      {"id": "hurt", "slot": "lead", "text": "상처가 채 아물지 않은 채로, 또 밤이 온다.", "when": {"self.condition": "hurt"}},
+      {"id": "variant_03", "text": "가로등이 하나씩 켜진다. 그 아래, 다른 싸움이 시작된다.", "slot": "lead"},
+      {"id": "variant_04", "text": "낮의 소음이 잦아든 자리에 서번트의 기척이 스민다.", "slot": "lead"},
+      {"id": "variant_05", "text": "도시의 창문이 어두워진다. 성배전쟁의 밤은 이제부터다.", "slot": "lead"},
+      {"id": "variant_06", "text": "어둠이 내려앉는다. 닫힌 상처가 다시 욱신거린다.", "slot": "lead", "when": {"self.condition": "hurt"}},
+      {"id": "variant_07", "text": "낮 동안 가라앉았던 통증이 밤공기와 함께 돌아온다.", "slot": "lead", "when": {"self.condition": "hurt"}},
+      {"id": "variant_08", "text": "상처를 감싼 채, 다시 전장의 시간이 시작된다.", "slot": "lead", "when": {"self.condition": "hurt"}},
+      {"id": "variant_09", "text": "해가 지자 미처 아물지 못한 흔적이 드러난다.", "slot": "lead", "when": {"self.condition": "hurt"}}
     ],
     "day_bond": [
       {"id": "lead_quiet", "slot": "lead", "text": "전쟁 중의 한낮. {servant}{와/과} 나란히, 목적 없는 길을 걷는다."},
@@ -479,178 +268,155 @@
       {"id": "react_calm_2", "slot": "react", "when": {"beat.line.tone": "calm"}, "text": "담담한 말투. 그러나 그 안에, 이전에는 없던 온기가 섞여 있다."},
       {"id": "react_tender_2", "slot": "react", "when": {"beat.line.tone": "tender"}, "text": "{servant}{이/가} 작게 웃는다. 전장에서는 한 번도 본 적 없는 얼굴이었다."},
       {"id": "react_loyal", "slot": "react", "when": {"self.affinity_tier": "loyal"}, "text": "더 이상의 말은 필요 없었다. 나란히 선 두 그림자가, 같은 방향으로 길게 늘어진다."},
-      { "id": "lead_step", "slot": "lead", "text": "전투의 소음이 닿지 않는 길. {servant}{와/과} 마스터는 잠시 같은 보폭으로 걷는다." },
-      { "id": "react_calm_new", "slot": "react", "when": { "beat.line.tone": "calm" }, "text": "대답은 짧았지만, 침묵은 불편하지 않았다. 걸음이 나란히 이어진다." },
-      { "id": "react_playful_new", "slot": "react", "when": { "beat.line.tone": "playful" }, "text": "가벼운 말끝에 웃음이 남는다. 전쟁의 한낮에도 이런 틈은 있다." },
-      {
-        "id": "urban",
-        "slot": "lead",
-        "text": "낮의 거리는 평화롭다. 이곳이 전쟁터라는 사실을, 잠시 잊을 수 있을 만큼.",
-        "when": {
-          "world.terrain": "urban"
-        }
-      },
-      {
-        "id": "river",
-        "slot": "lead",
-        "text": "햇빛이 수면 위에서 부서진다. 바람이, 강을 따라 천천히 흐른다.",
-        "when": {
-          "world.terrain": "river"
-        }
-      },
-      {
-        "id": "open",
-        "slot": "lead",
-        "text": "구름 그림자가 들판을 느릿하게 가로지른다.",
-        "when": {
-          "world.terrain": "open"
-        }
-      },
-      {
-        "id": "forest",
-        "slot": "lead",
-        "text": "나뭇잎 사이로 빛이 스민다. 새소리가, 멀리서 들려온다.",
-        "when": {
-          "world.terrain": "forest"
-        }
-      },
-      {
-        "id": "react_tender",
-        "slot": "react",
-        "text": "그 목소리는, 전장에서 듣던 것과는 조금 달랐다.",
-        "when": {
-          "beat.line.tone": "tender"
-        }
-      },
-      {
-        "id": "react_cold",
-        "slot": "react",
-        "text": "대답은 짧았다. 둘 사이의 거리는, 걸음 수만큼 좁혀지지 않는다.",
-        "when": {
-          "beat.line.tone": "cold"
-        }
-      }
+      {"id": "lead_step", "slot": "lead", "text": "전투의 소음이 닿지 않는 길. {servant}{와/과} 마스터는 잠시 같은 보폭으로 걷는다."},
+      {"id": "react_calm_new", "slot": "react", "when": {"beat.line.tone": "calm"}, "text": "대답은 짧았지만, 침묵은 불편하지 않았다. 걸음이 나란히 이어진다."},
+      {"id": "react_playful_new", "slot": "react", "when": {"beat.line.tone": "playful"}, "text": "가벼운 말끝에 웃음이 남는다. 전쟁의 한낮에도 이런 틈은 있다."},
+      {"id": "urban", "slot": "lead", "text": "낮의 거리는 평화롭다. 이곳이 전쟁터라는 사실을, 잠시 잊을 수 있을 만큼.", "when": {"world.terrain": "urban"}},
+      {"id": "river", "slot": "lead", "text": "햇빛이 수면 위에서 부서진다. 바람이, 강을 따라 천천히 흐른다.", "when": {"world.terrain": "river"}},
+      {"id": "open", "slot": "lead", "text": "구름 그림자가 들판을 느릿하게 가로지른다.", "when": {"world.terrain": "open"}},
+      {"id": "forest", "slot": "lead", "text": "나뭇잎 사이로 빛이 스민다. 새소리가, 멀리서 들려온다.", "when": {"world.terrain": "forest"}},
+      {"id": "react_tender", "slot": "react", "text": "그 목소리는, 전장에서 듣던 것과는 조금 달랐다.", "when": {"beat.line.tone": "tender"}},
+      {"id": "react_cold", "slot": "react", "text": "대답은 짧았다. 둘 사이의 거리는, 걸음 수만큼 좁혀지지 않는다.", "when": {"beat.line.tone": "cold"}},
+      {"id": "variant_03", "text": "전쟁은 잠시 멀어진다. {servant}{와/과} 같은 길을 걷는 낮이다.", "slot": "lead"},
+      {"id": "variant_04", "text": "별일 없는 길. 그래서 {servant}의 발소리가 더 또렷하다.", "slot": "lead"},
+      {"id": "variant_05", "text": "잠깐의 한낮, 두 사람은 나란히 거리를 지난다.", "slot": "lead"},
+      {"id": "variant_06", "text": "지난밤의 상처 탓에 {servant}{이/가} 잠시 걸음을 고른다.", "slot": "lead", "when": {"self.condition": "hurt"}},
+      {"id": "variant_07", "text": "{servant}의 옷자락 아래, 아직 낫지 않은 흔적이 보인다.", "slot": "lead", "when": {"self.condition": "hurt"}},
+      {"id": "variant_08", "text": "햇빛은 따뜻하지만 {servant}의 숨은 조금 거칠다.", "slot": "lead", "when": {"self.condition": "hurt"}},
+      {"id": "variant_09", "text": "{servant}{은/는} 아픈 곳을 감춘 채 길을 나선다.", "slot": "lead", "when": {"self.condition": "hurt"}},
+      {"id": "variant_10", "text": "전쟁이 길어질수록 한낮의 침묵도 짧아진다.", "slot": "lead", "when": {"world.day": {"gte": 4}}},
+      {"id": "variant_11", "text": "남은 날이 줄어든다. {servant}{이/가} 걷는 길은 평소와 같다.", "slot": "lead", "when": {"world.day": {"gte": 4}}},
+      {"id": "variant_12", "text": "늦은 전쟁의 낮. 마주치는 사람들 사이에 두 사람만 걸음을 늦춘다.", "slot": "lead", "when": {"world.day": {"gte": 4}}},
+      {"id": "variant_13", "text": "밤이 가까워질수록 이 짧은 동행이 선명해진다.", "slot": "lead", "when": {"world.day": {"gte": 4}}},
+      {"id": "variant_14", "text": "사람들의 발걸음 사이로 {servant}{이/가} 조용히 따라온다.", "slot": "lead", "when": {"world.terrain": "urban"}},
+      {"id": "variant_15", "text": "상점의 불빛이 아직 환하다. 전쟁의 기척은 이 거리에 어울리지 않는다.", "slot": "lead", "when": {"world.terrain": "urban"}},
+      {"id": "variant_16", "text": "차 소리가 대화를 잠시 가린다. {servant}{은/는} 건너편을 바라본다.", "slot": "lead", "when": {"world.terrain": "urban"}},
+      {"id": "variant_17", "text": "강물 위로 낮빛이 부서진다. {servant}의 발걸음이 잠시 멎는다.", "slot": "lead", "when": {"world.terrain": "river"}},
+      {"id": "variant_18", "text": "물가의 바람이 옷자락을 흔든다. 말없이 걷기에도 좋은 거리다.", "slot": "lead", "when": {"world.terrain": "river"}},
+      {"id": "variant_19", "text": "교각 아래로 물소리가 울린다. {servant}{은/는} 걸음을 늦춘다.", "slot": "lead", "when": {"world.terrain": "river"}},
+      {"id": "variant_20", "text": "나뭇잎 사이로 가느다란 햇빛이 내려온다.", "slot": "lead", "when": {"world.terrain": "forest"}},
+      {"id": "variant_21", "text": "숲의 침묵 속에서는 작은 발소리도 또렷하다.", "slot": "lead", "when": {"world.terrain": "forest"}},
+      {"id": "variant_22", "text": "젖은 흙 위에 발자국 둘이 나란히 남는다.", "slot": "lead", "when": {"world.terrain": "forest"}},
+      {"id": "variant_23", "text": "넓은 하늘 아래 두 사람의 그림자만 길어진다.", "slot": "lead", "when": {"world.terrain": "open"}},
+      {"id": "variant_24", "text": "바람을 막을 것 없는 길. 서번트의 목소리도 멀리 간다.", "slot": "lead", "when": {"world.terrain": "open"}},
+      {"id": "variant_25", "text": "발끝에서 먼지가 일어난다. 시야 끝까지 비어 있는 낮이다.", "slot": "lead", "when": {"world.terrain": "open"}},
+      {"id": "variant_26", "text": "{servant}{은/는} 마스터보다 몇 걸음 앞서 걷는다.", "slot": "lead", "when": {"self.affinity_tier": "hostile"}},
+      {"id": "variant_27", "text": "말을 걸자 {servant}의 어깨가 굳었다.", "slot": "lead", "when": {"self.affinity_tier": "hostile"}},
+      {"id": "variant_28", "text": "같은 길 위에서 두 사람의 발소리가 멀리 떨어진다.", "slot": "lead", "when": {"self.affinity_tier": "hostile"}},
+      {"id": "variant_29", "text": "{servant}의 눈길이 마스터를 비껴간다.", "slot": "lead", "when": {"self.affinity_tier": "hostile"}},
+      {"id": "variant_30", "text": "{servant}{은/는} 가까이 오되 일정한 거리를 남긴다.", "slot": "lead", "when": {"self.affinity_tier": "wary"}},
+      {"id": "variant_31", "text": "대답 전에 짧은 침묵이 끼어든다.", "slot": "lead", "when": {"self.affinity_tier": "wary"}},
+      {"id": "variant_32", "text": "{servant}의 걸음은 마스터와 맞지 않는다.", "slot": "lead", "when": {"self.affinity_tier": "wary"}},
+      {"id": "variant_33", "text": "시선은 닿았다가 곧 서로 다른 쪽으로 흩어진다.", "slot": "lead", "when": {"self.affinity_tier": "wary"}},
+      {"id": "variant_34", "text": "{servant}{이/가} 자연스럽게 옆자리를 차지한다.", "slot": "lead", "when": {"self.affinity_tier": {"in": ["friendly", "loyal"]}}},
+      {"id": "variant_35", "text": "두 사람의 발걸음이 말없이 맞아 들어간다.", "slot": "lead", "when": {"self.affinity_tier": {"in": ["friendly", "loyal"]}}},
+      {"id": "variant_36", "text": "{servant}{이/가} 먼저 주변의 작은 것을 가리킨다.", "slot": "lead", "when": {"self.affinity_tier": {"in": ["friendly", "loyal"]}}},
+      {"id": "variant_37", "text": "길모퉁이에서 {servant}{은/는} 마스터를 기다렸다.", "slot": "lead", "when": {"self.affinity_tier": {"in": ["friendly", "loyal"]}}},
+      {"id": "variant_38", "text": "대화가 끝난 자리에는 가벼운 발소리가 남았다.", "slot": "react"},
+      {"id": "variant_39", "text": "몇 마디가 오갔다. 두 사람의 걸음은 계속 나란하다.", "slot": "react"},
+      {"id": "variant_40", "text": "말 사이로 지나간 바람이 긴장을 누그러뜨린다.", "slot": "react"},
+      {"id": "variant_41", "text": "{servant}의 목소리는 낮에도 흔들리지 않는다.", "slot": "react", "when": {"beat.line.tone": "defiant"}},
+      {"id": "variant_42", "text": "굽히지 않는 대답에 마스터가 걸음을 멈춘다.", "slot": "react", "when": {"beat.line.tone": "defiant"}},
+      {"id": "variant_43", "text": "말끝이 단단하다. {servant}{은/는} 정면을 보고 선다.", "slot": "react", "when": {"beat.line.tone": "defiant"}},
+      {"id": "variant_44", "text": "짧은 대답이 공기를 바로 세웠다.", "slot": "react", "when": {"beat.line.tone": "defiant"}},
+      {"id": "variant_45", "text": "말이 끝난 뒤 두 사람은 한동안 나란히 걷는다.", "slot": "react", "when": {"beat.line.tone": "grim"}},
+      {"id": "variant_46", "text": "무거운 침묵 속에서도 {servant}{은/는} 자리를 뜨지 않는다.", "slot": "react", "when": {"beat.line.tone": "grim"}},
+      {"id": "variant_47", "text": "마스터가 고개를 끄덕일 때까지 {servant}{은/는} 기다린다.", "slot": "react", "when": {"beat.line.tone": "grim"}},
+      {"id": "variant_48", "text": "마지막 말이 낮은 바람에 오래 남았다.", "slot": "react", "when": {"beat.line.tone": "grim"}},
+      {"id": "variant_49", "text": "짧은 포효 뒤, 서번트의 발걸음이 마스터와 맞춰진다.", "slot": "react", "when": {"beat.line.tone": "roar"}},
+      {"id": "variant_50", "text": "울음 같은 숨소리가 낮게 가라앉는다.", "slot": "react", "when": {"beat.line.tone": "roar"}},
+      {"id": "variant_51", "text": "{servant}{은/는} 손을 거두지 않고 잠시 곁에 선다.", "slot": "react", "when": {"beat.line.tone": "roar"}},
+      {"id": "variant_52", "text": "목소리 대신 서번트의 고개가 한 번 움직였다.", "slot": "react", "when": {"beat.line.tone": "roar"}},
+      {"id": "variant_53", "text": "차분한 대답이 두 사람 사이에 오래 머문다.", "slot": "react", "when": {"beat.line.tone": "calm"}},
+      {"id": "variant_54", "text": "말수는 적다. 그래도 {servant}{은/는} 끝까지 듣는다.", "slot": "react", "when": {"beat.line.tone": "calm"}},
+      {"id": "variant_55", "text": "서번트의 고른 호흡에 대화의 속도도 느려진다.", "slot": "react", "when": {"beat.line.tone": "calm"}},
+      {"id": "variant_56", "text": "{servant}의 목소리가 낮아진다. 거리의 소음도 잠시 멀다.", "slot": "react", "when": {"beat.line.tone": "tender"}},
+      {"id": "variant_57", "text": "마스터가 대답하기 전, {servant}{이/가} 먼저 미소를 보인다.", "slot": "react", "when": {"beat.line.tone": "tender"}},
+      {"id": "variant_58", "text": "부드러운 말끝이 한낮의 바람에 섞인다.", "slot": "react", "when": {"beat.line.tone": "tender"}},
+      {"id": "variant_59", "text": "서번트의 시선이 마스터에게 오래 머문다.", "slot": "react", "when": {"self.affinity_tier": "loyal"}},
+      {"id": "variant_60", "text": "말하지 않아도 두 사람의 발이 함께 멈춘다.", "slot": "react", "when": {"self.affinity_tier": "loyal"}},
+      {"id": "variant_61", "text": "{servant}{이/가} 먼저 돌아보며 걸음을 늦춘다.", "slot": "react", "when": {"self.affinity_tier": "loyal"}},
+      {"id": "variant_62", "text": "마스터가 입을 열자 {servant}{이/가} 고개를 돌린다.", "slot": "react", "when": {"self.affinity_tier": "loyal"}},
+      {"id": "variant_63", "text": "서번트의 가벼운 말에 두 사람의 걸음이 풀린다.", "slot": "react", "when": {"beat.line.tone": "playful"}},
+      {"id": "variant_64", "text": "농담이 끝나고 작은 웃음이 남았다.", "slot": "react", "when": {"beat.line.tone": "playful"}},
+      {"id": "variant_65", "text": "{servant}{이/가} 장난스럽게 한 발 앞서 간다.", "slot": "react", "when": {"beat.line.tone": "playful"}},
+      {"id": "variant_66", "text": "짧은 웃음이 전쟁의 소음을 잠시 밀어낸다.", "slot": "react", "when": {"beat.line.tone": "playful"}},
+      {"id": "variant_67", "text": "대답이 끝나자 다시 발소리만 남았다.", "slot": "react", "when": {"beat.line.tone": "cold"}},
+      {"id": "variant_68", "text": "서번트의 목소리에는 낮의 온기가 닿지 않는다.", "slot": "react", "when": {"beat.line.tone": "cold"}},
+      {"id": "variant_69", "text": "마스터가 말을 잇기 전에 {servant}{이/가} 시선을 돌린다.", "slot": "react", "when": {"beat.line.tone": "cold"}},
+      {"id": "variant_70", "text": "두 사람의 그림자가 가까워졌다가 곧 벌어진다.", "slot": "react", "when": {"beat.line.tone": "cold"}}
     ],
     "intel": [
-      {
-        "id": "base",
-        "slot": "lead",
-        "text": "도시에 흩어진 흔적을 좇는다. 마력의 잔향, 부자연스러운 결계, 사람들의 소문."
-      }
+      {"id": "base", "slot": "lead", "text": "도시에 흩어진 흔적을 좇는다. 마력의 잔향, 부자연스러운 결계, 사람들의 소문."},
+      {"id": "variant_03", "text": "지워진 발자국 사이에서 마력의 자취를 찾는다.", "slot": "lead"},
+      {"id": "variant_04", "text": "소문이 끊긴 자리마다 작은 흔적이 남아 있다.", "slot": "lead"},
+      {"id": "variant_05", "text": "밤의 잔향이 낮의 거리 아래 희미하게 남았다.", "slot": "lead"},
+      {"id": "variant_06", "text": "결계의 가장자리를 따라 보이지 않는 선을 짚는다.", "slot": "lead"}
     ],
     "intel_weakness": [
-      {
-        "id": "lore",
-        "slot": "react",
-        "text": "{weakness}",
-        "source": "fgo",
-        "notes": "약점(정보 3단계) 공개: 대상 서번트의 약점 문구를 그대로 읽는다. {weakness} = profile.lore.weakness, 없으면 Atlas KR 캐릭터 상세 (D-158)"
-      }
+      {"id": "lore", "slot": "react", "text": "{weakness}", "source": "fgo", "notes": "약점(정보 3단계) 공개: 대상 서번트의 약점 문구를 그대로 읽는다. {weakness} = profile.lore.weakness, 없으면 Atlas KR 캐릭터 상세 (D-158)"},
+      {"id": "variant_03", "text": "드러난 약점은 하나였다. {weakness}", "slot": "react"},
+      {"id": "variant_04", "text": "흩어진 단서가 한 문장으로 모인다. {weakness}", "slot": "react"},
+      {"id": "variant_05", "text": "전설의 빈틈이 모습을 드러낸다. {weakness}", "slot": "react"},
+      {"id": "variant_06", "text": "남은 기록이 가리키는 곳. {weakness}", "slot": "react"}
     ],
     "battle_start": [
-      {
-        "id": "place_open",
-        "slot": "lead",
-        "text": "탁 트인 공터. 숨을 곳도, 물러설 곳도 없다.",
-        "when": {
-          "world.terrain": "open",
-          "scene.setting_told": false
-        }
-      },
-      {
-        "id": "place_urban",
-        "slot": "lead",
-        "text": "잠든 주택가. 가로등 불빛 아래로, 두 개의 그림자가 길게 늘어진다.",
-        "when": {
-          "world.terrain": "urban",
-          "scene.setting_told": false
-        }
-      },
-      {
-        "id": "place_forest",
-        "slot": "lead",
-        "text": "나무 사이로 달빛이 조각나 떨어진다. 어둠이, 칼날의 윤곽을 삼킨다.",
-        "when": {
-          "world.terrain": "forest",
-          "scene.setting_told": false
-        }
-      },
-      {
-        "id": "place_river",
-        "slot": "lead",
-        "text": "강물 소리가 모든 기척을 덮는다. ──그러나 살기만은, 덮이지 않았다.",
-        "when": {
-          "world.terrain": "river",
-          "scene.setting_told": false
-        }
-      },
-      {
-        "id": "enemy_unknown",
-        "slot": "lead",
-        "text": "어둠 속에서 누군가 걸어 나온다. 정체를 알 수 없는──그러나 틀림없는, 서번트.",
-        "when": {
-          "enemy.intel_level": 0
-        }
-      },
-      {
-        "id": "enemy_class",
-        "slot": "lead",
-        "text": "{enemy}. 드러난 것은 클래스뿐. 그 이상은, 칼끝이 밝혀낼 것이다.",
-        "when": {
-          "enemy.intel_level": {
-            "in": [
-              1,
-              2
-            ]
-          }
-        }
-      },
-      {
-        "id": "enemy_named",
-        "slot": "lead",
-        "text": "{enemy}. 이름도 전설도 이미 드러난 상대. ──그렇기에 더욱, 방심은 허락되지 않는다.",
-        "when": {
-          "enemy.intel_level": { "gte": 2 }
-        }
-      },
-      {
-        "id": "enemy_released",
-        "slot": "lead",
-        "text": "한 번 등을 보이고 떠났던 그림자가, 다시 앞을 막아선다.",
-        "when": {
-          "mem.released": true
-        },
-        "repeat": "once_per_run"
-      },
-      {
-        "id": "react_defiant",
-        "slot": "react",
-        "text": "허세가 아니다. 그 목소리에는, 이미 승부를 정한 자의 무게가 실려 있었다.",
-        "when": {
-          "beat.line.tone": "defiant"
-        }
-      },
-      {
-        "id": "react_playful",
-        "slot": "react",
-        "text": "가벼운 말투와 달리, 그 눈은 조금도 웃고 있지 않았다.",
-        "when": {
-          "beat.line.tone": "playful"
-        }
-      },
-      {
-        "id": "react_roar",
-        "slot": "react",
-        "text": "말이 아닌 포효. 그것만으로 대기가 떨리고, 세계의 질감이 삐걱거린다.",
-        "when": {
-          "beat.line.tone": "roar"
-        }
-      },
-      {
-        "id": "tail",
-        "slot": "tail",
-        "text": "대화는 거기까지였다. ──공기가, 팽팽하게 당겨진다."
-      }
+      {"id": "place_open", "slot": "lead", "text": "탁 트인 공터. 숨을 곳도, 물러설 곳도 없다.", "when": {"world.terrain": "open", "scene.setting_told": false}},
+      {"id": "place_urban", "slot": "lead", "text": "잠든 주택가. 가로등 불빛 아래로, 두 개의 그림자가 길게 늘어진다.", "when": {"world.terrain": "urban", "scene.setting_told": false}},
+      {"id": "place_forest", "slot": "lead", "text": "나무 사이로 달빛이 조각나 떨어진다. 어둠이, 칼날의 윤곽을 삼킨다.", "when": {"world.terrain": "forest", "scene.setting_told": false}},
+      {"id": "place_river", "slot": "lead", "text": "강물 소리가 모든 기척을 덮는다. ──그러나 살기만은, 덮이지 않았다.", "when": {"world.terrain": "river", "scene.setting_told": false}},
+      {"id": "enemy_unknown", "slot": "lead", "text": "어둠 속에서 누군가 걸어 나온다. 정체를 알 수 없는──그러나 틀림없는, 서번트.", "when": {"enemy.intel_level": 0}},
+      {"id": "enemy_class", "slot": "lead", "text": "{enemy}. 드러난 것은 클래스뿐. 그 이상은, 칼끝이 밝혀낼 것이다.", "when": {"enemy.intel_level": {"in": [1, 2]}}},
+      {"id": "enemy_named", "slot": "lead", "text": "{enemy}. 이름도 전설도 이미 드러난 상대. ──그렇기에 더욱, 방심은 허락되지 않는다.", "when": {"enemy.intel_level": {"gte": 2}}},
+      {"id": "enemy_released", "slot": "lead", "text": "한 번 등을 보이고 떠났던 그림자가, 다시 앞을 막아선다.", "when": {"mem.released": true}, "repeat": "once_per_run"},
+      {"id": "react_defiant", "slot": "react", "text": "허세가 아니다. 그 목소리에는, 이미 승부를 정한 자의 무게가 실려 있었다.", "when": {"beat.line.tone": "defiant"}},
+      {"id": "react_playful", "slot": "react", "text": "가벼운 말투와 달리, 그 눈은 조금도 웃고 있지 않았다.", "when": {"beat.line.tone": "playful"}},
+      {"id": "react_roar", "slot": "react", "text": "말이 아닌 포효. 그것만으로 대기가 떨리고, 세계의 질감이 삐걱거린다.", "when": {"beat.line.tone": "roar"}},
+      {"id": "tail", "slot": "tail", "text": "대화는 거기까지였다. ──공기가, 팽팽하게 당겨진다."},
+      {"id": "variant_03", "text": "빈 하늘 아래, 두 기척이 정면으로 마주 선다.", "slot": "lead", "when": {"scene.setting_told": false, "world.terrain": "open"}},
+      {"id": "variant_04", "text": "바람을 막는 것 하나 없는 공터. 무기 끝이 또렷하다.", "slot": "lead", "when": {"scene.setting_told": false, "world.terrain": "open"}},
+      {"id": "variant_05", "text": "발밑의 먼지가 낮게 일어난다. 물러날 곳이 드러난 전장이다.", "slot": "lead", "when": {"scene.setting_told": false, "world.terrain": "open"}},
+      {"id": "variant_06", "text": "탁 트인 자리에서 두 그림자의 거리가 좁아진다.", "slot": "lead", "when": {"scene.setting_told": false, "world.terrain": "open"}},
+      {"id": "variant_07", "text": "불 꺼진 창문 아래, 발소리 둘이 멈춘다.", "slot": "lead", "when": {"scene.setting_told": false, "world.terrain": "urban"}},
+      {"id": "variant_08", "text": "가로등의 흰빛이 길바닥의 그림자를 갈라놓는다.", "slot": "lead", "when": {"scene.setting_told": false, "world.terrain": "urban"}},
+      {"id": "variant_09", "text": "좁은 골목 끝에서 마력의 기척이 고인다.", "slot": "lead", "when": {"scene.setting_told": false, "world.terrain": "urban"}},
+      {"id": "variant_10", "text": "주택가의 적막 속, 무기 하나가 빛을 받는다.", "slot": "lead", "when": {"scene.setting_told": false, "world.terrain": "urban"}},
+      {"id": "variant_11", "text": "숲의 그늘이 두 형체 사이에 길게 누운다.", "slot": "lead", "when": {"scene.setting_told": false, "world.terrain": "forest"}},
+      {"id": "variant_12", "text": "젖은 낙엽 위로 발소리가 사라진다.", "slot": "lead", "when": {"scene.setting_told": false, "world.terrain": "forest"}},
+      {"id": "variant_13", "text": "빽빽한 줄기 사이에서 서로의 기척만 또렷하다.", "slot": "lead", "when": {"scene.setting_told": false, "world.terrain": "forest"}},
+      {"id": "variant_14", "text": "달빛이 끊긴 자리마다 그림자가 깊어진다.", "slot": "lead", "when": {"scene.setting_told": false, "world.terrain": "forest"}},
+      {"id": "variant_15", "text": "물결이 어둠을 실어 나른다. 강둑에서 두 기척이 멈춘다.", "slot": "lead", "when": {"scene.setting_told": false, "world.terrain": "river"}},
+      {"id": "variant_16", "text": "다리 아래 울림이 발소리를 지워 버린다.", "slot": "lead", "when": {"scene.setting_told": false, "world.terrain": "river"}},
+      {"id": "variant_17", "text": "강바람이 무기 끝을 스친다. 물소리 너머에 상대가 있다.", "slot": "lead", "when": {"scene.setting_told": false, "world.terrain": "river"}},
+      {"id": "variant_18", "text": "검은 수면 위로 달빛이 떨리고, 강둑의 거리가 줄어든다.", "slot": "lead", "when": {"scene.setting_told": false, "world.terrain": "river"}},
+      {"id": "variant_19", "text": "형체만 보인다. 이름도 클래스도 아직 어둠 속이다.", "slot": "lead", "when": {"enemy.intel_level": 0}},
+      {"id": "variant_20", "text": "낯선 발소리가 다가온다. 드러난 것은 서번트의 기척뿐.", "slot": "lead", "when": {"enemy.intel_level": 0}},
+      {"id": "variant_21", "text": "상대는 빛 바깥에 선다. 무엇을 쥐었는지도 보이지 않는다.", "slot": "lead", "when": {"enemy.intel_level": 0}},
+      {"id": "variant_22", "text": "어둠이 걷혀도 알아낼 수 있는 것은 하나. 상대가 서번트라는 사실뿐.", "slot": "lead", "when": {"enemy.intel_level": 0}},
+      {"id": "variant_23", "text": "{enemy}의 윤곽이 드러난다. 클래스의 흔적이 전장의 첫 단서다.", "slot": "lead", "when": {"enemy.intel_level": {"in": [1, 2]}}},
+      {"id": "variant_24", "text": "{enemy}의 클래스를 알 수 있다. 무기 끝이 다음 수를 가리킨다.", "slot": "lead", "when": {"enemy.intel_level": {"in": [1, 2]}}},
+      {"id": "variant_25", "text": "마주 선 {enemy}. 드러난 단서보다 중요한 것은 눈앞의 움직임이다.", "slot": "lead", "when": {"enemy.intel_level": {"in": [1, 2]}}},
+      {"id": "variant_26", "text": "{enemy}{이/가} 빛 안으로 들어선다. 클래스의 윤곽이 선명해진다.", "slot": "lead", "when": {"enemy.intel_level": {"in": [1, 2]}}},
+      {"id": "variant_27", "text": "{enemy}의 이름이 전장에 울린다. 마주 선 형체가 더 선명하다.", "slot": "lead", "when": {"enemy.intel_level": {"gte": 2}}},
+      {"id": "variant_28", "text": "이미 드러난 전설. 그래도 {enemy}의 다음 수는 알 수 없다.", "slot": "lead", "when": {"enemy.intel_level": {"gte": 2}}},
+      {"id": "variant_29", "text": "{enemy}{이/가} 정면에 선다. 아는 이름이라도 거리는 좁혀지지 않는다.", "slot": "lead", "when": {"enemy.intel_level": {"gte": 2}}},
+      {"id": "variant_30", "text": "진명을 아는 상대와 마주한다. {enemy}의 무기 끝은 흔들리지 않는다.", "slot": "lead", "when": {"enemy.intel_level": {"gte": 2}}},
+      {"id": "variant_31", "text": "선언처럼 떨어진 말에 발소리마저 멎는다.", "slot": "react", "when": {"beat.line.tone": "defiant"}},
+      {"id": "variant_32", "text": "한마디가 끝나자 무기 끝이 정면을 가리킨다.", "slot": "react", "when": {"beat.line.tone": "defiant"}},
+      {"id": "variant_33", "text": "물러서지 않는 목소리. 상대의 자세도 굳었다.", "slot": "react", "when": {"beat.line.tone": "defiant"}},
+      {"id": "variant_34", "text": "말은 짧다. 뒤로 물러난 발은 하나도 없다.", "slot": "react", "when": {"beat.line.tone": "defiant"}},
+      {"id": "variant_35", "text": "웃음은 가볍다. 무기를 쥔 손은 단단하다.", "slot": "react", "when": {"beat.line.tone": "playful"}},
+      {"id": "variant_36", "text": "농담이 끝나기도 전에 눈빛이 먼저 상대를 좇는다.", "slot": "react", "when": {"beat.line.tone": "playful"}},
+      {"id": "variant_37", "text": "입가에 웃음이 남은 채 거리가 좁혀진다.", "slot": "react", "when": {"beat.line.tone": "playful"}},
+      {"id": "variant_38", "text": "가벼운 말 뒤로 날카로운 침묵이 이어진다.", "slot": "react", "when": {"beat.line.tone": "playful"}},
+      {"id": "variant_39", "text": "포효가 울린 자리에서 나뭇잎이 떨린다.", "slot": "react", "when": {"beat.line.tone": "roar"}},
+      {"id": "variant_40", "text": "짐승 같은 외침이 전장을 가로지른다.", "slot": "react", "when": {"beat.line.tone": "roar"}},
+      {"id": "variant_41", "text": "말은 없었다. 거친 숨소리만이 시작을 알린다.", "slot": "react", "when": {"beat.line.tone": "roar"}},
+      {"id": "variant_42", "text": "땅을 울린 소리 뒤, 두 기척이 동시에 움직인다.", "slot": "react", "when": {"beat.line.tone": "roar"}},
+      {"id": "variant_43", "text": "마지막 말이 사라지고, 무기 든 손만 남았다.", "slot": "tail"},
+      {"id": "variant_44", "text": "침묵이 내려앉는다. 첫 움직임은 아직 없다.", "slot": "tail"},
+      {"id": "variant_45", "text": "두 그림자가 마주 선 채 거리를 잰다.", "slot": "tail"},
+      {"id": "variant_46", "text": "발끝이 움직인다. 대화가 끝난 자리다.", "slot": "tail"}
     ],
     "phase_start": [
       {"id": "clash_2", "slot": "lead", "when": {"event.phase_id": "ph_clash"}, "text": "거리가 사라진다. 남은 것은 무기와 무기, 그리고 의지뿐."},
@@ -659,54 +425,30 @@
       {"id": "fate_2", "slot": "lead", "when": {"event.phase_id": "ph_fate"}, "text": "살아남을 이유도, 쓰러질 이유도 없다. 오직 운명의 저울만이 흔들린다."},
       {"id": "np_clash_2", "slot": "lead", "when": {"event.phase_id": "ph_np_clash"}, "text": "진명이 불린다. 두 개의 신비가, 세계의 질감을 비틀며 부풀어 오른다."},
       {"id": "np_attack_2", "slot": "lead", "when": {"event.phase_id": "ph_np_attack"}, "text": "전설의 빛이 한쪽에서만 차오른다. 맞서는 쪽에 남은 것은, 버틸 각오뿐."},
-      {
-        "id": "clash",
-        "slot": "lead",
-        "text": "정면. 피할 생각도, 피할 틈도 없다.",
-        "when": {
-          "event.phase_id": "ph_clash"
-        }
-      },
-      {
-        "id": "initiative",
-        "slot": "lead",
-        "text": "먼저 움직이는 쪽이 이긴다. ──찰나를 다투는 싸움.",
-        "when": {
-          "event.phase_id": "ph_initiative"
-        }
-      },
-      {
-        "id": "sorcery",
-        "slot": "lead",
-        "text": "마력이 소용돌이친다. 회로가 타는 냄새가, 밤공기에 섞인다.",
-        "when": {
-          "event.phase_id": "ph_sorcery"
-        }
-      },
-      {
-        "id": "fate",
-        "slot": "lead",
-        "text": "승패를 가르는 것은 힘도 기술도 아니다. 운명이라는 이름의, 한 번의 주사위.",
-        "when": {
-          "event.phase_id": "ph_fate"
-        }
-      },
-      {
-        "id": "np_clash",
-        "slot": "lead",
-        "text": "두 개의 전설이, 지금 정면으로 부딪친다.",
-        "when": {
-          "event.phase_id": "ph_np_clash"
-        }
-      },
-      {
-        "id": "np_attack",
-        "slot": "lead",
-        "text": "한쪽만이 보구를 꺼내 들었다. ──막아 낼 것인가, 삼켜질 것인가.",
-        "when": {
-          "event.phase_id": "ph_np_attack"
-        }
-      }
+      {"id": "clash", "slot": "lead", "text": "정면. 피할 생각도, 피할 틈도 없다.", "when": {"event.phase_id": "ph_clash"}},
+      {"id": "initiative", "slot": "lead", "text": "먼저 움직이는 쪽이 이긴다. ──찰나를 다투는 싸움.", "when": {"event.phase_id": "ph_initiative"}},
+      {"id": "sorcery", "slot": "lead", "text": "마력이 소용돌이친다. 회로가 타는 냄새가, 밤공기에 섞인다.", "when": {"event.phase_id": "ph_sorcery"}},
+      {"id": "fate", "slot": "lead", "text": "승패를 가르는 것은 힘도 기술도 아니다. 운명이라는 이름의, 한 번의 주사위.", "when": {"event.phase_id": "ph_fate"}},
+      {"id": "np_clash", "slot": "lead", "text": "두 개의 전설이, 지금 정면으로 부딪친다.", "when": {"event.phase_id": "ph_np_clash"}},
+      {"id": "np_attack", "slot": "lead", "text": "한쪽만이 보구를 꺼내 들었다. ──막아 낼 것인가, 삼켜질 것인가.", "when": {"event.phase_id": "ph_np_attack"}},
+      {"id": "variant_03", "text": "칼끝이 부딪힌다. 거리를 잴 시간은 없다.", "slot": "lead", "when": {"event.phase_id": "ph_clash"}},
+      {"id": "variant_04", "text": "맞선 두 힘이 정면에서 갈린다.", "slot": "lead", "when": {"event.phase_id": "ph_clash"}},
+      {"id": "variant_05", "text": "한 걸음. 그 안에서 무기와 무기가 만난다.", "slot": "lead", "when": {"event.phase_id": "ph_clash"}},
+      {"id": "variant_06", "text": "눈보다 발이 먼저 움직인다.", "slot": "lead", "when": {"event.phase_id": "ph_initiative"}},
+      {"id": "variant_07", "text": "먼저 닿을 한 치를 두고 두 그림자가 흔들린다.", "slot": "lead", "when": {"event.phase_id": "ph_initiative"}},
+      {"id": "variant_08", "text": "호흡이 끊기는 찰나, 한쪽이 뛰어든다.", "slot": "lead", "when": {"event.phase_id": "ph_initiative"}},
+      {"id": "variant_09", "text": "마력의 결이 공중에서 서로 엉킨다.", "slot": "lead", "when": {"event.phase_id": "ph_sorcery"}},
+      {"id": "variant_10", "text": "보이지 않는 선들이 전장 위에 겹쳐진다.", "slot": "lead", "when": {"event.phase_id": "ph_sorcery"}},
+      {"id": "variant_11", "text": "회로가 달아오르고, 첫 술식이 열린다.", "slot": "lead", "when": {"event.phase_id": "ph_sorcery"}},
+      {"id": "variant_12", "text": "한순간, 어느 쪽에도 닿지 않은 운명이 흔들린다.", "slot": "lead", "when": {"event.phase_id": "ph_fate"}},
+      {"id": "variant_13", "text": "기술의 끝에서 우연 하나가 고개를 든다.", "slot": "lead", "when": {"event.phase_id": "ph_fate"}},
+      {"id": "variant_14", "text": "죽음과 생존 사이에 짧은 틈이 열린다.", "slot": "lead", "when": {"event.phase_id": "ph_fate"}},
+      {"id": "variant_15", "text": "두 보구의 빛이 같은 지점을 향한다.", "slot": "lead", "when": {"event.phase_id": "ph_np_clash"}},
+      {"id": "variant_16", "text": "전설 둘이 정면에서 서로의 자리를 빼앗는다.", "slot": "lead", "when": {"event.phase_id": "ph_np_clash"}},
+      {"id": "variant_17", "text": "진명이 겹쳐 울리고, 공기가 갈라진다.", "slot": "lead", "when": {"event.phase_id": "ph_np_clash"}},
+      {"id": "variant_18", "text": "한쪽의 진명만 밤을 가른다. 맞서는 쪽은 방어를 세운다.", "slot": "lead", "when": {"event.phase_id": "ph_np_attack"}},
+      {"id": "variant_19", "text": "방출된 신비 앞에 남은 것은 버티는 자세뿐.", "slot": "lead", "when": {"event.phase_id": "ph_np_attack"}},
+      {"id": "variant_20", "text": "한 전설이 열리고, 다른 쪽의 그림자가 그 빛 아래 놓인다.", "slot": "lead", "when": {"event.phase_id": "ph_np_attack"}}
     ],
     "phase_result": [
       {"id": "small_2", "slot": "react", "when": {"event.margin": {"lt": 5}}, "text": "승부를 가른 것은 한 호흡. {loser}의 무기가, 반 뼘 늦었다."},
@@ -725,468 +467,454 @@
       {"id": "to_hurt_2", "slot": "tail", "when": {"event.condition_to": "hurt"}, "text": "상처는 얕지 않다. 그러나 {loser}의 눈은, 아직 꺾이지 않았다."},
       {"id": "to_danger_2", "slot": "tail", "when": {"event.condition_to": "danger"}, "text": "{loser}의 윤곽이 흔들린다. 영기가, 비명을 지르고 있다."},
       {"id": "below_2", "slot": "tail", "when": {"event.condition_to": null, "event.result": "resolved"}, "text": "무기가 손에서 미끄러진다. {loser}의 몸이, 천천히 무너져 내린다."},
-      { "id": "narrow_step", "slot": "react", "when": { "event.margin": { "lt": 5 }, "event.result": "resolved" }, "text": "발끝이 반 치 움직인다. {winner}{이/가} 그 작은 간격으로 {loser}의 빈틈을 잡는다." },
-      { "id": "heavy_guard", "slot": "react", "when": { "event.drop": 2 }, "text": "받아 낸 팔이 밀린다. {loser}의 자세가 무너지고, 뒤늦게 충격이 온몸을 지난다." },
-      { "id": "danger_breath", "slot": "tail", "when": { "event.condition_to": "danger" }, "text": "호흡이 끊긴다. 다음 일격을 버틸 수 있을지는, 아직 모른다." },
-      {
-        "id": "skip",
-        "slot": "react",
-        "text": "칼과 칼이 맞물린 채 멈춘다. ──이번 합은, 누구의 것도 아니었다.",
-        "when": {
-          "event.result": "skipped"
-        }
-      },
-      {
-        "id": "small",
-        "slot": "react",
-        "text": "종이 한 장 차이. {winner}{이/가} 간신히 우위를 가져간다.",
-        "when": {
-          "event.margin": {
-            "lt": 5
-          }
-        }
-      },
-      {
-        "id": "big",
-        "slot": "react",
-        "text": "{winner}의 일격이 {loser}{을/를} 꿰뚫는다. 격차는, 명백했다.",
-        "when": {
-          "event.margin": {
-            "gte": 5
-          }
-        }
-      },
-      {
-        "id": "big_clash",
-        "slot": "react",
-        "text": "정면으로 부딪친 힘이, {loser}의 자세를 통째로 무너뜨린다.",
-        "when": {
-          "event.phase_id": "ph_clash",
-          "event.margin": {
-            "gte": 5
-          }
-        }
-      },
-      {
-        "id": "big_initiative",
-        "slot": "react",
-        "text": "보이지 않았다. {loser}{이/가} 알아차렸을 때, 칼끝은 이미 지나간 뒤였다.",
-        "when": {
-          "event.phase_id": "ph_initiative",
-          "event.margin": {
-            "gte": 5
-          }
-        }
-      },
-      {
-        "id": "big_sorcery",
-        "slot": "react",
-        "text": "술식이 술식을 삼킨다. {loser}의 회로가, 하얗게 타들어 간다.",
-        "when": {
-          "event.phase_id": "ph_sorcery",
-          "event.margin": {
-            "gte": 5
-          }
-        }
-      },
-      {
-        "id": "to_hurt",
-        "slot": "tail",
-        "text": "{loser}의 몸에서 피가 흐른다. 아직──아직은, 서 있다.",
-        "when": {
-          "event.condition_to": "hurt"
-        }
-      },
-      {
-        "id": "to_danger",
-        "slot": "tail",
-        "text": "영핵이 삐걱거린다. {loser}의 존재가, 한순간 희미해진다.",
-        "when": {
-          "event.condition_to": "danger"
-        }
-      },
-      {
-        "id": "clash_1",
-        "text": "칼날과 칼날이 맞물린다. 밀려난 것은 {loser}. 한 걸음──그 한 걸음이, 승부를 가른다.",
-        "slot": "react",
-        "when": {
-          "event.phase_id": "ph_clash",
-          "event.drop": 1
-        }
-      },
-      {
-        "id": "initiative_1",
-        "text": "{winner}{이/가} 반 박자 먼저 움직였다. 그 반 박자가, {loser}의 어깨를 베고 지나간다.",
-        "slot": "react",
-        "when": {
-          "event.phase_id": "ph_initiative",
-          "event.drop": 1
-        }
-      },
-      {
-        "id": "sorcery_1",
-        "text": "술식이 술식을 갉아먹는다. 먼저 무너진 것은 {loser} 쪽의 방벽이었다.",
-        "slot": "react",
-        "when": {
-          "event.phase_id": "ph_sorcery",
-          "event.drop": 1
-        }
-      },
-      {
-        "id": "fate_fail",
-        "text": "운명은 {loser}에게서 등을 돌렸다. 피할 수 있었을 일격이, 피해지지 않는다.",
-        "slot": "react",
-        "when": {
-          "event.phase_id": "ph_fate",
-          "event.result": "resolved"
-        }
-      },
-      {
-        "id": "fate_skip",
-        "text": "죽음이 목덜미를 스치고 지나간다. ──운명은, 아직 결론을 내리지 않았다.",
-        "slot": "react",
-        "when": {
-          "event.phase_id": "ph_fate",
-          "event.result": "skipped"
-        }
-      },
-      {
-        "id": "np_clash_1",
-        "text": "두 개의 전설이 정면에서 부딪친다. 빛과 빛이 서로를 삼키고──먼저 꺾인 것은 {loser}의 빛.",
-        "slot": "react",
-        "when": {
-          "event.phase_id": "ph_np_clash",
-          "event.result": "resolved"
-        }
-      },
-      {
-        "id": "np_attack_1",
-        "text": "방출된 전설이 {loser}{을/를} 집어삼킨다. 버텨 낸 것은, 겨우 영핵 하나.",
-        "slot": "react",
-        "when": {
-          "event.phase_id": "ph_np_attack",
-          "event.result": "resolved"
-        }
-      },
-      {
-        "id": "drop2",
-        "text": "일방적이었다. {winner}의 일격이 방어를 통째로 꿰뚫고, {loser}의 영기에 깊은 균열을 새긴다.",
-        "slot": "react",
-        "when": {
-          "event.drop": 2
-        }
-      },
-      {
-        "id": "drop2_clash",
-        "text": "힘의 격차가 그대로 형태가 된다. {loser}의 몸이 땅을 긁으며 튕겨 나갔다.",
-        "slot": "react",
-        "when": {
-          "event.phase_id": "ph_clash",
-          "event.drop": 2
-        }
-      },
-      {
-        "id": "drop2_initiative",
-        "text": "보이지 않았다. 알아차렸을 때는 이미 세 번──{loser}의 몸에 붉은 선이 그어져 있었다.",
-        "slot": "react",
-        "when": {
-          "event.phase_id": "ph_initiative",
-          "event.drop": 2
-        }
-      },
-      {
-        "id": "drop2_danger",
-        "text": "단 일합. 만전이었던 {loser}{이/가} 순식간에 사선(死線) 위로 내몰린다.",
-        "slot": "tail",
-        "when": {
-          "event.condition_to": "danger",
-          "event.drop": 2
-        }
-      },
-      {
-        "id": "below",
-        "text": "영핵이 부서지는 소리가 났다. {loser}{은/는}──더는, 서 있을 수 없다.",
-        "slot": "tail",
-        "when": {
-          "event.condition_to": null,
-          "event.result": "resolved"
-        }
-      }
+      {"id": "narrow_step", "slot": "react", "when": {"event.margin": {"lt": 5}, "event.result": "resolved"}, "text": "발끝이 반 치 움직인다. {winner}{이/가} 그 작은 간격으로 {loser}의 빈틈을 잡는다."},
+      {"id": "heavy_guard", "slot": "react", "when": {"event.drop": 2}, "text": "받아 낸 팔이 밀린다. {loser}의 자세가 무너지고, 뒤늦게 충격이 온몸을 지난다."},
+      {"id": "danger_breath", "slot": "tail", "when": {"event.condition_to": "danger"}, "text": "호흡이 끊긴다. 다음 일격을 버틸 수 있을지는, 아직 모른다."},
+      {"id": "skip", "slot": "react", "text": "칼과 칼이 맞물린 채 멈춘다. ──이번 합은, 누구의 것도 아니었다.", "when": {"event.result": "skipped"}},
+      {"id": "small", "slot": "react", "text": "종이 한 장 차이. {winner}{이/가} 간신히 우위를 가져간다.", "when": {"event.margin": {"lt": 5}}},
+      {"id": "big", "slot": "react", "text": "{winner}의 일격이 {loser}{을/를} 꿰뚫는다. 격차는, 명백했다.", "when": {"event.margin": {"gte": 5}}},
+      {"id": "big_clash", "slot": "react", "text": "정면으로 부딪친 힘이, {loser}의 자세를 통째로 무너뜨린다.", "when": {"event.phase_id": "ph_clash", "event.margin": {"gte": 5}}},
+      {"id": "big_initiative", "slot": "react", "text": "보이지 않았다. {loser}{이/가} 알아차렸을 때, 칼끝은 이미 지나간 뒤였다.", "when": {"event.phase_id": "ph_initiative", "event.margin": {"gte": 5}}},
+      {"id": "big_sorcery", "slot": "react", "text": "술식이 술식을 삼킨다. {loser}의 회로가, 하얗게 타들어 간다.", "when": {"event.phase_id": "ph_sorcery", "event.margin": {"gte": 5}}},
+      {"id": "to_hurt", "slot": "tail", "text": "{loser}의 몸에서 피가 흐른다. 아직──아직은, 서 있다.", "when": {"event.condition_to": "hurt"}},
+      {"id": "to_danger", "slot": "tail", "text": "영핵이 삐걱거린다. {loser}의 존재가, 한순간 희미해진다.", "when": {"event.condition_to": "danger"}},
+      {"id": "clash_1", "text": "칼날과 칼날이 맞물린다. 밀려난 것은 {loser}. 한 걸음──그 한 걸음이, 승부를 가른다.", "slot": "react", "when": {"event.phase_id": "ph_clash", "event.drop": 1}},
+      {"id": "initiative_1", "text": "{winner}{이/가} 반 박자 먼저 움직였다. 그 반 박자가, {loser}의 어깨를 베고 지나간다.", "slot": "react", "when": {"event.phase_id": "ph_initiative", "event.drop": 1}},
+      {"id": "sorcery_1", "text": "술식이 술식을 갉아먹는다. 먼저 무너진 것은 {loser} 쪽의 방벽이었다.", "slot": "react", "when": {"event.phase_id": "ph_sorcery", "event.drop": 1}},
+      {"id": "fate_fail", "text": "운명은 {loser}에게서 등을 돌렸다. 피할 수 있었을 일격이, 피해지지 않는다.", "slot": "react", "when": {"event.phase_id": "ph_fate", "event.result": "resolved"}},
+      {"id": "fate_skip", "text": "죽음이 목덜미를 스치고 지나간다. ──운명은, 아직 결론을 내리지 않았다.", "slot": "react", "when": {"event.phase_id": "ph_fate", "event.result": "skipped"}},
+      {"id": "np_clash_1", "text": "두 개의 전설이 정면에서 부딪친다. 빛과 빛이 서로를 삼키고──먼저 꺾인 것은 {loser}의 빛.", "slot": "react", "when": {"event.phase_id": "ph_np_clash", "event.result": "resolved"}},
+      {"id": "np_attack_1", "text": "방출된 전설이 {loser}{을/를} 집어삼킨다. 버텨 낸 것은, 겨우 영핵 하나.", "slot": "react", "when": {"event.phase_id": "ph_np_attack", "event.result": "resolved"}},
+      {"id": "drop2", "text": "일방적이었다. {winner}의 일격이 방어를 통째로 꿰뚫고, {loser}의 영기에 깊은 균열을 새긴다.", "slot": "react", "when": {"event.drop": 2}},
+      {"id": "drop2_clash", "text": "힘의 격차가 그대로 형태가 된다. {loser}의 몸이 땅을 긁으며 튕겨 나갔다.", "slot": "react", "when": {"event.phase_id": "ph_clash", "event.drop": 2}},
+      {"id": "drop2_initiative", "text": "보이지 않았다. 알아차렸을 때는 이미 세 번──{loser}의 몸에 붉은 선이 그어져 있었다.", "slot": "react", "when": {"event.phase_id": "ph_initiative", "event.drop": 2}},
+      {"id": "drop2_danger", "text": "단 일합. 만전이었던 {loser}{이/가} 순식간에 사선(死線) 위로 내몰린다.", "slot": "tail", "when": {"event.condition_to": "danger", "event.drop": 2}},
+      {"id": "below", "text": "영핵이 부서지는 소리가 났다. {loser}{은/는}──더는, 서 있을 수 없다.", "slot": "tail", "when": {"event.condition_to": null, "event.result": "resolved"}},
+      {"id": "variant_03", "text": "한 호흡의 차이로 {winner}의 일격이 닿는다.", "slot": "react", "when": {"event.margin": {"lt": 5}}},
+      {"id": "variant_04", "text": "{loser}의 방어가 아주 조금 늦었다.", "slot": "react", "when": {"event.margin": {"lt": 5}}},
+      {"id": "variant_05", "text": "팽팽한 공방 끝에 {winner}{이/가} 작은 틈을 연다.", "slot": "react", "when": {"event.margin": {"lt": 5}}},
+      {"id": "variant_06", "text": "{winner}의 공세 앞에서 {loser}의 방어가 무너진다.", "slot": "react", "when": {"event.margin": {"gte": 5}}},
+      {"id": "variant_07", "text": "두 기척 사이의 격차가 일격으로 드러난다.", "slot": "react", "when": {"event.margin": {"gte": 5}}},
+      {"id": "variant_08", "text": "{loser}{은/는} 되받을 틈을 찾지 못한다.", "slot": "react", "when": {"event.margin": {"gte": 5}}},
+      {"id": "variant_09", "text": "맞붙인 칼날 사이에서 {winner}{이/가} 한 치 앞선다.", "slot": "react", "when": {"event.margin": {"lt": 5}, "event.phase_id": "ph_clash"}},
+      {"id": "variant_10", "text": "힘의 균형이 잠깐 무너진다. {loser}의 무기만 밀린다.", "slot": "react", "when": {"event.margin": {"lt": 5}, "event.phase_id": "ph_clash"}},
+      {"id": "variant_11", "text": "정면의 한 합이 끝나자 {winner}의 발이 앞에 있다.", "slot": "react", "when": {"event.margin": {"lt": 5}, "event.phase_id": "ph_clash"}},
+      {"id": "variant_12", "text": "서로의 방어가 닿는다. 먼저 빈틈을 연 쪽은 {winner}다.", "slot": "react", "when": {"event.margin": {"lt": 5}, "event.phase_id": "ph_clash"}},
+      {"id": "variant_13", "text": "동시에 뻗은 손끝. {winner}의 무기만 먼저 닿는다.", "slot": "react", "when": {"event.margin": {"lt": 5}, "event.phase_id": "ph_initiative"}},
+      {"id": "variant_14", "text": "패자의 발이 늦게 반응한다. 차이는 한 호흡이다.", "slot": "react", "when": {"event.margin": {"lt": 5}, "event.phase_id": "ph_initiative"}},
+      {"id": "variant_15", "text": "찰나의 빈틈을 {winner}{이/가} 먼저 잡는다.", "slot": "react", "when": {"event.margin": {"lt": 5}, "event.phase_id": "ph_initiative"}},
+      {"id": "variant_16", "text": "움직임은 거의 같았다. 끝에서 {winner}{이/가} 앞섰다.", "slot": "react", "when": {"event.margin": {"lt": 5}, "event.phase_id": "ph_initiative"}},
+      {"id": "variant_17", "text": "술식 두 줄이 엉킨다. 승자의 것만 끝까지 남았다.", "slot": "react", "when": {"event.margin": {"lt": 5}, "event.phase_id": "ph_sorcery"}},
+      {"id": "variant_18", "text": "{loser}의 방벽에서 작은 틈이 열린다.", "slot": "react", "when": {"event.margin": {"lt": 5}, "event.phase_id": "ph_sorcery"}},
+      {"id": "variant_19", "text": "비슷한 마력이 맞선다. 승자 결 하나를 먼저 끊는다.", "slot": "react", "when": {"event.margin": {"lt": 5}, "event.phase_id": "ph_sorcery"}},
+      {"id": "variant_20", "text": "마력의 흐름이 잠깐 승자 쪽으로 기운다.", "slot": "react", "when": {"event.margin": {"lt": 5}, "event.phase_id": "ph_sorcery"}},
+      {"id": "variant_21", "text": "{loser}의 발밑에서 피할 길이 끊긴다.", "slot": "react", "when": {"event.phase_id": "ph_fate", "event.result": "resolved"}},
+      {"id": "variant_22", "text": "우연 하나가 기울었다. 승자의 일격이 닿는다.", "slot": "react", "when": {"event.phase_id": "ph_fate", "event.result": "resolved"}},
+      {"id": "variant_23", "text": "맞지 않았어야 할 타이밍. 그러나 {loser}{은/는} 피하지 못했다.", "slot": "react", "when": {"event.phase_id": "ph_fate", "event.result": "resolved"}},
+      {"id": "variant_24", "text": "죽음에 닿을 뻔한 순간이 지나간다.", "slot": "react", "when": {"event.phase_id": "ph_fate", "event.result": "skipped"}},
+      {"id": "variant_25", "text": "운명의 저울은 어느 쪽으로도 기울지 않았다.", "slot": "react", "when": {"event.phase_id": "ph_fate", "event.result": "skipped"}},
+      {"id": "variant_26", "text": "마지막 한 치에서 두 기척이 서로 비껴간다.", "slot": "react", "when": {"event.phase_id": "ph_fate", "event.result": "skipped"}},
+      {"id": "variant_27", "text": "두 빛이 서로를 삼킨 뒤 {winner}의 것만 남았다.", "slot": "react", "when": {"event.phase_id": "ph_np_clash", "event.result": "resolved"}},
+      {"id": "variant_28", "text": "보구의 잔광 속에서 {loser}의 전설이 먼저 꺾인다.", "slot": "react", "when": {"event.phase_id": "ph_np_clash", "event.result": "resolved"}},
+      {"id": "variant_29", "text": "맞물린 신비가 갈라진다. {winner}의 빛이 앞으로 나아간다.", "slot": "react", "when": {"event.phase_id": "ph_np_clash", "event.result": "resolved"}},
+      {"id": "variant_30", "text": "한쪽에서 쏟아진 빛에 {loser}의 자세가 무너진다.", "slot": "react", "when": {"event.phase_id": "ph_np_attack", "event.result": "resolved"}},
+      {"id": "variant_31", "text": "방어를 뚫고 신비의 잔향이 {loser}에게 닿는다.", "slot": "react", "when": {"event.phase_id": "ph_np_attack", "event.result": "resolved"}},
+      {"id": "variant_32", "text": "보구의 충격이 지난 자리에서 {loser}{이/가} 비틀거린다.", "slot": "react", "when": {"event.phase_id": "ph_np_attack", "event.result": "resolved"}},
+      {"id": "variant_33", "text": "두 무기의 궤도가 빗나간다. 이번 합은 빈자리만 남겼다.", "slot": "react", "when": {"event.result": "skipped"}},
+      {"id": "variant_34", "text": "맞붙기 직전, 서로의 거리가 다시 벌어진다.", "slot": "react", "when": {"event.result": "skipped"}},
+      {"id": "variant_35", "text": "공방은 허공에서 끝났다. 누구도 밀리지 않았다.", "slot": "react", "when": {"event.result": "skipped"}},
+      {"id": "variant_36", "text": "맞댄 무기 사이로 승자의 칼끝이 조금 더 나아간다.", "slot": "react", "when": {"event.drop": 1, "event.phase_id": "ph_clash"}},
+      {"id": "variant_37", "text": "힘이 팽팽히 맞선다. {loser}의 발만 한 걸음 밀린다.", "slot": "react", "when": {"event.drop": 1, "event.phase_id": "ph_clash"}},
+      {"id": "variant_38", "text": "정면의 일격이 {loser}의 방어에 얕은 금을 낸다.", "slot": "react", "when": {"event.drop": 1, "event.phase_id": "ph_clash"}},
+      {"id": "variant_39", "text": "{winner}의 손이 먼저 움직인다. {loser}{은/는} 반 박자 늦었다.", "slot": "react", "when": {"event.drop": 1, "event.phase_id": "ph_initiative"}},
+      {"id": "variant_40", "text": "서로가 뛰어든 순간 {winner}의 칼끝이 앞섰다.", "slot": "react", "when": {"event.drop": 1, "event.phase_id": "ph_initiative"}},
+      {"id": "variant_41", "text": "늦은 첫발이 {loser}에게 작은 상처를 남긴다.", "slot": "react", "when": {"event.drop": 1, "event.phase_id": "ph_initiative"}},
+      {"id": "variant_42", "text": "방벽 한 겹이 깨진다. {loser}의 마력이 조금 흩어진다.", "slot": "react", "when": {"event.drop": 1, "event.phase_id": "ph_sorcery"}},
+      {"id": "variant_43", "text": "승자의 술식이 {loser}의 방어를 얕게 깎는다.", "slot": "react", "when": {"event.drop": 1, "event.phase_id": "ph_sorcery"}},
+      {"id": "variant_44", "text": "마력의 선 하나가 먼저 끊긴다. {loser} 쪽이다.", "slot": "react", "when": {"event.drop": 1, "event.phase_id": "ph_sorcery"}},
+      {"id": "variant_45", "text": "{loser}의 자세가 흔들린다. 상처는 남았지만 아직 움직인다.", "slot": "tail", "when": {"event.condition_to": "hurt"}},
+      {"id": "variant_46", "text": "흐르는 피 아래로 {loser}의 발이 다시 땅을 딛는다.", "slot": "tail", "when": {"event.condition_to": "hurt"}},
+      {"id": "variant_47", "text": "{loser}{은/는} 한 걸음 물러나 숨을 고른다.", "slot": "tail", "when": {"event.condition_to": "hurt"}},
+      {"id": "variant_48", "text": "영기가 급히 옅어진다. {loser}의 다음 걸음이 위태롭다.", "slot": "tail", "when": {"event.condition_to": "danger"}},
+      {"id": "variant_49", "text": "{loser}{이/가} 비틀거린다. 버틸 수 있는 여지가 좁아졌다.", "slot": "tail", "when": {"event.condition_to": "danger"}},
+      {"id": "variant_50", "text": "{loser}의 무기가 바닥에 닿는다. 더는 움직이지 않는다.", "slot": "tail", "when": {"event.condition_to": null, "event.result": "resolved"}},
+      {"id": "variant_51", "text": "영핵의 빛이 꺼진 뒤 {loser}의 발소리도 멎었다.", "slot": "tail", "when": {"event.condition_to": null, "event.result": "resolved"}},
+      {"id": "variant_52", "text": "{loser}{이/가} 무릎을 꿇고, 끝내 일어나지 못한다.", "slot": "tail", "when": {"event.condition_to": null, "event.result": "resolved"}},
+      {"id": "variant_53", "text": "한 호흡의 차이로 {winner}의 일격이 닿는다.", "slot": "react", "when": {"event.margin": {"lt": 5}, "event.result": "resolved"}},
+      {"id": "variant_54", "text": "{loser}의 방어가 아주 조금 늦었다.", "slot": "react", "when": {"event.margin": {"lt": 5}, "event.result": "resolved"}},
+      {"id": "variant_55", "text": "팽팽한 공방 끝에 {winner}{이/가} 작은 틈을 연다.", "slot": "react", "when": {"event.margin": {"lt": 5}, "event.result": "resolved"}},
+      {"id": "variant_56", "text": "승부는 좁았다. {winner}의 발끝만 한 치 앞선다.", "slot": "react", "when": {"event.margin": {"lt": 5}, "event.result": "resolved"}},
+      {"id": "variant_57", "text": "일격의 충격이 {loser}의 영기를 깊게 흔든다.", "slot": "react", "when": {"event.drop": 2}},
+      {"id": "variant_58", "text": "{winner}의 공세가 {loser}의 방어를 한꺼번에 무너뜨린다.", "slot": "react", "when": {"event.drop": 2}},
+      {"id": "variant_59", "text": "{loser}{은/는} 충격을 받아 내지 못하고 크게 밀린다.", "slot": "react", "when": {"event.drop": 2}},
+      {"id": "variant_60", "text": "정면의 힘이 {loser}의 방어를 단번에 꺾는다.", "slot": "react", "when": {"event.margin": {"gte": 5}, "event.phase_id": "ph_clash"}},
+      {"id": "variant_61", "text": "승자의 일격에 {loser}의 발이 땅에서 떨어진다.", "slot": "react", "when": {"event.margin": {"gte": 5}, "event.phase_id": "ph_clash"}},
+      {"id": "variant_62", "text": "맞댄 무기가 버티지 못한다. {loser}{이/가} 크게 밀린다.", "slot": "react", "when": {"event.margin": {"gte": 5}, "event.phase_id": "ph_clash"}},
+      {"id": "variant_63", "text": "충돌의 끝에서 승자만 자리를 지킨다.", "slot": "react", "when": {"event.margin": {"gte": 5}, "event.phase_id": "ph_clash"}},
+      {"id": "variant_64", "text": "{loser}의 첫 움직임보다 승자의 일격이 먼저 끝난다.", "slot": "react", "when": {"event.margin": {"gte": 5}, "event.phase_id": "ph_initiative"}},
+      {"id": "variant_65", "text": "눈이 따라가기 전에 승자의 무기가 지나간다.", "slot": "react", "when": {"event.margin": {"gte": 5}, "event.phase_id": "ph_initiative"}},
+      {"id": "variant_66", "text": "{loser}{이/가} 자세를 잡을 사이도 없었다.", "slot": "react", "when": {"event.margin": {"gte": 5}, "event.phase_id": "ph_initiative"}},
+      {"id": "variant_67", "text": "속도의 격차가 한 합 만에 드러났다.", "slot": "react", "when": {"event.margin": {"gte": 5}, "event.phase_id": "ph_initiative"}},
+      {"id": "variant_68", "text": "승자의 술식이 {loser}의 방벽을 통째로 지운다.", "slot": "react", "when": {"event.margin": {"gte": 5}, "event.phase_id": "ph_sorcery"}},
+      {"id": "variant_69", "text": "마력의 격차에 {loser}의 회로가 버티지 못한다.", "slot": "react", "when": {"event.margin": {"gte": 5}, "event.phase_id": "ph_sorcery"}},
+      {"id": "variant_70", "text": "겹친 술식이 갈라진 뒤 승자의 빛만 남는다.", "slot": "react", "when": {"event.margin": {"gte": 5}, "event.phase_id": "ph_sorcery"}},
+      {"id": "variant_71", "text": "{loser}의 신비가 닿기도 전에 흩어진다.", "slot": "react", "when": {"event.margin": {"gte": 5}, "event.phase_id": "ph_sorcery"}},
+      {"id": "variant_72", "text": "정면의 충격이 {loser}{을/를} 몇 걸음 뒤로 밀어낸다.", "slot": "react", "when": {"event.drop": 2, "event.phase_id": "ph_clash"}},
+      {"id": "variant_73", "text": "맞물린 무기가 벌어지고 {loser}의 방어가 크게 열린다.", "slot": "react", "when": {"event.drop": 2, "event.phase_id": "ph_clash"}},
+      {"id": "variant_74", "text": "승자의 힘에 {loser}의 자세가 통째로 꺾인다.", "slot": "react", "when": {"event.drop": 2, "event.phase_id": "ph_clash"}},
+      {"id": "variant_75", "text": "칼날이 부딪친 뒤 {loser}의 발이 바닥을 길게 긁었다.", "slot": "react", "when": {"event.drop": 2, "event.phase_id": "ph_clash"}},
+      {"id": "variant_76", "text": "승자의 궤적만 보인다. {loser}의 반응은 닿지 못했다.", "slot": "react", "when": {"event.drop": 2, "event.phase_id": "ph_initiative"}},
+      {"id": "variant_77", "text": "첫발이 늦었다. {loser}의 방어가 세워지기 전에 일격이 끝난다.", "slot": "react", "when": {"event.drop": 2, "event.phase_id": "ph_initiative"}},
+      {"id": "variant_78", "text": "{loser}{이/가} 돌아보기도 전에 승자의 무기가 지나갔다.", "slot": "react", "when": {"event.drop": 2, "event.phase_id": "ph_initiative"}},
+      {"id": "variant_79", "text": "순간의 격차가 큰 상처로 남는다. {loser}{은/는} 뒤늦게 물러선다.", "slot": "react", "when": {"event.drop": 2, "event.phase_id": "ph_initiative"}},
+      {"id": "variant_80", "text": "영기가 급히 옅어진다. {loser}의 다음 걸음이 위태롭다.", "slot": "tail", "when": {"event.condition_to": "danger", "event.drop": 2}},
+      {"id": "variant_81", "text": "{loser}{이/가} 비틀거린다. 버틸 수 있는 여지가 좁아졌다.", "slot": "tail", "when": {"event.condition_to": "danger", "event.drop": 2}},
+      {"id": "variant_82", "text": "한 번 더 닿으면 끝이다. {loser}의 윤곽이 떨린다.", "slot": "tail", "when": {"event.condition_to": "danger", "event.drop": 2}},
+      {"id": "variant_83", "text": "{loser}의 호흡이 거칠게 끊긴다. 위기가 눈앞에 있다.", "slot": "tail", "when": {"event.condition_to": "danger", "event.drop": 2}}
     ],
     "miracle": [
       {"id": "base_03", "slot": "react", "text": "누구도 예상하지 못한 눈. {winner}의 손에 떨어진 것은, 기적이었다."},
-      {
-        "id": "base_01",
-        "slot": "react",
-        "text": "──그것은 기적. 혹은, 우연이라 불리는 찰나의 환영."
-      },
-      {
-        "id": "base_02",
-        "slot": "react",
-        "text": "있을 수 없는 일격. 운명이, 한순간 {winner}의 편을 들었다."
-      }
+      {"id": "base_01", "slot": "react", "text": "──그것은 기적. 혹은, 우연이라 불리는 찰나의 환영."},
+      {"id": "base_02", "slot": "react", "text": "있을 수 없는 일격. 운명이, 한순간 {winner}의 편을 들었다."},
+      {"id": "variant_03", "text": "결과가 뒤집힌 자리에서 누구도 바로 움직이지 못했다.", "slot": "react"},
+      {"id": "variant_04", "text": "불가능해 보였던 한 수가, 끝내 닿았다.", "slot": "react"}
     ],
     "np_open": [
-      {
-        "id": "gather",
-        "slot": "lead",
-        "text": "마력이 한 점으로 모인다. 대기가 비명을 지르고, 세계의 텍스쳐가 일그러진다."
-      },
-      {
-        "id": "reveal_enemy",
-        "slot": "react",
-        "text": "그 이름이 불린 순간, 모든 것이 드러났다. ──진명, {actor}.",
-        "when": {
-          "beat.actor_side": "enemy",
-          "event.revealed": true
-        },
-        "notes": "보구 개방 = 정체 공개 (D-067). 이 개방으로 처음 드러날 때만 (D-165)"
-      },
-      {
-        "id": "self",
-        "slot": "react",
-        "text": "방출되는 것은 한 자루의 무기가 아니다. 인간이 자아낸, 전설 그 자체.",
-        "when": {
-          "beat.actor_side": "self"
-        }
-      },
-      {
-        "id": "self_lead",
-        "text": "마술회로가 비명을 지른다. 계약의 선을 따라, 마스터의 마력이 한꺼번에 끌려 나간다.",
-        "slot": "lead",
-        "when": {
-          "beat.actor_side": "self"
-        }
-      },
-      {
-        "id": "seal_lead",
-        "text": "손등의 영주가 타오른다. 명령은 하나──전설을, 지금 이 자리에.",
-        "slot": "lead",
-        "when": {
-          "event.seal": true
-        }
-      },
-      {
-        "id": "enemy_lead",
-        "text": "상대 쪽 공기가 먼저 일그러졌다. 대기가 한쪽으로 기울고, 모든 것이 그 한 점으로 빨려 든다.",
-        "slot": "lead",
-        "when": {
-          "beat.actor_side": "enemy"
-        }
-      },
-      {
-        "id": "counter_react",
-        "text": "전설과 전설. 물러설 곳은 이미, 어느 쪽에도 없다.",
-        "slot": "react",
-        "when": {
-          "event.counter": true
-        }
-      }
+      {"id": "gather", "slot": "lead", "text": "마력이 한 점으로 모인다. 대기가 비명을 지르고, 세계의 텍스쳐가 일그러진다."},
+      {"id": "reveal_enemy", "slot": "react", "text": "그 이름이 불린 순간, 모든 것이 드러났다. ──진명, {actor}.", "when": {"beat.actor_side": "enemy", "event.revealed": true}, "notes": "보구 개방 = 정체 공개 (D-067). 이 개방으로 처음 드러날 때만 (D-165)"},
+      {"id": "self", "slot": "react", "text": "방출되는 것은 한 자루의 무기가 아니다. 인간이 자아낸, 전설 그 자체.", "when": {"beat.actor_side": "self"}},
+      {"id": "self_lead", "text": "마술회로가 비명을 지른다. 계약의 선을 따라, 마스터의 마력이 한꺼번에 끌려 나간다.", "slot": "lead", "when": {"beat.actor_side": "self"}},
+      {"id": "seal_lead", "text": "손등의 영주가 타오른다. 명령은 하나──전설을, 지금 이 자리에.", "slot": "lead", "when": {"event.seal": true}},
+      {"id": "enemy_lead", "text": "상대 쪽 공기가 먼저 일그러졌다. 대기가 한쪽으로 기울고, 모든 것이 그 한 점으로 빨려 든다.", "slot": "lead", "when": {"beat.actor_side": "enemy"}},
+      {"id": "counter_react", "text": "전설과 전설. 물러설 곳은 이미, 어느 쪽에도 없다.", "slot": "react", "when": {"event.counter": true}},
+      {"id": "variant_03", "text": "영기 깊은 곳에서 오래 잠든 신비가 깨어난다.", "slot": "lead"},
+      {"id": "variant_04", "text": "모여든 마력이 하나의 형태를 갖추기 시작한다.", "slot": "lead"},
+      {"id": "variant_05", "text": "공기가 정지한다. 보구가 열리기 직전의 침묵이다.", "slot": "lead"},
+      {"id": "variant_06", "text": "전장의 빛이 한곳으로 기울고, 숨소리가 멀어진다.", "slot": "lead"},
+      {"id": "variant_07", "text": "영창 끝에 {actor}의 진명이 전장에 남았다.", "slot": "react", "when": {"beat.actor_side": "enemy", "event.revealed": true}},
+      {"id": "variant_08", "text": "가려졌던 이름이 소리와 함께 모습을 얻는다. {actor}.", "slot": "react", "when": {"beat.actor_side": "enemy", "event.revealed": true}},
+      {"id": "variant_09", "text": "보구가 열리자 {actor}를 가리던 어둠도 걷혔다.", "slot": "react", "when": {"beat.actor_side": "enemy", "event.revealed": true}},
+      {"id": "variant_10", "text": "그 이름을 들은 순간, 적의 정체가 확정됐다. {actor}.", "slot": "react", "when": {"beat.actor_side": "enemy", "event.revealed": true}},
+      {"id": "variant_11", "text": "오래된 신비가 서번트의 손에서 풀려난다.", "slot": "react", "when": {"beat.actor_side": "self"}},
+      {"id": "variant_12", "text": "그 힘은 무기의 형상을 빌린 전설이었다.", "slot": "react", "when": {"beat.actor_side": "self"}},
+      {"id": "variant_13", "text": "영기의 가장 깊은 곳에서 빛이 흘러나온다.", "slot": "react", "when": {"beat.actor_side": "self"}},
+      {"id": "variant_14", "text": "한 시대의 이름이 짧은 영창 끝에 모습을 드러낸다.", "slot": "react", "when": {"beat.actor_side": "self"}},
+      {"id": "variant_15", "text": "마스터의 회로에서 빛이 빠져나가 서번트에게 닿는다.", "slot": "lead", "when": {"beat.actor_side": "self"}},
+      {"id": "variant_16", "text": "계약의 선이 짧게 타오른다. 마력이 한 방향으로 몰린다.", "slot": "lead", "when": {"beat.actor_side": "self"}},
+      {"id": "variant_17", "text": "마스터의 숨이 끊기듯 멎고, 서번트의 영기가 짙어진다.", "slot": "lead", "when": {"beat.actor_side": "self"}},
+      {"id": "variant_18", "text": "둘 사이를 잇는 경로가 밝아진다. 전설을 위한 마력이 흐른다.", "slot": "lead", "when": {"beat.actor_side": "self"}},
+      {"id": "variant_19", "text": "영주의 붉은 빛이 손등을 벗어나 전장으로 번진다.", "slot": "lead", "when": {"event.seal": true}},
+      {"id": "variant_20", "text": "세 획 중 하나가 빛난다. 명령은 이미 닿았다.", "slot": "lead", "when": {"event.seal": true}},
+      {"id": "variant_21", "text": "손등에서 타오른 붉은 선이 계약을 타고 흐른다.", "slot": "lead", "when": {"event.seal": true}},
+      {"id": "variant_22", "text": "마스터의 명령과 함께 봉인된 힘이 열린다.", "slot": "lead", "when": {"event.seal": true}},
+      {"id": "variant_23", "text": "상대 쪽에서 거대한 마력이 일어선다.", "slot": "lead", "when": {"beat.actor_side": "enemy"}},
+      {"id": "variant_24", "text": "낯선 진영의 기척이 한순간 전장을 압도한다.", "slot": "lead", "when": {"beat.actor_side": "enemy"}},
+      {"id": "variant_25", "text": "적의 발밑에서 빛이 번져 나온다.", "slot": "lead", "when": {"beat.actor_side": "enemy"}},
+      {"id": "variant_26", "text": "맞은편 공기가 가라앉는다. 보구를 여는 징조다.", "slot": "lead", "when": {"beat.actor_side": "enemy"}},
+      {"id": "variant_27", "text": "두 보구의 빛이 서로의 끝을 향한다.", "slot": "react", "when": {"event.counter": true}},
+      {"id": "variant_28", "text": "전설이 전설을 가로막는다. 어느 쪽도 꺾이지 않았다.", "slot": "react", "when": {"event.counter": true}},
+      {"id": "variant_29", "text": "신비 둘이 같은 하늘을 갈라놓는다.", "slot": "react", "when": {"event.counter": true}},
+      {"id": "variant_30", "text": "상쇄되지 않은 빛이 정면에서 맞물린다.", "slot": "react", "when": {"event.counter": true}}
     ],
     "battle_end": [
       {"id": "win_2", "slot": "tail", "when": {"event.result": "win"}, "text": "싸움의 열기가 빠져나간다. 남은 것은 거친 숨소리와, 차가운 밤바람."},
       {"id": "draw_2", "slot": "tail", "when": {"event.result": "draw"}, "text": "어느 쪽도 쓰러지지 않았다. 결판은, 다음 밤으로 미뤄진다."},
       {"id": "enemy_dead_02", "slot": "tail", "when": {"event.result": "win", "event.dead_side": "enemy"}, "text": "{loser}의 몸이 금빛 입자로 풀려 간다. 한 영령의 전설이, 이 전쟁에서 막을 내렸다."},
       {"id": "escape_self_2", "slot": "tail", "when": {"event.result": "escape", "event.escaped_side": "self"}, "text": "등 뒤로 추격의 기척이 멀어진다. 살아남았다. 그러나 싸움은, 아직 끝나지 않았다."},
-      {
-        "id": "win",
-        "slot": "tail",
-        "text": "그리고──밤은 다시 고요해졌다.",
-        "when": {
-          "event.result": "win"
-        }
-      },
-      {
-        "id": "draw",
-        "slot": "tail",
-        "text": "승부는 나지 않았다. 두 그림자는 서로를 노려본 채, 어둠 속으로 물러난다.",
-        "when": {
-          "event.result": "draw"
-        }
-      },
-      {
-        "id": "escape",
-        "slot": "tail",
-        "text": "영주의 빛이 사라진 자리에, 붉은 잔광만이 남았다.",
-        "when": {
-          "event.result": "escape"
-        }
-      },
-      {
-        "id": "self_dead_01",
-        "text": "빛의 입자가 흩어진다. 계약의 선이, 소리도 없이 끊어졌다.",
-        "slot": "tail",
-        "when": {
-          "event.result": "win",
-          "event.dead_side": "self"
-        }
-      },
-      {
-        "id": "self_dead_02",
-        "text": "──마지막까지 서 있으려 했다. 그러나 영핵은, 더는 형태를 유지하지 못했다.",
-        "slot": "tail",
-        "when": {
-          "event.result": "win",
-          "event.dead_side": "self"
-        }
-      },
-      {
-        "id": "enemy_dead_01",
-        "text": "{loser}의 영기가 무너져 내린다. 남은 것은 흩어지는 빛과, 식어 가는 밤공기.",
-        "slot": "tail",
-        "when": {
-          "event.result": "win",
-          "event.dead_side": "enemy"
-        }
-      },
-      {
-        "id": "enemy_dead_final",
-        "text": "쓰러진 자는 일어나지 않는다. 남은 자만이, 다음 상대를 기다린다.",
-        "slot": "tail",
-        "when": {
-          "event.result": "win",
-          "event.dead_side": "enemy",
-          "battle.is_final": true
-        }
-      },
-      {
-        "id": "escape_failed",
-        "text": "등을 보인 순간, 추격이 닿았다. ──도망칠 곳은, 처음부터 없었다.",
-        "slot": "tail",
-        "when": {
-          "event.result": "escape_failed"
-        }
-      },
-      {
-        "id": "escape_self",
-        "text": "붉은 잔광만을 남기고 물러난다. 살아남았다──지금은, 그것으로 족하다.",
-        "slot": "tail",
-        "when": {
-          "event.result": "escape",
-          "event.escaped_side": "self"
-        }
-      },
-      {
-        "id": "escape_enemy",
-        "text": "영주의 빛이 번뜩이고, {enemy}의 모습이 밤 속으로 녹아 사라졌다.",
-        "slot": "tail",
-        "when": {
-          "event.result": "escape",
-          "event.escaped_side": "enemy"
-        }
-      }
+      {"id": "win", "slot": "tail", "text": "그리고──밤은 다시 고요해졌다.", "when": {"event.result": "win"}},
+      {"id": "draw", "slot": "tail", "text": "승부는 나지 않았다. 두 그림자는 서로를 노려본 채, 어둠 속으로 물러난다.", "when": {"event.result": "draw"}},
+      {"id": "escape", "slot": "tail", "text": "영주의 빛이 사라진 자리에, 붉은 잔광만이 남았다.", "when": {"event.result": "escape"}},
+      {"id": "self_dead_01", "text": "빛의 입자가 흩어진다. 계약의 선이, 소리도 없이 끊어졌다.", "slot": "tail", "when": {"event.result": "win", "event.dead_side": "self"}},
+      {"id": "self_dead_02", "text": "──마지막까지 서 있으려 했다. 그러나 영핵은, 더는 형태를 유지하지 못했다.", "slot": "tail", "when": {"event.result": "win", "event.dead_side": "self"}},
+      {"id": "enemy_dead_01", "text": "{loser}의 영기가 무너져 내린다. 남은 것은 흩어지는 빛과, 식어 가는 밤공기.", "slot": "tail", "when": {"event.result": "win", "event.dead_side": "enemy"}},
+      {"id": "enemy_dead_final", "text": "쓰러진 자는 일어나지 않는다. 남은 자만이, 다음 상대를 기다린다.", "slot": "tail", "when": {"event.result": "win", "event.dead_side": "enemy", "battle.is_final": true}},
+      {"id": "escape_failed", "text": "등을 보인 순간, 추격이 닿았다. ──도망칠 곳은, 처음부터 없었다.", "slot": "tail", "when": {"event.result": "escape_failed"}},
+      {"id": "escape_self", "text": "붉은 잔광만을 남기고 물러난다. 살아남았다──지금은, 그것으로 족하다.", "slot": "tail", "when": {"event.result": "escape", "event.escaped_side": "self"}},
+      {"id": "escape_enemy", "text": "영주의 빛이 번뜩이고, {enemy}의 모습이 밤 속으로 녹아 사라졌다.", "slot": "tail", "when": {"event.result": "escape", "event.escaped_side": "enemy"}},
+      {"id": "variant_03", "text": "무기 소리가 멎고, 승패만 전장에 남았다.", "slot": "tail", "when": {"event.result": "win"}},
+      {"id": "variant_04", "text": "밤바람이 흩어진 마력을 천천히 쓸어 간다.", "slot": "tail", "when": {"event.result": "win"}},
+      {"id": "variant_05", "text": "끝난 싸움의 자리에는 움직이지 않는 그림자만 있다.", "slot": "tail", "when": {"event.result": "win"}},
+      {"id": "variant_06", "text": "무기를 거둔 두 기척이 서로 다른 어둠으로 멀어진다.", "slot": "tail", "when": {"event.result": "draw"}},
+      {"id": "variant_07", "text": "승자의 이름은 남지 않았다. 발자국 둘만 흩어졌다.", "slot": "tail", "when": {"event.result": "draw"}},
+      {"id": "variant_08", "text": "끝을 내지 못한 무기가 같은 순간 내려간다.", "slot": "tail", "when": {"event.result": "draw"}},
+      {"id": "variant_09", "text": "{loser}의 영기가 먼지 같은 빛으로 흩어진다.", "slot": "tail", "when": {"event.dead_side": "enemy", "event.result": "win"}},
+      {"id": "variant_10", "text": "패배한 영령의 윤곽이 마지막으로 흔들리다 지워진다.", "slot": "tail", "when": {"event.dead_side": "enemy", "event.result": "win"}},
+      {"id": "variant_11", "text": "계약의 흔적이 끊기고 {loser}의 기척도 사라졌다.", "slot": "tail", "when": {"event.dead_side": "enemy", "event.result": "win"}},
+      {"id": "variant_12", "text": "추격이 닿기 전에 길을 빠져나왔다.", "slot": "tail", "when": {"event.escaped_side": "self", "event.result": "escape"}},
+      {"id": "variant_13", "text": "뒤를 돌아보지 않고 어둠 속으로 물러난다.", "slot": "tail", "when": {"event.escaped_side": "self", "event.result": "escape"}},
+      {"id": "variant_14", "text": "적의 기척이 멀어진 뒤에야 걸음을 늦춘다.", "slot": "tail", "when": {"event.escaped_side": "self", "event.result": "escape"}},
+      {"id": "variant_15", "text": "붉은 섬광이 사라진 뒤, 서로의 기척도 멀어진다.", "slot": "tail", "when": {"event.result": "escape"}},
+      {"id": "variant_16", "text": "이탈의 흔적만 전장에 남았다.", "slot": "tail", "when": {"event.result": "escape"}},
+      {"id": "variant_17", "text": "추격 대신 침묵이 길을 채운다.", "slot": "tail", "when": {"event.result": "escape"}},
+      {"id": "variant_18", "text": "끝내 붙잡지 못한 그림자가 밤으로 물러난다.", "slot": "tail", "when": {"event.result": "escape"}},
+      {"id": "variant_19", "text": "계약의 선이 희미해진다. 마스터의 손끝에는 온기만 남았다.", "slot": "tail", "when": {"event.dead_side": "self", "event.result": "win"}},
+      {"id": "variant_20", "text": "서번트의 윤곽이 밤 속에서 풀린다. 붙잡을 형체가 없다.", "slot": "tail", "when": {"event.dead_side": "self", "event.result": "win"}},
+      {"id": "variant_21", "text": "마력이 흩어지고, 방금까지 서 있던 자리가 비었다.", "slot": "tail", "when": {"event.dead_side": "self", "event.result": "win"}},
+      {"id": "variant_22", "text": "마지막 격돌의 자리에 패자의 기척은 남지 않았다.", "slot": "tail", "when": {"battle.is_final": true, "event.dead_side": "enemy", "event.result": "win"}},
+      {"id": "variant_23", "text": "끝까지 버틴 전설 하나가 이곳에서 멈춘다.", "slot": "tail", "when": {"battle.is_final": true, "event.dead_side": "enemy", "event.result": "win"}},
+      {"id": "variant_24", "text": "성배 앞의 빈자리가 하나 더 늘었다.", "slot": "tail", "when": {"battle.is_final": true, "event.dead_side": "enemy", "event.result": "win"}},
+      {"id": "variant_25", "text": "패자 사라진 뒤에도 전장의 열기는 남았다.", "slot": "tail", "when": {"battle.is_final": true, "event.dead_side": "enemy", "event.result": "win"}},
+      {"id": "variant_26", "text": "물러서는 발끝에 적의 기척이 따라붙는다.", "slot": "tail", "when": {"event.result": "escape_failed"}},
+      {"id": "variant_27", "text": "도주를 위한 틈이 닫혔다. 전장은 다시 좁아진다.", "slot": "tail", "when": {"event.result": "escape_failed"}},
+      {"id": "variant_28", "text": "달아나려던 길목을 적이 먼저 막아선다.", "slot": "tail", "when": {"event.result": "escape_failed"}},
+      {"id": "variant_29", "text": "후퇴의 신호가 닿기도 전에 거리가 사라졌다.", "slot": "tail", "when": {"event.result": "escape_failed"}},
+      {"id": "variant_30", "text": "{enemy}의 기척이 순식간에 멀어진다.", "slot": "tail", "when": {"event.escaped_side": "enemy", "event.result": "escape"}},
+      {"id": "variant_31", "text": "붉은 빛이 사라지자 맞은편에는 빈자리만 남았다.", "slot": "tail", "when": {"event.escaped_side": "enemy", "event.result": "escape"}},
+      {"id": "variant_32", "text": "추격할 사이도 없이 {enemy}{이/가} 어둠 속으로 물러났다.", "slot": "tail", "when": {"event.escaped_side": "enemy", "event.result": "escape"}},
+      {"id": "variant_33", "text": "{enemy}의 발소리가 전장의 끝에서 끊겼다.", "slot": "tail", "when": {"event.escaped_side": "enemy", "event.result": "escape"}}
     ],
     "post_choice": [
-      {
-        "id": "execute",
-        "slot": "tail",
-        "text": "마지막 숨이 끊어진다. 영령은 빛의 입자가 되어, 밤하늘로 흩어졌다.",
-        "when": {
-          "event.choice": "execute"
-        }
-      },
-      {
-        "id": "release",
-        "slot": "tail",
-        "text": "패배한 마스터는 말없이 고개를 숙이고, 어둠 속으로 사라졌다.",
-        "when": {
-          "event.choice": "release"
-        }
-      }
+      {"id": "execute", "slot": "tail", "text": "패배한 마스터가 마지막으로 눈을 감는다. 짧은 소리 뒤, 그 자리에는 숨소리마저 남지 않았다.", "when": {"event.choice": "execute"}},
+      {"id": "release", "slot": "tail", "text": "패배한 마스터는 말없이 고개를 숙이고, 어둠 속으로 사라졌다.", "when": {"event.choice": "release"}},
+      {"id": "variant_03", "text": "마스터의 영주가 빛을 잃는다. 전장에 남은 침묵이 죽음을 알렸다.", "slot": "tail", "when": {"event.choice": "execute"}},
+      {"id": "variant_04", "text": "무기가 내려간다. 쓰러진 마스터의 손에서 영주가 힘없이 가라앉았다.", "slot": "tail", "when": {"event.choice": "execute"}},
+      {"id": "variant_05", "text": "패배한 마스터의 말이 끝나지 못한다. 밤은 곧 다시 고요해졌다.", "slot": "tail", "when": {"event.choice": "execute"}},
+      {"id": "variant_06", "text": "그 자리에서 마스터의 발소리가 멎었다. 돌이킬 수 없는 선택이었다.", "slot": "tail", "when": {"event.choice": "execute"}},
+      {"id": "variant_07", "text": "살아남은 마스터가 비틀거리며 전장을 떠난다.", "slot": "tail", "when": {"event.choice": "release"}},
+      {"id": "variant_08", "text": "무기가 거두어지자 패배한 마스터가 천천히 등을 돌린다.", "slot": "tail", "when": {"event.choice": "release"}},
+      {"id": "variant_09", "text": "패배한 마스터의 발소리가 멀어진다. 뒤쫓는 이는 없었다.", "slot": "tail", "when": {"event.choice": "release"}},
+      {"id": "variant_10", "text": "한동안 움직이지 않던 마스터가 몸을 일으켜 어둠으로 걸어간다.", "slot": "tail", "when": {"event.choice": "release"}}
     ],
     "mana_supply": [
-      {
-        "id": "lead_01",
-        "text": "마력 공급. 계약의 선을 따라, 체온보다 조금 뜨거운 것이 {servant}에게로 흘러든다.",
-        "slot": "lead"
-      },
-      {
-        "id": "lead_02",
-        "text": "숨을 고른다. 마술회로가 하나씩 열리고, 둘 사이의 경로가 조용히 이어진다.",
-        "slot": "lead"
-      },
-      {
-        "id": "great_01",
-        "text": "흘러든 마력이 영기의 구석구석까지 스며든다. ──충만. 그 말 외에는 어울리는 것이 없다.",
-        "slot": "react",
-        "when": {
-          "event.result": "great"
-        }
-      },
-      {
-        "id": "great_02",
-        "text": "{servant}의 윤곽이 한순간 선명해진다. 계약의 선이, 전보다 굵게 이어졌다.",
-        "slot": "react",
-        "when": {
-          "event.result": "great"
-        }
-      },
-      {
-        "id": "success_01",
-        "text": "마력은 막힘없이 흘렀다. 부족함은 없다.",
-        "slot": "react",
-        "when": {
-          "event.result": "success"
-        }
-      },
-      {
-        "id": "success_02",
-        "text": "회로의 열이 천천히 가라앉는다. 충분한 양이었다.",
-        "slot": "react",
-        "when": {
-          "event.result": "success"
-        }
-      },
-      {
-        "id": "normal_01",
-        "text": "흐름은 가늘었지만, 끊기지는 않았다.",
-        "slot": "react",
-        "when": {
-          "event.result": "normal"
-        }
-      },
-      {
-        "id": "normal_02",
-        "text": "필요한 만큼. 그 이상도, 그 이하도 아니다.",
-        "slot": "react",
-        "when": {
-          "event.result": "normal"
-        }
-      },
-      {
-        "id": "fail_01",
-        "text": "회로가 삐걱거린다. 흘러간 것은 기대에 한참 못 미치는 양.",
-        "slot": "react",
-        "when": {
-          "event.result": "fail"
-        }
-      },
-      {
-        "id": "fail_02",
-        "text": "호흡이 맞지 않았다. 어색한 침묵만이 둘 사이에 남는다.",
-        "slot": "react",
-        "when": {
-          "event.result": "fail"
-        }
-      },
-      {
-        "id": "fumble_01",
-        "text": "마력이 역류한다. 타는 듯한 통증이 팔을 타고 오르고──연결은 거칠게 끊겼다.",
-        "slot": "react",
-        "when": {
-          "event.result": "fumble"
-        }
-      },
-      {
-        "id": "fumble_02",
-        "text": "이 일은 없었던 걸로 하자는 무언의 합의가 이루어졌다.",
-        "slot": "react",
-        "when": {
-          "event.result": "fumble"
-        },
-        "source": "legacy",
-        "notes": "legacy/data/text/manaSupplyText.ts cool.criticalFail"
-      }
+      {"id": "lead_01", "text": "마력 공급. 계약의 선을 따라, 체온보다 조금 뜨거운 것이 {servant}에게로 흘러든다.", "slot": "lead"},
+      {"id": "lead_02", "text": "숨을 고른다. 마술회로가 하나씩 열리고, 둘 사이의 경로가 조용히 이어진다.", "slot": "lead"},
+      {"id": "great_01", "text": "흘러든 마력이 영기의 구석구석까지 스며든다. ──충만. 그 말 외에는 어울리는 것이 없다.", "slot": "react", "when": {"event.result": "great"}},
+      {"id": "great_02", "text": "{servant}의 윤곽이 한순간 선명해진다. 계약의 선이, 전보다 굵게 이어졌다.", "slot": "react", "when": {"event.result": "great"}},
+      {"id": "success_01", "text": "마력은 막힘없이 흘렀다. 부족함은 없다.", "slot": "react", "when": {"event.result": "success"}},
+      {"id": "success_02", "text": "회로의 열이 천천히 가라앉는다. 충분한 양이었다.", "slot": "react", "when": {"event.result": "success"}},
+      {"id": "normal_01", "text": "흐름은 가늘었지만, 끊기지는 않았다.", "slot": "react", "when": {"event.result": "normal"}},
+      {"id": "normal_02", "text": "필요한 만큼. 그 이상도, 그 이하도 아니다.", "slot": "react", "when": {"event.result": "normal"}},
+      {"id": "fail_01", "text": "회로가 삐걱거린다. 흘러간 것은 기대에 한참 못 미치는 양.", "slot": "react", "when": {"event.result": "fail"}},
+      {"id": "fail_02", "text": "호흡이 맞지 않았다. 어색한 침묵만이 둘 사이에 남는다.", "slot": "react", "when": {"event.result": "fail"}},
+      {"id": "fumble_01", "text": "마력이 역류한다. 타는 듯한 통증이 팔을 타고 오르고──연결은 거칠게 끊겼다.", "slot": "react", "when": {"event.result": "fumble"}},
+      {"id": "fumble_02", "text": "이 일은 없었던 걸로 하자는 무언의 합의가 이루어졌다.", "slot": "react", "when": {"event.result": "fumble"}, "source": "legacy", "notes": "legacy/data/text/manaSupplyText.ts cool.criticalFail"},
+      {"id": "variant_03", "text": "두 사람 사이의 계약이 희미하게 빛난다. 마력이 움직이기 시작한다.", "slot": "lead"},
+      {"id": "variant_04", "text": "마스터가 숨을 고르고, {servant}에게 이어진 선을 연다.", "slot": "lead"},
+      {"id": "variant_05", "text": "마술회로에 열이 돈다. 공급의 흐름이 형체를 갖춘다.", "slot": "lead"},
+      {"id": "variant_06", "text": "{servant}의 영기가 가득 차오른다.", "slot": "react", "when": {"event.result": "great"}},
+      {"id": "variant_07", "text": "마력의 흐름이 끝까지 고르게 닿았다.", "slot": "react", "when": {"event.result": "great"}},
+      {"id": "variant_08", "text": "계약의 선이 선명한 빛을 머금는다.", "slot": "react", "when": {"event.result": "great"}},
+      {"id": "variant_09", "text": "마력은 필요한 곳까지 무리 없이 닿았다.", "slot": "react", "when": {"event.result": "success"}},
+      {"id": "variant_10", "text": "회로가 고르게 가라앉는다. 공급은 충분하다.", "slot": "react", "when": {"event.result": "success"}},
+      {"id": "variant_11", "text": "{servant}{이/가} 짧게 숨을 고른다. 흐름은 안정적이다.", "slot": "react", "when": {"event.result": "success"}},
+      {"id": "variant_12", "text": "마력은 소리 없이 건너갔다. 큰 변화는 없다.", "slot": "react", "when": {"event.result": "normal"}},
+      {"id": "variant_13", "text": "얇은 빛이 계약을 따라 흐르고 사라진다.", "slot": "react", "when": {"event.result": "normal"}},
+      {"id": "variant_14", "text": "{servant}{이/가} 평소와 같은 자세로 일어선다.", "slot": "react", "when": {"event.result": "normal"}},
+      {"id": "variant_15", "text": "마력이 중간에서 흩어졌다. 서번트의 윤곽은 그대로다.", "slot": "react", "when": {"event.result": "fail"}},
+      {"id": "variant_16", "text": "계약의 빛이 몇 번 끊겼다가 이어진다.", "slot": "react", "when": {"event.result": "fail"}},
+      {"id": "variant_17", "text": "{servant}{이/가} 미처 채워지지 않은 회로를 내려다본다.", "slot": "react", "when": {"event.result": "fail"}},
+      {"id": "variant_18", "text": "회로의 빛이 거꾸로 튄다. 두 사람이 동시에 물러선다.", "slot": "react", "when": {"event.result": "fumble"}},
+      {"id": "variant_19", "text": "마력의 경로가 갑자기 끊기며 날카로운 소리가 난다.", "slot": "react", "when": {"event.result": "fumble"}},
+      {"id": "variant_20", "text": "서번트에게 닿기 전에 공급의 빛이 꺼졌다.", "slot": "react", "when": {"event.result": "fumble"}},
+      {"id": "legacy_cool_great_03", "text": "{servant}의 눈빛이 전과는 확연히 달라졌다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "cool"}, "source": "legacy"},
+      {"id": "legacy_cool_great_04", "text": "{servant}{이/가} '충분하다'라는 한마디를 남기고 미소를 보였다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "cool"}, "source": "legacy"},
+      {"id": "legacy_cool_success_03", "text": "{servant}{이/가} '충분하다'라는 한마디를 남기고 방을 나갔다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "cool"}, "source": "legacy"},
+      {"id": "legacy_cool_success_04", "text": "{servant}{은/는} 만족스러운 듯 마력의 흐름을 확인했다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "cool"}, "source": "legacy"},
+      {"id": "legacy_cool_normal_03", "text": "무난한 마력 공급이었다. {servant}{이/가} 별 말 없이 자리를 떴다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "cool"}, "source": "legacy"},
+      {"id": "legacy_cool_fail_03", "text": "{servant}{은/는} 마스터를 보고 입술을 굳게 다문다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "cool"}, "source": "legacy"},
+      {"id": "legacy_cool_fumble_03", "text": "이 일은 없었던 걸로 하자는 무언의 합의가 이루어졌다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "cool"}, "source": "legacy"},
+      {"id": "legacy_tsundere_great_03", "text": "{servant}{이/가} 고개를 돌렸지만, 귀가 빨개진 건 숨기지 못했다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "tsundere"}, "source": "legacy"},
+      {"id": "legacy_tsundere_success_03", "text": "{servant}{이/가} '뭐, 그럭저럭이네'라고 했지만 표정은 나쁘지 않다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "tsundere"}, "source": "legacy"},
+      {"id": "legacy_tsundere_normal_03", "text": "{servant}{이/가} 한숨을 쉬었다. 그래도 마력은 받아들인 모양이다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "tsundere"}, "source": "legacy"},
+      {"id": "legacy_tsundere_fail_03", "text": "{servant}{이/가} 마스터를 흘겨보았다. '……다음엔 좀 더 신경 써.'", "slot": "react", "when": {"event.result": "fail", "self.temperament": "tsundere"}, "source": "legacy"},
+      {"id": "legacy_tsundere_fumble_03", "text": "{servant}{이/가} 베개를 던졌다. 정확히 얼굴에 맞았다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "tsundere"}, "source": "legacy"},
+      {"id": "legacy_cheerful_great_03", "text": "{servant}{이/가} 엄지를 치켜세웠다! 최고의 마력 공급이다!", "slot": "react", "when": {"event.result": "great", "self.temperament": "cheerful"}, "source": "legacy"},
+      {"id": "legacy_cheerful_success_03", "text": "{servant}{이/가} 엄지를 치켜세웠다. 단순하지만 기분 좋은 반응이다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "cheerful"}, "source": "legacy"},
+      {"id": "legacy_cheerful_normal_03", "text": "{servant}{이/가} 고개를 끄덕였다. '괜찮아, 다음엔 더 잘 될 거야!'", "slot": "react", "when": {"event.result": "normal", "self.temperament": "cheerful"}, "source": "legacy"},
+      {"id": "legacy_cheerful_fail_03", "text": "{servant}{은/는} 아쉬운 표정으로 마스터에게 격려의 말을 건넸다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "cheerful"}, "source": "legacy"},
+      {"id": "legacy_cheerful_fumble_03", "text": "{servant}{이/가} 웃으며 '……다음엔 더 잘하자'라고 말했다. 위로인 건지 협박인 건지...", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "cheerful"}, "source": "legacy"},
+      {"id": "legacy_royal_great_03", "text": "{servant}{이/가} 처음으로 마스터를 '신하' 대신 '벗'이라 불렀다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "royal"}, "source": "legacy"},
+      {"id": "legacy_royal_success_03", "text": "{servant}{이/가} '합격이다'라고 선언했다. 왕의 허가를 받은 셈이다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "royal"}, "source": "legacy"},
+      {"id": "legacy_royal_normal_03", "text": "{servant}{이/가} 하품을 했다. 좋은 신호는 아닌 것 같다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "royal"}, "source": "legacy"},
+      {"id": "legacy_royal_fail_03", "text": "{servant}{은/는} 실망을 감추지 않고 턱을 치켜든다. 왕의 시선이 한층 차가워졌다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "royal"}},
+      {"id": "legacy_royal_fumble_03", "text": "{servant}{이/가} 보구를 마스터에게 겨누려다 멈췄다. 자비인 것 같다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "royal"}, "source": "legacy"},
+      {"id": "legacy_berserker_great_03", "text": "{servant}의 포효가 멈췄다. 거친 숨이 잦아들었다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "berserker"}, "source": "legacy"},
+      {"id": "legacy_berserker_success_03", "text": "{servant}{이/가} 조용해졌다. 거친 숨이 잦아들었다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "berserker"}, "source": "legacy"},
+      {"id": "legacy_berserker_normal_03", "text": "{servant}{이/가} 으르렁거렸다. 평소와 다를 바 없다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "berserker"}, "source": "legacy"},
+      {"id": "legacy_berserker_fail_03", "text": "{servant}{이/가} 불쾌한 듯 낮게 으르렁거린다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "berserker"}, "source": "legacy"},
+      {"id": "legacy_berserker_fumble_03", "text": "{servant}{이/가} 벽을 부쉈다. 마력 공급이 문제가 아니다. 생존이 문제다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "berserker"}, "source": "legacy"},
+      {"id": "legacy_saint_great_03", "text": "{servant}{이/가} 마스터의 손을 부드럽게 잡았다. 신성한 마력이 서로를 감쌌다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "saint"}, "source": "legacy"},
+      {"id": "legacy_saint_success_03", "text": "{servant}{이/가} 감사의 기도를 올렸다. 마력이 따뜻하게 흘러들었다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "saint"}, "source": "legacy"},
+      {"id": "legacy_saint_normal_03", "text": "{servant}{이/가} 미소지었다. '감사합니다, 마스터.'", "slot": "react", "when": {"event.result": "normal", "self.temperament": "saint"}, "source": "legacy"},
+      {"id": "legacy_saint_fail_03", "text": "{servant}{이/가} 조용히 한숨을 쉬었지만, 마스터를 탓하지는 않았다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "saint"}, "source": "legacy"},
+      {"id": "legacy_saint_fumble_03", "text": "{servant}{이/가} 마스터를 위해 기도하고 있다. ...구원이 필요한 건 마스터인 모양이다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "saint"}, "source": "legacy"},
+      {"id": "legacy_avenger_great_03", "text": "{servant}의 눈빛에서 증오가 잠시 옅어진다. 마스터를 향한 시선도 누그러졌다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "avenger"}, "source": "legacy"},
+      {"id": "legacy_avenger_success_03", "text": "{servant}{이/가} 고개를 끄덕였다. 날 서 있던 눈빛이 잠시 누그러진다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "avenger"}, "source": "legacy"},
+      {"id": "legacy_avenger_normal_03", "text": "{servant}{이/가} 무표정으로 마력을 받아들였다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "avenger"}, "source": "legacy"},
+      {"id": "legacy_avenger_fail_03", "text": "{servant}의 눈빛이 차가워졌다. '……쓸모없군.'", "slot": "react", "when": {"event.result": "fail", "self.temperament": "avenger"}, "source": "legacy"},
+      {"id": "legacy_avenger_fumble_03", "text": "{servant}{이/가} 마스터에게서 등을 돌렸다. 대답은 돌아오지 않았다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "avenger"}, "source": "legacy"},
+      {"id": "legacy_assassin_great_03", "text": "{servant}의 기척이 순간 사라졌다가 돌아왔다. 마력이 완전히 충전되었다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "assassin"}, "source": "legacy"},
+      {"id": "legacy_assassin_great_04", "text": "{servant}{이/가} 그림자 속에서 조용히 고개를 끄덕였다. 최상의 상태다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "assassin"}, "source": "legacy"},
+      {"id": "legacy_assassin_success_03", "text": "{servant}{은/는} 아무 말 없이 마력을 받아들였다. 나쁘지 않은 결과다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "assassin"}, "source": "legacy"},
+      {"id": "legacy_assassin_success_04", "text": "{servant}{이/가} 소리 없이 자리를 떴다. 발걸음은 가벼웠다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "assassin"}, "source": "legacy"},
+      {"id": "legacy_assassin_normal_03", "text": "{servant}{이/가} 기척도 없이 사라졌다. 공급은 충분했다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "assassin"}, "source": "legacy"},
+      {"id": "legacy_assassin_fail_03", "text": "{servant}의 시선이 차갑게 마스터를 스쳤다. '다음엔 더 잘해.'", "slot": "react", "when": {"event.result": "fail", "self.temperament": "assassin"}, "source": "legacy"},
+      {"id": "legacy_assassin_fumble_03", "text": "{servant}{이/가} 칼날을 스치듯 꺼내들었다가 다시 집어넣었다. 경고다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "assassin"}, "source": "legacy"},
+      {"id": "cool_great_03", "text": "{servant}{은/는} 손끝에 닿은 빛을 한 번 보고, 더 확인할 것도 없다는 듯 눈을 감는다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "cool"}},
+      {"id": "cool_great_04", "text": "한 치의 흔들림도 없는 영기가 {servant}의 어깨 위에 내려앉는다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "cool"}},
+      {"id": "cool_great_05", "text": "흐름이 끝나자 {servant}의 짧은 고개짓이 돌아온다. 흠잡을 곳 없는 공급이었다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "cool"}},
+      {"id": "cool_success_03", "text": "{servant}{은/는} 회로의 열을 살피고 조용히 손을 거둔다. 필요한 양은 닿았다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "cool"}},
+      {"id": "cool_success_04", "text": "가라앉은 숨 끝에서 {servant}의 간결한 수긍이 들린다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "cool"}},
+      {"id": "cool_success_05", "text": "{servant}{이/가} 한 번 눈을 깜박인다. 고르게 채워진 마력이 그대로 자리를 잡는다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "cool"}},
+      {"id": "cool_normal_03", "text": "{servant}{은/는} 흐름이 멎은 뒤에도 자세를 바꾸지 않는다. 공급은 무난했다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "cool"}},
+      {"id": "cool_normal_04", "text": "가느다란 계약의 빛을 보고 {servant}{이/가} 말없이 소매를 내린다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "cool"}},
+      {"id": "cool_normal_05", "text": "{servant}의 눈이 남은 회로를 훑는다. 더 요구하는 기색은 없다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "cool"}},
+      {"id": "cool_normal_06", "text": "필요한 만큼만 채워지자 {servant}{은/는} 평소의 무표정으로 돌아간다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "cool"}},
+      {"id": "cool_fail_03", "text": "{servant}{은/는} 채워지지 않은 자리를 잠시 바라보다 손을 거둔다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "cool"}},
+      {"id": "cool_fail_04", "text": "기대보다 일찍 꺼진 빛에 {servant}의 대답이 한 박자 늦는다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "cool"}},
+      {"id": "cool_fail_05", "text": "{servant}{이/가} 입술을 다문 채 끊긴 흐름을 다시 짚어 본다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "cool"}},
+      {"id": "cool_fail_06", "text": "낮게 가라앉은 한숨 뒤로 {servant}의 영기는 여전히 흐릿하다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "cool"}},
+      {"id": "cool_fumble_03", "text": "{servant}{은/는} 역류한 빛이 사라질 때까지 꼼짝하지 않는다. 표정만 딱딱해졌다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "cool"}},
+      {"id": "cool_fumble_04", "text": "갑자기 튄 회로의 불꽃 앞에서 {servant}{이/가} 마스터의 손목을 놓는다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "cool"}},
+      {"id": "cool_fumble_05", "text": "{servant}의 짧은 경고가 떨어지고, 계약의 선이 거칠게 닫힌다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "cool"}},
+      {"id": "cool_fumble_06", "text": "끊어진 경로를 본 {servant}{은/는} 잠시 침묵한 뒤 한 걸음 물러선다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "cool"}},
+      {"id": "tsundere_great_03", "text": "{servant}{은/는} 시선을 돌리면서도 흘러드는 마력에는 손을 더 가까이 댄다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "tsundere"}},
+      {"id": "tsundere_great_04", "text": "귀 끝까지 오른 붉은 기색을 숨기려는 듯 {servant}{이/가} 옷깃을 여민다. 영기는 눈부시게 선명하다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "tsundere"}},
+      {"id": "tsundere_great_05", "text": "완벽하게 채워진 회로 앞에서 {servant}{은/는} 괜히 팔짱을 고쳐 낀다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "tsundere"}},
+      {"id": "tsundere_great_06", "text": "{servant}{이/가} 마스터를 보지 않은 채 손을 내민다. 거절할 이유가 없는 공급이었다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "tsundere"}},
+      {"id": "tsundere_success_03", "text": "{servant}{은/는} 퉁명스레 고개를 돌리지만 손끝은 계약의 빛을 놓지 않는다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "tsundere"}},
+      {"id": "tsundere_success_04", "text": "괜찮다는 말 대신 {servant}{이/가} 흐트러진 마스터의 소매를 잡아 준다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "tsundere"}},
+      {"id": "tsundere_success_05", "text": "{servant}의 눈썹이 잠깐 들린다. 받아들인 마력은 고르게 자리 잡았다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "tsundere"}},
+      {"id": "tsundere_success_06", "text": "마지막 빛까지 확인하고도 {servant}{은/는} 만족한 표정을 서둘러 감춘다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "tsundere"}},
+      {"id": "tsundere_normal_03", "text": "{servant}{은/는} 마른 헛기침을 한 뒤 필요한 만큼의 마력만 받아들인다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "tsundere"}},
+      {"id": "tsundere_normal_04", "text": "흐름이 무난하게 끝나자 {servant}{이/가} 아무렇지 않은 척 손을 뗀다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "tsundere"}},
+      {"id": "tsundere_normal_05", "text": "{servant}의 입술이 무언가 말하려다 닫힌다. 공급에는 별 탈이 없다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "tsundere"}},
+      {"id": "tsundere_normal_06", "text": "가늘지만 끊기지 않은 빛을 따라 {servant}{은/는} 마스터 쪽으로 한 발 붙어 선다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "tsundere"}},
+      {"id": "tsundere_fail_03", "text": "{servant}{은/는} 빈 회로를 보고 미간을 찌푸리면서도 마스터의 손은 놓지 않는다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "tsundere"}},
+      {"id": "tsundere_fail_04", "text": "일찍 식은 계약의 선 앞에서 {servant}{이/가} 퉁명스레 마스터의 자세를 바로잡는다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "tsundere"}},
+      {"id": "tsundere_fail_05", "text": "{servant}의 볼이 부풀었다가 가라앉는다. 영기에는 아직 빈틈이 많다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "tsundere"}},
+      {"id": "tsundere_fail_06", "text": "모자란 마력을 세어 본 {servant}{은/는} 불평 대신 마스터를 다시 살핀다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "tsundere"}},
+      {"id": "tsundere_fumble_03", "text": "{servant}{이/가} 역류한 손을 홱 뿌리친다. 곧바로 그 손에 상처가 없는지 확인한다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "tsundere"}},
+      {"id": "tsundere_fumble_04", "text": "회로가 튀자 {servant}{은/는} 날카롭게 쏘아보면서도 마스터 앞을 막아선다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "tsundere"}},
+      {"id": "tsundere_fumble_05", "text": "{servant}의 부정하는 듯한 손짓 끝에 계약의 선이 지독하게 꼬인다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "tsundere"}},
+      {"id": "tsundere_fumble_06", "text": "거칠게 끊긴 공급에 {servant}{이/가} 등을 돌렸다가 마스터의 숨소리에 다시 돌아본다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "tsundere"}},
+      {"id": "cheerful_great_03", "text": "{servant}의 얼굴에 웃음이 활짝 번진다. 넘치는 마력이 그 웃음을 더 환하게 비춘다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "cheerful"}},
+      {"id": "cheerful_great_04", "text": "끝까지 차오른 영기를 보고 {servant}{이/가} 두 팔을 번쩍 들어 올린다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "cheerful"}},
+      {"id": "cheerful_great_05", "text": "{servant}{은/는} 가볍게 제자리에서 한 바퀴 돈다. 공급은 기대 이상이다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "cheerful"}},
+      {"id": "cheerful_great_06", "text": "계약의 빛이 환하게 펴지자 {servant}{이/가} 마스터에게 환한 눈빛을 보낸다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "cheerful"}},
+      {"id": "cheerful_success_03", "text": "{servant}{이/가} 경쾌하게 발끝을 굴린다. 마력도 그 박자에 맞춰 고르게 흐른다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "cheerful"}},
+      {"id": "cheerful_success_04", "text": "충분히 채워진 회로 앞에서 {servant}{은/는} 입꼬리를 올리고 손을 흔든다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "cheerful"}},
+      {"id": "cheerful_success_05", "text": "{servant}의 눈이 반짝인다. 가벼워진 걸음이 공급의 성과를 말해 준다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "cheerful"}},
+      {"id": "cheerful_success_06", "text": "마지막 빛이 스며들자 {servant}{이/가} 밝은 표정으로 마스터를 돌아본다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "cheerful"}},
+      {"id": "cheerful_normal_03", "text": "{servant}{은/는} 씩 웃고 어깨를 으쓱인다. 오늘 몫은 채웠다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "cheerful"}},
+      {"id": "cheerful_normal_04", "text": "가늘게 흐른 마력에도 {servant}의 표정은 금세 평소처럼 밝아진다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "cheerful"}},
+      {"id": "cheerful_normal_05", "text": "{servant}{이/가} 손가락으로 작은 원을 그린다. 무난한 흐름이 그 안에서 잦아든다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "cheerful"}},
+      {"id": "cheerful_normal_06", "text": "공급이 끝나자 {servant}{은/는} 마스터를 향해 괜찮다는 듯 눈을 찡긋한다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "cheerful"}},
+      {"id": "cheerful_fail_03", "text": "{servant}의 웃음이 잠깐 멎는다. 채워지지 않은 영기가 빛을 잃었다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "cheerful"}},
+      {"id": "cheerful_fail_04", "text": "모자란 흐름에 {servant}{이/가} 어깨를 축 늘어뜨렸다가 마스터를 보고 다시 웃는다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "cheerful"}},
+      {"id": "cheerful_fail_05", "text": "{servant}{은/는} 빈 회로를 보며 입술을 삐죽인다. 손은 끝내 내밀어 둔다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "cheerful"}},
+      {"id": "cheerful_fail_06", "text": "기대했던 빛이 일찍 꺼지자 {servant}의 표정이 작게 구겨진다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "cheerful"}},
+      {"id": "cheerful_fumble_03", "text": "{servant}{이/가} 튄 불꽃에 펄쩍 뛰어오른다. 웃음을 되찾는 데 시간이 걸린다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "cheerful"}},
+      {"id": "cheerful_fumble_04", "text": "역류가 손끝을 스치자 {servant}의 환한 얼굴이 단숨에 굳는다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "cheerful"}},
+      {"id": "cheerful_fumble_05", "text": "{servant}{은/는} 어색하게 손을 흔들어 보지만 끊긴 계약은 다시 빛나지 않는다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "cheerful"}},
+      {"id": "cheerful_fumble_06", "text": "갑작스러운 파열음에 {servant}{이/가} 웃음을 잃고 마스터의 얼굴부터 살핀다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "cheerful"}},
+      {"id": "royal_great_03", "text": "{servant}{은/는} 가득 찬 영기를 느긋하게 펼치고 마스터에게 손을 내민다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "royal"}},
+      {"id": "royal_great_04", "text": "왕좌를 비추듯 계약의 빛이 높아지자 {servant}{이/가} 만족한 듯 턱을 든다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "royal"}},
+      {"id": "royal_great_05", "text": "{servant}의 눈길이 마스터에게 머문다. 더할 나위 없는 공급을 받은 자의 여유다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "royal"}},
+      {"id": "royal_great_06", "text": "한 치의 결핍도 없는 마력 앞에서 {servant}{은/는} 조용히 손바닥을 펴 보인다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "royal"}},
+      {"id": "royal_success_03", "text": "{servant}{이/가} 짧게 고개를 끄덕인다. 허락의 표시처럼 마력이 고르게 자리 잡는다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "royal"}},
+      {"id": "royal_success_04", "text": "충분한 흐름을 확인한 {servant}{은/는} 마스터에게 한 걸음 다가와 손을 내린다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "royal"}},
+      {"id": "royal_success_05", "text": "{servant}의 소매 끝이 빛을 쓸어 담는다. 무난히 기준을 넘긴 공급이다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "royal"}},
+      {"id": "royal_success_06", "text": "계약이 안정되자 {servant}{이/가} 마스터를 향해 엄숙하게 턱을 끄덕인다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "royal"}},
+      {"id": "royal_normal_03", "text": "{servant}{은/는} 의연히 자세를 고친다. 요구한 몫에는 겨우 닿았다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "royal"}},
+      {"id": "royal_normal_04", "text": "계약의 빛이 평범하게 가라앉자 {servant}{이/가} 별다른 칭찬 없이 등을 편다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "royal"}},
+      {"id": "royal_normal_05", "text": "{servant}의 손등 위로 필요한 만큼의 마력만 지나간다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "royal"}},
+      {"id": "royal_normal_06", "text": "더 내놓으라는 손짓은 없다. {servant}{은/는} 받은 몫을 조용히 거둔다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "royal"}},
+      {"id": "royal_fail_03", "text": "{servant}{이/가} 빈 영기의 자리를 내려다본다. 눈길이 마스터에게 차갑게 돌아온다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "royal"}},
+      {"id": "royal_fail_04", "text": "제대로 차오르지 않은 빛 앞에서 {servant}{은/는} 내밀었던 손을 천천히 거둔다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "royal"}},
+      {"id": "royal_fail_05", "text": "{servant}의 턱이 조금 높아진다. 부족한 공급에 답은 없다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "royal"}},
+      {"id": "royal_fail_06", "text": "기대에 못 미친 흐름을 보며 {servant}{이/가} 마스터와의 거리를 벌린다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "royal"}},
+      {"id": "royal_fumble_03", "text": "{servant}{은/는} 터진 계약의 빛을 손짓 하나로 끊는다. 마스터 앞에 침묵이 내려앉는다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "royal"}},
+      {"id": "royal_fumble_04", "text": "거꾸로 치솟은 마력에 {servant}의 표정에서 마지막 관대함이 사라진다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "royal"}},
+      {"id": "royal_fumble_05", "text": "{servant}{이/가} 한 걸음 뒤로 물러서자 흐트러진 회로만 바닥에 빛난다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "royal"}},
+      {"id": "royal_fumble_06", "text": "왕의 앞에서 터져 나온 불꽃처럼, {servant}의 손끝이 허공에 멈춘다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "royal"}},
+      {"id": "berserker_great_03", "text": "{servant}의 어깨를 짓누르던 긴장이 풀린다. 영기가 묵직하게 차오른다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "berserker"}},
+      {"id": "berserker_great_04", "text": "가득 찬 마력을 따라 {servant}{이/가} 두 주먹을 천천히 펴 보인다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "berserker"}},
+      {"id": "berserker_great_05", "text": "{servant}의 낮은 울음이 잦아들고, 안정된 빛이 온몸을 감싼다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "berserker"}},
+      {"id": "berserker_great_06", "text": "흔들림 없는 공급 뒤에 {servant}{은/는} 마스터 앞에 무릎을 굽힌다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "berserker"}},
+      {"id": "berserker_success_03", "text": "{servant}{이/가} 가슴을 한 번 두드린다. 고른 마력이 그 안에서 울린다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "berserker"}},
+      {"id": "berserker_success_04", "text": "거친 숨 사이로 {servant}의 으르렁거림이 짧게 멎는다. 온몸에 필요한 힘이 돌아왔다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "berserker"}},
+      {"id": "berserker_success_05", "text": "{servant}{은/는} 굳었던 손가락을 폈다 다시 쥔다. 영기가 제자리를 찾는다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "berserker"}},
+      {"id": "berserker_success_06", "text": "마력이 스며들자 {servant}{이/가} 몸을 돌려 마스터 곁에 선다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "berserker"}},
+      {"id": "berserker_normal_03", "text": "{servant}의 숨은 여전히 거칠지만 몸을 뒤트는 일은 없다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "berserker"}},
+      {"id": "berserker_normal_04", "text": "필요한 만큼만 차자 {servant}{은/는} 낮게 한 번 으르렁거린다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "berserker"}},
+      {"id": "berserker_normal_05", "text": "{servant}{이/가} 바닥을 짚고 일어난다. 부족하지도 넘치지도 않는 힘이다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "berserker"}},
+      {"id": "berserker_normal_06", "text": "짧은 코웃음 같은 숨을 내쉰 뒤 {servant}의 자세가 평소로 돌아간다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "berserker"}},
+      {"id": "berserker_fail_03", "text": "{servant}{이/가} 주먹을 쥐었다 편다. 채워지지 않은 팔이 무겁게 떨어진다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "berserker"}},
+      {"id": "berserker_fail_04", "text": "모자란 흐름이 끊기자 {servant}의 이마에 깊은 주름이 잡힌다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "berserker"}},
+      {"id": "berserker_fail_05", "text": "{servant}{은/는} 마스터 쪽으로 고개를 돌려 낮고 긴 울음을 낸다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "berserker"}},
+      {"id": "berserker_fail_06", "text": "텅 빈 영기가 가라앉고 {servant}{이/가} 바닥을 세게 긁는다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "berserker"}},
+      {"id": "berserker_fumble_03", "text": "{servant}의 포효에 계약의 불꽃이 흩어진다. 마스터의 발이 저절로 멈춘다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "berserker"}},
+      {"id": "berserker_fumble_04", "text": "역류한 마력을 떨쳐 내려 {servant}{이/가} 팔을 거칠게 휘두른다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "berserker"}},
+      {"id": "berserker_fumble_05", "text": "{servant}{은/는} 금이 간 바닥을 밟고 서서 한참이나 으르렁거린다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "berserker"}},
+      {"id": "berserker_fumble_06", "text": "끊어진 빛 앞에서 {servant}의 몸이 크게 떨린다. 더 가까이 갈 틈이 없다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "berserker"}},
+      {"id": "saint_great_03", "text": "{servant}{이/가} 두 손을 모으자 가득 찬 영기 위로 부드러운 빛이 번진다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "saint"}},
+      {"id": "saint_great_04", "text": "완전한 공급이 끝난 뒤 {servant}{은/는} 마스터의 손등에 손을 얹는다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "saint"}},
+      {"id": "saint_great_05", "text": "{servant}의 기도가 잦아들고, 맑은 마력이 두 사람 사이에 오래 머문다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "saint"}},
+      {"id": "saint_great_06", "text": "흐름이 한 점 흐트러짐 없이 닿자 {servant}{이/가} 온화하게 눈을 뜬다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "saint"}},
+      {"id": "saint_success_03", "text": "{servant}{은/는} 짧게 감사의 기도를 올린다. 영기에도 따뜻한 빛이 돈다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "saint"}},
+      {"id": "saint_success_04", "text": "마스터의 손을 조심스레 놓는 {servant}의 표정이 한결 편안하다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "saint"}},
+      {"id": "saint_success_05", "text": "{servant}{이/가} 가만히 고개를 숙인다. 고른 흐름에 걱정의 기색이 누그러진다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "saint"}},
+      {"id": "saint_success_06", "text": "충분한 마력이 자리 잡자 {servant}{은/는} 마스터의 어깨를 부드럽게 살핀다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "saint"}},
+      {"id": "saint_normal_03", "text": "{servant}{이/가} 조용히 눈을 감는다. 필요한 만큼의 빛이 손끝을 지나간다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "saint"}},
+      {"id": "saint_normal_04", "text": "흐름이 잦아든 자리에서 {servant}{은/는} 무사함을 확인하듯 마스터를 바라본다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "saint"}},
+      {"id": "saint_normal_05", "text": "{servant}의 두 손이 천천히 풀린다. 공급은 평온하게 끝났다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "saint"}},
+      {"id": "saint_normal_06", "text": "작은 기도 뒤에 {servant}{이/가} 가느다란 계약의 빛을 놓아준다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "saint"}},
+      {"id": "saint_fail_03", "text": "{servant}{은/는} 남은 빈 회로를 보고 마스터의 손을 더 오래 잡고 있는다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "saint"}},
+      {"id": "saint_fail_04", "text": "마력이 모자라 멎자 {servant}{이/가} 걱정스러운 눈으로 마스터의 안색을 살핀다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "saint"}},
+      {"id": "saint_fail_05", "text": "{servant}의 기도가 잠시 길어진다. 영기의 희미한 빛은 돌아오지 않는다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "saint"}},
+      {"id": "saint_fail_06", "text": "완전히 닿지 못한 흐름에 {servant}{은/는} 손을 거두지 않고 조용히 기다린다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "saint"}},
+      {"id": "saint_fumble_03", "text": "{servant}{이/가} 역류한 빛을 두 손으로 감싼다. 기도소리가 급히 낮아진다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "saint"}},
+      {"id": "saint_fumble_04", "text": "회로의 불꽃이 꺼지자 {servant}{은/는} 마스터의 떨리는 손부터 붙든다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "saint"}},
+      {"id": "saint_fumble_05", "text": "{servant}의 온화한 얼굴에도 걱정이 드리운다. 연결은 이미 끊어졌다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "saint"}},
+      {"id": "saint_fumble_06", "text": "매듭이 어긋난 계약 앞에서 {servant}{이/가} 고개를 숙인 채 한동안 움직이지 않는다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "saint"}},
+      {"id": "avenger_great_03", "text": "{servant}의 발밑에서 검은 불꽃이 거세게 일어난다. 완전히 채워진 영기가 그것을 떠받친다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "avenger"}},
+      {"id": "avenger_great_04", "text": "넘치는 마력이 원한의 열기와 엉기자 {servant}{이/가} 마스터에게 비웃음 섞인 눈길을 준다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "avenger"}},
+      {"id": "avenger_great_05", "text": "{servant}{은/는} 오래 꺼지지 않던 불꽃을 손안에 모은다. 이번에는 흔들림이 없다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "avenger"}},
+      {"id": "avenger_great_06", "text": "충만한 영기 속에서 {servant}의 냉소가 잠깐 사라지고 불꽃만 남는다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "avenger"}},
+      {"id": "avenger_success_03", "text": "{servant}{은/는} 손등에 번진 불을 내려다본다. 공급받은 마력은 충분히 견고하다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "avenger"}},
+      {"id": "avenger_success_04", "text": "마력의 흐름이 고르게 붙자 {servant}{이/가} 짧게 비웃고 시선을 돌린다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "avenger"}},
+      {"id": "avenger_success_05", "text": "{servant}의 발걸음 뒤로 작은 불씨가 이어진다. 기대한 만큼은 받았다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "avenger"}},
+      {"id": "avenger_success_06", "text": "원한을 태우는 빛이 안정되자 {servant}{은/는} 손을 천천히 내린다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "avenger"}},
+      {"id": "avenger_normal_03", "text": "{servant}{이/가} 희미한 불꽃을 손가락 사이로 굴린다. 필요한 몫은 들어왔다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "avenger"}},
+      {"id": "avenger_normal_04", "text": "마스터를 스친 {servant}의 시선에는 냉소가 남지만 계약은 끊어지지 않는다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "avenger"}},
+      {"id": "avenger_normal_05", "text": "{servant}{은/는} 말없이 빈자리 몇 곳을 살핀 뒤 불씨를 감춘다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "avenger"}},
+      {"id": "avenger_normal_06", "text": "평범한 흐름이 지나간 자리에서 {servant}의 그림자가 다시 길어진다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "avenger"}},
+      {"id": "avenger_fail_03", "text": "{servant}의 손바닥에서 불씨가 힘없이 꺼진다. 차가운 웃음만 남는다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "avenger"}},
+      {"id": "avenger_fail_04", "text": "모자란 마력을 본 {servant}{은/는} 마스터에게 고개를 돌리지도 않는다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "avenger"}},
+      {"id": "avenger_fail_05", "text": "{servant}{이/가} 갈라진 계약의 빛을 발끝으로 지운다. 원한의 열기는 여전하다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "avenger"}},
+      {"id": "avenger_fail_06", "text": "채워지지 않은 영기 앞에서 {servant}의 냉소가 한층 날카로워진다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "avenger"}},
+      {"id": "avenger_fumble_03", "text": "{servant}의 불꽃이 역류한 회로를 삼킨다. 마스터를 향한 눈빛까지 차갑게 식는다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "avenger"}},
+      {"id": "avenger_fumble_04", "text": "계약이 찢어지는 소리에 {servant}{은/는} 웃음을 멈추고 한 걸음 물러선다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "avenger"}},
+      {"id": "avenger_fumble_05", "text": "{servant}{이/가} 마스터에게 손을 뻗다 거둔다. 검은 불씨가 둘 사이로 떨어진다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "avenger"}},
+      {"id": "avenger_fumble_06", "text": "뒤틀린 공급 끝에 {servant}의 발아래 불꽃이 거칠게 솟구친다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "avenger"}},
+      {"id": "assassin_great_03", "text": "{servant}의 발자국마저 그림자에 묻힌다. 충만한 영기는 흔적을 남기지 않는다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "assassin"}},
+      {"id": "assassin_great_04", "text": "가득 채워진 마력 속에서 {servant}{이/가} 기척을 완전히 접는다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "assassin"}},
+      {"id": "assassin_great_05", "text": "{servant}의 윤곽이 어둠에 스며들고, 계약의 선만 선명하게 빛난다.", "slot": "react", "when": {"event.result": "great", "self.temperament": "assassin"}},
+      {"id": "assassin_success_03", "text": "{servant}{이/가} 어둠에 한 걸음 물러선다. 움직임에는 부족함이 없다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "assassin"}},
+      {"id": "assassin_success_04", "text": "고른 마력이 닿자 {servant}의 그림자가 조용히 발밑에 붙는다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "assassin"}},
+      {"id": "assassin_success_05", "text": "{servant}{은/는} 대답 대신 손끝으로 안정된 계약의 빛을 가리킨다.", "slot": "react", "when": {"event.result": "success", "self.temperament": "assassin"}},
+      {"id": "assassin_normal_03", "text": "{servant}의 그림자가 벽에 잠깐 비쳤다가 사라진다. 흐름은 무난했다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "assassin"}},
+      {"id": "assassin_normal_04", "text": "가느다란 마력의 선을 확인한 {servant}{은/는} 묵묵히 물러선다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "assassin"}},
+      {"id": "assassin_normal_05", "text": "{servant}{이/가} 마스터 곁을 스쳐 지나간다. 발소리도 반응도 평소와 같다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "assassin"}},
+      {"id": "assassin_normal_06", "text": "필요한 만큼만 받아 든 {servant}의 기척이 다시 옅어진다.", "slot": "react", "when": {"event.result": "normal", "self.temperament": "assassin"}},
+      {"id": "assassin_fail_03", "text": "{servant}의 그림자가 끝내 또렷하게 남는다. 숨길 힘이 모자라다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "assassin"}},
+      {"id": "assassin_fail_04", "text": "끊긴 흐름을 본 {servant}{은/는} 마스터에게 말없이 고개를 돌린다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "assassin"}},
+      {"id": "assassin_fail_05", "text": "{servant}{이/가} 어둠에 몸을 숨기지만 흐릿한 영기가 금세 드러난다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "assassin"}},
+      {"id": "assassin_fail_06", "text": "마력이 덜 닿은 손끝을 내려다보며 {servant}{은/는} 한 걸음 거리를 둔다.", "slot": "react", "when": {"event.result": "fail", "self.temperament": "assassin"}},
+      {"id": "assassin_fumble_03", "text": "{servant}의 기척이 날카롭게 튄다. 끊어진 계약이 그림자까지 흔든다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "assassin"}},
+      {"id": "assassin_fumble_04", "text": "마력이 역류하자 {servant}{이/가} 순식간에 마스터의 사각으로 물러난다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "assassin"}},
+      {"id": "assassin_fumble_05", "text": "{servant}{은/는} 칼집에 손을 댄 채 어긋난 회로를 바라본다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "assassin"}},
+      {"id": "assassin_fumble_06", "text": "그림자 속에서 마른 파열음이 난다. {servant}의 침묵이 경고처럼 길어진다.", "slot": "react", "when": {"event.result": "fumble", "self.temperament": "assassin"}},
+      {"id": "legacy_override_03", "text": "{servant}{이/가} 처음으로 마스터를 '벗'이라 불렀다.", "slot": "react", "when": {"event.result": "great", "self.servant": "sv_0012_gilgamesh"}, "source": "legacy", "repeat": "once_per_run"},
+      {"id": "legacy_override_04", "text": "{servant}{이/가} '잡종'이라는 호칭을 다시 쓰기 시작했다.", "slot": "react", "when": {"event.result": "fail", "self.servant": "sv_0012_gilgamesh"}, "source": "legacy", "repeat": "once_per_run"},
+      {"id": "legacy_override_05", "text": "{servant}{이/가} 보구를 마스터에게 겨누려다 멈췄다.", "slot": "react", "when": {"event.result": "fumble", "self.servant": "sv_0012_gilgamesh"}, "source": "legacy", "repeat": "once_per_run"},
+      {"id": "legacy_override_06", "text": "{servant}{이/가} 활짝 웃었다. '최고다, 마스터!'", "slot": "react", "when": {"event.result": "great", "self.servant": "sv_0020_cu_chulainn_prototype"}, "source": "legacy", "repeat": "once_per_run"},
+      {"id": "legacy_override_07", "text": "{servant}{이/가} 엄지를 치켜세웠다. '나쁘지 않아.'", "slot": "react", "when": {"event.result": "success", "self.servant": "sv_0020_cu_chulainn_prototype"}, "source": "legacy", "repeat": "once_per_run"},
+      {"id": "legacy_override_08", "text": "{servant}{이/가} 마스터의 손을 잡았다. 성녀의 축복이 따뜻하게 감싸온다.", "slot": "react", "when": {"event.result": "great", "self.servant": "sv_0059_jeanne_d_arc"}, "source": "legacy", "repeat": "once_per_run"},
+      {"id": "legacy_override_09", "text": "{servant}{이/가} 마스터를 위해 기도하고 있다. ……구원이 필요한 건 마스터인 모양이다.", "slot": "react", "when": {"event.result": "fumble", "self.servant": "sv_0059_jeanne_d_arc"}, "source": "legacy", "repeat": "once_per_run"},
+      {"id": "legacy_override_10", "text": "{servant}의 얼굴이 새빨개졌다. '마……마스터……!'", "slot": "react", "when": {"event.result": "great", "self.servant": "sv_0001_mash_kyrielight"}, "source": "legacy", "repeat": "once_per_run"},
+      {"id": "legacy_override_11", "text": "{servant}{이/가} 미소 지었다. '마스터의 마력은 항상 따뜻해요.'", "slot": "react", "when": {"event.result": "success", "self.servant": "sv_0001_mash_kyrielight"}, "source": "legacy", "repeat": "once_per_run"}
     ],
     "day_bond_fail": [
       {"id": "react_04", "slot": "react", "text": "{servant}{은/는} 대답 대신 먼 곳을 본다. 대화는, 거기서 끊겼다."},
@@ -1196,176 +924,113 @@
       {"id": "react_roar", "slot": "react", "when": {"beat.line.tone": "roar"}, "text": "낮은 으르렁거림. 그것이 거절인지조차, 알 수 없다."},
       {"id": "react_calm", "slot": "react", "when": {"beat.line.tone": "calm"}, "text": "정중한 대답. 그러나 딱 그만큼의 거리를, {servant}{은/는} 정확히 지키고 있다."},
       {"id": "react_distrust", "slot": "react", "when": {"self.affinity_tier": {"in": ["hostile", "wary"]}}, "text": "{servant}의 시선은 차갑다. 신뢰는, 아직 그 어디에도 없다."},
-      { "id": "react_missed_step", "slot": "react", "text": "걸음이 한 번 어긋난다. 말을 건넬 틈이 있었지만, 그 틈은 그대로 지나갔다." },
-      { "id": "react_grim_new", "slot": "react", "when": { "beat.line.tone": "grim" }, "text": "대답 뒤로 침묵이 길게 남는다. 전장에서의 거리가 이곳까지 따라왔다." },
-      {
-        "id": "react_01",
-        "text": "대화는 이어지지 않았다. 같은 길을 걷고 있는데도, 둘 사이의 거리는 좁혀지지 않는다.",
-        "slot": "react",
-        "notes": "교류 실패 (D-123)"
-      },
-      {
-        "id": "react_02",
-        "text": "어색한 침묵. 발소리만이 규칙적으로 울린다.",
-        "slot": "react"
-      },
-      {
-        "id": "react_03",
-        "text": "말을 고르다 때를 놓쳤다. {servant}의 시선은 이미 다른 곳을 향하고 있다.",
-        "slot": "react"
-      },
-      {
-        "id": "react_cold",
-        "text": "짧은 대답. 그 이상은 없었다. ──오늘은, 여기까지인 모양이다.",
-        "slot": "react",
-        "when": {
-          "beat.line.tone": "cold"
-        }
-      },
-      {
-        "id": "react_grim",
-        "text": "어딘가 무거운 공기가 남는다. 누구의 탓이라고 말하기도 어려운, 그런 종류의 무게.",
-        "slot": "react",
-        "when": {
-          "beat.line.tone": "grim"
-        }
-      }
+      {"id": "react_missed_step", "slot": "react", "text": "걸음이 한 번 어긋난다. 말을 건넬 틈이 있었지만, 그 틈은 그대로 지나갔다."},
+      {"id": "react_grim_new", "slot": "react", "when": {"beat.line.tone": "grim"}, "text": "대답 뒤로 침묵이 길게 남는다. 전장에서의 거리가 이곳까지 따라왔다."},
+      {"id": "react_01", "text": "대화는 이어지지 않았다. 같은 길을 걷고 있는데도, 둘 사이의 거리는 좁혀지지 않는다.", "slot": "react", "notes": "교류 실패 (D-123)"},
+      {"id": "react_02", "text": "어색한 침묵. 발소리만이 규칙적으로 울린다.", "slot": "react"},
+      {"id": "react_03", "text": "말을 고르다 때를 놓쳤다. {servant}의 시선은 이미 다른 곳을 향하고 있다.", "slot": "react"},
+      {"id": "react_cold", "text": "짧은 대답. 그 이상은 없었다. ──오늘은, 여기까지인 모양이다.", "slot": "react", "when": {"beat.line.tone": "cold"}},
+      {"id": "react_grim", "text": "어딘가 무거운 공기가 남는다. 누구의 탓이라고 말하기도 어려운, 그런 종류의 무게.", "slot": "react", "when": {"beat.line.tone": "grim"}},
+      {"id": "variant_03", "text": "{servant}의 대답이 선을 긋는다. 더 가까워지지 못했다.", "slot": "react", "when": {"beat.line.tone": "defiant"}},
+      {"id": "variant_04", "text": "날 선 말끝에 마스터의 다음 말이 끊긴다.", "slot": "react", "when": {"beat.line.tone": "defiant"}},
+      {"id": "variant_05", "text": "{servant}{은/는} 마주 선 채 한 걸음도 다가오지 않는다.", "slot": "react", "when": {"beat.line.tone": "defiant"}},
+      {"id": "variant_06", "text": "반박할 틈도 없이 {servant}{이/가} 시선을 돌린다.", "slot": "react", "when": {"beat.line.tone": "defiant"}},
+      {"id": "variant_07", "text": "웃음으로 끝난 말 뒤에 긴 거리가 남았다.", "slot": "react", "when": {"beat.line.tone": "playful"}},
+      {"id": "variant_08", "text": "농담이 돌아왔지만, 대화는 그곳에서 멈췄다.", "slot": "react", "when": {"beat.line.tone": "playful"}},
+      {"id": "variant_09", "text": "가벼운 어조가 질문의 끝을 흩어 버린다.", "slot": "react", "when": {"beat.line.tone": "playful"}},
+      {"id": "variant_10", "text": "{servant}{이/가} 웃으며 지나간다. 대답은 남지 않았다.", "slot": "react", "when": {"beat.line.tone": "playful"}},
+      {"id": "variant_11", "text": "포효가 짧게 울리고, 더는 반응이 없다.", "slot": "react", "when": {"beat.line.tone": "roar"}},
+      {"id": "variant_12", "text": "{servant}{은/는} 거친 숨만 남긴 채 돌아선다.", "slot": "react", "when": {"beat.line.tone": "roar"}},
+      {"id": "variant_13", "text": "낮은 울음소리에 마스터의 말이 묻혔다.", "slot": "react", "when": {"beat.line.tone": "roar"}},
+      {"id": "variant_14", "text": "말을 대신한 소리는 있었지만 뜻은 닿지 않았다.", "slot": "react", "when": {"beat.line.tone": "roar"}},
+      {"id": "variant_15", "text": "공손한 대답 뒤에 대화의 문이 닫힌다.", "slot": "react", "when": {"beat.line.tone": "calm"}},
+      {"id": "variant_16", "text": "{servant}{은/는} 예의를 지킨 채 한 걸음 물러선다.", "slot": "react", "when": {"beat.line.tone": "calm"}},
+      {"id": "variant_17", "text": "차분한 목소리에는 허락의 기색이 없다.", "slot": "react", "when": {"beat.line.tone": "calm"}},
+      {"id": "variant_18", "text": "질문은 들었다. 그러나 {servant}의 답은 거기까지다.", "slot": "react", "when": {"beat.line.tone": "calm"}},
+      {"id": "variant_19", "text": "{servant}{은/는} 마스터의 말을 끝까지 듣고도 대답하지 않는다.", "slot": "react", "when": {"self.affinity_tier": {"in": ["hostile", "wary"]}}},
+      {"id": "variant_20", "text": "가까워질 기회가 있었지만, {servant}의 걸음은 멀어졌다.", "slot": "react", "when": {"self.affinity_tier": {"in": ["hostile", "wary"]}}},
+      {"id": "variant_21", "text": "마스터가 부르자 {servant}{이/가} 돌아보았다가 다시 앞을 본다.", "slot": "react", "when": {"self.affinity_tier": {"in": ["hostile", "wary"]}}},
+      {"id": "variant_22", "text": "짧은 침묵이 두 사람 사이의 거리를 대신한다.", "slot": "react", "when": {"self.affinity_tier": {"in": ["hostile", "wary"]}}},
+      {"id": "variant_23", "text": "무거운 대답이 떨어진 뒤, 두 사람은 침묵한다.", "slot": "react", "when": {"beat.line.tone": "grim"}},
+      {"id": "variant_24", "text": "서번트의 시선이 어두워진다. 말은 더 이어지지 않았다.", "slot": "react", "when": {"beat.line.tone": "grim"}},
+      {"id": "variant_25", "text": "마스터가 말을 잇지 못한 채 발끝을 본다.", "slot": "react", "when": {"beat.line.tone": "grim"}},
+      {"id": "variant_26", "text": "서번트의 눈빛은 끝내 누그러지지 않았다.", "slot": "react", "when": {"beat.line.tone": "cold"}},
+      {"id": "variant_27", "text": "대답은 정확했다. 그 뒤의 온기는 없었다.", "slot": "react", "when": {"beat.line.tone": "cold"}},
+      {"id": "variant_28", "text": "{servant}{은/는} 등을 돌리며 대화를 끝낸다.", "slot": "react", "when": {"beat.line.tone": "cold"}},
+      {"id": "variant_29", "text": "차가운 목소리가 둘 사이에 선을 남겼다.", "slot": "react", "when": {"beat.line.tone": "cold"}}
     ],
     "distant_battle": [
-      {
-        "id": "base_01",
-        "text": "어딘가에서 전투가 벌어진 듯하다. 멀리서 폭발음이 들려왔다.",
-        "slot": "lead",
-        "notes": "적끼리 전투의 간접 묘사 (D-130)"
-      },
-      {
-        "id": "base_02",
-        "text": "밤공기가 떨린다. 거대한 마력과 마력이 맞부딪히는 기척이 느껴진다.",
-        "slot": "lead"
-      },
-      {
-        "id": "base_03",
-        "text": "도시 한쪽 하늘이 한순간 하얗게 물들었다가, 이내 어둠으로 돌아간다.",
-        "slot": "lead"
-      },
-      {
-        "id": "base_04",
-        "text": "먼 곳에서 무언가 무너지는 소리. 내일 아침 사람들은 그것을 가스 폭발이라 부를 것이다.",
-        "slot": "lead"
-      },
-      {
-        "id": "base_05",
-        "text": "창문이 미세하게 흔들렸다. ──지금 이 순간에도, 누군가는 싸우고 있다.",
-        "slot": "lead"
-      },
-      {
-        "id": "near",
-        "text": "바로 옆 구역에서 굉음이 울렸다. 이 거리라면──휘말리지 않도록 조심해야 한다.",
-        "slot": "lead",
-        "when": {
-          "event.near": true
-        }
-      },
-      {
-        "id": "win",
-        "text": "격돌의 기척이 잦아든다. 그리고──기척 하나가, 완전히 사라졌다.",
-        "slot": "tail",
-        "when": {
-          "event.result": "win"
-        }
-      },
-      {
-        "id": "escape",
-        "text": "충돌은 짧았다. 한쪽이 물러난 듯, 마력의 흐름이 흩어져 간다.",
-        "slot": "tail",
-        "when": {
-          "event.result": "escape"
-        }
-      },
-      {
-        "id": "draw",
-        "text": "긴 격돌 끝에, 두 개의 기척이 서로 멀어져 간다. 승부는 나지 않은 모양이다.",
-        "slot": "tail",
-        "when": {
-          "event.result": "draw"
-        }
-      }
+      {"id": "base_01", "text": "어딘가에서 전투가 벌어진 듯하다. 멀리서 폭발음이 들려왔다.", "slot": "lead", "notes": "적끼리 전투의 간접 묘사 (D-130)"},
+      {"id": "base_02", "text": "밤공기가 떨린다. 거대한 마력과 마력이 맞부딪히는 기척이 느껴진다.", "slot": "lead"},
+      {"id": "base_03", "text": "도시 한쪽 하늘이 한순간 하얗게 물들었다가, 이내 어둠으로 돌아간다.", "slot": "lead"},
+      {"id": "base_04", "text": "먼 곳에서 무언가 무너지는 소리. 내일 아침 사람들은 그것을 가스 폭발이라 부를 것이다.", "slot": "lead"},
+      {"id": "base_05", "text": "창문이 미세하게 흔들렸다. ──지금 이 순간에도, 누군가는 싸우고 있다.", "slot": "lead"},
+      {"id": "near", "text": "바로 옆 구역에서 굉음이 울렸다. 이 거리라면──휘말리지 않도록 조심해야 한다.", "slot": "lead", "when": {"event.near": true}},
+      {"id": "win", "text": "격돌의 기척이 잦아든다. 그리고──기척 하나가, 완전히 사라졌다.", "slot": "tail", "when": {"event.result": "win"}},
+      {"id": "escape", "text": "충돌은 짧았다. 한쪽이 물러난 듯, 마력의 흐름이 흩어져 간다.", "slot": "tail", "when": {"event.result": "escape"}},
+      {"id": "draw", "text": "긴 격돌 끝에, 두 개의 기척이 서로 멀어져 간다. 승부는 나지 않은 모양이다.", "slot": "tail", "when": {"event.result": "draw"}},
+      {"id": "variant_03", "text": "인접한 거리에서 유리창이 가늘게 떨린다.", "slot": "lead", "when": {"event.near": true}},
+      {"id": "variant_04", "text": "바로 옆 골목 너머로 마력이 한 번 크게 솟는다.", "slot": "lead", "when": {"event.near": true}},
+      {"id": "variant_05", "text": "지척에서 무기가 부딪치는 소리가 밤을 가른다.", "slot": "lead", "when": {"event.near": true}},
+      {"id": "variant_06", "text": "먼지가 이쪽까지 날아든다. 싸움은 가까운 곳이다.", "slot": "lead", "when": {"event.near": true}},
+      {"id": "variant_07", "text": "멀리서 들리던 충돌이 멎는다. 한 기척만 남았다.", "slot": "tail", "when": {"event.result": "win"}},
+      {"id": "variant_08", "text": "밤의 한쪽에서 마력 하나가 완전히 끊긴다.", "slot": "tail", "when": {"event.result": "win"}},
+      {"id": "variant_09", "text": "마지막 굉음 뒤, 승자의 기척만 움직인다.", "slot": "tail", "when": {"event.result": "win"}},
+      {"id": "variant_10", "text": "서로 맞서던 흐름 중 하나가 사라졌다.", "slot": "tail", "when": {"event.result": "win"}},
+      {"id": "variant_11", "text": "맞부딪치던 기척이 갑자기 멀어진다.", "slot": "tail", "when": {"event.result": "escape"}},
+      {"id": "variant_12", "text": "한쪽의 마력이 뒤로 빠져, 추격도 곧 잦아든다.", "slot": "tail", "when": {"event.result": "escape"}},
+      {"id": "variant_13", "text": "폭발음은 더 이어지지 않는다. 싸움은 흩어졌다.", "slot": "tail", "when": {"event.result": "escape"}},
+      {"id": "variant_14", "text": "두 기척 사이의 거리가 급히 벌어진다.", "slot": "tail", "when": {"event.result": "escape"}},
+      {"id": "variant_15", "text": "긴 싸움 끝에도 두 기척이 모두 남아 있다.", "slot": "tail", "when": {"event.result": "draw"}},
+      {"id": "variant_16", "text": "마력이 양쪽으로 흩어지며 밤이 조용해진다.", "slot": "tail", "when": {"event.result": "draw"}},
+      {"id": "variant_17", "text": "승부 없이 물러나는 발소리 둘이 서로 멀어진다.", "slot": "tail", "when": {"event.result": "draw"}},
+      {"id": "variant_18", "text": "충돌은 멎었다. 사라진 기척은 없다.", "slot": "tail", "when": {"event.result": "draw"}}
     ],
     "final_start": [
-      {
-        "id": "user_01",
-        "text": "성배의 힘으로 모든 서번트가 한 장소에 모인다.",
-        "slot": "lead",
-        "author": "user",
-        "status": "reviewed",
-        "notes": "사용자 제공 문장 (2026-09-28)",
-        "when": {
-          "battle.is_final": true
-        }
-      },
-      {
-        "id": "lead_02",
-        "text": "일곱째 밤의 끝. 성배가 눈을 뜬다. 남은 영령들이, 거스를 수 없는 힘에 이끌려 한 곳으로 모여든다.",
-        "slot": "react"
-      },
-      {
-        "id": "tail_01",
-        "text": "도망칠 곳은 없다. 쓰러진 자는 일어나지 않는다. ──마지막까지 서 있는 자만이, 성배에 닿는다.",
-        "slot": "tail"
-      },
-      {
-        "id": "tail_02",
-        "text": "중앙 공원. 모여든 기척들 사이로, 누구도 먼저 입을 열지 않는다. 이제 남은 것은 단 하나의 결말뿐.",
-        "slot": "tail"
-      }
+      {"id": "user_01", "text": "성배의 힘으로 모든 서번트가 한 장소에 모인다.", "slot": "lead", "author": "user", "status": "reviewed", "notes": "사용자 제공 문장 (2026-09-28)", "when": {"battle.is_final": true}},
+      {"id": "lead_02", "text": "일곱째 밤의 끝. 성배가 눈을 뜬다. 남은 영령들이, 거스를 수 없는 힘에 이끌려 한 곳으로 모여든다.", "slot": "react"},
+      {"id": "tail_01", "text": "도망칠 곳은 없다. 쓰러진 자는 일어나지 않는다. ──마지막까지 서 있는 자만이, 성배에 닿는다.", "slot": "tail"},
+      {"id": "tail_02", "text": "중앙 공원. 모여든 기척들 사이로, 누구도 먼저 입을 열지 않는다. 이제 남은 것은 단 하나의 결말뿐.", "slot": "tail"},
+      {"id": "variant_03", "text": "성배의 부름이 남은 서번트들을 한곳으로 이끈다.", "slot": "lead", "when": {"battle.is_final": true}},
+      {"id": "variant_04", "text": "모든 길의 끝에서 영령들의 기척이 같은 지점으로 모인다.", "slot": "lead", "when": {"battle.is_final": true}},
+      {"id": "variant_05", "text": "성배가 열린다. 흩어졌던 서번트들이 그 힘에 끌려온다.", "slot": "lead", "when": {"battle.is_final": true}},
+      {"id": "variant_06", "text": "도시 위로 성배의 마력이 번지고, 남은 영령들이 집결한다.", "slot": "lead", "when": {"battle.is_final": true}},
+      {"id": "variant_07", "text": "한곳에 모인 영령들의 마력이 서로를 밀어낸다.", "slot": "react"},
+      {"id": "variant_08", "text": "성배 앞에서 남은 기척들이 하나씩 모습을 드러낸다.", "slot": "react"},
+      {"id": "variant_09", "text": "도망칠 수 없는 자리. 영령들의 발소리가 차례로 멎는다.", "slot": "react"},
+      {"id": "variant_10", "text": "빛이 가라앉자 마지막 전장의 윤곽이 드러났다.", "slot": "react"},
+      {"id": "variant_11", "text": "성배가 닿을 거리에 있다. 남은 싸움은 하나다.", "slot": "tail"},
+      {"id": "variant_12", "text": "누구도 물러서지 않는다. 마지막 밤이 움직이기 시작한다.", "slot": "tail"},
+      {"id": "variant_13", "text": "발소리가 멎는다. 끝까지 남을 자를 가릴 시간이다.", "slot": "tail"}
     ],
     "weakness": [
-      {
-        "id": "clash",
-        "when": {
-          "event.phase_id": "ph_clash"
-        },
-        "text": "정면. 힘과 힘이 맞붙는 자리야말로, {enemy}의 전설이 가장 얇아지는 곳이다.",
-        "slot": "lead"
-      },
-      {
-        "id": "initiative",
-        "when": {
-          "event.phase_id": "ph_initiative"
-        },
-        "text": "속도. {enemy}{이/가} 한 박자 늦는 순간을──{servant}{은/는}, 이미 알고 있다.",
-        "slot": "lead"
-      },
-      {
-        "id": "sorcery",
-        "when": {
-          "event.phase_id": "ph_sorcery"
-        },
-        "text": "술식. 신비의 결이 가장 성긴 곳으로, {servant}{이/가} 싸움을 끌고 간다.",
-        "slot": "lead"
-      },
-      {
-        "id": "base",
-        "text": "진명은 곧 약점이다. 전설이 끝난 자리를 아는 자는, 그 끝을 다시 불러낼 수 있다.",
-        "slot": "lead"
-      }
+      {"id": "clash", "when": {"event.phase_id": "ph_clash"}, "text": "정면. 힘과 힘이 맞붙는 자리야말로, {enemy}의 전설이 가장 얇아지는 곳이다.", "slot": "lead"},
+      {"id": "initiative", "when": {"event.phase_id": "ph_initiative"}, "text": "속도. {enemy}{이/가} 한 박자 늦는 순간을──{servant}{은/는}, 이미 알고 있다.", "slot": "lead"},
+      {"id": "sorcery", "when": {"event.phase_id": "ph_sorcery"}, "text": "술식. 신비의 결이 가장 성긴 곳으로, {servant}{이/가} 싸움을 끌고 간다.", "slot": "lead"},
+      {"id": "base", "text": "진명은 곧 약점이다. 전설이 끝난 자리를 아는 자는, 그 끝을 다시 불러낼 수 있다.", "slot": "lead"},
+      {"id": "variant_03", "text": "맞부딪치는 순간, {enemy}의 방어에서 빈틈이 드러난다.", "slot": "lead", "when": {"event.phase_id": "ph_clash"}},
+      {"id": "variant_04", "text": "정면의 일합. {servant}{이/가} 알려진 약점으로 무기를 보낸다.", "slot": "lead", "when": {"event.phase_id": "ph_clash"}},
+      {"id": "variant_05", "text": "힘이 겹치는 찰나, {enemy}의 전설에 난 틈이 열린다.", "slot": "lead", "when": {"event.phase_id": "ph_clash"}},
+      {"id": "variant_06", "text": "서번트의 일격이 {enemy}의 약한 결을 겨눈다.", "slot": "lead", "when": {"event.phase_id": "ph_clash"}},
+      {"id": "variant_07", "text": "{enemy}의 첫걸음이 늦는 순간, {servant}{이/가} 파고든다.", "slot": "lead", "when": {"event.phase_id": "ph_initiative"}},
+      {"id": "variant_08", "text": "알고 있던 한 박자의 빈틈이 마침내 보인다.", "slot": "lead", "when": {"event.phase_id": "ph_initiative"}},
+      {"id": "variant_09", "text": "{servant}{은/는} {enemy}의 시선이 돌아오기 전에 움직였다.", "slot": "lead", "when": {"event.phase_id": "ph_initiative"}},
+      {"id": "variant_10", "text": "속도의 싸움에서 약점은 짧은 틈으로 나타난다.", "slot": "lead", "when": {"event.phase_id": "ph_initiative"}},
+      {"id": "variant_11", "text": "술식의 가장 얇은 선을 {servant}{이/가} 짚는다.", "slot": "lead", "when": {"event.phase_id": "ph_sorcery"}},
+      {"id": "variant_12", "text": "상대의 마력이 엉키는 자리로 술식이 파고든다.", "slot": "lead", "when": {"event.phase_id": "ph_sorcery"}},
+      {"id": "variant_13", "text": "신비의 균열을 따라 반격의 빛이 흐른다.", "slot": "lead", "when": {"event.phase_id": "ph_sorcery"}},
+      {"id": "variant_14", "text": "{servant}{은/는} 상대의 방벽이 성긴 곳을 노린다.", "slot": "lead", "when": {"event.phase_id": "ph_sorcery"}},
+      {"id": "variant_15", "text": "알려진 전설의 끝이, 지금의 빈틈을 가리킨다.", "slot": "lead"},
+      {"id": "variant_16", "text": "기록 속에 남은 약점이 전장에서도 모습을 드러낸다.", "slot": "lead"},
+      {"id": "variant_17", "text": "드러난 진명이 싸움의 방향을 바꾼다.", "slot": "lead"},
+      {"id": "variant_18", "text": "과거의 상처가 이 밤의 틈이 된다.", "slot": "lead"}
     ],
     "comeback": [
-      {
-        "id": "base_01",
-        "text": "──쓰러졌어야 했다. 누구의 눈에도, 승부는 이미 끝나 있었다. 그런데도 마지막에 서 있는 것은──{servant}.",
-        "slot": "react"
-      },
-      {
-        "id": "base_02",
-        "text": "부서지기 직전의 영기가, 한 번 더 빛났다. 그 한 번이, 전부를 뒤집었다.",
-        "slot": "react"
-      },
-      {
-        "id": "base_03",
-        "text": "벼랑 끝에서 내민 한 수. ──기적이라 부르기엔, 너무도 필사적인 일격이었다.",
-        "slot": "react"
-      }
+      {"id": "base_01", "text": "──쓰러졌어야 했다. 누구의 눈에도, 승부는 이미 끝나 있었다. 그런데도 마지막에 서 있는 것은──{servant}.", "slot": "react"},
+      {"id": "base_02", "text": "부서지기 직전의 영기가, 한 번 더 빛났다. 그 한 번이, 전부를 뒤집었다.", "slot": "react"},
+      {"id": "base_03", "text": "벼랑 끝에서 내민 한 수. ──기적이라 부르기엔, 너무도 필사적인 일격이었다.", "slot": "react"},
+      {"id": "variant_03", "text": "무너졌던 자세가 다시 선다. 일격은 거기서 시작됐다.", "slot": "react"},
+      {"id": "variant_04", "text": "승패가 닫히려는 순간, {servant}의 무기가 한 번 더 움직였다.", "slot": "react"}
     ]
   }
 }

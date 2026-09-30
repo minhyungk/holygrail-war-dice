@@ -1,0 +1,53 @@
+{
+  "servant_id": "sv_0378_locusta",
+  "source_id": 378,
+  "name_ko": "로쿠스타",
+  "name_short_ko": "로쿠스타",
+  "class": "assassin",
+  "ranks": {
+    "str": "E",
+    "end": "E+",
+    "agi": "E",
+    "mana": "D",
+    "luck": "EX",
+    "np": "A"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "assassin",
+  "noble_phantasm": {
+    "name_ko": "버섯, 신성한 어찬이리니",
+    "ruby_ko": "피니스 풍구스",
+    "rank": "C+",
+    "type_ko": "대인/대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6048000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/604800/604800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/604800/604800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    105,
+    202,
+    301,
+    305,
+    404,
+    1000,
+    2001,
+    2004,
+    2008,
+    2631,
+    2858,
+    5000,
+    604800
+  ],
+  "lore": {
+    "detail": "1세기, 고대 로마 시대의 인물. 카이사르 가문이 데리고 있던, 여자 독술사.\n네로의 어머니 아그리피나에 의해 발탁되어, 제4대 황제 클라우디우스를 살해하기 위한 독약을 조합했다고 한다.\n그 뒤에 황제가 된 네로를 섬기고, 네로의 의붓동생인 브리타니쿠스의 암살에 관여. 그 이외에도 많은 요인 암살에 관여했다고 여겨진다.\n유럽에서 ‘암살자’의 아이콘. 19세기 작가 알렉상드르 뒤마 페르는 저작 ‘몽테크리스토 백작(암굴왕)’에서, 독과 관련된 작중 인물을 로쿠스타에 비유했다."
+  },
+  "instant_death": false
+}

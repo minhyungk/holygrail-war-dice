@@ -1,0 +1,405 @@
+{
+  "speaker": "sv_0305_amor_caren",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "아무르!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "러브.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "에로스.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "선물입니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "너무 크려나?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "영차.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "발렌티누스!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_8",
+        "text": "회개하세요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_9",
+        "text": "슈퍼 카렌 퍼니시.",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_10",
+        "text": "아아, 정말, 귀찮아죽겠네.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_11",
+        "text": "이쯤인가요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_12",
+        "text": "고분고분해져라~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_13",
+        "text": "이쯤일까요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_14",
+        "text": "푹 빠져라~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "아직 부족하다? 욕심쟁이네요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "속박도 또한, 죽을 4랑이랍니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "노린 사냥감은, 놓치지 않아!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "고분고분하지 못하네요……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "아얏!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "두근두근하지요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "왔습니다, 왔어요",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "주여, 생육하게 하소서.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "세 가지 가르침으로, 에잇.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_5",
+        "text": "론더링…… 마음이 정화됩니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_6",
+        "text": "지배해드리겠습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "이제야 인연이 깊어졌군요. 쾌적한 생활은 상호이해에서. 언제 끝날지는 알 수 없습니다만 사이좋게 협력하지요, 마스터. 저는 의사 서번트, 상식이나 윤리관은 당신과 동일하니까요. ……왜 거기서 갸우뚱하시나요?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "소환되기 전의 저, 말인가요……? 그러네요. 악마 퇴치의 조수를 하거나, 성배전쟁의 뒤처리를 임명받은 수녀이거나, 악마 그 자체이기도. ……훗. 뭐, 여러 가지 일이 있던 모양이에요. 이쪽에 올 때, 자잘한 사항은 잊고 말았습니다만.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal",
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "아무래도 저의 보구에 관해 설명을 드릴 때가 왔나 보네요. 그것은 저의 생각, 저의 마음이 구체화된 개념보구. 이 세상 모든 사람들에게 무상의 사랑을 주고 싶다고 바란, 카렌 오르텐시아의 마음가짐이랍니다. 유난히 장엄한 것은 아무르의 신성보다 저의 종교관이 강하게 드러난 결과로 짐작되고요. 네? 어쩐지 커다랗다? 그야 실제로 거대화해서 그렇습니다만, 무슨 문제라도?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "저도 인내심이 강한 편입니다만, 당신도 참을성이 강하네요. 악마가 들린 알비노, 사람의 마음에 가치를 매기는 수녀, 그 부모에 그 자식, 기적의 미소녀, 지옥과 거래한 창부의 딸── 지금까지 그렇게 멸시받고 기피되어 왔던 저를 아끼는 당신은, 구제가 불가능할 정도로 멍청한 선인이거나, 눈을 돌리고 싶어질 정도로 얼빠진 범부라고 인정하겠습니다. 그러니…… 어쩔 수 없겠지요. 제 목숨이 이어지는 한, 당신의 수호천사 직무에 임하겠습니다. 물론 월급은 당신의 월급과 같은 액수로 부탁드릴게요?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것, 이라고 물어도 곤란합니다만, 자신의 특기를 연마하는 것은 즐겁네요. 오르간 연주에 흥미는 없으신가요?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것은 없습니다. 죽어버리면 좋겠다, 라고 생각하는 대상은 있습니다만. 육아방기 끝에 인생을 구가하며 죽을 때도 호상. 자기가 뭐라도 되는 줄 아나 보죠──?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배가 있나요? 그것은 위험한 물건입니다. 만약 있다면, 진위 불문하고 제가 처리하겠으니 사양 말고 말씀해 주세요. ……선물로 받아두겠습니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "최후의 심판의 날(둠스 데이)──즉, 발렌타인의 시간입니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "네, 안녕하세요. 사랑을 포교하러 왔습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "이것은 또 가엾을 정도의 연애 허접…… 실례, 사랑에 굶주린 새끼양 같군요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "사랑이란 소이탄(네이팜) 같은 것. 뼈까지 불탈 각오는 있으신지?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "저의 마음을, 구현화하겠습니다. 이 세상에 널리 무상의 무한한 사랑을! 거룩할지어다, 거룩할지어다── ‘널리 퍼지는 무상의 무한한 사랑(더 그레이티스트 히츠・“콜링 아가페”)’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "정말, 별난 사람이네…… 이웃사랑(필리아), 가족애(스토르게), 사랑만이 무한히 자라니── 폭포 같은 축복을! ‘널리 퍼지는 무상의 무한한 사랑’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "어센션. 천상의 노래를 들려드리겠습니다. 후후후, 갓 모~닝. 이것이, 지구에서 으뜸가는 사랑이랍니다……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_4",
+        "text": "멀고 깊이, 하늘을 걸으며. 눈을 깜빡인 뒤에 깨닫고. 졸음 뒤에 채우리. ──콜링 스파이럴 래더.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_5",
+        "text": "바부~ 즐기고 계쩨여? 코 잘 시간이네여. 이것이, 진정한 사랑이에여……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "정말이지 한심스럽네요. 이래서는 내년에도 저의 비호가 필요하겠어요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "기부금은 언제나 환영합니다. 오픈 마인드의 교회를 목표로 하고 있으므로.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "시련이 있어야 인생이지 않겠어요? 채찍질을 더 원하거든, 예약해 주시길 바랍니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "죄송합니다. 급한 용무가 떠올라서, 실례하겠습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "후후후…… 이것이 진정한 하트 브레이크…… 다음에 또 구입해주실 때를 기다리고 있겠습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

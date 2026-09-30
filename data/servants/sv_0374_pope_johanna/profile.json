@@ -1,0 +1,56 @@
+{
+  "servant_id": "sv_0374_pope_johanna",
+  "source_id": 374,
+  "name_ko": "여교황 요한나",
+  "name_short_ko": "여교황 요한나",
+  "class": "ruler",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "C",
+    "mana": "A",
+    "luck": "EX",
+    "np": "EX"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "기도 올리는 눈부신 영광의 옥좌",
+    "ruby_ko": "레전덤・파파・트로누스",
+    "rank": "A",
+    "type_ko": "대인보구(자신)",
+    "special_attack": [
+      202
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_9016000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/901600/901600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/901600/901600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    108,
+    201,
+    300,
+    303,
+    405,
+    1000,
+    2001,
+    2004,
+    2008,
+    2011,
+    2037,
+    2631,
+    5000,
+    901600
+  ],
+  "lore": {
+    "detail": "요한나는 가공의 존재로 간주되는 인물로, ‘여교황 요한나’로서 사랑받고 있다. 다수의 소설과 영화의 소재로 다루어졌으며, 그 실재를 믿는 사람은 결코 적지 않다.\n근래의 연구에서는 어떤 과정으로 전승이 성립되었는가, 라는 경위까지 판명되었다.\n기도하고, 기도하고, 기도한 끝에. 그녀는 무엇을 발견할 수 있었을까."
+  },
+  "instant_death": false
+}

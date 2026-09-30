@@ -1,0 +1,57 @@
+{
+  "servant_id": "sv_0189_osakabehime",
+  "source_id": 189,
+  "name_ko": "오사카베히메",
+  "name_short_ko": "오사카베히메",
+  "class": "assassin",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "E",
+    "mana": "A+",
+    "luck": "A+",
+    "np": "A++"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "tsundere",
+  "noble_phantasm": {
+    "name_ko": "하쿠로 성의 백귀 하치텐도 님",
+    "ruby_ko": "하쿠로 성의 백귀 하치텐도 님",
+    "rank": "EX",
+    "type_ko": "대성보구 (자신)",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6031000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/603100/603100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/603100/603100b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    105,
+    201,
+    301,
+    305,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2040,
+    2631,
+    2780,
+    2858,
+    5000,
+    603100
+  ],
+  "lore": {
+    "detail": "오사카베히메 (“사이카쿠국 이야기”에서는 오사카베 공, “금석화도속백귀”에서는 오사카베라고 기록되어 있음) 는 히메지 성의 지주신으로서 모셔진 요괴의 일종이다.\n현재는 히메지 성의 천수각에 눌러앉은 성 요괴로 유명하다."
+  },
+  "instant_death": false
+}

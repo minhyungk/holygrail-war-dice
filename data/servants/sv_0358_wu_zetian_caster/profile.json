@@ -1,0 +1,56 @@
+{
+  "servant_id": "sv_0358_wu_zetian_caster",
+  "source_id": 358,
+  "name_ko": "무측천",
+  "name_short_ko": "무측천 캐스터",
+  "class": "caster",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "D",
+    "mana": "A",
+    "luck": "EX",
+    "np": "B"
+  },
+  "alignment": "evil",
+  "alignment_detail": "질서·악",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "오너라, 혹리강시단",
+    "ruby_ko": "라이라이・혹리강시즈",
+    "rank": "B",
+    "type_ko": "대군보구",
+    "special_attack": [
+      202
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5052000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/505200/505200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/505200/505200b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    202,
+    300,
+    304,
+    404,
+    1000,
+    2001,
+    2008,
+    2113,
+    2631,
+    2838,
+    2858,
+    5000,
+    505200
+  ],
+  "lore": {
+    "detail": "여황제가 수영복을 입은 모습. 어째서인지 평소보다 조금 성장한 모습이 되었으며, 또 어째서인지 수수께끼의 술법을 다룰 수 있게 되었다.\n그것은 말하자면 ‘강시’ 같은 존재에 대처하는 데 특화한, 영화 같은 것에서 본 듯한 도술이며, 그녀는 그 도술에 의해 강시화(상세불명)한 혹리들을 자유자재로 다룬다.\n절대복종하는 수하들을 이끄는 여황제, 라는 의미에서는 평소와 전혀 다를 바가 없다. 다만 그 수하들이 폴짝폴짝 뛰어서 이동하거나 팔을 앞으로 쭉 뻗고 있을 뿐이다.\n하지만 폐하, 분명히 당신은 혼령 같은 존재를 몹시 꺼렸을 텐데……?\n그 수수께끼의 답은 분명히, 북극의 얼음 안에."
+  },
+  "instant_death": false
+}

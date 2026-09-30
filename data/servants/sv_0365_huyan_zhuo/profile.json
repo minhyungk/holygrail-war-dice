@@ -1,0 +1,61 @@
+{
+  "servant_id": "sv_0365_huyan_zhuo",
+  "source_id": 365,
+  "name_ko": "호연작",
+  "name_short_ko": "호연작",
+  "class": "assassin",
+  "ranks": {
+    "str": "C+",
+    "end": "C",
+    "agi": "A",
+    "mana": "D",
+    "luck": "D",
+    "np": "B"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "연환마대람진",
+    "ruby_ko": "엠푸사・체인 템페스트",
+    "rank": "B-",
+    "type_ko": "대군보구",
+    "special_attack": [
+      304
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6046000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/604600/604600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/604600/604600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    105,
+    202,
+    301,
+    304,
+    405,
+    1000,
+    2001,
+    2005,
+    2008,
+    2009,
+    2012,
+    2019,
+    2631,
+    2821,
+    2840,
+    2858,
+    2923,
+    5000,
+    604600
+  ],
+  "lore": {
+    "detail": "하늘에 별, 땅에는 악한. 천위성으로 수식되는 ‘수호전’ 굴지의 강자. 철갑을 두른 말을 사슬로 잇고 일제히 달리게 하는 ‘연환마’라는 전법으로 전장을 유린한 관군의 장군.\n‘철편’이라고 불리는 무기를 양손에 들고, ‘쌍편 호연작’으로서 그 이름을 떨쳤다.\n“강하다는 말밖에 없는데! 그 말밖에 없는데!”"
+  },
+  "instant_death": false
+}

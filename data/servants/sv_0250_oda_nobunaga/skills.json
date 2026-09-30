@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0250_oda_nobunaga",
+  "skills": [
+    {
+      "skill_id": "sk_avenger",
+      "name_ko": "복수자",
+      "rank": "B-",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_oblivion_correction",
+      "name_ko": "망각보정",
+      "rank": "E",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_self_restoration_magical_energy",
+      "name_ko": "자기회복(마력)",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_can_t_be_helped",
+      "name_ko": "어쩔 수 없군",
+      "rank": "A-",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_it_is_but_a_dream",
+      "name_ko": "몽환과도 같이",
+      "rank": "B++",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_demon_king_of_the_sixth_heaven",
+      "name_ko": "제육천마왕",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

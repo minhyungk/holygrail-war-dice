@@ -1,0 +1,54 @@
+{
+  "servant_id": "sv_0091_ryougi_shiki_saber",
+  "source_id": 91,
+  "name_ko": "료기 시키",
+  "name_short_ko": "시키 세이버",
+  "class": "saber",
+  "ranks": {
+    "str": "E",
+    "end": "A",
+    "agi": "C",
+    "mana": "B",
+    "luck": "A",
+    "np": "B+"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "중립·중용",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "무구식・공의 경계",
+    "ruby_ko": "무구식・공의 경계",
+    "rank": "EX",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1028000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/102800/102800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/102800/102800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    100,
+    202,
+    302,
+    305,
+    405,
+    1000,
+    2001,
+    2075,
+    2631,
+    2780,
+    2835,
+    2858,
+    5000,
+    102800
+  ],
+  "lore": {
+    "detail": "변이특이점 경계식에서 잠깐 보였던 여성. 화려한 기모노, 단아한 행동, 자애로 가득 찬 판단력.\n모든 것이 비일상인 가운데서는 눈에 띄는 일상이라 할 수 있다. 존재 자체가 확실치 않기 때문에, 여러 기괴한 사건의 전모를 알면서도 그것들에 관여하지 않는다.\n원래대로라면 만날 일 없는 귀인. 그래도──── 만일 만나게 된다면. 그것은 모두가 조용히 잠든, 눈 내리는 날에."
+  },
+  "instant_death": true
+}

@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0380_kashin_koji",
+  "skills": [
+    {
+      "skill_id": "sk_presence_concealment",
+      "name_ko": "기척 차단",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_karakuri_construction",
+      "name_ko": "꼭두각시 작성",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_mental_modification",
+      "name_ko": "정신개조",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_illusionary_techniques_gejutsu",
+      "name_ko": "환술(외술)",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_massacre_engine",
+      "name_ko": "살육기교",
+      "rank": "B+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_mystic_eyes",
+      "name_ko": "마안",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

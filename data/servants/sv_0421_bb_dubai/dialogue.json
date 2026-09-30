@@ -1,0 +1,464 @@
+{
+  "speaker": "sv_0421_bb_dubai",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "눈을 감으세요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "골든 스톰!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "골든 빔!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "BB 펀드!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "모래언덕에 잘 오셨습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "조난, 해보시겠어요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "BB 슛!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_8",
+        "text": "문 서머 솔트!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_9",
+        "text": "여기야, 의전 차량.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_10",
+        "text": "흠집도 내지 못하네요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_11",
+        "text": "리프레시, 리프레시♡",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_12",
+        "text": "조금 많이 샀나요~?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_13",
+        "text": "꺄~ 최고~~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_14",
+        "text": "네, 잘하셨습니다♡",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "비장의, 디너 쇼!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "격의 차이에 아찔해지세요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "쇼는 언제라도, 이와 같이.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "에~ 온 힘을 다한 건가요~?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "효과 없습니다~♡",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "달은 저의 정원입니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "꿈의 관리 도시, 그렇지요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "정성껏, 고상하게, 악마적으로♡",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "에~ 그게 다인가요~?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_5",
+        "text": "불량품은 회수하겠습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_6",
+        "text": "원래대로 돌아가.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "혹시요, 방금 저에게 말을 거셨나요? 문・두바이의 지배자인 저에게, 일반 관광객인 당신이? ……우훗, 그러면 안 된다고요, 선배~ 무서운 게 없는 것도 적당히 해야죠. 괜히 시비를 걸지 않으면 탈도 없는 법, 인연을 다지고 싶다면 저 이외의 BB에게 해 주실래요?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "끈질기네요. 신분 차이, 아뇨, 기억 용량 차이를 이해 못 하다니, 이러니까 인간이란. 제가 테라라면 당신은 피코. 제가 달이라면 당신은 돌멩이. 제가 사람이라면 당신은 플랑크톤이라고요. 대화의 사이즈가 맞을 리가 없겠죠~?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "알고는 있었습니다만, 정말로 예전에 적이었든 예전에 최종 보스였든 신경 쓰질 않네요. 무심코 그러려니 넘어가 주고 싶어지지만…… 저는 셀럽한 지배자니까, 그래서는 재미가 없겠죠~",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "역시나 선배, 질리지도 않고 거리를 줄이려 하다니♡ 좋습니다, 그 노력을 봐서 앞으로 매일 1분씩만, 아침 인사 정도는 해드리겠어요. 일과로 편성해둘 테니 잊지 말고 엄수하시길. 후후, 금방 후회하겠지만요♡",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "어라어라~? 어떻게 된 일인가요? 선배도 참, 고작 1분간의 대화로 녹초가 되다니. 말했죠? 후회할 거라고. 저에게 1분이란 당신에게 1일 이상의 처리 밀도. 그야말로 손바닥 위의 벌레, 네요. 앞으로 매일, 듬뿍 관리해 드리겠어요. 그 작은 머리가 오버히트하지 않도록 최대한 성장해 주세요♡",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것은, 당신들의 노력일까요. ……후훗, 헛된 발버둥, 이라고 바꿔 말해도 되겠지만요~?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배 따윈, 그냥 마력 리소스일 뿐이잖아요~ 그런 걸 가지고 일희일비할 수 있다니, 마스터 씨는 참 순진해서 귀엽네요♡ ……정말, 글라스에 잠겨 있는 체리 같아.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "정성껏, 고상하게, 망가질 때까지 가지고 놀아드릴게요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "좋아요, 전투 면에서도 뛰어나다는 사실을 증명하겠습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "헤에~ 최소 단위 주제에, 내가 하는 일, 보고 싶어서 못 참겠구나~?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "승산이라면 소수점 이하의 미니미니죠♡ 그도 그럴 것이, 저의 힐에도 닿지 않는걸요. 개미는 개미답게, 땅속에서 발버둥 쳐 주실래요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "도시의 빛을 조명으로. 마천루를 의자로. 으~음, 몸을 쭉 뻗을 수 있어서 기분 좋네~♡ 셀럽한 야경, 마음에 드셨을까요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "꿈의 미래 도시에 잘 오셨습니다! 잘 정비된 인프라, 불편함 없는 생활, 그리고 도시에 우뚝 선 곡선미! 셀러브리티한 메갈로시티에 농락당해 주세요~♡",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_4",
+        "text": "비장의 선물! 한 손에 와인을 들고 관전하겠습니다♡ ‘G.G.G.(골드 기간트 가먼트)’! 졌다간 처벌, 각오해 주세요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_5",
+        "text": "곤란한 상황이시군요, 선배? 응원이라면 맡겨주시길! 매혹의 드레스, 환한 미소, 승리의 여신은 BB짱! 자, 자, 개미 씨들, 파이팅~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_6",
+        "text": "여기는 맡기겠습니다! 보호받는 기쁨, 최고죠? 가끔은 저도 맛보고 싶어서…… 상으로, BB짱 없이는 살아갈 수 없게 해드리겠습니다♡",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_7",
+        "text": "꾸며낸 모습은 끝. ───희망의 빛인 줄 알았나요? 당신들은 아무것도 쓰지 못하게 하겠어요. 매몰되세요, ‘C.C.C.(코스모스 크래프트 크레이터)’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_8",
+        "text": "‘C.C.C.(코스모스 크래프트 크레이터)’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_9",
+        "text": "추잡해…… 달의 크레이터에 떨어뜨려 주겠어. 리틀, 미니멈, 인섹트…… 작은 데도 한도가 있지. 아예 밟아 뭉개 버릴까───",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_10",
+        "text": "구획 정리, 해야지♪ ───에엑, 아직도 그 랭크예요~? 고도성장을 따라잡지 못한 모양이네요. 할당량을 못 채우는 느림보 개미 씨들은, 서랍 구석이 딱이죠♡",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_11",
+        "text": "감히 저에게 도움을 청하겠다는 건가요? ……우후, 후후후후, 아하하하하! 뭐, 액세서리는 될지도 모르겠네요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_12",
+        "text": "SOS를 수신했습니다. 흐~응, 그런가요. 그렇게 매달린다면 생각 못 할 것도 없지요. ……조금은 기대, 하고 있어서요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "퍼펙트한 결과입니다! 아주 조금이지만, 평가치를 올려드리겠어요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "혹시 보면서 넋이 나가신 건가요~? 그렇다면~ 나중에 상을 줘버릴까요~?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "아~아…… 이 메뉴는 별로였어요. 이상적인 데이터하고는 좀처럼 만날 수가 없네요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "뭐, 뭐어…… 퇴각은 퇴각이니까, 순순히 인정하겠습니다. 저도 아직 멀었네요……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "마스터의 명령은 나쁘지 않았다는 느낌이…… 하지만 그러면 제 실수란 얘기가…… 아뇨, 아무것도 아닙니다! 돌아가도록 할게요!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "……문캔서, BB 두바이. 소환되었기에 착임했습니다. 저의 정체를 빤히 알면서 아군으로 삼으려 하다니…… 인간의 그런 면, 진짜 이해하기 힘들어요. 아, 그게 아니면~ 괴롭힘당하는 데 중독되어 버렸나요? 뭐~야, 그런 거라면야 확실히 제가 적임이죠. 후후, 아직 더 즐길 수 있겠네요, 마스터?",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

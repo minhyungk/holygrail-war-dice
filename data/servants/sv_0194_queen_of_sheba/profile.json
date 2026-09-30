@@ -1,0 +1,53 @@
+{
+  "servant_id": "sv_0194_queen_of_sheba",
+  "source_id": 194,
+  "name_ko": "시바의 여왕",
+  "name_short_ko": "시바의 여왕",
+  "class": "caster",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "D",
+    "mana": "A",
+    "luck": "A",
+    "np": "B"
+  },
+  "alignment": "good",
+  "alignment_detail": "중립·선",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "세 가지 수수께끼",
+    "ruby_ko": "쓰리 에니그마즈",
+    "rank": "B",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5034000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/503400/503400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/503400/503400b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    202,
+    302,
+    303,
+    404,
+    1000,
+    2001,
+    2008,
+    2113,
+    2631,
+    2858,
+    5000,
+    503400
+  ],
+  "lore": {
+    "detail": "누구나 한 번쯤은 그 이름을 들은 적이 있는 전설의 여왕. 그 실태는 아직도 수수께끼에 감싸인 신비로운 인물. 시대와 환상을 넘어 그녀는 우리 칼데아 앞에 모습을 드러냈다.\n결코 잊을 수 없는, 한 가지 약속을 지키기 위해서──"
+  },
+  "instant_death": false
+}

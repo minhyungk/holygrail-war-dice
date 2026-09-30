@@ -1,0 +1,353 @@
+{
+  "speaker": "sv_0267_okita_j_souji",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "핫!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "제트!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "빈틈이다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "광자 미사일, 일제 사격 3연!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "슬로우리입니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "아얏, 아얏, 히~이! 아야야얏……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "필살, 오키타 씨 어태~액!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "그 명맥을 꿰뚫는다! 앵화무명검!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "잡았다! 하압~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "아야야야야얏! 여, 역시나 이것은~?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "아얏!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "괜찮아요, 갈 수 있습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "흥흐흐흥~응♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "오키타 씨 절호조!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "실은 어쌔신 클래스 쪽이 본직이라고 할지, 신선조 시절에는 그런 임무도 있었던 터라 의외로 특기이긴 하답니다. 저의 검은 소리도 없이 베어 죽이는 것에 적합했거든요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "그런 쪽의 임무 말인데, 아무래도 살금살금 움직이는 것도 귀찮아서, 정면으로 달려들어 베고서 돌아오는 일이 많았습니다. 대체로 나중에 히지카타 씨에게 혼났지만요. 뭐, 실패한 적도 없었으니 결국은 흐지부지되곤 했습니다만.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "그런데, 이 수영복은 어떠신가요, 마스터? 모처럼이니 감상을 듣고 싶은데요, 잘 어울린다든지~ 뭐라고 할지…… 하! 아니, 방금 건 취소! 실례했습니다!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "어떠신가요, 마스터? 자, 자, 느긋하게 해변을 산책해 주세요! 호위는 바로 무적의 멋진 수영복 오키타 씨에게 맡겨 주세요! 마스터에게 다가오는 무뢰배는 이렇게, 싹둑 베어 넘겨 버리고요…… 네? 그런 것은 됐으니까, 같이 걷자? 손을 잡고…… 네? 아, 네, 넵! 오키타 씨라도 괜찮으시다면, 함께하겠습니다……!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "아무리 수영복 차림이라고 해도, 어쌔신 클래스의 저는 무서우려나요? 신선조 시절에는, 오키타라는 자는 함부로 사람을 베어 죽이니 처치 곤란하다, 라는 말을 듣곤 했던 터라…… 딱히 무섭지 않다? 그, 그러신가요. 그, 그렇겠죠! 이렇게 멋지고 수영복을 입은 천재 미소녀 검사 오키타 씨니까요! ……감사합니다, 마스터.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것 말씀인가요? 그러네요, 역시 여름의 바다라고 하면 카레나 빙수일까요! 해변의 군옥수수도 기분이 좋아지고 말이죠! ……이야기를 하고 있다보니 배가 고프기 시작하네요. 마스터, 같이 먹으러 가죠!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것? 음~ 그런 것은 별로 없습니다만…… 수영복을 자랑하는 어딘가의 마왕은 고작 얼마 전까지는 용서하기 힘든 원수였습니다. 예, 진짜로요! 하지만! 이번 여름, 수영복 오키타 씨 등장으로 대승리한 지금에 와서는, 어쩔 도리 없는 일이지요, 흐흐~응♪",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배 말씀인가요…… 제 소원은 이미 이뤄졌다고 할지, 대충 그런 느낌이라…… 아아, 병약한 몸은 고치고 싶었습니다만, 어째서인지 이 수영복 차림일 때는 묘하게 몸 상태가 좋지요. 성배를 쓸 것까지도 없다니 신기하네요. 이것도 여름의 마력이라는 것일까요……?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "해변에서 춤추는 벚꽃잎 한 장, 오키타 소지, 갑니다!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "제트팩 스탠바이! 오키타・J・소지 갑니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "수영복을 입은 멋진 오키타 씨, 지금 막 등장!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "앵화난만, 이 꽃이 피고 흩어져 내리니.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "버텨 주세요, 나의 몸! MAKOTO DRIVE 풀버스트! ‘제트 삼단 찌르기!’ 우오오오오옷!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "신속으로 소닉, 무명으로 슬래쉬, 절기로 트리니티! 필살! ‘제트 삼단 찌르기’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "이미 화났거든요? 이렇게 되었으면 오키타 씨는 막을 수 없다고요! 여름 하늘에 찬란히 빛나라 ‘제트 삼단 찌르기’!! ……아니아니, 딱히 죽지 않았거든요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "수영복 오키타 씨 대승리~! 오키타 씨의 화려한 무대, 지켜봐 주셨나요, 마스터?! 예, 몸 상태 쪽도 오키타 씨 사상 보기 드문 절호조이고말고요!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "나의 제트 천연이심류는, 제트와 천연이심류를 합친, 최강 무적의 필살검! ……자세한 설명은 생략하겠습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "에엣? 제트는 어디서 나오는 거냐고요? 무, 무슨 말씀이시죠? 오키타 씨, 제트 같은 건 사용하지 않는데요~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "역시, 익숙하지 않은 옷은 입는 게…… 좋네요!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "벚꽃 지다…… 인가요……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "아무리 오키타 씨도, 한계일지도, 모르겠어요……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_4",
+        "text": "제가 쓰러져도…… 제2, 제3의 뉴 오키타 씨가…… 크헉.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "오래 기다리셨습니다, 마스터! 수영복을 입고 무적이 된 오키타 씨 등장입니다! 필살의 제트 천연이심류로 물가의 화제를 독점하고말고요! 자, 함께 여름의 넓은 하늘로 날아가죠! 신선조・IN・THE・스카이!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

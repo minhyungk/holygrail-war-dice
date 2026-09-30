@@ -1,0 +1,306 @@
+{
+  "speaker": "sv_0286_illyasviel_von_einzbern_archer",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "웃샤~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "테랴랴랴~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "돌격~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "이거라도 받으세요~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "수압~ MAX!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "루비짱 러시!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "지역에 따라 소나기, 발밑에 주의해~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "맑은 날도 비 오는 날도, 하늘을 보며 놀자~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "장난기가 너무 없잖아요~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "어째서?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "여름을 포기하지 않아!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "잔뜩 쏜다~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "꽃에 물을 주죠~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "[이리야] : “그러고 보니 1학년 때, 나팔꽃 관찰일기 같은 걸 썼었어.” [루비] : “어라~ 좋네요~ 나팔꽃. 좋아한다고요, 저.” [이리야] : “그렇구나. 혹시, 길렀다던가 했어?” [루비] : “예, 뭐. 비슷하게 생긴 흰독말풀이었지만요.”",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "[이리야] : “여름 방학 숙제? 물론 끝냈지! 아, 하지만 자유 연구만은 아직이었네~” [루비] : “흐~음. 그러면, 공상수 성장 관찰일기 같은 것은 어떤가요?” [이리야] : “그만두자. 그런 걸로 장난치는 건……”",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "마음껏 놀기 위해서는, 무엇보다 건강이 제일! 제대로 매일 아침 체조를 해야지~! 앗, 스탬프 카드를 만들었으니까, 도장 찍어 주세요!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "[이리야] : “안녕히 주무셨어요, 마스터 씨! 오늘은 무엇을 할지 이미 정했어요? 아직? 그렇다면…… 자요, 이거~! 이 여름 방학 안내서에, 이리야가 하고 싶은 일을 리스트로 정리해 뒀어요! 참고해 주세요!” [루비] : “어디어디…… ‘한여름의 사랑으로 아방가르드하게 변하고 싶다’ 라고 쓱쓱.” [이리야] : “이상한 항목을 추가하지 마!”",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "으~음…… 핫! 아, 안 잤어요. 아직 졸리지 않는걸요. 괜찮아요…… 으으응, 무리하는 게 아니에요…… 그저, 자는 게 아깝다 싶어서. 정말, 꿈처럼 매일이 즐거워서…… 내일도 놀아요, 마스터 씨. ……zzz.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "야키소바, 빙수, 수박…… 어느 것이나 매력적이네요~ 아, 그리고 그거 먹고 싶어요! 해변 특유의, 특별히 맛있지도 맛없지도 않은 뉴~트럴~ 라~면!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "[이리야] : “싫어하는 것? 괜찮아요! 대개 뭐든 먹을 수 있어요!” [루비] : “음식의 호불호를 묻는 게 아니라고 생각하는데요……”",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "[이리야] : “성배에 빌 소원이라. 으~음, 너무 많아서 고민되네.” [루비] : “이리야 씨는 욕심쟁이네요.” [이리야] : “이 여름 동안, 모두 함께 즐거운 추억을 만들고 싶어! 뭔가 딱 하나만 정할 수는 없다고!” [루비] : “과연. 역시 이리야 씨는 욕심쟁이네요.”",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "전투 개시! 전력을 다해서 쉴게!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "여름 방학을 방해하는 사람들, 용서하지 않을 거야!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "가자, 루비! 앞으로, 미래로, 그 너머로! 여름이 끝나도 수많은 추억이 있으니까, 나는 날 수 있어! ‘소녀여, 무지개가 되어라(프리즈마☆스플래시 레인보우)!’",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "[루비] : “네~! 그러면 출석을 부르겠습니다~! 출석 번호 1번, 이리야 씨~!” [이리야] : “네, 네, 네~에, 여기요~, 예에에에입, 네~엡, 이예~잇!” [루비] : “너무 많은데요~!” [이리야] : “““새학기부터도, 열심히 하자!”””",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "[루비]：“네~! 그러면 출석을 부르겠습니다~!”",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "오늘도 내일도 모레도, 계속 더 놀 거야!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "즐거웠어~! 다음에는 어디에 데려가 줄 거야?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "새, 새학기가, 시작된다……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "너무 쉬기만 하면 안 된다는 거야……?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "바다다! 이리야입니다! 아처입니다! 수영복도 가지고 왔습니다! 그렇게 되었으니 다시 한번, 바다다~! ……네? 바다가 아니라고요? 호수? 응, 헤엄칠 수 있으면 어디든 괜찮아! 여름 방학의 즐거운 추억, 잔뜩 만들어요! [루비] : “이것이 참극의 시작이 될 것이라고는, 이때의 이리야 씨는 알 방법이 없었던 것이다……”",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "servant_id": "sv_0396_theseus",
+  "source_id": 396,
+  "name_ko": "테세우스",
+  "name_short_ko": "테세우스",
+  "class": "saber",
+  "ranks": {
+    "str": "B",
+    "end": "A",
+    "agi": "A",
+    "mana": "C",
+    "luck": "A+",
+    "np": "C"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "그리하여 실은 극점으로 이끈다",
+    "ruby_ko": "아리아드네 아포리토 아디스",
+    "rank": "C++",
+    "type_ko": "대인보구",
+    "special_attack": [
+      2666
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1058000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/105800/105800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/105800/105800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    100,
+    201,
+    300,
+    303,
+    403,
+    1000,
+    2001,
+    2008,
+    2009,
+    2011,
+    2012,
+    2037,
+    2075,
+    2113,
+    2114,
+    2466,
+    2631,
+    2858,
+    5000,
+    105800
+  ],
+  "lore": {
+    "detail": "고대 그리스의 영웅, 헤라클레스의 친척이라고 전해진다.\n아르고호의 승선 경험도 있는 역전의 모험가.\n그중에서도 크레타섬의 대미궁에 도전하여 미노타우로스를 토벌한 에피소드가 가장 유명하다. 사람을 잡아먹는 괴물을 멋지게 토벌한 그는, 그 후로도 영웅으로서 다양한 전설을 남겼다.\n모든 것의 시작은 그곳에서. ───나는 그저, 정의를 추구했을 뿐이었는데."
+  },
+  "instant_death": false
+}

@@ -1,0 +1,34 @@
+{
+  "servant_id": "sv_0368_britomart",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "B+",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_fortress_angela",
+      "name_ko": "여왕성새・파도개각",
+      "rank": "C+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_virtue_of_chastity",
+      "name_ko": "정숙의 미덕",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_tam_lin_fairy_country",
+      "name_ko": "요정기사(요정향)",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

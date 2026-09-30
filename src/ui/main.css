@@ -1,0 +1,189 @@
+/* 메인 화면 소환 전조 (D-166). 색은 공통 토큰을 쓴다. */
+.s-main {
+  isolation: isolate;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-width: 0;
+  background: var(--bg-base);
+}
+
+.s-main .main-bg {
+  position: fixed;
+  inset: -5%;
+  z-index: -4;
+  opacity: .48;
+  background-size: cover;
+  background-position: center;
+  filter: saturate(.7);
+  animation: main-pan calc(var(--main-silhouette-ms) * 10) ease-in-out infinite alternate;
+}
+
+.s-main .main-bg::after {
+  background: linear-gradient(180deg, var(--bg-base), transparent 28%, transparent 50%, var(--bg-base)),
+    radial-gradient(ellipse at center, transparent 5%, var(--bg-base) 84%);
+}
+
+.main-mist {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 50% 75%, var(--line) 0%, transparent 55%),
+    linear-gradient(0deg, var(--bg-base), transparent 55%);
+  opacity: .52;
+}
+
+.main-embers { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.main-embers i {
+  position: absolute;
+  bottom: -4%;
+  left: calc(10% + var(--ember-index) * 13%);
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--miracle);
+  box-shadow: 0 0 9px 2px var(--accent);
+  opacity: 0;
+  animation: main-ember calc(var(--main-circle-spin-ms) * 3 + var(--ember-index) * var(--main-class-ms)) linear infinite;
+  animation-delay: calc(var(--ember-index) * var(--main-class-ms) * -3);
+}
+.main-embers i:nth-child(1) { --ember-index: 0; }
+.main-embers i:nth-child(2) { --ember-index: 1; }
+.main-embers i:nth-child(3) { --ember-index: 2; }
+.main-embers i:nth-child(4) { --ember-index: 3; }
+.main-embers i:nth-child(5) { --ember-index: 4; }
+.main-embers i:nth-child(6) { --ember-index: 5; }
+.main-embers i:nth-child(7) { --ember-index: 6; }
+
+.main-figures, .main-split {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+.main-figure, .main-split img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  filter: brightness(0) drop-shadow(0 0 2px var(--accent));
+  opacity: .58;
+}
+.main-figure-in { animation: main-fade var(--main-crossfade-ms) ease-in-out both; }
+
+.s-main .main-inner {
+  z-index: 1;
+  box-sizing: border-box;
+  width: min(100%, 600px);
+  min-height: min-content;
+  margin-block: auto;
+  gap: clamp(10px, 2vh, 18px);
+  padding: 22px 12px 54px;
+}
+.main-ring { position: relative; flex: none; width: min(78vw, 340px); aspect-ratio: 1; }
+.main-circle { display: block; width: 100%; height: 100%; opacity: .8; }
+.s-main .main-seal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 22%;
+  height: 22%;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 16px var(--accent));
+}
+.main-class {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: clamp(38px, 11vw, 48px);
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: var(--bg-base);
+  box-shadow: 0 0 0 1px var(--line-soft);
+  opacity: .42;
+  filter: brightness(.34);
+  transition: filter var(--main-class-ms), opacity var(--main-class-ms), box-shadow var(--main-class-ms);
+}
+.main-class .glyph { width: 88%; height: 88%; background: var(--bg-panel); box-shadow: none; }
+.main-class.lit {
+  opacity: 1;
+  filter: none;
+  box-shadow: 0 0 0 1px var(--miracle), 0 0 15px 3px var(--cls), inset 0 0 10px var(--accent);
+}
+
+.s-main .title {
+  font-size: clamp(34px, 9vw, 66px);
+  text-shadow: 0 3px 22px var(--bg-base), 0 0 20px var(--bg-base);
+}
+.s-main .title small { margin-top: 8px; color: var(--accent); }
+.s-main .main-actions { width: min(280px, 100%); gap: 8px; }
+.s-main .main-actions .btn {
+  padding: 12px 14px;
+  border-radius: 4px;
+  box-shadow: 0 4px 18px var(--bg-base);
+}
+.s-main .main-actions .btn:disabled { cursor: default; }
+.s-main .stepper-wrap { gap: 4px; opacity: .78; }
+.s-main .stepper { gap: 10px; }
+.s-main .stepper button { width: 28px; height: 28px; }
+.s-main .stepper b { font-size: 17px; }
+.s-main .main-stat { font-size: 11px; }
+.s-main .copyright { position: fixed; bottom: 7px; z-index: 2; }
+
+.main-exiting .main-figures { opacity: 0; }
+.main-split { z-index: 3; }
+.main-split img {
+  opacity: .85;
+  filter: brightness(0) sepia(1) saturate(3) drop-shadow(0 0 16px var(--miracle));
+}
+.main-split-left { clip-path: inset(0 50% 0 0); animation: main-split-left var(--main-flash-ms) ease-in forwards; }
+.main-split-right { clip-path: inset(0 0 0 50%); animation: main-split-right var(--main-flash-ms) ease-in forwards; }
+.main-exiting::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, var(--miracle), transparent 68%);
+  animation: main-flash var(--main-flash-ms) ease-out both;
+}
+
+@keyframes main-pan { from { transform: scale(1) translate(-1%, 0); } to { transform: scale(1.12) translate(1%, -1%); } }
+@keyframes main-ember { 0% { transform: translateY(0); opacity: 0; } 15% { opacity: .75; } 85% { opacity: .4; } 100% { transform: translateY(-76vh); opacity: 0; } }
+@keyframes main-fade { from { opacity: 0; } to { opacity: .58; } }
+@keyframes main-split-left { to { transform: translateX(-28%); opacity: 0; } }
+@keyframes main-split-right { to { transform: translateX(28%); opacity: 0; } }
+@keyframes main-flash { 0% { opacity: 0; } 30% { opacity: .56; } 100% { opacity: 0; } }
+
+@media (max-width: 480px) {
+  .s-main .main-inner { padding-inline: 8px; }
+  .main-figures, .main-split { inset: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .s-main .main-bg, .main-embers i, .main-figure-in, .main-split img, .main-exiting::after { animation: none; }
+  .main-embers { display: none; }
+  .main-class { transition: none; }
+}
+
+/* 메인 문구 (D-167): 일곱 자리가 다 켜지면 떠오른다 */
+.main-tagline {
+  margin: 0;
+  font-size: clamp(14px, 3.6vw, 18px);
+  letter-spacing: .12em;
+  color: var(--accent);
+  text-shadow: 0 0 14px var(--miracle), 0 2px 10px var(--bg-base);
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity calc(var(--main-circle-spin-ms) * .6) ease-out, transform calc(var(--main-circle-spin-ms) * .6) ease-out;
+}
+.main-tagline.in { opacity: 1; transform: none; }
+.main-tagline rt { font-size: .55em; letter-spacing: .3em; color: var(--text-muted); }
+@media (prefers-reduced-motion: reduce) { .main-tagline { transition: none; } }

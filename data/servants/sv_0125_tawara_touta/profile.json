@@ -1,0 +1,53 @@
+{
+  "servant_id": "sv_0125_tawara_touta",
+  "source_id": 125,
+  "name_ko": "타와라 토타",
+  "name_short_ko": "타와라 토타",
+  "class": "archer",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "D",
+    "mana": "C",
+    "luck": "B",
+    "np": "A"
+  },
+  "alignment": "good",
+  "alignment_detail": "중립·선",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "팔번기원 대요사관",
+    "ruby_ko": "나무하치만대보살, 이 화살에 가호를",
+    "rank": "B+",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2014000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/201400/201400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/201400/201400b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    102,
+    202,
+    302,
+    303,
+    403,
+    1000,
+    2001,
+    2008,
+    2012,
+    2631,
+    2858,
+    5000,
+    201400
+  ],
+  "lore": {
+    "detail": "타와라 토타는 칸토 지방에서 무예의 선조로 추앙받던 헤이안 시대 중기의 무장.\n후에 후지와라노 히데사토라는 이름으로 타이라노 마사카도를 처치함으로써 일약 이름을 떨쳤다.\n산을 일곱 바퀴 반 휘감는다고 알려진 큰 지네를 활과 화살로 퇴치했다고 전해지고 있다."
+  },
+  "instant_death": false
+}

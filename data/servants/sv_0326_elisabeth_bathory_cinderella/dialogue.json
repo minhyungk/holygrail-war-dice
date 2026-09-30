@@ -1,0 +1,388 @@
+{
+  "speaker": "sv_0326_elisabeth_bathory_cinderella",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "유리구두야!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "노래 불러줄게!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "라라~♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "하나 어때?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "잔혹하지?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "음음~♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "호박 마차야~♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "들이받아 죽일래~♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "호박 마차야! 받아!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_4",
+        "text": "재투성이 아가씨 나가신다~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "아야야야야~! 잠깐, 하지 마~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "아얏!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "되게~ 아파~♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "아파~♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "힘내자~♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "쓸게~♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "메르헨♪ 이니 말이지~♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "애드리브 전개! 야~♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "자, 그러면 신데렐라야. 항의는 안 받을 거니까 그렇게 알고 있어. 어머니와 언니? 있는 걸까, 없는 걸까…… 뭐, 아무래도 좋지. 중요한 것은 내가 신데렐라라는 사실, 단 하나뿐이니까!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "웃후후, 이러고 있으려니 할로윈으로 다시 돌아왔다는 기분이 들어. 호박 마차는 역시 마지막에 내용물을 먹어버렸을까. 수수께끼가 깊어지네!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "라・라・라~♪ 어머? 마스터, 왜 그래? 방금 그거? 물론 노래 연습이지. 하루도 빼먹지 않고 있어. 그러니까 조금 미안한데, 목에 좋은 것 좀 가져와 주지 않을래? 벌꿀이라거나!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "그리고~♪ 유리구두를 가져온 왕자님을~♪ 꽁꽁 묶어서~ 결혼식에 직행할래~♪ 어때? 이 정도 적극성이 있는 편이 좋다고 생각하지 않아? 응? 단순한 유괴다? ───그러게. 맹점이었어.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "이러니저러니 해도, 당신과도 오래 알고 지냈네. ……아니, 잠깐만. 이럴 때는 오래됐다고 해야 할까, 짧았다고 해야 할까. 아무렴 어때! 하여간 오늘도 나는 아름답고, 그리고 즐거워! 마스터도 그렇지? 그것이 서로에게 가장 중요한 점이라고 생각해, 나는.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "물론이지, 동화는 좋아하거든? 아름답고 잔혹하고 예쁘다니, 마치 나를 위해 있는 거나 다름없지 않을까?! 단지, 뭐, 동화 작가 쪽에는…… 흥미 없어. 그래서 모티프도 피하고 있지~",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "현실이라는 이름의 거대한 벽이구나. 유리구두는 신을 수 없고 왕자님도 존재하지 않는다니, 그런 건 안 되지. 안 돼! 존재하지 않는다면, 만들면 그만이야!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배…… 그렇지. 그러면 전 세계에 체이테 신데렐라 성을 만드는 건 어떨까? 물론 간판 뮤지컬 아이돌로서, 내가 전 세계 투어를 하며 신나게 노래할 거야! 어떨까~♪",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "라・라・라~♪ 노래하며, 싸울게~♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "보고 있어, 강아지~♪ 용처럼 우아하게~ 파워풀~♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "지금 마이크 테스트 중! 그러는 김에 스트레칭도 겸해서, 싸울게?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "지금의 나는 뮤지컬한 엘리자! 노래하고, 싸우고, 노래하고…… 노래할게!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "거울아, 거울아, 세상에서 제일 예쁜 용의 아이는? ……맞아, 거울아! 나야말로 세상에서 제일 고귀하고 예쁜 스페셜한 엘리자베트♪ ‘동화자설마양(페어리 테일・에르제베트)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "세상에서 제일 예쁜 사람은~ 나지? ……어, 아니야? 웃기지 마! 받아라! 슈퍼 에리짱 드래곤 킥~! 또 다른 이름은, ‘동화자설마양(페어리 테일・드래곤 메들리)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "열이 확~ 받았으니까~ 거울을~ 차버릴래~♪ ‘동화자설마양(페어리 테일・에르제베트)’!! 끝~이~야~♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "승리야말로~ 나에게 어울려~♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "사랑의 승리야~♪ 신데렐라 에리짱이야~♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "웃후후! 이것이 사랑과 우정의 승리라는 거지! 세계는 큐트를 원하고 있어!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_4",
+        "text": "내 시대── 왔다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "유감스럽지만~ 나는 잠깐~ 퇴각할게~♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "졌어~…… 유감이야~……♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "잠깐 화급한 용무가 생겼어! 미안하지만 퇴각할게?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_4",
+        "text": "끼야냐~?! 엘리자데렐라도…… 여기까지구나…… 풀썩.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "자, 전설의 시작이야~♪ 엘리자베트 신데렐라의 탄생이야~♪ 축하하렴~ 웃으렴~♪ 자, 마스터, 그 손을 잡고~♪ 응? 언제까지 이거 계속할 거냐고? 그거야 물론~♪ 이터널~♪ 아, 잠깐 돌아가지 마! 아직 뒷부분이 더 있다고~!",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

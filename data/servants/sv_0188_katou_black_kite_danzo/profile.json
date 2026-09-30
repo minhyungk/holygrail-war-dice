@@ -1,0 +1,57 @@
+{
+  "servant_id": "sv_0188_katou_black_kite_danzo",
+  "source_id": 188,
+  "name_ko": "카토 단조",
+  "name_short_ko": "카토 단조",
+  "class": "assassin",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "A",
+    "mana": "C",
+    "luck": "B",
+    "np": "C"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "중립·중용",
+  "alignment_verified": false,
+  "temperament": "assassin",
+  "noble_phantasm": {
+    "name_ko": "꼭두각시 환법・탄우",
+    "ruby_ko": "꼭두각시 환법・탄우",
+    "rank": "C+",
+    "type_ko": "대수보구",
+    "special_attack": [
+      2019
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6030000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/603000/603000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/603000/603000b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 class), 사용자 검수 전.",
+  "traits": [
+    2,
+    105,
+    201,
+    302,
+    305,
+    404,
+    1000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2631,
+    2781,
+    2858,
+    5000,
+    603000
+  ],
+  "lore": {
+    "detail": "에도 시대 초기의 이야기책, 군학서 등에서 이름이 보이는 도적, 첩자───\n즉, 닌자. ‘솔개 카토’, ‘소리개 카토’ 등의 별명으로 알려졌고, 카이나 에치고 지방에서의 활동이 보고되었지만, 그 정체나 목적에 대해서는 여러 설이 있으며, 수수께끼에 감싸여 있다."
+  },
+  "instant_death": false
+}

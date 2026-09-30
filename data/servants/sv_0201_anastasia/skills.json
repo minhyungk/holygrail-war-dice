@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0201_anastasia",
+  "skills": [
+    {
+      "skill_id": "sk_territory_creation",
+      "name_ko": "진지작성",
+      "rank": "EX",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_fairy_contract",
+      "name_ko": "요정계약",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_mystic_eyes_of_penetration",
+      "name_ko": "투시의 마안",
+      "rank": "D",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_frigid_charisma",
+      "name_ko": "절동의 카리스마",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_schwipsig",
+      "name_ko": "슈비브지크",
+      "rank": "B+",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

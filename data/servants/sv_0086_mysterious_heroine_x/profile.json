@@ -1,0 +1,60 @@
+{
+  "servant_id": "sv_0086_mysterious_heroine_x",
+  "source_id": 86,
+  "name_ko": "수수께끼의 히로인 X",
+  "name_short_ko": "히로인 X",
+  "class": "assassin",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "A+",
+    "mana": "B",
+    "luck": "D",
+    "np": "A++"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "무명승리검",
+    "ruby_ko": "비밀칼리버",
+    "rank": "EX",
+    "type_ko": "대인보구",
+    "special_attack": [
+      2007
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6018000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/601800/601800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/601800/601800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    105,
+    203,
+    301,
+    303,
+    405,
+    1000,
+    2001,
+    2002,
+    2007,
+    2009,
+    2010,
+    2113,
+    2631,
+    2780,
+    2858,
+    2924,
+    5000,
+    601800
+  ],
+  "lore": {
+    "detail": "서번트 유니버스라 불리는 수수께끼의 시공에서 온 스트레인저. 스스로를 세이버 클래스의 결정판이라 지칭하며 기사로서 정정당당하게 야습하는 VS 세이버용 결전병기.\n코드네임 A-X."
+  },
+  "instant_death": false
+}

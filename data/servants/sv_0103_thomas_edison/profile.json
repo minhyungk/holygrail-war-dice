@@ -1,0 +1,52 @@
+{
+  "servant_id": "sv_0103_thomas_edison",
+  "source_id": 103,
+  "name_ko": "토머스 에디슨",
+  "name_short_ko": "에디슨",
+  "class": "caster",
+  "ranks": {
+    "str": "E",
+    "end": "EX",
+    "agi": "E",
+    "mana": "EX",
+    "luck": "A",
+    "np": "EX"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "질서·중용",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "Ｗ·F·D",
+    "ruby_ko": "월드 페이스 도미네이션",
+    "rank": "EX",
+    "type_ko": "대민보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5025000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/502500/502500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/502500/502500b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    104,
+    202,
+    300,
+    305,
+    404,
+    1000,
+    2001,
+    2008,
+    2631,
+    2858,
+    5000,
+    502500
+  ],
+  "lore": {
+    "detail": "토머스 앨바 에디슨은 미국 출신의 발명가이다. 19세기에 태어난 사람으로서는 세계 유수의 지명도를 자랑하지만, 그 새로움 때문에 서번트로서의 역량은 다소 떨어진다.\n이번 소환은 그것을 보강하기 위해 미국이라는 국가를 지탱한 역대 대통령이 ‘에디슨’이라는 개념을 보강하는 일종의 예장으로 취급되었다."
+  },
+  "instant_death": false
+}

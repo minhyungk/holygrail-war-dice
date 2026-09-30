@@ -1,0 +1,63 @@
+{
+  "servant_id": "sv_0128_tamamo_no_mae_lancer",
+  "source_id": 128,
+  "name_ko": "타마모노마에",
+  "name_short_ko": "타마모 랜서",
+  "class": "lancer",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "A",
+    "mana": "E",
+    "luck": "A",
+    "np": "C"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "중립·여름",
+  "alignment_verified": false,
+  "temperament": "tsundere",
+  "noble_phantasm": {
+    "name_ko": "상하일광 일제산총애일신",
+    "ruby_ko": "상하일광 일제산총애일신",
+    "rank": "C",
+    "type_ko": "대인보구",
+    "special_attack": [
+      1
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3024000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/302400/302400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/302400/302400b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    101,
+    200,
+    302,
+    308,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2009,
+    2011,
+    2037,
+    2040,
+    2632,
+    2797,
+    2838,
+    2850,
+    2851,
+    2858,
+    5000,
+    302400
+  ],
+  "lore": {
+    "detail": "여름이라면 해변. 해변이라면 파라솔. 파라솔이라면 믿음직한 당신의 여우 무녀. 이는 바로 아시하라노쿠니의 상식이리니……! 태양은 폭발이다. 젖은 티셔츠와 튜브를 무기 삼아 랜서 타마모짱, 남국으로 선샤이~~인!"
+  },
+  "instant_death": false
+}

@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0158_hessian_lobo",
+  "source_id": 158,
+  "name_ko": "헤센・로보",
+  "name_short_ko": "헤센 로보",
+  "class": "avenger",
+  "ranks": {
+    "str": "A+",
+    "end": "B+",
+    "agi": "A+",
+    "mana": "E",
+    "luck": "D",
+    "np": "B+"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "avenger",
+  "noble_phantasm": {
+    "name_ko": "아득히 먼 자에게 내리는 참죄",
+    "ruby_ko": "프리렌 샤르프리히터",
+    "rank": "C+",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_11005000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1100500/1100500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1100500/1100500b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    110,
+    201,
+    301,
+    304,
+    404,
+    1000,
+    2001,
+    2005,
+    2008,
+    2011,
+    2037,
+    2632,
+    2810,
+    5000,
+    1100500
+  ],
+  "lore": {
+    "detail": "상호이해 따위는 불가능. 여기에 있는 것은, 증오를 흩뿌리는 짐승일지니."
+  },
+  "instant_death": true
+}

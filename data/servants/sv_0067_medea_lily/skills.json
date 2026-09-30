@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0067_medea_lily",
+  "skills": [
+    {
+      "skill_id": "sk_territory_creation",
+      "name_ko": "진지작성",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_item_construction",
+      "name_ko": "도구작성",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_high_speed_divine_words",
+      "name_ko": "고속신언",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_poison_resistance",
+      "name_ko": "독 내성",
+      "rank": "A++",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_ephemeral_love",
+      "name_ko": "덧없는 사랑",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

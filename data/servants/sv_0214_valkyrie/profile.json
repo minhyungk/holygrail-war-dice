@@ -1,0 +1,59 @@
+{
+  "servant_id": "sv_0214_valkyrie",
+  "source_id": 214,
+  "name_ko": "발키리",
+  "name_short_ko": "발키리",
+  "class": "lancer",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "B",
+    "mana": "A+",
+    "luck": "E",
+    "np": "B"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "종말환상・소녀강림",
+    "ruby_ko": "라그나로크・리브스라시르",
+    "rank": "B",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3033000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/303300/303300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/303300/303300b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 class), 사용자 검수 전.",
+  "traits": [
+    2,
+    101,
+    200,
+    300,
+    303,
+    404,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2040,
+    2797,
+    2837,
+    2847,
+    2851,
+    2858,
+    5000,
+    303300
+  ],
+  "lore": {
+    "detail": "갑옷을 입은 여전사. 주신의 딸들. 북유럽 신화의 최고 존재인 주신 오딘에 의해, 대량으로 제조되었다.\n수많은 전장의 하늘을 날며, 전사한 용사들 중에서도 자격이 있는 자를 선정하고, 주신의 궁전인 빛나는 황금의 발할라에 그 혼을 데리고 간다.\n북유럽 시대의 종말── 신들의 황혼이 찾아왔을 때, 거인들을 쓰러뜨릴 주신의 군세에 더하기 위해서."
+  },
+  "instant_death": true
+}

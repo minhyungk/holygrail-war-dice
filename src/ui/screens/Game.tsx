@@ -3,6 +3,8 @@
 // 다 보여 준 뒤 선택지(맵 행동 / choices)를 띄운다. 낮 메뉴 판정은 자동이며 주사위를 보이지 않는다 (D-145). 아침 마력 공급은 직접 던진다.
 import { type ReactNode, useCallback, useEffect, useRef, useState } from 'react';
 import { K, MAP_GRID, PHASES, TILES } from '../../data/constants';
+import { STAT_IDS } from '../../data/schema';
+import { parseRank } from '../../engine/stats';
 import { AFFINITY_TIERS as AFF_TIERS, tierOf } from '../../engine/affinity';
 import type { BattleInput, RollBreakdown } from '../../engine/combat';
 import type { RollResult } from '../../engine/dice';
@@ -15,12 +17,14 @@ import type { RunAnswer, RunPrompt, TileRole } from '../../engine/run';
 import type { RunView } from '../../engine/view';
 import { Art, clsStyle, DieFace, Glyph, LABELS, Ln, SealIcon, sealSrc } from '../components/common';
 import { BattleBackdrop, type Fx, FxLayer } from '../components/BattleFx';
+import { IntelCard } from '../components/IntelCard';
 import { RubyText } from '../components/Ruby';
 import { type ChoiceOpt, Choices, Vn } from '../components/Vn';
 import { REDUCED } from '../fx/circle';
 import type { DiceTable } from '../fx/dice3d';
 import { displayName, play, type Session, type ShownLine, skillLabel } from '../session';
 import { T } from '../strings';
+import { ffAutoAnswer } from '../autoChoice';
 import { escapePresentation, statLines, wasShown } from '../rollPresentation';
 import { End } from './End';
 
@@ -91,6 +95,11 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
   const [typing, setTyping] = useState(false);
   const [history, setHistory] = useState<ShownLine[]>([]);
   const [showLog, setShowLog] = useState(false);
+  /** 적끼리 전투가 벌어진 칸의 흔적 연출 (D-166). 맵이 보일 때 한 번 재생하고 사라진다 */
+  const [traces, setTraces] = useState<{ key: number; tile: string; kind: 'death' | 'retreat' | 'draw' }[]>([]);
+  const traceSeq = useRef(0);
+  /** 맵에서 누른 적 진영의 정보 카드 (D-166) */
+  const [intelOf, setIntelOf] = useState<string | null>(null);
   // 예상 승률은 조우 때 한 번 계산해 그 전투 동안 고정한다 (D-160). 조우 없는 강제 전투는 개시 때 계산
   const [forecastOf, setForecastOf] = useState<{ enemy: string; value: BattleForecast } | null>(null);
   const forecast = forecastOf?.value ?? null;
@@ -593,6 +602,11 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
         if (!ar) setView(p.after);
         if (e.type === 'battle_started' && e.data.sides.includes(p.after.player)) updateForecast(e.data.sides.find((x) => x !== p.after.player)!, e.data.forecast, true);
         if (e.type === 'battle_ended' || e.type === 'day_started' || e.type === 'night_started' || e.type === 'final_battle_bracket') setForecastOf(null);
+        if (!REDUCED && e.type === 'npc_battle_resolved' && e.data.result !== 'none' && p.after.factions[p.after.player]?.alive && !e.data.factions.includes(p.after.player)) {
+          // 전투 흔적 (D-166): 먼 칸·안개 속도 전부. 소멸 > 무승부 > 퇴각 순으로 약하게
+          const kind = e.data.dead ? 'death' : e.data.result === 'escape' ? 'retreat' : 'draw';
+          setTraces((t) => [...t, { key: ++traceSeq.current, tile: e.data.tile, kind }]);
+        }
         const out = !p.after.factions[p.after.player]?.alive && e.type !== 'eliminated';
         if (out) {
           setView(p.after);
@@ -673,6 +687,13 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
     void run();
   };
 
+  // 빨리감기 중에는 위험 진입(도주 선택)만 묻고 나머지는 자동으로 고른다 (D-166)
+  useEffect(() => {
+    if (!ff || !battle || !prompt || typing) return;
+    const auto = ffAutoAnswer(prompt);
+    if (auto !== undefined) answer(auto);
+  }, [ff, battle, prompt, typing]); // eslint-disable-line react-hooks/exhaustive-deps
+
   if (ended) return <End session={session} view={view} onExit={onExit} />;
 
   const meF = view.factions[P];
@@ -682,6 +703,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
   // ── 선택지 (목업 choices) ──
   const choice = ((): { q: string; opts: ChoiceOpt[] } | null => {
     if (!prompt || typing) return null;
+    if (ff && battle && ffAutoAnswer(prompt) !== undefined) return null; // 자동으로 고를 선택지는 띄우지 않는다 (D-166)
     switch (prompt.kind) {
       case 'phase_command': {
         // 국면 지시 (D-127, D-142): 마력 보구 개방 / 영주 보구 즉시 발동. 마력이 모자라면 이유와 함께 흐리게
@@ -836,6 +858,14 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
         <section className={`screen s-battle ${battle.isFinal ? 'final' : ''} ${shake ? (shake.heavy ? 'shake-heavy' : 'shake') : ''}`}>
           <BattleBackdrop final={battle.isFinal} />
           <FxLayer fx={fxList} />
+          {/* 소멸하는 서번트는 판정 카드 앞으로 나와서 사라진다 (D-166) */}
+          <div className="death-front" aria-hidden="true">
+            {dying.map((fc) => (
+              <div key={fc} className={`df ${fc === P ? 'a' : 'c'}`}>
+                <StandArt fc={fc} view={view} session={session} dying />
+              </div>
+            ))}
+          </div>
           <div className="bhead">
             <b>{ph.name}</b>
             <span>{ph.no}</span>
@@ -851,7 +881,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
             }}
           >
             <div className="bcol a">
-              <StandArt fc={P} view={view} session={session} dying={dying.includes(P)} />
+              {dying.includes(P) ? null : <StandArt fc={P} view={view} session={session} dying={false} />}
               <Profile fc={P} view={view} session={session} />
               <FighterCard side="a" fc={P} view={view} session={session} card={cards.a} name={name(P, view)} dc={battleDc !== null && phaseSides.current?.defender === P ? battleDc : null} />
             </div>
@@ -867,7 +897,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
               {rollCtaEl}
             </div>
             <div className="bcol c">
-              <StandArt fc={battle.enemy} view={view} session={session} dying={dying.includes(battle.enemy)} />
+              {dying.includes(battle.enemy) ? null : <StandArt fc={battle.enemy} view={view} session={session} dying={false} />}
               <Profile fc={battle.enemy} view={view} session={session} />
               <FighterCard side="c" fc={battle.enemy} view={view} session={session} card={cards.c} name={name(battle.enemy, view)} dc={battleDc !== null && phaseSides.current?.defender === battle.enemy ? battleDc : null} />
             </div>
@@ -923,11 +953,32 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
                   const lv = view.intel[f.id] ?? 0;
                   const esv = session.data.servants[f.servant_id]!;
                   return (
-                    <div key={f.id} className="token enemy" style={tokenPos(f.tile, f.tile === meF.tile ? 4 + i * 3 : i * 3)}>
+                    <button
+                      type="button"
+                      key={f.id}
+                      className={`token enemy ${lv >= INTEL.weakness ? 'weak' : ''}`}
+                      style={tokenPos(f.tile, f.tile === meF.tile ? 4 + i * 3 : i * 3)}
+                      aria-label={`${name(f.id, view)} ${T.intelCard.open}`}
+                      // 이동할 칸을 고르는 중이면 그 칸으로, 아니면 정보 카드 (D-166)
+                      onClick={() => (actionPrompt?.reachable.includes(f.tile) ? onTile(f.tile) : setIntelOf(f.id))}
+                    >
                       {lv >= INTEL.face ? <Art src={esv.images.face} cls={esv.class} /> : '?'}
-                    </div>
+                    </button>
                   );
                 })}
+                {traces.map((t) => (
+                  <div
+                    key={t.key}
+                    className={`trace ${t.kind}`}
+                    style={{ ...tokenPos(t.tile), ['--trace-ms' as string]: `${K['text.trace_fx'][`${t.kind}_ms`]}ms` }}
+                    aria-hidden="true"
+                    onAnimationEnd={(ev) => ev.target === ev.currentTarget && setTraces((all) => all.filter((x) => x.key !== t.key))}
+                  >
+                    <i className="flash" />
+                    <i className="ring" />
+                    {t.kind !== 'retreat' ? Array.from({ length: t.kind === 'death' ? 12 : 6 }, (_, k) => <b key={k} style={{ ['--k' as string]: k }} />) : null}
+                  </div>
+                ))}
                 <div className="tile-info">
                   {tileInfo ?? `현재 (${curTile.row},${curTile.col}) · ${curTile.name_ko} · ${TERRAIN_KO[curTile.terrain]} · ${ROLE_ICON[curTile.role]} ${T.role[curTile.role]}${curTile.tags.includes('center') ? ' · 중앙' : ''}`}
                 </div>
@@ -956,8 +1007,10 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
                     .map((f) => {
                       const lv = view.intel[f.id] ?? 0;
                       return (
-                        <li key={f.id} className={f.alive ? '' : 'out'}>
-                          {name(f.id, view)} <span>{`${lv}단계${lv ? ` · ${T.intelLevel[lv]}` : ''}`}</span>
+                        <li key={f.id} className={`${f.alive ? '' : 'out'} ${lv >= INTEL.weakness ? 'weak' : ''}`}>
+                          <button type="button" onClick={() => setIntelOf(f.id)} aria-label={`${name(f.id, view)} ${T.intelCard.open}`}>
+                            {name(f.id, view)} <span>{`${lv}단계${lv ? ` · ${T.intelLevel[lv]}` : ''}`}</span>
+                          </button>
                         </li>
                       );
                     })}
@@ -1059,6 +1112,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
           </div>
         </div>
       ) : null}
+      {intelOf && !battle ? <IntelCard fc={intelOf} view={view} session={session} onClose={() => setIntelOf(null)} /> : null}
       {showLog ? (
         <div className="modal" onClick={() => setShowLog(false)}>
           <div className="box" onClick={(e) => e.stopPropagation()}>
@@ -1152,6 +1206,24 @@ function Profile({ fc, view, session }: { fc: string; view: RunView; session: Se
   );
 }
 
+/** 전투 카드의 서번트 스테이터스 (D-167): 서번트 이름 아래. 적은 얼굴(정보 1단계, D-158)을 알아야 보인다 */
+function BattleStats({ fc, view, session }: { fc: string; view: RunView; session: Session }) {
+  const f = view.factions[fc];
+  if (!f) return null;
+  const sv = session.data.servants[f.servant_id]!;
+  const known = fc === view.player || (view.intel[fc] ?? 0) >= INTEL.face;
+  return (
+    <dl className="bp-stats" aria-label={T.statusLabel}>
+      {STAT_IDS.map((k) => (
+        <div key={k} title={known ? `${T.stat[k]} ${sv.ranks[k]} (${parseRank(sv.ranks[k]).value})` : T.stat[k]}>
+          <dt>{T.stat[k]}</dt>
+          <dd>{known ? sv.ranks[k] : '?'}</dd>
+        </div>
+      ))}
+    </dl>
+  );
+}
+
 function MasterFace({ name, src }: { name: string; src: string | null }) {
   const [failed, setFailed] = useState(false);
   return <span className="mb-face" aria-hidden="true">{src && !failed ? <img src={src} alt="" referrerPolicy="no-referrer" onError={() => setFailed(true)} /> : name.slice(0, 1)}</span>;
@@ -1213,6 +1285,7 @@ function FighterCard({ side, fc, view, session, card, name, dc }: { side: Side; 
           </div>
         </div>
       </div>
+      <BattleStats fc={fc} view={view} session={session} />
       <div className="cond">
         {[0, 1, 2].map((k) => (
           <i key={k} style={k < n ? { background: `var(--cond-${cond})` } : undefined} />

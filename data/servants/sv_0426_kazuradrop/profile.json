@@ -1,0 +1,56 @@
+{
+  "servant_id": "sv_0426_kazuradrop",
+  "source_id": 426,
+  "name_ko": "카즈라드롭",
+  "name_short_ko": "카즈라드롭",
+  "class": "alterEgo",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "C",
+    "mana": "B",
+    "luck": "C",
+    "np": "EX"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "assassin",
+  "noble_phantasm": {
+    "name_ko": "넓어져 가는 세계",
+    "ruby_ko": "갈리트랩・퍼니 무리안",
+    "rank": "B",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_10018000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1001800/1001800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1001800/1001800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    109,
+    201,
+    300,
+    303,
+    405,
+    1000,
+    1177,
+    2001,
+    2008,
+    2011,
+    2037,
+    2667,
+    2780,
+    2925,
+    5000,
+    1001800
+  ],
+  "lore": {
+    "detail": "사쿠라 파이브 중 한 명, 자애의 얼터에고. 인류 긍정파로서 인간을 위해 헌신하는 치료형 AI. 정돈된 체제, 도덕적인 규율을 지향하며, SE.RA.PH 내부 버그를 발견해 소거하는 바이러스 체커 역할도 맡고 있다.\n인간의 적으로 만들어진 다른 사쿠라 파이브와 달리, BB나 에고들 본연의 모습(모순투성이인 모습)에 반감을 품은 정의의 얼터에고."
+  },
+  "instant_death": false
+}

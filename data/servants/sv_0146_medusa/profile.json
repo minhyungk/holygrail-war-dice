@@ -1,0 +1,58 @@
+{
+  "servant_id": "sv_0146_medusa",
+  "source_id": 146,
+  "name_ko": "메두사",
+  "name_short_ko": "메두사 랜서",
+  "class": "lancer",
+  "ranks": {
+    "str": "C",
+    "end": "D",
+    "agi": "A",
+    "mana": "E",
+    "luck": "C",
+    "np": "A+"
+  },
+  "alignment": "good",
+  "alignment_detail": "중립·선",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "여신의 포옹",
+    "ruby_ko": "커레스 오브 메두사",
+    "rank": "B+",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3027000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/302700/302700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/302700/302700b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    101,
+    201,
+    302,
+    303,
+    404,
+    1000,
+    1110,
+    2000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2040,
+    2667,
+    2797,
+    2858,
+    5000,
+    302700
+  ],
+  "lore": {
+    "detail": "그리스 신화에 나오는 고르곤 세 자매의 막내.\n남자의 동경이 구현되어 완성된 ‘우상(아이돌)’으로 태어난 여신 중 하나.\n어떠한 요인에 의해 반영웅 메두사가 여신인 두 언니와 가까운 모습으로 현생에 나타난 서번트."
+  },
+  "instant_death": false
+}

@@ -1,0 +1,53 @@
+{
+  "servant_id": "sv_0330_martha_santa",
+  "source_id": 330,
+  "name_ko": "마르타[산타]",
+  "name_short_ko": "마르타 산타",
+  "class": "caster",
+  "ranks": {
+    "str": "C",
+    "end": "D",
+    "agi": "C",
+    "mana": "A",
+    "luck": "A+",
+    "np": "C+"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "성야의 만찬, 모두 즐겁게",
+    "ruby_ko": "해피 메리 크리스마스",
+    "rank": "C+",
+    "type_ko": "요리보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5050000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/505000/505000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/505000/505000b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    202,
+    300,
+    303,
+    404,
+    1000,
+    2001,
+    2008,
+    2009,
+    2631,
+    2858,
+    5000,
+    505000
+  ],
+  "lore": {
+    "detail": "스카사하=스카디의 조치에 의해 산타 영기가 된 마르타.\n2023년의 크리스마스에서는 새로운 산타클로스로서 동분서주하게 되는데───\n기억(기록)은 애매모호한 상태가 되었다. 마스터는 마스터로서 인식하고 있고 칼데아 소속의 영령이라는 자각은 있으나, 성녀 마르타라는 사실에 관해서는 자각이 약하다.\n소년 알렉산더와 비슷한 패턴이지만, 이번 마르타의 경우에는\n“내가 성녀님? 진짜로? 으~음, 당신들이 거짓말을 한다고는 생각하지 않지만, 믿기지 않네~”\n라면서 꽤나 남의 일 같다는 감각."
+  },
+  "instant_death": false
+}

@@ -1,0 +1,54 @@
+{
+  "servant_id": "sv_0408_hassan_of_the_shining_star",
+  "source_id": 408,
+  "name_ko": "요성의 하산",
+  "name_short_ko": "요성의 하산",
+  "class": "assassin",
+  "ranks": {
+    "str": "C",
+    "end": "D",
+    "agi": "A+",
+    "mana": "C",
+    "luck": "A+",
+    "np": "B"
+  },
+  "alignment": "evil",
+  "alignment_detail": "질서·악",
+  "alignment_verified": false,
+  "temperament": "assassin",
+  "noble_phantasm": {
+    "name_ko": "무상구체",
+    "ruby_ko": "자바니아",
+    "rank": "C+",
+    "type_ko": "대인/대군절기",
+    "special_attack": [
+      202
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6050000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/605000/605000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/605000/605000b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    105,
+    202,
+    300,
+    304,
+    404,
+    1000,
+    2001,
+    2008,
+    2631,
+    2858,
+    5000,
+    605000
+  ],
+  "lore": {
+    "detail": "검은 칼날, 검은 옷, 해골 가면을 쓴 암살자. 별명은 ‘요성의 하산’. 암살교단의 교주 ‘산의 노인’을 맡았던 역대 하산 사바흐 중 한 명이다.\n젊은 나이에 교주가 될 수 있었던 것은, 절기라고 부를 수 있을 수준의 이능을 체득했기 때문. 실제로 교단 전체의 의사결정을 했던 건 아니다. (이것은 정밀의 하산도 마찬가지다)\n교단의 장로들이 결정하는 대로, 임무를 완수해 나갔다."
+  },
+  "instant_death": false
+}

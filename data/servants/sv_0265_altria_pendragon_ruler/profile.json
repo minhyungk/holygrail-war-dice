@@ -1,0 +1,60 @@
+{
+  "servant_id": "sv_0265_altria_pendragon_ruler",
+  "source_id": 265,
+  "name_ko": "알트리아 펜드래곤",
+  "name_short_ko": "알트리아 룰러",
+  "class": "ruler",
+  "ranks": {
+    "str": "C",
+    "end": "A+",
+    "agi": "B",
+    "mana": "A",
+    "luck": "B",
+    "np": "A+"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "질서·여름",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "찬란할지어다, 나의 빛나는 연회장",
+    "ruby_ko": "브라이트 에항웬",
+    "rank": "A+",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_9009000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/900900/900900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/900900/900900b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    108,
+    200,
+    300,
+    308,
+    405,
+    1000,
+    2001,
+    2002,
+    2007,
+    2008,
+    2010,
+    2011,
+    2037,
+    2113,
+    2631,
+    2795,
+    2838,
+    2851,
+    5000,
+    900900
+  ],
+  "lore": {
+    "detail": "수영복 사자왕. 그 이름에는 세 가지 의미가 있다.\n첫 번째로, 현란 라스베가스를 지배하는 카지노들의 정점에 있는 카지노 카멜롯의 지배인.\n두 번째로, 수영복 검호 칠색 승부, 곧 수영복 검호 어전시합이, 어전시합인 이유─── 즉 한여름의 추억으로서 자신의 수영복과 자신의 검으로 경쟁하는 수영복 검호들을 지켜보는 주최자.\n세 번째로, 여름의 복장으로 모습을 바꾼 랜서 알트리아.\n이른바 제6특이점의 ‘사자왕’과는 완전히 다른 사람이니, 주의했으면 한다."
+  },
+  "instant_death": false
+}

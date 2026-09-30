@@ -1,0 +1,279 @@
+{
+  "speaker": "sv_0175_nero_claudius_caster",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "쏴라~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "커다란 꽃이 되어 흩어져라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "거기서 움직이지 마라! 에잇!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "두두두두, 둥!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "이 궤적은 별과 같이!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "참격 황제, 나간다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_2",
+        "text": "무슨 짓이냐!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_1",
+        "text": "이것이야말로 여름!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "여름의 화제를 독점, 이로구나!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "좋은 기회로군, 맡기도록 하여라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "꾸앙~ 꾸앙~ 불꽃이 쿠왕!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "나~이스, 나~이스, 나~이스 바디~♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것…… 말할 것도 없지. 물가에서 빛나는 한 떨기 붉은 장미…… 누구를 말하는지, 짐이 말할 것도 없겠지? 응?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것인가…… 피도 눈물도 없는, 그리고 붙임성도 없는 메이드로군. 마음은 맞지만, 도무지 귀엽지가 않다!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배 이야기는 말거라. 모처럼의 축제로 고양된 기분이 날아간다. 짐은 번영을 원하긴 하지만, 욕망을 즐기고 싶지는 않다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "드디어 대망의 수영복이다! 지금까지 길었다…… 캐스터 여우에게 선수를 빼앗겼을 때에는 마그나 볼루이세 마그눔할 뻔했다! 허나 보도록 하여라, 이 아름다운 건강미를! 이겼다!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "그런데 짐이 왜 캐스터인가 하는 이야기 말인데, 짐이 황제였던 무렵, 로마에는 시몬이라는 마술사가 있었지. 입은 험하고 태도는 나쁘고 성격도 나빠서 골치 아픈 녀석이었지만, 짐은 녀석이 마음에 들었다. 그때 가볍게 마술을 배운 적이 있었지. ……결코 억지로 캐스터가 된 것은 아니거든?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "음냐음냐…… 오오, 깜빡 졸아버렸군. 바캉스는 좋다…… 뜨거운 햇살 아래서 피부에 오일을 바르고, 탐스러운 과일을 즐기고, 야자집게에게 손가락을 물린다…… 아니, 마지막 것은 안 해도 되는 말이었군……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "그럼 헤엄치러 가자, 마스터! 위대한 로마 황제는 많이 있지만, 짐만큼 여름이 어울리는 황제는 없겠지! 이 수영복, 이 정열은 나의 계약자를 위하여! 빛나는 극장 전부가 이 여름을 축복하노라!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "작열의 여름, 정열의 무대로 간다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "짐에게 반했느냐? 음, 음, 이 정직한 녀석~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "극장은 바다에서 온다─── 호화! 장엄! 그러면서 유려! 보도록 하여라, 이것이 명예를 노래하는 일루스테리아스─── 다시 말해, 짐의 황금극장이다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "기대하도록 해라, 이것이 극상의 오로라…… 후후훗! 저게 누구냐? 미녀냐? 로마냐? 물론 짐이거든? 라우다렌툼 도무스 일루스테리아스!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "좋은 공연이었다! 다음 공연도 기대하도록 해라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "으, 음…… 너무 거창했을지도 모르겠군……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "어리석은 것, 지금부터가 짐의 진짜 실력인 것을!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "조금 지친 고로 짐은 쉬기로 하였다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "갑작스러운 수영복, 놀랐나? 놀랐겠지? 음. 짐도 기뻐서 두근두근하고 있다! 캐스터, 네로 클라우디우스, 소환에 응해 찾아왔다! 잊을 수 없는 여름으로 만들어보지 않겠나!",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

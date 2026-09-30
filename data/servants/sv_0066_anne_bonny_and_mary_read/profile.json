@@ -1,0 +1,53 @@
+{
+  "servant_id": "sv_0066_anne_bonny_and_mary_read",
+  "source_id": 66,
+  "name_ko": "앤 보니&메리 리드",
+  "name_short_ko": "앤&메리 라이더",
+  "class": "rider",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "A",
+    "mana": "E",
+    "luck": "B",
+    "np": "C"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "비익이자 연리",
+    "ruby_ko": "캐리비언 프리 버드",
+    "rank": "C++",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4009000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/400900/400900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/400900/400900b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    103,
+    202,
+    301,
+    304,
+    404,
+    1000,
+    2001,
+    2008,
+    2631,
+    2858,
+    2881,
+    5000,
+    400900
+  ],
+  "lore": {
+    "detail": "앤 보니와 메리 리드는 대해적 시대에 실존한 여자 해적이다. 우연히 알게 된 두 사람은 해적으로서 존 라캄 선장 밑에서 활약했다.\n앤은 총의 명수, 메리는 단검(커틀러스)으로 돌격하는 역할을 담당했다고 한다."
+  },
+  "instant_death": false
+}

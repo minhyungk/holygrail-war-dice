@@ -1,0 +1,56 @@
+{
+  "servant_id": "sv_0311_tam_lin_tristan",
+  "source_id": 311,
+  "name_ko": "바반 시",
+  "name_short_ko": "바반 시",
+  "class": "archer",
+  "ranks": {
+    "str": "A",
+    "end": "C",
+    "agi": "A",
+    "mana": "B",
+    "luck": "D",
+    "np": "E"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "avenger",
+  "noble_phantasm": {
+    "name_ko": "통환의 곡주",
+    "ruby_ko": "페치・페일노트",
+    "rank": "C",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2043000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/204300/204300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/204300/204300b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    102,
+    201,
+    301,
+    304,
+    404,
+    1000,
+    1177,
+    2001,
+    2008,
+    2009,
+    2011,
+    2019,
+    2037,
+    2858,
+    5000,
+    204300
+  ],
+  "lore": {
+    "detail": "요정국 브리튼에서의 원탁의 기사, 그중 한 명. 범인류사에서의 원탁의 기사・트리스탄의 영기를 착명한 요정기사.\n이문대 브리튼을 지배하는 여왕 모르간의 ‘딸’, 후계자로서 우대받고 있다.\n마술이 필요 없는 이문대 브리튼에서, 마녀로서 키워진 두 명의 요정 중 하나."
+  },
+  "instant_death": false
+}

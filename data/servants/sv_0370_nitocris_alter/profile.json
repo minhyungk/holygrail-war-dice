@@ -1,0 +1,61 @@
+{
+  "servant_id": "sv_0370_nitocris_alter",
+  "source_id": 370,
+  "name_ko": "니토크리스(얼터)",
+  "name_short_ko": "니토크리스 얼터",
+  "class": "avenger",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "B",
+    "mana": "EX",
+    "luck": "EX",
+    "np": "A"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "avenger",
+  "noble_phantasm": {
+    "name_ko": "아름다운 나의 명부, 그 길을 열어라",
+    "ruby_ko": "네페루 수엔 아누비스",
+    "rank": "A",
+    "type_ko": "대인/대군보구",
+    "special_attack": [
+      202
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_11015000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1101500/1101500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1101500/1101500b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    110,
+    200,
+    301,
+    304,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2040,
+    2113,
+    2631,
+    2797,
+    2847,
+    2851,
+    5000,
+    1101500
+  ],
+  "lore": {
+    "detail": "단죄의 구현─── 통상 영기일 때에도 보유하고 있는 ‘성난 신벌 집행자’로서의 측면이 예외적일 만큼 강하게 나타날 때, 영령 니토크리스는 얼터 영기로 현계한다.\n그야말로 어두운 사막의 밤에 부는 얼어붙은 바람과 같은 자, 니토크리스 얼터.\n천공신 호루스의 화신이자 명계를 통치하는 파라오가 아닌, 명계의 신 아누비스의 현현, 명계의 여왕이자 천공에도 자리하는 파라오인 것이다.\n본래의 인류사에서는 소환될 수 없는 존재."
+  },
+  "instant_death": true
+}

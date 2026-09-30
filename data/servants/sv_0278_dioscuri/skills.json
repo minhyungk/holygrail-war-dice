@@ -1,0 +1,76 @@
+{
+  "servant_id": "sv_0278_dioscuri",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_mad_enhancement",
+      "name_ko": "광화",
+      "rank": "B-",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_avenger",
+      "name_ko": "복수자",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_oblivion_correction",
+      "name_ko": "망각보정",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_self_restoration_magical_energy",
+      "name_ko": "자기회복(마력)",
+      "rank": "D",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_core_of_the_twin_gods",
+      "name_ko": "쌍신의 신핵",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_star_of_the_king_of_the_gods",
+      "name_ko": "주신의 별",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_guardian_of_sea_voyagers",
+      "name_ko": "항해의 수호자",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_a737551",
+      "name_ko": "마력방출(빛/고대)",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

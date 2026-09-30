@@ -1,0 +1,62 @@
+{
+  "servant_id": "sv_0015_euryale",
+  "source_id": 15,
+  "name_ko": "에우리알레",
+  "name_short_ko": "에우리알레",
+  "class": "archer",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "C",
+    "mana": "EX",
+    "luck": "EX",
+    "np": "C"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "여신의 시선",
+    "ruby_ko": "아이 오브 디 에우리알레",
+    "rank": "B",
+    "type_ko": "대인보구",
+    "special_attack": [
+      1
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2012000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/201200/201200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/201200/201200b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    102,
+    200,
+    301,
+    303,
+    403,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2040,
+    2780,
+    2797,
+    2835,
+    2850,
+    2851,
+    2858,
+    5000,
+    201200
+  ],
+  "lore": {
+    "detail": "그리스 신화에 나오는 고르곤 세 자매의 둘째. 남자의 동경이 구현되어 완성된 ‘우상(아이돌)’, ‘이상적인 소녀’로 태어난 여신.\n순진무구를 형상화한 듯한 아리따운 소녀. 언니로 스테노, 여동생으로 메두사가 있다."
+  },
+  "instant_death": false
+}

@@ -1,0 +1,58 @@
+{
+  "servant_id": "sv_0060_orion",
+  "source_id": 60,
+  "name_ko": "오리온",
+  "name_short_ko": "오리온",
+  "class": "archer",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "B",
+    "mana": "A",
+    "luck": "A+",
+    "np": "A+"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "달의 여신의 애정과 연심의 화살",
+    "ruby_ko": "트라이스타 아모레 미오",
+    "rank": "A+",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2009000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/200900/200900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/200900/200900b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    102,
+    200,
+    301,
+    305,
+    405,
+    1000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2114,
+    2631,
+    2835,
+    2847,
+    2851,
+    2858,
+    5000,
+    200900
+  ],
+  "lore": {
+    "detail": "아르테미스는 오리온을 부속품으로 삼아 소환되었다. 정정, 반대다. 소환하니 어째서인지 여신 아르테미스가 따라왔는데, 그리스 신화의 영웅 오리온이다.\n덤으로 오리온은 사람이라고도 짐승이라고도 할 수 없는 기괴한 생물(인형 마스코트)로 변해 있었다."
+  },
+  "instant_death": false
+}

@@ -1,0 +1,437 @@
+{
+  "speaker": "sv_0371_tezcatlipoca",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "엇차! ──칫! 안 맞네!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "운이 없구만, 피차!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "이거라면 먹히겠지?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "3(트레스), 2(도스)라지.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "휘유~ 재난이군, 재난이야!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "숭상하라, 손해는 없을 거라구.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "엿차.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_8",
+        "text": "요리는 좋아하나?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_9",
+        "text": "해볼까.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_10",
+        "text": "성공을 빌어달라고?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_11",
+        "text": "그래, 좋은 아침이다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_12",
+        "text": "여어, 수고하셨어.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_13",
+        "text": "덤이다, 가져가.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_14",
+        "text": "아직 살아있나?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "운수 시험이다. 죽음을 대비해라.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "가끔은, 그럴싸한 일도 하는 거지.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "마음에 들었어, 서비스다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "좋은 바람이야, 짜릿한걸.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "앙?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "장전, 장전…… 어이쿠야!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "요령을 좀체 못 잡겠군.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "태양이 흐릿해졌구만.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "아차, 잊고 간 물건이다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_5",
+        "text": "해볼 테냐? 형제.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_6",
+        "text": "세계를 멸하는 싸움이다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "나는 본래 룰러나 버서커야. 이번에 어쌔신인 것은 자기 사정으로 직함을 내놓은 녀석이 있어서 말이지. 달리 할 만한 녀석도 없어서 어쩔 수 없이 받은 거다. ……정말이거든?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "나는 운이 없어. 가혹한 싸움을 바라기 때문일 테지. 전장에서는 대체로 최악의 사태를 불러들이곤 해. 그럴 때는 버텨라, 죽어도 이겨내라. 그 후에 좋은 일이 있다. 뭐, 셈 해보면 이득은 조금뿐이지만.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "왜 현대 유행에 따르냐고? 소환자에 맞추고 있다…… 고 말하면 변명인가. 나는 전쟁을 좋아하는데, 특히 19세기부터 21세기 부근이 재미있더군. 이 총도 그 일환이야. 어째 도통 숙달되지를 않아. 애정을 쏟으면 쏟을수록 외면받는 것은 내 특성일지도 모르지.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "“도망 다니고, 살인을 꺼리고, 정의를 의심한다. 그런 겁쟁이는 전사로서 인정할 수 없다.” 너에게 선사한 말은, 지금도 똑같아. 나는 당해낼 방법이 없는 위협과 싸우는 인간을, 살해당하더라도 포기하지 않는 인간을, 전사로서 우대한다. ……요컨대 그런 소리다. 시점의 차이란, 오묘하지.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "너에게 내린 시련은 아직 진행 중이다, 끝은 없어. 계속되면 계속될수록 하드해져. 밤에 또 밤이 이어지는 거지. 동 틀 녘을 맞이하려면 약간의 궁리가 필요해. 응? 왜 설탕 과자를 주는 거냐고? 당분은 필요하잖냐, 머리 회전이 빨라져. 그밖에는 뭐, 조금은 낙이란 게 있어야지. 어리광 피우면 과자로 달래야지 않겠냐.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것? 그야 이 장난감(총)이지. 누구든 쥐기만 하면 전사가 될 수 있어. 나는 싸움에 기술입네 훈련입네 하는 건 바라지 않아. 햇병아리 병사라도 적만 죽일 수 있으면 되는 거야.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것? 그거 의식한다는 거 말이냐? 마음에 안 들면 한 대 갈기면 돼. 그러면 없어져. 그렇지? 싫어하는 것은, 언제나 없다는 소리야.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "대가 없이 소망을 이루어준단 말이지. 참으로 편리한 이야기군. 녀석들이 할 만한 생각입니다요, 나 원 참.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "전투할 시간인가? 기다리고 있었다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "가능한 한 행실 바르게 말이지? 시대의 스타일에는 맞추고말고.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "교섭은 상냥하게, 사투는 엄하게. 알기 쉽지?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "자, 이번에는 맞으면 좋겠는데.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "에헤카틀, 에헤카틀, 요왈리 에헤카틀, 티틀라카완. 멸망의 순간이다, 다음 세계로 가라. 토날・테페욜로틀!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "바람이 불기 시작했군. 산의 심장, 연기 나는 거울, 하늘과 땅을 소유하는 자. 제1의 태양, 여기서 죽었도다!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "정식으로 자기소개를 하지. 나는 검고, 붉고, 파랗고, 하얗고, 지금도 살아있는 죽음 그 자체. 야야우키・테스카틀리포카!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_4",
+        "text": "에헤카틀, 에헤카틀, 요왈리 에헤카틀, 티틀라카완. 멸망의 순간이다, 다음 세계로 가라. 토날・테페욜로틀!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_5",
+        "text": "바람이 불기 시작했군. 산의 심장, 연기 나는 거울, 하늘과 땅을 소유하는 자. 제1의 태양, 여기서 죽었도다!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_6",
+        "text": "정식으로 자기소개를 하지. 나는 검고, 붉고, 파랗고, 하얗고, 지금도 살아있는 죽음 그 자체. 야야우키・테스카틀리포카!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "용감하게 싸웠다면, 쓰레기든 괴물이든 상관없다. 환영하마, 형제.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "스마트하게 싸웠군그래. 총기는 간단해서 좋아.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "자아, 그러면 회수 타임이다! 우는소리 말고는 다 자원이 되지, 다음 전쟁에 대비하자!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "내가 이 꼬라지인가. 싸움은 이래서──",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "아~아, 아끼는 선글라스였는데……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "여어! 당신이 마스터인가? 잘 부탁한다. 서번트, 어쌔신. 테스카틀리포카다. 나는 보다시피 인텔리라서 말이야. 타인과의 수다라는 걸 제일 좋아하는데…… 안심해라. 사실은 싸움도 아주 좋아해. 그렇게 부담 갖지 마. 즐겁게 지내자고, 마스터?",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

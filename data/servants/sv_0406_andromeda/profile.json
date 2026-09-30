@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0406_andromeda",
+  "source_id": 406,
+  "name_ko": "안드로메다",
+  "name_short_ko": "안드로메다",
+  "class": "rider",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "B",
+    "mana": "C",
+    "luck": "A",
+    "np": "C"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "그 바다에 잠든 고래룡",
+    "ruby_ko": "아이티오피아・케투스",
+    "rank": "C",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4055000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/405500/405500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/405500/405500b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    103,
+    201,
+    300,
+    303,
+    405,
+    1000,
+    2001,
+    2008,
+    2009,
+    2011,
+    2037,
+    2631,
+    2858,
+    5000,
+    405500
+  ],
+  "lore": {
+    "detail": "그리스 신화에서 신들의 분노를 진정시키기 위해 바다 괴물에게 제물로 바쳐졌고, 우연히 그곳에 찾아온 대영웅 페르세우스에게 구출되었다고 이야기되는 소녀.\n쇠사슬로 바닷가의 바위에 묶여있던 모습이 그림 등으로 그려지는 경우가 많다.\n페르세우스에게 구출된 뒤, 안드로메다는 그의 아내가 되어 많은 자식을 낳았다고 한다. 그 핏줄 속에는 이후의 대영웅인 헤라클레스도 포함되어 있으며, 안드로메다에게는 증손자에 해당한다."
+  },
+  "instant_death": false
+}

@@ -1,0 +1,353 @@
+{
+  "speaker": "sv_0211_sakamoto_ryouma",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "[오료] : 하아아아앗…… 아앗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "[오료] : 가라! [료마] : 오케이!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "[료마] : 세잇! [오료] : 한방 더!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "[오료] : 하아아앗…… 으랴앗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "[오료] : 지금이라구! [료마] : 예이예이, 알고 있다굽쇼!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "[오료] : 간다. [료마] : 이것으로…… 끝이다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "[료마] : 오료 씨, 타이밍을 맞춰 줘! [오료] : 맡겨둬. ……하아앗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "[료마] : 크으읍……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "[료마] : 크윽!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "[오료] : 으그그그그극……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "[오료] : 안 통해…… 큭.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "[오료] : 헤이헤이, 쫄아있는 거냐~이. [료마] : 아니아니, 도발하지 마.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "[오료] : 저 녀석, 먹어도 되나? [료마] : 그러면 안 돼.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "[오료] : 오료 씨의, 진정한 힘이 눈을 뜬다…… [료마] : 그거 고마운걸.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "[오료] : 빨리 덤벼보라구~ [료마] : 가능하면 도망쳐 주면 기쁘겠는데 말이지.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "[오료] : 어이, 너. 오료 씨를 함부로 만지작거리지 마. 먹어 버린다구. [료마] : 미안해, 이렇게 보여도 오료 씨는 낯을…… 아니, 인간을 가리니까.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "[료마] : 아아, 너구나. 또 오료 씨를 만나러? 뭐? 내 쪽? ……그렇구나, 그러면 느긋하게 이야기를 나눌까? 뭐? ……아아, 그거 말인가. 토사 사투리는 진명을 들키기 쉬우니까 평소에는 잘 사용하지 않도록 하고 있어. [오료] : 어이, 오료 씨도 끼워줘.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "[오료] : 어이, 오료 씨가 이야기할 테니, 료마는 차라도 가지고 와. [료마] : 어이쿠야, 그 오료 씨가 말이지…… [오료] : 그래서 말이지, 그곳에서 오료 씨가, 산의 신인지 뭔지를 날려버렸더니, 위쪽에서 이상한 녀석이 내려와서 말이야. [료마] : 그러면, 잘 부탁해.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "[료마] : 뭐? 내 최후에 대한 이야기? 아아, 그거 말인가…… 실은 말이지 [오료] : 이봐, 그만둬라. 그 이야기는 오료 씨한테 뼈 아프다. [료마] : 아아, 미안미안. 실은 오료 씨는 그때 물건을 사러 나가는 바람에, 나를 지키지 못했다고 후회하고 있는 모양이야. 그러니까 이 이야기는 또 다음 기회에. [오료] : 안심해라. 이번에는 너도 료마도, 지켜주마.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "[료마] : 너에게는 뭐라고 할지, 신기한 매력이 있어. 나도 비슷한 소리를 듣기는 했었지만, 너하고는 비교도 안 될 거야. 그도 그럴 것이, 네 곁에는 전 세계의 영령이 모여서 싸우잖아. 이것은 웬만한 동맹 정도의 이야기가 아니지. 그야말로 세계를 하나로 연결하고 있는 것과 같아. 그런데도 너는, 그것을 내세우지 않고 자연스럽게 지내고 있어. 너는, 그런 너 자신을 소중히 생각했으면 좋겠어. 그것은 분명히, 너의 소중한 것이 될 테니까. [오료] : 료마, 말이 많아.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "[료마] : 좋아하는 것? 그렇지, 생선회라든지…… 술도 좋아해. 어, 닭전골? 나는 몰라도, 오료 씨가 질색해서 말이지. [오료] : 그 이야기는 됐어. 자자, 끝이야 끝.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "[료마] : 싫어하는 것이라…… 그렇군. 큰 일이든 작은 일이든, 슬픈 일은 싫어. 그게 싫어서 분주히 돌아다니는 것이니까. [오료] : 오료 씨는 호불호가 없다구. 개구리 같은 건 좋아하고.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "[료마] : 성배라. 나는 그 왜, 다른 사람과는 사정이 조금 다르니까, 소원이라 해도 말이지. 굳이 말하자면, 그렇지…… 모두가 행복하게 살 수 있는 세상 같은 것이려나. [오료] : 오료 씨는, 많은 소원이 있다구. 그거랑, 이거랑…… 그리고 개구리랑…… 그리고 또 [료마] : 응, 그런 것은 스스로 이루도록 해.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "[료마] : 자, 그럼 가보자, 오료 씨. [오료] : 얼마든지 맡겨줘.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "[오료] : 똑바로 하라구, 료마. [료마] : 네, 네, 노력해 보도록 하겠습니다요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "[오료] : 좋았어~ 오료 씨, 조금은 진짜로 힘을 내 볼까. [료마] : 이크, 위험하니까 다들 떨어져 있어.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "[료마] : 아마사카호코에 꿰뚫린, 이 땅의 오로치…… 내가 이루는 일은 나만이 아나니── 하늘을 나는 용과 같이! [오료] : 하아아아아아아아앗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "[오료] : 예~이, 피스피스. [료마] : 아니아니, 진지하게 부탁해. [오료] : 맡겨둬. 오료 씨 대변신…… 하늘을 나는 용과 같이! [료마] : 먹으면 안 된다니까?! 아, 먹었네.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "[료마] : 이것이 나의 보구…… 가자, 오료 씨! [오료] : 아아. 가자……! [료마] : 하늘을 나는 용과 같이! 이것으로…… 끝이여어어어!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "[료마] : 이야~ 위험했네. [오료] : 오료 씨는 완전 여유만만.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "[오료] : 이겼다. 오료 씨, 완결. [료마] : 아니~ 끝나버리면 안 되잖아.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_4",
+        "text": "[오료] : 신경 쓰지 마, 오료 씨가 너무 강했을 뿐이야. [료마] : 그러니까 도발하지 말라니까.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "[료마] : 하핫, 이거 난처하게 됐네, 아무래도……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "[오료] : 미안하다, 더 이상…… 움직일 수 없어.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "[료마] : 더 이상…… 안 돼……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_4",
+        "text": "[오료] : 또…… 지키지 못했어……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "[료마] : 라이더, 사카모토 료마. 소환에 응해 여기에 왔어. 아아, 이쪽은 파트너인 오료 씨. 나와 함께 잘 부탁해. [오료] : 잘 부탁한다, 인간. ……그런데 너 맛있어 보이는구나. [료마] : 아니아니, 그러면 안 된다고……",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0260_salome",
+  "source_id": 260,
+  "name_ko": "살로메",
+  "name_short_ko": "살로메",
+  "class": "berserker",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "B",
+    "mana": "D",
+    "luck": "C",
+    "np": "B"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "berserker",
+  "noble_phantasm": {
+    "name_ko": "당신에게 입맞춤을 했어",
+    "ruby_ko": "팜 파탈・베제",
+    "rank": "B",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7034000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/703400/703400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/703400/703400b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    106,
+    201,
+    301,
+    304,
+    402,
+    1000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2631,
+    2847,
+    2858,
+    5000,
+    703400
+  ],
+  "lore": {
+    "detail": "살로메는 구세주와 같은 시기에 갈릴리와 페레아를 지배하던 네 명의 영주(당시의 이스라엘은 로마의 지배 아래에 있었기 때문에, 정확히는 통치대리인) 중 한 사람인, 헤로데 안티파스의 수양딸이다.\n세례자 요한, 밥티스마의 요한을 사랑한 그녀는, 양아버지인 헤로데 왕이 자신을 연모하는 것을 이용하여 요한을 손에 넣는다.\n세례자를 감옥에서 내보내는 것만은 용납할 수 없다는 헤로데 왕을 유혹하여, 요한을 참수하게 만들어───\n사랑하는 자의 목을 얻은 것이다."
+  },
+  "instant_death": false
+}

@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0324_jacques_de_molay",
+  "skills": [
+    {
+      "skill_id": "sk_entity_of_the_outer_realm",
+      "name_ko": "영역 밖의 생명",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_territory_creation",
+      "name_ko": "진지작성",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_divinity",
+      "name_ko": "신성",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_investiture_in_depravity",
+      "name_ko": "타락의 서임",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_holy_shroud_false",
+      "name_ko": "성해포(가짜)",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_innocent_monster",
+      "name_ko": "무고의 괴물",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

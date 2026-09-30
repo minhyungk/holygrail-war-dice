@@ -1,0 +1,465 @@
+{
+  "speaker": "sv_0399_saika_magoichi",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "소탕한다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "이얍이얍~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "척탄 투사!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "슈바바바바.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "마고이치, 저격한다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "나선탄, 직격시킨다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "방해하지 마!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_8",
+        "text": "아직 끝나지 않았어!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_9",
+        "text": "그쯤!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_10",
+        "text": "M51 철갑탄, 발사~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_11",
+        "text": "뛰어든다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_12",
+        "text": "그 방심이 목숨을 앗아갈걸.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_13",
+        "text": "이 거리라면 빗나가지 않아.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_14",
+        "text": "사이카 컴뱃, 샷!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "나의 모든 것을! 가랏~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "이거랑 이거랑 이거랑 이거랑 이거랑 이거랑 이거, 전부!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "몰아붙인다! 전 포문 일제 사격, 쏴라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_4",
+        "text": "사이카 결전 사양 전개, 마고이치 풀 버───스트!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "사이카는, 지지 않아……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "웃!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "호와와와와?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "경솔했어.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "장전 완료, 할 수 있어.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "어린아이가 아니니까. ……아니거든.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "보여? 나의 반딧불이.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "보급을 경시해서는 안 돼.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_5",
+        "text": "뜬금없이 런치 타임.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_6",
+        "text": "우물우물…… 응, 맛있어.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "업무 관련이 아니라면 너무 자주 말을 걸지 않았으면 해. 사람과 대화하는 건 어려워. 혼자 있는 게 성격에 맞아. 그리고…… 나와 이야기를 나눠봤자, 딱히 즐겁지 않을 테니까.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "나는 사이카 중에서도 멀리서 저격하기보다 가까이 붙어서 근접전을 벌이는 쪽이 특기야. 그래, 멀리서 쏴서 안 맞는다면 가까이 가서 쏘면 돼. 의표를 찌를 수도 있으니 일거양득. 내가 보기에도 영리한 전술. ……뭐야? 그 흐뭇한 광경이라도 보는 듯한 표정. 조금 불만.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "사이카는 맡은 임무는 반드시 완수해. 아무리 어려운 일이라도 계승한 기술과 사이카의 정신이 그것을 가능케 하지. 그리고 그건 편의점 심부름을 할 때도 마찬가지. 맡겨둬, 반드시 의뢰한 물건을 손에 넣고 돌아올게.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "나는 마지막 사이카라서 뒤를 이을 사람이 없어. 괜찮다면, 당신에게 내가 가진 사이카의 기술을 가르칠 테니, 계승을…… 분명 당신에게는 필요 없겠지. 곤란하게 됐어. 그렇게 되면, 후계자는…… 그쪽이라면 협력해 줄 수 있을까?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "사이카는 누구의 아군도 되고, 누구의 적도 되어왔어. 그것은 강한 힘을 지닌 자신들에 대한 족쇄이기도 했지만, 자신들이 싸우는 의미에서 눈을 돌리고 있던 것뿐일지도 몰라. 이윽고 사이카는 멸망했지만, 나는 그것을 인정하고 싶지 않아서 계속 싸우고, 마지막 사이카로서 죽었어. ……무엇을 위해 살고, 무엇을 위해 싸웠는지 알지 못하고 죽었어. 하지만 서번트가 되고 나서야 겨우, 내가 무엇을 위해서 싸웠는지 알 것 같아. 그래, ‘내가 믿은 것을 위해 싸운다’, 그것이 나의 사이카. 무척 간단한 것이었지만, 바보 같은 내가 그걸 깨달은 건, 분명히 당신 덕분…… 그러니까 계속 곁에서 싸우게 해줄래? ……나와 당신을 위해서.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 음식은 고기. 내가 살던 시대에는 별로 일반적이지 않아서 이상한 눈으로 보는 사람도 있었지만, 나는 자주 사냥해서 먹었어. ……고기를 먹는 아이는 싫어?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "남을 속이는 사람은 싫어. 나는 바보고 단순하니까, 금방 속아. 그 때문에 과거에 여러 번 고약한 경험을 했지. 그래도 인간을 속이는 것보다는 속는 편이 나아.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "어떤 소원이라도 이루어주는 성배…… 그러면 조금만 키를…… 아니, 그건 안 돼. 소원은 직접 이뤄야 하니까. 일단, 매일 아침 우유를 마실게.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "언제나처럼, 사이카의 싸움을 할 뿐.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "맡겨둬. 야타가라스의 인장이, 당신을 승리로 이끌 거야.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "방아쇠를 당기려면, 각오를 해둬.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "잠깐 기다려! 준비가 아직 끝나지 않─── 끝났다. 좋아, 덤벼라.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "표적 포착. ───지금부터 사이카를 개시한다. 슈바바바바! 투다다다! 퓽퓽! 파바바바바바바! 꽈광~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "───쏴라. 쏴라, 쏴라. 쏴라쏴라쏴라쏴라쏴라쏴라쏴라쏴라쏴라쏴라쏴라…… 쏴라───!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "나의 이름은 마고이치. 이 이름이야말로 사이카가 단련한 전장의 술리임을 알라. ‘총신・야타가라스’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_4",
+        "text": "땅을 기듯 달리는 검은 날개. 찢고 부수는 하나 둘 셋의 발톱과 이빨! ‘총신・야타가라스’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "임무 완료. 사이카의 도움이 필요할 때면, 언제든지 불러.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "사이카가 아군으로 들어온 자는 반드시 승리한다, 적으로 돌리면 반드시 패배한다. ───이거, 과장이 아냐.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "내가 있는 한, 당신은 죽지 않아.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_4",
+        "text": "만만히 본 그 순간 운이 다한 거야. 마고이치의 이름은 장식이 아냐.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "미안, 마고이치……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "손상 막대…… 일시 잠복한다…… 두고 보자……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "임무, 실패…… 환불 보증할, 테니까……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_4",
+        "text": "역시, 나는……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "아처, 사이카 마고이치. 포상이나 무훈을 위해서가 아니라, 당신의 신념을, 그리고 나의 마음을 따른다. 그것이 내가 찾아낸 대답이니까…… ……그렇다고는 해도 형식은 중요, 고용 형태는 이른바 종신 고용 계약으로 부탁해. 도장은 여기. 응, 죽을 때까지 계속 곁에 있을 테니까.",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

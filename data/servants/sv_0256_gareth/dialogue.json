@@ -1,0 +1,317 @@
+{
+  "speaker": "sv_0256_gareth",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "에잇! 야압!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "타앗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "가랏!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "하낫~둘! 꽈앙~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "크으읍!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "이까짓 거!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "뭐야, 이거?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "아직 멀었다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "체력에는 자신 있다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "저의 손, 자주 칭찬받는다고요! 에헤헷!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "반지여, 힘을!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          },
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "롯 왕과 모르간의 자식, 가레스입니다. 과거에는 아서왕을 섬기고, 원탁 제7석을 받았었습니다. 아, 물론 초대 7석은 아니랍니다. 원탁의 기사는, 항상 같은 멤버였던 것은 아니에요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "저는, 원탁에 들어온 최후의 기사…… 라고 하면 되려나요? 미숙한 몸이지만, 다른 기사 분들, 그중에서도, 폐하와 랜슬롯 경이 저를 발탁해 주셨지요. 앗, 말씀드렸던가요? 저, 랜슬롯 경의 시종 비슷한 일을 하고 있었답니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "“언젠가, 가장 뛰어난 기사가 될 것이다”, “언젠가, 형제 모두에 필적할 만한 진정한 기사가 될 것이다” 다들 그렇게 말씀해 주셨는데, 정말 분에 넘치는 말씀이었지요. 네? 압박감? 물론 있었습니다만, 없었다고도 할 수 있겠고요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "랜슬롯 경에 대한 고발을, 아그라베인 오라버니가 결의하셨을 때는, 슬펐습니다. 그저 몹시, 슬펐습니다. 저는 물론 반대했었죠. 그도 그럴 것이, 정식으로 저를 기사로 임명해 주신 분이 랜슬롯 경이었는걸요. 저에게, 그렇게 되고 싶은, 이상적인 기사였습니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "네, 과거의 저는, 랜슬롯 경에게 살해당했습니다. 무슨 일이 벌어졌는지도 잘 몰랐다…… 라고나 할까요. 귀네비어 님을 구출하기 위해 달려 온 랜슬롯 경의 모습을 보고, 저는 그분에게…… 아니요, 미련이겠죠! 이제 와서 무슨 말을 한들, 그날의 저를 막을 수는 없었을 테고, 저는 어떤 말도 들을 수 없었을 테고, 랜슬롯 경의 손이 제 머리를 쪼갰던 과거는 변하지 않습니다. 랜슬롯 경의 눈동자에는, 제가 조금도 비치지 않았던 것이겠지요. 알고 있어요! 이제 와서는 새삼 원통하지도 않습니다! 다만, 창을 휘두르던 시절의 모습으로 소환되었으면, 그때와 마찬가지로, 전력을 다해 싸울 뿐! 저는, 노력하겠습니다!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것이요? 창과 방패! 창만으로도 괜찮습니다만! 창 시합을 해 주실 분, 없으실까요? 하지만, 실내에서 말을 타고 달리는 것도 좀……",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것은 기름때입니다. 좀처럼 지워지질 않는다고요, 그거",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "마력의 덩어리? 로서의 성배에 흥미는 없습니다. 진정한 성배, 과거에 나의 왕께서 추구하신 것이라면, 어쩌면…… 아니요, 혹시 있다고 해도 저 같은 자는 손에 넣을 수 없었겠죠. 원탁 중에서도 성배를 얻을 수 있었던 사람은 유일하게, 갤러해드 경뿐. 다른 가능성 있는 사람이라면…… 아아, 그러네요. 퍼시벌 경이라면, 어쩌면……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "원탁 제7석, 가레스 갑니다!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "이 가레스, 승리를 획득해 보이겠습니다!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "진심으로, 싸우겠습니다! 괜찮으시겠지요!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "갑니다! 에에~잇! 우오오오오! 마무리! ‘사납게 날뛰는 소녀 늑대(이라 루푸스)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "마무리 짓겠습니다! 나는 늑대! 나의 창은 필살의 송곳니! 간다! ‘사납게 날뛰는 소녀 늑대(이라 루푸스)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "빅토리! 승리했습니다, 마스터!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "훗훗훗. 몸이 작다고 방심했구나?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "이래 보여도 원탁의 기사! 지지 않습니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "원통합니다……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "저는, 좀 더……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "저는 가레스. ───원탁 제7석, 아서왕을 섬기던 기사입니다!",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

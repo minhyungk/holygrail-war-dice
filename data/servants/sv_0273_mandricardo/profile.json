@@ -1,0 +1,56 @@
+{
+  "servant_id": "sv_0273_mandricardo",
+  "source_id": 273,
+  "name_ko": "만드리카르도",
+  "name_short_ko": "만드리카르도",
+  "class": "rider",
+  "ranks": {
+    "str": "C",
+    "end": "B",
+    "agi": "A",
+    "mana": "C",
+    "luck": "B",
+    "np": "A"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "중립·중용",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "부대검의 맹세",
+    "ruby_ko": "세르망 드 뒤랑달",
+    "rank": "A",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4039000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/403900/403900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/403900/403900b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    103,
+    202,
+    302,
+    305,
+    403,
+    1000,
+    2001,
+    2008,
+    2009,
+    2012,
+    2113,
+    2631,
+    2780,
+    2858,
+    5000,
+    403900
+  ],
+  "lore": {
+    "detail": "과거에는 임금님 겸 모험가! 모험 끝에 헥토르의 갑옷을 입수하고, 의기양양하게 뒤랑달을 찾아 여행 또 여행!\n그리고…… 뒤랑달을 둘러싼 싸움과, 이런저런 사건들로 완전히 세상을 비관하게 된 만드리카르도 군입니다, 잘 부탁합니다……"
+  },
+  "instant_death": false
+}

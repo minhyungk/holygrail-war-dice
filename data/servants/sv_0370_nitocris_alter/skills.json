@@ -1,0 +1,62 @@
+{
+  "servant_id": "sv_0370_nitocris_alter",
+  "skills": [
+    {
+      "skill_id": "sk_mad_enhancement",
+      "name_ko": "광화",
+      "rank": "E",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_avenger",
+      "name_ko": "복수자",
+      "rank": "D++",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_oblivion_correction",
+      "name_ko": "망각보정",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_self_restoration_magical_energy",
+      "name_ko": "자기회복(마력)",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_divinity",
+      "name_ko": "신성",
+      "rank": "EX",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_elegiac_text",
+      "name_ko": "장례문서",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_god_of_the_underworld_s_judgment",
+      "name_ko": "명부신의 재정",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_desert_night_breeze",
+      "name_ko": "사막의 밤바람",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

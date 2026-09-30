@@ -1,0 +1,341 @@
+{
+  "speaker": "sv_0278_dioscuri",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "하아앗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "이얍!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "[폴룩스] : 갑니다! [카스트로] : 그래!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "[카스트로&폴룩스] : 하아아아아아!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "[카스트로&폴룩스] : 차앗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "[카스트로] : 간다! [폴룩스] : 네! [카스트로] : 하하하하하하하! [폴룩스] : 산산이 깨져라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "[폴룩스] : 오라버니! [카스트로] : 그래! [폴룩스] : 빛이여, 여기에! [카스트로] : 죄를, 여기에!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "크으으으아아아악!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "훗.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "뭣이?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "가볍군.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "[폴룩스] : 우리는 별! [카스트로] : 하늘에서 빛나는 것!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "특별히 해 주는 거라고요? 인도해 드리겠습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "우리는 빛! 폭풍 뒤에 오는, 빛이다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "[폴룩스] : 저희는 빛나는 별, 세인트 엘모의 불. [카스트로] : 세인트 엘모, 세인트 엘모! 후후, 인간 따위가 성스러운 존재라니 우습군. [폴룩스] : 후후, 오라버니, 그것도 원래는 저희잖아요. [카스트로] : 하긴…… 그렇지.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "[폴룩스] : 저희는 현계할 때, 영기가 특수한 성질을 구비했습니다. 다시 말해서, 일종의 멀티클래스를. [카스트로] : 세이버이자 어벤저. 클래스의 기초는 세이버지만…… [폴룩스] : 일부, 어벤저의 성질이 있습니다. 이것은── [카스트로] : ──우리가, 깊이 연결된 이신일체의 서번트라는 증거다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "[폴룩스] : 저희는 본래, 옛 신령입니다. 다른 여러 신이나 종속신들과 마찬가지로, 금세 올림포스의 주신 제우스의 신화체계에 편입되어 갔습니다만, [카스트로] : 그 때문에 나는 영락했다. 폭풍 뒤에 빛나는 별, 길잡이 빛으로서의 신이던 우리는, [폴룩스] : 별의 쌍둥이 신에서, 별로 올려보낸 쌍둥이자리의 쌍둥이로서 전해지게 되었지요. [카스트로] : 제우스의 피를 이은 너와, 제우스의 피를 잇지 않는 나. 불사신인 너와, 인간인 나. 훗, 참으로 끔찍하게 뒤틀렸어. 쌍둥이자리의 영령이 아니라, 쌍둥이 신의 신령으로서 소환되고도 나는 영락에 대한 분노를 씻어 내지 못하고 있다. [폴룩스] : 그렇지만, 오라버니…… [카스트로] : 그래…… 우리의 연결고리만은, 절대적이다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "[카스트로] : 한 번밖에 말하지 않겠다. 우리는 항해의 수호자, 여행의 안전을 관장하는 신으로서의 면모를 가지고 있지. 그런 우리가, 여기서 축복해 주겠다. [폴룩스] : 마스터, 당신이 희망을 잃지 않고, 난관을 극복할 수 있기를. [카스트로] : 훗. 본래는 온갖 위기로부터 구하는 별, 희망의 신이야말로 우리다만. [폴룩스] : 항해의 신으로서의 측면이 강해진 것은, 후세의 전설── 인간 쌍둥이로서 태어나서 아르고호에 타고 모험을 했다는 전설 덕분이겠지요. [카스트로] : 그래, 맞다! 배, 배, 배, 인간이라는 것은, 예나 지금이나 배를 타고 여행하는 것이 판에 박았어, 정말이지 똑같아! [폴룩스] : 말씀은 이렇게 해도, 오라버니, 배는 좋아한답니다? [카스트로] : 폴룩스!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "[카스트로] : 좋아하는 것이라고? 여동생 말고 또 무엇이 있다는 말이냐. [폴룩스] : 오라버니, 표현이…… 표현을 조금…… [카스트로] : 뭐냐. 너도 말해 주어라. ‘오빠 말고는 아무것도 필요 없다’고. [폴룩스] : 오라버니…… 표현을……",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "[폴룩스] : 싫어하는 것? 그러네요…… 저는 특별히 없으려나요. [카스트로] : 인간이다! 인간, 인간인간인간……! 인간이라는 존재가 없으면, 내가 영락할 일은 없었어……!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "[카스트로] : 성배에 빌 것 따위는 없다. [폴룩스] : 없네요. [카스트로] : 하지만, 술잔으로서는 나쁘지 않겠더군. [폴룩스] : 아아, 그건 그러네요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "[카스트로] : 하찮군, 죽어라. [폴룩스] : 맞아, 죽도록 해.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "[폴룩스] : 모조리 다 때려눕히지요, 오라버니. [카스트로] : 그렇게 하지.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "우리는 신이자 별. 빛에, 거역하느냐?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "발버둥 쳐라, 소리쳐라. 어차피 베어 버릴 것이다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "[카스트로] : 두려워하라. [폴룩스] : 숭상하라. [카스트로] : 하늘에서 빛나는 것, 길잡이별! [폴룩스] : 우리는 여기에 내려서노라! [카스트로&폴룩스] : ‘쌍신찬가(디오스쿠레스・틴다리다이)’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "[폴룩스] : 신핵 접속! [카스트로] : 신핵 여기! [폴룩스] : 힘, 빛, 우리야말로! [카스트로] : 천공에서 빛나는 사랑! [카스트로&폴룩스] : ‘쌍신찬가(디오스쿠레스・틴다리다이)’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "[폴룩스] : 오라버니를 상처 입히는 자, 모조리 죽인다! [카스트로] : 훗, 폴룩스! [폴룩스] : 죽이겠습니다! 맞추어 주세요, 오라버니! [카스트로&폴룩스] : ‘쌍신찬가(디오스쿠레스・틴다리다이)’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "[카스트로] : 땅에 조아려라! 하늘을 올려다보아라! [폴룩스] : 별은, 그렇게 해서 봐야 마땅하지요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "[카스트로] : 우리는 오랜 존재이며. [폴룩스] : 우리는 빠른 존재이다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "별거 없군.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_4",
+        "text": "[카스트로] : 이 정도 수준인가 [폴룩스] : 역시 대단하세요, 오라버니!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "[카스트로] : 미안하다…… 동생아…… [폴룩스] : 오라버니!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "오라버니…… 거짓말…… 거짓말!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "오라버니, 오라버니…… 오라버니이……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_4",
+        "text": "[카스트로] : 잠드는 것도 나쁘지는 않아…… [폴룩스] : 네……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "[카스트로] : 디오스쿠로이, 현계했다. ……뭐냐, 인간이지 않은가. 하찮군! 죽어! [폴룩스] : 죽지 않아도 괜찮습니다. 우리 디오스쿠로이, 힘이 되어 드리겠습니다.",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "servant_id": "sv_0078_altria_pendragon_alter",
+  "source_id": 78,
+  "name_ko": "알트리아 펜드래곤(얼터)",
+  "name_short_ko": "알트리아 얼터 랜서",
+  "class": "lancer",
+  "ranks": {
+    "str": "A",
+    "end": "A+",
+    "agi": "C",
+    "mana": "A+",
+    "luck": "D",
+    "np": "A++"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "땅끝에서 빛나는 창",
+    "ruby_ko": "롱고미니아드",
+    "rank": "EX",
+    "type_ko": "대성보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3019000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/301900/301900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/301900/301900b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    101,
+    200,
+    300,
+    303,
+    404,
+    1000,
+    2001,
+    2002,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2037,
+    2113,
+    2631,
+    2795,
+    2851,
+    2858,
+    5000,
+    301900
+  ],
+  "lore": {
+    "detail": "전설에서 말하는 원탁의 기사왕 아서 본인.\n그 실태는 가련하지만 전설대로 청렴함과 고결함을 겸비한 소녀 기사. 성검 사용자로 알려졌지만 소유하는 성창 또한 실로 강력하기에 랜서로 나타날 수도 있다.\n──그리고 성배의 저주를 받았을 가능성에 따라 이러한 모습으로 나타날 수도 있다. 비정하고 철저한 기사왕의 창이 지닌 측면이다."
+  },
+  "instant_death": false
+}

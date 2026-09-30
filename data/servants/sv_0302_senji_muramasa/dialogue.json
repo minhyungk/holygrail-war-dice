@@ -1,0 +1,329 @@
+{
+  "speaker": "sv_0302_senji_muramasa",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "미안한걸!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "간다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "훗! 핫! 세잇!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "으랏차!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "다시 두드린다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "이것으로 끝이다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "부러지지 않아, 구부러지지 않아!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_8",
+        "text": "하나! 둘!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_9",
+        "text": "한 푼도 안 되겠어.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "너한테는 아깝지.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "이천일류, 받아 갈까!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "이 한 칼로 일은 마무리다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "헷, 별것 아니구만.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "칫……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "투영── 개시.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "그래, 똑똑히 봤다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "담금질을 할까!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "나쁘지 않아. 괜찮게 만들어졌어.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          },
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "정식으로 다시 소개를 하마. 나는 센지 무라마사. 이세노쿠니, 쿠와나의 도공이다. 훗날로 이어지는 무라마사파의 초대── 인 셈이 되려나. 몇백 년이나 훗날까지 이름이 전해진다라…… 괴팍한 영감쟁이라도 놀랄 노 자로구만.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          },
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "내 영기는, 현대인을 빙의체로 삼은 것이야. 무라마사인 채로는 비실대는 늙은이가 나올 테니까. 영령 무라마사는, 기량만을 이 몸에 내렸어. 그래서 이렇게 말하고 있는 내 인간성은 무라마사 것이 아니야. 할아버지가 될 때까지 산 그 녀석의 성격이지. ……그나저나, 나랑 같은 이념, 나랑 비슷한 인생, 나에게 지지 않는 고집불통이 있었을 줄이야.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "너, 밥은 먹고 다니냐? 배고프면 꼭 말하라구? 나도 그리 여유는 없지만 젊은 놈 하나쯤이야 감당── 뭐? 급여는 넉넉해? “삼시 세끼 다 너무 맛있어서 살찔 것 같다”…… 거 참 잘됐네. 얼른 가버려.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal",
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "솔직히, 처음에는 내키지 않았어. 나는 무라마사이기는 하지만, 이 몸이 무라마사로서 살았다면── 이라는 가상의 인격이기도 해. 거 있지 않냐? 시키부가 읽던 ‘만약 이 인간이 분키 시대에 전생했다면’이라는 거 말이야. 그래서 왠지 딴 사람의 꿈을 구경하는 기분이 있었는데…… 지금은, 이 무라마사도 나쁘지 않다 싶다. 좋은 제자가 생겨서 그런가? 제자보다 먼저 죽을 수야 없지 않겠어?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것? 그야 그거지── 당연히 좋은 모래와 불 아니겠냐. 생선도 좋아해, 주먹밥도 좋아하고. 술은 안 먹고, 경단은 먹는다.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 거야 너무 많아서 일일이 들 수도 없어. 굳이 말하자면 라스푸틴 녀석일까? 그 낯짝을 보고 있으면 괜히 속이 부글부글 끓는단 말이지.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "소원을 이루는 성배라, 거 부럽구만. 장인을 몇 명이나 부양할 수 있을지…… 아아, 그런 금전 이야기가 아니라고? 그러면 그거군, 진품 쿠사나기를 한번 보고 싶네.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "나참, 어쩔 수 없지. 일곱 번 정도 베도록 할까.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "나는 도공인데 말이다. 전장에 끌고 와서 어쩌려는 거야.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "그곳에 이르는 것은 수많은 연찬, 쌓고 쌓은 칼무덤. 인연으로써 숙업을 끊는다. 여덟 겹의 벽을 세우는 센지의 칼날. 후딱 성불하시지!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "진수, 해명. 완성이념, 수렴. 단조기법, 임계. 저승길 선물로 구경해라! 이것이 나의── ‘츠무카리 무라마사’다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "암자로 돌아가면 밥이라도 만들어 주면 돼. 그것으로 퉁치마.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "젠장! 이거 피가 끓어오르는걸! 가끔은 싸움터에 나와볼 만하네.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "문자 그대로…… 날이 무뎌졌나.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "먼저 암자에 돌아가서…… 아니, 이미 아무도 없었던가.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "세이버, 센지 무라마사. 소환에 응해 찾아왔다. 한낱 대장장이지만 의사 서번트라서 무사 흉내도 낼 수 있는 모양이더군. 응? 뭐냐, 그 얼굴은. 다 알고 있다는 얼굴 같기도 하고, 뜻밖이라는 얼굴이기도 하고── 혹시, 살~짝 이른 등장이었던가, 나는……",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

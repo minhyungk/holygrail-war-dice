@@ -1,0 +1,64 @@
+{
+  "servant_id": "sv_0401_nemo_santa",
+  "source_id": 401,
+  "name_ko": "네모[산타]",
+  "name_short_ko": "네모 산타",
+  "class": "rider",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "B",
+    "mana": "B",
+    "luck": "EX",
+    "np": "B"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "나는 짊어진다, 성야제의 앵무조개",
+    "ruby_ko": "홀리 런・노틸러스",
+    "rank": "B",
+    "type_ko": "대군보구",
+    "special_attack": [
+      304
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4053000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/405300/405300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/405300/405300b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    103,
+    200,
+    301,
+    305,
+    404,
+    1000,
+    2000,
+    2001,
+    2008,
+    2009,
+    2011,
+    2037,
+    2040,
+    2114,
+    2466,
+    2631,
+    2797,
+    2851,
+    2858,
+    2923,
+    5000,
+    405300
+  ],
+  "lore": {
+    "detail": "미래로 이어지는 짐(희망)을 전달하기 위해, 소년은 임파서블한 임무를 개시했다.\n“양륙정 카롤리누스, 다시 말해 육상 장갑차 PP, 출동이다. 크리스마스 시즌 중에 모든 배달 요청을 클리어하자.”\n복장은 제복에서 작업복으로. 필드는 해로에서 육로로. 쥐는 것은 타륜에서 핸들로. 그리고 쿨한 미소는 그대로. 캡틴 네모, 여기서 산타클로스 데뷔!"
+  },
+  "instant_death": false
+}

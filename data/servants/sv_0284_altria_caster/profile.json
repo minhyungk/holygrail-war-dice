@@ -1,0 +1,53 @@
+{
+  "servant_id": "sv_0284_altria_caster",
+  "source_id": 284,
+  "name_ko": "알트리아 캐스터",
+  "name_short_ko": "알트리아 캐스터",
+  "class": "caster",
+  "ranks": {
+    "str": "B",
+    "end": "D",
+    "agi": "B",
+    "mana": "A",
+    "luck": "B",
+    "np": "A++"
+  },
+  "alignment": "good",
+  "alignment_detail": "중립·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "그대를 감싸안는 희망의 별",
+    "ruby_ko": "어라운드 칼리번",
+    "rank": "A",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5045000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/504500/504500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/504500/504500b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    203,
+    302,
+    303,
+    405,
+    1000,
+    2001,
+    2007,
+    2010,
+    2795,
+    2858,
+    5000,
+    504500
+  ],
+  "lore": {
+    "detail": "‘선정의 지팡이’와 함께 선택된 예언의 아이. 언젠가 카멜롯에 다다를 때까지의, 중간이자 도중이자 사이의 모습.\n“만세! 드디어 등장이네요! 캐스터 알트리아, 제 능력이 닿는 한 열심히 하겠습니다!”"
+  },
+  "instant_death": false
+}

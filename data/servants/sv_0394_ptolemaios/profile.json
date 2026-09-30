@@ -1,0 +1,54 @@
+{
+  "servant_id": "sv_0394_ptolemaios",
+  "source_id": 394,
+  "name_ko": "프톨레마이오스",
+  "name_short_ko": "프톨레마이오스",
+  "class": "archer",
+  "ranks": {
+    "str": "B",
+    "end": "A",
+    "agi": "C",
+    "mana": "A",
+    "luck": "A++",
+    "np": "A+"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "질서·중용",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "왕의 서고",
+    "ruby_ko": "비블리오테케 바실레이오우",
+    "rank": "A+",
+    "type_ko": "결계/대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2050000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/205000/205000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/205000/205000b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    102,
+    202,
+    300,
+    305,
+    405,
+    1000,
+    2001,
+    2008,
+    2012,
+    2113,
+    2631,
+    2858,
+    5000,
+    205000
+  ],
+  "lore": {
+    "detail": "신장/체중: 182cm・78kg (1차, 2차 재림) 210cm・142kg (3차 재림) 출전: 역사 지역: 마케도니아・이집트 속성: 질서・중용 부속성: 인 성별: 남성\n“나의 인생에, 빛나는 계절은 두 번 있었다. 두 가지 모습을 지닌 건 그런 연유에서다.”"
+  },
+  "instant_death": false
+}

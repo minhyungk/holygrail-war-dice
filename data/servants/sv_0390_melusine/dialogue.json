@@ -1,0 +1,423 @@
+{
+  "speaker": "sv_0390_melusine",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "Pécheur!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "거기다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "간다! 메리켄다이트 킥!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "흐앗! 에잇!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "구조요청───이 아닌가!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "하이앵글・에어 다이버!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "메리켄다이트・길티! 이노센스!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_8",
+        "text": "무겁게, 단단하게, 강하게!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_9",
+        "text": "스피닝 썬더!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_10",
+        "text": "이것으로, 마무리!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_11",
+        "text": "핫! 으랴랴랴랴랏, 에잇!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_12",
+        "text": "마우스 투 마우스!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_13",
+        "text": "이쪽도 사용해 줘야지.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_14",
+        "text": "에잇! 에잇! 얍!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "타겟 록! 융단폭격!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "장갑 박리, 심장, 받았다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "초강력 드래곤 콤비네이션!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "우왓, 믿을 수 없어!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "꽤 하네.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "물, 맛있지?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "응? 너도 원해?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "귀찮아지기 시작했어!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "얌전히 있을 수 없는 걸까~?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_5",
+        "text": "시간이 되면 깨워줘~……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_6",
+        "text": "최고 오브 최고…… 그렇지?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "수영복이잖아? 그 정도는 체크했었어, 체감 시간으로 2년쯤 전부터. 다른 서번트에게는 있는데 나에게는 없다는 건 있을 수 없는 일이니까. 아, 하지만 헤엄칠 생각은 없으니까, 그 부분은 주의해 줘. 호수 이외의 물은 내 취향이 아니야.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "이번의 나는 룰러니까, 무장도 그에 맞게 바꿔봤어. 아론다이트는 메리켄다이트로, 티케이다이트는 티케이카이저로! 전부터 메카니컬한 격투전은 좋아했거든! 그리고 봐봐, 모처럼의 보디라인이 무기로 가려지면 슬프잖아?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "오전 중에는 충분한 수면. 오후에는 해변에서 우아하게 수면. 연인과 노닥이며 노는 건 해가 지고 선선해진 뒤에. 용종의 상식, 기억해 줘.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "침대에서도 해변에서도 움직이지 않고 늘어져 있었지만, 혼자 있고 싶은 건 아니야. 사실은 계속 곁에 있어 주기를 바라지만…… 마스터의 일을 방해할 수는 없으니까. 귀가를 기다리는 것도 짝으로서의 책무. 힘들어~",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "지금까지 마스터의 부탁을 들어줬으니까, 슬슬 내 부탁도 들어줄래? 이번 주의 휴일은 전부 나에게 줘. 토요일은 오후부터 계속 단둘이 보내고, 일요일은 오후가 되면 어트랙션! 이거 봐봐, 가고 싶은 곳을 체크해뒀어! 맛있는 걸 먹은 뒤에 비행기 레이스 보러 가자~?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 건 말할 것도 없잖아? 지금 좋아하는 일은 해변에서 시간을 보내는 것! 남국의 해변은 상쾌해서 정말 좋아!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "최강종이니까 약점은 없습니다. 그건 그렇고, 바다에 들어갈 생각은 없지만 수영장은 오케이입니다.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배, 좋지~ 평소의 나라면 성장을 위해 쓰겠지만, 최근에는 이것저것 배웠으니까. 성배로 내 취향의 폐쇄 공간을 만들고 싶어……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "준비운동, 제대로 했어? 그래, 그러면 봐줄 필요 없겠네.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "미안, 예정이 꽉 차 있거든. 놀아줄 수는 없어.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "연습으로는 딱 좋을까.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "아론다이트~? 아니, 이건 메리켄다이트. 남국에 검을 들고 오는 건 촌스럽잖아?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "[멜뤼진] : 증기 캐터펄트 양호, 블래스트 디플렉터 전개 완료! [네모・마린] : 풀아머, 양호! [멜뤼진] : 발함한다! 사정거리, 들어왔다! 오픈 컴뱃(전투 개시)! 물보라를 일으켜라! ‘무지개를 띄우는, 무구한 고동(스프라이트・알비온)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "[멜뤼진] : 최고야, 이래야지…… 다들! 캐빈에서 기다리고 있어, 쪽쪽♪ [네모・마린] : 와~! 그거 우리의 대사~! [멜뤼진] : 보내줘! 마스터! 여름의 브레스를 보여줄게! 가는 거야! ‘무지개를 띄우는, 무구한 고동(스프라이트・알비온)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "[멜뤼진] : 슈터, 주의사항 있어? [네모・마린] : 파도가 높아! 조심해! [멜뤼진] : 그렇다면 아슬아슬할 때까지 몰아붙일게! 끌어올려라! 아론다이트!! [네모・마린] : 방금 뭔가 있지 않았어~?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "휴우~ 기분 좋았어. 남국의 요정도, 나쁘지 않네.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "어때? 반했어? 스포티, 했지?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "무력화하고 난 뒤에 구조한다. 상식이야.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "아…… 안 되겠어. 잠깐 해변에 다녀올게. 나중에 데리러 와야 해?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "아, 그러네, 선크림을 깜빡했어. 다들 조심해.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "용의 연심을 방해하다니…… 역시 불살라버릴까.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "마침내 시간이 우리를 따라잡았구나. 서번트, 룰러. 멜뤼진, 소환이라고 듣고서 날아와 버렸어. 이번에는 물의 요정도 겸하고 있으니까 기체명도 조금 바꾸려고 해. 멜뤼진・옹딘…… 같은 건, 어때?",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

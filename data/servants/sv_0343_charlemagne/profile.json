@@ -1,0 +1,57 @@
+{
+  "servant_id": "sv_0343_charlemagne",
+  "source_id": 343,
+  "name_ko": "샤를마뉴",
+  "name_short_ko": "샤를마뉴",
+  "class": "saber",
+  "ranks": {
+    "str": "A",
+    "end": "C",
+    "agi": "B",
+    "mana": "A",
+    "luck": "A",
+    "np": "A+"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "왕의 용맹을 보여라, 세상을 도는 열두 휘검",
+    "ruby_ko": "주와이외즈 오르드르",
+    "rank": "EX",
+    "type_ko": "대왕보구(자신)",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1052000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/105200/105200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/105200/105200b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    100,
+    203,
+    300,
+    303,
+    405,
+    1000,
+    2001,
+    2004,
+    2009,
+    2012,
+    2075,
+    2113,
+    2631,
+    2780,
+    2858,
+    5000,
+    105200
+  ],
+  "lore": {
+    "detail": "저 너머에서 보낸 선물로서 현현한 샤를마뉴 12용사의 왕.\n서유럽의 시조이며, 일반적으로 카를 대제, 또는 카롤루스 대제라는 명칭 쪽이 더 친숙하다. 왕이라고 부르기에는 다소 위엄을 팽개치기 일쑤이며, 멋있느냐 멋없느냐를 기준으로 삼는, 천진난만한 젊은이."
+  },
+  "instant_death": false
+}

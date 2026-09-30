@@ -1,0 +1,364 @@
+{
+  "speaker": "sv_0285_sessyoin_kiara_moon_cancer",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "에~잇!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "조・준・사・격.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "안 되겠네요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "우후후후후.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "가볍게 한 번 쓰다듬어서.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "가라앉으세요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "실례.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_8",
+        "text": "갈파.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_9",
+        "text": "이쪽이에요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_10",
+        "text": "어때요, 어때요, 어때요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_11",
+        "text": "자, 자, 이쪽이에요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "객진번뇌, 자, 터져 버리죠?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "아파요? 무서워요? 정진하도록 하세요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "후후, 우후후, 앗하하하하.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "아아~! 모처럼의 수영복이!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "꺄앗.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "분위기를 띄워 버려도?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "두근두근하네요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "물가에는 꽃, 바다에는 인어.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "보다 옅게, 보다 맑게.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_5",
+        "text": "파도 수영장, 좋아하시죠?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "야오비쿠니란, 어떤 비구니의 명칭입니다. 인어의 고기를 먹어 버린 비구니는 늙지 않게 되어, 800년을 살았다던가요. 그 일화와 마찬가지로, 저도 인어의 고기를 먹었습니다. 네…… 아주 조금……이쪽에 오기 전에 꼬리 끝을 한 입 정도…… 일까요. 그때에는 육지로 올라가고 싶다는 마음뿐이었기에, 맛을 기억하지 못합니다만…… 칼로리로 보면, 정말 소화가 잘되는 것이 아니었나 싶은 것이, 우후후후.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "아하하, 웃음이 나오네요. 이렇게 속 편하게 웃은 적은 언제 이후일까요. 서번트를…… 아니요, 여자를 다루는 데 능숙하시네요, 마스터. 저를 피하시는 줄로만 알아서, 외로워하고 있었습니다만. 네? “평소의 키아라 씨는 너무 연상 느낌이라 신경을 쓰게 된다”? 어머나, 우후후후, 아니에요, 마스터. 이쪽의 저와 평소의 저, 양쪽 다 나이는 같고, 그렇게 많이 연상도 아니잖아요? ……잠깐, 보구를 시험 삼아 날려도 될까요……?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "피부를 태우는 햇살, 청량한 공기, 끝없이 이어지는 수평선. 좋네요, 여름의 바다. 저는 산속에서 자랐기에, 바다에는 동경을 품고 있었어요. 저 깊은 밑바닥에는, 아무도 모르는 신비가 잠들어 있고, 해방해 줄 누군가를 기다리고 있다…… 라는 식으로요. 우후후후, 어디까지나 저의 공상, 이지만요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal",
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "“어째서 인어의 고기를 먹었나”라고요? 그것은 물론, 그 인어공주의…… 아, 아무것도 아닙니다. 입이 아니라 영기 전체가 미끄러진 모양이네요. 저는 야오비쿠니, 셋쇼인 키아라. 바다 거품이 되는 일도, 목소리를 잃는 일도, 바람의 요정이 되는 일도 없으니까요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것…… 이번에 한정하면 팥빙수, 아즈키킨토키이려나요. 그 아삭아삭한 식감이 좋아서 견딜 수가 없어요. 같이 먹어 주시겠어요, 마스터?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것…… 딱히 없지만, 피서지까지 와서 통조림 상태가 된 작가 선생님 따위, 꼴사나워서 좀 그렇다고 생각합니다.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배 말인가요, 가질 수 있다면 꼭. 갖고 싶은 것, 필요한 것은 잔뜩 있으니…… 우선은…… 그러네요, BB 씨가 가지고 있는 석장 같은 거, 재미있을 것 같네요!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "우후후, 좋네요, 여름. 무척 개방적이라서.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "어머, 즐거워 보이는 분들뿐. 상대해 주시겠어요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "대망의 미드서머! 돌고 도는 제전의 시작입니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "나의 서원에 상처는 없으니, 망설임도 한탄도 소중하게. 바다의 물거품으로 돌아가죠. 사무량심, 불생내보 ‘화락천・교합만다라(니르마나라티・헤븐즈 폼)’.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "투화득불, 쾌락권청. 한 꺼풀 벗기면 모든 것은 환상. 자, 몸도 마음도 나에게. 질척질척한 안녕의 바닥…… ‘화락천・교합만다라(니르마나라티・헤븐즈 폼)’.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "예, 모처럼의 여름이니까요. 우후후…… 귀엽기도 해라. 일도 미래도 연인도── 지금은 탁! 하고 이렇게…… 자, 저의 저택으로 가죠.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "짓밟아 버렸나요? 봐주지 못해서, 죄송합니다. 이것도 여름의 마력, 이라고 생각해 주시길.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "아아~ 이렇게 산뜻한 기분이 될 수 있다니…… 중독될 것 같아요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "잠깐 실례…… 고쳐 입고 오겠습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "벌써 퇴장?! 너무 들떴다는 것이려나요……?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "안녕하세요, 마스터. 야오비쿠니의 직무를 맡게 된, 의사 서번트, 셋쇼인 키아라라고 합니다. 클래스는…… 어머나! 문캔서! 무척 드문 클래스잖아요? 전해 듣기론, 달의 성배전쟁에서 거물로 분류된다고…… 아아…… 저 같은 여자가 감당할 수 있을지, 무척 불안해서…… 우푸푸푸…… 그렇다고는 해도, 이것도 어떠한 인연. 마스터의 기대에 부응할 수 있도록, 최선을 다해 캔서하도록 하겠어요.",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

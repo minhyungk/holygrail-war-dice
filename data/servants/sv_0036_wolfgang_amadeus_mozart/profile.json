@@ -1,0 +1,52 @@
+{
+  "servant_id": "sv_0036_wolfgang_amadeus_mozart",
+  "source_id": 36,
+  "name_ko": "볼프강 아마데우스 모차르트",
+  "name_short_ko": "모차르트",
+  "class": "caster",
+  "ranks": {
+    "str": "D",
+    "end": "E",
+    "agi": "B",
+    "mana": "B+",
+    "luck": "D",
+    "np": "B"
+  },
+  "alignment": "good",
+  "alignment_detail": "중립·선",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "사신을 위한 장송곡",
+    "ruby_ko": "레퀴엠 포 데스",
+    "rank": "B",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5015000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/501500/501500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/501500/501500b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    104,
+    203,
+    302,
+    303,
+    401,
+    1000,
+    2001,
+    2012,
+    2631,
+    2858,
+    5000,
+    501500
+  ],
+  "lore": {
+    "detail": "세계 유수의 천재 작곡가이자 연주가. 이상하기까지 한 음감과 변함없는 천재성으로 많은 곡을 후세에 남긴 18세기 인물. 신에게 사랑받은 아이. 기적의 천재."
+  },
+  "instant_death": false
+}

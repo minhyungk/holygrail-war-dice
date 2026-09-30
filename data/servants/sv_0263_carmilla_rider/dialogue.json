@@ -1,0 +1,292 @@
+{
+  "speaker": "sv_0263_carmilla_rider",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "가도록 해!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "같이 춤추고 싶어?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "하룻밤의 꿈이야.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "소중한 것을 받아 가겠어.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "잊지 못하게 해 줄게.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "실례합니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "뷰티풀, 스피딩!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "도가 지나쳐.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "아프네.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "사전 준비는 충분하거든?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "후후, 기다리지 못하겠니?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "서두르면, 안・돼",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "으음~ 다시 보니…… 괴도로서는 상당히 믿음직스럽지 못하네. 나의 파트너, 정말 잘 해낼 수 있을까?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "아직 호흡이 잘 맞는다고 말하기는 어렵네. ……이것을 해소하려면…… 코스튬을 맞춰 입어 보기라도 할래?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "그 뜨거운 시선, 알 것 같아. 셀럽 괴도의 필수 기술, 벽에 꽂히는 카드 던지기를, 당신도 습득하고 싶은 거지? 좋아, 요령은 손목에 스냅을 줘서…… 이렇게야, 이렇게!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "후후, 알려 줄게. 눈치채지 못했을 뿐이지, 당신…… 이미 나에게 소중한 것을 도둑맞아 버렸거든? ……아아, 미안해, 돌려주고 싶어도 돌려줄 수가 없어. 왜냐하면 돌려주는 방법을 모르겠는걸.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "나, 한번 훔친 것에는 그다지 구애받지 않는 성질인데…… 이상하네, 누군가에게 도둑맞고 싶지 않은 것이, 계속 가까이에 두고 싶은 것이, 처음으로 생겨버린 듯한 기분이 들어. 하지만, 대처법은 알고 있어. 내 바로 곁에 있는 그것을, 그 마음을, 전부 깡그리 다 훔쳐서, 더 이상 완전히 나에게서 벗어날 수 없게 만들면 돼. 그러니까 각오해, 마스터. 괴도의 예고장…… 보고도 못 본 척하는 것은 허락할 수 없으니 말이야?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "선호하는 것은 고가이며 아름다운 예술품. 물론, 그것은 내가 조수석에 태워도 좋다고 생각하는, 귀중하고 파손되기 쉬운 물건도 포함돼.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것? 그렇지…… 아니, 일반 시민으로 있는 것 자체는 딱히 괜찮은데? 다만…… 그것을 핑계로, 몸가짐이 칠칠치 못하거나, 불결한 것은 안 돼. 셀럽이 아니어도, 프라이드는 자유롭게 가질 수 있으니까.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배 말이지. 물론, 가치 있는 물건은 모두 내 타깃이야. 하지만…… 지금부터 예고장을 보낸다고 하면…… 첫 번째 후보는 네가 되는데…… 괜찮겠어?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "오늘 밤에는 무엇을 훔칠까.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "어서 오렴, 꼬마야?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "시선을 모으는 글래머러스 바디, 가성과도 같은 이그조스트 노트, 달려라, 오늘 밤을 찢는 나의 환상! ‘야밤을 달리는 강철처녀(테스타로사 메이든)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "두른 것은 핏빛, 탄식하는 밤. 노린 사냥감은 놓치지 않아. 그래! 이것이 올여름의 강철처녀! ‘야밤을 달리는 강철처녀(테스타로사 메이든)’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "안녕, 두 번 다시 만날 일은 없어.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "다음 보물은 어디에 있을까?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "대가를 치를 때…… 일까……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "아직…… 손에 넣지 못했는데……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "어머, 이런 우연도 다 있네. ……평소와 분위기가 달라? 후후, 그런가? 어찌 되었든, 내가 위험한 여자인 것은 변함없다고 생각해. 최대한 조심하도록 해, 마스터.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

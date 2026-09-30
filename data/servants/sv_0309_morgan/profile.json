@@ -1,0 +1,59 @@
+{
+  "servant_id": "sv_0309_morgan",
+  "source_id": 309,
+  "name_ko": "모르간",
+  "name_short_ko": "모르간",
+  "class": "berserker",
+  "ranks": {
+    "str": "C",
+    "end": "E",
+    "agi": "B",
+    "mana": "A+",
+    "luck": "B",
+    "np": "EX"
+  },
+  "alignment": "evil",
+  "alignment_detail": "질서·악",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "이제는 도달할 수 없는 이상향",
+    "ruby_ko": "로드리스 카멜롯",
+    "rank": "EX",
+    "type_ko": "대성보구",
+    "special_attack": [
+      202
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7040000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/704000/704000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/704000/704000b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    106,
+    201,
+    300,
+    304,
+    405,
+    1000,
+    1177,
+    2001,
+    2007,
+    2008,
+    2011,
+    2037,
+    2113,
+    2780,
+    2858,
+    5000,
+    704000
+  ],
+  "lore": {
+    "detail": "이문대・요정국 브리튼을 지배하는 여왕.\n이문대 브리튼에 절대 왕정을 구축하고, 2000년에 걸친 압정을 펼치며 요정들을 괴롭히고 있다.\n최고위의 요정이며, 땅끝의 창・롱고미니아드를 마술로서 습득한 신의 영역에 이른 천재 마술사."
+  },
+  "instant_death": false
+}

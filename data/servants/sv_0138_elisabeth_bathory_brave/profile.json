@@ -1,0 +1,56 @@
+{
+  "servant_id": "sv_0138_elisabeth_bathory_brave",
+  "source_id": 138,
+  "name_ko": "엘리자베트 바토리(브레이브)",
+  "name_short_ko": "엘리자베트 브레이브",
+  "class": "saber",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "C",
+    "mana": "C",
+    "luck": "B",
+    "np": "C"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "선혈용권마양",
+    "ruby_ko": "바토리 브레이브 에르제베트",
+    "rank": "V",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1010000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/101000/101000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/101000/101000b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    100,
+    201,
+    301,
+    303,
+    404,
+    1000,
+    2001,
+    2002,
+    2008,
+    2011,
+    2037,
+    2075,
+    2631,
+    2858,
+    5000,
+    101000
+  ],
+  "lore": {
+    "detail": "할로윈에 들뜬 엘리자베트(캐스터)가 기구한 운명의 끝에 세이버가 되었다.\n용의 힘과 음악의 힘, 그리고 두 번째로 맞는 할로윈이라니 더 이상 그 누구도 그녀를 멈출 수는 없을 듯한 느낌이 들지 않는 것도 아니다.\n순백색 망토에 진홍색 갑옷, 요즘 시대에 아무 장식도 없는 올곧은 대검을 손에 들고 용사 엘리자베트는 오늘도 달린다.\n너무 자세히 따지고 들면 안 된다."
+  },
+  "instant_death": false
+}

@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0138_elisabeth_bathory_brave",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_territory_creation",
+      "name_ko": "진지작성",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_double_class",
+      "name_ko": "더블 클래스",
+      "rank": "E",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_hero_s_principles",
+      "name_ko": "용사대원칙",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_mana_burst_courage",
+      "name_ko": "마력방출(용기)",
+      "rank": "D",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_legend_of_the_crimson_hero_theatrical_release",
+      "name_ko": "진홍의 용사전설・극장판",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

@@ -1,0 +1,58 @@
+{
+  "servant_id": "sv_0317_okita_souji_alter_saber",
+  "source_id": 317,
+  "name_ko": "오키타 소지(얼터)",
+  "name_short_ko": "오키타 얼터 세이버",
+  "class": "saber",
+  "ranks": {
+    "str": "A",
+    "end": "B",
+    "agi": "B",
+    "mana": "B",
+    "luck": "D",
+    "np": "A"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "중립·중용",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "절검・무궁일섬",
+    "ruby_ko": "절검・무궁일섬",
+    "rank": "A+",
+    "type_ko": "대계보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1051000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/105100/105100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/105100/105100b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    3,
+    100,
+    202,
+    302,
+    305,
+    405,
+    1000,
+    2001,
+    2007,
+    2008,
+    2075,
+    2356,
+    2631,
+    2838,
+    2839,
+    2858,
+    5000,
+    10009,
+    105100
+  ],
+  "lore": {
+    "detail": "단 한 번 빛나기 위해서 조정된 결전 영령이었을 텐데, 무슨 인과에서인지 수영복으로 갈아입고 여름을 만끽하는 마신 씨 스타일로 수수께끼의 진화를 이루었다.\n별명 ‘수영복 마신・오키타 소지 얼터너티브’.\n그런데 옆에 있는 너, 누구야? 혹시 미아인가?"
+  },
+  "instant_death": false
+}

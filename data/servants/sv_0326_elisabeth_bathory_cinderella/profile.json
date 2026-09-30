@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0326_elisabeth_bathory_cinderella",
+  "source_id": 326,
+  "name_ko": "엘리자베트 바토리(신데렐라)",
+  "name_short_ko": "엘리자베트 신데렐라",
+  "class": "rider",
+  "ranks": {
+    "str": "D",
+    "end": "E",
+    "agi": "A",
+    "mana": "B",
+    "luck": "A+",
+    "np": "C"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "동화자설마양",
+    "ruby_ko": "페어리 테일・에르제베트",
+    "rank": "D++",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4046000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/404600/404600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/404600/404600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    103,
+    202,
+    301,
+    305,
+    404,
+    1000,
+    2001,
+    2002,
+    2008,
+    2009,
+    2631,
+    2810,
+    2858,
+    5000,
+    404600
+  ],
+  "lore": {
+    "detail": "새로운 할로윈, 새로운 히로인. 열광적인 팬들의 성원에 힘입어 컴백한, 전설의 할로윈 서번트.\n“이번의 엘리자베트는~♪ 평범한 아이돌이 아니야~♪ 노래하고~ 춤추는~ 뮤지컬한~♪ 슈퍼 아이돌이야~♪”"
+  },
+  "instant_death": false
+}

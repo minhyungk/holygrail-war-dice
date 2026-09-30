@@ -1,0 +1,69 @@
+{
+  "servant_id": "sv_0268_space_ishtar",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_independent_action",
+      "name_ko": "단독행동",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_core_of_the_goddess",
+      "name_ko": "여신의 신핵",
+      "rank": "A++",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_avenger",
+      "name_ko": "복수자",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_oblivion_correction",
+      "name_ko": "망각보정",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_self_restoration_magical_energy",
+      "name_ko": "자기회복(마력)",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_devil_s_sugar",
+      "name_ko": "데빌즈 슈가",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_venus_driver",
+      "name_ko": "비너스 드라이버",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_multiple_starling",
+      "name_ko": "멀티플 스타링",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

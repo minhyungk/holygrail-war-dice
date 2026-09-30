@@ -1,0 +1,58 @@
+{
+  "servant_id": "sv_0400_uesugi_kenshin",
+  "source_id": 400,
+  "name_ko": "우에스기 켄신",
+  "name_short_ko": "우에스기 켄신",
+  "class": "ruler",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "A",
+    "mana": "B",
+    "luck": "C",
+    "np": "A"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "비천팔상・시라누이",
+    "ruby_ko": "비천팔상・시라누이",
+    "rank": "A",
+    "type_ko": "대인보구",
+    "special_attack": [
+      202
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_9018000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/901800/901800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/901800/901800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    108,
+    201,
+    301,
+    305,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2009,
+    2011,
+    2037,
+    2040,
+    2631,
+    5000,
+    901800
+  ],
+  "lore": {
+    "detail": "전란의 시대에 의로운 장수라 불렸던 에치고의 군신, 우에스기 켄신.\n전장의 재정자로서, 말 그대로 비사문천 같은 힘을 휘두른다. 인간 세상에서 너무나도 이질적인 그 모습은 과연 정말 신불의 화신이었기 때문일까?\n숙적인 카이의 타케다 신겐에게 소금을 보낸 일화, 그 신겐과 싸운 카와나카지마의 전투는 너무나도 유명하다.\n“비사문천이지만, 전력을, 다해도 상관없는 거죠?”"
+  },
+  "instant_death": false
+}

@@ -1,0 +1,53 @@
+{
+  "servant_id": "sv_0208_sieg",
+  "source_id": 208,
+  "name_ko": "지크",
+  "name_short_ko": "지크",
+  "class": "caster",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "E",
+    "mana": "D",
+    "luck": "B",
+    "np": "EX"
+  },
+  "alignment": "good",
+  "alignment_detail": "중립·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "작열용식・만지융해",
+    "ruby_ko": "아카필로가・알그리즈",
+    "rank": "EX",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5038000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/503800/503800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/503800/503800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    104,
+    202,
+    302,
+    303,
+    404,
+    1000,
+    2001,
+    2002,
+    2008,
+    2631,
+    2858,
+    5000,
+    503800
+  ],
+  "lore": {
+    "detail": "도달할 수 없는 별을 향해, 이를 악물고 손을 뻗은 자가 있다고 한다면. 그는 그 별을 쏘아 떨어트린 쪽이라 할 수 있다. 평범한 호문쿨루스이며, 평범한 인간이다."
+  },
+  "instant_death": false
+}

@@ -1,0 +1,59 @@
+{
+  "servant_id": "sv_0120_nitocris",
+  "source_id": 120,
+  "name_ko": "니토크리스",
+  "name_short_ko": "니토크리스",
+  "class": "caster",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "C",
+    "mana": "A",
+    "luck": "B+",
+    "np": "B+"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "명경보전",
+    "ruby_ko": "안푸 네부 타 제세르",
+    "rank": "B++",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5012000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/501200/501200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/501200/501200b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    201,
+    300,
+    303,
+    404,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2040,
+    2113,
+    2631,
+    2780,
+    2797,
+    2858,
+    5000,
+    501200
+  ],
+  "lore": {
+    "detail": "고대 이집트 제6왕조에서 아주 짧은 시기이지만 왕좌에 올랐던 마술여왕. 기묘하게도 바빌론의 옛 여왕과 이름이 같다. 사랑하는 형제를 모살한 모든 유력자들을 익사시켜 복수한 후 자살했다고 한다."
+  },
+  "instant_death": true
+}

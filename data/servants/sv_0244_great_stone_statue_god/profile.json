@@ -1,0 +1,59 @@
+{
+  "servant_id": "sv_0244_great_stone_statue_god",
+  "source_id": 244,
+  "name_ko": "지나코=카리기리",
+  "name_short_ko": "지나코",
+  "class": "moonCancer",
+  "ranks": {
+    "str": "B",
+    "end": "A++",
+    "agi": "E",
+    "mana": "B",
+    "luck": "A",
+    "np": "C"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "육탄이여, 내일부터 진심이어라",
+    "ruby_ko": "가네쉬 임팩트",
+    "rank": "C",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_23003000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/2300300/2300300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/2300300/2300300b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    115,
+    200,
+    300,
+    303,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2009,
+    2011,
+    2040,
+    2631,
+    2654,
+    2835,
+    2848,
+    2851,
+    5000,
+    2300300
+  ],
+  "lore": {
+    "detail": "커다랗다(여러 의미로). 코끼리 머리를 지닌 석상이다(보이는 대로). 신성이 느껴진다(왠지).\n그 이외에 말할 것은 없다─── 지금으로서는."
+  },
+  "instant_death": false
+}

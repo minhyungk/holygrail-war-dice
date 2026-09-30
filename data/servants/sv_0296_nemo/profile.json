@@ -1,0 +1,65 @@
+{
+  "servant_id": "sv_0296_nemo",
+  "source_id": 296,
+  "name_ko": "네모",
+  "name_short_ko": "네모",
+  "class": "rider",
+  "ranks": {
+    "str": "C",
+    "end": "B",
+    "agi": "C",
+    "mana": "A",
+    "luck": "A",
+    "np": "B"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "나는 정복한다, 앵무조개의 대충각",
+    "ruby_ko": "그레이트 램・노틸러스",
+    "rank": "A",
+    "type_ko": "대해보구",
+    "special_attack": [
+      2076
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4037000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/403700/403700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/403700/403700b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    103,
+    200,
+    301,
+    305,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2009,
+    2011,
+    2012,
+    2037,
+    2040,
+    2114,
+    2466,
+    2631,
+    2780,
+    2797,
+    2851,
+    2858,
+    5000,
+    403700
+  ],
+  "lore": {
+    "detail": "바다의 신들에게 사랑받으며 자랐던 인어, 트리톤. ‘해저 2만리’에 등장하는 다카르 왕자, 혹은 그 모델로 생각되는 인물. 그 둘이 합쳐진 것이, 이 ‘네모’이다.\n아종특이점・신주쿠에서만 성립되었던 ‘환령’이지만, 그 데이터를 해킹한 아틀라스의 연금술사・시온에 의해 환령으로서 소환된 특수한 서번트.\n노움 칼데아에서는 작전 실행부대의 운반, 혹은 지원을 집행한다. 육지에서의 작전은 소녀 다 빈치의 관할이지만, 바다에서의 작전은 캡틴 네모의 관할이며, 그 점에서 봐도 이 두 기는 라이벌이라고 말할 수 없는 것도 아니다."
+  },
+  "instant_death": false
+}

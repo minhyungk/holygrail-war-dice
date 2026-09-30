@@ -1,0 +1,411 @@
+{
+  "speaker": "sv_0401_nemo_santa",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "저 부근인가.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "훗, 핫, 좋아!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "거기!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "움직이지 마!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "신비로운 소환!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "피───시!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "시야가 안 좋아.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_8",
+        "text": "좋아, 엔진!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_9",
+        "text": "[마린] : 모두 다 같이~ [캡틴] : 메리 크리스마스!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_10",
+        "text": "[마린] : 네, 캡틴! 하나~둘! [마린들] : 해피클로스!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_11",
+        "text": "후크샷!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_12",
+        "text": "뒤를 잡자!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_13",
+        "text": "비대면 배송, 잘 부탁해.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_14",
+        "text": "부재중인 모양이네.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "[마린] : “네”, “영차”, “자~” [캡틴] : 큭, 글렀나…… 미안!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "잠깐, 멈춰, 아무리 그래도─── 무리였어. 미안미안.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "무리해서 짐을 싸면…… 이렇게 된다니까!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "아직, 끝나지 않았어……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "이쯤이야.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "[캡틴] : 앞으로 조금 더, 그렇게 연락해 줘. [베이커리] : 네~ 맡겨 주세요~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "[캡틴] : 너스, 다음에 배달할 곳은? [너스] : 좌표를 보내겠습니다. 행운을 빕니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "크리스마스야, 포터는 굴하지 않아!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "이 밤이 끝나기 전에!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_5",
+        "text": "[마린] : 아직 더 있는데~?! [캡틴] : 많이 있다는 건 좋은 일이야.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_6",
+        "text": "[캡틴] : 배달 팀, 점호! [마린] : “예~이!”, “전부 있습니다~!”",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "[캡틴] : 후크샷의 사용법도 익숙해졌어. 도회지에서는 편리해서 좋네, 이거. 아아, 물론 공공물에는 전혀 피해를 주지 않아. 산타는 발자취조차도 남기지 않는 프로 포터니까.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "[캡틴] : 운송 임무의 어려움은 잘 알고 있다고 생각했는데, 실제로 해보니까 이건…… ……하지만 웃는 얼굴들을 보고 있으려니 지금까지는 얻지 못했던 보람을 느껴. 타이트한 예정표도 그렇게 힘들지만은 않다는 기분이야.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "[캡틴] : 응? 뭘 하고 있느냐고? 보면 알잖아? 산타야. 이 댄디한 얼굴을 봤을 때, 그 이외의 감상은 있을 수 없거든? 오늘 밤의 배달은 지상 100m의 고층 빌딩이야. 기합이 들어가 있다는 걸 이해해 줬으면 좋겠어.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "[캡틴] : 어, 우리와 함께 배달을 하고 싶다고? 괜찮고말고! 그러면 내일의───아, 아니, 미안. 방금 얘긴 잊어줘. 그 지프, 엄청 심하게 흔들리거든. 난방도 냉방도 너무 약하고…… 언젠가 더 좋은 차를 준비할 테니까, 노틸러스에서 기다려 줘.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "[캡틴] : 나는 네모와 트리톤이 섞인 환령이야. 기본적인 능력과 인격은 네모지만, 까닭도 없이 트리톤의 기억이나 감정에 지배될 때도 있어. 트리톤은 해신 포세이돈의 아들이지만, 한 명이 아니라 많이 있었어. 수많은 형제…… 라고 할지, 동일한 개체들과 살고 있었지. 무리를 이룬 물고기처럼 말야. ……혼자 있을 때 문득 사람이 그리워지는 건, 그런 이유 때문일지도 몰라. ───지금은 그럴 걱정은 없지만?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "[캡틴] : 좋아하는 것은…… 그렇지. 산타클로스를 믿을 수 있는 일상, 일까? ───그리고 디저트의 사이즈가 이상한 카페! 음식의 사이즈가 LL인 건 미국이지만, 일본도 가끔은 멋─── 으음, 아니, 믿을 수 없는 짓을 하는구나.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "[캡틴] : 싫어하는 것? 나에게 그런 게 있을 거라 생각해? 그래, 없어. 포터는 철인이니까.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "[캡틴] : 성배라…… 선물로 주면 기뻐하려나? 나는 받아도 난처할 뿐이지만. 물질적으로 갖고 싶은 것이, 이 모습으로는 좀처럼 떠오르지 않거든. ……어, 물질이 아니라 이루고 싶은 꿈? 그러네, 이 항해가 끝난 뒤에, 이룰 수 있다면…… 지금의 모습 그대로, 이 세계에 태어나고 싶네.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "다음에 전달할 곳은…… 아니, 그 전에 전투인가. 이거야 원.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "어떤 험한 길이라도 짐은 파손 없이 전달한다. 캡틴・포터, 니까.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "[캡틴] : 목표 지점까지 루트를 산출해 줘. [프로페서] : 예~ 이렇게 됩니다~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "[엔진] : 타이어 교환 완료! 자, 가자! [마린] : 배달 개시다~! 서둘러, 서둘러!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "[캡틴] : 설원의 저 너머에 있어도, 산타클로스는 찾아온다! [마린] : 여기야, 여기! [캡틴] : 선물, 투하! ‘나는 짊어진다, 성야제의 앵무조개(홀리 런・노틸러스)’! [마린들] : Yeah!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "[캡틴] : 주행지원을 요청한다! [마린] : 올라타, 캡틴! [프로페서] : 루트 오케이입니다~ [엔진] : 좋았어, 날려버려! [캡틴] : 착한 아이 여러분! [전원] : 메리 크리스마스.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "주행지원을 요청한다! ───네가 기적을 믿는다면…… 모험은 어디까지라도! 무사히 전달하겠어! ‘나는 짊어진다, 성야제의 앵무조개(홀리 런・노틸러스)’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "[캡틴] : 좋아, 베이커리, 모두에게 그걸 나눠줘. [베이커리] : 네~ 승리의 칠면조를 드세요!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "장애물은 화려하게 제거했어. 배달을 속행하자, 마스터.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "[캡틴] : 만약을 위해서다. 너스, 모두에게 그걸 나눠줘. [너스] : 네, 딸기맛 감기약 말이지요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "미안, 마스터…… 잠시 휴식을……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "금방 돌아올게, 짐은 그대로 둬……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "쉬라고 말했는데. 이거 참, 나의 마스터는 정말 부지런하네. 그 성실함에는 보답이 있어야겠지. 네모・산타. 본래의 나보다는 조금 힘이 약해져 있지만, 너의 서번트로 취직할게. ……어둡고 험한 길을 비춰줘서, 고마워.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

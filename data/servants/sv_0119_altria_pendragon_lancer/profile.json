@@ -1,0 +1,61 @@
+{
+  "servant_id": "sv_0119_altria_pendragon_lancer",
+  "source_id": 119,
+  "name_ko": "알트리아 펜드래곤",
+  "name_short_ko": "알트리아 랜서",
+  "class": "lancer",
+  "ranks": {
+    "str": "B",
+    "end": "A",
+    "agi": "A",
+    "mana": "A",
+    "luck": "C",
+    "np": "A++"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "땅끝에서 빛나는 창",
+    "ruby_ko": "롱고미니아드",
+    "rank": "A++",
+    "type_ko": "대성보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3020000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/302000/302000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/302000/302000b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    101,
+    200,
+    300,
+    303,
+    405,
+    1000,
+    2001,
+    2002,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2037,
+    2113,
+    2631,
+    2795,
+    2851,
+    2858,
+    5000,
+    302000
+  ],
+  "lore": {
+    "detail": "브리튼을 통치한 전설의 기사왕, 아서 왕. 왕으로 대두한 후, 성검이 아니라 성창을 주 무장으로 삼은 아서 왕의 IF.\n성검으로 인한 성장 정지는 없어져서 왕에 어울리는 신체나이까지 성장했다. 성창을 사용해 신령에 가까운 존재가 되었지만, 사용 기간이 10년 정도여서 정신구조, 영자구조는 그렇게까지 크게 변화하지 않았다."
+  },
+  "instant_death": false
+}

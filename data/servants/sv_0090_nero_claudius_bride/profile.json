@@ -1,0 +1,56 @@
+{
+  "servant_id": "sv_0090_nero_claudius_bride",
+  "source_id": 90,
+  "name_ko": "네로 클라우디우스(브라이드)",
+  "name_short_ko": "네로 브라이드",
+  "class": "saber",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "A",
+    "mana": "E",
+    "luck": "A",
+    "np": "B+"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·불명",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "별이 달리는 종막의 장미",
+    "ruby_ko": "팍스 카에레스티스",
+    "rank": "B++",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1006000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/100600/100600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/100600/100600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    2,
+    100,
+    202,
+    301,
+    405,
+    1000,
+    2001,
+    2004,
+    2007,
+    2008,
+    2009,
+    2075,
+    2113,
+    2631,
+    2858,
+    5000,
+    100600
+  ],
+  "lore": {
+    "detail": "옷차림도 새롭게, 순백의 의상을 몸에 두른 장미의 황제. 의상이 바뀜에 따라 분위기도 변했고 전투 스타일이 본래 상태와 다르다. 애용하는 검・원초의 불도 분위기를 파악하고 붉은 도신을 은백색으로 바꾸었다."
+  },
+  "instant_death": false
+}

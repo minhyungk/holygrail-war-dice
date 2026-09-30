@@ -1,7 +1,7 @@
 // docs/systems/stats.md §5, content/servants-5th.md §2·§3, mana.md §3.1
 import { describe, expect, it } from 'vitest';
 import { servant, SV } from '../testkit';
-import { manaByRank, miracleNaturals, parseRank, statSum, statValue } from './stats';
+import { manaByRank, miracleNaturals, parseRank, statSum, statTotal, statValue, underdogOf } from './stats';
 
 describe('랭크 → 수치 (stats.md §3)', () => {
   it.each([
@@ -60,4 +60,15 @@ describe('마력량 (mana.md §3.1, D-080)', () => {
     [SV.kojiro, 10, 20],
     [SV.heracles, 80, 40],
   ] as const)('%s: 초기 %d / 회복 %d', (id, init, regen) => expect(manaByRank(servant(id))).toEqual({ init, regen }));
+});
+
+describe('기적 약자 (dice.md §3.4, D-166)', () => {
+  it('스탯 합이 낮은 쪽이 약자, 같으면 없음', () => {
+    const k = servant(SV.kojiro);
+    const h = servant(SV.heracles);
+    expect(statTotal(k)).toBeLessThan(statTotal(h));
+    expect(underdogOf(k, h)).toBe('a');
+    expect(underdogOf(h, k)).toBe('b');
+    expect(underdogOf(h, h)).toBeNull();
+  });
 });

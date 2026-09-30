@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0243_gray",
+  "source_id": 243,
+  "name_ko": "그레이",
+  "name_short_ko": "그레이",
+  "class": "assassin",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "B",
+    "mana": "C",
+    "luck": "C",
+    "np": "A+"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "땅끝에서 빛나는 창",
+    "ruby_ko": "롱고미니아드",
+    "rank": "A+",
+    "type_ko": "대성보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6039000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/603900/603900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/603900/603900b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    105,
+    202,
+    300,
+    303,
+    404,
+    1000,
+    2001,
+    2007,
+    2008,
+    2631,
+    2654,
+    2795,
+    2858,
+    5000,
+    603900
+  ],
+  "lore": {
+    "detail": "어느 묘원의 비술을 계승한 소녀. 속세에 익숙하지 않지만, 로드 엘멜로이 2세의 입실제자로서, 마술협회의 시계탑에서 바쁘게 일하고 있다.\n후드 안에 가려진 그 비밀을 아는 이는, 엘멜로이 2세를 포함한 극히 일부와, 애드라고 자칭하는 기묘한 ‘말하는 상자’ 뿐이다."
+  },
+  "instant_death": false
+}

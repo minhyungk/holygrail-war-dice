@@ -1,0 +1,58 @@
+{
+  "servant_id": "sv_0369_grigori_rasputin",
+  "source_id": 369,
+  "name_ko": "코토미네 키레이",
+  "name_short_ko": "코토미네 키레이",
+  "class": "alterEgo",
+  "ranks": {
+    "str": "B",
+    "end": "C",
+    "agi": "B",
+    "mana": "D",
+    "luck": "D",
+    "np": "A"
+  },
+  "alignment": "evil",
+  "alignment_detail": "질서·악",
+  "alignment_verified": false,
+  "temperament": "assassin",
+  "noble_phantasm": {
+    "name_ko": "넘쳐흐르는 암흑심장",
+    "ruby_ko": "자지가니예 앙리 마유",
+    "rank": "A",
+    "type_ko": "대계보구",
+    "special_attack": [
+      304
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_10015000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1001500/1001500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1001500/1001500b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    109,
+    201,
+    300,
+    304,
+    405,
+    1000,
+    1110,
+    2001,
+    2002,
+    2006,
+    2008,
+    2011,
+    2631,
+    2923,
+    5000,
+    1001500
+  ],
+  "lore": {
+    "detail": "어떤 신부의 몸을 빙의체로 ‘이성의 신’이 소환하여 서번트화한 의사 서번트.\n러시아의 유명한 괴승 라스푸틴으로 나타난 이후 칼데아와 여러 번 교전하였다.\n어느 때는 적, 어느 때는 중립, 어느 때는 아군으로서 행동하는 이 인물의 진의는───"
+  },
+  "instant_death": true
+}

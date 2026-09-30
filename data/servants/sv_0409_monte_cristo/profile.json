@@ -1,0 +1,53 @@
+{
+  "servant_id": "sv_0409_monte_cristo",
+  "source_id": 409,
+  "name_ko": "암굴왕 몽테크리스토",
+  "name_short_ko": "암굴왕 몽테크리스토",
+  "class": "avenger",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "A+",
+    "mana": "B",
+    "luck": "?",
+    "np": "A"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "avenger",
+  "noble_phantasm": {
+    "name_ko": "별이여, 빛나는 길을 나아가라",
+    "ruby_ko": "파라디 샤토 디프",
+    "rank": "A",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_11017000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1101700/1101700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1101700/1101700b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    110,
+    201,
+    301,
+    304,
+    405,
+    1000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2631,
+    5000,
+    1101700
+  ],
+  "lore": {
+    "detail": "세계 최고의 인지도를 지닌 복수자. 그 남자의, 있을 수 없는 별개의 영기.\n어떠한 목적을 위해 암굴왕이 새로운 영기로 변한 모습. 복수자의 개념 그 자체로 불러야 할 영기로 현계해 있던 암굴왕 에드몽 당테스의 영기와 비교하면───\n이 영기는 과거에 파리에서 복수극을 벌였던 몽테크리스토 백작 본인의 모습에 조금 더 가깝다고 한다.\n특히 무기를 사용하는 전투 스타일은 본래의 영기와 현저하게 다르다."
+  },
+  "instant_death": false
+}

@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0258_chen_gong",
+  "skills": [
+    {
+      "skill_id": "sk_territory_creation",
+      "name_ko": "진지작성",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_item_construction",
+      "name_ko": "도구작성",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_scapegoat",
+      "name_ko": "스케이프고트",
+      "rank": "E",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_tactician_s_advice",
+      "name_ko": "군사의 충언",
+      "rank": "B++",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_tactician_s_cherished_desire",
+      "name_ko": "군사의 숙원",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

@@ -1,0 +1,54 @@
+{
+  "servant_id": "sv_0035_mephistopheles",
+  "source_id": 35,
+  "name_ko": "메피스토펠레스",
+  "name_short_ko": "메피스토펠레스",
+  "class": "caster",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "B",
+    "mana": "A",
+    "luck": "B",
+    "np": "B"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "assassin",
+  "noble_phantasm": {
+    "name_ko": "졸고 있는 폭탄",
+    "ruby_ko": "틱탁 봄",
+    "rank": "A+",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5014000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/501400/501400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/501400/501400b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    104,
+    201,
+    301,
+    304,
+    403,
+    1000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2631,
+    2858,
+    5000,
+    501400
+  ],
+  "lore": {
+    "detail": "아아, 악마! 악마! 악마가 왔다! 메피스토펠레스다! 그 최악의 악마 놈!"
+  },
+  "instant_death": false
+}

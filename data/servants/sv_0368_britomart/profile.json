@@ -1,0 +1,56 @@
+{
+  "servant_id": "sv_0368_britomart",
+  "source_id": 368,
+  "name_ko": "브리토마트",
+  "name_short_ko": "브리토마트",
+  "class": "lancer",
+  "ranks": {
+    "str": "C",
+    "end": "A+",
+    "agi": "C",
+    "mana": "B",
+    "luck": "B+",
+    "np": "B"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "요정기사・마풍돌격",
+    "ruby_ko": "페네트레이트・블레이더드",
+    "rank": "B+",
+    "type_ko": "대인/대군보구",
+    "special_attack": [
+      103
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3053000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/305300/305300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/305300/305300b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    101,
+    201,
+    300,
+    303,
+    405,
+    1000,
+    1177,
+    2008,
+    2011,
+    2012,
+    2037,
+    2858,
+    5000,
+    305300
+  ],
+  "lore": {
+    "detail": "서사시 ‘요정여왕’에 등장하는 기사. 수행 시대의 아서왕의 친구이며, 모험의 동료. 창의 명수.\n운명의 상대를 찾기 위한 여행을 떠나, 모험을 펼쳤다.\n───라고 하는 여기사 브리토마트를 어머니로 둔, 그 이름을 계승한 요정기사. 말하자면 2대 브리토마트다!"
+  },
+  "instant_death": false
+}

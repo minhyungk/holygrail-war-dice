@@ -1,0 +1,34 @@
+{
+  "servant_id": "sv_0251_mori_nagayoshi",
+  "skills": [
+    {
+      "skill_id": "sk_mad_enhancement",
+      "name_ko": "광화",
+      "rank": "D",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_mental_corruption_wicked",
+      "name_ko": "정신오염(흉)",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_blood_soaked_brute",
+      "name_ko": "피에 젖은 만용",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_oni_musashi_s_will_and_testament",
+      "name_ko": "오니 무사시의 유언장",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

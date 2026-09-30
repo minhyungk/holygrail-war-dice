@@ -1,0 +1,53 @@
+{
+  "servant_id": "sv_0043_charles_henri_sanson",
+  "source_id": 43,
+  "name_ko": "샤를=앙리 상송",
+  "name_short_ko": "상송",
+  "class": "assassin",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "C",
+    "mana": "D",
+    "luck": "A",
+    "np": "B"
+  },
+  "alignment": "evil",
+  "alignment_detail": "질서·악",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "죽음은 내일을 향한 희망일지니",
+    "ruby_ko": "라 모흐 에스푸아르",
+    "rank": "A+",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6012000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/601200/601200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/601200/601200b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    105,
+    202,
+    300,
+    304,
+    402,
+    1000,
+    2001,
+    2008,
+    2631,
+    2780,
+    2858,
+    5000,
+    601200
+  ],
+  "lore": {
+    "detail": "파리에서 대대로 사형 집행을 맡았던 상송가의 4대 당주. 프랑스 혁명이라는 격동의 시대에 온갖 계층의 인간들을 처형했다.\n인도적 배려를 추구한 처형도구 “기요틴”이 등장하면서 그는 처형자 수를 더욱 늘려간다."
+  },
+  "instant_death": true
+}

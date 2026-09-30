@@ -1,0 +1,54 @@
+{
+  "servant_id": "sv_0061_elisabeth_bathory_halloween",
+  "source_id": 61,
+  "name_ko": "엘리자베트 바토리(할로윈)",
+  "name_short_ko": "엘리자베트 할로윈",
+  "class": "caster",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "D",
+    "mana": "B",
+    "luck": "C",
+    "np": "D"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "선혈특상마양",
+    "ruby_ko": "바토리 할로윈 에르제베트",
+    "rank": "E-",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5026000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/502600/502600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/502600/502600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    202,
+    301,
+    304,
+    404,
+    1000,
+    2001,
+    2002,
+    2008,
+    2631,
+    2847,
+    2858,
+    5000,
+    502600
+  ],
+  "lore": {
+    "detail": "흡혈귀 카밀라의 모델이 된 백작부인…… 이 스킬 “무고의 괴물”에 의해 마인화된 것…… 이 우연히 주운 성배에 의해 할로윈 속성을 띠게 된 것. 도통 영문을 알 수가 없다.\n아이돌 문화에 물들었으면서 성에서 꿈꾸는 공주님 속성까지 추가하여 온갖 속성이 가득한 서번트."
+  },
+  "instant_death": false
+}

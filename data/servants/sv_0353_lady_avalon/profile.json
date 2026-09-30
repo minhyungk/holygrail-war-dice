@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0353_lady_avalon",
+  "source_id": 353,
+  "name_ko": "레이디 아발론",
+  "name_short_ko": "레이디 아발론",
+  "class": "pretender",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "C",
+    "mana": "A++",
+    "luck": "A",
+    "np": "A"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "저 너머로 손짓하는 이상향",
+    "ruby_ko": "윈즈 오브 아발론",
+    "rank": "A",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_28003000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/2800300/2800300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/2800300/2800300b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    120,
+    201,
+    301,
+    303,
+    405,
+    1000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2631,
+    2795,
+    2838,
+    5000,
+    2800300
+  ],
+  "lore": {
+    "detail": "어느샌가…… 정신을 차리고 보니 그 자리에서 조용히 서서 미소 짓고 있는, 가련한 꽃 같은 마술사.\n그 정체는…… 대체……?"
+  },
+  "instant_death": false
+}

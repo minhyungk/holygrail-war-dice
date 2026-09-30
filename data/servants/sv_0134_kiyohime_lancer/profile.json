@@ -1,0 +1,58 @@
+{
+  "servant_id": "sv_0134_kiyohime_lancer",
+  "source_id": 134,
+  "name_ko": "키요히메",
+  "name_short_ko": "키요히메 랜서",
+  "class": "lancer",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "B",
+    "mana": "E",
+    "luck": "A+",
+    "np": "C"
+  },
+  "alignment": "evil",
+  "alignment_detail": "혼돈·악",
+  "alignment_verified": false,
+  "temperament": "berserker",
+  "noble_phantasm": {
+    "name_ko": "도성사종백팔식화룡치",
+    "ruby_ko": "도성사종백팔식화룡치",
+    "rank": "A",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3025000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/302500/302500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/302500/302500b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    101,
+    201,
+    301,
+    304,
+    404,
+    1000,
+    1110,
+    2001,
+    2002,
+    2008,
+    2011,
+    2037,
+    2631,
+    2667,
+    2838,
+    2858,
+    5000,
+    302500
+  ],
+  "lore": {
+    "detail": "불타서, 불타서, 불타서불타서불타서불타서불타서불타서불타서 ────아아, 이거야말로 정열적인 상! 사! 병! ……이러한 연유로 왠지 묘한 분위기의 키요히메 씨이다. 어이 거기, 원래부터 이상했다고 말하면 안 돼."
+  },
+  "instant_death": false
+}

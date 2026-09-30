@@ -1,0 +1,52 @@
+{
+  "servant_id": "sv_0399_saika_magoichi",
+  "source_id": 399,
+  "name_ko": "사이카 마고이치",
+  "name_short_ko": "사이카 마고이치",
+  "class": "archer",
+  "ranks": {
+    "str": "C",
+    "end": "D",
+    "agi": "B",
+    "mana": "D",
+    "luck": "C",
+    "np": "C"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "총신・야타가라스",
+    "ruby_ko": "총신・야타가라스",
+    "rank": "C",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2052000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/205200/205200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/205200/205200b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    102,
+    202,
+    300,
+    303,
+    404,
+    1000,
+    2001,
+    2008,
+    2631,
+    2858,
+    5000,
+    205200
+  ],
+  "lore": {
+    "detail": "사이카슈란 일본 전국시대에 존재했던 철포 용병 집단이며, 그 두령으로 전해지는 것이 사이카 마고이치다.\n오다 노부나가와 혼간지가 벌였던 싸움 등, 수많은 전투에서 그 이름을 떨친 마고이치지만 그 인물 자체에 관해 불명확한 점이 많다.\n마고이치란 이름은 대대로 습명된 것이라는 설도 있는데, 모델이 된 인물이 여럿 존재하기 때문일까."
+  },
+  "instant_death": false
+}

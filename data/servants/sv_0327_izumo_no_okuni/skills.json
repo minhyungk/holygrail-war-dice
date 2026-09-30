@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0327_izumo_no_okuni",
+  "skills": [
+    {
+      "skill_id": "sk_territory_creation_kagura",
+      "name_ko": "진지작성(카구라)",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_item_construction_puppet",
+      "name_ko": "도구작성(기계장치)",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_new_okuni_kabuki",
+      "name_ko": "뉴 오쿠니 가부키",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_combat_dance",
+      "name_ko": "용맹한 춤",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_puppet_kagura",
+      "name_ko": "인형 카구라",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_sealing_shrine_maiden",
+      "name_ko": "봉인의 무녀",
+      "rank": "B+",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

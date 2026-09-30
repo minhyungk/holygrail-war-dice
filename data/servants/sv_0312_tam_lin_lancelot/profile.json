@@ -1,0 +1,59 @@
+{
+  "servant_id": "sv_0312_tam_lin_lancelot",
+  "source_id": 312,
+  "name_ko": "멜뤼진",
+  "name_short_ko": "멜뤼진 랜서",
+  "class": "lancer",
+  "ranks": {
+    "str": "C",
+    "end": "A+",
+    "agi": "B",
+    "mana": "A+",
+    "luck": "B",
+    "np": "A+"
+  },
+  "alignment": "evil",
+  "alignment_detail": "중립·악",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "아무도 모르는, 무구한 고동",
+    "ruby_ko": "할로우 하트・알비온",
+    "rank": "EX",
+    "type_ko": "대계보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3048000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/304800/304800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/304800/304800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    101,
+    201,
+    302,
+    304,
+    405,
+    1000,
+    1177,
+    2001,
+    2002,
+    2011,
+    2012,
+    2037,
+    2632,
+    2780,
+    2810,
+    2835,
+    2858,
+    5000,
+    304800
+  ],
+  "lore": {
+    "detail": "요정국 브리튼에서의 원탁의 기사, 그중 하나. 범인류사에서의 원탁의 기사 랜슬롯의 영기를 착명한 요정기사. 브리튼에서 단 하나뿐인 ‘용’의 요정.\n무자비한 전사로서 행동하지만, 그 태도, 유려함, 그리고 다른 요정들과 일선을 긋는 외모에서, 요정국에서 가장 긍지 높고, 아름다운 요정이라고 불리고 있다."
+  },
+  "instant_death": false
+}

@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0210_okada_izo",
+  "source_id": 210,
+  "name_ko": "오카다 이조",
+  "name_short_ko": "오카다 이조",
+  "class": "assassin",
+  "ranks": {
+    "str": "C",
+    "end": "D",
+    "agi": "B",
+    "mana": "E",
+    "luck": "E",
+    "np": "C"
+  },
+  "alignment": "evil",
+  "alignment_detail": "중립·악",
+  "alignment_verified": false,
+  "temperament": "assassin",
+  "noble_phantasm": {
+    "name_ko": "시말검",
+    "ruby_ko": "시말검",
+    "rank": "없음",
+    "type_ko": "대인마검",
+    "special_attack": [
+      202
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6033000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/603300/603300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/603300/603300b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    105,
+    202,
+    302,
+    304,
+    403,
+    1000,
+    2001,
+    2008,
+    2631,
+    2780,
+    2858,
+    5000,
+    603300
+  ],
+  "lore": {
+    "detail": "막부 말기의 4대 칼잡이 중 한 명으로 꼽히며, ‘칼잡이 이조’라는 이명을 지니고 있다. 소야파일도류, 경심명지류, 직지류 검술 등 다양한 검술을 익혔다.\n많은 암살 사건에 관여하였으며, 그것이 원인이 되어 투옥, 처형 당했다.\n재능을 뽐내며 자기 이외의 검사를 깔보는 경향이 있지만 ‘검술 날래기로는 매와 같다’라고 평가받은 검술 솜씨는 두말 할 것 없는 천재."
+  },
+  "instant_death": false
+}

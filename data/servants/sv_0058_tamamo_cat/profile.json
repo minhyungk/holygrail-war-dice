@@ -1,0 +1,56 @@
+{
+  "servant_id": "sv_0058_tamamo_cat",
+  "source_id": 58,
+  "name_ko": "타마모캣",
+  "name_short_ko": "타마모캣",
+  "class": "berserker",
+  "ranks": {
+    "str": "B+",
+    "end": "E",
+    "agi": "A",
+    "mana": "A",
+    "luck": "B",
+    "np": "D"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "tsundere",
+  "noble_phantasm": {
+    "name_ko": "찬찬일광 오수궁주지육림",
+    "ruby_ko": "눈부신 햇살 속 낮잠 주지육림",
+    "rank": "D+",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7016000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/701600/701600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/701600/701600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    2,
+    106,
+    201,
+    301,
+    303,
+    404,
+    1000,
+    2001,
+    2005,
+    2008,
+    2011,
+    2037,
+    2632,
+    2780,
+    2858,
+    5000,
+    701600
+  ],
+  "lore": {
+    "detail": "타마모 나인 중 하나.\n타마모노마에가 천년 단련으로 신격을 올린 후 꼬리 하나 있는 모습으로 돌아갈 때 잘라버린 여덟 꼬리. 그것이 저마다 신격을 얻어 분령으로써 영령화한 것. 타마모노마에가 가진 (비교적) 순진한 부분의 결정."
+  },
+  "instant_death": false
+}

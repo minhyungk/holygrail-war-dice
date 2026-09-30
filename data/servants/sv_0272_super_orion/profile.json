@@ -1,0 +1,58 @@
+{
+  "servant_id": "sv_0272_super_orion",
+  "source_id": 272,
+  "name_ko": "초인 오리온",
+  "name_short_ko": "초인 오리온",
+  "class": "archer",
+  "ranks": {
+    "str": "A",
+    "end": "A",
+    "agi": "B+",
+    "mana": "C",
+    "luck": "A",
+    "np": "EX"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "달의 여신의 무구한 사랑",
+    "ruby_ko": "아르테미스 아그노스",
+    "rank": "B",
+    "type_ko": "대군(자신) 보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2038000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/203800/203800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/203800/203800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    102,
+    201,
+    301,
+    305,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2012,
+    2037,
+    2040,
+    2114,
+    2631,
+    2858,
+    5000,
+    203800
+  ],
+  "lore": {
+    "detail": "클래스 아처. 그리스 최고의 사냥꾼을 자칭하는 초인.\n그 강인하고 호쾌한 육체는 다양한 짐승을 활을 들었든 맨손이든 상관없이 해치울 수 있을 만한 힘을 지니고 있다.\n그리고 정평이 난 플레이보이…… 이기도 하지만 하필이면 달의 여신 아르테미스에게 사랑받고 말았다.\n무척 유쾌…… 불쌍…… 파란만장한 인간이다."
+  },
+  "instant_death": false
+}

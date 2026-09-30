@@ -1,0 +1,51 @@
+{
+  "servant_id": "sv_0351_archetype_earth",
+  "source_id": 351,
+  "name_ko": "아키타입 : 어스",
+  "name_short_ko": "아키타입 어스",
+  "class": "moonCancer",
+  "ranks": {
+    "str": "B",
+    "end": "B",
+    "agi": "B",
+    "mana": "A",
+    "luck": "B",
+    "np": "EX"
+  },
+  "alignment": "good",
+  "alignment_detail": "불명·선",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "공상구현화",
+    "ruby_ko": "마블 판타즘",
+    "rank": "EX",
+    "type_ko": "대군보구",
+    "special_attack": [
+      301
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_23005000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/2300500/2300500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/2300500/2300500b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    115,
+    203,
+    303,
+    405,
+    1000,
+    2001,
+    2835,
+    5000,
+    2300500
+  ],
+  "lore": {
+    "detail": "그 이름은 아키타입 : 어스. 마술세계에서 ‘원초의 하나’로 불리는 생명체.\n어느 때는 흡혈귀들을 두려움에 떨게 하는 지배자, 어느 때는 달 표면을 뛰어다니는 토끼 같은 흡혈귀, 그리고 어느 때는 몰래 찾아온 세상 물정 모르는 공주님!\n천연난만, 순백무구. 해님을 닮은 퍼니・뱀프가, 축하하러 찾아왔다!"
+  },
+  "instant_death": false
+}

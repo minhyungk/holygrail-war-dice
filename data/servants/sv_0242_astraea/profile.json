@@ -1,0 +1,61 @@
+{
+  "servant_id": "sv_0242_astraea",
+  "source_id": 242,
+  "name_ko": "아스트라이아",
+  "name_short_ko": "아스트라이아",
+  "class": "ruler",
+  "ranks": {
+    "str": "A+",
+    "end": "A+",
+    "agi": "D",
+    "mana": "EX",
+    "luck": "B",
+    "np": "A+"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "심판의 때는 지금. 그대의 이름을 고하라",
+    "ruby_ko": "커스토스 모룸",
+    "rank": "EX",
+    "type_ko": "대죄보구",
+    "special_attack": [
+      304
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_9008000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/900800/900800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/900800/900800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    108,
+    200,
+    300,
+    303,
+    404,
+    1000,
+    2000,
+    2001,
+    2004,
+    2008,
+    2011,
+    2040,
+    2631,
+    2654,
+    2835,
+    2851,
+    2923,
+    5000,
+    900800
+  ],
+  "lore": {
+    "detail": "정의와 천칭의 여신인 아스트라이아는, 어울리는 빙의체를 선택했다.\n사람 위에 서야 할 천성을 지닌 자── 그런 개념을 인정한다면, 그녀뿐이었을 것이다. 그녀는 정의라는 권능을 자신의 의무로서 받아들였기에, 그 권리를 이용하여 폭주하지 않는다.\n……다만 그런 아름다운 성질과는 별개로, 희귀한 존재, 귀중한 존재를 발견하면, 자신이 앞장서서 보호해야 할 대상으로 생각하는 경향이 있다.\n즉, 천공에서 가장 우아한 여신(의 탈을 쓴 하이에나)."
+  },
+  "instant_death": false
+}

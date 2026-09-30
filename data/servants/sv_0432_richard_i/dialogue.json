@@ -1,0 +1,390 @@
+{
+  "speaker": "sv_0432_richard_i",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "간다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "권투는 좋아하나?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "제───윌프레드!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "빠져 보겠나?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "니무에 씨, 부탁하겠어!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "나를 죽인 일격이다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_8",
+        "text": "쏴라, 피에르!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_9",
+        "text": "조금 아플걸!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_10",
+        "text": "따라올 수 있겠나?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_11",
+        "text": "터져 날아가라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_12",
+        "text": "끝내도록 하지!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_13",
+        "text": "록슬리!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_14",
+        "text": "독화살은 좋아하나?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_15",
+        "text": "즐기고 있나?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_16",
+        "text": "아이반호 경!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "‘영원히 머나먼 승리의 검(엑스───칼리버)’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "기사는 맨손으로 죽지 않는다고 하지!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "내 속도를 포착할 줄이야……?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "우옷!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "제법인데!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "기어를 6단계 올린다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "이 칼날의 이름을, 지금부터 ‘엑스칼리버’로 하겠다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "니무에 씨, 버프를 부탁해!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "펠레아스 경, 검을 한 자루 빌려줘!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_5",
+        "text": "피에르, 노릴 수 있겠나?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_6",
+        "text": "이것도 천칭에 올리도록 하지!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "스톰 보더라는 곳은 대단한걸! 배 안을 탐험하고 올게! 다양한 영웅과 이야기를 나눠보고 싶어!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "미안하다, 마스터. 현대에서 말하는 팬심을 주체 못 하는 기질이라서 말이야. 동경하는 영웅들을 앞두고 그만 신을 내고 말았어. 하지만 깨달았다구. 그 영웅들에게 이렇게까지 호감을 사는 마스터야말로 보통내기가 아니야.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "너는 전황뿐만이 아니라, 나도 포함해서 서번트들을 잘 보고 있군. 장수의 재능? 군사? 마술사? 혹은 그 전부. 마스터로서 쌓아 올린 수완이겠지. 생전에 못하는 것이 없다며 극찬받았던 나도, 마스터가 쌓아 올린 그 힘은 솔직히 부럽게 느껴지는걸?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "마스터, 나는 너의 서번트다. 네가 쌓은 영광은 나의 영광처럼 기뻐. 그러니까 슬픔도 분노도, 죄를 거듭하는 것조차도 홀로 짊어질 건 없어. 자기 혼자 짊어져야 한다고 결의했다고 해도 멋대로 같이 짊어져 주마. 나와 계약한 것을 후회해도 이미 늦었거든? 알잖아, 내가 너무나 이기적이라는 건. 세계를 부수는 것도 구하는 것도 마찬가지야. 마지막까지 함께해 줄 테니 각오하시지?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것? 전장을 달리는 것…… 이라든가 하는 얘길 듣고 싶은 건 아닌 모양이군. 음악과 영웅담, 특히 아서 왕 전설은 말할 것도 없이 아주 좋아해! 그리고 어딘가에 소환되었을 때에 주워들은 지식 같지만, 로큰롤이란 게 아무래도 성격에 맞는 것 같아.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것? 그때의 기분에 따라 바뀌지. 옛날에는 표변공이라고 불리며 두려움 사기도 했어. 훗, 그렇게 겁내지 말라고. 버서커나 라이더의 영기가 아니라면 갑자기 격분해서 베려고 하지는 않으니까, 아마도. 만약의 경우에는 영주로 멈춰줘.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "적을 살릴지 끝장을 낼지, 처음에 알려달라고.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "서로의 맹약은 이루어졌다. 지금부터…… 나도 침공을 개시한다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "괜찮겠나? 시작되면 아마 백기를 들 틈도 없어질걸?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "나의 몸속에 도사리는 사자여! 나의 의지로써 적을 물어 으깨는 사자여! 그 무궁한 갈망을, 나의 칼날로써 채우리라! 성내고, 날뛰고, 외치고, 끝없는 혈로를 베어 열어라! ‘사자후여 노래하라, 쾌풍의 연옥을(유토피・퓌르가투아르)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "자, 이쪽도 슬슬 반격을 개시해 볼까! 지휘관인 왕이 최전선에 나가는 게 뭐가 나빠! 그것이 가능하기 때문에 나는, 지금, 여기에, 전쟁의 시작과 끝을 관철한다! ‘사자후여 노래하라, 쾌풍의 연옥을(유토피・퓌르가투아르)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "반격을 개시해 볼까! ^0:0:1.94:나는, 지금, 여기에,^0:1.95:E:전쟁의 시작과 끝을 관철한다!^1:0:1.94:나는, 지금, 여기에,^1:1.95:E:전쟁의 시작과 끝을 관철한다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_4",
+        "text": "갑작스럽지만 지금부터 성배(홀리 그레일) 탐색 경쟁을 개시한다! 참가는 자유다! 목 베는 토끼는 조심해라! 자, 달려라, 달려! 설령 희극 같은 이유라 해도, 뭔가를 찾아 헤매던 열정은 훗날 누군가의 길이 된다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_5",
+        "text": "자, 달려라, 달려!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "사자심왕의 이름을 걸고, 침공을 여기서 끝내겠다고 선언한다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "일단은 이 정도인가. 포로를 잡을 필요는 있나?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "여기까지인가…… 나쁜 기분은…… 아니, 역시 분한걸……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "미안하다, 지금의 나로서는…… 아직, 동경하는 영웅들에 닿기엔 부족한 모양이야……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "묻겠다! 그대가 나의 마스터인가? ……아. 성배전쟁은 아닌가 보군. 굉장한걸…… 사방에 영웅의 기척이 느껴져! 혹시…… 혹시나 싶지만, 원탁의 기사들도 있나? 그거참…… 나도 기합을 넣을 수밖에 없겠군! 나의 이름은 사자심왕 리처드! 이 자리에서, 마스터의 칼날로서 연합에 참가할 것을 맹세하겠다!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

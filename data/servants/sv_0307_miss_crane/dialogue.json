@@ -1,0 +1,375 @@
+{
+  "speaker": "sv_0307_miss_crane",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "에잇!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "베틀질!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "바느질!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "당신에게 아듀!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "프렌치 펀치!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "실례합니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "새로운 영감, 왔습니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "불러 주세요, 앙코르!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "욕심내서 가죠!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_4",
+        "text": "밀어주기로 마음먹었으면 한결같이!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "아앗, 소중한 옷이……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "큭.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "이, 이렇게 엄청난, 광채가……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "하웃!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "통통, 샥~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "생명을 실로 뽑아 짓겠습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "꾸며 입어야, 비로소 인생!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "좋아하는 색은 무엇인가요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "무엇이든 분부해 주세요. 부디 사양하지 마시고.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "당신의 옷 취향을 알게 되었습니다. 더욱더 당신의 광채를 보조할 수 있겠네요. 바로 새 옷을 지어보겠습니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "아후우…… 후히, 자, 잘 어울리네요~ ──헉, 실례했습니다. 의상이 너무나 어울리다 보니…… 저, 저기, 만약 괜찮으시면 다른 옷도 몇 벌 시험 삼아 입어보지 않으시겠어요? ……네! 순수하게 제 욕구로서, 당신과 함께 패션쇼를 열어보고 싶어서요. 그렇지, 카메라맨도 수배해야……!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "이별은 언젠가 찾아오는 것. 그렇다면 최소한 그날까지, 함께 천을 짜지요. 기쁨도, 슬픔도, 아름다운 것도, 못난 것도…… 모든 마음은 생명의 무늬. 그렇게 짜내림으로써 당신이나 저의 광채도 대대손손 영원히 남는다고── 믿고 있습니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "저, 아이돌을 좋아해요. 아름다운 사람을 좋아하는 것하고는 조금 의미가 다르지요. 세상 일반적으로 떠올리는 아이돌의 조건…… 외견적 미모, 가창력, 운동 능력, 연령, 성별, 문화, 국적, 생명과 비생명, 2차원 3차원 4차원…… 저는 그것들이 필수라고는 생각하지 않습니다. 사람의 마음을 밝히는, 존귀한 빛. 그것이 바로 아이돌의 조건이 아닐까 해요. ……후후, 잘난 척 말씀드렸습니다만, 그 본질은 저도 아직 이해하지 못했습니다. 그러니까 라이브에 가죠, 동영상을 보죠, 굿즈를 사죠. 좌우지간 아무튼 최애로 밀어주고, 밀어주고, 밀어주는 거예요! 분명 당신만의 아이돌을 찾을 수 있을 거예요.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "화살이나 함정 종류를 보면 몸이 절로 움츠러들 수밖에 없네요. 감사하게도 아처 분들은 소중한 무구를 제 눈에 띄지 않게 해주시더군요. 그 마음씨에 언젠가 은혜를 갚고 싶답니다.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배…… 아아, 터무니없는 광채입니다. 사람이 아닌 짐승조차 성배를 앞에 두면 본래의 모습으로 있을 수 없게 되겠지요. 주의, 주의, 과분한 힘에는 주의를.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "막이 올랐습니다. 당신의 광채, 확실하게 서포트하겠습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "아끼는 옷이랍니다. 너무 더럽히지 않게, 빠르게 끝마치죠.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "싸움 기술은 서투릅니다만, 보은을 위해서라면.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "그 의상, 잘 어울려요. 꼭 이기고말고요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "마음을 바치고 몸을 바쳐, 은혜에 보답하는 이 하룻밤. ‘천의무봉・학은석별가(학의 인연, 눈물의 이별)’! ──오래오래 언제까지나 빛나주시길.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "지금 마지막으로 떠나는 새는, 당신께 유품을 남기겠지요. ‘천의무봉・학은석별가(학의 인연, 눈물의 이별)’! 여행길 끝에, 꼭 다시──",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "네? 사양 변경?! 할 수 있고 말고요, 은혜 갚기──! ──해냈어요, 저! 자, 뒤풀이 올 나이트~!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "수고하셨습니다. 여러분 모두, 정말 눈부실 만큼 빛나고 계셨어요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "자, 자, 옷은 이쪽으로 주세요. 때지고 해진 곳은 전부 깔끔하게 고쳐둘게요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "승전 축하 모임용 드레스가 필요하시군요. 안심하시길, 이미 준비해두었습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_4",
+        "text": "우와아~…… 좋다…… 핫! 실례, 그만 여러분의 용맹하신 모습에 넋이 나갔었습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "작별, 입니다…… 하지만, 언젠가 또……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "C'est la vie…… 이것도 또한, 인생……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "배웅받는 거야, 이골이 났지요……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_4",
+        "text": "아직, 은혜를 갚지 못했는데……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "실례하겠사옵니다. 저번에 구해주신 학이랍니다. 후훗, 처음부터 정체를 밝히는 것 또한 하나의 재미일까 해서요. 이 미스 크레인, 진심을 담아 길쌈해서 눈부시게 고운 옷을 바쳐, 한없는 은혜에 보답하겠습니다.",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "servant_id": "sv_0281_voyager",
+  "source_id": 281,
+  "name_ko": "보이저",
+  "name_short_ko": "보이저",
+  "class": "foreigner",
+  "ranks": {
+    "str": "E",
+    "end": "C",
+    "agi": "A+",
+    "mana": "B",
+    "luck": "A",
+    "np": "B"
+  },
+  "alignment": "good",
+  "alignment_detail": "중립·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "머나먼 푸른 별이여",
+    "ruby_ko": "페일 블루 도트",
+    "rank": "B+",
+    "type_ko": "대성보구",
+    "special_attack": [
+      200
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_25005000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/2500500/2500500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/2500500/2500500b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    117,
+    203,
+    302,
+    303,
+    405,
+    1000,
+    2001,
+    2667,
+    2731,
+    2810,
+    2847,
+    2924,
+    5000,
+    2500500
+  ],
+  "lore": {
+    "detail": "1977년, 무인 우주 탐사선 보이저는, 플로리다 공군기지에서 로켓으로 발사되었다. 목성, 토성 등의 태양계 행성들을 조사하고, 그 뒤에는 끝없는 성간 미션을 위해 여행을 떠났다.\n지금도 그는 태양권을 벗어나 별의 바다를 계속 날고 있다."
+  },
+  "instant_death": false
+}

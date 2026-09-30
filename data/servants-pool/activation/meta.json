@@ -1,5 +1,5 @@
 {
-  "notes": "D-157 신규 93기 분류 초안 (author: ai, 사용자 검수 전). temperament 근거: legacy = 레거시 성격표, ai = 원작 성격 판단, class = 클래스 기본값",
+  "notes": "D-157 93기 + D-166 324기 분류 초안 (author: ai, 사용자 검수 전). temperament 근거: legacy = 레거시 성격표, ai = 원작 성격 판단, class = 클래스 기본값. 성향은 Atlas traits 첫 조합 기준; 누락·복수 성향은 항목 reason에 기록",
   "servants": {
     "sv_0003_altria_pendragon_alter": {
       "name_short_ko": "알트리아 얼터",
@@ -744,6 +744,2598 @@
       "temperament": "avenger",
       "temperament_source": "ai",
       "reason": "파멸을 향한 복수심과 기만"
+    },
+    "sv_0001_mash_kyrielight": {
+      "name_short_ko": "마슈",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "타인을 지키려는 헌신적인 태도"
+    },
+    "sv_0004_altria_pendragon_lily": {
+      "name_short_ko": "알트리아 릴리",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "royal",
+      "temperament_source": "legacy",
+      "reason": "레거시 알트리아 펜드래곤(릴리) 성격표"
+    },
+    "sv_0007_gaius_julius_caesar": {
+      "name_short_ko": "카이사르",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "로마의 통치자로서 권위적인 언행"
+    },
+    "sv_0009_gilles_de_rais": {
+      "name_short_ko": "질 드 레 세이버",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "berserker",
+      "temperament_source": "ai",
+      "reason": "잔 다르크에 대한 광적인 집착"
+    },
+    "sv_0015_euryale": {
+      "name_short_ko": "에우리알레",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "장난스럽고 밝은 여신의 말투"
+    },
+    "sv_0019_musashibou_benkei": {
+      "name_short_ko": "벤케이",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "주군을 향한 충의와 자기희생"
+    },
+    "sv_0028_alexander": {
+      "name_short_ko": "알렉산더",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cool",
+      "temperament_source": "legacy",
+      "reason": "레거시 알렉산더 성격표"
+    },
+    "sv_0035_mephistopheles": {
+      "name_short_ko": "메피스토펠레스",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "계약과 기만을 즐기는 악마적 성향"
+    },
+    "sv_0036_wolfgang_amadeus_mozart": {
+      "name_short_ko": "모차르트",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "음악에 몰두하는 냉정한 관찰자"
+    },
+    "sv_0043_charles_henri_sanson": {
+      "name_short_ko": "상송",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "처형인으로서 지닌 죄책감과 배려"
+    },
+    "sv_0046_carmilla": {
+      "name_short_ko": "카밀라",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "assassin",
+      "temperament_source": "legacy",
+      "reason": "레거시 카밀라 성격표"
+    },
+    "sv_0054_caligula": {
+      "name_short_ko": "칼리굴라",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "berserker",
+      "temperament_source": "legacy",
+      "reason": "레거시 칼리굴라 성격표"
+    },
+    "sv_0055_darius_iii": {
+      "name_short_ko": "다리우스",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "berserker",
+      "temperament_source": "legacy",
+      "reason": "레거시 다리우스 3세 성격표"
+    },
+    "sv_0056_kiyohime": {
+      "name_short_ko": "키요히메",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "berserker",
+      "temperament_source": "legacy",
+      "reason": "레거시 키요히메 성격표"
+    },
+    "sv_0057_eric_bloodaxe": {
+      "name_short_ko": "에릭 블러드액스",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "berserker",
+      "temperament_source": "ai",
+      "reason": "광화된 전사로서의 거친 충동"
+    },
+    "sv_0058_tamamo_cat": {
+      "name_short_ko": "타마모캣",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "tsundere",
+      "temperament_source": "legacy",
+      "reason": "레거시 타마모캣 성격표"
+    },
+    "sv_0060_orion": {
+      "name_short_ko": "오리온",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "아르테미스의 과장되고 활기찬 애정 표현"
+    },
+    "sv_0061_elisabeth_bathory_halloween": {
+      "name_short_ko": "엘리자베트 할로윈",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "아이돌 같은 밝은 태도"
+    },
+    "sv_0063_david": {
+      "name_short_ko": "다윗",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "cheerful",
+      "temperament_source": "legacy",
+      "reason": "레거시 다윗 성격표"
+    },
+    "sv_0066_anne_bonny_and_mary_read": {
+      "name_short_ko": "앤&메리 라이더",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "두 해적의 활발하고 자유로운 성격"
+    },
+    "sv_0067_medea_lily": {
+      "name_short_ko": "메데이아 릴리",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "치유에 헌신하는 메데이아의 어린 모습"
+    },
+    "sv_0072_fergus_mac_roich": {
+      "name_short_ko": "퍼거스",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "cool",
+      "temperament_source": "class",
+      "reason": "레거시 saber 클래스 기본 성격"
+    },
+    "sv_0073_altria_pendragon_santa_alter": {
+      "name_short_ko": "알트리아 산타 얼터",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "왕의 위엄을 지닌 산타 얼터"
+    },
+    "sv_0074_nursery_rhyme": {
+      "name_short_ko": "너서리 라임",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "동화 속 아이처럼 천진한 모습"
+    },
+    "sv_0078_altria_pendragon_alter": {
+      "name_short_ko": "알트리아 얼터 랜서",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "냉엄한 기사왕의 권위"
+    },
+    "sv_0079_paracelsus_von_hohenheim": {
+      "name_short_ko": "파라켈수스",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cool",
+      "temperament_source": "class",
+      "reason": "레거시 caster 클래스 기본 성격"
+    },
+    "sv_0080_charles_babbage": {
+      "name_short_ko": "배비지",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "기계적 사고와 과학자 기질"
+    },
+    "sv_0081_henry_jekyll_and_hyde": {
+      "name_short_ko": "지킬&하이드",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "지킬의 절제된 언행"
+    },
+    "sv_0086_mysterious_heroine_x": {
+      "name_short_ko": "히로인 X",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "히로인 X의 요란하고 활발한 성격"
+    },
+    "sv_0087_fionn_mac_cumhaill": {
+      "name_short_ko": "핀 막 쿨",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "전설 속 지도자로서의 자부심"
+    },
+    "sv_0090_nero_claudius_bride": {
+      "name_short_ko": "네로 브라이드",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·불명",
+      "temperament": "royal",
+      "temperament_source": "legacy",
+      "reason": "레거시 네로 클라우디우스(브라이드) 성격표; Atlas 성향 특성 일부 누락"
+    },
+    "sv_0091_ryougi_shiki_saber": {
+      "name_short_ko": "시키 세이버",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "초연하고 차분한 료기 시키의 태도"
+    },
+    "sv_0095_gilgamesh_child": {
+      "name_short_ko": "꼬마 길",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "royal",
+      "temperament_source": "legacy",
+      "reason": "레거시 꼬마 길 성격표"
+    },
+    "sv_0099_queen_medb": {
+      "name_short_ko": "메이브",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "여왕으로서의 지배욕과 자신감"
+    },
+    "sv_0100_helena_blavatsky": {
+      "name_short_ko": "엘레나",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "아이들을 향한 밝고 다정한 태도"
+    },
+    "sv_0101_rama": {
+      "name_short_ko": "라마",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "royal",
+      "temperament_source": "legacy",
+      "reason": "레거시 라마 성격표"
+    },
+    "sv_0102_li_shuwen": {
+      "name_short_ko": "이서문 랜서",
+      "alignment": "evil",
+      "alignment_detail": "중립·악",
+      "temperament": "cheerful",
+      "temperament_source": "class",
+      "reason": "레거시 lancer 클래스 기본 성격"
+    },
+    "sv_0103_thomas_edison": {
+      "name_short_ko": "에디슨",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "미국 대통령을 자처하는 과장된 위엄"
+    },
+    "sv_0104_geronimo": {
+      "name_short_ko": "제로니모",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "부족의 전사로서 신중한 태도"
+    },
+    "sv_0105_billy_the_kid": {
+      "name_short_ko": "빌리",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "총잡이로서 냉정하고 담담한 언행"
+    },
+    "sv_0112_shuten_douji": {
+      "name_short_ko": "슈텐도지",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "도깨비답게 위험한 유혹과 기만을 즐김"
+    },
+    "sv_0113_xuanzang_sanzang": {
+      "name_short_ko": "삼장",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "불법과 구도에 대한 굳은 신념"
+    },
+    "sv_0114_minamoto_no_raikou": {
+      "name_short_ko": "라이코",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "berserker",
+      "temperament_source": "legacy",
+      "reason": "레거시 미나모토노 라이코 성격표"
+    },
+    "sv_0115_sakata_kintoki_rider": {
+      "name_short_ko": "킨토키 라이더",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "골든을 외치는 호쾌한 성격"
+    },
+    "sv_0116_ibaraki_douji": {
+      "name_short_ko": "이바라키",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "tsundere",
+      "temperament_source": "legacy",
+      "reason": "레거시 이바라키도지 성격표"
+    },
+    "sv_0117_fuuma_evil_wind_kotarou": {
+      "name_short_ko": "후마 코타로",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "닌자로서 은밀하고 절제된 태도"
+    },
+    "sv_0119_altria_pendragon_lancer": {
+      "name_short_ko": "알트리아 랜서",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "기사왕의 통치자로서의 위엄"
+    },
+    "sv_0120_nitocris": {
+      "name_short_ko": "니토크리스",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "파라오로서의 품위와 자부심"
+    },
+    "sv_0124_hassan_of_the_serenity": {
+      "name_short_ko": "정밀의 하산",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "암살자 교육으로 형성된 조심스러운 태도"
+    },
+    "sv_0125_tawara_touta": {
+      "name_short_ko": "타와라 토타",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "쌀을 나누는 호방한 영웅의 태도"
+    },
+    "sv_0126_bedivere": {
+      "name_short_ko": "베디비어",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "왕을 위해 희생한 충직한 기사"
+    },
+    "sv_0128_tamamo_no_mae_lancer": {
+      "name_short_ko": "타마모 랜서",
+      "alignment": "neutral",
+      "alignment_detail": "중립·여름",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "애정을 숨기지 못하는 타마모의 말투"
+    },
+    "sv_0129_altria_pendragon_archer": {
+      "name_short_ko": "알트리아 아처",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "기사왕 특유의 엄격한 품위"
+    },
+    "sv_0130_marie_antoinette_caster": {
+      "name_short_ko": "마리 캐스터",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "마리의 밝고 낙천적인 태도"
+    },
+    "sv_0131_anne_bonny_and_mary_read_archer": {
+      "name_short_ko": "앤&메리 아처",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "해적 두 사람의 활기찬 성격"
+    },
+    "sv_0132_mordred_rider": {
+      "name_short_ko": "모드레드 라이더",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "반항적이지만 애정을 바라는 모드레드"
+    },
+    "sv_0133_scathach_assassin": {
+      "name_short_ko": "스카사하 어쌔신",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "전투에 익숙한 스승의 침착함"
+    },
+    "sv_0134_kiyohime_lancer": {
+      "name_short_ko": "키요히메 랜서",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "berserker",
+      "temperament_source": "ai",
+      "reason": "사랑에 대한 집요한 집착"
+    },
+    "sv_0135_martha_ruler": {
+      "name_short_ko": "마르타 룰러",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "타인을 보호하는 성녀의 태도"
+    },
+    "sv_0138_elisabeth_bathory_brave": {
+      "name_short_ko": "엘리자베트 브레이브",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "용사 역할에 들뜬 아이돌"
+    },
+    "sv_0139_cleopatra": {
+      "name_short_ko": "클레오파트라",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "이집트 여왕으로서의 자부심"
+    },
+    "sv_0141_jeanne_d_arc_alter_santa_lily": {
+      "name_short_ko": "잔 얼터 산타 릴리",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "어린 산타의 서툴고 다정한 반응"
+    },
+    "sv_0142_ishtar": {
+      "name_short_ko": "이슈타르 아처",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "tsundere",
+      "temperament_source": "legacy",
+      "reason": "레거시 이슈타르 성격표"
+    },
+    "sv_0144_quetzalcoatl": {
+      "name_short_ko": "케찰코아틀",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cheerful",
+      "temperament_source": "legacy",
+      "reason": "레거시 케찰코아틀 성격표"
+    },
+    "sv_0145_gilgamesh": {
+      "name_short_ko": "길가메시 캐스터",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "royal",
+      "temperament_source": "legacy",
+      "reason": "레거시 길가메시 성격표"
+    },
+    "sv_0146_medusa": {
+      "name_short_ko": "메두사 랜서",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "어린 메두사의 신중하고 차분한 태도"
+    },
+    "sv_0147_gorgon": {
+      "name_short_ko": "고르곤",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "avenger",
+      "temperament_source": "ai",
+      "reason": "복수심에 사로잡힌 고르곤"
+    },
+    "sv_0148_jaguar_warrior": {
+      "name_short_ko": "재규어맨",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "재규어맨의 유쾌하고 과장된 언행"
+    },
+    "sv_0155_mysterious_heroine_x_alter": {
+      "name_short_ko": "히로인 X 얼터",
+      "alignment": "evil",
+      "alignment_detail": "중립·악",
+      "temperament": "berserker",
+      "temperament_source": "ai",
+      "reason": "히로인 X 얼터의 광화된 전투성"
+    },
+    "sv_0156_james_moriarty": {
+      "name_short_ko": "모리어티 아처",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "범죄 계획과 기만을 즐기는 교수"
+    },
+    "sv_0158_hessian_lobo": {
+      "name_short_ko": "헤센 로보",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "avenger",
+      "temperament_source": "ai",
+      "reason": "인간을 향한 늑대의 분노와 복수심"
+    },
+    "sv_0159_yan_qing": {
+      "name_short_ko": "연청",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "은밀한 잠입과 변장을 쓰는 도적"
+    },
+    "sv_0162_chacha": {
+      "name_short_ko": "차차",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "아이처럼 들뜬 차차의 성격"
+    },
+    "sv_0165_suzuka_gozen": {
+      "name_short_ko": "스즈카고젠",
+      "alignment": "evil",
+      "alignment_detail": "중립·악",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "현대 문화에 익숙한 밝은 말투"
+    },
+    "sv_0169_scheherazade": {
+      "name_short_ko": "셰에라자드",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "죽음을 두려워해 신중하게 행동함"
+    },
+    "sv_0170_wu_zetian": {
+      "name_short_ko": "무측천",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "황제로서 권위를 중시하는 태도"
+    },
+    "sv_0171_penthesilea": {
+      "name_short_ko": "펜테실레이아",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "avenger",
+      "temperament_source": "ai",
+      "reason": "아킬레우스를 향한 원한과 집착"
+    },
+    "sv_0172_christopher_columbus": {
+      "name_short_ko": "콜럼버스",
+      "alignment": "evil",
+      "alignment_detail": "중립·악",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "목적을 위해 본심을 감추는 태도"
+    },
+    "sv_0174_paul_bunyan": {
+      "name_short_ko": "폴 버니언",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "어린 개척자의 천진한 성격"
+    },
+    "sv_0175_nero_claudius_caster": {
+      "name_short_ko": "네로 캐스터",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·여름",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "황제로서 자신감 넘치는 언행"
+    },
+    "sv_0176_frankenstein_saber": {
+      "name_short_ko": "프랑 세이버",
+      "alignment": "neutral",
+      "alignment_detail": "중립·여름",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "여름을 즐기는 프랑의 밝은 모습"
+    },
+    "sv_0177_nitocris_assassin": {
+      "name_short_ko": "니토크리스 어쌔신",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "파라오로서의 품위와 자부심"
+    },
+    "sv_0178_oda_nobunaga_berserker": {
+      "name_short_ko": "노부나가 버서커",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·여름",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "마왕을 자처하는 노부나가의 자신감"
+    },
+    "sv_0179_altria_pendragon_alter_rider": {
+      "name_short_ko": "알트리아 얼터 라이더",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "기사왕 얼터의 엄격한 위엄"
+    },
+    "sv_0180_helena_blavatsky_archer": {
+      "name_short_ko": "엘레나 아처",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "아이들과 어울리는 밝은 태도"
+    },
+    "sv_0181_minamoto_no_raikou_lancer": {
+      "name_short_ko": "라이코 랜서",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "어머니 역할에 대한 강한 헌신"
+    },
+    "sv_0182_ishtar_rider": {
+      "name_short_ko": "이슈타르 라이더",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "허세와 애정이 함께 드러나는 이슈타르"
+    },
+    "sv_0183_parvati": {
+      "name_short_ko": "파르바티",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "타인을 품는 온화한 여신"
+    },
+    "sv_0184_tomoe_gozen": {
+      "name_short_ko": "토모에고젠",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "전장에서 침착한 무장의 태도"
+    },
+    "sv_0185_mochizuki_chiyome": {
+      "name_short_ko": "치요메",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "닌자로서 은밀하고 절제된 태도"
+    },
+    "sv_0186_houzouin_inshun": {
+      "name_short_ko": "인슈운",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "cheerful",
+      "temperament_source": "class",
+      "reason": "레거시 lancer 클래스 기본 성격"
+    },
+    "sv_0187_yagyu_tajima_no_kami_munenori": {
+      "name_short_ko": "야규 무네노리",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "검술가의 절제되고 엄격한 태도"
+    },
+    "sv_0188_katou_black_kite_danzo": {
+      "name_short_ko": "카토 단조",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "assassin",
+      "temperament_source": "class",
+      "reason": "레거시 assassin 클래스 기본 성격"
+    },
+    "sv_0189_osakabehime": {
+      "name_short_ko": "오사카베히메",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "은둔과 관심 욕구가 공존하는 성격"
+    },
+    "sv_0190_mecha_eli_chan": {
+      "name_short_ko": "메카에리짱",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "기계 아이돌의 활기찬 언행"
+    },
+    "sv_0191_mecha_eli_chan_mk_ii": {
+      "name_short_ko": "메카에리짱 Ⅱ호기",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "기계 아이돌의 활기찬 언행"
+    },
+    "sv_0192_circe": {
+      "name_short_ko": "키르케",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "호의를 거칠게 표현하는 마녀"
+    },
+    "sv_0193_nezha": {
+      "name_short_ko": "나타",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cheerful",
+      "temperament_source": "class",
+      "reason": "레거시 lancer 클래스 기본 성격"
+    },
+    "sv_0194_queen_of_sheba": {
+      "name_short_ko": "시바의 여왕",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "여왕으로서 거래를 주도하는 태도"
+    },
+    "sv_0196_ereshkigal": {
+      "name_short_ko": "에레쉬키갈",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "속마음을 숨기려는 명계 여신"
+    },
+    "sv_0197_attila_the_san_ta": {
+      "name_short_ko": "알테라 산타",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "알테라의 담담한 언행"
+    },
+    "sv_0200_asagami_fujino": {
+      "name_short_ko": "후지노",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "감정을 억누르는 후지노의 태도"
+    },
+    "sv_0201_anastasia": {
+      "name_short_ko": "아나스타샤",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "러시아 대공녀로서의 품위"
+    },
+    "sv_0202_atalante_alter": {
+      "name_short_ko": "아탈란테 얼터",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "berserker",
+      "temperament_source": "ai",
+      "reason": "분노에 사로잡힌 아탈란테 얼터"
+    },
+    "sv_0205_ivan_the_terrible": {
+      "name_short_ko": "이반 뇌제",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "황제로서 위압적인 언행"
+    },
+    "sv_0208_sieg": {
+      "name_short_ko": "지크",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "자신을 희생해 사람을 구하려는 태도"
+    },
+    "sv_0209_okita_souji_alter": {
+      "name_short_ko": "오키타 얼터",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "감정을 절제하는 얼터의 태도"
+    },
+    "sv_0210_okada_izo": {
+      "name_short_ko": "오카다 이조",
+      "alignment": "evil",
+      "alignment_detail": "중립·악",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "암살자로서의 냉혹함과 집념"
+    },
+    "sv_0211_sakamoto_ryouma": {
+      "name_short_ko": "사카모토 료마 라이더",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "교섭에 능한 차분한 혁명가"
+    },
+    "sv_0212_napoleon": {
+      "name_short_ko": "나폴레옹",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "가능성을 믿는 호쾌한 장군"
+    },
+    "sv_0213_sigurd": {
+      "name_short_ko": "시구르드",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cool",
+      "temperament_source": "legacy",
+      "reason": "레거시 시구르드 성격표"
+    },
+    "sv_0214_valkyrie": {
+      "name_short_ko": "발키리",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cheerful",
+      "temperament_source": "class",
+      "reason": "레거시 lancer 클래스 기본 성격"
+    },
+    "sv_0215_scathach_skadi": {
+      "name_short_ko": "스카디",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cool",
+      "temperament_source": "legacy",
+      "reason": "레거시 스카사하=스카디 성격표"
+    },
+    "sv_0216_jeanne_d_arc_archer": {
+      "name_short_ko": "잔 다르크 아처",
+      "alignment": "neutral",
+      "alignment_detail": "질서·여름",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "잔 다르크의 성녀다운 헌신"
+    },
+    "sv_0217_ibaraki_douji_lancer": {
+      "name_short_ko": "이바라키 랜서",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "허세와 의존심이 함께 드러남"
+    },
+    "sv_0218_ushiwakamaru_assassin": {
+      "name_short_ko": "우시와카마루 어쌔신",
+      "alignment": "neutral",
+      "alignment_detail": "중립·여름",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "해변에서도 활달한 우시와카마루"
+    },
+    "sv_0219_jeanne_d_arc_alter_berserker": {
+      "name_short_ko": "잔 얼터 버서커",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·여름",
+      "temperament": "avenger",
+      "temperament_source": "ai",
+      "reason": "복수자로서의 적대적인 언행"
+    },
+    "sv_0220_bb": {
+      "name_short_ko": "BB 문 캔서",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "장난으로 호의를 감추는 BB"
+    },
+    "sv_0221_medb_saber": {
+      "name_short_ko": "메이브 세이버",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "여왕으로서의 자부심"
+    },
+    "sv_0222_mysterious_heroine_xx": {
+      "name_short_ko": "히로인 XX",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "히로인 XX의 허술하고 활발한 면모"
+    },
+    "sv_0223_diarmuid_ua_duibhne": {
+      "name_short_ko": "디어뮈드 세이버",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "cool",
+      "temperament_source": "class",
+      "reason": "레거시 saber 클래스 기본 성격"
+    },
+    "sv_0224_sitonai": {
+      "name_short_ko": "시토나이",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "어린이를 지키려는 여신들의 태도"
+    },
+    "sv_0225_shuten_douji_caster": {
+      "name_short_ko": "슈텐도지 캐스터",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "도깨비 특유의 유혹과 위험성"
+    },
+    "sv_0226_xiang_yu": {
+      "name_short_ko": "항우",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "berserker",
+      "temperament_source": "ai",
+      "reason": "전투 기계로 변한 장수의 성향"
+    },
+    "sv_0227_prince_of_lan_ling": {
+      "name_short_ko": "난릉왕",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "왕족 출신 기사로서의 품위"
+    },
+    "sv_0228_qin_liangyu": {
+      "name_short_ko": "진양옥",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cheerful",
+      "temperament_source": "class",
+      "reason": "레거시 lancer 클래스 기본 성격"
+    },
+    "sv_0230_yu_mei_ren": {
+      "name_short_ko": "우미인 어쌔신",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "냉담한 척하면서 애착을 보임"
+    },
+    "sv_0231_red_hare": {
+      "name_short_ko": "적토마",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "거침없이 말하는 말 영령"
+    },
+    "sv_0232_bradamante": {
+      "name_short_ko": "브라다만테",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cheerful",
+      "temperament_source": "class",
+      "reason": "레거시 lancer 클래스 기본 성격"
+    },
+    "sv_0233_quetzalcoatl_samba_santa": {
+      "name_short_ko": "케찰코아틀 삼바",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "삼바 축제를 즐기는 활발한 여신"
+    },
+    "sv_0234_beni_enma": {
+      "name_short_ko": "베니엔마",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "염라대왕으로서의 엄격한 권위"
+    },
+    "sv_0235_li_shuwen": {
+      "name_short_ko": "이서문 어쌔신",
+      "alignment": "evil",
+      "alignment_detail": "중립·악",
+      "temperament": "assassin",
+      "temperament_source": "class",
+      "reason": "레거시 assassin 클래스 기본 성격"
+    },
+    "sv_0236_miyu_edelfelt": {
+      "name_short_ko": "미유",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cool",
+      "temperament_source": "class",
+      "reason": "레거시 caster 클래스 기본 성격"
+    },
+    "sv_0237_murasaki_shikibu": {
+      "name_short_ko": "무라사키 시키부",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "사색에 잠기는 작가의 성격"
+    },
+    "sv_0238_kingprotea": {
+      "name_short_ko": "킹프로테아",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "거대한 힘 속에 인정 욕구가 있음"
+    },
+    "sv_0239_kama": {
+      "name_short_ko": "카마",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "욕망을 숨기고 유혹하는 신"
+    },
+    "sv_0241_sima_yi_reines": {
+      "name_short_ko": "라이네스",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "귀족 여성으로서의 자신감"
+    },
+    "sv_0242_astraea": {
+      "name_short_ko": "아스트라이아",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "정의를 심판하는 여신의 태도"
+    },
+    "sv_0243_gray": {
+      "name_short_ko": "그레이",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "사명을 지키는 과묵한 기사"
+    },
+    "sv_0244_great_stone_statue_god": {
+      "name_short_ko": "지나코",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "게임을 좋아하는 친근한 태도"
+    },
+    "sv_0245_lakshmi_bai": {
+      "name_short_ko": "락슈미 바이",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "불운 속에서도 타인을 돕는 영웅"
+    },
+    "sv_0246_william_tell": {
+      "name_short_ko": "윌리엄 텔",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "노련한 사냥꾼의 침착함"
+    },
+    "sv_0247_arjuna_alter": {
+      "name_short_ko": "아르주나 얼터",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "신의 권능을 행사하는 위압적인 태도; Atlas 복수 성향 중 첫 조합 적용"
+    },
+    "sv_0248_asvatthaman": {
+      "name_short_ko": "아슈바타만",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "berserker",
+      "temperament_source": "ai",
+      "reason": "분노를 숨기지 않는 전사"
+    },
+    "sv_0249_asclepius": {
+      "name_short_ko": "아스클레피오스",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "의술로 생명을 구하려는 헌신"
+    },
+    "sv_0250_oda_nobunaga": {
+      "name_short_ko": "마왕 노부나가",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "avenger",
+      "temperament_source": "ai",
+      "reason": "마왕 노부나가의 파괴적인 집념"
+    },
+    "sv_0251_mori_nagayoshi": {
+      "name_short_ko": "모리 나가요시",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·광기",
+      "temperament": "berserker",
+      "temperament_source": "ai",
+      "reason": "전투를 즐기는 난폭한 무장"
+    },
+    "sv_0252_nagao_kagetora": {
+      "name_short_ko": "나가오 카게토라",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "전투를 즐기며 웃는 무장"
+    },
+    "sv_0253_leonardo_da_vinci": {
+      "name_short_ko": "다 빈치 라이더",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "발명에 들뜬 다 빈치의 태도"
+    },
+    "sv_0254_jason": {
+      "name_short_ko": "이아손",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "험난한 항해 속에서도 농담하는 선장"
+    },
+    "sv_0255_paris": {
+      "name_short_ko": "파리스",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "어린 왕자의 밝고 솔직한 태도"
+    },
+    "sv_0256_gareth": {
+      "name_short_ko": "가레스 랜서",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "기사단에 헌신하는 순수한 기사"
+    },
+    "sv_0257_bartholomew_roberts": {
+      "name_short_ko": "바솔로뮤",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "해적다운 자유분방한 성격"
+    },
+    "sv_0258_chen_gong": {
+      "name_short_ko": "진궁",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "책략에 몰두하는 냉정한 군사"
+    },
+    "sv_0259_charlotte_corday": {
+      "name_short_ko": "샤를로트",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "사람을 해치기 싫어하는 온화한 태도"
+    },
+    "sv_0260_salome": {
+      "name_short_ko": "살로메",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "berserker",
+      "temperament_source": "ai",
+      "reason": "애정에 집착하는 광화된 성향"
+    },
+    "sv_0261_miyamoto_musashi_berserker": {
+      "name_short_ko": "무사시 버서커",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "여름을 즐기는 무사시의 호쾌함"
+    },
+    "sv_0262_osakabehime_archer": {
+      "name_short_ko": "오사카베히메 아처",
+      "alignment": "neutral",
+      "alignment_detail": "중립·여름",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "은둔과 관심 욕구가 공존하는 성격"
+    },
+    "sv_0263_carmilla_rider": {
+      "name_short_ko": "카밀라 라이더",
+      "alignment": "evil",
+      "alignment_detail": "중립·악",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "정체를 감춘 도둑의 태도"
+    },
+    "sv_0264_katsushika_hokusai_saber": {
+      "name_short_ko": "호쿠사이 세이버",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "그림에 몰두하는 활달한 성격"
+    },
+    "sv_0265_altria_pendragon_ruler": {
+      "name_short_ko": "알트리아 룰러",
+      "alignment": "neutral",
+      "alignment_detail": "질서·여름",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "기사왕으로서의 위엄"
+    },
+    "sv_0266_mysterious_alter_ego": {
+      "name_short_ko": "멜트릴리스 랜서",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "멜트릴리스 특유의 가시 돋친 애정"
+    },
+    "sv_0267_okita_j_souji": {
+      "name_short_ko": "오키타 J",
+      "alignment": "neutral",
+      "alignment_detail": "중립·여름",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "축제를 즐기는 오키타의 밝은 모습"
+    },
+    "sv_0268_space_ishtar": {
+      "name_short_ko": "스페이스 이슈타르",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "avenger",
+      "temperament_source": "legacy",
+      "reason": "레거시 스페이스 이슈타르 성격표"
+    },
+    "sv_0269_calamity_jane": {
+      "name_short_ko": "캘러미티 제인",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "모험을 즐기는 명랑한 총잡이"
+    },
+    "sv_0270_astolfo_saber": {
+      "name_short_ko": "아스톨포 세이버",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "자유분방한 아스톨포의 성격"
+    },
+    "sv_0271_florence_nightingale_santa": {
+      "name_short_ko": "나이팅게일 산타",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "환자와 동료를 돕는 강한 헌신"
+    },
+    "sv_0272_super_orion": {
+      "name_short_ko": "초인 오리온",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "힘겨루기를 즐기는 호방한 사냥꾼"
+    },
+    "sv_0273_mandricardo": {
+      "name_short_ko": "만드리카르도",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "자신감이 부족해도 신중한 기사"
+    },
+    "sv_0274_europa": {
+      "name_short_ko": "에우로페",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "신화 속 여왕으로서의 우아함"
+    },
+    "sv_0275_yang_guifei": {
+      "name_short_ko": "양귀비",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "조용하고 신비로운 양귀비의 태도"
+    },
+    "sv_0276_sei_shounagon": {
+      "name_short_ko": "세이 쇼나곤 아처",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "유행에 민감하고 활발한 성격"
+    },
+    "sv_0277_odysseus": {
+      "name_short_ko": "오디세우스",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "지략을 중시하는 신중한 영웅"
+    },
+    "sv_0278_dioscuri": {
+      "name_short_ko": "디오스쿠로이",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "royal",
+      "temperament_source": "legacy",
+      "reason": "레거시 디오스쿠로이 성격표"
+    },
+    "sv_0279_caenis": {
+      "name_short_ko": "카이니스 랜서",
+      "alignment": "evil",
+      "alignment_detail": "중립·악",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "왕녀로서 거침없는 자부심"
+    },
+    "sv_0280_romulus_quirinus": {
+      "name_short_ko": "로물루스 퀴리누스",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "로마의 신으로서 당당한 위엄"
+    },
+    "sv_0281_voyager": {
+      "name_short_ko": "보이저",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "인류의 희망을 향한 순수한 태도"
+    },
+    "sv_0282_kijyo_koyo": {
+      "name_short_ko": "귀녀 코요",
+      "alignment": "evil",
+      "alignment_detail": "중립·악",
+      "temperament": "berserker",
+      "temperament_source": "ai",
+      "reason": "괴물로 변한 원한과 야성"
+    },
+    "sv_0283_utsumi_erice": {
+      "name_short_ko": "우츠미 에리세 랜서",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "침착하게 사명을 받아들이는 태도"
+    },
+    "sv_0284_altria_caster": {
+      "name_short_ko": "알트리아 캐스터",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "사람들을 돕기 위해 싸우는 마술사"
+    },
+    "sv_0285_sessyoin_kiara_moon_cancer": {
+      "name_short_ko": "키아라 문 캔서",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "avenger",
+      "temperament_source": "ai",
+      "reason": "욕망으로 타인을 조종하려는 태도"
+    },
+    "sv_0286_illyasviel_von_einzbern_archer": {
+      "name_short_ko": "이리야 아처",
+      "alignment": "neutral",
+      "alignment_detail": "중립·여름",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "여름을 즐기는 이리야의 밝음"
+    },
+    "sv_0287_brynhild_berserker": {
+      "name_short_ko": "브륀힐드 버서커",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "사랑을 위해 자신을 바치는 성향"
+    },
+    "sv_0288_yu_mei_ren_lancer": {
+      "name_short_ko": "우미인 랜서",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "무심한 듯 남편을 아끼는 태도"
+    },
+    "sv_0289_abigail_williams_summer": {
+      "name_short_ko": "애비게일 여름",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "불안 속에서도 조심스러운 태도"
+    },
+    "sv_0290_tomoe_gozen_saber": {
+      "name_short_ko": "토모에고젠 세이버",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "게임과 축제를 즐기는 태도"
+    },
+    "sv_0291_murasaki_shikibu_rider": {
+      "name_short_ko": "무라사키 시키부 라이더",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "관찰을 즐기는 조용한 작가"
+    },
+    "sv_0292_himiko": {
+      "name_short_ko": "히미코",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "여왕으로서 백성을 이끄는 태도"
+    },
+    "sv_0293_saito_hajime": {
+      "name_short_ko": "사이토 하지메",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "흔들림 없는 신선조 검사의 태도"
+    },
+    "sv_0294_oda_nobukatsu": {
+      "name_short_ko": "오다 노부카츠",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "누나를 향한 충성심을 숨기지 못함"
+    },
+    "sv_0295_van_gogh": {
+      "name_short_ko": "반 고흐 포리너",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "불안하고 내성적인 화가의 태도"
+    },
+    "sv_0296_nemo": {
+      "name_short_ko": "네모",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "함장으로서 침착하게 지휘함"
+    },
+    "sv_0298_watanabe_no_tsuna": {
+      "name_short_ko": "와타나베노 츠나",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "귀신을 베는 무사의 과묵함"
+    },
+    "sv_0299_ibuki_douji": {
+      "name_short_ko": "이부키도지 세이버",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "신으로서 오만하고 호방한 태도"
+    },
+    "sv_0300_vritra": {
+      "name_short_ko": "브리트라",
+      "alignment": "evil",
+      "alignment_detail": "중립·악",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "시련을 즐기되 차분하게 행동함"
+    },
+    "sv_0301_karna_santa": {
+      "name_short_ko": "카르나 산타",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "동료에게 선물을 전하는 산타의 태도"
+    },
+    "sv_0302_senji_muramasa": {
+      "name_short_ko": "무라마사",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "cool",
+      "temperament_source": "legacy",
+      "reason": "레거시 센지 무라마사 성격표"
+    },
+    "sv_0303_taira_no_kagekiyo": {
+      "name_short_ko": "타이라노 카게키요",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "avenger",
+      "temperament_source": "ai",
+      "reason": "원한을 안고 싸우는 복수자"
+    },
+    "sv_0304_kiichi_hogen": {
+      "name_short_ko": "키이치 호겐",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "제자를 놀리는 호방한 스승"
+    },
+    "sv_0305_amor_caren": {
+      "name_short_ko": "카렌",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "호의를 까칠하게 표현하는 카렌"
+    },
+    "sv_0306_galatea": {
+      "name_short_ko": "갈라테아",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "사랑을 배우고 타인을 이해하려 함"
+    },
+    "sv_0307_miss_crane": {
+      "name_short_ko": "미스 크레인",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "타인의 무대를 위해 돕는 태도"
+    },
+    "sv_0308_mysterious_idol_x_alter": {
+      "name_short_ko": "아이돌 X 얼터",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "아이돌 활동을 즐기는 밝은 모습"
+    },
+    "sv_0309_morgan": {
+      "name_short_ko": "모르간",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "요정국 여왕으로서의 지배력"
+    },
+    "sv_0310_tam_lin_gawain": {
+      "name_short_ko": "바게스트",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "요정 기사로서의 자부심"
+    },
+    "sv_0311_tam_lin_tristan": {
+      "name_short_ko": "바반 시",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "avenger",
+      "temperament_source": "ai",
+      "reason": "상처를 감춘 채 복수에 집착함"
+    },
+    "sv_0312_tam_lin_lancelot": {
+      "name_short_ko": "멜뤼진 랜서",
+      "alignment": "evil",
+      "alignment_detail": "중립·악",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "요정 기사로서의 오만한 자신감"
+    },
+    "sv_0313_percival": {
+      "name_short_ko": "퍼시벌",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "사람들을 지키려는 충직한 기사"
+    },
+    "sv_0314_koyanskaya_of_light": {
+      "name_short_ko": "빛의 코얀스카야",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "목적을 숨기고 사람을 조종하는 태도"
+    },
+    "sv_0315_habetrot": {
+      "name_short_ko": "하베트롯",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "혼례를 돕는 작은 요정의 활발함"
+    },
+    "sv_0317_okita_souji_alter_saber": {
+      "name_short_ko": "오키타 얼터 세이버",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "얼터 특유의 절제된 전투 태도"
+    },
+    "sv_0318_anastasia_and_viy": {
+      "name_short_ko": "아나스타샤 아처",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·여름",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "해변을 즐기는 대공녀의 밝음"
+    },
+    "sv_0319_charlotte_corday_caster": {
+      "name_short_ko": "샤를로트 캐스터",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·여름",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "타인을 돕고 싶어 하는 순수한 태도"
+    },
+    "sv_0320_leonardo_da_vinci_ruler": {
+      "name_short_ko": "다 빈치 룰러",
+      "alignment": "neutral",
+      "alignment_detail": "질서·여름",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "발명과 탐구를 즐기는 다 빈치"
+    },
+    "sv_0321_kama_avenger": {
+      "name_short_ko": "카마 어벤저",
+      "alignment": "evil",
+      "alignment_detail": "중립·악",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "애정을 숨기려는 카마의 반응"
+    },
+    "sv_0322_caenis_rider": {
+      "name_short_ko": "카이니스 라이더",
+      "alignment": "neutral",
+      "alignment_detail": "중립·여름",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "왕녀로서 거침없는 자부심"
+    },
+    "sv_0323_sei_shounagon_berserker": {
+      "name_short_ko": "세이 쇼나곤 버서커",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·여름",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "유행과 놀이를 즐기는 모습"
+    },
+    "sv_0324_jacques_de_molay": {
+      "name_short_ko": "자크 드 몰레",
+      "alignment": "evil",
+      "alignment_detail": "중립·악",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "숨은 의도로 행동하는 기사단장"
+    },
+    "sv_0325_zenobia": {
+      "name_short_ko": "제노비아",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "포로가 되어서도 품위를 지킨 여왕"
+    },
+    "sv_0326_elisabeth_bathory_cinderella": {
+      "name_short_ko": "엘리자베트 신데렐라",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "신데렐라 역할에 들뜬 아이돌"
+    },
+    "sv_0327_izumo_no_okuni": {
+      "name_short_ko": "이즈모노 오쿠니",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "공연을 즐기는 당당한 무희"
+    },
+    "sv_0328_mysterious_ranmaru_x": {
+      "name_short_ko": "란마루 X",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "주군을 향한 열정이 넘치는 란마루"
+    },
+    "sv_0329_sakamoto_ryouma_lancer": {
+      "name_short_ko": "사카모토 료마 랜서",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "협상에 능한 차분한 혁명가"
+    },
+    "sv_0330_martha_santa": {
+      "name_short_ko": "마르타 산타",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "산타로서 사람들을 돌보려는 태도"
+    },
+    "sv_0331_taigong_wang": {
+      "name_short_ko": "태공망",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "계책을 세우는 신중한 군사"
+    },
+    "sv_0332_dobrynya_nikitich": {
+      "name_short_ko": "도브리냐 라이더",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "친근하고 호쾌한 영웅의 모습"
+    },
+    "sv_0334_koyanskaya_of_dark": {
+      "name_short_ko": "어둠의 코얀스카야",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "달콤한 말투 뒤 목적을 감춤"
+    },
+    "sv_0335_hephaistion": {
+      "name_short_ko": "헤파이스티온",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "전술가로서 신중한 성격"
+    },
+    "sv_0336_manannan_mac_lir_bazett": {
+      "name_short_ko": "바제트",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "실전을 중시하는 바제트의 성격"
+    },
+    "sv_0337_hai_ba_trung": {
+      "name_short_ko": "쯩 자매",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "서로를 지키는 자매의 헌신"
+    },
+    "sv_0338_taisui_xingjun": {
+      "name_short_ko": "태세성군",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "아이 같은 순진하고 밝은 태도"
+    },
+    "sv_0339_super_bunyan": {
+      "name_short_ko": "슈퍼 버니언",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "개척자로서 들뜬 모습"
+    },
+    "sv_0340_daikokuten": {
+      "name_short_ko": "대흑천",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "무리를 이루어 분주하게 움직임"
+    },
+    "sv_0341_mary_anning": {
+      "name_short_ko": "메리 애닝",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "화석 탐구에 들뜬 밝은 태도"
+    },
+    "sv_0342_konstantinos_xi": {
+      "name_short_ko": "콘스탄티누스 11세",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "제국 최후의 황제로서의 위엄"
+    },
+    "sv_0343_charlemagne": {
+      "name_short_ko": "샤를마뉴",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "왕으로서의 자신감과 지도력"
+    },
+    "sv_0344_roland": {
+      "name_short_ko": "롤랑",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "감정을 숨기지 않는 호쾌한 기사"
+    },
+    "sv_0345_kriemhild": {
+      "name_short_ko": "크림힐트",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "avenger",
+      "temperament_source": "ai",
+      "reason": "복수에 사로잡힌 왕비의 원한"
+    },
+    "sv_0346_james_moriarty": {
+      "name_short_ko": "모리어티 룰러",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "범죄를 설계하는 냉철한 교수"
+    },
+    "sv_0347_don_quixote": {
+      "name_short_ko": "돈키호테",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "이상을 향해 달리는 낙천적 기사"
+    },
+    "sv_0348_zhang_jue": {
+      "name_short_ko": "장각",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "난세를 읽는 노련한 책략가"
+    },
+    "sv_0349_kyokutei_bakin": {
+      "name_short_ko": "쿄쿠테이 바킨",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "이야기를 다듬는 작가의 관찰력"
+    },
+    "sv_0350_minamoto_no_tametomo": {
+      "name_short_ko": "미나모토노 타메토모",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "기계 장수의 과묵한 태도"
+    },
+    "sv_0351_archetype_earth": {
+      "name_short_ko": "아키타입 어스",
+      "alignment": "good",
+      "alignment_detail": "불명·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "진조의 공주로서의 위엄; Atlas 성향 특성 일부 누락"
+    },
+    "sv_0352_xu_fu": {
+      "name_short_ko": "서복 얼터 에고",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "조용하고 신중한 서복의 태도"
+    },
+    "sv_0353_lady_avalon": {
+      "name_short_ko": "레이디 아발론",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "멀린과 닮은 신비롭고 신중한 언행"
+    },
+    "sv_0354_gareth_saber": {
+      "name_short_ko": "가레스 세이버",
+      "alignment": "neutral",
+      "alignment_detail": "질서·여름",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "기사단을 지키려는 순수한 마음"
+    },
+    "sv_0355_ibuki_douji_berserker": {
+      "name_short_ko": "이부키도지 버서커",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·여름",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "신으로서 오만한 자신감"
+    },
+    "sv_0356_utsumi_erice_avenger": {
+      "name_short_ko": "우츠미 에리세 어벤저",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "avenger",
+      "temperament_source": "ai",
+      "reason": "복수자로서의 원한"
+    },
+    "sv_0357_scathach_skadi_ruler": {
+      "name_short_ko": "스카디 룰러",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·여름",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "여신 스카디의 침착한 태도"
+    },
+    "sv_0358_wu_zetian_caster": {
+      "name_short_ko": "무측천 캐스터",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "황제로서의 자부심"
+    },
+    "sv_0359_thrud": {
+      "name_short_ko": "스루드 어쌔신",
+      "alignment": "neutral",
+      "alignment_detail": "질서·여름",
+      "temperament": "assassin",
+      "temperament_source": "class",
+      "reason": "레거시 assassin 클래스 기본 성격"
+    },
+    "sv_0360_hildr": {
+      "name_short_ko": "힐드 어쌔신",
+      "alignment": "neutral",
+      "alignment_detail": "질서·여름",
+      "temperament": "assassin",
+      "temperament_source": "class",
+      "reason": "레거시 assassin 클래스 기본 성격"
+    },
+    "sv_0361_ortlinde": {
+      "name_short_ko": "오르트린데 어쌔신",
+      "alignment": "neutral",
+      "alignment_detail": "질서·여름",
+      "temperament": "assassin",
+      "temperament_source": "class",
+      "reason": "레거시 assassin 클래스 기본 성격"
+    },
+    "sv_0362_sen_no_rikyu": {
+      "name_short_ko": "센노 리큐",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "다도를 중시하는 엄격한 태도"
+    },
+    "sv_0363_yamanami_keisuke": {
+      "name_short_ko": "야마나미 케이스케",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "동료들을 위해 자신을 내어주는 태도"
+    },
+    "sv_0364_iyo": {
+      "name_short_ko": "이요",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "여왕으로서 백성을 이끄는 태도"
+    },
+    "sv_0365_huyan_zhuo": {
+      "name_short_ko": "호연작",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "호방하게 전장에 나서는 무장"
+    },
+    "sv_0366_huang_feihu": {
+      "name_short_ko": "황비호",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "왕족으로서의 품위"
+    },
+    "sv_0367_elisa_the_nine_tattooed_dragon": {
+      "name_short_ko": "구문룡 엘리자",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "동화 속 영웅을 자처하는 아이돌"
+    },
+    "sv_0368_britomart": {
+      "name_short_ko": "브리토마트",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "요정 기사로서의 자부심"
+    },
+    "sv_0369_grigori_rasputin": {
+      "name_short_ko": "코토미네 키레이",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "성직자 얼굴 뒤 속내를 감춤"
+    },
+    "sv_0370_nitocris_alter": {
+      "name_short_ko": "니토크리스 얼터",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "avenger",
+      "temperament_source": "ai",
+      "reason": "복수자로 변한 파라오의 원한"
+    },
+    "sv_0371_tezcatlipoca": {
+      "name_short_ko": "테스카틀리포카",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "희생을 감수하는 냉혹한 신"
+    },
+    "sv_0372_tlaloc": {
+      "name_short_ko": "테노치티틀란 프리텐더",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "도시를 지키는 신으로서의 자부심"
+    },
+    "sv_0373_kukulcan": {
+      "name_short_ko": "쿠쿨칸",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "인간에게 호기심을 보이는 밝은 신"
+    },
+    "sv_0374_pope_johanna": {
+      "name_short_ko": "여교황 요한나",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "신앙과 공정함을 지키려는 교황"
+    },
+    "sv_0375_takasugi_shinsaku": {
+      "name_short_ko": "타카스기 신사쿠",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "새 시대를 꿈꾸는 활달한 혁명가"
+    },
+    "sv_0376_larva_tiamat": {
+      "name_short_ko": "라바 티아마트",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "어머니처럼 생명을 품는 태도"
+    },
+    "sv_0378_locusta": {
+      "name_short_ko": "로쿠스타",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "독을 쓰며 본심을 감추는 태도"
+    },
+    "sv_0379_setanta": {
+      "name_short_ko": "세탄타",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "어린 영웅의 호쾌한 성격"
+    },
+    "sv_0380_kashin_koji": {
+      "name_short_ko": "카신 거사",
+      "alignment": "evil",
+      "alignment_detail": "중립·악",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "기계와 환술을 쓰는 은밀한 수행자"
+    },
+    "sv_0381_bhima": {
+      "name_short_ko": "비마",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "음식을 나누는 호방한 장수"
+    },
+    "sv_0382_duryodhana": {
+      "name_short_ko": "두료다나",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "왕족으로서의 오만한 자부심"
+    },
+    "sv_0383_durga": {
+      "name_short_ko": "두르가",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "신의 사명에 따라 냉정하게 행동함"
+    },
+    "sv_0384_medusa": {
+      "name_short_ko": "메두사 세이버",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "메두사의 차분하고 신중한 태도"
+    },
+    "sv_0385_aesc_the_rain_witch": {
+      "name_short_ko": "토네리코",
+      "alignment": "neutral",
+      "alignment_detail": "질서·불명",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "요정국을 위해 자신을 희생한 마녀; Atlas 성향 특성 일부 누락"
+    },
+    "sv_0386_altria_caster": {
+      "name_short_ko": "알트리아 캐스터 버서커",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "여름을 즐기는 알트리아의 밝은 모습"
+    },
+    "sv_0387_suzuka_gozen_vacay": {
+      "name_short_ko": "스즈카고젠 라이더",
+      "alignment": "neutral",
+      "alignment_detail": "중립·여름",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "여름을 즐기는 스즈카의 활발함"
+    },
+    "sv_0388_chloe_von_einzbern": {
+      "name_short_ko": "클로에 어벤저",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "상처를 숨기려 장난스럽게 행동함"
+    },
+    "sv_0389_cnoc_na_riabh_yaraandoo": {
+      "name_short_ko": "노크나레아",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "요정국 여왕으로서의 자부심"
+    },
+    "sv_0390_melusine": {
+      "name_short_ko": "멜뤼진 룰러",
+      "alignment": "evil",
+      "alignment_detail": "중립·악",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "요정 기사로서의 자신감"
+    },
+    "sv_0391_udk_barghest": {
+      "name_short_ko": "UDK 바게스트",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "기사로서의 자부심"
+    },
+    "sv_0392_cait_cu_mikocer": {
+      "name_short_ko": "캐트 쿠 미코케르",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "avenger",
+      "temperament_source": "ai",
+      "reason": "원망을 감춘 채 복수하려는 요정"
+    },
+    "sv_0393_wandjina": {
+      "name_short_ko": "완지나",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "자연과 생명에 호기심을 보임"
+    },
+    "sv_0394_ptolemaios": {
+      "name_short_ko": "프톨레마이오스",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "프톨레마이오스 왕으로서의 품위"
+    },
+    "sv_0395_sugitani_zenjubou": {
+      "name_short_ko": "스기타니 젠쥬보",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "저격수로서 표적을 기다리는 태도"
+    },
+    "sv_0396_theseus": {
+      "name_short_ko": "테세우스",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "동료를 지키기 위해 괴물에 맞섬"
+    },
+    "sv_0397_takeda_harunobu": {
+      "name_short_ko": "타케다 하루노부",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "영주로서의 권위와 자신감"
+    },
+    "sv_0398_nagakura_shinpachi": {
+      "name_short_ko": "나가쿠라 신파치",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "berserker",
+      "temperament_source": "ai",
+      "reason": "싸움에 몰두하는 신선조 대원"
+    },
+    "sv_0399_saika_magoichi": {
+      "name_short_ko": "사이카 마고이치",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "총잡이로서 침착하고 실용적인 태도"
+    },
+    "sv_0400_uesugi_kenshin": {
+      "name_short_ko": "우에스기 켄신",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "군신의 화신으로서 당당한 태도"
+    },
+    "sv_0401_nemo_santa": {
+      "name_short_ko": "네모 산타",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "함장으로서 침착하게 임무를 수행함"
+    },
+    "sv_0402_yamato_takeru": {
+      "name_short_ko": "야마토타케루",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "왕족 전사로서의 자부심"
+    },
+    "sv_0403_minamoto_no_raikou_ushi_gozen": {
+      "name_short_ko": "우시고젠",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "avenger",
+      "temperament_source": "ai",
+      "reason": "우시고젠의 원한과 파괴 충동"
+    },
+    "sv_0404_yui_shousetsu": {
+      "name_short_ko": "유이 쇼세츠",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "학자로서 사려 깊은 태도"
+    },
+    "sv_0405_miyamoto_iori": {
+      "name_short_ko": "미야모토 이오리",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "검술에 집중하는 차분한 무사"
+    },
+    "sv_0406_andromeda": {
+      "name_short_ko": "안드로메다",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "saint",
+      "temperament_source": "ai",
+      "reason": "사랑하는 이를 위해 헌신한 왕녀"
+    },
+    "sv_0407_marie_antoinette_alter": {
+      "name_short_ko": "마리 얼터",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "avenger",
+      "temperament_source": "ai",
+      "reason": "절망으로 변한 왕비의 복수심"
+    },
+    "sv_0408_hassan_of_the_shining_star": {
+      "name_short_ko": "요성의 하산",
+      "alignment": "evil",
+      "alignment_detail": "질서·악",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "암살자로서 은밀하고 절제된 태도"
+    },
+    "sv_0409_monte_cristo": {
+      "name_short_ko": "암굴왕 몽테크리스토",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "avenger",
+      "temperament_source": "ai",
+      "reason": "복수심을 품은 암굴왕의 태도"
+    },
+    "sv_0410_alessandro_di_cagliostro": {
+      "name_short_ko": "칼리오스트로",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "신분을 속이고 사람을 현혹함"
+    },
+    "sv_0413_aozaki_aoko": {
+      "name_short_ko": "아오자키 아오코",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "즉흥적이고 호쾌한 마법사의 성격"
+    },
+    "sv_0414_sizuki_soujyuro": {
+      "name_short_ko": "시즈키 소쥬로",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "말수가 적고 묵묵한 태도"
+    },
+    "sv_0415_kuonji_alice": {
+      "name_short_ko": "쿠온지 아리스",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·불명",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "침착하고 수수께끼 같은 마술사; Atlas 성향 특성 일부 누락"
+    },
+    "sv_0416_hibiki_and_chikagi": {
+      "name_short_ko": "히비키&치카기",
+      "alignment": "neutral",
+      "alignment_detail": "불명",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "두 사람의 친근하고 활발한 면모; Atlas 성향 특성 없음"
+    },
+    "sv_0418_mysterious_executor_c_i_e_l": {
+      "name_short_ko": "시엘",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "대행자로서 냉정하고 침착한 태도"
+    },
+    "sv_0419_dobrynya_nikitich_lancer": {
+      "name_short_ko": "도브리냐 랜서",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "친근하고 호쾌한 영웅의 모습"
+    },
+    "sv_0420_xu_fu_avenger": {
+      "name_short_ko": "서복 어벤저",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "조용하고 신중한 서복의 태도"
+    },
+    "sv_0421_bb_dubai": {
+      "name_short_ko": "BB 두바이",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "tsundere",
+      "temperament_source": "ai",
+      "reason": "장난으로 속마음을 감추는 BB"
+    },
+    "sv_0422_tenochtitlan_moon_cancer": {
+      "name_short_ko": "테노치티틀란 문 캔서",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "도시를 지키는 신으로서의 자부심"
+    },
+    "sv_0423_mysterious_heroine_xx_alter": {
+      "name_short_ko": "히로인 XX 얼터",
+      "alignment": "evil",
+      "alignment_detail": "혼돈·악",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "히로인 XX의 활달한 성격"
+    },
+    "sv_0424_kishinami_hakuno": {
+      "name_short_ko": "하쿠노 남성",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "상황을 읽는 차분한 마스터"
+    },
+    "sv_0425_kishinami_hakuno": {
+      "name_short_ko": "하쿠노 여성",
+      "alignment": "good",
+      "alignment_detail": "중립·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "상황을 읽는 차분한 마스터"
+    },
+    "sv_0426_kazuradrop": {
+      "name_short_ko": "카즈라드롭",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "assassin",
+      "temperament_source": "ai",
+      "reason": "타인의 약점을 이용하는 교활함"
+    },
+    "sv_0427_servant_427": {
+      "name_short_ko": "투탕카멘",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "royal",
+      "temperament_source": "ai",
+      "reason": "어린 파라오로서의 품위"
+    },
+    "sv_0428_servant_428": {
+      "name_short_ko": "반 고흐 마이너",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "불안하고 내성적인 화가의 태도"
+    },
+    "sv_0429_servant_429": {
+      "name_short_ko": "로우히",
+      "alignment": "evil",
+      "alignment_detail": "중립·악",
+      "temperament": "berserker",
+      "temperament_source": "ai",
+      "reason": "신화 속 마녀의 거친 충동"
+    },
+    "sv_0430_servant_430": {
+      "name_short_ko": "애비게일 산타",
+      "alignment": "good",
+      "alignment_detail": "혼돈·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "불안 속에서도 조심스러운 태도"
+    },
+    "sv_0431_servant_431": {
+      "name_short_ko": "판타즈문",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "축제 분위기를 이끄는 달의 공주"
+    },
+    "sv_0432_richard_i": {
+      "name_short_ko": "리처드 1세",
+      "alignment": "neutral",
+      "alignment_detail": "질서·중용",
+      "temperament": "royal",
+      "temperament_source": "legacy",
+      "reason": "레거시 리처드 1세 성격표"
+    },
+    "sv_0433_servant_433": {
+      "name_short_ko": "비쇼네",
+      "alignment": "neutral",
+      "alignment_detail": "혼돈·중용",
+      "temperament": "cheerful",
+      "temperament_source": "ai",
+      "reason": "축제를 즐기는 밝은 성격"
+    },
+    "sv_0434_servant_434": {
+      "name_short_ko": "쿠로히메",
+      "alignment": "good",
+      "alignment_detail": "질서·선",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "신중하게 처신하는 용의 공주"
+    },
+    "sv_0435_servant_435": {
+      "name_short_ko": "오노노 코마치",
+      "alignment": "neutral",
+      "alignment_detail": "중립·중용",
+      "temperament": "cool",
+      "temperament_source": "ai",
+      "reason": "시를 짓는 사색적인 궁녀"
     }
   }
 }

@@ -1,0 +1,432 @@
+{
+  "speaker": "sv_0430_servant_430",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "마음! 설레는! 마티네!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "가슴! 뛰는! 소아레!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "플릭 플락, 플립 플롭!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "뤼스티크, 뤼스티크, 타랄랄랄라♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "그랑 그랑 파드샤!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "진심을 담은 선물♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "앙, 두, 트와!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_8",
+        "text": "Jingle All the Way♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_9",
+        "text": "앙 푸흐 투스, 투스 푸흐 앙!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_10",
+        "text": "지금이야! 하나는 모두를 위하여!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_11",
+        "text": "비브 랑프뢰르!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_12",
+        "text": "우스고스 플람프 휘프노스 아스구이.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_13",
+        "text": "달콤하게! 달콤하게! 턱이 망가지도록!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_14",
+        "text": "잠깐 피케하겠습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "넘어져라! 꿈이여! 아상블레!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "진저 브레드! 민스 파이! 부쉬 드 노엘~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "어서 와! 과자의 나라로 초대!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_4",
+        "text": "아핫, 메리 메리메리 크리스마스!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "싫어라……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "아이참!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "어쩌지……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "꺅!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "몽환의 아라베스크♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "반짝이는 에투알♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "둘이서, 속삭이는 캐럴.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "은밀한 아다주.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_5",
+        "text": "성 니콜라스 님처럼……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_6",
+        "text": "동방박사 세 사람───",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "호~ 호~ 호~! 그렇다! 제…… 내가, 산타 애비…… 란다! ───하왓?! 아니, 저…… 이건…… 산타 씨 연습을…… 언젠가 어디선가, 착한 아이와 만나거나 편지를 받으면 그 꿈을 깨뜨리지 않고, 제대로 선물을 줄 수 있도록요! 에헤헤…… 더, 통통한 편이 좋으려나요……?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "저기 마스터? 맨~날 과자에만 둘러싸여 있으면, 그 맛도 즐거움도 점점 잊어버리겠죠? 매일, 언제까지나 크리스마스 행사가 이어지는 나날도 분명 그럴 거예요. 문득 머릿속에 그린 꿈, 고대하던 동경의 날. 그 정도가 딱 좋다 싶어요. 그러니까 말이죠? 저는 과자 나라의 여왕, ‘별사탕 요정’의 무용수지만, 단것처럼 무르지만은 않은, 절도를 아는 여왕을 목표로 하겠습니다. 응. ……네? 마스터는, 차와 팬케이크를 같이 먹자고 부르러 오신 거예요……? 핫, 아니요! 꼭 함께하겠습니다!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "(…♪) (……♪) 우스고스 플람프 휘프노스 아스구이……. ……어머, 왜 그러세요, 마스터? 낯빛이 좋지 않은데. 저요? 저는 괜찮죠. 평소보다 더 건강할 정도. 어째선지 때때로 이런 식으로 의식이 흐릿해져서…… 부디 걱정하시지 마세요. 마스터를 위험하게 만들 일은, 절대 없으니까…… 아시겠죠?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "날이 밝고, 꿈은 끊어지고, 이 사랑의 시간에도 분명 끝은 찾아온다. 이별은 정말로 아쉽지만 그 넘치는 마음을, 자신의 목소리로, 노래로, 그리고 춤으로 전할 수 있다면─── 그건 무척 행복한 일이야!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "춤추고 있을 때, 저는 살아있다고 느껴요!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "나쁜 아이는 싫어해요. ……하지만 나쁜 아이를 무시하고, 거부하고, 포기해 버리는…… 그런 자신은, 더 싫고요.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "만약 소원을 들어준다면, 저는 여행을 떠나고 싶네요……! 숲 너머, 파도 너머에 있는 미지의 거리로. 그곳에서는 아무도 저를 모르고…… 저는 작은 방을 빌려서 모두에게 기쁨을 주는 일을 하는 거예요. 그러다가 소중한 친구가 생기면…… 다시 여행을 떠나고요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "같이 춤춰 주실래요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "초대해 주셔서 감사합니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "실전이야! 열심히 해야지.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "청명하게 별이 뜬 오늘 밤, 과자의 왕국은 문을 열고, 내밀어진 손끝과 드높이 울리는 경종의 리에종. 춤추는 두 사람에게 미소 짓듯 피어나는 축복의 꽃─── ‘간절하며 아련한 몽상(그랑 파드되)’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "언젠가 왕자님이─── 비록 한순간의 꿈이라 해도. 애타게 기다리던 소아레. 볼을 타고 흐르는 씁쓸한 물방울. 소중하며 잊지 못할 댄스. 당신이 준 선물, ‘간절하며 아련한 몽상(그랑 파드되)’",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "성스러운 종소리, 울려 퍼지는 정열의 코다! 맹세는 고한다…… 백은의 정원으로 부른다. 당신에게 선물하는 행복의 기프트! ‘간절하며 아련한 몽상(그랑 파드되)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "착한 아이에게는 착한 선물. 나쁜 아이에게는…… 나쁜 선물?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "We Wish You a Merry Christmas♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "자, 마스터, 간식 시간을 가질까요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_4",
+        "text": "잘 춤추었을까?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "돌아가요…… 나락의 바닥으로───",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "아아, 들려……? 커튼콜……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "안녕, 왕자님……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_4",
+        "text": "더는…… 춤출 수 없나 봐……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "메리 크리스마스! 나의 왕자님…… 아, 아뇨, 마스터! 저는 애비게일. 애비게일 산타. 오늘 밤, 당신에게 멋진 선물을 전해드리겠습니다. 산타지만 프리텐더이고, 발레리나예요. 왠지 재미있네요. 우후훗.",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "servant_id": "sv_0145_gilgamesh",
+  "source_id": 145,
+  "name_ko": "길가메시",
+  "name_short_ko": "길가메시 캐스터",
+  "class": "caster",
+  "ranks": {
+    "str": "C",
+    "end": "D",
+    "agi": "C",
+    "mana": "B",
+    "luck": "A",
+    "np": "EX"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "왕의 호포",
+    "ruby_ko": "멜람무 딘기르",
+    "rank": "B+",
+    "type_ko": "대군~대성보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5018000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/501800/501800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/501800/501800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    104,
+    202,
+    300,
+    303,
+    404,
+    1000,
+    2000,
+    2001,
+    2008,
+    2012,
+    2040,
+    2113,
+    2631,
+    2780,
+    2858,
+    5000,
+    501800
+  ],
+  "lore": {
+    "detail": "불로불사의 여행에서 귀환한 지고의 현왕. 전설에서 ‘모든 것을 본 자’로 전해진다. 때로는 냉혹하게, 때로는 사람의 마음을 인정하며 엄격하게 백성을 이끈 위대한 우루크의 왕."
+  },
+  "instant_death": false
+}

@@ -1,0 +1,62 @@
+{
+  "servant_id": "sv_0300_vritra",
+  "source_id": 300,
+  "name_ko": "브리트라",
+  "name_short_ko": "브리트라",
+  "class": "lancer",
+  "ranks": {
+    "str": "A",
+    "end": "C",
+    "agi": "A",
+    "mana": "A",
+    "luck": "D",
+    "np": "EX"
+  },
+  "alignment": "evil",
+  "alignment_detail": "중립·악",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "마여, 모조리 천지를 막아라",
+    "ruby_ko": "아수라슈레스타",
+    "rank": "EX",
+    "type_ko": "대계보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3046000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/304600/304600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/304600/304600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    101,
+    200,
+    302,
+    304,
+    405,
+    1000,
+    1110,
+    2001,
+    2002,
+    2008,
+    2011,
+    2019,
+    2037,
+    2632,
+    2797,
+    2835,
+    2847,
+    2848,
+    2851,
+    2858,
+    5000,
+    304600
+  ],
+  "lore": {
+    "detail": "‘리그 베다’, ‘마하바라타’ 등에서 이야기되는 뱀의 마신, 혹은 사룡.\n그 이름은 ‘장해’를 의미하며, 물을 가두어 가뭄 등을 일으키는 힘을 지녔다고 여겨진다.\n브리트라를 쓰러트리고 그 물을 해방하는 것이 인드라 신이다. 브리트라는 항상 인드라의 적으로 그려지며, 양자의 싸움은 신화에서 수도 없이 반복되었다고 한다.\n인드라 신의 별명인 브리트라한은 ‘브리트라를 죽이는 자’라는 의미기도 하다."
+  },
+  "instant_death": false
+}

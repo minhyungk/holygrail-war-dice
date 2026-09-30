@@ -9,7 +9,7 @@ import { INTEL } from './intel';
 import { phaseDef, phaseFromDraw, phaseFromNp, terrainWeightTotal } from './phases';
 import type { Rng } from './rng';
 import { type ActiveSkill, type SkillCtx, skillAmount, skillsAt, whenOk } from './skills';
-import { manaByRank, miracleNaturals, statSum } from './stats';
+import { manaByRank, miracleNaturals, statSum, underdogOf } from './stats';
 
 export const CONDITIONS: readonly Condition[] = ['full', 'hurt', 'danger']; // D-014
 
@@ -180,6 +180,10 @@ export function* battle(input: BattleInput, dice: BattleDice, log: EventLog): Ba
   const skillUses: Record<Side, Record<string, number>> = { a: { ...input.checkpoint?.skillUses.a }, b: { ...input.checkpoint?.skillUses.b } };
   const weaknessUsed: Record<Side, boolean> = { ...(input.checkpoint?.weaknessUsed ?? { a: false, b: false }) };
   for (const s of ['a', 'b'] as const) if (!CONDITIONS.includes(F[s].condition)) throw new Error(`전투할 수 없는 상태: ${F[s].faction}`);
+  // 기적은 국면 판정에서, 전투 시작 때 불리한 쪽(스탯 6종 합이 낮은 쪽)만 (dice.md §3.4, D-166). 같으면 양쪽 모두 없음. 도주 판정에는 없다 (D-167).
+  // 스탯은 전투 중 바뀌지 않으므로 예측 실행(체크포인트)에서 다시 계산해도 같다
+  const underdog: Side | null = underdogOf(F.a.servant, F.b.servant);
+  const miracleOf = (s: Side): readonly number[] => (s === underdog ? miracleNaturals(F[s].servant) : []);
 
   const forecast = (completed: number, current?: BattleCheckpoint['current']): { forecast?: BattleInput } => input.captureForecast ? {
     // 예측 입력에는 선택 알림(onChoice)을 넣지 않는다: 예측 실행의 가상 선택이 실제 호감도를 바꾸면 안 된다
@@ -196,6 +200,7 @@ export function* battle(input: BattleInput, dice: BattleDice, log: EventLog): Ba
     is_final: isFinal,
     ambusher: input.ambusher ? F[input.ambusher].faction : null,
     sides: [F.a.faction, F.b.faction],
+    underdog: underdog ? F[underdog].faction : null,
     ...forecast(input.checkpoint?.completed ?? 0),
   });
 
@@ -259,7 +264,7 @@ export function* battle(input: BattleInput, dice: BattleDice, log: EventLog): Ba
   function* contestFor(stats: Record<Side, readonly StatId[]>, context: 'phase' | 'escape', parts: Record<Side, Record<string, number>>) {
     const mod = (s: Side) => statSum(F[s].servant, stats[s]) + sumParts(parts[s]);
     const judge = (ra: NaturalRoll, rb: NaturalRoll) =>
-      contest({ roll: ra, modifier: mod('a'), miracle: miracleNaturals(F.a.servant) }, { roll: rb, modifier: mod('b'), miracle: miracleNaturals(F.b.servant) });
+      contest({ roll: ra, modifier: mod('a'), miracle: context === 'phase' ? miracleOf('a') : [] }, { roll: rb, modifier: mod('b'), miracle: context === 'phase' ? miracleOf('b') : [] });
     // 양측이 먼저 굴린 뒤, 플레이어가 상대 판정값을 보고 재굴림을 고른다
     const rolls = { a: dice.roll(), b: dice.roll() };
     const rerolls = { a: 0, b: 0 };
@@ -435,7 +440,7 @@ export function* battle(input: BattleInput, dice: BattleDice, log: EventLog): Ba
       const dc = K['phase.fate_dc'];
       const parts = rollParts('hk_battle_phase_roll', index, [defender], (s) => ({ phase: phaseId, role: s === attacker ? 'attacker' : 'defender' }))[defender];
       const mod = statSum(F[defender].servant, def.defender_stat) + sumParts(parts);
-      const mir = miracleNaturals(F[defender].servant);
+      const mir = miracleOf(defender);
       const f = F[defender];
       let roll = dice.roll();
       let rerolls = 0;

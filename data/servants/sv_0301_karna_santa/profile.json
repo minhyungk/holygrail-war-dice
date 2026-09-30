@@ -1,0 +1,58 @@
+{
+  "servant_id": "sv_0301_karna_santa",
+  "source_id": 301,
+  "name_ko": "카르나[산타]",
+  "name_short_ko": "카르나 산타",
+  "class": "saber",
+  "ranks": {
+    "str": "B",
+    "end": "A",
+    "agi": "EX",
+    "mana": "D",
+    "luck": "C",
+    "np": "A"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "성인연속권",
+    "ruby_ko": "위닝・아르카푸트라",
+    "rank": "A",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1048000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/104800/104800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/104800/104800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    100,
+    200,
+    300,
+    303,
+    404,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2040,
+    2075,
+    2631,
+    2851,
+    2858,
+    5000,
+    104800
+  ],
+  "lore": {
+    "detail": "카르나가 이런저런 사정에 의해 산타로 변한 존재.\n누구나가 “선물을 받고 싶다”고 바라는, 1년에 한 번뿐인 크리스마스.\n그 소원을 한 몸에 받는 존재야말로 산타클로스이며, 그것에 응할 수 있는 힘을 자신이 가지고 있음을 깨달았다면, 당연히 그는 그 역할을 짊어지는 데 주저하지 않는다.\n“산타 할아버지, 선물 주세요!”라는 어린아이들의 소원에, 지극히 자연스럽게 “그런가. 그렇다면 주마”라고 대답하며 과부족 없이 그 소원을 이뤄주는 타입의 산타클로스.\n쿨하며 붙임성은 없지만, 절대 차가운 것은 아니다. 상냥한 마음이 전해지기 어려울 뿐이다."
+  },
+  "instant_death": false
+}

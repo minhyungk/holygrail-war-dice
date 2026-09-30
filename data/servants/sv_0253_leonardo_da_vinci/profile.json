@@ -1,0 +1,54 @@
+{
+  "servant_id": "sv_0253_leonardo_da_vinci",
+  "source_id": 253,
+  "name_ko": "레오나르도 다 빈치",
+  "name_short_ko": "다 빈치 라이더",
+  "class": "rider",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "B",
+    "mana": "A",
+    "luck": "A+",
+    "np": "B"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "경계를 넘는 자",
+    "ruby_ko": "뷰티풀 저니",
+    "rank": "B",
+    "type_ko": "대계보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_4035000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/403500/403500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/403500/403500b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    103,
+    202,
+    300,
+    303,
+    405,
+    1000,
+    2001,
+    2009,
+    2631,
+    2667,
+    2780,
+    2858,
+    5000,
+    403500
+  ],
+  "lore": {
+    "detail": "다 빈치에 의해 주조된 인조영령. 어쨌든 씩씩하다! 그리고 깜찍하다! 롤러 스케이트로 상쾌하게 전장을 누비며, 만능 가방에서 전개하는 울티모 매니퓰레이터로 싸우는 순진가련한 하이브리드 서번트.\n“어, 그래서 누구냐고? 그건 물론, 만능의 천재 레오나르도 다 빈치가 제2차 그랜드 오더를 대비해서 주조해 둔 분신이자, 칼데아의 마스터를 서포트하는 지상최고의 비서형 미소녀───\n모두의 소녀, 다 빈치짱, 이란 말씀!”"
+  },
+  "instant_death": false
+}

@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0327_izumo_no_okuni",
+  "source_id": 327,
+  "name_ko": "이즈모노 오쿠니",
+  "name_short_ko": "이즈모노 오쿠니",
+  "class": "caster",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "C+",
+    "mana": "B",
+    "luck": "A",
+    "np": "B"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "오쿠니 십팔번・이즈모 아라가미 가부키",
+    "ruby_ko": "오쿠니 십팔번・이즈모 아라가미 가부키",
+    "rank": "C",
+    "type_ko": "결계보구",
+    "special_attack": [
+      2019
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5049000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/504900/504900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/504900/504900b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    202,
+    301,
+    303,
+    405,
+    1000,
+    2001,
+    2008,
+    2631,
+    2858,
+    2881,
+    5000,
+    504900
+  ],
+  "lore": {
+    "detail": "아즈치 모모야마 시대의 예능인. 가부키오도리(가부키 춤)의 시조라고도 전해지며, 그 춤이 다양한 변화를 거쳐, 현재의 가부키로 이어졌다고 한다.\n이즈모의 무녀라고 불리며, 다양한 지역을 돌며 춤을 선보였다.\n그 목적은 이즈모타이샤의 권진을 위해서라고도 하는데 확실치는 않다. 오쿠니의 가부키오도리는 높은 평가를 받아, 세상 사람들을 매료하게 되었다.\n그러나, 이윽고 오쿠니의 가부키오도리는 풍기를 어지럽히는 것으로서 시대의 권력자들에게 기피되었고, 어딘지 모를 곳으로 여행을 떠났다고 전해진다."
+  },
+  "instant_death": false
+}

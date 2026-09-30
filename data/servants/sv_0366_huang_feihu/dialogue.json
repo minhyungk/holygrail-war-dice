@@ -1,0 +1,327 @@
+{
+  "speaker": "sv_0366_huang_feihu",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "[황비호] : 천화! [황천화] : 나의 은추를 보라!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "[황비호] : 천록! [황천록] : 잡았다앗!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "하아앗……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "금안신앵이여, 가라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "적당히 봐줄 필요는 없을 것 같군……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "[황비호] : 천작이여, 함께! [황천작] : 넵!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "천상도, 싸울 수 있어요……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "인우일체의 창술로…… 꿰뚫는다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "자기 자식 앞에서, 질 수는 없다……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "물러나지 않겠다……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "욱!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "기식을 다스리겠다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "[황비호] : 아들들아, 여기에! [황씨 형제] : 넵!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "울어라! 오색신우!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "훗! 핫! ……주인인가! 미안하다, 단련하고 있기에 땀을 흘렸어. 너무 가까이 오지 않는 편이 좋을 거다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "가령 주인이 악으로 타락했을 때, 진정한 무인은 어떻게 해야 하는가…… 어떻게 해야, 했었는가─── ……이 사람은 그 답을…… 계속 찾아다니고 있는 거겠지.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "이 사람과 함께 있는 것은, 물론 아이들만이 아니다. 나의 아버지, 황곤. 남동생인 비표(범)와 비표(표범). 그리고 나의 아내…… 존재를 느끼고는 있지만 좀처럼 구현되지 않는 모양이더군…… 언젠가…… 말을 주고받을 수 있을 때가, 오는 것일까.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "이 사람이 여기에 있는 것과 그대가 좋은 주인이라는 것. 아마도 그 둘은 본질적으로는 아무 관계가 없어. 속절없이 길을 잘못 든 왕을 섬겨야만 할 때도 무인에게는 있기 마련이지…… ───허나, 그렇기 때문에! 이 사람은 그대가 좋은 주인이라 다행이라고, 진심으로…… 생각하고 있다───",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것이라…… 역시, 가족…… 이 되겠지. 하지만 그 때문에 아내와 여동생을 잃은 것은…… ───아니! 그것 외에는, 뭐, 무난하게…… 술이지! 이 사람은 강하다!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "부부가 함께 싸우는 상대는 조금 거북한 감이 있지. ……부끄럽게도 이 사람은 장규와 고난영이라는 부부에게 살해당한 것이야…… ……아니? 물론 그 열등의식을 털어내기 위해서 매일 단련하고 있지만!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "모든 소원을 이루어주는 잔이라…… 멋지다는 느낌보다는 두렵다는 생각이 먼저 드는군…… 주왕이라면 아무리 많은 인명을 희생해서라도 손에 넣고자 할 테지───",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "무성왕, 간다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "나의 창에 망설임은 없다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "일족의 긍지를 걸고……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "청봉산 자양동 동주! 청허도덕진군에게 청하오……! 나의 자식, 천화의 이름을 빌려…… 별빛의 일검을───! ‘막야보검’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "[황비호] : 아이들아, 힘을 빌려다오……! [황천화] : 물론! [황천록] : 당연……! [황천작] : ……뜻대로. [황천상] : 네! [황비호] : 이는, 청봉산의 지보, 형태 없는 단두의 빛이리니……! [황씨 일족] : ‘막야보검’──!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "[황천록] : 기회다, 나설 기회다! [황천상] : 천상이 일등이에요! [황천작] : 뒤처졌습니다……! [황천화] : 원래는 내 거거든? 형님보다 나대지 말라고…… [황씨 형제] : (시끌벅적) [황비호] : ……이 녀석들! 적당히 하거라!! [황씨 형제] : 죄, 죄송해요, 아버님~?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "당당할 수 있는 싸움은, 좋은 것이로군.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "가자…… 우리가 가야 할 곳으로───!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "이것도…… 천수, 인가───",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "너희들 곁으로, 지금───",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "이 사람은 무성왕, 황비호라고 하는 자. 귀군을 주인으로 섬기고자 대령했다. 문왕과 같은 인군인가, 아니면 주왕 같은 혼군인가…… 판가름하도록 하겠다.",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

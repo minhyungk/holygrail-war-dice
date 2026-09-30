@@ -1,0 +1,398 @@
+{
+  "speaker": "sv_0276_sei_shounagon",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "아럇~ 오~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "견우성, 금성, 유성!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "자! 빙글빙그을!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "닥쳐라~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "예~이예~이!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "으랴랴랴랴!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "이곳이 너의, 골인 지점이다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "헤이안 나이트 피버!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "헤이안 빔!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_4",
+        "text": "쓸~어~버려~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "아파파파팟, 타임, 타임!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "쿠엑.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "이거 진짜 무리거든요~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "아파랏!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "으쓱!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "뭔가 왔다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "이거 쩔지 않아?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "닛히히~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          },
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "호칭! ‘세이쇼 나곤’이 아니라 ‘세이 쇼나곤’이야! 본가가 키요하라였으니까, 성씨 앞 글자의 독음에 관직명인 ‘쇼나곤’을 붙인 거야! 근데, 내가 쇼나곤이었던 것도 아니라서…… 아, 귀찮아, 그냥 ‘나기코 씨’라고 불러.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "어째서 아처냐고? 아니 몰라, 나도 몰라. 축국은 좋아하고 딱히 상관없지만 말이지, 짱마스도 사소한 것에 신경 쓰면 지는 거라니까? 우하하하하!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "최근 떠올린 일이 있는데, 궁정에 있던 시절, THE・문학소녀라는 느낌의 무지무지 예쁜 애를 발견했는데, 우와~ 쩐다~ 친구가 되고 싶어라~ 라고 말했는데, 결국은 그 이후로는 만나지 못했었어…… 아니, 진짜, 어디의 누구였는지……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "짱마스 말이야, 무지무지 소중한 것을 잃어버린 적은 있어? 응, 그렇구나. 그래도 노력해 왔던 거구나…… 나는 글렀어, 뭔가 다 불태워 버렸다고 할까, 할 일은 다 했다고 할까, 지금 그야말로 남은 인생의 한복판…… 이란 느낌? 이제 두 번 다시 붓을 쥐는 일은 없다고, 왠지 모르게 생각했는데, 언젠가 다시, 쓰지 않고는 못 배길 만큼, 그런 무언가와 만날 수 있으려나……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "여기는 즐거운 일이 너무 많단 말이지~ 사진으로라도 남겨두지 않으면, 조금씩 잊어버릴 것만 같아. 하지만, 모두 다 소중한 추억인걸, 하나라도 놓치고 싶지 않아. 그도 그럴 게, 내가 뭔가를 새롭게 쓰기 시작한다면, 그것은 분명히…… 아무것도 아냐, 우하하!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "내가 좋아하는 것? 그걸 물어보는 거야? 얘기가, 무지무지 길어질 텐데 괜찮겠어?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것? 으~음, 그야 잔뜩 있는데? 하지만, 좋아하는 것만 생각하면 그런 것은 전~부 잊어버린단 말이지! 후하하하하! 짱마스는 어때? 싫은 것으로 머리가 가득 채워진 거 아냐?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "짱마스는, 혹시 손에 넣을 수 있다면 무엇을 빌래? 내 소원은 말이지…… 으~음, 뭐, 이뤄지지 않아도 괜찮아, 만약 줍는다면, 짱마스에게 줄게.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "준비는 OK? 기분 업해서 가 보자!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "의욕 넘치게 가 보자! 짱마스!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "킥오프!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "에~ 진짜 싸우게?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "봄은 동틀 녘, 여름은 밤. 한결같이 이 세상은 정취가 넘치는구나! 전부 덧칠해라, 마쿠라노소시! ‘마쿠라노소시・춘서초(이모셔널 엔진・풀 드라이브)’",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "가을은 저물녘, 겨울은 아침. 세계는 오늘도 감성이 넘치는구나! 두근두근! 최고! ‘마쿠라노소시・춘서초(이모셔널 엔진・풀 드라이브)’",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "반짝반짝 빛나는 것, 설레는 것. 몸은 스러지더라도 영원하리니! 영원무궁! ‘마쿠라노소시・춘서초(이모셔널 엔진・풀 드라이브)’",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_4",
+        "text": "봄은 동틀 녘…… 아 진짜 귀찮아! 앗, 맞아, 교토에 가자. 교토에 잘 오셨습니다, 교토에 온 것을 환영합니다. 물에 만 밥이 맛있어~! 얏호~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "네~! 다들 수고했엉!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "이것이 우정의 힘이다! 어? 아냐?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "무릇 세상은, 정말 감성 폭발!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_4",
+        "text": "수고~! 돌아갈 때 편의점 들렀다 갈래?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "이거 레알 큰일났당……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "넘 괴롭당……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "짱마스! 미안~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_4",
+        "text": "하아…… 테이시 님이 손을 흔들고 계셔……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "소환에 응해, 찾아왔습니다. 아처 서번트, 세이 쇼나곤이라고 하옵니다. 이미 붓을 놓은 몸이기는 합니다만, 이 흘러넘치는 지식이 도움이 되는 일도 있겠지요. 잘못되더라도 책임은 지지 않습니다만, 오호호호호. 저기 그게…… 인사는 이쯤이면 됐으려나? 앞으로도 잘 부탁해, 짱마스!",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0125_tawara_touta",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_independent_action",
+      "name_ko": "단독행동",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_protection_of_the_dragon_king",
+      "name_ko": "용신의 가호",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_protection_from_arrows",
+      "name_ko": "화살 회피의 가호",
+      "rank": "C",
+      "kind": "generic",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_inexhaustible_straw_bag",
+      "name_ko": "무진표",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

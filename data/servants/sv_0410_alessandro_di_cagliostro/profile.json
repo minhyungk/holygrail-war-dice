@@ -1,0 +1,53 @@
+{
+  "servant_id": "sv_0410_alessandro_di_cagliostro",
+  "source_id": 410,
+  "name_ko": "알레산드로 디 칼리오스트로",
+  "name_short_ko": "칼리오스트로",
+  "class": "pretender",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "D",
+    "mana": "B+",
+    "luck": "A",
+    "np": "B"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "assassin",
+  "noble_phantasm": {
+    "name_ko": "질서에 죽음을, 온 세계에 혼돈을",
+    "ruby_ko": "레벨리옹 오 몽드",
+    "rank": "B~EX",
+    "type_ko": "대 도시/혼돈보구",
+    "special_attack": [
+      300
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_28007000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/2800700/2800700a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/2800700/2800700b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    120,
+    202,
+    301,
+    305,
+    404,
+    1000,
+    2001,
+    2008,
+    2631,
+    5000,
+    2800700
+  ],
+  "lore": {
+    "detail": "18세기, 유럽 각국에 출몰한 전설적인 괴인. 혁명 전야의 프랑스 사교계에서 암약한 대마술사, 혹은 희대의 천재 사기꾼.\n왕후 귀족처럼 행동하면서도, 빈민가에서는 사람들을 무료로 치료하며 민중에게 칭송받은 걸물.\n프랑스 왕비 마리 앙투아네트까지 휘말렸던 세기의 대스캔들 ‘목걸이 사건’의 배후로서 체포되었으나, 석방되어 시민들로부터 큰 갈채를 받았다.\n혁명 전야의 파리에서, 귀족을 농락하고 빈민을 구제한 그는 그야말로 영웅이었다."
+  },
+  "instant_death": false
+}

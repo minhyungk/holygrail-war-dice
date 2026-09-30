@@ -1,0 +1,41 @@
+{
+  "servant_id": "sv_0298_watanabe_no_tsuna",
+  "skills": [
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "A",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_riding",
+      "name_ko": "기승",
+      "rank": "B",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_eternal_arms_mastery_anti_demonic",
+      "name_ko": "무궁의 무련(대 마)",
+      "rank": "A-",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_suiten_s_disciple",
+      "name_ko": "수천의 사도",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_severed_arm_at_ichijou_modori_bashi",
+      "name_ko": "일조여교의 팔 자르기",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

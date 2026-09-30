@@ -1,0 +1,414 @@
+{
+  "speaker": "sv_0372_tlaloc",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_2",
+        "text": "에스콜피온!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "거기네, 요!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "아틀!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "촘판틀리!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "지탱해 주세, 요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "핫!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_8",
+        "text": "토치틀리!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_9",
+        "text": "우러러보세요!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_10",
+        "text": "멸망의 밤이여, 끝나라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_11",
+        "text": "범람하라, 나의 눈물.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_14",
+        "text": "거기네, 요!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_15",
+        "text": "틀랄로칸!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_16",
+        "text": "카스카벨!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "테오쿠아위틀라!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "웨이 테오칼리!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "쓸어 버려!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "나는, 지켜야만 해……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "흥.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "틀랄록!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "제사의 뜰을 만들게, 요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "부족의 긍지를 보여라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "제의를, 집행한다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_5",
+        "text": "그래, 템플로 마요르.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_6",
+        "text": "내려다보겠어, 요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "틀랄록은 비의 신. 평화적인 신 같다? ……훗, 얄팍하면서도 왜소한 생각이네요. 큰 강이 없는 아즈텍에서, 비와 물을 다스리는 것은 생명을 인질로 잡은 거나 다름없어요. 아시겠어요? 틀랄록의 노여움을 사면, 촌락 한두 곳쯤은 간단히 사라진다는 뜻이에요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "위칠로포치틀리는 전쟁의 신이자 아즈텍의 부족신. 전사들의 혼을 아우르는 자. 오라버니…… 테스카틀리포카 신에서 파생된 신으로, 권능도 흡사합니다. 뭐, 아즈텍인들의 수호신이니까 전능까지는 되지 못하지만, 요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "오래도록, 그리고 열정적인 신앙을 받아왔기에 저는 신의 권능을 쓸 수 있게 되었습니다. 힘은 저에게, 영광은 바탕이 된 신에게. 서로 손해 보지 않는 관계지요. ……그렇다고는, 해도, 틀랄록 신도 위칠로포치틀리 신도 위대한 분이라 그분들답게 행동하느라 애를 먹습니다만.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "예전에 도시에는 많은 신관들이 있었습니다. 그 사람들은 근면하고 열정적이고 다부진 자들이었습니다만, 청결하지는 않았지요. 매일 산 제물을 해체했기에 튀는 피로 새빨갛게 물들어 있었거든요. 감염증으로 목숨을 잃은 신관도 많았지요. 왕이든 귀족이든 신관이든, 항상 대가를 치르는 세계. 그것이 아즈텍, 누구나 희생되는 세계. ……잔혹한 세계라고 생각하나요? 그럴 테지요, 저도 동감이에요. 하지만 아즈텍의 문화를 부정하지는 않습니다. 가혹한 밀림에서 살아간다는 것은, 그런 일이에요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal",
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "틀랄록과 위칠로포치틀리. 이 두 신을 섬김으로써 테노치티틀란은 번영했습니다. 결국 밀림의 원주민 마을에 불과하다고 얕보던 스페인인들은 저를 보고 말을 잃더군요. “온 세상을 돌아다녔지만, 이토록 장대하고 견고하며 아름다운 도시는 없다. 그야말로 지상의 보석이다”라고. ……당신에게 부족한 것은 그런 반응. 요컨대, 틈날 때마다 감동하라고, 요?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것. 황금, 은, 직물, 많은 깃털 장식, 공예 장인이 만드는 흑요석 칼날. 대로에 진열된 물건은, 전~부 좋아해, 요.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것? 물론 스페인인이지요! 떠올리기만 해도 머리가 나우이 퀴아위틀이 되겠어. 그 녀석들, 치수 지이이인짜 못해!!!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배. 소망을 이루어준다는 건, 심장을 넣는 그릇이라도 되나요? ……아니라고요? 그러면 어떻게 소망을 이루어 주는데요?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "비의 신에게, 붉은 피를.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "전쟁의 신에게, 불의 심장을.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "말린체에게 죽음을.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "대로에는 어울리지 않겠네, 요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "심장도시, 기동. 나의 제단(알타르), 나의 장작(쿠아위틀라), 나의 사랑하는 신관(틀라마카스키)! 나는 이번에야말로 잃지 않겠어!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "마말 와츠틀리의 인도 있으라. 우러러보아라, 장엄한 신의 모습을! 조준 완료, 이제 놓치지 않아! 익사하기 전에, 녹여주겠어!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "아아…… 열 받아……! 여기 조금, 저기 조금, 성가셔!! 길거리는 깨끗이! 상식이잖아!! 마그마의 샤워로, 씻어내겠어!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_4",
+        "text": "진실된 신체, 여기에. 두 개의 달력이 겹치는 순간, 새로운 태양이 도래하리라. 피여, 대지를 적셔라! ‘중기동 심장도시(오메테오틀・테노치티틀란)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "그 정도 병력으로 저에게 도전하다니, 어리석은 것도 천정부지였군, 요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "활기, 유행, 경제…… 어느 것을 꼽아도 저의 승리였네, 요. 후후……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "저의 용맹한 모습을 지켜보았나요? ……그런가요, 잘 됐군요. ……고, 고맙습니다……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "도시 개발의 재검토가 필요하겠네, 요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "몸에 균열이 갔습니다…… 질 좋은 돌을 캐오겠습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "……저를 부른 것은 당신, 이군요. 저는 비의 신 틀랄록. 혹은, 부족신이자 전쟁의 신 위칠로포치틀리. 어울린다고 느낀 쪽 이름으로 불러 주세요. 양쪽 다 저로서는 다를 게 없으니까…… 요.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

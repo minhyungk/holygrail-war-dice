@@ -1,0 +1,54 @@
+{
+  "servant_id": "sv_0080_charles_babbage",
+  "source_id": 80,
+  "name_ko": "찰스 배비지",
+  "name_short_ko": "배비지",
+  "class": "caster",
+  "ranks": {
+    "str": "B++",
+    "end": "B++",
+    "agi": "D++",
+    "mana": "A",
+    "luck": "E",
+    "np": "A+"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "현란한 회신세계",
+    "ruby_ko": "디멘션 오브 스팀",
+    "rank": "EX",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5011000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/501100/501100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/501100/501100b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    104,
+    202,
+    301,
+    305,
+    403,
+    1000,
+    2001,
+    2008,
+    2631,
+    2781,
+    2835,
+    2858,
+    5000,
+    501100
+  ],
+  "lore": {
+    "detail": "19세기의 수학자이자 과학자. 세상의 변혁을 꿈꾼 증기왕. 증기기관을 이용한 세계 최초의 컴퓨터 ‘차분기관’, ‘해석기관’을 고안한 천재 석학. 현대에서는 ‘컴퓨터의 아버지’라고도 불린다."
+  },
+  "instant_death": false
+}

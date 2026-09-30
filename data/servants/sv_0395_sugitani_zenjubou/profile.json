@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0395_sugitani_zenjubou",
+  "source_id": 395,
+  "name_ko": "스기타니 젠쥬보",
+  "name_short_ko": "스기타니 젠쥬보",
+  "class": "archer",
+  "ranks": {
+    "str": "D",
+    "end": "EX",
+    "agi": "C+",
+    "mana": "D",
+    "luck": "E",
+    "np": "C"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "중립·중용",
+  "alignment_verified": false,
+  "temperament": "assassin",
+  "noble_phantasm": {
+    "name_ko": "두 발로 쏘아 드리리다",
+    "ruby_ko": "두 발로 쏘아 드리리다",
+    "rank": "C++",
+    "type_ko": "대인보구",
+    "special_attack": [
+      2113
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2051000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/205100/205100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/205100/205100b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    3,
+    102,
+    202,
+    302,
+    305,
+    403,
+    1000,
+    2001,
+    2008,
+    2356,
+    2631,
+    2858,
+    5000,
+    205100
+  ],
+  "lore": {
+    "detail": "스기타니 젠쥬보는 전국시대 철포의 명수다. 1570년, 롯카쿠 씨족의 의뢰를 받아 오다 노부나가를 저격했지만 실패한다.\n3년 동안 도망쳤지만, 이소노 카즈마사에게 붙잡혀 톱질형을 받아 처형되었다고 전해진다.\n저격에 관한 일화를 제외하면, 스기타니라는 지역에서 태어난 철포의 명인이라는 정도의 기록밖에 없다."
+  },
+  "instant_death": false
+}

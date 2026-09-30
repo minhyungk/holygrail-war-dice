@@ -1,0 +1,381 @@
+{
+  "speaker": "sv_0308_mysterious_idol_x_alter",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "땡큐, 오디언스!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "검~ 은~ 별의~ 빛~ 을~ 껴~ 안고~♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "에이, 얍~! 분위기가 오르기 시작했어요!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "아, 원, 투, 삼, 포우~♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "아이돌은~? 빔이 생명!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "하앗! 물러 터졌어요!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "Come on Singing!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "여기서 멤버 소개! 거의 전부 나~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "멤버 소개! 태클 담당, 흑기사 군~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "You Say 엣짱~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "멋진, 경연입니다……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "히야아!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "당했습니다……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "아야야얏……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "눈앞~ 깜깜 다크 매터♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "그것이 얼터의 길~♪",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "달아오르고 있나요~?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "먹는 것도, 일. ……와구와구.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "이 부유 포드는, 흑기사 군의 인클로저 유닛이에요. 꽤 편리합니다만 귀찮은 것도 SURROUND로 2배 2배죠. LOUDNESS……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "으음~…… 선구자, 화과자…… 구자, 과자…… 어라, 마스터. ……아아, 이건 독서가 아니라 시 짓기입니다. 노래 가사를 구상하고 있었어요. 먼저 깨달은 자인 <선구자>와 제가 좋아하는 과자인 <화과자>를 합쳐서 뭔가 떠오르는 게 없을까 하고. 앞으로 한 구절만 더 있다면…… 어떻게 생각하시나요, 마술사/막과자 조합은?!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "냠냠냠…… 와~ 이 킨츠바 진짜 끝내주네~…… 아, 시식 CM 출연 트레이닝 중이었습니다. 이래 봬도 저는, 아주 적임이라 생각하거든요. 달콤한 디저트 쪽 스폰서를 말이죠? 부디, 제발……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "……어라? 어라라? ……저에게는 뭔가, 소중한 사명이 있던 것 같은데…… 뭐랄까, 전 유니버스를 뒤흔드는 계열의…… 태평하게 아이돌 활동이나 하고 있어도 되는 걸까요……? ……허어, 아이돌의 길도 쉬운 길이 아니다? ……오오, 그것도 그렇죠. 과연 마스터 씨, 아뇨, 마스P 씨……!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "저기, 마스터 씨. 저, 당신의 최애가 될 수 있었을까요……? 이 일상이 살짝 다르게 보일 만한, 내일이 기대될 만한, 그런 아이돌이 될 수 있었으면 정말 기쁘겠어요. ……후훗!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "책을 펼치고, 화과자를 집어 먹는다…… 그 행위를, 저는 왠지 떳떳지 못하게, 도피처처럼 느끼고 있었을지도 모르겠습니다. 스테이지에 서고, 사람들에게 마음을 여는 아이돌이 되어서, 그렇게 돌아보기도 해요. ……네? 그런 제가 좋아하는 거요? 독서랑 화과자인데요, 무슨 문제라도?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "마, 마스터 씨…… 저기요, 저거. 잠깐 부탁드릴 수 없을까요? 저, 완전 쥐약이거든요, 저거. 저거 말예요, 양말을 고정하는 쇠고리! 저것을 건드리면 잇속이 찡~! 해져요. 아아아아…… 생각만 해도 벌써, 으으으으으……",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배 말인가요…… 저, 늘 검토를 거듭하고 있었습니다만, 충~분히 식힌 다음에 검은콩 떡 디저트를 담아 보면 어떨까 하고…… 새콤한 살구도 꼭 곁들여서! ……아아, 갖고 싶네. 성배……!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "격전의 라이브, 시작입니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "자. 뛰고 춤추어라, 내 마음!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "최전선에 계신 분들~? 갈게~?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "다음이 마지막 곡입니다. 에~……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "월홍대하, 즉 루미너스. 유명신뢰, 그렇지만 조화(하모니). 나의 검의 노랫소리를 들어라───! ‘황채환주패도검(루미노칼리버)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "말 없는 얼터의 발라드. 여로의 끝에서, 너는 웃고 나는 눈물을 알게 되겠지── 모든 것은 하늘에 깜빡이는 별빛에. ──‘황채환주패도검(루미노칼리버)’",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "제대로 퍼포먼스 해낸 걸까……?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "앙코르, 보다, 앙꼬떡!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "네에~ 수고하셨습니다~",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_4",
+        "text": "좋은 세션이었어요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "한 번 더…… 그, 노래를……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "아직, 더 부를 수 있으니……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "누구나 다, 혼자……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_4",
+        "text": "Lalalala…… la…… lalala……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "수수께끼의 아이돌 X 얼터…… 클래스는 포리…… 세이버, 입니다. 그렇다기보다 아이돌이라서요. 전 유니버스를 향해서 얼트리액터 전개, 아이돌리움 최대 출력으로 광고 중입니다. 내키시면 ‘엣짱’이라고 불러주셔도 괜찮아요.",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

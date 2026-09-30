@@ -1,0 +1,423 @@
+{
+  "speaker": "sv_0426_kazuradrop",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "비밀의 상자, 말이군요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "퍼즐 완성입니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "욥, 얍, 여차!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "헛것을 본 것, 이라면 좋겠네요!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "무용이라면, 저라도.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "갑니다! 타앗~~!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_7",
+        "text": "새로운 옷을.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_8",
+        "text": "휩쓸려주세요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_9",
+        "text": "카즈라짱 빔, 입니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_10",
+        "text": "이런 거, 문제라고 생각하는데요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_11",
+        "text": "예쁘지요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_12",
+        "text": "우후후후후.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_13",
+        "text": "하나, 둘에, 셋!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_14",
+        "text": "먼저 실례하겠습니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_15",
+        "text": "움직여도 된다고 누가 말했어요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_16",
+        "text": "거북이는 이렇게 해야지.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "섬유의 바다에 떨어져 주실래요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "아핫, 기모노의 얼룩이 되어버려라~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "접어서, 갈무리해 드리죠!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "그 정도~?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "꺅!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "조준하고…… 에잇!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "아~주 살짝 한 번만 밀면……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "친구를 원하는군요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "달의 조각을 모으듯이!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_5",
+        "text": "언젠가 저도, 이런 식으로───",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_6",
+        "text": "풍류, 풍류♡",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "여기가 마스터 씨의 방인가요? 으~음, 뭘까요…… 생각했던 것보다 좁─── 아뇨, 아무것도 아니에요! 안심하시길, 저는 조금도 신경 쓰지 않습니다. 평범한 것도 개성이니까요! 이상하게 카리스마가 넘치는 인간보다 몇 배는 더 제 취향이에요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "새삼스럽지만 저희 사쿠라 파이브는 BB가 불필요하다며 잘라낸 감정에서 태어난 존재입니다. 실례가 따로 없죠. 그러니까 저희 모두에게서 미움받고 있어요, 그 여자. 아아, 저는 자애의 얼터에고입니다. 어떤 인간도 차별 없이 사랑하는 특성을 가지고 있지요. 그래요, 평등하게, 상대가 어떤 인간이라도 태도가 바뀌지 않는 거예요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "저에게 포함된 에센스 말인가요? 픽시와 무리안이요. 양쪽 다 귀여운 요정이죠! 그러면 이 이야기는 이쯤 하고─── 뭔가요? 다른 건 더 없어요. 없다고요. 웅…… 싫어하는 거 보고 모르겠어요? 너무 끈질기게 굴면 진짜로 밟아버릴 거예요?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "오늘도 성실하게 일을 처리하고 있네요, 마스터. 장하다, 장해! 그렇다기보다 그것밖에 장점이 없으니까 당연하겠네요! 매미처럼 목숨 걸고 열심이라 귀여워요! 평생 그렇게 매달리며 살아주세요!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "인연이 깊어진다니 뭐라니 하지만요, 저에게 그런 건 없다고요? 처음부터 끝까지, 아무리 시간과 경험을 쌓아도 저의 근저는 달라지지 않습니다. 그러니까 인연 같은 건 낮은 편이 나았다고요, 정말로. 낮은 상태라면 미움받는 게 당연해서 상처받을 일도 없잖아요?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것은, 노력하는 사람이겠네요! 기운을 나눠 받을 수 있고, 무엇보다 응원하는 보람이 있어서요!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것이요? 처음부터 뭐든지 다 해내는 사람이나 당연하다는 듯이 강한 생물 같은 거겠네요. 콧대를 꺾어주고 싶어 못 견디겠어요!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배가 있는 건가요?! ……아뇨…… 저는 됐으니 다른 분에게 써주세요. 갖고 싶은 것도 없고, 강해지고 싶은 꿈도 없으니!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "정말 참, 야만스러운 건 못 써요! 반성해 주실 수밖에 없겠는걸요!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "우후, 강해 보이는 분이 잔뜩♡ 괴롭힐─── 아뇨, 개심해 주는 분이 있으면 좋겠는데요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "전투로군요? 차별 없는 자애, 보여드리겠습니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "끝없이 넓어지는 세계에 잘 오셨습니다! 작아진 기분은 어떠세요? 말은 그렇게 했지만, 버러지의 기분 따위 아무래도 상관없나. 여기가 여러분의 종점입니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "요정 스고로쿠 충롱유희. 당신들이 줄어들어 갈수록 나의 세계는 넓어져 가────! 뭐해요, 뭐해, 빨리 도망쳐야죠. 느림보 벌레는 찌부러뜨린다?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "약하다고 얕잡아봤군요? 제가 큰 것이 아닙니다. 당신들이 작은 거지요! 한 마리도 남김없이 저의 장난감. 울어봤자 원래대로 돌아가지 않는다고요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "자, 끝. 아~무도 남지 않게 되었지요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "아아, 뭔가 부족해! 놀이니까 좀 더 대항해 주셔야죠!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "우훗, 딱한 최후라 불쌍해. 누~구에게도 보이지 않게 되다니♡",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "하아, 참 내. 대등한 입장의 전투는 역시 야만스럽네요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "아…… 여기까지라니…… 나에게 힘이 더 있었더라면……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "천진난만, 순진정숙! 모든 시공의 멋진 마스터 씨, 오래 기다리셨습니다! 차세대의 하이퍼 AI! BB를 대신하는 달의 여왕! 얼터에고・카즈라드롭, 러브 콜에 응해 이 자리에 등장! 했어요! 예~이! ……아니, 잠깐만요. 여기, 혹시 BB가 있나요? ───어흠. 자애의 얼터에고, 카즈라드롭, 소환에 응해 찾아왔습니다. 미숙한 몸입니다만 부디 잘 부탁드립니다.",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "servant_id": "sv_0124_hassan_of_the_serenity",
+  "source_id": 124,
+  "name_ko": "정밀의 하산",
+  "name_short_ko": "정밀의 하산",
+  "class": "assassin",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "A+",
+    "mana": "C",
+    "luck": "A",
+    "np": "C"
+  },
+  "alignment": "evil",
+  "alignment_detail": "질서·악",
+  "alignment_verified": false,
+  "temperament": "assassin",
+  "noble_phantasm": {
+    "name_ko": "망상독신",
+    "ruby_ko": "자바니아",
+    "rank": "C+",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6009000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/600900/600900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/600900/600900b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    105,
+    202,
+    300,
+    304,
+    403,
+    1000,
+    2001,
+    2008,
+    2631,
+    2780,
+    2858,
+    5000,
+    600900
+  ],
+  "lore": {
+    "detail": "해골 가면을 쓴 암살자. 암살 교단의 교주 ‘산의 노인’을 맡은 역대 하산 사바흐 중 하나로, 생전에는 ‘정밀의 하산’이라는 다른 이름을 가진 독살의 명수였다고 한다."
+  },
+  "instant_death": true
+}

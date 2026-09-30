@@ -1,0 +1,53 @@
+{
+  "servant_id": "sv_0057_eric_bloodaxe",
+  "source_id": 57,
+  "name_ko": "에릭 블러드액스",
+  "name_short_ko": "에릭 블러드액스",
+  "class": "berserker",
+  "ranks": {
+    "str": "B+",
+    "end": "B+",
+    "agi": "D",
+    "mana": "D",
+    "luck": "C",
+    "np": "C"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "berserker",
+  "noble_phantasm": {
+    "name_ko": "피투성이 대관식",
+    "ruby_ko": "블러드배스 크라운",
+    "rank": "B",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7015000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/701500/701500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/701500/701500b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    106,
+    202,
+    301,
+    305,
+    402,
+    1000,
+    2001,
+    2008,
+    2113,
+    2631,
+    2858,
+    5000,
+    701500
+  ],
+  "lore": {
+    "detail": "피의 도끼를 가진 바이킹의 왕. 그것이 에릭 블러드액스. 통칭 ‘혈부왕’이다."
+  },
+  "instant_death": false
+}

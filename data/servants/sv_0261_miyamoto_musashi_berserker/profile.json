@@ -1,0 +1,59 @@
+{
+  "servant_id": "sv_0261_miyamoto_musashi_berserker",
+  "source_id": 261,
+  "name_ko": "미야모토 무사시",
+  "name_short_ko": "무사시 버서커",
+  "class": "berserker",
+  "ranks": {
+    "str": "A+",
+    "end": "B",
+    "agi": "B",
+    "mana": "C",
+    "luck": "D",
+    "np": "D"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "마검 격파, 받아라!",
+    "ruby_ko": "간류섬",
+    "rank": "EX",
+    "type_ko": "대인보구",
+    "special_attack": [
+      2075
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7036000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/703600/703600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/703600/703600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    106,
+    202,
+    301,
+    303,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2009,
+    2040,
+    2631,
+    2780,
+    2838,
+    2858,
+    5000,
+    703600
+  ],
+  "lore": {
+    "detail": "“미야모토 무사시? 바보 녀석, 녀석은 굶어 죽었어! 여기 있는 것은 푸른 하늘을 사랑하는 한 여자, 어디를 어떻게 봐도 미국인! 예~이! 양손의 무기를 마음대로 골라잡는, 여름을 만끽하는 해결사! 미야모토 이오리, 라는 것으로 일단, 잘 부탁해!”\n일본도를 스포츠 찬바라로, 그리고 새로운 무기로 바꾸어, 버서커 이천일류, 여기에 등장!\n이렇게, 이름 높은 검호이더라도 수영복이라는 마에 타락하는 것이다.\n왜냐하면, 여름인걸."
+  },
+  "instant_death": false
+}

@@ -1,0 +1,57 @@
+{
+  "servant_id": "sv_0256_gareth",
+  "source_id": 256,
+  "name_ko": "가레스",
+  "name_short_ko": "가레스 랜서",
+  "class": "lancer",
+  "ranks": {
+    "str": "C",
+    "end": "B",
+    "agi": "A",
+    "mana": "D",
+    "luck": "D",
+    "np": "C"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "사납게 날뛰는 소녀 늑대",
+    "ruby_ko": "이라 루푸스",
+    "rank": "C++",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3039000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/303900/303900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/303900/303900b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    101,
+    201,
+    300,
+    303,
+    402,
+    1000,
+    2001,
+    2008,
+    2009,
+    2011,
+    2012,
+    2037,
+    2631,
+    2795,
+    2858,
+    5000,
+    303900
+  ],
+  "lore": {
+    "detail": "아서 왕의 원탁의 기사. 원탁 제7석. 가웨인, 가헤리스, 아그라베인을 형제로 하는 젊은 기사. 롯왕과 요비 모르간 사이에 태어난 자식 중 하나. 반역의 기사 모드레드는 아버지가 다른 동생이다.\n별명은 가에리에. 혹은 보메인(아름다운 손)."
+  },
+  "instant_death": false
+}

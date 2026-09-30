@@ -62,7 +62,7 @@ export const RANK_LETTERS = ['E', 'D', 'C', 'B', 'A', 'EX'] as const; // stats.m
 export type RankLetter = (typeof RANK_LETTERS)[number];
 /** 정규 7클래스 (한 판에 클래스당 1기) + 엑스트라 클래스 (난입 소환으로만 참전, D-157) */
 export const STANDARD_CLASSES = ['saber', 'archer', 'lancer', 'rider', 'caster', 'assassin', 'berserker'] as const;
-export const EXTRA_CLASSES = ['ruler', 'avenger', 'alterEgo', 'moonCancer', 'foreigner', 'pretender'] as const;
+export const EXTRA_CLASSES = ['ruler', 'avenger', 'alterEgo', 'moonCancer', 'foreigner', 'pretender', 'shielder'] as const;
 export const CLASSES = [...STANDARD_CLASSES, ...EXTRA_CLASSES] as const;
 export const TERRAINS = ['open', 'urban', 'forest', 'river'] as const; // content/map-fuyuki.md §2
 export type Terrain = (typeof TERRAINS)[number];

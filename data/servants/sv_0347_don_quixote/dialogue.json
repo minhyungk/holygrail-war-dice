@@ -1,0 +1,466 @@
+{
+  "speaker": "sv_0347_don_quixote",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "하아아아앗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "가자, 돌격!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "[돈키호테] : 이거면 어떠냐~?! [산초] : 굉장해요~!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "[산초] : 던집니다~! [돈키호테] : 자, 잘 부탁한다~?!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "[돈키호테&산초] : 꾸우욱~ 모았다가, 콰아앙~!!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "[돈키호테] : 차차앗! [산초] : 한 번 더!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "[돈키호테] : 빛의 가호를 나에게! [산초] : 빛나고 있어요, 나리~!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "[돈키호테] : 뭐에 씐 듯이 돌격~! [산초] : 그 ‘씐 것’이 대체 뭘까요~?!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "[돈키호테] : 허잇차아~!! [산초] : 박수갈채, 부탁드립니다~!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_4",
+        "text": "[산초] : 나리 파이팅~! [돈키호테] : 얍얍야압!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "[돈키호테] : 크오오오오옷?! [산초] : 나리……!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "아팟?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "[돈키호테] : 크으우우우우웃?! 이까짓 것……! [산초] : 나리?! 무리는 하지 마시고요?!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "경상이랍니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "발동!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "자, 여기요!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "창에 걸고!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "[돈키호테] : 영광이여! [산초] : 평온으로!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          },
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "[돈키호테] : 오오, 마스터 님! [산초] : 네, 안녕하세요!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          },
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "[돈키호테] : 어이쿠, 마스터 님! 이, 돈키호테를 부르셨습니까? [산초] : 아닌가 본데요, 나리~?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          },
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "[돈키호테] : 음훗후~! 이번에야말로 불렸군요, 마스터 님~! [산초] : 이번에는 정말인가 봐요! 잘됐네요, 나리!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal",
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "[돈키호테] : 노기사…… 아뇨, 실상 평범한 시골뜨기였던 저와 이렇게까지 함께 싸워주셨다니, 이미 감동의 말로는 표현하지 못하겠습니다…… 사력을 다해 이 생명을 바치겠소이다……! [산초] : 전부 바치셔도 곤란하니, 절반 정도로 해주세요. ……남은 반은, 제가 맡겠으니. 마스터 씨도 슬퍼하실걸요? [돈키호테] : 그, 그러냐……? 그렇다면…… 뭐, 절반 정도, 바치겠소이다! [산초] : 네! 나리와 함께 잘 부탁드릴게요?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "[돈키호테] : 으으음, 싫어하는 것 말입니까…… [산초] : 저는 특별히 없습니다.",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          },
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "[돈키호테] : 성배…… 아아, 물론 소원이 있고말고요! 둘시네아 님의 위대함과 고결함, 그리고 그 미모가 세상에 널리 알려지기를! [산초] : 어머 나리! 그렇게 말씀하시면 쑥스럽다고요! 어떡해, 참~! [돈키호테] : ……헤? 왜 쑥스러워해?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "[돈키호테] : 음하하하하하하! 가자, 질풍과 같이! [산초] : 플레이, 플레이! 나리~!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "[돈키호테] : 적이 몇만이라 하더라도…… 이 창이, 귀공들을 쓸어버릴 것이다! [산초] : 65점 정도 되는 느낌이네요. [돈키호테] : 조금만 더, 점수에 온정을 베풀지 않겠느냐……?!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "[돈키호테] : 나의 이름은, 돈키호테 데 라만차! 귀공의 이름을 묻겠소이다! [산초] : 그것은 되었으니 얼른 공격하지요? 나리? [돈키호테] : 으에엥?? 그래…… 알았어~……",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "[돈키호테] : 기사된 자의 용기, 지금이야말로 보여줄 때……! [산초] : 그러면 가지요! ‘아아, 사랑스러운 공주에게 바치리라(발리엔테 아살토 데디카도)’~~~? [돈키호테&산초] : ───‘나의 창을!(아 라 프린세사)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "[돈키호테] : 산초! 보구 이름을 기억하고 있느냐?! [산초] : ‘아아, 사랑스러운 공주에게 바치리라, 나의 창을!(발리엔테 아살토 데디카도 아 라 프린세사)’랍니다~ 나리? [돈키호테] : 기억이 났다~?! ……끝났네.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "[돈키호테] : 앞길에 무엇이 있든 간에, 나는 가야만 하는 것이다! 나는 기사! 돈키호테 데 라만차이기에───!! [산초] : 나리는 최고의 기사예요……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "[돈키호테] : 승리잇!! 나의 사랑, 나의 기사도, 전율했느냐!! ……아야야야야야야야야! [산초] : 상처를 치료하겠으니 가만히 계세요? 나리.",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "[돈키호테] : 음! 나의 승리다! [산초] : 나리, 역시 대단하세요! 그러니, 반성회를 열지요! [돈키호테] : 그거~ 꼭 지금부터 해야 돼……?",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "[돈키호테] : 이, 이겼다……! 위험한 순간이었지만, 나의 기사도가 나를 지켜준 것이로군?! [산초] : 아니요, 제가 신비한 파워로 지킨 건데요……? [돈키호테] : 그랬어……?",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_4",
+        "text": "[돈키호테] : ‘기사라면 응당 이래야 하는 법’이로구나……! [산초] : 훌륭하세요~ 나리……! 다치지 않으셨으면 더어어어욱 훌륭하시고요!! [돈키호테] : 어라~? 어째~…… 혼나는 것 같은데~ 나~……",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "[돈키호테] : 산초, 너는 도망…… [산초] : 아뇨. 당연히 운명을 함께하겠습니다───",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "[돈키호테] : 여기까지, 인가…… [산초] : 지옥 끝까지, 예요……",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "[돈키호테] : 오오…… 이것이…… 이것이 소환! 실례한다, 나의 이름은 알론소 키하노, 가 아니라! 저의 이름은 돈키호테! 돈키호테 데 라만차입니다! [산초] : 클래스는 랜서입니다. 아, 저는 종자인 산초 판사입니다. 정식명은 더 길기에, 일단 산초로 불러주세요. [돈키호테] : 자, 나의 마스터 님! 제가 무찌를 적을 가르쳐주십시오! 자, 어서어서어서! [산초] : 죄송합니다. 소환되는 바람에 흥분하셔서……",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

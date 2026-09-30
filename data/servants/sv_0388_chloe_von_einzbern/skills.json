@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0388_chloe_von_einzbern",
+  "skills": [
+    {
+      "skill_id": "sk_avenger",
+      "name_ko": "복수자",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_oblivion_correction",
+      "name_ko": "망각보정",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_self_restoration_magical_energy",
+      "name_ko": "자기회복(마력)",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_independent_action",
+      "name_ko": "단독행동",
+      "rank": "B-",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_how_s_the_progress",
+      "name_ko": "진척은 어떠신가요",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_we_can_get_it_replaced_in_time",
+      "name_ko": "아직 조정 가능해요",
+      "rank": "D++",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_manuscript_received",
+      "name_ko": "원고 받았습니다!",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

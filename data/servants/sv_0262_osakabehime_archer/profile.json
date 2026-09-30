@@ -1,0 +1,57 @@
+{
+  "servant_id": "sv_0262_osakabehime_archer",
+  "source_id": 262,
+  "name_ko": "오사카베히메",
+  "name_short_ko": "오사카베히메 아처",
+  "class": "archer",
+  "ranks": {
+    "str": "D",
+    "end": "E",
+    "agi": "B",
+    "mana": "A",
+    "luck": "A",
+    "np": "EX"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "중립·여름",
+  "alignment_verified": false,
+  "temperament": "tsundere",
+  "noble_phantasm": {
+    "name_ko": "하쿠로 성・1000식 밀리밀리 나이트 피버!",
+    "ruby_ko": "하쿠로 성・1000식 밀리밀리 나이트 피버!",
+    "rank": "EX",
+    "type_ko": "대군보구(일개대대)",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2036000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/203600/203600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/203600/203600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    102,
+    201,
+    302,
+    308,
+    404,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2040,
+    2631,
+    2838,
+    2858,
+    5000,
+    203600
+  ],
+  "lore": {
+    "detail": "버티고 버텨 약 2년, 결국 그녀는 해냈다. 영기변화에 의한 수영복 장착, 완료!\n어쌔신에서 아처로 클래스 체인지하여 조금은 액티브해진 오사카베히메, 여기에 등장! 구체적으로는 서바이벌 게임에 푹 빠져서, 매일 밤낮으로 배틀 로열을 벌이고 있다."
+  },
+  "instant_death": false
+}

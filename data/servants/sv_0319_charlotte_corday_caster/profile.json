@@ -1,0 +1,53 @@
+{
+  "servant_id": "sv_0319_charlotte_corday_caster",
+  "source_id": 319,
+  "name_ko": "샤를로트 코르데",
+  "name_short_ko": "샤를로트 캐스터",
+  "class": "caster",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "D",
+    "mana": "C++",
+    "luck": "A",
+    "np": "A"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·여름",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "갈채 받는 하룻밤의 꿈",
+    "ruby_ko": "라 페리 뒨 뉘",
+    "rank": "C++",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5048000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/504800/504800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/504800/504800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    202,
+    301,
+    308,
+    404,
+    1000,
+    2001,
+    2008,
+    2631,
+    2838,
+    2858,
+    5000,
+    504800
+  ],
+  "lore": {
+    "detail": "수영복…… 이라기보다는 매지션 영기라고 불러야 할, 깜짝 클래스 체인지를 한 서번트.\n클래스는 일단 캐스터이지만, 캐스터다운 일은 무엇 하나 할 수 없다. 트릭 마술로 비둘기를 꺼낼 수 있다.\n비둘기는 비생물인 에테르체이지만, 얼핏 보면 비둘기랑 쏙 빼닮았다.\n전투 시를 제외하면 서툰 건 변함이 없다. 언젠가 관객과 마스터 앞에서 우아하게 트릭 마술을 선보이기 위해서, 매일 연습을 하고 있다."
+  },
+  "instant_death": false
+}

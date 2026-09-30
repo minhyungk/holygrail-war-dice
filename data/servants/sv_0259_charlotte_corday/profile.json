@@ -1,0 +1,52 @@
+{
+  "servant_id": "sv_0259_charlotte_corday",
+  "source_id": 259,
+  "name_ko": "샤를로트 코르데",
+  "name_short_ko": "샤를로트",
+  "class": "assassin",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "D",
+    "mana": "E",
+    "luck": "B+",
+    "np": "D"
+  },
+  "alignment": "good",
+  "alignment_detail": "중립·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "고국에 사랑을, 잠겨드는 듯한 꿈을",
+    "ruby_ko": "라 레브 앙솔레예",
+    "rank": "C",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_6038000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/603800/603800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/603800/603800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    105,
+    202,
+    302,
+    303,
+    401,
+    1000,
+    2001,
+    2008,
+    2631,
+    2858,
+    5000,
+    603800
+  ],
+  "lore": {
+    "detail": "샤를로트 코르데는 프랑스 혁명 중에 자코뱅 파의 중진인 장 폴 마라를 암살한 여성이다. 그 가련한 용모와, 홀로 암살을 계획하고 실행한 뛰어난 수완으로 높은 평판을 얻어, ‘암살의 천사’라고 칭송받았다."
+  },
+  "instant_death": true
+}

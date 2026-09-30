@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0268_space_ishtar",
+  "source_id": 268,
+  "name_ko": "스페이스 이슈타르",
+  "name_short_ko": "스페이스 이슈타르",
+  "class": "avenger",
+  "ranks": {
+    "str": "B",
+    "end": "EX",
+    "agi": "B",
+    "mana": "EX",
+    "luck": "C+",
+    "np": "EX"
+  },
+  "alignment": "evil",
+  "alignment_detail": "질서·악",
+  "alignment_verified": false,
+  "temperament": "avenger",
+  "noble_phantasm": {
+    "name_ko": "원시우주에 빛나는 왕관",
+    "ruby_ko": "에딘 슈그라 퀘이사",
+    "rank": "EX",
+    "type_ko": "대성보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_11009000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1100900/1100900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1100900/1100900b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    2,
+    110,
+    203,
+    300,
+    304,
+    405,
+    1000,
+    2000,
+    2001,
+    2040,
+    2780,
+    2797,
+    2835,
+    2924,
+    5000,
+    1100900
+  ],
+  "lore": {
+    "detail": "서번트 유니버스에서 온, 자유분방하며 활기차게 살아가는 신령 서번트.\n본인은 아처 클래스인 척하고 있으나, 어째서인지 클래스는 어벤저이다. 무슨 팔자인지 제인과 콤비를 이루어 악당을 쫓고 있는, 하루 벌어 하루 먹고 사는 현상금 사냥꾼(바운티 헌터).\n“나는 이슈타르. 여신 이슈타르야. 응? 헷갈리니까 스페이스를 붙이라고? 거절하겠어. 스페이스라니, 귀엽지 않잖아!”"
+  },
+  "instant_death": false
+}

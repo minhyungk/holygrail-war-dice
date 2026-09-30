@@ -1,0 +1,57 @@
+{
+  "servant_id": "sv_0385_aesc_the_rain_witch",
+  "source_id": 385,
+  "name_ko": "비의 마녀 토네리코",
+  "name_short_ko": "토네리코",
+  "class": "caster",
+  "ranks": {
+    "str": "C",
+    "end": "C",
+    "agi": "B",
+    "mana": "EX",
+    "luck": "E",
+    "np": "A++"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "질서·불명",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "성검의 아득한 꿈의 흔적",
+    "ruby_ko": "메모리 오브 론디니움",
+    "rank": "A++",
+    "type_ko": "대군보구",
+    "special_attack": [
+      304
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5053000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/505300/505300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/505300/505300b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    201,
+    300,
+    405,
+    1000,
+    1177,
+    2001,
+    2007,
+    2008,
+    2011,
+    2037,
+    2858,
+    2923,
+    5000,
+    505300
+  ],
+  "lore": {
+    "detail": "그것은 어릴 적에 꾸었던 꿈. 따뜻하고 다정한 이야기를 사랑한, 비의 나라의 마녀의 이야기.\n요정이면서도 독학으로 수많은 마술을 만들어내고, 왕녀이면서도 들판을 달리는 모험을 사랑한 소녀. 머지않아 많은 운명을 만나고, 배신당하고, 변절해 갈 구세주의 가장 처음 모습."
+  },
+  "instant_death": false
+}

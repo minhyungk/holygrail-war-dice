@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0212_napoleon",
+  "source_id": 212,
+  "name_ko": "나폴레옹",
+  "name_short_ko": "나폴레옹",
+  "class": "archer",
+  "ranks": {
+    "str": "D",
+    "end": "C",
+    "agi": "A",
+    "mana": "E",
+    "luck": "B",
+    "np": "B"
+  },
+  "alignment": "good",
+  "alignment_detail": "중립·선",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "개선을 드높이 고하는 홍궁",
+    "ruby_ko": "아크 드 트리옹프 드 레투알",
+    "rank": "A+",
+    "type_ko": "대군보구",
+    "special_attack": [
+      2000
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_2031000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/203100/203100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/203100/203100b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    102,
+    203,
+    302,
+    303,
+    405,
+    1000,
+    2001,
+    2012,
+    2113,
+    2631,
+    2858,
+    5000,
+    203100
+  ],
+  "lore": {
+    "detail": "가능성의 사나이. 사람들의 기대에 의해 태어난 영웅의 우상.\n초대 프랑스 황제. 한때는 유럽 대부분을 지배할 정도에 이르렀으나, 최종적으로는 몰락했다. 그 파란만장한 생애는 개인의 바람과 능력에만 의존한 것이 아니라, 사람들의 소망에 의해 인도되었던 것이다. ───적어도, ‘영령의 좌’는 그런 존재로서 영령 나폴레옹을 정의했다.\n그렇기에, 현계한 그는 항상 ‘누군가의 소망’에 부응하는 사나이로서 행동한다."
+  },
+  "instant_death": false
+}

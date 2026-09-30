@@ -1,0 +1,55 @@
+{
+  "servant_id": "sv_0413_aozaki_aoko",
+  "skills": [
+    {
+      "skill_id": "sk_entity_of_the_outer_realm",
+      "name_ko": "영역 밖의 생명",
+      "rank": "E",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_territory_creation",
+      "name_ko": "진지작성",
+      "rank": "E",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_item_construction",
+      "name_ko": "도구작성",
+      "rank": "E",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_magician",
+      "name_ko": "마법사",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_load_magic_bullet",
+      "name_ko": "마탄 장전",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_magic_circuit_rotation",
+      "name_ko": "마술회로(자전)",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_to_your_era_once_more",
+      "name_ko": "그 시대에, 다시 한번",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

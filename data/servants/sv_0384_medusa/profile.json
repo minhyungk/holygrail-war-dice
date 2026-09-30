@@ -1,0 +1,61 @@
+{
+  "servant_id": "sv_0384_medusa",
+  "source_id": 384,
+  "name_ko": "메두사",
+  "name_short_ko": "메두사 세이버",
+  "class": "saber",
+  "ranks": {
+    "str": "A+",
+    "end": "C",
+    "agi": "C",
+    "mana": "A",
+    "luck": "E",
+    "np": "A"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "괴물의 황금검",
+    "ruby_ko": "크리사오르",
+    "rank": "A",
+    "type_ko": "대군보구",
+    "special_attack": [
+      202
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1056000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/105600/105600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/105600/105600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    100,
+    201,
+    301,
+    305,
+    405,
+    1000,
+    1110,
+    2000,
+    2001,
+    2008,
+    2009,
+    2011,
+    2037,
+    2040,
+    2075,
+    2797,
+    2858,
+    5000,
+    105600
+  ],
+  "lore": {
+    "detail": "사람을 돌로 만들어 버리는 마안과 뱀의 머리카락을 지닌 여자 괴물은, 영웅 페르세우스에게 목이 잘렸을 때 그 피에서 두 종류의 존재가 태어났다고 한다.\n하나는 날개 달린 말, 페가수스. 그리고 다른 하나가 ‘황금검을 지닌 괴물’이다───"
+  },
+  "instant_death": false
+}

@@ -1,0 +1,63 @@
+{
+  "servant_id": "sv_0101_rama",
+  "source_id": 101,
+  "name_ko": "라마",
+  "name_short_ko": "라마",
+  "class": "saber",
+  "ranks": {
+    "str": "A",
+    "end": "B",
+    "agi": "A+",
+    "mana": "B",
+    "luck": "B",
+    "np": "A"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "나찰을 꿰뚫는 불멸",
+    "ruby_ko": "브라흐마스트라",
+    "rank": "EX",
+    "type_ko": "대마보구",
+    "special_attack": [
+      2019
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1019000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/101900/101900a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/101900/101900b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    100,
+    200,
+    300,
+    303,
+    404,
+    1000,
+    2000,
+    2001,
+    2008,
+    2009,
+    2011,
+    2012,
+    2037,
+    2040,
+    2075,
+    2113,
+    2631,
+    2851,
+    2858,
+    5000,
+    101900
+  ],
+  "lore": {
+    "detail": "인도의 양대 서사시 중 하나인 ‘라마야나’의 주인공. 신을 속여 획득한 힘으로 신들까지도 사역하는 라바나는 유일하게 인간만이 쓰러뜨릴 자격을 가졌다고 일컬어지는 마왕이었다.\n신들의 호소를 들은 비슈누는 모든 것을 잊고 단순한 인간인 어느 나라의 왕자로 전생했다. 그것이 바로 라마이다."
+  },
+  "instant_death": false
+}

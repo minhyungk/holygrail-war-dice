@@ -1,5 +1,5 @@
 // VN 텍스트박스와 선택지 (03-ui-style.md §6, D-122).
-import { type ReactNode, useEffect, useRef, useState } from 'react';
+import { type ReactNode, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { K } from '../../data/constants';
 import { REDUCED } from '../fx/circle';
 import type { ShownLine } from '../session';
@@ -44,9 +44,19 @@ export function Vn({ log, typing, onLineDone, onLog, autoDefault = true, speed =
     const t = window.setTimeout(onLineDone, K['text.line_pause_ms'] / speed);
     return () => window.clearTimeout(t);
   }, [cur, done, auto, onLineDone, speed]);
-  useEffect(() => {
+  // 처음 나타날 때는 부드러운 스크롤 없이 바로 맨 아래에 붙인다: 상자가 다시 생길 때 맨 위에서 흘러내리던 버그 (D-166)
+  const placed = useRef(false);
+  useLayoutEffect(() => {
     const el = box.current;
-    if (el) el.scrollTop = el.scrollHeight;
+    if (!el) return;
+    if (!placed.current) {
+      el.style.scrollBehavior = 'auto';
+      el.scrollTop = el.scrollHeight;
+      el.style.scrollBehavior = '';
+      placed.current = true;
+      return;
+    }
+    el.scrollTop = el.scrollHeight;
   }, [n, log.length]);
 
   const advance = () => {
@@ -79,7 +89,6 @@ export function Vn({ log, typing, onLineDone, onLog, autoDefault = true, speed =
           return (
             <p key={i} className={`vl ${kind} ${l.voice ? `v-${l.voice}` : ''} ${typingThis ? 'cur' : ''}`}>
               {l.speaker ? <b className="spk">{l.speaker}</b> : null}
-              {l.draft && l.kind === 'line' ? <span className="draft">draft</span> : null}
               <span className="body">
                 {l.kind === 'system' ? (typingThis ? l.text.slice(0, n) : l.text) : <RubyText text={l.text} shown={typingThis ? n : undefined} />}
               </span>

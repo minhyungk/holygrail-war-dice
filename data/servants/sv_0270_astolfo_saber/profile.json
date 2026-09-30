@@ -1,0 +1,58 @@
+{
+  "servant_id": "sv_0270_astolfo_saber",
+  "source_id": 270,
+  "name_ko": "아스톨포",
+  "name_short_ko": "아스톨포 세이버",
+  "class": "saber",
+  "ranks": {
+    "str": "C+",
+    "end": "C",
+    "agi": "A",
+    "mana": "B",
+    "luck": "A++",
+    "np": "B"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "요행의 구인망",
+    "ruby_ko": "불카노 칼리고란테",
+    "rank": "B",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1041000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/104100/104100a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/104100/104100b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    3,
+    100,
+    201,
+    301,
+    303,
+    405,
+    1000,
+    2001,
+    2008,
+    2009,
+    2011,
+    2037,
+    2075,
+    2356,
+    2631,
+    2858,
+    2919,
+    5000,
+    104100
+  ],
+  "lore": {
+    "detail": "설마설마하던 아스톨포 세이버!\n이유는 불명, 이론도 불명, 이성도 불명인 없고 없고 없는 것 투성이지만, 어찌 되었든 가장 우수하다고 칭송받는 세이버다.\n예~이, 어떠냐, 봤냐! 예~이."
+  },
+  "instant_death": false
+}

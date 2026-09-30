@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0410_alessandro_di_cagliostro",
+  "skills": [
+    {
+      "skill_id": "sk_diversion_tactic",
+      "name_ko": "위장 공작",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_material_casting_fake",
+      "name_ko": "물품주조(가짜)",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_hero_s_archenemy_fake",
+      "name_ko": "영웅의 대적(가짜)",
+      "rank": "E++",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_i_am_acharat",
+      "name_ko": "나는 아샤라일지니",
+      "rank": "EX",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_althotas_continuum",
+      "name_ko": "알토타스 연속체",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_eastern_martial_arts",
+      "name_ko": "동방무기",
+      "rank": "A+",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

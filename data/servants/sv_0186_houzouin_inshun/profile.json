@@ -1,0 +1,53 @@
+{
+  "servant_id": "sv_0186_houzouin_inshun",
+  "source_id": 186,
+  "name_ko": "호조인 인슈운",
+  "name_short_ko": "인슈운",
+  "class": "lancer",
+  "ranks": {
+    "str": "C",
+    "end": "D",
+    "agi": "A",
+    "mana": "D",
+    "luck": "B",
+    "np": "C"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "중립·중용",
+  "alignment_verified": false,
+  "temperament": "cheerful",
+  "noble_phantasm": {
+    "name_ko": "오보로우라즈키 십일식",
+    "ruby_ko": "오보로우라즈키 십일식",
+    "rank": "C",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3014000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/301400/301400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/301400/301400b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 class), 사용자 검수 전.",
+  "traits": [
+    1,
+    101,
+    202,
+    302,
+    305,
+    403,
+    1000,
+    2001,
+    2008,
+    2012,
+    2631,
+    2858,
+    5000,
+    301400
+  ],
+  "lore": {
+    "detail": "찌르면 창, 후리면 나기나타, 거두면 낫, 여하튼 빗나갈 일 없다───\n소문이 자자한 호조인 십자창. 호조인 인슈운은 호조인류 창술 2대 계승자이며, 그 기술은 신불에 도달한다고 일컬어진 남자다."
+  },
+  "instant_death": false
+}

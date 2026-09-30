@@ -1,0 +1,372 @@
+{
+  "speaker": "sv_0363_yamanami_keisuke",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "핫!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "잡아놓겠습니다……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "에에잇!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "호응하겠습니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "───실례.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "차앗! 이얍!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "미안하지만, 여기까지다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "떨어진 꽃은 흘러가려는데 냇물은 모르는 체하는구나……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_3",
+        "text": "나를, 화나게 하지 말아줘……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "이것은, 역시 좀……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "으앗?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_3",
+        "text": "크으아아아악?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_4",
+        "text": "이런 정도로는……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "그래…… 가볼까.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "자, 어떻게 해야 할까……?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "저에게 좋은 생각이 있습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "아시리라 생각합니다만…… 저는 배신자…… 마스터의 동료나 같은 대원 중에는 눈살을 찌푸릴 자도 있겠지요…… 그때는, 사양 말고 말씀해 주십시오! 지금이 어떻든, 그것은 사실이니까요……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "문무겸비라고 말하면 듣기에는 좋습니다만, 결국 양쪽 다 어중간한 남자란 뜻입니다…… 그래도 상관없다고 하시면, 제가 어느 정도 도움이 되면 좋겠습니다만……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "특별히 재주가 있는 몸은 아닙니다만, 당신을 위해서 배운 것을 활용하고 싶다…… 그런 생각이 들기 시작했습니다. ……네. 의지해달라고 말할 수 있을 만큼 의지가 되지는 못할지도 모르겠습니다만…… 마음 한구석에라도 기억해 주세요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "마스터. 당신은 좋은 쪽으로나 나쁜 쪽으로나 지나치게 순수합니다……! 인간으로서 그것은 좋은 모습일지도 모르겠습니다만…… 계속되는 싸움 속에서는 언젠가 그 순수함이 당신을 짓뭉갤 수도 있습니다…… 그때는…… 저를 의지해 주십시오. 당신이 짊어지는 것, 그 일부라도 대신 짊어질 수 있으면, 좋겠습니다……!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "어쩔 도리가 없는 흐름…… 네…… 정말로, 스스로는 어쩔 도리가 없는 흐름……! 그런 상황에 불가항력으로 말려들 때도 있겠지요…… 하지만 마스터! 당신은 곧게 앞을 보고 걸어 주세요……! 제가…… 아뇨, 저희가, 당신의 길을 열겠습니다……! 자…… 당신의 눈에 비치는, 그 길을 가 주십시오……! 저 먼 앞의, 미래로───!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것 말입니까? 어린아이와 노는 것일까요? 아이는 나라의 보물, 나라의 근간이니까요. ……아뇨, 때 묻지 않은 웃음에 제가 마음의 위안을 얻을 뿐일지도 모르겠군요.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것, 말입니까…… 그렇군요…… 말이 통하지 않는 작자들은, 약간 거북합니다…… 무슨 일이든 가능하면 대화로 해결하는 게 최선이지요……",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "소원이 이루어지는 성배……! 이루어진다면, 그때로─── 아니, 이건 미련이라는 거겠지…… 그날, 그때…… 그것은 틀렸을지도 모르지만…… 그것이 내가 선택한 길이었으니까───!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "신선조 총장, 야마나미 케이스케. 얌전히 포박된다면 안전은 보장한다. 아니면 베겠다……!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "너무 거친 짓은 하고 싶지 않지만, 그럴 수도 없나 보군……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "이 팔로, 어디까지 할 수 있을지…… 아니, 우는소리나 할 때가 아니지……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "물의 북쪽…… 산의 남쪽아…… 봄의 달, 인가…… 자, 전진하도록. 너의 길을……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "^0:0:1.83:물의 북쪽……^0:1.84:1.9:산의 남쪽아……^0:3.94:E:봄의 달,^1:0:1.83:물의 북쪽……^1:1.84:1.9:산의 남쪽아……^1:3.94:E:봄의 달, 인가…… 자, 자, 전진하도록. 너의 길을……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "───아아, 그래. 후회는 없어. 후회 따위는 처음부터, 없었던 거야──!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_4",
+        "text": "산벚나무…… 흔적 없이 지는 꽃이…… 더 용맹하니─── 갑시다. 여기부터가…… 신선조의 진심의 길───!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_5",
+        "text": "갑시다. 여기부터가…… 신선조의 진심의 길───!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "이제 그만둡시다. 이 이상의 다툼은 무익합니다……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "하아…… 아무래도 무사히 끝난 모양이지? 자…… 신선조, 철수합니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_3",
+        "text": "잘 풀린 모양인걸…… 이거 참, 어깨의 짐을 덜었어……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "죄송, 합니다……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "나는 더 이상, 도망치지 않아……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_3",
+        "text": "또, 도중에…… 나는───",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "신선조 총장, 야마나미 케이스케, 소환에 응해 찾아왔습니다. 내세울 재주는 없지만 몸과 마음을 다해 마스터를 모시겠습니다. 아무쪼록 잘 부탁드립니다.",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

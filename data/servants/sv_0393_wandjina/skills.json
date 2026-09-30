@@ -1,0 +1,48 @@
+{
+  "servant_id": "sv_0393_wandjina",
+  "skills": [
+    {
+      "skill_id": "sk_entity_of_the_outer_realm",
+      "name_ko": "영역 밖의 생명",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_magic_resistance",
+      "name_ko": "대 마력",
+      "rank": "A+",
+      "kind": "generic",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_cradle_of_the_stars",
+      "name_ko": "별의 요람",
+      "rank": "C",
+      "kind": "unique",
+      "origin": "class"
+    },
+    {
+      "skill_id": "sk_nature_s_droplet",
+      "name_ko": "자연의 물방울",
+      "rank": "B",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_blessings_of_life",
+      "name_ko": "생명축복",
+      "rank": "B+",
+      "kind": "unique",
+      "origin": "personal"
+    },
+    {
+      "skill_id": "sk_watcher_of_the_water_stars",
+      "name_ko": "물의 별을 바라보는 자",
+      "rank": "A",
+      "kind": "unique",
+      "origin": "personal"
+    }
+  ],
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-skills.mjs). 효과는 규칙표 자동 배정 [임시값]"
+}

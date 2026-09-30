@@ -1,0 +1,332 @@
+{
+  "speaker": "sv_0338_taisui_xingjun",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "폴짝! 파밧! 파워~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "영혼, 떨어트리지 마?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "왓하~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "빙글빙글빙그~을!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "거기 위험해~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_6",
+        "text": "던져봐야지!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "하나, 둘…… 으~음 뭐였더라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "역시나 이건 화났다구! 저리 가버려~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "아파아팟!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "어떤 놀이야?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "놀자~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "간다간다간다아~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "잠깐 휴식, 잠깐 휴식……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "새근새근~……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "여기가 데아데아인가~! 태양 빛은 그리 많이 안 들어오네?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "시뮬레이션 룸? 이라는 곳은 대단하네~! 태양이 없는데도 태양이 있어서 따끈따끈하니…… 이거면 일광욕도 할 수 있어! 왓하~!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "헬안나마~! ……응? 어느 사이에 배운 이 인사, 다들 순간 이상한 표정을 짓더라…… 식당에서 말했을 때는 안색이 변해서, 앞치마 걸친 사람이 “뭐가 안 나왔다고?” 라며 뛰쳐나왔었고! 어? 내 잘못이 아니니까 괜찮다? 그렇구나! 다들 최종적으로는 헬안나마~! 라고 대답해 주니까! 그렇다면 괜찮을까~!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "으응~ 아무리 일광욕을 해도 질리지 않고, 아무리 놀고 놀아도 더 놀고 싶어~! 마스터는 어떤 놀이를 알아~? ……흠흠…… 흠흠! 그게 뭐야, 해보고 싶어, 해보고 싶어!!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "어두운 땅속에 있는 것은 딱히 싫지 않았는데, 지루했어…… 가끔 파내져서, 그 녀석들을 저주하고, 도로 묻히고…… 그런 일이 반복되었던 것 같아. ……그러니까 이렇게 평범하게 바깥으로 나와서 노는 건 처음이야. ───정말, 괜찮아? 재앙을 끌어들일지도 모르는 녀석이, 여기에 있어도…… 괜찮아? ───그렇구나. 데아데아의 마스터는 강하구나…… 아니 뭐, 알고 있었지만! 그 녀석을 때려눕혀 줬으니까! 좋았어~ 그러면 사양하지 않고~! 놀・아・야・지~!!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "즐거운 일은 뭐든 좋아! 그 이외에는 으~음…… 자는 것도 좋아! 지면 아래도 조용해서 좋지만, 지금은…… 알고 있어?! ‘일광욕’이라는 거! 그렇게 따끈따끈하게 데워지다니, 몰랐어~!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "억지로 깨워서, 지면에서 끌어내는 건 본인이 아니라도 싫어할 거 아냐! 그리고 허가 없이 본인의 몸을 먹는다거나…… 응, 싫은 건 대체로 다른 사람들하고 같아!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배~? 다음에는 그걸 만드는 법을 알려주는 거야?!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "싸울 거야? 싸울 거냐아~?!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "본인, 등장!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_3",
+        "text": "하아암…… 아직 졸려~……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_4",
+        "text": "헬안나마~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "[소년] : 본인 각성! [청년] : 맹리태세 은원수의 명에 의해, 나타나라, 음이자 공허의 별─── ‘태세두상동토(타이수이・어웨이큰)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "[소년] : 아~ 아아~ 깨어나 버리겠는데~? [청년] : 땅을 도는 것은 거울의 흉성, 하늘에 깜빡이는 재앙이 거친 숨을 내쉰다── ‘태세두상동토(타이수이・어웨이큰)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "큰 쪽은 위험한데 말이지~ ……근데 어라? 어째선지 내용물이 그대로네? 뭐, 상관없나! 본인들의 힘을 보여주지……! 일족 전원, 저주한다저주한다 비~임!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "브이브~이!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "응, 즐거웠어!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "또 흙 속에……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "어둡네~……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "왓하~! 본인의 이름은 태세성군, 이라고 하는 모양이다! ……응? 달리 뭔가 설명할 게 있나? 지금까지 계속 같이 놀았잖아. 하여간, 어쩐지 움직이기 편해졌으니…… 앞으로도 잘 부탁해, 데아데아의 마스터!",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "servant_id": "sv_0249_asclepius",
+  "source_id": 249,
+  "name_ko": "아스클레피오스",
+  "name_short_ko": "아스클레피오스",
+  "class": "caster",
+  "ranks": {
+    "str": "D",
+    "end": "D",
+    "agi": "B",
+    "mana": "A",
+    "luck": "D",
+    "np": "A+"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "중립·중용",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "방약・불요한 명부의 비탄",
+    "ruby_ko": "리저렉션・플로트 하데스",
+    "rank": "B",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5043000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/504300/504300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/504300/504300b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    104,
+    201,
+    302,
+    305,
+    403,
+    1000,
+    1110,
+    2000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2040,
+    2114,
+    2466,
+    2631,
+    2780,
+    2858,
+    5000,
+    504300
+  ],
+  "lore": {
+    "detail": "아스클레피오스는 케이론 곁에서 의술을 배워, 이후에 ‘의술의 신’이라 불리게 되는 그리스 영웅이다. 이아손이 이끄는 아르고노트의 일원이기도 하다.\n아폴론의 자식이었던 그는 마침내 죽은 자를 되살릴 정도의 힘을 얻게 되어, 그것을 문제시한 신의 벼락에 맞아 죽었다."
+  },
+  "instant_death": false
+}

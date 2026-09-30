@@ -1,0 +1,307 @@
+{
+  "speaker": "sv_0258_chen_gong",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "호기입니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "싸워서 끝내 버리세요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "이런 식으로 공격하는 겁니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_4",
+        "text": "불똥이 튀면 쳐낼 뿐!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_5",
+        "text": "흐읍! 하압! 에잇!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "여포 장군, 여기서 자폭입니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_2",
+        "text": "출격! 응전! 대・격・침!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "칫, 보구를 허용할 줄이야……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "이 무슨!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "흠, 번뜩였습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "흠, 자폭밖에 없겠군요!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "단순하군요 단순. 이거 안 되겠군요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_4",
+        "text": "재정비하고 오시죠.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          },
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "저는 마음 편히 진궁이라 불러 주시면 됩니다. 전장에서는 짧은 명칭 쪽이 틀릴 일이 적어지니. 뭐, 너무 짧은 것도 문제입니다만……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "온후한 분으로 보였습니다만, 꽤 싸움을 좋아하시는 모양이군요. 매일처럼 싸움이 있을 줄이야, 이거참…… ……아니요, 어처구니없어 하는 게 아닙니다만? 기뻐하고 있습니다. 의외로 착각들을 하곤 합니다만, 저, 싸움은 정말 좋아해서요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "“지나치게 움직이지 마라, 군사인데 앞으로 나서지 마라” 라고요. 그것은 쓸데없는 배려입니다. 저는 좋아서 전장을 뛰어다니며, 좋아서 잡병들과 칼을 맞대고 있는 것이니까요. 하지만, 그렇지요…… 주군의 충고로서 받아들여 두기로 하지요. 제가 쓰러지면 군사 회의도 제대로 진행되지 않을 테니.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "그렇군요, 저도 생각을 바꿨습니다. 항상 승리한다 해도 싸움을 즐기지 않고, 오히려 싫어하는 분이 계실 줄이야. ……당신은 제가 섬기기에는 지나치게 훌륭한 인간일지도 모르겠군요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "군사란 주군을 섬기는 장치에 불과합니다. 거기에 개인적 감정은 존재해서는 안 되지요. 저는 장치로서 당신을 혹사시키고, 당신은 주인의 입장에서 저를 도구로 다룬다. 부디, 앞으로도 그렇게 부탁드립니다. 그러지 않으면, 서로에게 작별이 괴로워질 테니까요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것…… 글쎄요, 화공, 수공 같은 것을 말씀하시는 게 아닌 모양이군요. 그렇지요…… 가을밤에 하는 독서 같은 것도 좋아합니다만?",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것? 제갈량의 명성에는 다소 생각하는 바가 있습니다만…… 석병팔진이라는 것은 거의 선술. 그것은 군사의 기술이 아니라, 신비로운 기술이겠지요.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배란 불편한 것이라 들었습니다. 생각해 보십시오, 거금이 있다고 꿈이 이루어진다면, 원소 같은 이가 손쉽게 천하를 쟁취했을 겁니다. 사용하기 어려운 것이라면, 시원하게 사용해 버리는 것이 바람직합니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "그러면, 오늘의 전투를 시작하죠.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "이것은 괴롭힐 보람이 있는…… 실례, 공략할 보람이 있는 적진이로군요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "기책, 냉혈로써 끝내도록 하지요. 작열하는 것은 ‘기각일진’! ……훗, 필요한 희생이었습니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "흠, 지금이 적당한 시기일까요. 설마설마하던 ‘기각일진’ ……고심 끝의 결단입니다, 아시겠지요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "희생이 없는 승리는 없습니다. 아시겠지요?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "역시 전장은 좋군요. 승리하고도 여전히, 다음 전투에 대한 기대로 가슴이 설렙니다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "원통하다…… 하다못해, 적진을 박살 내주시길……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "화력이 부족했던 겁니까……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "서번트 캐스터. 성명을 진궁, 자는 공대라고 합니다. 이렇게 소환된 것도 하나의 인연. 언제까지나 함께하도록 하지요.",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

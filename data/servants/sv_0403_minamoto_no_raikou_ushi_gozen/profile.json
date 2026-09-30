@@ -1,0 +1,60 @@
+{
+  "servant_id": "sv_0403_minamoto_no_raikou_ushi_gozen",
+  "source_id": 403,
+  "name_ko": "미나모토노 라이코/우시고젠",
+  "name_short_ko": "우시고젠",
+  "class": "avenger",
+  "ranks": {
+    "str": "A",
+    "end": "B+",
+    "agi": "C",
+    "mana": "A+",
+    "luck": "C",
+    "np": "B"
+  },
+  "alignment": "evil",
+  "alignment_detail": "질서·악",
+  "alignment_verified": false,
+  "temperament": "avenger",
+  "noble_phantasm": {
+    "name_ko": "우왕반전・신뢰풍렬",
+    "ruby_ko": "우왕반전・신뢰풍렬",
+    "rank": "A",
+    "type_ko": "대성보구",
+    "special_attack": [
+      201
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_11018000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/1101800/1101800a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/1101800/1101800b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    110,
+    200,
+    300,
+    304,
+    405,
+    1000,
+    1132,
+    2000,
+    2001,
+    2008,
+    2011,
+    2019,
+    2037,
+    2040,
+    2735,
+    2851,
+    5000,
+    1101800
+  ],
+  "lore": {
+    "detail": "날카로우면서도 덧없는 검은 칼날. 칠흑의 어깨 판갑을 자유자재로 다루는 초현실적인 오니의 아이.\n스스로를 ‘미나모토노 라이코’라고 칭하는 서번트. 미나모토노 라이코란 헤이안 시대 최강의 ‘신비살해자’이며, 헤이안 무사의 대표 격이라 불릴 만한 존재다.\n그러나 그 정체는 진명 ‘우시고젠’─── 번개를 다스리는, 마성의 귀신이라 불러 마땅한 존재다."
+  },
+  "instant_death": false
+}

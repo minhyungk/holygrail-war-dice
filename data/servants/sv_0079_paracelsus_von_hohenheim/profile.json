@@ -1,0 +1,54 @@
+{
+  "servant_id": "sv_0079_paracelsus_von_hohenheim",
+  "source_id": 79,
+  "name_ko": "반 호엔하임 파라켈수스",
+  "name_short_ko": "파라켈수스",
+  "class": "caster",
+  "ranks": {
+    "str": "D",
+    "end": "E",
+    "agi": "C",
+    "mana": "A",
+    "luck": "B",
+    "np": "A+"
+  },
+  "alignment": "good",
+  "alignment_detail": "혼돈·선",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "원소술사의 마검",
+    "ruby_ko": "소드 오브 파라켈수스",
+    "rank": "A+",
+    "type_ko": "대군보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5010000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/501000/501000a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/501000/501000b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 class), 사용자 검수 전.",
+  "traits": [
+    1,
+    104,
+    202,
+    301,
+    303,
+    403,
+    1000,
+    2001,
+    2008,
+    2012,
+    2631,
+    2780,
+    2858,
+    5000,
+    501000
+  ],
+  "lore": {
+    "detail": "전설적인 의사이자 연금술사. 16세기 르네상스 시대의 인물로 알려졌다. ‘4원소(5원소)의 재발견’, ‘3원질의 재발견’을 시작으로 수많은 공적과 서적을 남겼다. 인류사와 마술사 쌍방에 이름을 남긴 흔하지 않은 인물."
+  },
+  "instant_death": false
+}

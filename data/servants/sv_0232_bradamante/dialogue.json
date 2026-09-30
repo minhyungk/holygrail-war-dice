@@ -1,0 +1,280 @@
+{
+  "speaker": "sv_0232_bradamante",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "에~잇!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "찻! 얍!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "타앗~!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "우오옷───! 빛이여!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "우아아앗!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "꺄악!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "빛이여! 모여라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "기력충분!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "랜서로서 소환해 주셨습니다만…… 실은 저, 창 보구를 가지고 있지 않습니다! 죄송합니다! 제 보구는 이 방패입니다. 네, 빛을 모으는 마의 방패. 과거에는, 사악한 마술사가 장비한 어둠을 모으는 방패였습니다만, 그 녀석을 무찌른 뒤에 멀린 님께서 정화해 주셨답니다!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "저에게는, 방패 외에도 보구가 있습니다. 이 반지죠. 평소에는 장갑 때문에 보이지 않습니다만…… 과거의 저에게── 샤를마뉴 대왕의 12용사, 팔라딘으로서 싸우는 저에게, 많은 힘을 빌려주었습니다. 어느 공주님에게 받은, 소중한 반지입니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "다른 클래스로 소환……? 그렇지요…… 제 경우에는, 라이더 클래스로 소환하는 것도 가능하다면 가능합니다. 히포그리프, 알고 계시나요? 그 귀여운 환수를 타고 하늘을 달릴 수 있답니다! 에헴! ……이 영기로는 부를 수 없어서 조금 섭섭하네요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal",
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "[브라다만테] : 저는 샤를마뉴 12용사 중 한 명입니다만…… 훗훗후…… 놀랍게도! 그 전설의 대마술사, 멀린 님께 인도받은 기사이기도 하답니다! ……진짜거든요? 과거에도 멀린 님의 무녀가 저의 여행을…… [멀린] : 여전하군요, 브라다만테. 지금 저는, 당신의 마음에, 말을 걸고 있습니다. 오랜만입니다. [브라다만테] : 엇, 어, 뭐야?! 목소리가 들리지 않았나요?! 방금?!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal",
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "[브라다만테] : 저는, 과거에 연인이었던 로제로를 뒤쫓던 팔라딘입니다. 길고 긴 여행이었습니다. 그리고 그것은, 영령으로 나타난 제 안에 지금도 계속되는 것처럼 느껴집니다. 제가 저인 이상, 추구해야만 하는 존재가 있으며, 설령 만날 수 없더라도 하염없이 쫓게 되어버리는…… 하지만 안심하세요, 마스터! 그 이전에 저는 팔라딘이니까, 세계를 되찾고자 온 힘을 다해 노력할 뿐입니다! [멀린] : 그러는 것이 좋겠지요. 지금 저는, 당신의 마음에, 말을 걸고 있습니다. 그렇습니다. 멀린입니다. [브라다만테] : 어라?! 멀린 님?!",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "로제로, 없는 걸까…… 앗, 마스터! 실은 저, 짚이는 곳이 있는데…… 저 하얀 짐승, 멀린 님의 기척이 느껴지는 포우 군. 저 아이는 혹시, 로제로의 환생이 아닐까요?!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "마술사는 싫어요! 마술사라는 건, 대개 냉정하고, 심술궂고, 언제나 뭔가 무시무시한 생각을 하고 있는 녀석들입니다! 앗, 아, 하지만 마스터는 달라요! 마스터에게서는 그 전설의 대마술사, 꽃의 마술사로서 유명한 멀린 님의 기척이 느껴집니다! 멀린 님과 인연이 있는 분이시라면, 네! 문제없습니다!",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배라면, 옛날에 아서 왕이 찾으시던 물건 말이죠? 존귀한 것이라고 들었습니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "브라다만테, 정의를 이루겠습니다!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "샤를마뉴 대왕을 대신해, 벌합니다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "빛이여! 나선이 되어라! 전력으로 가겠습니다! ‘눈부신 섬광의 마순(부클리에 데 아틀랑트)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "나선구속! 전심! 전력──! ‘눈부신 섬광의 마순(부클리에 데 아틀랑트)’!!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "팔라딘은 패하지 않는다! 승리만이 있을 뿐!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "이겼어요! 마스터!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "실수를……! 죄송합니다…… 마스터……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "튼튼한 것이…… 장점, 인데……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "샤를마뉴 12용사 중 한 명, 하얀 깃털의 기사 브라다만테. 랜서로서 소환되었습니다. 샤를마뉴 대왕을 대신하여 정의를 이루겠습니다!",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

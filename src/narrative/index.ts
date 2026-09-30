@@ -555,6 +555,7 @@ export class Narrator {
         'self.mana': s.mana,
         'self.seals': s.seals,
         'self.alignment': sv.alignment ?? 'neutral',
+        'self.temperament': sv.temperament, // 성격별 나레이션 (D-166, 레거시 마력 공급 문장)
         'self.intel_level': known(selfFc),
         'self.phase_won': ctx.phaseWinner === undefined || ctx.phaseWinner === null ? undefined : ctx.phaseWinner === selfFc,
       });

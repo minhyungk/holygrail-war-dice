@@ -1,10 +1,9 @@
-// 판 단위 데이터 로딩 (D-065): 그 판에 나오는 서번트·마스터 폴더만 동적으로 불러온다.
+// 판 단위 데이터 로딩 (D-065): 그 판에 나오는 서번트·마스터 폴더만 동적으로 불러온다. 프로필만은 전원 한 청크 (D-166, catalog.ts).
 // 빌드 시 폴더별로 청크가 나뉜다 (Vite import.meta.glob).
 import { BeatsFile, DialogueFile, LabelsFile, MasterProfile, ServantProfile, ServantSkillsFile, SummonChantFile } from './schema';
 
 type Table = Record<string, () => Promise<{ default: unknown }>>;
 const servantDialogue = import.meta.glob<{ default: unknown }>('/data/servants/*/dialogue.json');
-const servantProfile = import.meta.glob<{ default: unknown }>('/data/servants/*/profile.json');
 const servantSkills = import.meta.glob<{ default: unknown }>('/data/servants/*/skills.json');
 const masterDialogue = import.meta.glob<{ default: unknown }>('/data/masters/*/dialogue.json');
 const masterProfile = import.meta.glob<{ default: unknown }>('/data/masters/*/profile.json');
@@ -35,9 +34,19 @@ export async function loadClassDialogue(classes: readonly string[]): Promise<Dia
   return Promise.all(paths.map((p) => loadOne(classDialogue, p)));
 }
 
-/** 그 판에 나오는 서번트 프로필만 불러온다 (D-065) */
+/** 서번트 프로필. 프로필은 촉매 목록 때문에 전원을 한 청크로 받으므로(D-166) 그 묶음에서 찾는다 */
 export async function loadServantProfiles(servantIds: readonly string[]): Promise<ServantProfile[]> {
-  return Promise.all(servantIds.map(async (id) => ServantProfile.parse(await loadRaw(servantProfile, `/data/servants/${id}/profile.json`))));
+  const { profileById } = await import('./catalog');
+  return servantIds.map((id) => {
+    const raw = profileById.get(id);
+    if (!raw) throw new Error(`데이터 없음: /data/servants/${id}/profile.json`);
+    return ServantProfile.parse(raw);
+  });
+}
+/** 전체 서번트 프로필 (촉매 목록·판 구성용, D-166). 한 청크로 불러온다 */
+export async function loadAllServantProfiles(): Promise<ServantProfile[]> {
+  const { profiles } = await import('./catalog');
+  return profiles.map((p) => ServantProfile.parse(p));
 }
 export async function loadServantSkills(servantIds: readonly string[]): Promise<ServantSkillsFile[]> {
   return Promise.all(servantIds.map(async (id) => ServantSkillsFile.parse(await loadRaw(servantSkills, `/data/servants/${id}/skills.json`))));

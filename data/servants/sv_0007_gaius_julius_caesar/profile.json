@@ -1,0 +1,59 @@
+{
+  "servant_id": "sv_0007_gaius_julius_caesar",
+  "source_id": 7,
+  "name_ko": "가이우스 율리우스 카이사르",
+  "name_short_ko": "카이사르",
+  "class": "saber",
+  "ranks": {
+    "str": "A",
+    "end": "B",
+    "agi": "B",
+    "mana": "D",
+    "luck": "C",
+    "np": "B+"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "중립·중용",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "황색 죽음",
+    "ruby_ko": "크로케아 모르스",
+    "rank": "B++",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_1013000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/101300/101300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/101300/101300b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    100,
+    202,
+    302,
+    305,
+    403,
+    1000,
+    2000,
+    2001,
+    2004,
+    2008,
+    2009,
+    2012,
+    2040,
+    2075,
+    2113,
+    2631,
+    2858,
+    5000,
+    101300
+  ],
+  "lore": {
+    "detail": "고대 로마 최대의 영웅 중 한 사람. 갈리아 전쟁, 브리타니아 원정 등으로 이름을 떨친 장군이자 뛰어난 통치자. 영어명은 시저.\n여신 비너스의 후예이며, 인간이 아닌 요정과의 사이에서도 아이를 만들었다고 전해지는 호색가."
+  },
+  "instant_death": false
+}

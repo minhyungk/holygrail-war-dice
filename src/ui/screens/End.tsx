@@ -6,6 +6,7 @@ import type { RunView } from '../../engine/view';
 import { REDUCED } from '../fx/circle';
 import { Art, clsStyle, LABELS } from '../components/common';
 import type { Session } from '../session';
+import { buildChronicle, type ChronicleItem } from '../chronicle';
 import { T } from '../strings';
 
 export function End({ session, view, onExit }: { session: Session; view: RunView; onExit: () => void }) {
@@ -31,6 +32,7 @@ export function End({ session, view, onExit }: { session: Session; view: RunView
       ) : null}
       {win ? <p className="sub">{T.epiloguePending}</p> : null}
       <WarSummary session={session} view={view} />
+      <Chronicle session={session} view={view} />
       <p className="sub">
         {T.seed} {session.plan.seed}
       </p>
@@ -93,6 +95,65 @@ function WarSummary({ session, view }: { session: Session; view: RunView }) {
         <p className="sub">{T.noWinner}</p>
       )}
       <ol className="ws-list">{order.map(row)}</ol>
+    </div>
+  );
+}
+
+/** 전쟁 연대기 (D-166): 날짜·시간대별 전투·처치/방면·탈락. 전쟁이 끝났으므로 진명을 모두 공개한다 */
+function Chronicle({ session, view }: { session: Session; view: RunView }) {
+  const P = view.player;
+  const sections = buildChronicle(session.log.events, P);
+  const svOf = (fc: string) => session.data.servants[view.factions[fc]!.servant_id]!;
+  const nm = (fc: string | null | undefined) => (fc ? (svOf(fc).name_short_ko ?? svOf(fc).name_ko) : '');
+  const masterOf = (fc: string) => (fc === P ? T.you : (session.data.masters[view.factions[fc]!.master_id ?? '']?.name_ko ?? ''));
+  const C = T.chronicle;
+  const text = (it: ChronicleItem): string => {
+    switch (it.kind) {
+      case 'battle': {
+        const head = `${nm(it.factions[0])} ${C.vs} ${nm(it.factions[1])}${it.place ? ` · ${it.place}` : ''}`;
+        const res =
+          it.result === 'win' ? [C.win(nm(it.winner)), ...(it.dead ? [C.dead(nm(it.dead))] : [])]
+          : it.result === 'escape' ? [C.escape(nm(it.escaped))]
+          : it.result === 'draw' ? [C.draw]
+          : [C.escapeFailed, ...(it.dead ? [C.dead(nm(it.dead))] : [])];
+        const np = it.np?.length ? [C.np(it.np.map(nm).join(', '))] : [];
+        return [head, ...np, ...res].join(' — ');
+      }
+      case 'choice':
+        return it.choice === 'execute' ? C.execute(masterOf(it.factions[1]!)) : C.release(masterOf(it.factions[1]!));
+      case 'out':
+        return C.out(nm(it.factions[0]), T.elimHow[it.cause ?? ''] ?? it.cause ?? '', it.by ? nm(it.by) : null);
+      case 'final':
+        return C.finalStart(it.place ?? '');
+    }
+  };
+  return (
+    <div className="panel chronicle">
+      <h4>{C.title}</h4>
+      {sections.length ? (
+        sections.map((sec, i) => (
+          <section key={i} className="ch-sec">
+            <h5>{sec.time === 'final' ? C.final : `${T.dayN(sec.day)} ${T.time[sec.time]}`}</h5>
+            <ul>
+              {sec.items.map((it, k) => (
+                <li key={k} className={`ch-${it.kind} ${it.mine || it.factions.includes(P) ? 'mine' : ''} ${it.dead || it.kind === 'out' ? 'dead' : ''}`}>
+                  <span className="ch-faces">
+                    {it.factions.slice(0, 2).map((fc) => (
+                      <Art key={fc} src={svOf(fc).images.face} cls={svOf(fc).class} />
+                    ))}
+                  </span>
+                  <span className="ch-text">
+                    {it.mine ? <b className="ch-tag">{C.mine}</b> : null}
+                    {text(it)}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))
+      ) : (
+        <p className="sub">{C.empty}</p>
+      )}
     </div>
   );
 }

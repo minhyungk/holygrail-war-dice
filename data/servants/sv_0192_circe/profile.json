@@ -1,0 +1,57 @@
+{
+  "servant_id": "sv_0192_circe",
+  "source_id": 192,
+  "name_ko": "키르케",
+  "name_short_ko": "키르케",
+  "class": "caster",
+  "ranks": {
+    "str": "E",
+    "end": "B",
+    "agi": "D",
+    "mana": "A+",
+    "luck": "A",
+    "np": "C"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "tsundere",
+  "noble_phantasm": {
+    "name_ko": "금단의 광연",
+    "ruby_ko": "메타보 피글렛",
+    "rank": "C+",
+    "type_ko": "대인보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5033000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/503300/503300a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/503300/503300b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    200,
+    301,
+    305,
+    404,
+    1000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2466,
+    2631,
+    2847,
+    2851,
+    2858,
+    5000,
+    503300
+  ],
+  "lore": {
+    "detail": "신화 속의 유명한, 유혹과 타락의 마녀. 쉽게 사랑에 빠지며 질투가 많은 영원한 소녀. 귀엽게 응석을 받아주며, 그 애완을 위한 다양한 수단은 그야말로 금단의 과실과도 같은 맛. 단, 그녀의 호칭만은 조심하는 것이 좋다. 당신이 아직 사람으로 머물고 싶다면……"
+  },
+  "instant_death": false
+}

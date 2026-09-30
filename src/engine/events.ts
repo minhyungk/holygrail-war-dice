@@ -68,7 +68,7 @@ export interface EventDataMap {
   encounter: { tile: string; terrain: Terrain; factions: [string, string]; bystanders: string[]; ambusher: string | null; ambush_rolls: RollRecord[] };
   encounter_decided: { choices: Record<string, 'fight' | 'flee'> };
   // 전투
-  battle_started: { forecast?: BattleInput; battle_id: string; tile: string | null; terrain: Terrain; is_final: boolean; ambusher: string | null; sides: [string, string] };
+  battle_started: { forecast?: BattleInput; battle_id: string; tile: string | null; terrain: Terrain; is_final: boolean; ambusher: string | null; sides: [string, string]; /** 기적을 쓸 수 있는 쪽 (D-166). 스탯이 같으면 null */ underdog: string | null };
   phase_started: { forecast?: BattleInput; battle_id: string; phase_index: number; phase_id: PhaseId; attacker: string; defender: string };
   np_opened: { battle_id: string; phase_index: number; faction: string; seal: boolean; mana_before: number; mana_after: number };
   /** 약점 공략 (D-148): 이 국면을 phase_id로 끌고 간다 */
@@ -124,7 +124,7 @@ export interface EventDataMap {
   post_choice: { faction: string; target: string; choice: 'execute' | 'release' };
   eliminated: { faction: string; cause: EliminationCause; by: string | null };
   // 세계
-  npc_battle_resolved: { battle_id: string; tile: string; factions: [string, string]; result: 'win' | 'draw' | 'escape' | 'escape_failed' | 'none'; winner: string | null; loser: string | null };
+  npc_battle_resolved: { battle_id: string; tile: string; factions: [string, string]; result: 'win' | 'draw' | 'escape' | 'escape_failed' | 'none'; winner: string | null; loser: string | null; /** 소멸한 진영 (맵 흔적 연출, D-166) */ dead: string | null };
   final_battle_bracket: { round: number; pairs: [string, string][]; bye: string | null };
 }
 export type EventType = keyof EventDataMap;

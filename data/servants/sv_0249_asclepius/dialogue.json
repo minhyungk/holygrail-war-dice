@@ -1,0 +1,283 @@
+{
+  "speaker": "sv_0249_asclepius",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "움직이지 마!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "조금 아플 거다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "이 환부는 흥미롭군.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "용법과 용량을 지켜라!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "날뛰지 마라……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "낫고 싶지 않은 거냐.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "이것을 시험하도록 하마.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "부작용 따위 없을, 거다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "말 걸지 마라.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "나는 의사다. 환자가 있으면 데려와라. 병상이 어려우면 어려울수록 좋다. ……뭐? 감기 기운이 있다고? ……고춧가루를 탄 콩나물국이라도 마시고 자라.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "너는 희귀한 환자를 내 앞으로 데려온다. 나는 그자를 치료하여, 의술의 진보에 이바지한다. 그런 계약이잖나. 그런데 어째서 너는 아무것도 하지 않고 내 앞에 서 있는 거지? 지금부터 수수께끼의 희귀병에 걸릴 예정이라도 있는 거냐?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "흠. 서번트의 영기 수복도, 의료 행위에 포함된다. 의외로 한가할 때가 없군. 기분 좋은 오산이다. 좀 더 데리고 오는 빈도를 늘려도 좋은데 말이다? 마스터.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "어이. 너, 그 빨간 얼굴과 기침은 뭐냐? 칫, 케이스로서는 재미가 없지만, 너 같은 평범한 인간을 보는 것은 오랜만이야. 감을 잊지 않도록 해야겠지. ……입을 벌려서 목을 보여라. 내 최신 의술이라는 것을, 네 몸으로 맛보게 해주마.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "너는…… 실로 좋은 후원자다. 네 곁에 있으면, 얼마든지 의술의 진보로 이어지는 의료 행위를 시험해 볼 수 있지. 그러니까 부탁한다, 마스터. 부디 앞으로도, 희귀한 환자를 내 앞에 데리고 와다오. 그렇게 하면 언젠가는, 죽은 너를 되살리는 일도, 다시 가능해질지도 모른다. ……뭐, 뭐지, 마스터? 귀중한 이해자를 놓치고 싶지 않다는 것은, 당연한 감정이지않나.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것? 물론 의술의 진보와, 까다로운 부상과 질병…… 그 이외에는 의사의 지시에 순종적인 환자로군.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것이라고? 어리석은 환자와 어리석은 신들이다. 인정하자니 울화가 치밀지만, 그 어리석음은 치료할 수 없어.",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배인가? 의료의 진보에 도움이 된다면, 당연히 사용하겠지. 우선은, 과거에 도달했었던, 그 진정한 소생약의 재현에라도 착수해 볼까?",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "수술 시간이다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "자, 그러면, 어디가 안 좋지?",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "훗, 후하하하하…… 명부의 신이여, 잘 봐라! 네놈들의 역할은 끝이다. 인간은 죽음을 극복했다! ‘방약・불요한 명부의 비탄(리저렉션・플로트 하데스)’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_2",
+        "text": "진짜 소생약과는 비교도 되지 않아…… 하지만, 너희들에게는 이 처방으로 충분하겠지. 받아라. ‘방약・불요한 명부의 비탄(리저렉션・플로트 하데스)’!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_np_3",
+        "text": "아아…… 부족해부족해부족해! 과거의 재현에 이르는 것은 언제냐! 아테나여, 다시 한번 고르곤의 피를! ……칫, 지금은 이 정도가 고작이다!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "미안하군. 그 어리석음만은 치료할 수 없어.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "꽤 재미있는 증상이었다.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "의술의…… 후퇴다……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "이런 환자는…… 근절해야 한다……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "캐스터, 아스클레피오스다. 진찰을 시작하지. ……뭐? 아픈 곳이 없다? 그렇다면 빨리 환자를 데리고 와라. 환자 앞에 없는 의사만큼 무의미한 것은 없다고.",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

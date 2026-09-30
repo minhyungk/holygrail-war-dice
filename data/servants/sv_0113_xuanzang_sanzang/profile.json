@@ -1,0 +1,54 @@
+{
+  "servant_id": "sv_0113_xuanzang_sanzang",
+  "source_id": 113,
+  "name_ko": "현장 삼장",
+  "name_short_ko": "삼장",
+  "class": "caster",
+  "ranks": {
+    "str": "E",
+    "end": "D",
+    "agi": "B",
+    "mana": "A+",
+    "luck": "EX",
+    "np": "A"
+  },
+  "alignment": "good",
+  "alignment_detail": "질서·선",
+  "alignment_verified": false,
+  "temperament": "saint",
+  "noble_phantasm": {
+    "name_ko": "오행산 석가여래장",
+    "ruby_ko": "오행산 석가여래장",
+    "rank": "B+",
+    "type_ko": "대인, 대성보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5022000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/502200/502200a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/502200/502200b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    202,
+    300,
+    303,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2040,
+    2631,
+    2858,
+    5000,
+    502200
+  ],
+  "lore": {
+    "detail": "서기 7세기, 당나라 때의 법사. 불경의 원전(오리지널)을 얻기 위해 실크로드를 여행했다. 중앙아시아를 거쳐 인도에 이르러선 657부에 이르는 불경을 구해 당으로 돌아가 법상종의 시조가 되었다."
+  },
+  "instant_death": false
+}

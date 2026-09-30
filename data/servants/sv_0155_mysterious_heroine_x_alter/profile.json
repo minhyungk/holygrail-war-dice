@@ -1,0 +1,59 @@
+{
+  "servant_id": "sv_0155_mysterious_heroine_x_alter",
+  "source_id": 155,
+  "name_ko": "수수께끼의 히로인 X(얼터)",
+  "name_short_ko": "히로인 X 얼터",
+  "class": "berserker",
+  "ranks": {
+    "str": "A",
+    "end": "B",
+    "agi": "B",
+    "mana": "A+",
+    "luck": "C",
+    "np": "A++"
+  },
+  "alignment": "evil",
+  "alignment_detail": "중립·악",
+  "alignment_verified": false,
+  "temperament": "berserker",
+  "noble_phantasm": {
+    "name_ko": "흑룡쌍극승리검",
+    "ruby_ko": "크로스 칼리버",
+    "rank": "EX",
+    "type_ko": "대인보구",
+    "special_attack": [
+      2075
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_7024000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/702400/702400a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/702400/702400b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    106,
+    203,
+    302,
+    304,
+    405,
+    1000,
+    2001,
+    2002,
+    2007,
+    2010,
+    2113,
+    2631,
+    2795,
+    2858,
+    2924,
+    5000,
+    702400
+  ],
+  "lore": {
+    "detail": "서번트 유니버스에서 찾아온 천애고아의 빌런(악역). 세상에서도 보기 드문 문과계 버서커. 마력변환로 얼트리액터를 불태우며 수수께끼의 히로인 X의 타도를 맹세한, 대 대 세이버용 결전병기.\n이제는 영문을 모르겠다고? ───생각하지 마라. 느끼는 거다."
+  },
+  "instant_death": false
+}

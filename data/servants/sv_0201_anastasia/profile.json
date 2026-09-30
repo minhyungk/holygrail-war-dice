@@ -1,0 +1,52 @@
+{
+  "servant_id": "sv_0201_anastasia",
+  "source_id": 201,
+  "name_ko": "아나스타샤",
+  "name_short_ko": "아나스타샤",
+  "class": "caster",
+  "ranks": {
+    "str": "E",
+    "end": "E",
+    "agi": "C",
+    "mana": "A",
+    "luck": "D",
+    "np": "C"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "중립·중용",
+  "alignment_verified": false,
+  "temperament": "royal",
+  "noble_phantasm": {
+    "name_ko": "질주・정령안구",
+    "ruby_ko": "비이・비이・비이",
+    "rank": "EX",
+    "type_ko": "정령보구",
+    "special_attack": []
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_5035000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/503500/503500a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/503500/503500b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    202,
+    302,
+    305,
+    405,
+    1000,
+    2001,
+    2008,
+    2631,
+    2858,
+    5000,
+    503500
+  ],
+  "lore": {
+    "detail": "아나스타샤 니콜라예브나 로마노바. 러시아 제국, 마지막 황제였던 니콜라이 2세의 막내딸. 러시아 혁명의 격동에 말려들어, 가족과 하인, 애완동물 등과 같이 예카테린부르크에서 학살되었다."
+  },
+  "instant_death": false
+}

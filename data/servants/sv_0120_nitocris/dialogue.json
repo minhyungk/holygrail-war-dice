@@ -1,0 +1,277 @@
+{
+  "speaker": "sv_0120_nitocris",
+  "defaults": {
+    "status": "draft",
+    "author": "ai",
+    "weight": 1,
+    "repeat": "always",
+    "source": "fgo"
+  },
+  "notes": "D-157 자동 편입. 대사는 Atlas KR 보이스(scripts/fetch-voices.mjs)만 들어 있고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143).",
+  "tags": {
+    "phase_win": [
+      {
+        "id": "fgo_atk_1",
+        "text": "나오소서!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_2",
+        "text": "불경한 자가!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_atk_3",
+        "text": "괴로워하세요!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_ex_1",
+        "text": "호르아크티!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "phase_hit": [
+      {
+        "id": "fgo_dmg_1",
+        "text": "이, 이건 너무해……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dmg_2",
+        "text": "꺄악……!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "skill": [
+      {
+        "id": "fgo_skill_1",
+        "text": "나의 몸은 호루스이고 파라오이기에!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_2",
+        "text": "대역죄에는 죽음을.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_skill_3",
+        "text": "천공이여!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "day_bond": [
+      {
+        "id": "fgo_bond_1",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "본래 파라오가 된 자는 '영원의 나라'에 이른다고 되어 있습니다. 하지만 저는 이렇게 계속 영령으로 있지요…… 거기에 의미가 있다면 좋겠습니다만……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_2",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "neutral",
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "아무래도 당신은 제게 경외심이 부족합니다! 이제 와서 말할 것도 없는 일입니다만, 저는 천공의 신이자 명계의 신, 그리고 파라오라고요? 단순한 인간이라면 곧바로 머리를 조아려야 합니다! 예? 너무 거창하다? 천공인데 명계라면 이상하다? ……그건…… 듣고 보니 그렇군요…… 생각도 못 했어……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_3",
+        "when": {
+          "self.affinity_tier": {
+            "in": [
+              "friendly",
+              "loyal"
+            ]
+          }
+        },
+        "text": "으으, 또 방을 이렇게 어지럽히고! 왜 파라오인 제가 동맹자라고 해도 단순한 인간의 방을 청소해야만 하는 건가요……! 예? 왜 미이라들에게 시키지 않느냐고요? 당연합니다. 당신을 돌보는 것은 제 역할. 제 신하들의 역할은 저의 적을 쓰러뜨리는 것입니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_4",
+        "when": {
+          "self.affinity_tier": "loyal",
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "text": "저를 부리는 데에 익숙해졌습니까? 좋아요. 저도 당신을 다루는 데에 익숙해졌습니다. 솔직히 처음에는 서번트라는 것에 혐오감이 없지 않았습니다만, 지금은 납득하였습니다. 부족한 뒷사람을 돕는 것은 위대한 선인의 특권. 앞으로도 이 니토크리스가 사정없이 당신의 힘이 되지요.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_bond_5",
+        "when": {
+          "self.affinity_tier": "loyal"
+        },
+        "text": "저는 ‘영원의 나라’에 이르지 못했던 파라오입니다. 그 사실을 사후에도 계속 후회했지만, 지금은 그 괴로움도 흐려졌습니다. 저의 죄는 그대로 사라지지 않습니다만, 그것과는 또 달리 해야 할 일이 생겼습니다. 마스터. 저의 동맹자여. 저는 암흑을 다스리는 자입니다만, 당신이 암흑에 붙들리지 않도록 항상 그 등을 밀겠습니다.",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "tender",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_like",
+        "text": "좋아하는 것…… 손에서 떼기 싫다는 의미로는 거울입니다. 모습을 비추는 거울 이야기가 아닙니다. 무한한 것을 비추는 암흑의 거울……",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_dislike",
+        "text": "싫어하는 것, 말입니까. ……별로 말하고 싶지 않습니다만. 제 성급함과 헛짚는 버릇을 어떻게 하고 싶군요…… 저는 긴급할 때면 성격이 변해버리는 모양이라서……",
+        "repeat": "once_per_run",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_grail",
+        "when": {
+          "world.day": {
+            "gte": 3
+          }
+        },
+        "text": "성배에 소원을 빈다. 그것은 제가 파라오로서 완성되지 않았다는 증거겠지요. 원합니다. 언젠가, 형제들을……",
+        "weight": 2,
+        "repeat": "once_per_run",
+        "tone": "calm",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "battle_start": [
+      {
+        "id": "fgo_start_1",
+        "text": "신들의 힘은 여기에. 나, 니토크리스, 용서 않겠습니다!",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_start_2",
+        "text": "바보 같으니…… 구체적으로 어디냐고 묻는다면 답하기 어렵습니다만, 바보 같으니……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "np_open": [
+      {
+        "id": "fgo_np_1",
+        "text": "송장의 거울, 암흑의 거울. 문이 되어서 공포를 여기에. ──안푸・네부・타・제세르!",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "victory": [
+      {
+        "id": "fgo_win_1",
+        "text": "저의 종이 되겠습니까? 그럼 밑바닥 미이라부터 시작이네요.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_win_2",
+        "text": "곧 재회할 수 있겠지요. 다만 명계에서의 이야기입니다만.",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "defeat": [
+      {
+        "id": "fgo_down_1",
+        "text": "저는, 영원의 나라에는……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      },
+      {
+        "id": "fgo_down_2",
+        "text": "청컨대, 사랑하는 형제들이 사는……",
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ],
+    "summon": [
+      {
+        "id": "fgo_summon",
+        "text": "서번트, 캐스터. 천공의 신 호루스의 화신, 니토크리스, 소환에 응했습니다. 보다시피 파라오이기는 하지만 저는 너무나도 미숙한 몸. 그렇기에 이번만 특별히 당신을 ‘동맹’ 상대로 인정하겠습니다. ……하지만 그 전에 할 말은 해두겠습니다. 고개를 숙이세요. 불경합니다!",
+        "repeat": "once_per_run",
+        "when": {
+          "self.intel_level": {
+            "gte": 2
+          }
+        },
+        "source": "fgo",
+        "quote_of": "Fate/Grand Order",
+        "quote_verified": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "servant_id": "sv_0428_servant_428",
+  "source_id": 428,
+  "name_ko": "반 고흐[마이너]",
+  "name_short_ko": "반 고흐 마이너",
+  "class": "lancer",
+  "ranks": {
+    "str": "C",
+    "end": "B+",
+    "agi": "D",
+    "mana": "B",
+    "luck": "C",
+    "np": "B"
+  },
+  "alignment": "neutral",
+  "alignment_detail": "혼돈·중용",
+  "alignment_verified": false,
+  "temperament": "cool",
+  "noble_phantasm": {
+    "name_ko": "밤의 카페테라스",
+    "ruby_ko": "카페테라스 베이 나흐트",
+    "rank": "B",
+    "type_ko": "대지형보구",
+    "special_attack": [
+      300
+    ]
+  },
+  "images": {
+    "face": "https://static.atlasacademy.io/KR/Faces/f_3056000.png",
+    "summon": "https://static.atlasacademy.io/KR/CharaGraph/305600/305600a@1.png",
+    "final": "https://static.atlasacademy.io/KR/CharaGraph/305600/305600b@2.png"
+  },
+  "sprite_id": null,
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    101,
+    202,
+    301,
+    305,
+    404,
+    1000,
+    1172,
+    2001,
+    2008,
+    2631,
+    2667,
+    2731,
+    2780,
+    2858,
+    5000,
+    305600
+  ],
+  "lore": {
+    "detail": "고뇌하는 꽃의 예술가, 화려하게 클래스 체인지!\n어떤 작품과의 만남으로 노동의 기쁨에 눈을 떠서 기세와 분위기를 타고 영기변환을 이룬 반 고흐.\n그림붓을 곡괭이로 바꿔 들고, 발파용 화약과 감자를 한가득 짊어지고서 최심부에 도달하겠다는 뜻을 가슴에 몰래 품은 채, 명랑한 광부(마이너)의 모험이 지금 시작되었다!"
+  },
+  "instant_death": false
+}
