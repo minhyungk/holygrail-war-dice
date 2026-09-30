@@ -20,7 +20,8 @@
     "name_ko": "시황제",
     "ruby_ko": "더 도미네이션 비기닝",
     "rank": "B+",
-    "type_ko": "대계보구"
+    "type_ko": "대계보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_9006000.png",
@@ -28,5 +29,25 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/900600/900600b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    3,
+    108,
+    202,
+    300,
+    303,
+    405,
+    1000,
+    2001,
+    2008,
+    2113,
+    2631,
+    2835,
+    5000,
+    900600
+  ],
+  "lore": {
+    "detail": "영정, 다른 이름은 시황제. 기원전 221년에 중국 대륙을 통일하고, 처음으로 ‘황제’를 자처했다.\n이 진체는 이문대・중국에서의 시황제의 모습. 중앙 집권 제도에 의한 절대적인 권력을 구사하여 내정과 기술 개발에 모든 정력을 기울였으며, 거기에 더해 선도의 탐구에 의해 생명으로서의 수명 한계를 갱신하려고 시도한 진인의, 최종 결론이다."
+  },
+  "instant_death": false
 }

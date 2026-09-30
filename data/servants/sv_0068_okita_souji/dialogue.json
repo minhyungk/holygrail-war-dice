@@ -208,7 +208,7 @@
         "id": "fgo_bond_5",
         "when": {
           "self.affinity_tier": "loyal",
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "이제 오키타 씨에게 망설임은 없습니다! 마스터가 가는 곳, 설령 땅끝, 바다 끝, 설령 이 몸이 다하더라도 지옥 끝까지 함께하겠습니다!!",
         "weight": 2,
@@ -276,7 +276,7 @@
         "id": "fgo_start_4",
         "text": "신선조 1번대 대장, 오키타 소지, 간다!",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -318,7 +318,7 @@
         "id": "fgo_win_2",
         "text": "오키타 씨 대승리! 예, 몸은 괜찮습니다, 더 싸울 수 있습니다! 커흑~!",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -335,7 +335,7 @@
         "id": "fgo_win_4",
         "text": "오키타 씨 대승리~! 예, 몸은 괜찮습니다, 더 싸울 수 있습니다!",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -371,7 +371,7 @@
         "text": "신선조 1번대 대장 오키타 소지 등장! 당신이 제 마스터입니까? ……네? 하오리? 그게 어딘가로 사라져 버려서……",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

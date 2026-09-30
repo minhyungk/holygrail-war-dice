@@ -20,7 +20,11 @@
     "name_ko": "육도오륜 구리가라천상",
     "ruby_ko": "육도오륜 구리가라천상",
     "rank": "A+",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": [
+      109,
+      115
+    ]
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_1017000.png",
@@ -28,5 +32,25 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/101700/101700b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    100,
+    202,
+    301,
+    303,
+    405,
+    1000,
+    2001,
+    2008,
+    2075,
+    2631,
+    2858,
+    5000,
+    101700
+  ],
+  "lore": {
+    "detail": "일본 사상 최강의 검호로 이름 높은 에도 시대 초기의 검술가.\n무사시가 창시했다는 유파 “이천일류”를 익혀 크고 작은 한 쌍의 칼을 사용하는 “이도류”의 달인. ……이었을 테지만, 올바른 역사에 남겨진 무사시와는 아무래도 사정이 다른 듯하다.\n“뭐? 이쪽 세계 무사시는 남자야? 게다가 엄청 유명하다니 놀랍네!”\n본인은 이처럼 기죽지 않는 자연체. 승리에도 명예에도 그다지 흥미가 없으며, 술이라면 사족을 못 쓰고 돈을 밝히며 공짜 밥에 약하다. 하지만 그녀와 싸워 진 자들은 모두 이런 말을 남겼다.\n───깨끗한 천원의 꽃. 그 검, 무공의 경지에 닿으리."
+  },
+  "instant_death": false
 }

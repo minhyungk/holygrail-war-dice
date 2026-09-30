@@ -20,7 +20,8 @@
     "name_ko": "전륜하는 승리의 검",
     "ruby_ko": "엑스칼리버 갈라틴",
     "rank": "A+",
-    "type_ko": "대군보구"
+    "type_ko": "대군보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_1007000.png",
@@ -28,5 +29,31 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/100700/100700b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    100,
+    201,
+    300,
+    303,
+    404,
+    1000,
+    2001,
+    2008,
+    2009,
+    2011,
+    2012,
+    2037,
+    2075,
+    2631,
+    2780,
+    2795,
+    2858,
+    5000,
+    100700
+  ],
+  "lore": {
+    "detail": "아서 왕 전설에 나오는 원탁의 기사 중 한 사람. 최고참의 기사 중 한 명이자 왕의 싸움, 그 종국까지 섬겼던 충의의 기사.\n엑스칼리버의 자매검이라 불리는 태양의 성검을 가져 성자의 축복으로 해가 있는 동안에는 비할 자가 없는 무쌍의 기사로 이름을 떨쳤다."
+  },
+  "instant_death": false
 }

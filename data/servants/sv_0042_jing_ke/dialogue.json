@@ -305,7 +305,7 @@
         "text": "서번트 어쌔신. 이름은 형가라고 한다. 실패한 몸으로 소환된다는 건 복잡한 기분이지만, 이번에는 계획을 잘 세워보자.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

@@ -25,6 +25,8 @@ export interface SkillCtx {
   wouldFall?: boolean;
   /** 상대 서번트의 클래스 */
   foeClass: string;
+  /** 상대 서번트의 Atlas 특성 id (스킬 특공, D-162) */
+  foeTraits: readonly number[];
 }
 
 /** 보유 스킬 중 그 훅에 붙은 것 (보유 목록 순서) */
@@ -47,6 +49,7 @@ export function whenOk(w: ActiveSkillDef['when'], c: SkillCtx): boolean {
   if (w.foe_dropped && !c.foeDropped) return false;
   if (w.would_fall && !c.wouldFall) return false;
   if (w.foe_class && !w.foe_class.includes(c.foeClass)) return false;
+  if (w.foe_trait && !w.foe_trait.some((t) => c.foeTraits.includes(t))) return false;
   if (w.any_of && !w.any_of.some((alt) => whenOk(alt, c))) return false;
   return true;
 }

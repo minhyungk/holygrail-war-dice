@@ -8,12 +8,18 @@
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { extractProfile, readAtlas, servantTraitIds } from './lib/atlas-profile.mjs';
 
 const ROOT = join(import.meta.dirname, '..');
 const dry = process.argv.includes('--dry');
+const atlasFlag = process.argv.indexOf('--atlas');
+const atlasDir = atlasFlag < 0 ? undefined : process.argv[atlasFlag + 1];
 const read = (p) => JSON.parse(readFileSync(join(ROOT, p), 'utf8'));
 const roster = read('data/servants-pool/activation/roster.json').servants;
 const meta = read('data/servants-pool/activation/meta.json').servants;
+const pending = roster.some(({ servant_id: id }) => !existsSync(join(ROOT, 'data/servants', id, 'profile.json')));
+if (pending && (!atlasDir || atlasDir.startsWith('--'))) throw new Error('새 프로필 생성에는 --atlas <캐시 경로>가 필요합니다');
+const servantTraits = pending ? servantTraitIds(atlasDir) : null;
 
 /** 빈 대사 파일. 대사는 fetch-voices가 채우고, 없는 상황은 클래스·공통 대사층이 맡는다 (D-143) */
 function writeDialogue(dir, id) {
@@ -53,6 +59,11 @@ for (const { servant_id: id } of roster) {
     sprite_id: null,
     notes: `Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ${m.temperament_source}), 사용자 검수 전.`,
   };
+  const enriched = extractProfile(readAtlas(atlasDir, src.source_id), profile, servantTraits);
+  profile.traits = enriched.traits;
+  if (enriched.lore) profile.lore = enriched.lore;
+  profile.noble_phantasm.special_attack = enriched.special_attack;
+  profile.instant_death = enriched.instant_death;
   made++;
   if (dry) continue;
   mkdirSync(dir, { recursive: true });

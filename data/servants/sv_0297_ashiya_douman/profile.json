@@ -20,7 +20,8 @@
     "name_ko": "광란노도・악령좌부",
     "ruby_ko": "광란노도・악령좌부",
     "rank": "B",
-    "type_ko": "대도시보구"
+    "type_ko": "대도시보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_10010000.png",
@@ -28,5 +29,29 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/1001000/1001000b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    3,
+    109,
+    201,
+    301,
+    304,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2019,
+    2037,
+    2040,
+    2780,
+    2835,
+    5000,
+    1001000
+  ],
+  "lore": {
+    "detail": "눈동자는 잘 연마된 흑요석 같으며, 뺨에는 항상, 완벽하다고 생각될 정도의 잔혹한 미소를 띠고 있다.\n맨손이라고 해도 적대자를 손쉽게 찢어발기는, 처절한 육체. 보는 이에게 아름답다는 느낌을 주기까지 하는, 인간의 형태를 한 요수───\n헤이안 시대의 법사음양사. 도마법사, 승려 도만이라고도 불린다. 헤이안 최강의 술자인 아베노 세이메이의 대척점에 섰던 괴인."
+  },
+  "instant_death": true
 }

@@ -20,7 +20,8 @@
     "name_ko": "유식・직사의 마안",
     "ruby_ko": "유식・직사의 마안",
     "rank": "EX",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_6023000.png",
@@ -28,5 +29,24 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/602300/602300b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    2,
+    105,
+    202,
+    301,
+    303,
+    404,
+    1000,
+    2001,
+    2631,
+    2654,
+    2858,
+    5000,
+    602300
+  ],
+  "lore": {
+    "detail": "변이특이점 경계식에서 조우한 여성.\n일본식과 서양식이 절충된 옷차림, 남자 같은 말투, 망설임 없는 행동력.\n모든 것이 일상인 가운데서는 눈에 띄는 비일상이라 할 수 있다.\n죽음을 보는 특이체질이기 때문에, 여러 기괴한 사건들과 조우하며 그것들을 베어왔다. 본인은 전혀 모르고 있지만, 그녀 자신이 심야에 떠도는 도시 전설 중 하나가 되어있는 듯하다."
+  },
+  "instant_death": true
 }

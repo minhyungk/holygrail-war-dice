@@ -86,18 +86,33 @@ export function FxLayer({ fx }: { fx: Fx[] }) {
             );
           case 'danger':
             return <div key={f.id} className="fx-danger" />;
-          case 'death':
-            {
-              const cfg = K['text.death_fx'];
+          case 'death': {
+            // 소멸 (D-164): 일러스트(StandArt)가 금빛으로 물든 뒤 아래에서 위로 사라진다. 여기서는 사라지는 경계에서 피어오르는 금빛 입자
+            const cfg = K['text.death_fx'];
+            const vanish = cfg.duration_ms - cfg.gild_ms;
             return (
-              <div key={f.id} className="fx-death" style={{ ...sideStyle(f.side), ['--death-duration' as string]: `${cfg.duration_ms}ms` }}>
+              <div key={f.id} className="fx-death" style={{ ...sideStyle(f.side), ['--death-gild' as string]: `${cfg.gild_ms}ms` }}>
                 <b className="fx-death-flare" />
-                {Array.from({ length: cfg.particles }, (_, i) => (
-                  <i key={i} style={{ ['--dx' as string]: `${Math.cos((i / cfg.particles) * Math.PI * 2) * cfg.spread_px}px`, ['--dy' as string]: `${Math.sin((i / cfg.particles) * Math.PI * 2) * cfg.spread_px - cfg.rise_px}px`, ['--delay' as string]: `${i * cfg.stagger_ms}ms` }} />
-                ))}
+                {Array.from({ length: cfg.particles }, (_, i) => {
+                  const t = i / cfg.particles; // 경계가 올라간 정도 (0 = 발끝, 1 = 머리)
+                  const spread = (((i * 37) % 100) / 100 - 0.5) * cfg.spread_px; // 결정적 배치 (무작위 금지)
+                  return (
+                    <i
+                      key={i}
+                      style={{
+                        ['--x0' as string]: `${spread}px`,
+                        ['--y0' as string]: `${(0.5 - t) * cfg.span_px}px`,
+                        ['--dx' as string]: `${spread * 0.25}px`,
+                        ['--rise' as string]: `${cfg.rise_px}px`,
+                        ['--p-dur' as string]: `${vanish * 0.55}ms`,
+                        ['--delay' as string]: `${cfg.gild_ms + t * vanish * 0.8}ms`,
+                      }}
+                    />
+                  );
+                })}
               </div>
             );
-            }
+          }
           case 'skill':
             // 스킬 발동 (D-142): 발동한 쪽 카드 위에 이름표. 같은 순간 여러 개면 아래로 쌓인다 (n = 순번)
             return (

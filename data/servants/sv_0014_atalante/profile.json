@@ -20,7 +20,8 @@
     "name_ko": "청원의 화살 편지",
     "ruby_ko": "포이보스 카타스트로피",
     "rank": "B+",
-    "type_ko": "대군보구"
+    "type_ko": "대군보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_2005000.png",
@@ -28,5 +29,28 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/200500/200500b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    2,
+    102,
+    201,
+    302,
+    304,
+    404,
+    1000,
+    2001,
+    2006,
+    2008,
+    2011,
+    2037,
+    2466,
+    2631,
+    2858,
+    5000,
+    200500
+  ],
+  "lore": {
+    "detail": "그리스 신화에 등장하는 이름 높은 여자 사냥꾼. 칼리돈의 멧돼지 퇴치 때, 가장 먼저 화살을 명중시킨 것으로 이름을 날렸다.\n또한, 그리스의 용사들이 모였다고 하는 아르고노트에도 참가했었다."
+  },
+  "instant_death": false
 }

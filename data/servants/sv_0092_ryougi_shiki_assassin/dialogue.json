@@ -236,7 +236,7 @@
         "text": "서번트, 어쌔신. 료기 시키다. ……인사는 이거면 되냐? 정말 이상한 규칙이야…… 내가 잘 아는 영역은 아니지만, 적당히 날뛰어 줄게.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

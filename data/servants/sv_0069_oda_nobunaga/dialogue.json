@@ -223,7 +223,7 @@
         "id": "fgo_win_2",
         "text": "내가 바로 제육천마왕, 오다 노부나가다!!",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -252,7 +252,7 @@
         "text": "마인 아처, 제육천마왕 노부나가이니라!! 음, 그대가 나의 마스터가 되는 것을 허락한다!!",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

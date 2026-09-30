@@ -152,7 +152,7 @@
               "loyal"
             ]
           },
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "킨토키가 아냐, 골든이라고 불러줘. 딱히 이름에 불만은 없지만, 필링의 문제다. 알겠어? 동의어나 예절이 아니라, 영혼의 문제라는 말씀.",
         "weight": 2,
@@ -216,7 +216,7 @@
         "id": "fgo_bond_5",
         "when": {
           "self.affinity_tier": "loyal",
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "마음 탁 놓고 명령해, 대장. 네가 이루고 싶은 건 내가 이뤄주지. 너를 위해서라면 이 사카타 킨토키, 뇌신님이라도 때려 눕혀 줄테니까!",
         "weight": 2,

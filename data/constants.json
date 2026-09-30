@@ -353,13 +353,13 @@
       "value": [
         0,
         0,
-        1,
-        2
+        0.5,
+        1
       ],
       "unit": "보정",
       "doc_ref": "day-loop.md §4.3",
       "status": "확정",
-      "note": "D-147. 클래스(1단계)는 보정 없음, 스테이터스 +1, 진명 +2"
+      "note": "D-158·D-159. 없음 / 얼굴 0 / 진명 +0.5 / 약점 +1"
     },
     {
       "key": "day.intel_dc",
@@ -426,16 +426,16 @@
     {
       "key": "affinity.roll_mod",
       "value": [
-        -2,
         -1,
+        -0.5,
         0,
-        1,
-        2
+        0.5,
+        1
       ],
       "unit": "보정",
       "doc_ref": "affinity.md §3.4",
       "status": "확정",
-      "note": "적대~충성. 적용 범위는 플레이어 서번트의 모든 판정 (D-109)"
+      "note": "적대~충성. 적용 범위는 플레이어 서번트의 모든 판정 (D-109). D-159 너프"
     },
     {
       "key": "affinity.init_by_temperament",
@@ -749,11 +749,11 @@
     },
     {
       "key": "text.death_fx",
-      "value": { "particles": 32, "duration_ms": 3200, "spread_px": 180, "rise_px": 165, "stagger_ms": 28 },
+      "value": { "particles": 40, "duration_ms": 3400, "gild_ms": 800, "span_px": 300, "spread_px": 150, "rise_px": 120 },
       "unit": "입자·ms·px",
       "doc_ref": "03-ui-style.md §8",
       "status": "임시값",
-      "note": "D-154. 금빛 소멸 입자 연출"
+      "note": "D-164. 전신이 gild_ms 동안 금빛으로 물든 뒤 남은 시간 동안 아래에서 위로 사라진다. 입자는 사라지는 경계(span_px 높이를 올라감)에서 spread_px 폭으로 피어올라 rise_px만큼 떠오른다"
     },
     {
       "key": "text.small_margin",
@@ -782,6 +782,14 @@
       "doc_ref": "03-ui-style.md §6",
       "status": "임시값",
       "note": "자동 진행: 완성 후 다음까지 (D-046)"
+    },
+    {
+      "key": "text.fast_forward",
+      "value": 3,
+      "unit": "배",
+      "doc_ref": "combat.md §4.3",
+      "status": "임시값",
+      "note": "전투 빨리감기 배속: 글자·주사위·연출 시간을 이 값으로 나눈다 (D-161)"
     },
     {
       "key": "text.summon_timing",
@@ -838,6 +846,14 @@
       "doc_ref": "phases.md §3.6",
       "status": "확정",
       "note": "보구는 전투당 1회. 영주 즉시 발동도 포함 (D-135)"
+    },
+    {
+      "key": "combat.special_attack_bonus",
+      "value": 1,
+      "unit": "보정",
+      "doc_ref": "combat.md §4.2",
+      "status": "임시값",
+      "note": "보구 특공: 보구 국면에서 상대가 특공 대상 특성을 가지면 (D-162)"
     },
     {
       "key": "ai.np_open_chance",

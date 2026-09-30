@@ -20,7 +20,8 @@
     "name_ko": "다원중주포화포격",
     "ruby_ko": "퀸텟 포이어",
     "rank": "EX",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_5028000.png",
@@ -28,5 +29,28 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/502800/502800b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    202,
+    302,
+    303,
+    405,
+    1000,
+    2001,
+    2008,
+    2355,
+    2631,
+    2654,
+    2667,
+    2780,
+    2858,
+    5000,
+    502800
+  ],
+  "lore": {
+    "detail": "호무라하라 학원 초등부에 다니는 지극히 평범한 여자아이. 은발, 붉은 눈동자에 이름이 귀족스럽고, 집을 자주 비우는 부모님은 수수께끼에 감싸인 일을 하는 데다 어째서인지 일반 저택에 메이드가 둘이나 살고 있으며, 게다가 핏줄이 다른 오빠도 있지만 지극히 평범한 초등학교 5학년 여자아이다."
+  },
+  "instant_death": false
 }

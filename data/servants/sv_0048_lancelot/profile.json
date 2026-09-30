@@ -20,7 +20,8 @@
     "name_ko": "기사는 맨손으로 죽지 않는다",
     "ruby_ko": "나이트 오브 아너",
     "rank": "A",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_7002000.png",
@@ -28,5 +29,27 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/700200/700200b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    106,
+    201,
+    300,
+    306,
+    404,
+    1000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2631,
+    2795,
+    2858,
+    5000,
+    700200
+  ],
+  "lore": {
+    "detail": "원탁의 기사 중에서도 최강으로 평가받는 “호수의 기사”.\n왕비 귀네비어와의 불륜과 사랑이 카멜롯을 파멸로 이끌었다는, 그야말로 아서 왕 전설의 부정적인 면을 상징하는 인물."
+  },
+  "instant_death": false
 }

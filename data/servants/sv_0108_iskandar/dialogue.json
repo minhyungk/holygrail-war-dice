@@ -354,7 +354,7 @@
         "text": "오오, 용케 짐을 뽑아내었군! 정복왕 이스칸다르, 자네의 길을 열지!",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

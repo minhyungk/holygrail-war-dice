@@ -15,9 +15,9 @@ const SPEEDS = [
 /**
  * VN 텍스트박스 (03-ui-style.md §6, D-122): 줄이 끊기지 않고 이어서 흘러나오며 위로 스크롤된다.
  * log의 마지막 줄을 타이핑한다(typing일 때). 자동(기본 켜짐)이면 다 친 뒤 잠깐 쉬고 다음 줄로, 끄면 탭할 때 다음 줄로.
- * 탭: 타이핑 중이면 즉시 완성.
+ * 탭: 타이핑 중이면 즉시 완성. speed > 1이면 빨리감기(D-161): 글자·줄 쉼을 그 배로 줄이고 자동으로 넘긴다.
  */
-export function Vn({ log, typing, onLineDone, onLog, autoDefault = true }: { log: ShownLine[]; typing: boolean; onLineDone: () => void; onLog: () => void; autoDefault?: boolean }) {
+export function Vn({ log, typing, onLineDone, onLog, autoDefault = true, speed = 1 }: { log: ShownLine[]; typing: boolean; onLineDone: () => void; onLog: () => void; autoDefault?: boolean; speed?: number }) {
   const [progress, setProgress] = useState<{ line: ShownLine | undefined; count: number }>({ line: undefined, count: 0 });
   const [auto, setAuto] = useState(autoDefault);
   const [sp, setSp] = useState(1);
@@ -34,16 +34,16 @@ export function Vn({ log, typing, onLineDone, onLog, autoDefault = true }: { log
   useEffect(() => {
     if (!cur || done) return;
     // 글자마다 리듬이 다르다 (D-133): 방금 친 글자(n-1)에 따라 다음 글자까지 쉰다
-    const base = K['text.typing_ms'][SPEEDS[sp]![1]];
+    const base = K['text.typing_ms'][SPEEDS[sp]![1]] / speed;
     const ms = n === 0 ? base : charDelay(visible, n - 1, base, cur.pace);
     const t = window.setTimeout(() => setProgress({ line: cur, count: n + 1 }), ms);
     return () => window.clearTimeout(t);
-  }, [cur, n, done, sp, visible]);
+  }, [cur, n, done, sp, visible, speed]);
   useEffect(() => {
-    if (!cur || !done || !auto) return;
-    const t = window.setTimeout(onLineDone, K['text.line_pause_ms']);
+    if (!cur || !done || !(auto || speed > 1)) return;
+    const t = window.setTimeout(onLineDone, K['text.line_pause_ms'] / speed);
     return () => window.clearTimeout(t);
-  }, [cur, done, auto, onLineDone]);
+  }, [cur, done, auto, onLineDone, speed]);
   useEffect(() => {
     const el = box.current;
     if (el) el.scrollTop = el.scrollHeight;

@@ -20,7 +20,8 @@
     "name_ko": "무한의 검제",
     "ruby_ko": "언리미티드 로스트 워크스",
     "rank": "E~A",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_2016000.png",
@@ -28,5 +29,24 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/201600/201600b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    102,
+    202,
+    301,
+    304,
+    404,
+    1000,
+    2001,
+    2008,
+    2631,
+    2858,
+    5000,
+    201600
+  ],
+  "lore": {
+    "detail": "사회가 만들어 낸 무명이 아니라, 스스로 이름을 버리고 실추된 무심한 집행자. 기억은 손상되고, 또한 과거도 잃었다. 이 남자는 도덕을 포기하고, 친애를 멸시하며, 살아있는 시체가 된 자신을 계속 비웃는다."
+  },
+  "instant_death": false
 }

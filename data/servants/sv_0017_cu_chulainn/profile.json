@@ -19,7 +19,8 @@
     "name_ko": "꿰뚫는 죽음의 가시 창",
     "ruby_ko": "게이 볼그",
     "rank": "B+",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_3001000.png",
@@ -27,5 +28,31 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/300100/300100b@2.png"
   },
   "sprite_id": null,
-  "notes": "레거시 servants-ko.json id 17에서 생성. alignment는 원작 설정 기준 AI 입력값 (Atlas로 검증 필요). temperament는 레거시 servantPersonality.ts를 ID가 아닌 이름으로 맞춘 값. images: Atlas Academy KR (face=맵 아이콘, summon=기본 재림 전신, final=최종 재림 전신, Q-134)."
+  "notes": "레거시 servants-ko.json id 17에서 생성. alignment는 원작 설정 기준 AI 입력값 (Atlas로 검증 필요). temperament는 레거시 servantPersonality.ts를 ID가 아닌 이름으로 맞춘 값. images: Atlas Academy KR (face=맵 아이콘, summon=기본 재림 전신, final=최종 재림 전신, Q-134).",
+  "traits": [
+    1,
+    101,
+    200,
+    300,
+    305,
+    403,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2012,
+    2037,
+    2040,
+    2631,
+    2851,
+    2858,
+    2883,
+    5000,
+    300100
+  ],
+  "lore": {
+    "detail": "장식을 좋아하지 않고 야생적인 싸움을 좋아하는 창병. 일이라면 입막음으로 일반인도 살해하는 비정한 인물이지만, 평소에는 시원시원한 기질을 가지고 있다.\n남을 잘 돌봐주는 형님 성격."
+  },
+  "instant_death": true
 }

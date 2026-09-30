@@ -20,7 +20,8 @@
     "name_ko": "약속된 승리의 검",
     "ruby_ko": "엑스칼리버",
     "rank": "EX",
-    "type_ko": "???"
+    "type_ko": "???",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_1029000.png",
@@ -28,5 +29,34 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/102900/102900b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    100,
+    201,
+    300,
+    303,
+    405,
+    1000,
+    2001,
+    2002,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2037,
+    2075,
+    2113,
+    2631,
+    2780,
+    2795,
+    2858,
+    5000,
+    102900
+  ],
+  "lore": {
+    "detail": "선량한 것을 긍정하고, 악죄를 심판한다. 어린아이라면 누구라도 꿈꾸는 백마 탄 기사와 같은 영웅. 별의 성검 사용자라고도 불린다. 그 정체는 어떤 존재를 쫓아 이 세계에 도달한 이세계의 ‘기사왕’이다."
+  },
+  "instant_death": false
 }

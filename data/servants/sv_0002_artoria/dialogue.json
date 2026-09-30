@@ -56,7 +56,7 @@
         "id": "legacy_vs_cu_01",
         "when": {
           "enemy.servant": "sv_0017_cu_chulainn",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "랜서... 쿠 훌린. 빛의 어린 전사, 그 창술은 전설 그 자체로군요.",
         "source": "legacy",
@@ -66,7 +66,7 @@
         "id": "legacy_vs_cu_02",
         "when": {
           "enemy.servant": "sv_0017_cu_chulainn",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "얼스터의 빛이여. 기사왕으로서 당신의 창끝을 받겠습니다.",
         "source": "legacy",
@@ -76,7 +76,7 @@
         "id": "legacy_vs_emiya_01",
         "when": {
           "enemy.servant": "sv_0011_emiya",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "아처... 에미야 시로? 아니, 그럴 리가... 하지만 이 검기는...",
         "source": "legacy",
@@ -95,7 +95,7 @@
         "id": "legacy_vs_medusa_01",
         "when": {
           "enemy.servant": "sv_0023_medusa",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "라이더... 메두사. 신대의 괴물이여, 기사왕의 검으로 상대하겠습니다.",
         "source": "legacy",
@@ -114,7 +114,7 @@
         "id": "legacy_vs_medea_01",
         "when": {
           "enemy.servant": "sv_0031_medea",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "마녀 메데이아... 그 술식은 위협적이지만, 대마력이 있는 한 검이 닿습니다.",
         "source": "legacy",
@@ -133,7 +133,7 @@
         "id": "legacy_vs_kojiro_02",
         "when": {
           "enemy.servant": "sv_0039_kojiro",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "류도사의 검사여. 진검승부로 맞서겠습니다.",
         "source": "legacy",
@@ -143,7 +143,7 @@
         "id": "legacy_vs_heracles_01",
         "when": {
           "enemy.servant": "sv_0047_heracles",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "대영웅 헤라클레스... 광기에 물들었어도 그 무위(武威)는 신화 그 자체입니다.",
         "source": "legacy",
@@ -153,7 +153,7 @@
         "id": "legacy_vs_heracles_02",
         "when": {
           "enemy.servant": "sv_0047_heracles",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "열두 가지 시련의 영웅... 성검으로 맞서겠습니다!",
         "source": "legacy",
@@ -163,7 +163,7 @@
         "id": "vs_cu_reunion",
         "when": {
           "enemy.servant": "sv_0017_cu_chulainn",
-          "enemy.intel_level": 3,
+          "enemy.intel_level": { "gte": 2 },
           "mem.met_before": true
         },
         "text": "다시 만났군요, 얼스터의 창. ──그 창이 노리는 곳이 심장이라는 것쯤, 이미 알고 있습니다.",
@@ -342,7 +342,7 @@
         "id": "level3",
         "when": {
           "event.result": "success",
-          "event.intel_level": 3
+          "event.intel_level": 2
         },
         "text": "진명이 밝혀졌습니다. {enemy}──. 전설에 이름을 남긴 영웅이라면, 그에 걸맞은 예로 상대하겠습니다."
       },
@@ -611,7 +611,7 @@
         "quote_of": "Fate/Grand Order",
         "quote_verified": true,
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         }
       },
       {
@@ -621,7 +621,7 @@
         "quote_of": "Fate/Grand Order",
         "quote_verified": true,
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         }
       },
       {

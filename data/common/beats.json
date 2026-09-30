@@ -83,6 +83,16 @@
           "if": {
             "event.cause": "battle"
           }
+        },
+        {
+          "slot": "react",
+          "from": "narrator",
+          "tag": "intel_weakness",
+          "if": {
+            "event.intel_level": 3,
+            "event.has_weakness": true
+          },
+          "protected": true
         }
       ]
     },

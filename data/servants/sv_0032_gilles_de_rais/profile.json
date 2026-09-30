@@ -20,7 +20,8 @@
     "name_ko": "나인성 교본",
     "ruby_ko": "프렐라티즈 스펠북",
     "rank": "EX",
-    "type_ko": "대군보구"
+    "type_ko": "대군보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_5002000.png",
@@ -28,5 +29,24 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/500200/500200b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    104,
+    202,
+    301,
+    304,
+    403,
+    1000,
+    2001,
+    2008,
+    2631,
+    2858,
+    5000,
+    500200
+  ],
+  "lore": {
+    "detail": "15세기 프랑스의 귀족. 자신의 영지에서 인근 소년들을 차례로 납치해 능욕, 참살하는 짓을 반복했고, 후세의 동화 “푸른 수염”의 모델로 알려지게 된다."
+  },
+  "instant_death": false
 }

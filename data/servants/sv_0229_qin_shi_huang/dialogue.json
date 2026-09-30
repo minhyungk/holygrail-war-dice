@@ -211,7 +211,7 @@
         "text": "오래간만이구나, 백성이자 인간인 자여. ……어라? 짐을 본 적이 없다고? 흠, 뭔가 시계열의 인과에 어긋남이 발생했나. 아니, 신경 쓰지 말거라. 짐은 시황제. 지금은 단지 룰러 서번트라고만 알아두면 된다.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

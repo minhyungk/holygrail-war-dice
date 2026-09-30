@@ -215,7 +215,7 @@
               "loyal"
             ]
           },
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "셋쇼인 키아라. 부름을 듣고 찾아왔습니다. 부디 당신이 원하시는 대로, 제 몸에 빠져주시지요.",
         "weight": 2,
@@ -398,7 +398,7 @@
         "text": "얼터에고, 셋쇼인 키아라. 도움을 청하는 목소리를 듣고 찾아왔습니다. 하지만, 후후…… 저 같은 여자를 부르다니, 이런 분이 다 계시는군요. 저는 살아있는 모든 것, 그 모든 것을 구별 없이 다 맛보는 마성보살. 이래서는, 지옥 밑바닥까지 함께해드릴 수밖에 없겠네요?",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

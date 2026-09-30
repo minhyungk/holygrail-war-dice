@@ -347,7 +347,7 @@
         "text": "서번트, 아처. 케이론, 찾아뵙습니다. 저의 지식이 조금은 도움이 되면 좋겠습니다만…… 어찌 되었든 잘 부탁드립니다. 당신을 위해, 전력을 다하도록 하지요.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

@@ -20,7 +20,8 @@
     "name_ko": "태양의 눈을 가진 여자",
     "ruby_ko": "마타 하리",
     "rank": "A",
-    "type_ko": "대군보구"
+    "type_ko": "대군보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_6014000.png",
@@ -28,5 +29,24 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/601400/601400b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    2,
+    105,
+    202,
+    301,
+    305,
+    401,
+    1000,
+    2001,
+    2008,
+    2631,
+    2858,
+    5000,
+    601400
+  ],
+  "lore": {
+    "detail": "세계의 이면에서 활약한 여자 스파이. 마타 하리는 스파이 중에서 가장 기이한 존재였을 것이다. 스트리퍼인 그녀는 스파이로 처형되기까지 그 몸으로 장교들을 농락했다."
+  },
+  "instant_death": false
 }

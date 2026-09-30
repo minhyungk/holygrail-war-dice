@@ -83,7 +83,10 @@ data/
 | `alignment_detail`, `alignment_verified` | 원문 성향·검증 여부 |
 | `temperament` | 초기 호감도·증감 계수를 조회하는 성격 키 |
 | `reaction_overrides?` | 선택 반응(`affinity.reaction`)의 서번트별 예외. 선택 이름 → 호감도 변화 (D-150, D-143 오버라이드) |
-| `noble_phantasm` | `{name_ko, ruby_ko, rank, type_ko}` |
+| `noble_phantasm` | `{name_ko, ruby_ko, rank, type_ko, special_attack}`. `special_attack`: 보구 특공 대상 Atlas 특성 id 배열 (없으면 `[]`, D-162) |
+| `traits` | Atlas 서번트 특성 id 배열 (특공 판정용, D-162) |
+| `instant_death` | FGO 보구·스킬에 즉사 효과가 있나 (즉사/우연 국면 발생 조건, D-163) |
+| `lore?` | `{detail, weakness?}`. `detail`: Atlas KR 캐릭터 상세 (소환 화면·범용 약점 문구). `weakness?`: 약점 문구 오버라이드 (D-158, D-165) |
 | `images` | `{face, summon, final}` Atlas URL (D-116) |
 | `sprite_id` | 나중에 교체할 스프라이트 ID, 현재 null |
 | `notes?` | 출처·검수 메모 |
@@ -225,4 +228,4 @@ data/
 `data/servants-pool/{servant_id}/`는 Atlas KR 원본을 서번트별로 보관하는 준비 영역이다. `source.json`에 프로필·스킬 이름·특성·Atlas 이미지 URL, `voice-lines.json`에 음성 대사 원문과 원본 상황명·보이스 ID를 둔다. 음성 파일은 보관하지 않는다. 레거시 `servants-ko.json`·`dialogues-ko.json`은 Atlas 누락 항목의 보조 자료로 쓴다.
 재수집 명령은 `npm run prepare:servants`다. `manifest.json`에 상세 응답 실패와 원본 대사·이미지 누락을 기록한다.
 
-이 영역은 `data/servants/`와 분리한다. 편입은 D-157로 100기를 했다: 명단 `activation/roster.json`, 분류표 `activation/meta.json`(AI 초안), 순서는 `node scripts/activate-profiles.mjs` → `node scripts/activate-skills.mjs` → `node scripts/fetch-voices.mjs {id…}`. 준비 자료 자체는 판 로더에 포함되지 않는다. 신규 서번트를 활성화할 때는 스키마에 맞춘 파일을 `data/servants/{id}/`로 생성하고 성향·성격·스킬 효과·대사 검수 등 §7.3의 미정 항목을 먼저 해결한다. 클래스 범위 확장도 별도 결정이 필요하다. 준비 원본의 대사는 검수 전 게임 대사로 사용하지 않는다.
+이 영역은 `data/servants/`와 분리한다. 편입은 D-157로 100기를 했다: 명단 `activation/roster.json`, 분류표 `activation/meta.json`(AI 초안), 순서는 `node scripts/activate-profiles.mjs` → `node scripts/activate-skills.mjs` → `node scripts/fetch-voices.mjs {id…}`. 특성·특공·즉사·캐릭터 상세는 `node scripts/enrich-profiles.mjs --atlas <Atlas 캐시>`로 채운다 (D-162, D-163, D-165). 준비 자료 자체는 판 로더에 포함되지 않는다. 신규 서번트를 활성화할 때는 스키마에 맞춘 파일을 `data/servants/{id}/`로 생성하고 성향·성격·스킬 효과·대사 검수 등 §7.3의 미정 항목을 먼저 해결한다. 클래스 범위 확장도 별도 결정이 필요하다. 준비 원본의 대사는 검수 전 게임 대사로 사용하지 않는다.

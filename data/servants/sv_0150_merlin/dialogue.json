@@ -116,7 +116,7 @@
         "id": "fgo_skill_5",
         "text": "[멀린] : “맡겨줘. 꿈처럼 정리하지” [포우] : “포우!” [멀린] : “부하앗!”",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -126,7 +126,7 @@
         "id": "fgo_skill_6",
         "text": "[멀린] : “이 근처를 손대는 게 좋지 않을까?” [포우] : “포~우!” [멀린] : “부포웃!”",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

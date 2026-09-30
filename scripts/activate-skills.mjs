@@ -1,9 +1,12 @@
 // D-157: cached Atlas skill data to deterministic, reviewable combat definitions.
 import fs from 'node:fs';
 import path from 'node:path';
+import { foeTraitCondition, servantTraitIds } from './lib/atlas-profile.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const atlas = '/private/tmp/claude-501/-Users-michaelkwon-Desktop-fsn6-docs/0c18cccd-6b29-4e5c-a70a-83953400345f/scratchpad/atlas';
+const traitAtlas = process.argv.includes('--atlas') ? process.argv[process.argv.indexOf('--atlas') + 1] : path.join(atlas, 'KR');
+const servantTraits = servantTraitIds(traitAtlas);
 const read = (file) => JSON.parse(fs.readFileSync(file, 'utf8'));
 const normalize = (name) => name.replace(/\s+/g, '');
 const splitRank = (name) => {
@@ -14,7 +17,7 @@ const splitRank = (name) => {
     : { name: name.trim(), rank: null };
 };
 const slug = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
-const source = (locale, id) => read(path.join(atlas, locale, `${id}.json`));
+const source = (locale, id) => read(path.join(locale === 'KR' ? traitAtlas : path.join(atlas, locale), `${id}.json`));
 const roster = read(path.join(root, 'data/servants-pool/activation/roster.json')).servants;
 const existingDirs = fs.readdirSync(path.join(root, 'data/servants')).filter((dir) => {
   const file = path.join(root, 'data/servants', dir, 'skills.json');
@@ -59,7 +62,10 @@ function classify(skill, isClass) {
   const enemy = (fn) => /enemy/i.test(fn.funcTargetType ?? '');
   const hasBuff = (types, check = ally) => buffs.some(({ fn, buff }) => check(fn) && types.includes(buff.type));
   const hasFunc = (types, check = ally) => functions.some((fn) => check(fn) && types.includes(fn.funcType));
-  const roll = (rule, when, target = 'self', scaling = 'major') => ({ rule, summary, hook: 'hk_battle_phase_roll', when, effect: target === 'foe' ? { type: 'roll_mod', target, sign: -1 } : { type: 'roll_mod', target }, scaling });
+  const roll = (rule, when, target = 'self', scaling = 'major') => {
+    const traits = target === 'self' ? foeTraitCondition(skill, servantTraits) : [];
+    return { rule, summary, hook: 'hk_battle_phase_roll', when: traits.length ? { ...when, foe_trait: traits } : when, effect: target === 'foe' ? { type: 'roll_mod', target, sign: -1 } : { type: 'roll_mod', target }, scaling };
+  };
   if (hasBuff(['guts']) || hasFunc(['gutsFunction'])) return { rule: 'R1', summary, hook: 'hk_battle_condition_change', when: { would_fall: true }, effect: { type: 'condition_guard', target: 'self' }, scaling: 'none', uses_per_battle: 1 };
   if (hasBuff(['invincible', 'avoidance'])) return roll('R2', { phase: ['ph_initiative', 'ph_fate'], role: 'defender' });
   if (hasBuff(['upNpdamage'])) return roll('R4', { phase: ['ph_np_clash', 'ph_np_attack'] });
@@ -69,10 +75,10 @@ function classify(skill, isClass) {
     const phases = cardIds.size === 1 ? { 4001: ['ph_sorcery'], 4002: ['ph_clash'], 4003: ['ph_initiative'] }[[...cardIds][0]] : ['ph_clash', 'ph_initiative', 'ph_sorcery'];
     return roll('R5', { phase: phases });
   }
-  if (hasBuff(['upAtk', 'upDamage', 'upCriticaldamage', 'pierceInvincible', 'breakAvoidance', 'addDamage'])) return roll('R6', { phase: ['ph_clash'] });
+  if (hasBuff(['upAtk', 'upDamage', 'upDamageIndividuality', 'upDamageIndividualityActiveonly', 'upCriticaldamage', 'pierceInvincible', 'breakAvoidance', 'addDamage'])) return roll('R6', { phase: ['ph_clash'] });
   // R3(마력)은 판정 버프(R4~R6)보다 뒤: 버스터 업 + NP 획득 같은 복합 스킬은 판정 보정으로 본다 (D-157 검토)
   if (hasFunc(['gainNp']) || hasFunc(['gainNpFromTargets'], () => true) || hasFunc(['hastenNpturn']) || hasBuff(['regainNp', 'upChagetd'])) return { rule: 'R3', summary, hook: 'hk_battle_phase_select', when: { phase_index: 1 }, effect: { type: 'resource_change', target: 'self', resource: 'mana' }, scaling: 'mana' };
-  if (hasBuff(['donotAct', 'donotNoble', 'donotSkill'], enemy)) return roll('R7', { phase: ['ph_initiative', 'ph_fate'], role: 'attacker' }, 'foe');
+  if (hasBuff(['donotAct', 'donotNoble', 'donotSkill'], enemy)) return roll('R7', { phase: ['ph_initiative'], role: 'attacker' }, 'foe');
   if (hasBuff(['downDefence', 'downAtk', 'downCriticalrate', 'downTolerance', 'downNpdamage', 'downDefencecommandall'], enemy)) return roll('R8', {}, 'foe', 'minor');
   if (hasBuff(['upDefence', 'subSelfdamage', 'upHate'])) return roll('R9', { role: 'defender' }, 'self', 'minor');
   if (hasBuff(['upGrantstate', 'upNonresistInstantdeath', 'upGrantInstantdeath'])) return roll('R10', { phase: ['ph_fate'], role: 'attacker' });

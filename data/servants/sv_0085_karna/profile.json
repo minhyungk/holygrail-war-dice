@@ -20,7 +20,10 @@
     "name_ko": "일륜이여, 죽음에 복종하여라",
     "ruby_ko": "바사비 샤크티",
     "rank": "EX",
-    "type_ko": "대신보구"
+    "type_ko": "대신보구",
+    "special_attack": [
+      2000
+    ]
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_3004000.png",
@@ -28,5 +31,32 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/300400/300400b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    101,
+    200,
+    300,
+    303,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2009,
+    2011,
+    2012,
+    2037,
+    2040,
+    2631,
+    2780,
+    2851,
+    2858,
+    5000,
+    300400
+  ],
+  "lore": {
+    "detail": "인도 고대 서사시 ‘마하바라타’의 대영웅. 마하바라타의 중심적 영웅인 아르주나의 라이벌이자 아버지가 다른 형제이다.\n수많은 저주로 몸을 움직일 수 없게 된 그를 아르주나는 모살에 가까운 형태로 죽였다."
+  },
+  "instant_death": false
 }

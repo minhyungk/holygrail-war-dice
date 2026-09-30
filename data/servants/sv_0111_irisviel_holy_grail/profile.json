@@ -20,7 +20,8 @@
     "name_ko": "하얀 성배여, 칭송하라",
     "ruby_ko": "송 오브 그레일",
     "rank": "B",
-    "type_ko": "마술보구"
+    "type_ko": "마술보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_5020000.png",
@@ -28,5 +29,29 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/502000/502000b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    200,
+    301,
+    303,
+    404,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2040,
+    2631,
+    2851,
+    2858,
+    5000,
+    502000
+  ],
+  "lore": {
+    "detail": "그것은 어떠한 원인으로 일어난 기적인가. 성배의 단말. 대성배로 돌아간 갓난아이는 분령으로 서번트화했다.\n이쪽에서는 저쪽보다 머나먼 어딘가에 있는, 운명에 저주받은 수호자를 계속 지킨다."
+  },
+  "instant_death": false
 }

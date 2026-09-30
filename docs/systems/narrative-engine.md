@@ -62,7 +62,7 @@ GameEvent ─► ① 사실 수집 ─► ② 후보 필터 ─► ③ 점수·�
 | | `escape_attempted` | 성공 여부, 판정값 |
 | 전투 | `battle_started` | 전투 ID, 타일, 지형, 강제 전투 여부, 플레이어 전투의 승률 예측용 스냅샷(D-139) |
 | | `phase_started` | 국면 번호, phase_id, 공격측, 공개된 국면 시점의 승률 예측용 스냅샷(D-139) |
-| | `np_opened` | 진영, 영주 사용 여부 |
+| | `np_opened` | 진영, 영주 사용 여부. 서술 사실 `event.revealed`: 플레이어가 이 개방으로 처음 진명을 알게 됐나 (D-165) |
 | | `weakness_used` | 약점 공략: 진영, 대상, 국면 번호, 고른 국면 유형 (D-148) |
 | | `phase_rolled` | 양측 자연값, 보정, 판정값, 기적 여부, 운명점 재굴림 여부 |
 | | `phase_resolved` | 승자·패자, 차이, 피해 단계, 실제 도달 상태, skipped/defended. 위험 진입은 danger, 위험에서 패배는 below (D-137) |
@@ -205,18 +205,20 @@ data/
 | `{np}` | 화자 보구 이름 |
 | `{servant_class}` | 화자 진영 서번트의 클래스명. 적 마스터가 자기 서번트를 부를 때 (`content/masters.md` §4.1) [제안] |
 | `{skill}` | 발동한 스킬 이름 (`skill_triggered`). 진명 전의 적 스킬은 `labels.unknown_skill` (D-153) |
+| `{weakness}` | 대상 서번트의 약점 문구: `profile.lore.weakness`, 없으면 `profile.lore.detail`(Atlas 캐릭터 상세). 정보 3단계(약점) 공개 비트에서만 쓴다 (D-158) |
 | `{actor}` `{target}` | 이벤트의 주체 / 대상 서번트 (나레이션용) [제안] |
 | `{winner}` `{loser}` | 국면·전투의 승자 / 패자 서번트 (나레이션용) [제안] |
 - 레거시 `{A}`, `{B}`, `{보구명}` 등은 들여올 때 위 이름으로 바꾼다
 
 ### 7.2 정보 가림
 플레이어가 모르는 정보는 서술에 나오면 안 된다.
-- `{enemy}`는 정보 단계에 따라 바뀐다: 0단계 "정체불명의 서번트" [확정] (D-104) → 1단계 클래스명("랜서") → 3단계 진명("쿠 훌린")
-- 진명을 부르는 대사는 `when`에 `enemy.intel_level: 3` 조건이 필요하다 (검증 도구가 확인)
-- **보구 개방 = 정체 공개** [확정] (D-067): 보구를 여는 순간 그 서번트의 정보가 3단계가 된다. 그래서 보구 영창(보구명 포함)은 가림 조건 없이 쓴다
+- `{enemy}`는 정보 단계에 따라 바뀐다: 0단계 "정체불명의 서번트" [확정] (D-104) → 1단계(얼굴) 클래스명("랜서") → 2단계(진명) 이상 진명("쿠 훌린") (D-158)
+- 진명을 부르는 대사는 `when`에 `enemy.intel_level: {gte: 2}` 조건이 필요하다 (검증 도구가 확인). 플레이어 자기 서번트의 단계는 항상 3이다
+- **보구 개방 = 정체 공개** [확정] (D-067, D-158): 보구를 여는 순간 그 서번트의 정보가 2단계(진명)가 된다. 그래서 보구 영창(보구명 포함)은 가림 조건 없이 쓴다
+- 보구 개방 나레이션의 진명 공개 줄(`np_open` `reveal_enemy`)은 `event.revealed: true`(이 개방으로 처음 진명이 드러남)일 때만 쓴다 (D-165)
 - **화자 쪽 가림** [확정] (D-104): 적 서번트가 말하거나 적 서번트에 대한 서술문일 때, 플레이어는 화자의 정체도 모를 수 있다
   - `{servant}`도 플레이어의 정보 단계에 따라 호칭이 바뀐다 (플레이어 자기 서번트는 항상 진명)
-  - 화자가 자기 정체를 드러내는 대사(자기 보구명, 전설 언급 등)는 `self.intel_level: 3` 조건을 붙인다
+  - 화자가 자기 정체를 드러내는 대사(자기 보구명, 전설 언급 등)는 `self.intel_level: {gte: 2}` 조건을 붙인다
 
 ### 7.3 조사 자동 처리
 받침에 맞춰 조사를 고른다. 표기: `{enemy}{이/가}`
@@ -249,12 +251,12 @@ data/
 | `day_started` / `night_started` | lead |
 | `action_started` | lead (action별 태그: 교류 `day_bond`, 정보 `intel`, 공급 `mana_supply`. 제작은 없음). 판정 행동의 장면을 연다 (D-141) |
 | `bond` | line → (react) |
-| `intel_gained` | line |
+| `intel_gained` | line. 3단계(약점)가 되면 react(`intel_weakness`, 나레이션 `{weakness}`로 약점 문구 낭독, D-158) |
 | `mana_supplied` | line → react |
 | `battle_started` | lead(장소) → lead(상대 등장) → line → (answer) → (react) → tail |
 | `phase_started` | lead(국면 유형) |
 | `phase_resolved` | react(공방 묘사) → (line: 국면 승리 `phase_win` / 피격 `phase_hit`, 확률) → (tail: 상태 변화) → (line: 위기) |
-| `np_opened` | lead(마력 집중) → line(영창) → react(정체 공개) |
+| `np_opened` | lead(마력 집중) → line(영창) → react(정체 공개. 처음 드러날 때만, D-165) |
 | `weakness_used` | lead(약점 서술, 국면 유형별) → line(`weakness`) (D-148) |
 | `skill_triggered` | 전투마다 스킬별 첫 발동만: react(`skill_effect`: 스킬 전용 → 효과별 범용, 미공개 적은 `event.skill_known: false` 해설) → line(`skill`, 확률, 발동한 서번트) (D-153) |
 | `affinity_changed` (선택 반응) | `affinity_reaction` 템플릿: line(`react_choice`) → tail(호감도 변화) (D-150) |
@@ -336,7 +338,7 @@ data/
 1. **구체성:** 사실 `{tag: battle_start, self.servant: sv_0011_emiya, enemy.servant: sv_0017_cu_chulainn, mem.met_before: true}`
    - 후보 A (공통, 조건 0개) / 후보 B (에미야 전용, 1개) / 후보 C (에미야 vs 쿠 훌린 재회, 3개) → C 선택
 2. **반복 제외:** C가 `once_per_run`이고 이미 말함 → 다음 최고 점수 B
-3. **정보 가림:** `enemy.intel_level: 1` → `{enemy}{이/가}` = "랜서가". 3단계면 "쿠 훌린이"
+3. **정보 가림:** `enemy.intel_level: 1` → `{enemy}{이/가}` = "랜서가". 2단계 이상이면 "쿠 훌린이"
 4. **조사:** "메두사" + `{을/를}` → "메두사를", "헤라클레스" + `{와/과}` → "헤라클레스와", "에미야" + `{으로/로}` → "에미야로"
 5. **비트 구성 (§8, 현재 구현에 맞춘 예시):** 플레이어 알트리아 vs 쿠 훌린(정보 1단계), 수변, 밤. 엔진이 고르는 순서와 결과
    | 순서 | 슬롯 | 고른 줄 | 근거 |

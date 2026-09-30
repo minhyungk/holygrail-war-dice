@@ -19,7 +19,8 @@
     "name_ko": "파계해야 할 모든 부적",
     "ruby_ko": "룰 브레이커",
     "rank": "C+",
-    "type_ko": "대마술보구"
+    "type_ko": "대마술보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_5001000.png",
@@ -27,5 +28,28 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/500100/500100b@2.png"
   },
   "sprite_id": null,
-  "notes": "레거시 servants-ko.json id 31에서 생성. alignment는 원작 설정 기준 AI 입력값 (Atlas로 검증 필요). temperament는 레거시 servantPersonality.ts를 ID가 아닌 이름으로 맞춘 값. images: Atlas Academy KR (face=맵 아이콘, summon=기본 재림 전신, final=최종 재림 전신, Q-134)."
+  "notes": "레거시 servants-ko.json id 31에서 생성. alignment는 원작 설정 기준 AI 입력값 (Atlas로 검증 필요). temperament는 레거시 servantPersonality.ts를 ID가 아닌 이름으로 맞춘 값. images: Atlas Academy KR (face=맵 아이콘, summon=기본 재림 전신, final=최종 재림 전신, Q-134).",
+  "traits": [
+    2,
+    104,
+    201,
+    302,
+    304,
+    403,
+    1000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2466,
+    2631,
+    2858,
+    2883,
+    5000,
+    500100
+  ],
+  "lore": {
+    "detail": "황금 양털을 가진 아이에테스 왕의 딸로 달의 여신 헤카테에게 마술을 배웠다. 영웅 이아손 때문에 나라를 떠나게 되었고, 긴 방랑 끝에 배신의 마녀라는 낙인이 찍힌 채 세상을 떠났다."
+  },
+  "instant_death": false
 }

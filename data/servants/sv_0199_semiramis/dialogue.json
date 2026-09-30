@@ -263,7 +263,7 @@
         "text": "서번트, 어쌔신. 세미라미스다. 그러면…… 우선 옥좌를 준비하거라. 이야기는 그다음에 하겠다. 없다면 어쩔 수 없지, 그대가 의자가 되도록 해라.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

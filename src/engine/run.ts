@@ -3,6 +3,7 @@
 // 판 전체가 하나의 제너레이터다. 플레이어가 고를 때마다 RunPrompt를 내보내고 답을 받아 이어 간다.
 // 플레이어가 탈락하면 같은 제너레이터가 적 AI 규칙만으로 끝까지 진행한다 (패배 빨리감기, D-043).
 import { K } from '../data/constants';
+import { INTEL } from './intel';
 import { EXTRA_CLASSES, type MasterProfile, type Reaction, type ServantProfile, type ServantSkillsFile, STANDARD_CLASSES, type StatId } from '../data/schema';
 import { addClamped, applyDelta, betrayalChance, initialAffinity, postChoiceDelta, reactionDelta, refusalChance, rollMod, tierOf } from './affinity';
 import { battle, type BattleInput, type BattleOutcome, type BattleDice, chance, createFighter, type Fighter, NO_BONUS, type Prompt, type PromptAnswer, rngDice, runBattle } from './combat';
@@ -22,7 +23,7 @@ export type RunPrompt =
   | Prompt
   /** 밤 이동. reachable에는 자기 칸이 들어 있다 (머무르기, D-112) */
   | { kind: 'action'; time: 'night'; day: number; action_index: number; reachable: string[] }
-  /** 낮 메뉴 1회 (D-145). bonus = 오늘 칸 보너스, intel_open = 진명을 모르는 적이 남았나 */
+  /** 낮 메뉴 1회 (D-145). bonus = 오늘 칸 보너스, intel_open = 약점(정보 3단계)을 모르는 적이 남았나 (D-158) */
   | { kind: 'day_action'; day: number; tile: string; role: TileRole; options: DayAction[]; bonus: Record<DayAction, number>; intel_open: boolean }
   /** 아침: 서번트가 마력 공급을 청한다 */
   | { kind: 'supply_offer'; reason: 'hurt' | 'trust'; condition: Condition; affinity: number }
@@ -252,10 +253,10 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
     player.affinity = to;
     log.emit('affinity_changed', [player.id], { faction: player.id, from, to, tier_from: tierOf(from), tier_to: tierOf(to), cause: `react:${reaction}` });
   };
-  /** 정보 단계를 올린다 (D-147). 이미 그 이상이면 아무 일도 없다 */
+  /** 정보 단계를 올린다 (D-147, D-158). 이미 그 이상이면 아무 일도 없다 */
   const raiseIntel = (target: FactionState, to: number, cause: 'encounter' | 'battle') => {
     const from = S.intel[target.id] ?? 0;
-    const next = Math.min(K['day.intel_mod'].length - 1, to);
+    const next = Math.min(INTEL.weakness, to);
     if (next <= from) return;
     S.intel[target.id] = next;
     log.emit('intel_gained', [player.id, target.id], { target: target.id, level_from: from, level_to: next, result: 'success', cause, roll: null, dc: null });
@@ -357,8 +358,8 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
   /** 오늘 칸 보너스 (D-145): 밤을 마친 칸의 역할 */
   const roleBonus = (kind: 'intel' | 'bond' | 'leyline'): number => (tile(player.tile).role === kind ? K['day.role_bonus'][kind] : 0);
 
-  /** 정보 수집 대상 (D-147): 진명을 모르는 적 중 이미 만난 진영 우선, 그중 단계가 가장 낮은 진영에서 무작위 */
-  const intelTargets = () => alive().filter((f) => f !== player && (S.intel[f.id] ?? 0) < K['day.intel_mod'].length - 1);
+  /** 정보 수집 대상 (D-147, D-158): 약점을 모르는 적 중 이미 만난 진영 우선, 그중 단계가 가장 낮은 진영에서 무작위 */
+  const intelTargets = () => alive().filter((f) => f !== player && (S.intel[f.id] ?? 0) < INTEL.weakness);
 
   // ── 낮 행동: 메뉴 1회 (D-145). 판정은 자동, 재굴림 없음 ──
   function* dayAction(day: number) {
@@ -377,8 +378,8 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
       return;
     }
     const targets = intelTargets();
-    if (!targets.length) return; // 모두 진명을 안다
-    const met = targets.filter((f) => (S.intel[f.id] ?? 0) >= 1);
+    if (!targets.length) return; // 모두 약점을 안다
+    const met = targets.filter((f) => (S.intel[f.id] ?? 0) >= INTEL.face);
     const pool0 = met.length ? met : targets;
     const low = Math.min(...pool0.map((f) => S.intel[f.id] ?? 0));
     const pool = pool0.filter((f) => (S.intel[f.id] ?? 0) === low);
@@ -477,6 +478,8 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
     S.battleSeq += 1;
     const battleId = `bt_${String(S.battleSeq).padStart(3, '0')}`;
     const mine = a === player || b === player;
+    // 조우 없이 시작하는 강제 전투도 싸우면 얼굴을 안다 (D-158)
+    if (mine) raiseIntel(a === player ? b : a, INTEL.face, 'encounter');
     const input: BattleInput = {
       captureForecast: mine,
       battleId,
@@ -533,8 +536,8 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
       ambusher: ambusher?.id ?? null,
       ambush_rolls: amb.records,
     });
-    // 조우하면 상대 클래스를 안다 (D-147)
-    if (a === player || b === player) raiseIntel(a === player ? b : a, 1, 'encounter');
+    // 조우하면 상대 얼굴·클래스·스테이터스를 안다 (D-147, D-158)
+    if (a === player || b === player) raiseIntel(a === player ? b : a, INTEL.face, 'encounter');
 
     const choices: Record<string, 'fight' | 'flee'> = {};
     for (const f of [a, b]) {

@@ -20,7 +20,8 @@
     "name_ko": "여신의 미소",
     "ruby_ko": "스마일 오브 더 스테노",
     "rank": "B+",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_6010000.png",
@@ -28,5 +29,31 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/601000/601000b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    2,
+    105,
+    200,
+    301,
+    303,
+    404,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2040,
+    2797,
+    2835,
+    2850,
+    2851,
+    2858,
+    5000,
+    601000
+  ],
+  "lore": {
+    "detail": "그리스 신화에 나오는 고르곤 세 자매의 장녀. 남자의 동경이 구현되어 완성된 ‘우상(아이돌)’, ‘이상적인 여성’으로 태어난 여신. 우아함과 품위를 형상화한 듯한 아리따운 여성. 여동생으로 에우리알레와 메두사가 있다."
+  },
+  "instant_death": true
 }

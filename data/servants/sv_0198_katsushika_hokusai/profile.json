@@ -20,7 +20,10 @@
     "name_ko": "후가쿠 삼십육경",
     "ruby_ko": "후가쿠 삼십육경",
     "rank": "A+",
-    "type_ko": "대군보구"
+    "type_ko": "대군보구",
+    "special_attack": [
+      202
+    ]
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_25002000.png",
@@ -28,5 +31,27 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/2500200/2500200b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    117,
+    202,
+    301,
+    305,
+    405,
+    1000,
+    1172,
+    2000,
+    2001,
+    2008,
+    2040,
+    2631,
+    2731,
+    5000,
+    2500200
+  ],
+  "lore": {
+    "detail": "도저히 호쿠사이로는 보이지 않는다고? 귀여운 모습이라 미안하게 됐네, 사정을 알고 싶다면 내 이야기 좀 들어주시지!"
+  },
+  "instant_death": false
 }

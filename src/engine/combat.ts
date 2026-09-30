@@ -5,6 +5,7 @@ import { K, PHASES } from '../data/constants';
 import type { PhaseId, Reaction, ServantProfile, SkillLink, StatId, Terrain } from '../data/schema';
 import { check, contest, type NaturalRoll, rollNatural, type RollResult } from './dice';
 import type { Condition, EventLog, RollRecord, Side } from './events';
+import { INTEL } from './intel';
 import { phaseDef, phaseFromDraw, phaseFromNp, terrainWeightTotal } from './phases';
 import type { Rng } from './rng';
 import { type ActiveSkill, type SkillCtx, skillAmount, skillsAt, whenOk } from './skills';
@@ -29,7 +30,7 @@ export interface Fighter {
   seals: number;
   fatePoints: number;
   bonus: FixedBonus;
-  /** 상대에 대한 정보 단계. 보구 공개 시 전투 중에도 갱신된다 (D-137) */
+  /** 상대에 대한 정보 단계 (INTEL). 상대 보구 개방 시 전투 중에도 진명까지 갱신된다 (D-137, D-158) */
   intelLevel: number;
   /** 명령 거부 확률 (affinity.md §3.4). 적 AI는 0 */
   refusal: number;
@@ -217,7 +218,7 @@ export function* battle(input: BattleInput, dice: BattleDice, log: EventLog): Ba
 
   // ── 스킬 (skills.md, D-142): 훅마다 양측 스킬을 보유 순서대로, a → b 순으로 판단한다 ──
   const ctxOf = (s: Side, phaseIndex: number, extra: Partial<SkillCtx> = {}): SkillCtx => ({
-    phaseIndex, selfCondition: F[s].condition, leyline: input.leyline ?? false, foeClass: F[other(s)].servant.class, ...extra,
+    phaseIndex, selfCondition: F[s].condition, leyline: input.leyline ?? false, foeClass: F[other(s)].servant.class, foeTraits: F[other(s)].servant.traits, ...extra,
   });
   const trigger = (s: Side, sk: ActiveSkill, phaseIndex: number, amount: number, target: Side, manaAfter: number | null = null) =>
     log.emit('skill_triggered', [F[s].faction], {
@@ -321,8 +322,9 @@ export function* battle(input: BattleInput, dice: BattleDice, log: EventLog): Ba
       opened[s] = true;
       npUsed[s] += 1;
       log.emit('np_opened', [f.faction], { battle_id: id, phase_index: index, faction: f.faction, seal, mana_before: before, mana_after: f.mana });
+      // 보구 개방 = 진명 공개 (D-067, D-158). 약점까지는 드러나지 않는다
       const observer = F[other(s)];
-      const revealed = K['day.intel_mod'].length - 1;
+      const revealed = INTEL.name;
       if (observer.controller === 'player' && observer.intelLevel < revealed) {
         const from = observer.intelLevel;
         observer.intelLevel = revealed;
@@ -349,8 +351,8 @@ export function* battle(input: BattleInput, dice: BattleDice, log: EventLog): Ba
       const options: PhaseCommand[] = [];
       if (canNp(s)) options.push('np');
       if (!opened[s] && npUsed[s] < K['combat.np_per_battle'] && f.seals > 0) options.push('seal_np');
-      // 약점 공략 (D-148): 진명을 알고, 이 전투에서 아직 안 썼고, 상대가 이번 국면에 보구를 열지 않았을 때
-      const canWeak = f.intelLevel >= K['day.intel_mod'].length - 1 && !weaknessUsed[s] && !opened[other(s)];
+      // 약점 공략 (D-148): 약점(정보 3단계, D-158)을 알고, 이 전투에서 아직 안 썼고, 상대가 이번 국면에 보구를 열지 않았을 때
+      const canWeak = f.intelLevel >= INTEL.weakness && !weaknessUsed[s] && !opened[other(s)];
       if (canWeak) options.push('weakness');
       if (!options.length) continue;
       const cmd = yield* askPhase({
@@ -390,8 +392,10 @@ export function* battle(input: BattleInput, dice: BattleDice, log: EventLog): Ba
       phaseId = weaknessPhase(F[weakSide].servant, F[other(weakSide)].servant);
       attacker = weakSide;
     } else {
-      phaseId = phaseFromDraw(input.terrain, dice.draw(terrainWeightTotal(input.terrain)));
-      attacker = index === 1 && input.ambusher ? input.ambusher : coin();
+      // 즉사/우연은 즉사 수단을 가진 쪽이 있을 때만 추첨 후보다. 한쪽만 가지면 그쪽이 공격측 (D-163)
+      const deadly = (['a', 'b'] as const).filter((x) => F[x].servant.instant_death);
+      phaseId = phaseFromDraw(input.terrain, dice.draw(terrainWeightTotal(input.terrain, deadly.length > 0)), deadly.length > 0);
+      attacker = phaseId === 'ph_fate' && deadly.length === 1 ? deadly[0]! : index === 1 && input.ambusher ? input.ambusher : coin();
     }
     const defender = other(attacker);
     const def = phaseDef(phaseId);
@@ -407,6 +411,12 @@ export function* battle(input: BattleInput, dice: BattleDice, log: EventLog): Ba
       const stats = { [attacker]: def.attacker_stat, [defender]: def.defender_stat } as Record<Side, StatId[]>;
       const role = (s: Side) => ({ phase: phaseId, role: s === attacker ? ('attacker' as const) : ('defender' as const) });
       const parts = rollParts('hk_battle_phase_roll', index, ['a', 'b'], role);
+      // 보구 특공 (D-162): 이번 국면에 보구를 연 쪽의 특공 대상 특성을 상대가 가지면
+      if (def.selection !== 'terrain') {
+        for (const x of ['a', 'b'] as const) {
+          if (opened[x] && F[x].servant.noble_phantasm.special_attack.some((t) => F[other(x)].servant.traits.includes(t))) parts[x].special_attack = K['combat.special_attack_bonus'];
+        }
+      }
       const { result, records } = yield* contestFor(stats, 'phase', parts);
       log.emit('phase_rolled', both, { battle_id: id, phase_index: index, phase_id: phaseId, kind: 'contest', rolls: records, dc: null });
       if (phaseId === 'ph_np_attack' && result.winner === defender) {

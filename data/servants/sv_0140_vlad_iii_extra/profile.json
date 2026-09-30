@@ -20,7 +20,10 @@
     "name_ko": "꼬챙이 성채",
     "ruby_ko": "카지클 베이",
     "rank": "C",
-    "type_ko": "대군보구"
+    "type_ko": "대군보구",
+    "special_attack": [
+      304
+    ]
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_3003000.png",
@@ -28,5 +31,27 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/300300/300300b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    101,
+    202,
+    300,
+    303,
+    404,
+    1000,
+    2001,
+    2008,
+    2113,
+    2631,
+    2849,
+    2858,
+    2923,
+    5000,
+    300300
+  ],
+  "lore": {
+    "detail": "루마니아 역사에서 유명한 영웅. 왈라키아 독립을 견지한 기독교 세계의 방패라고까지 알려진 고결한 무인. 그러나 드라큘라라는 명칭이 세상에 퍼지고만 무고의 괴물.\n투르크군으로부터 왈라키아를 지켜내기 위해 국토를 황폐하게 만든 귀족들을 숙청하고, 적대하는 투르크군 병사 2만 명을 꼬챙이로 꿰어 죽였지만, 엄벌주의를 관철해 귀족들로부터 외면받았다. 마지막에는 부하인 왈라키아 귀족들에게 암살당했다."
+  },
+  "instant_death": false
 }

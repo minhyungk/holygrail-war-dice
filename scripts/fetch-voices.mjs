@@ -25,13 +25,13 @@ const lineText = (vl) => clean(vl.subtitle || (vl.text && vl.text.join(' ')) || 
 /**
  * 보이스 그룹 → 태그별 줄.
  * D-157: 개시 → battle_start, 보구 → np_open, 승리 → victory, 전투불능 → defeat, 소환 → summon 추가.
- * 자기 진명·짧은 이름·보구명을 말하는 줄은 정보 3단계 전엔 나오지 않게 `self.intel_level: 3`을 단다 (D-156). 보구 영창은 개방이 곧 공개라 가리지 않는다
+ * 자기 진명·짧은 이름·보구명을 말하는 줄은 진명(정보 2단계) 전엔 나오지 않게 `self.intel_level: {gte: 2}`를 단다 (D-156, D-158). 보구 영창은 개방이 곧 공개라 가리지 않는다
  */
 function extract(voices, profile) {
   const out = { phase_win: [], phase_hit: [], skill: [], day_bond: [], battle_start: [], np_open: [], victory: [], defeat: [], summon: [] };
   const np = profile.noble_phantasm;
   const secrets = [profile.name_ko, profile.name_short_ko, np?.name_ko, np?.ruby_ko].filter((w) => w && w.length >= 2);
-  const guard = (l, tag) => (tag !== 'np_open' && secrets.some((w) => l.text.includes(w)) ? { ...l, when: { ...(l.when ?? {}), 'self.intel_level': 3 } } : l);
+  const guard = (l, tag) => (tag !== 'np_open' && secrets.some((w) => l.text.includes(w)) ? { ...l, when: { ...(l.when ?? {}), 'self.intel_level': { gte: 2 } } } : l);
   for (const vg of voices) {
     if (vg.voicePrefix && vg.voicePrefix !== 0) continue; // 1재림 기준
     for (const vl of vg.voiceLines) {

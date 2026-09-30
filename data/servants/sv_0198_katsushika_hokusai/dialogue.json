@@ -117,7 +117,7 @@
               "loyal"
             ]
           },
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "한 마리와 한 명으로 호쿠사이야. 나 한 명으로는 그냥 여자애지. 식객의 심부름 삯으로 해변의 병풍 그림이라도, 만화라도, 여차하면 요즘 트렌드인 야한 그림이라도, 뭐든지 그려줄 수 있는데?",
         "weight": 2,
@@ -277,7 +277,7 @@
         "text": "카츠시카 호쿠사이. 보잘것없는 화공이야. 당신이 ‘마스터’ 님인가? 호오, 꽤나 그림이 되는 양반이시네. 뭐, 마음대로 하도록 할게.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

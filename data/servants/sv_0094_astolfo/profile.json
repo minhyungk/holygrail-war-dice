@@ -20,7 +20,8 @@
     "name_ko": "이 세상 것이 아닌 환마",
     "ruby_ko": "히포그리프",
     "rank": "B++",
-    "type_ko": "대군보구"
+    "type_ko": "대군보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_4004000.png",
@@ -28,5 +29,29 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/400400/400400b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    3,
+    103,
+    201,
+    301,
+    303,
+    404,
+    1000,
+    2001,
+    2008,
+    2009,
+    2011,
+    2037,
+    2356,
+    2631,
+    2780,
+    2858,
+    5000,
+    400400
+  ],
+  "lore": {
+    "detail": "아스톨포는 프랑스의 대표적인 기사 문학, 샤를마뉴 전설의 등장인물. 샤를마뉴의 12용사 중 한 명이며, 잉글랜드의 왕자이다. 덧붙이면 이성이 증발한 멍텅구리 영령이다."
+  },
+  "instant_death": false
 }

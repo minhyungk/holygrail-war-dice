@@ -20,7 +20,8 @@
     "name_ko": "나는 모든 독 있는 것, 해 있는 것을 없앤다",
     "ruby_ko": "나이팅게일 플레지",
     "rank": "C+",
-    "type_ko": "대군보구"
+    "type_ko": "대군보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_7014000.png",
@@ -28,5 +29,24 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/701400/701400b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    106,
+    202,
+    300,
+    303,
+    405,
+    1000,
+    2001,
+    2008,
+    2631,
+    2858,
+    5000,
+    701400
+  ],
+  "lore": {
+    "detail": "봉사와 헌신을 신조로 삼는 크리미아의 천사. 신념의 여인. 절대 꺾이지 않고 상대가 누구든── 설령 대영제국의 군주라 해도 해야 할 말은 하고야 마는 강인한 정신을 가지고 있다. 별명으로는 ‘작은 육군성’. 혼자서 이루어진 군대라고 해야 할 불굴의 정신을 가진 인물이다.\n이번 현계에서는 그 정신과 광화 스킬 EX가 합쳐진 상태이기 때문에 (아마도) 생전과 달리 ‘다른 사람의 말을 전혀 듣지 않는다’ ."
+  },
+  "instant_death": false
 }

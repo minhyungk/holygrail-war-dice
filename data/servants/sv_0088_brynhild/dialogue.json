@@ -270,7 +270,7 @@
         "text": "브륀힐드…… 클래스는, 랜서입니다…… 제게 잘해주지 마세요, 마스터.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

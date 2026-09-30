@@ -326,7 +326,7 @@
         "text": "서번트 랜서. 진명, 카르나. 잘 부탁한다.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

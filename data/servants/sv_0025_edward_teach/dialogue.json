@@ -275,7 +275,7 @@
         "id": "fgo_start_4",
         "text": "소생의 이름은 에드워드 티치. 직업, 해적── 즉, 무직! ……연금은 없소이까?",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

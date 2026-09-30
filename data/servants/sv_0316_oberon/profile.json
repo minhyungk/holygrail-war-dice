@@ -20,7 +20,10 @@
     "name_ko": "저편으로 드리우는 꿈 이야기",
     "ruby_ko": "라이 라임 굿펠로우",
     "rank": "E",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": [
+      300
+    ]
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_28001000.png",
@@ -28,5 +31,29 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/2800100/2800100b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    120,
+    201,
+    301,
+    304,
+    405,
+    1000,
+    1172,
+    1177,
+    2001,
+    2002,
+    2009,
+    2011,
+    2037,
+    2113,
+    2780,
+    5000,
+    2800100
+  ],
+  "lore": {
+    "detail": "그 정체는 범인류사의 영기가 아니라, 요정국 브리튼에 태어난 서번트였다.\n요정국 브리튼에서 이야기되는 멸망의 전승…… 모든 것을 무로 돌리는 나락의 벌레…… 에서 태어난, 세계를 저주하는 종말 장치.\n오베론이라는 이름은 어디까지나 범인류사에서의 것.\n요정국에서의 이름은 보티건. 범인류사에서 브리튼을 이민족들에게 팔아넘긴 멸망의 선도자, 비왕 보티건과 같은 이름이다.\n새빨간 거짓말쟁이 오베론. 그 존재, 이름조차 거짓말. 본성을 밝혔을 때, “좋아하는 건 하나도 없다”라고 입가를 끌어 올리며, 전혀 주눅들지 않고 공언한다.\n……물론 이것도 거짓말이다. 그의 말에 진실이란 단 하나도 없으니까."
+  },
+  "instant_death": false
 }

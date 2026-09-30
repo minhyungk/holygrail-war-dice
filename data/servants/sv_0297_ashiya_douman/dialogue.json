@@ -224,7 +224,7 @@
         "id": "fgo_start_2",
         "text": "도만이 출동합니다!",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -327,7 +327,7 @@
         "text": "처음 뵙겠습니다. 소승, 진명은 아시야 도만이라 하는 법사이자 음양사. 클래스는, 얼터에고. ……어라? 얼터에고…… 캐스터가 아니라? ……이거 참, 기묘한 일도 다 있군요. 어찌 되었든 앞으로 잘 부탁드리겠습니다, 마스터.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

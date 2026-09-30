@@ -295,7 +295,7 @@
           "world.day": {
             "gte": 3
           },
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "성배── 물론 갖고 싶고말고! 아름다우며 값이 나가고, 무엇이든 소망을 이루어 준다며? ‘오베론’은 진귀한 것, 반짝이는 것을 갖고 싶어 해. 그것이 남의 것이라면…… 더더욱 말이야!",
         "weight": 2,
@@ -318,7 +318,7 @@
         "id": "fgo_start_2",
         "text": "요정왕 오베론, 바람처럼 등장! ……이야~ 조금 재미있네, 이거!",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

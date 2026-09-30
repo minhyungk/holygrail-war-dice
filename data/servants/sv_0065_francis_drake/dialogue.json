@@ -298,7 +298,7 @@
         "text": "네가 새로운 고용주인가? 난 프랜시스 드레이크. 뭐, 사이좋게 지내보자고!",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

@@ -256,7 +256,7 @@
         "text": "서번트, 캐스터. 아비케브론, 소환에 응해 등장했다. 보자마자 미안하네만, 공방이 필요한데…… 괜찮겠나?",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

@@ -277,7 +277,7 @@
         "text": "신멘 무사시노카미 후지와라노 하루노부……?! 미안, 다시! 서번트, 세이버, 신멘 무사시, 여기에 등장! 재미있고 즐겁게 지내게 해 줘, 마스터!",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

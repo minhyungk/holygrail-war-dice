@@ -3,7 +3,7 @@
 // 확률 판정(적 AI의 보구 개방·위험 퇴각, 명령 거부)은 0~9999 추첨: 확률×10000보다 작으면 일어난다. 9999 = 일어나지 않음
 import { describe, expect, it } from 'vitest';
 import { K } from '../data/constants';
-import { scriptedDice, servant, SV } from '../testkit';
+import { HASSAN, scriptedDice, servant, SV } from '../testkit';
 import { type BattleInput, createFighter, type Fighter, type Policy, type Prompt, runBattle, weaknessPhase } from './combat';
 import { EventLog } from './events';
 
@@ -205,8 +205,10 @@ describe('보구 개방 (phases.md §5-3, §3.6)', () => {
   it('적 AI가 먼저 보구를 열고, 플레이어에게 맞설지 묻는다. 마력으로도 열 수 있다 (D-113, D-127)', () => {
     const r = run(
       { a: fighter('fc_a', SV.artoria, 'player', { mana: 80, fatePoints: 0, seals: 0 }), b: fighter('fc_h', SV.heracles, 'ai', { mana: 80 }), terrain: 'open' },
-      [4, 7, 4, 5, 4, 5], // 진명 공개 즉시 정보 +2 (D-147): 보구 격돌과 다음 선제 국면 모두 동점
-      [0, 0, 50, 0, 50, 0], // 국면 1: 적 AI 보구 판정(0 = 연다), 보구 격돌 공격측 추첨
+      // 진명 공개 즉시 정보 +0.5 (D-158·D-159). 보구 격돌 8 + 6 + 0.5 = 14.5 vs 7 + 7 → 헤라클레스 부상.
+      // 선제: 6 + 4 + 0.5 = 10.5 vs 7 + 5 → 알트리아 부상. 선제: 6 + 6 + 0.5 = 12.5 vs 7 + 4 → 헤라클레스 위험, 퇴각
+      [6, 7, 4, 5, 6, 4],
+      [0, 0, 50, 0, 50, 0, 0], // 국면 1: 적 AI 보구 판정(0 = 연다), 보구 격돌 공격측 추첨. 마지막은 헤라클레스 퇴각 판정
       (p) => (p.kind === 'phase_command' ? (p.phase_index === 1 ? 'np' : 'none') : false),
     );
     const first = r.prompts.find((p) => p.kind === 'phase_command')!;
@@ -226,27 +228,29 @@ describe('보구 개방 (phases.md §5-3, §3.6)', () => {
   });
 });
 
-describe('즉사/우연 (phases.md §5-4 ~ 6, D-097)', () => {
+describe('즉사/우연 (phases.md §5-4 ~ 8, D-097, D-163)', () => {
   // 숲: 정면 0~19, 선제 20~49, 마술 50~89, 즉사 90~99. 국면 2·3은 동점으로 스킵
-  const tail = { rolls: [2, 3, 2, 3], draws: [0, 0, 0, 0] };
+  const tail = { rolls: [2, 2, 2, 2], draws: [0, 0, 0, 0] };
+  // 하산과 쿠 훌린 모두 즉사 수단이 있어 공격측을 추첨한다 (0 = a = 하산)
   const fate = (defenderNatural: number) =>
     run(
-      { a: fighter('fc_a', SV.artoria, 'ai'), b: fighter('fc_c', SV.cu, 'ai'), terrain: 'forest' },
+      { a: fighter('fc_h', HASSAN, 'ai'), b: fighter('fc_c', SV.cu, 'ai'), terrain: 'forest' },
       [defenderNatural, ...tail.rolls],
       [95, 0, ...tail.draws],
     );
-  it('4. 방어측 쿠 훌린 행운 3 + 5 = 8 < 9 → 실패, 만전 → 부상', () => {
+  it('4. 공격측 하산, 방어측 쿠 훌린 행운 3 + 5 = 8 < 9 → 실패, 만전 → 부상', () => {
     const r = fate(5);
     expect(r.log.ofType('phase_rolled')[0]!.data).toMatchObject({ kind: 'solo', dc: 9 });
     expect(r.totals[0]).toEqual([8]);
     expect(r.conditions).toEqual(['fc_c:full>hurt']);
   });
-  it('5. 방어측 알트리아 7.5 + 2 = 9.5 → 성공, 국면 스킵', () => {
+  it('5. 공격측 쿠 훌린(즉사 수단), 방어측 알트리아 7.5 + 2 = 9.5 → 성공, 국면 스킵. 공격측 추첨 없음', () => {
     const r = run(
-      { a: fighter('fc_c', SV.cu, 'ai'), b: fighter('fc_a', SV.artoria, 'ai'), terrain: 'forest' },
-      [2, 3, 2, 3, 2], // 국면 2·3 정면 격돌: 쿠 훌린 11 + 3 = 알트리아 12 + 2 → 동점
-      [95, 0, ...tail.draws],
+      { a: fighter('fc_a', SV.artoria, 'ai'), b: fighter('fc_c', SV.cu, 'ai'), terrain: 'forest' },
+      [2, 2, 3, 2, 3], // 국면 2·3 정면 격돌: 알트리아 12 + 2 = 쿠 훌린 11 + 3 → 동점
+      [95, ...tail.draws],
     );
+    expect(r.log.ofType('phase_started')[0]!.data).toMatchObject({ phase_id: 'ph_fate', attacker: 'fc_c', defender: 'fc_a' });
     expect(r.totals[0]).toEqual([9.5]);
     expect(r.log.ofType('phase_resolved')[0]!.data.skipped).toBe(true);
   });
@@ -254,6 +258,25 @@ describe('즉사/우연 (phases.md §5-4 ~ 6, D-097)', () => {
     const r = fate(12);
     expect(r.totals[0]).toEqual([18]);
     expect(r.log.ofType('phase_resolved')[0]!.data.skipped).toBe(true);
+  });
+  /** 국면 1의 유형·공격측만 본다: 첫 굴림(판정) 직전에 멈춘다 */
+  const firstPhase = (input: Omit<BattleInput, 'battleId'>, draws: number[]) => {
+    const log = new EventLog();
+    const dice = scriptedDice([], draws);
+    const stop = new Error('stop');
+    try {
+      runBattle({ battleId: 'bt_test', ...input }, { draw: dice.draw, roll: () => { throw stop; } }, log, noReroll);
+    } catch (e) {
+      if (e !== stop) throw e;
+    }
+    return log.ofType('phase_started')[0]!.data;
+  };
+  it('7. 양측 모두 즉사 수단이 없으면 즉사/우연을 빼고 추첨한다: 개활지 0~89, 85 → 마술전', () => {
+    expect(firstPhase({ a: fighter('fc_a', SV.artoria, 'ai'), b: fighter('fc_e', SV.emiya, 'ai'), terrain: 'open' }, [85, 0])).toMatchObject({ phase_id: 'ph_sorcery' });
+    expect(() => firstPhase({ a: fighter('fc_a', SV.artoria, 'ai'), b: fighter('fc_e', SV.emiya, 'ai'), terrain: 'open' }, [95, 0])).toThrow(RangeError);
+  });
+  it('8. 쿠 훌린(즉사 수단) vs 알트리아, 개활지 95 → 즉사/우연, 공격측 쿠 훌린 (공격측 추첨 없음)', () => {
+    expect(firstPhase({ a: fighter('fc_a', SV.artoria, 'ai'), b: fighter('fc_c', SV.cu, 'ai'), terrain: 'open' }, [95])).toMatchObject({ phase_id: 'ph_fate', attacker: 'fc_c' });
   });
 });
 
@@ -339,13 +362,13 @@ describe('영주 명령 (D-101, combat.md §5.1)', () => {
 });
 
 describe('고정 보정 (dice.md §3.3)', () => {
-  it('호감도·정보 보정이 판정에 더해지고 내역이 남는다 (정보 2단계 = +1, D-147)', () => {
+  it('호감도·정보 보정이 판정에 더해지고 내역이 남는다 (정보 2단계 진명 = +0.5, D-159)', () => {
     const r = run(
       { a: fighter('fc_a', SV.artoria, 'ai', { intelLevel: 2, bonus: { affinity: 1 } }), b: fighter('fc_c', SV.cu, 'ai'), terrain: 'open' },
-      [2, 8, 2, 8, 2, 8], // 선제: 6 + 2 + 2 = 10 vs 7 + 8 = 15 → 쿠 훌린 승
+      [2, 8, 2, 8, 2, 8], // 선제: 6 + 2 + 1 + 0.5 = 9.5 vs 7 + 8 = 15 → 쿠 훌린 승
       [50, 0, 50, 0, NO, 50, 0], // 국면 2 뒤 알트리아는 위험에서 버틴다
     );
-    expect(r.log.ofType('phase_rolled')[0]!.data.rolls[0]).toMatchObject({ total: 10, parts: { affinity: 1, intel: 1 } });
+    expect(r.log.ofType('phase_rolled')[0]!.data.rolls[0]).toMatchObject({ total: 9.5, parts: { affinity: 1, intel: 0.5 } });
   });
   it('기습한 쪽은 국면 1에만 보정 +2 (D-109)', () => {
     const r = run(
@@ -400,7 +423,7 @@ describe('일방 보구를 막아 냄 (D-120)', () => {
 });
 
 describe('보구 공개 즉시 정보 보정 (D-137)', () => {
-  it.each(['a', 'b'] as const)('플레이어가 %s여도 공개한 국면부터 진명 보정(+2, D-147), 입력은 불변', (side) => {
+  it.each(['a', 'b'] as const)('플레이어가 %s여도 공개한 국면부터 진명(2단계) 보정 +0.5, 입력은 불변 (D-158)', (side) => {
     const player = fighter('fc_p', SV.artoria, 'player', { intelLevel: 1, mana: 0, seals: 0, fatePoints: 0 });
     const enemy = fighter('fc_e', SV.artoria, 'ai', { mana: 80 });
     const r = run(
@@ -412,12 +435,12 @@ describe('보구 공개 즉시 정보 보정 (D-137)', () => {
     const revealed = r.log.ofType('intel_gained');
     expect(revealed).toHaveLength(1);
     expect(revealed[0]!.seq).toBe(opened.seq + 1);
-    expect(revealed[0]!.data).toMatchObject({ target: 'fc_e', level_from: 1, level_to: 3, cause: 'np' });
+    expect(revealed[0]!.data).toMatchObject({ target: 'fc_e', level_from: 1, level_to: 2, cause: 'np' });
     for (const e of r.log.ofType('phase_rolled')) {
-      expect(e.data.rolls.find((x) => x.faction === 'fc_p')!.parts.intel).toBe(K['day.intel_mod'][3]);
+      expect(e.data.rolls.find((x) => x.faction === 'fc_p')!.parts.intel).toBe(K['day.intel_mod'][2]);
       expect(e.data.rolls.find((x) => x.faction === 'fc_e')!.parts.intel).toBeUndefined();
     }
-    expect(r.out[side].intelLevel).toBe(3);
+    expect(r.out[side].intelLevel).toBe(2);
     expect(player.intelLevel).toBe(1);
     expect(player.bonus).toEqual({ affinity: 0 });
   });
@@ -437,10 +460,10 @@ describe('약점 공략 (combat.md §4.1, D-148)', () => {
     expect(weaknessPhase(servant(SV.kojiro), servant(SV.heracles))).toBe('ph_initiative');
     expect(weaknessPhase(servant(SV.medea), servant(SV.artoria))).toBe('ph_sorcery');
   });
-  it('진명을 알면 전투당 1회 고를 수 있고, 그 국면은 추첨 없이 내가 공격측', () => {
+  it('약점(정보 3단계)을 알면 전투당 1회 고를 수 있고, 그 국면은 추첨 없이 내가 공격측', () => {
     const r = run(
       { a: fighter('fc_k', SV.kojiro, 'player', { intelLevel: 3, fatePoints: 0 }), b: fighter('fc_h', SV.heracles, 'ai'), terrain: 'urban' },
-      [6, 6, 6, 6, 6, 6], // 국면 1 선제 7.5+6+2 = 15.5 vs 13 → 헤라클레스 부상. 국면 2·3 정면에서 코지로가 밀린다
+      [6, 6, 6, 6, 6, 6], // 국면 1 선제 7.5+6+1 = 14.5 vs 13 → 헤라클레스 부상. 국면 2·3 정면에서 코지로가 밀린다
       [0, 0, 0, 0], // 국면 1은 추첨 없음. 국면 2·3: 정면, 공격측 a
       (p) => (p.kind === 'phase_command' ? (p.options.includes('weakness') ? 'weakness' : 'none') : p.kind === 'danger_decision' ? 'fight' : false),
     );
@@ -449,9 +472,9 @@ describe('약점 공략 (combat.md §4.1, D-148)', () => {
     expect(asks.slice(1).every((p) => p.kind === 'phase_command' && !p.options.includes('weakness'))).toBe(true);
     expect(r.log.ofType('weakness_used').map((e) => e.data)).toEqual([{ battle_id: 'bt_test', phase_index: 1, faction: 'fc_k', target: 'fc_h', phase_id: 'ph_initiative' }]);
     expect(r.log.ofType('phase_started')[0]!.data).toMatchObject({ phase_id: 'ph_initiative', attacker: 'fc_k' });
-    expect(r.totals[0]).toEqual([15.5, 13]);
+    expect(r.totals[0]).toEqual([14.5, 13]);
   });
-  it('진명을 모르거나 상대가 이번 국면에 보구를 열었으면 선택지에 없다', () => {
+  it('약점을 모르면(진명 2단계까지) 선택지에 없다 (D-158)', () => {
     const r = run(
       { a: fighter('fc_k', SV.kojiro, 'player', { intelLevel: 2, fatePoints: 0, seals: 0 }), b: fighter('fc_c', SV.cu, 'ai'), terrain: 'open' },
       [3, 3, 3, 3, 3, 3], [0, 0, 0, 0, 0, 0],
@@ -479,5 +502,40 @@ describe('적 AI 영주 퇴각 제한 (D-149)', () => {
     );
     expect(r.log.ofType('seal_used')[0]!.data.purpose).toBe('escape');
     expect(r.out.b.sealRetreats).toBe(K['ai.seal_retreat_max'] - 1);
+  });
+});
+
+describe('특공 (combat.md §4.2, D-162)', () => {
+  /** 국면 1 판정 기록만 본다: 양측 굴림(7, 7) 뒤 다음 굴림에서 멈춘다 */
+  const firstRoll = (input: Omit<BattleInput, 'battleId'>, draws: number[]) => {
+    const log = new EventLog();
+    const dice = scriptedDice([7, 7], draws);
+    const stop = new Error('stop');
+    try {
+      const more = (): never => { throw stop; };
+      // 국면 1이 끝나면 다음 국면의 추첨·굴림에서 멈춘다
+      runBattle({ battleId: 'bt_test', ...input }, { draw: (n) => (dice.remaining().draws ? dice.draw(n) : more()), roll: () => (dice.remaining().rolls ? dice.roll() : more()) }, log, noReroll);
+    } catch (e) {
+      if (e !== stop) throw e;
+    }
+    return log.ofType('phase_rolled')[0]!.data;
+  };
+  const siegfried = 'sv_0006_siegfried';
+  it('보구 특공: 지크프리트(발뭉, 용 특공)가 보구를 열고 상대 알트리아가 용 특성이면 +1', () => {
+    expect(servant(siegfried).noble_phantasm.special_attack).toContain(2002);
+    expect(servant(SV.artoria).traits).toContain(2002);
+    const r = firstRoll({ a: fighter('fc_s', siegfried, 'ai', { mana: 80 }), b: fighter('fc_a', SV.artoria, 'ai'), terrain: 'open' }, [0]);
+    expect(r.phase_id).toBe('ph_np_attack');
+    expect(r.rolls.find((x) => x.faction === 'fc_s')!.parts.special_attack).toBe(K['combat.special_attack_bonus']);
+    expect(r.rolls.find((x) => x.faction === 'fc_a')!.parts.special_attack).toBeUndefined();
+  });
+  it('상대가 특공 대상 특성이 없으면(에미야) 보정 없음', () => {
+    const r = firstRoll({ a: fighter('fc_s', siegfried, 'ai', { mana: 80 }), b: fighter('fc_e', SV.emiya, 'ai'), terrain: 'open' }, [0]);
+    expect(r.rolls.find((x) => x.faction === 'fc_s')!.parts.special_attack).toBeUndefined();
+  });
+  it('보구를 열지 않은 국면에서는 특공이 없다', () => {
+    const r = firstRoll({ a: fighter('fc_s', siegfried, 'ai'), b: fighter('fc_a', SV.artoria, 'ai'), terrain: 'open' }, [0, 0]);
+    expect(r.phase_id).toBe('ph_clash');
+    expect(r.rolls.find((x) => x.faction === 'fc_s')!.parts.special_attack).toBeUndefined();
   });
 });

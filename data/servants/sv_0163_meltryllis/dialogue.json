@@ -298,7 +298,7 @@
         "text": "쾌락의 얼터에고・멜트릴리스. 정말 싫긴 하지만 당신과 계약해 줄게. 영광으로 생각해야 해?",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

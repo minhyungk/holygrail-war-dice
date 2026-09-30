@@ -20,7 +20,10 @@
     "name_ko": "인간이여, 신을 붙들어 두자",
     "ruby_ko": "에누마 엘리시",
     "rank": "EX",
-    "type_ko": "대숙정보구"
+    "type_ko": "대숙정보구",
+    "special_attack": [
+      1172
+    ]
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_3008000.png",
@@ -28,5 +31,28 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/300800/300800b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    3,
+    101,
+    200,
+    302,
+    305,
+    405,
+    1000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2356,
+    2780,
+    2851,
+    2858,
+    5000,
+    300800
+  ],
+  "lore": {
+    "detail": "온화한 어조, 우아한 몸짓에서는 상상할 수 없을 만큼 가열한 전투 능력을 가진 “의지를 지닌 보구”. 영웅왕 길가메시와 함께 최강의 일각이라 불린 하늘과 땅을 잇는 사슬. 신들의 손으로 만들어진 인형이면서 자연과 조화, 일체화되는 대지의 분신이기도 하다.\n영웅왕의 유일한 벗으로서 많은 모험을 하고 마음을 얻은 후 인형으로서 흙으로 되돌아간 슬픈 병기."
+  },
+  "instant_death": false
 }

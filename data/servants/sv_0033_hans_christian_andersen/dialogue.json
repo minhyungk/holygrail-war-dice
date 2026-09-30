@@ -105,7 +105,7 @@
         "id": "fgo_ex_3",
         "text": "안데르센 SSR!",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -357,7 +357,7 @@
         "text": "삼류 서번트 안데르센이다. 책장 한쪽 구석에라도 던져놔 줘.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

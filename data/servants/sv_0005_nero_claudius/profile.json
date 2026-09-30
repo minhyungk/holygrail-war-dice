@@ -20,7 +20,8 @@
     "name_ko": "여자아이가 노래하는 꽃의 제정",
     "ruby_ko": "라우스 상트 클라우디우스",
     "rank": "B",
-    "type_ko": "대진보구"
+    "type_ko": "대진보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_1005000.png",
@@ -28,5 +29,30 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/100500/100500b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    2,
+    100,
+    202,
+    301,
+    303,
+    404,
+    1000,
+    2001,
+    2004,
+    2007,
+    2008,
+    2009,
+    2075,
+    2113,
+    2631,
+    2780,
+    2858,
+    5000,
+    100500
+  ],
+  "lore": {
+    "detail": "자칭 남장미인. 자기 지상주의에 제멋대로이지만 밝고 활달하며 아이같이 천진난만한 면 때문에 만인의 사랑을 받는 만능 막무가내 황제.\n본명은 네로 클라우디우스 카이사르 아우구스투스 게르마니쿠스.\n제정 로마의 제5대 황제. 평생이 모략과 독으로 얼룩진 악명 높은 폭군."
+  },
+  "instant_death": false
 }

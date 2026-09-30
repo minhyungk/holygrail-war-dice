@@ -101,7 +101,7 @@
               "loyal"
             ]
           },
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "내 이름은 암굴왕. 진명도 같다. 이미 에드몽 당테스의 이름은, 과거와 함께 버려졌다.",
         "weight": 2,
@@ -120,7 +120,7 @@
               "loyal"
             ]
           },
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "나는 암굴왕이다. 복수에 발버둥치고 후회와 개심 끝에 구원받았던 에드몽이 아니다. 나는 세상에 널리 알려진 ‘복수의 화신’, 어벤저다.",
         "weight": 2,

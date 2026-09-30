@@ -20,7 +20,8 @@
     "name_ko": "왕의 군세",
     "ruby_ko": "아이오니언 헤타이로이",
     "rank": "EX",
-    "type_ko": "대군보구"
+    "type_ko": "대군보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_4002000.png",
@@ -28,5 +29,30 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/400200/400200b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    103,
+    202,
+    302,
+    303,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2009,
+    2012,
+    2040,
+    2113,
+    2114,
+    2631,
+    2858,
+    5000,
+    400200
+  ],
+  "lore": {
+    "detail": "이스칸다르란 알렉산더 3세의 페르시아어 호칭으로, 쌍각왕(즈카르나인)이라는 별명으로도 알려졌다.\n동방 원정을 통해 이슬람 세계에 울려 퍼진 그 무용담은 수많은 영웅 전설로 파생되어 아시아에 전파되었다."
+  },
+  "instant_death": false
 }

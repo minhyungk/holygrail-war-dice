@@ -20,7 +20,8 @@
     "name_ko": "호랑이여, 눈부시게 불타올라라",
     "ruby_ko": "앙페 샤토 디프",
     "rank": "A+",
-    "type_ko": "대군보구"
+    "type_ko": "대군보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_11002000.png",
@@ -28,5 +29,24 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/1100200/1100200b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    110,
+    202,
+    301,
+    304,
+    405,
+    1000,
+    2001,
+    2008,
+    2631,
+    2780,
+    5000,
+    1100200
+  ],
+  "lore": {
+    "detail": "복수로 세계 최고의 지명도를 가진 인물. 통칭 ‘암굴왕’ 혹은 ‘몽테크리스토 백작’으로 알려져 있다. 악랄한 음모에 의한 누명으로 지옥 같은 이프 탑(샤토 디프)에 투옥되었다.\n그러나 강철 같은 정신력을 갖고서 절망하지 않고, 결국 몽테크리스토 섬에 숨겨진 보물을 얻고 파리로 돌아가──프랑스에 군림하는 수많은 유력자들, 즉 과거에 자신에게 누명을 씌웠던 이들을 지옥으로 끌어내렸다고 한다."
+  },
+  "instant_death": false
 }

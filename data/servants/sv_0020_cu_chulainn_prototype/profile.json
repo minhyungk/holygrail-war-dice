@@ -20,7 +20,8 @@
     "name_ko": "꿰뚫는 붉은 창",
     "ruby_ko": "게이 볼그",
     "rank": "B+",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_3007000.png",
@@ -28,5 +29,29 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/300700/300700b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    101,
+    200,
+    300,
+    305,
+    403,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2040,
+    2631,
+    2851,
+    2858,
+    5000,
+    300700
+  ],
+  "lore": {
+    "detail": "켈트, 얼스터 전설에 나오는 무쌍의 대영웅. 태양신 루의 피를 받은 “빛의 왕자”이며 별명은 쿨란의 사냥개. 같은 이름으로 소환되는 랜서와는 동일인물인 것 같지만── 육체와 정신은 ‘저쪽’보다 약간 젊다."
+  },
+  "instant_death": true
 }

@@ -127,7 +127,7 @@
               "loyal"
             ]
           },
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "상당한 배틀 스코어네요. 글러 먹은 마스터는 글러 먹은 마스터 나름 노력한다는 소리네요! 아직 BB짱의 이상에는 한참 모자랍니다만, 앞으로도 질리지 말고 발버둥 쳐주세요!",
         "weight": 2,
@@ -159,7 +159,7 @@
         "id": "fgo_bond_4",
         "when": {
           "self.affinity_tier": "loyal",
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "……하아. 오늘도 전투 후의 회복, 감사합니다. 그리고 달콤한 것을 양보해 주신 것도. 제가 단것을 좋아한다는 걸 누가 가르쳐줬나요? 네? 왠지 모르게 알았다? BB 검정 1급? 그, 그런가요. 삼류 마스터치고 괜찮은 관찰안이네요!",
         "weight": 2,
@@ -207,7 +207,7 @@
         "id": "fgo_win_1",
         "text": "이리하여, 그레이트 데빌 BB짱은 오늘도 귀여운 것이었습니다~☆",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

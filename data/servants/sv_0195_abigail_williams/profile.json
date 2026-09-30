@@ -20,7 +20,8 @@
     "name_ko": "빛의 껍질을 두른 허무의 나무",
     "ruby_ko": "클리포・라이좀",
     "rank": "EX",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_25001000.png",
@@ -28,5 +29,29 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/2500100/2500100b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    117,
+    201,
+    301,
+    304,
+    405,
+    1000,
+    1172,
+    2000,
+    2001,
+    2011,
+    2037,
+    2040,
+    2631,
+    2667,
+    2731,
+    5000,
+    2500100
+  ],
+  "lore": {
+    "detail": "그는 죄인일지어다, 일곱 밧줄의 매듭일지어다. 이단의 땅에서 속죄를 구하는 것은 악마의 수확일지어다.\n───무구한 소녀가 지목한 다음 희생자는 누구?"
+  },
+  "instant_death": false
 }

@@ -65,6 +65,10 @@ button:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--accent
 .sheet { display: flex; flex-direction: column; gap: 14px; }
 .sheet h3 { margin: 0; font-size: 24px; font-weight: 800; }
 .sheet .sub { color: var(--text-muted); font-size: 13px; margin-top: 4px; }
+/* 캐릭터 상세 (D-165) */
+.sheet .lore { border-top: 1px solid var(--line-soft); padding-top: 10px; font-size: 13px; line-height: 1.7; color: var(--text-primary); max-height: 11em; overflow-y: auto; }
+.sheet .lore small { display: block; font-size: 11px; letter-spacing: .2em; color: var(--text-muted); margin-bottom: 4px; }
+.sheet .lore p { margin: 0 0 .4em; word-break: keep-all; }
 .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line-soft); border: 1px solid var(--line-soft); border-radius: 6px; overflow: hidden; margin: 0; }
 .stats div { background: var(--bg-panel); padding: 8px 10px; display: flex; justify-content: space-between; align-items: baseline; }
 .stats dt { color: var(--text-muted); font-size: 12px; }
@@ -484,11 +488,11 @@ rt.in { opacity: .95; transform: none; }
 .fx-danger { position: absolute; inset: 0; box-shadow: inset 0 0 120px 30px rgba(192,57,43,.85); animation: danger-pulse 1.7s ease-out forwards; }
 @keyframes danger-pulse { 0% { opacity: 0; } 15% { opacity: 1; } 35% { opacity: .5; } 50% { opacity: 1; } 100% { opacity: 0; } }
 
-/* 소멸: 빛 입자가 흩어진다 */
-.fx-death-flare { position: absolute; left: 0; top: 0; width: 130px; height: 180px; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(ellipse, #fff9de 0%, #ffd764 22%, rgba(237,169,36,.65) 48%, transparent 72%); filter: blur(8px); mix-blend-mode: screen; animation: death-flare var(--death-duration) ease-out forwards; }
-.fx-death i { position: absolute; left: 0; top: 0; width: 7px; height: 7px; border-radius: 50%; background: #fff3b0; box-shadow: 0 0 10px 4px rgba(255,195,64,.9), 0 0 25px 8px rgba(235,155,23,.5); animation: dissolve var(--death-duration) ease-out forwards; animation-delay: var(--delay); }
-@keyframes death-flare { 0% { opacity: 0; transform: translate(-50%, -50%) scale(.25); } 18% { opacity: 1; } 55% { opacity: .9; transform: translate(-50%, -50%) scale(1.3); } 100% { opacity: 0; transform: translate(-50%, -80%) scale(2); } }
-@keyframes dissolve { 0% { transform: translate(0, 0) scale(.2); opacity: 0; } 15% { opacity: 1; } 100% { transform: translate(var(--dx), var(--dy)) scale(.25); opacity: 0; } }
+/* 소멸 (D-164): 금빛 광휘 → 사라지는 경계에서 입자가 피어오른다. 일러스트 자체는 .stand-art.dying */
+.fx-death-flare { position: absolute; left: 0; top: 0; width: 150px; height: 260px; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(ellipse, rgba(255,249,222,.9) 0%, rgba(255,215,100,.7) 25%, rgba(237,169,36,.35) 50%, transparent 72%); filter: blur(10px); mix-blend-mode: screen; animation: death-flare calc(var(--death-gild) * 2.2) ease-out forwards; }
+.fx-death i { position: absolute; left: 0; top: 0; width: 6px; height: 6px; border-radius: 50%; background: #fff3b0; box-shadow: 0 0 8px 3px rgba(255,195,64,.9), 0 0 20px 6px rgba(235,155,23,.45); opacity: 0; animation: ember-rise var(--p-dur) ease-out var(--delay) forwards; }
+@keyframes death-flare { 0% { opacity: 0; transform: translate(-50%, -50%) scale(.4); } 35% { opacity: 1; } 100% { opacity: 0; transform: translate(-50%, -50%) scale(1.5); } }
+@keyframes ember-rise { 0% { transform: translate(var(--x0), var(--y0)) scale(.3); opacity: 0; } 20% { opacity: 1; transform: translate(var(--x0), var(--y0)) scale(1); } 100% { transform: translate(calc(var(--x0) + var(--dx)), calc(var(--y0) - var(--rise))) scale(.2); opacity: 0; } }
 .fcard.lose.hit { filter: saturate(.6); }
 
 /* 결과 도장 */
@@ -527,6 +531,12 @@ rt.in { opacity: .95; transform: none; }
 .forecast .fc-bar i { position: absolute; inset: 0 auto 0 0; background: var(--accent); transition: width .6s ease; }
 .forecast.none .fc-bar { background: var(--bg-panel-2); }
 .bhead .forecast { margin-top: 4px; }
+/* 전투 빨리감기 (D-161) */
+.bhead { position: relative; }
+.ff-btn { position: absolute; right: 16px; top: 0; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--bg-panel); color: var(--text-muted); font: inherit; font-size: 12px; letter-spacing: .05em; cursor: pointer; z-index: 2; }
+.ff-btn:hover { color: var(--text-primary); border-color: var(--accent); }
+.ff-btn.on { color: var(--accent-ink); background: var(--accent); border-color: var(--accent); font-weight: 700; }
+@media (max-width: 767px) { .ff-btn { top: -30px; right: 12px; } }
 @media (max-width: 767px) { .bhead .forecast .fc-t { display: none; } .forecast .fc-bar { width: 84px; } }
 .choices .fc-box { display: flex; flex-direction: column; align-items: center; gap: 3px; background: rgba(11,14,24,.92); border: 1px solid var(--line); border-radius: 6px; padding: 6px 12px; }
 
@@ -580,6 +590,10 @@ rt.in { opacity: .95; transform: none; }
 .bcol.a .stand-art { left: -12%; } .bcol.c .stand-art { right: -12%; transform: scaleX(-1); }
 .stand-art.danger { filter: saturate(.4) sepia(.4) hue-rotate(-30deg) brightness(.8); animation: stand-in .9s ease-out both, stand-flicker 1.6s ease-in-out infinite; }
 .stand-art.dead { opacity: 0; filter: brightness(3) blur(6px); }
+/* 소멸 (D-164): 금빛으로 물든 뒤(gild) 아래에서 위로 사라진다. 마스크의 투명 구간이 발끝에서 머리로 올라간다 */
+.stand-art.dying { opacity: 1; -webkit-mask-image: linear-gradient(to top, transparent 0 44%, #000 56% 100%); mask-image: linear-gradient(to top, transparent 0 44%, #000 56% 100%); -webkit-mask-size: 100% 250%; mask-size: 100% 250%; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: 0 0%; mask-position: 0 0%; animation: death-gild var(--death-gild) ease-out forwards, death-vanish calc(var(--death-duration) - var(--death-gild)) ease-in var(--death-gild) forwards; }
+@keyframes death-gild { from { opacity: .3; filter: none; } to { opacity: .95; filter: sepia(1) saturate(4) hue-rotate(-12deg) brightness(1.35) drop-shadow(0 0 14px rgba(255,200,80,.9)); } }
+@keyframes death-vanish { from { -webkit-mask-position: 0 0%; mask-position: 0 0%; } to { -webkit-mask-position: 0 100%; mask-position: 0 100%; } }
 @keyframes stand-in { from { opacity: 0; translate: 0 12px; } }
 @keyframes stand-flicker { 50% { opacity: .18; } }
 
@@ -599,4 +613,5 @@ rt.in { opacity: .95; transform: none; }
 .fx-comeback b { position: relative; font-family: var(--crest); font-size: clamp(56px, 14vw, 130px); font-weight: 900; color: #fff6d6; text-shadow: 0 0 24px var(--miracle), 0 0 80px var(--danger); animation: miracle-word 3s cubic-bezier(.2,1.3,.3,1) forwards; }
 .fx-comeback small { position: relative; font-size: 14px; letter-spacing: .4em; color: var(--miracle); animation: fade-up .6s ease-out .5s both; }
 
+@media (prefers-reduced-motion: reduce) { .stand-art.dying { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .fx-np .np-art, .stand-art, .stand-art.danger, .s-battle.shake, .s-battle.shake-heavy, .fx-weak, .fx-comeback, .fx-comeback .rays { animation: none; } }

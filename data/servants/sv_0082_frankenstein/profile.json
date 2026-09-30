@@ -20,7 +20,8 @@
     "name_ko": "책형의 번개나무",
     "ruby_ko": "블래스티드 트리",
     "rank": "D~B+",
-    "type_ko": "대군보구"
+    "type_ko": "대군보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_7004000.png",
@@ -28,5 +29,27 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/700400/700400b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 class), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 class), 사용자 검수 전.",
+  "traits": [
+    2,
+    106,
+    201,
+    301,
+    305,
+    404,
+    1000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2631,
+    2781,
+    2858,
+    5000,
+    700400
+  ],
+  "lore": {
+    "detail": "빅터 프랑켄슈타인이 창조한 인공 생명체.\n아담과 한쌍을 이루는 이브로 만들어졌지만, 희로애락의 감정 표현이 제대로 되지 않아 실패작으로 판단되었다."
+  },
+  "instant_death": false
 }

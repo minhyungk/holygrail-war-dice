@@ -20,7 +20,8 @@
     "name_ko": "망상환상",
     "ruby_ko": "자바니아",
     "rank": "B++",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_6003000.png",
@@ -28,5 +29,24 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/600300/600300b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 class), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 class), 사용자 검수 전.",
+  "traits": [
+    2,
+    105,
+    202,
+    300,
+    304,
+    403,
+    1000,
+    2001,
+    2008,
+    2631,
+    2858,
+    5000,
+    600300
+  ],
+  "lore": {
+    "detail": "역대 산의 노인 하산 중 하나.\n너무나 다채로운 기능과 풍부한 지식, 그리고 누구도 동향을 예측할 수 없는 불가사의한 정신성 탓에 ‘백 개의 얼굴(백모)’이라며 두려움을 샀지만,\n그 실체는 현대에서 다중 인격이라 불리는 정신장애를 앓던 인물이었다."
+  },
+  "instant_death": false
 }

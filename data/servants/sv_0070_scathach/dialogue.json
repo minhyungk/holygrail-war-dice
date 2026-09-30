@@ -56,7 +56,7 @@
         "id": "fgo_ex_1",
         "text": "힘을 보여라! 바로 나, 스카사하에게!",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -371,7 +371,7 @@
         "text": "그림자 나라에서 찾아왔다. 스카사하다. 마스터, 라고 부르면 되겠나. 너를?",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

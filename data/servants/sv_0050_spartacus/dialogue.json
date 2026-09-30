@@ -277,7 +277,7 @@
         "text": "버서커, 스파르타쿠스. 만나자마자 미안하지만, 너는 압제자인가?",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

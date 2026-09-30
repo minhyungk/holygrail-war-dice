@@ -309,6 +309,15 @@ export function SummonReveal({ plan, session, chant, onStart }: { plan: RunPlan;
             <RubyText text={`‘${s.noble_phantasm.name_ko}(${s.noble_phantasm.ruby_ko})’`} /> {s.noble_phantasm.rank}
             <small>{s.noble_phantasm.type_ko}</small>
           </div>
+          {s.lore ? (
+            // 캐릭터 상세 (Atlas KR, S1 공개 정보, D-165)
+            <div className="lore stagger" style={{ animationDelay: '2.2s' }}>
+              <small>{T.summonLore}</small>
+              {s.lore.detail.split('\n').map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
+            </div>
+          ) : null}
           {lineDone || (!line && !omen) ? (
             <div className="summon-next stagger" style={{ animationDelay: '0.1s' }}>
               <button className="btn primary" onClick={onStart}>

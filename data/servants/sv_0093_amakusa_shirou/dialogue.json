@@ -361,7 +361,7 @@
         "text": "서번트, 룰러. 아마쿠사 시로 토키사다. 누구랑 닮았다고요? 잘못 본 겁니다.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

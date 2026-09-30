@@ -20,7 +20,8 @@
     "name_ko": "쌍완 영차집속",
     "ruby_ko": "트윈 암 빅 크런치",
     "rank": "EX",
-    "type_ko": "대군보구"
+    "type_ko": "대군보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_9002000.png",
@@ -28,5 +29,24 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/900200/900200b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    108,
+    202,
+    300,
+    303,
+    405,
+    1000,
+    2001,
+    2008,
+    2631,
+    2780,
+    5000,
+    900200
+  ],
+  "lore": {
+    "detail": "아마쿠사 시로 토키사다라는 소년은 (여러 낭인들의 가르침이 있었긴 하지만) 시마바라의 난의 지도자였음은 틀림없다.\n그러나 대체 어떻게 그를 찾아내었는지, 반평생의 대부분은 수수께끼에 싸여 있다."
+  },
+  "instant_death": false
 }

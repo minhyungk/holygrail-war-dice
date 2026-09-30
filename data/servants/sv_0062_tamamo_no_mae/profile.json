@@ -20,7 +20,8 @@
     "name_ko": "수천일광천조팔야진석",
     "ruby_ko": "수천일광천조팔야진석",
     "rank": "D",
-    "type_ko": "대군보구"
+    "type_ko": "대군보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_5003000.png",
@@ -28,5 +29,31 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/500300/500300b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    200,
+    302,
+    304,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2040,
+    2632,
+    2797,
+    2850,
+    2851,
+    2858,
+    5000,
+    500300
+  ],
+  "lore": {
+    "detail": "현모양처를 꿈꾸는 무녀 주술사. 헤이안 시대 말기, 도바 상황을 모신 절세미녀. 흰 얼굴에 금빛 털을 가진 구미호가 둔갑한 모습이라고도 전해진다.\n여러 가지 일로 마지막에는 궁정을 쫓겨나 나스노에서 인간들과 일대결전을 펼친 후 얌전히 퇴치되었다나 뭐라나."
+  },
+  "instant_death": false
 }

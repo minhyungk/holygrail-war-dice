@@ -73,7 +73,7 @@ describe('맵 (day-loop.md §10)', () => {
     expect(reachable('tl_r3c3', 3).has('tl_r2c5')).toBe(true);
     expect(reachable('tl_r3c3', 1).has('tl_r2c5')).toBe(false);
   });
-  it('3. 정보 단계 2 → 그 진영과의 판정 +1, 3단계 → +2, 클래스(1단계)는 보정 없음 (D-147)', () => expect(K['day.intel_mod']).toEqual([0, 0, 1, 2]));
+  it('3. 정보 단계 2(진명) → 그 진영과의 판정 +0.5, 3단계(약점) → +1, 얼굴(1단계)은 보정 없음 (D-158, D-159)', () => expect(K['day.intel_mod']).toEqual([0, 0, 0.5, 1]));
 });
 
 describe('호감도 (affinity.md §5)', () => {
@@ -132,7 +132,7 @@ describe('한 판 끝까지 (헤드리스)', () => {
           reveals += 1;
           expect(v.battle?.sides).toContain(v.player);
           expect(v.battle?.sides).toContain(e.data.target);
-          expect(e.data.level_to).toBe(3);
+          expect(e.data.level_to).toBe(2); // 보구 개방은 진명까지 (D-158)
         }
         if (e.type !== 'phase_rolled' || !v.battle?.sides.includes(v.player)) continue;
         const mine = e.data.rolls.find((x) => x.faction === v.player);

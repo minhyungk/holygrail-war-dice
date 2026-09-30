@@ -91,7 +91,7 @@
         "text": "연주는 좋아. 음악은 좋아한다. 그것들은, 진정으로 성스러운 것이다. 과거의 살리에리에게는……",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -130,7 +130,7 @@
               "loyal"
             ]
           },
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "네가 소환한 서번트는…… 아아, 살리에리가 아니다. 안토니오 살리에리는 죽었다. 죽은 그대로다. 착각하지 마.",
         "weight": 2,
@@ -150,7 +150,7 @@
               "loyal"
             ]
           },
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "살리에리는, 음악가로서 존경을 받고, 수많은 음악가와 그 자제를 제자로 삼았지만. 훗…… 평범한 인간이었던 거다.",
         "weight": 2,
@@ -169,7 +169,7 @@
               "loyal"
             ]
           },
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "녀석과 살리에리는 친구였다. 반목을 뛰어넘어, 둘은 확실한 우정을 맺었었다. 진짜로. 하지만…… 신에게 사랑받은 자와 평범한 인간이, 진짜 친구가 될 수 있었나…… 모르겠군. 나는 모르겠어.",
         "weight": 2,
@@ -183,7 +183,7 @@
         "id": "fgo_bond_4",
         "when": {
           "self.affinity_tier": "loyal",
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "‘모차르트는 살리에리에게 살해당했다.’ 사람들은 그렇게 다들 떠들었지. 사실이 아니야. 거짓이다. 헛소문이야. 역겹고도 천박한, 악의적인 중상 비방에 불과했다만…… 평범한 인간, 하나의 정신을 도려내기에는 충분할 정도로 날카로운 나이프이기는 했다. 아아…… 칼날이야. 이 몸이 휘두르는, 암흑의 칼날. 그 원형의 하나가 된 것이고말고.",
         "weight": 2,
@@ -197,7 +197,7 @@
         "id": "fgo_bond_5",
         "when": {
           "self.affinity_tier": "loyal",
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "나는 살리에리가 아니다. 나는…… 나는. 신이 사랑하는 아이를 죽이는 자다. 사람들이 떠들어댄 전설이 탄생시킨 무고의 괴물이며, 잿빛 남자이며, 살리에리의 자아의 단편이다. 즉, 즉…… 아아, 나는 누구인 거냐? 마스터여. 죽여야 할 자를 죽였을 때, 너는 나에게 어떻게 반응하겠나?",
         "weight": 2,
@@ -278,7 +278,7 @@
         "text": "나는, 죽음이다. 나는, 신에게 사랑받는 것을 죽여야만 한다. ……나의 이름은 살리에리. 아니. 아니다. 나는, 나는 누구냐…………───",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

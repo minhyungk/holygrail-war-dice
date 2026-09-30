@@ -20,7 +20,8 @@
     "name_ko": "불사르는 불꽃의 우리",
     "ruby_ko": "위커 맨",
     "rank": "B+",
-    "type_ko": "대군보구"
+    "type_ko": "대군보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_5021000.png",
@@ -28,5 +29,30 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/502100/502100b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    104,
+    200,
+    300,
+    305,
+    403,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2012,
+    2037,
+    2040,
+    2631,
+    2851,
+    2858,
+    5000,
+    502100
+  ],
+  "lore": {
+    "detail": "켈트, 얼스터 전설의 용사. 붉은 가지 기사단의 일원이자 얼스터 최강의 전사이며 이계의 맹주 스카사하에게 전수받은 마창을 구사한 영웅임과 동시에 스승에게 물려받은 북유럽의 마술──룬을 다루기도 했다고 한다."
+  },
+  "instant_death": false
 }

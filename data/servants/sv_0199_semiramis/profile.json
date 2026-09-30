@@ -20,7 +20,8 @@
     "name_ko": "허영의 공중정원",
     "ruby_ko": "행잉 가든즈 오브 바빌론",
     "rank": "EX",
-    "type_ko": "대계보구"
+    "type_ko": "대계보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_6032000.png",
@@ -28,5 +29,29 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/603200/603200b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    105,
+    201,
+    300,
+    304,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2040,
+    2113,
+    2631,
+    2858,
+    5000,
+    603200
+  ],
+  "lore": {
+    "detail": "세계에서 가장 오래된 독살자이며 아시리아 제국의 여제. 남편인 니노스 왕을 독살하면서 일약 이름을 떨쳤다.\n또, 세계의 7대 불가사의 중 하나인 ‘바빌론의 공중정원’을 건설한 것으로 한때 소문이 돌기도 했다. (실제로 건설한 것은 네부카드네자르 2세)"
+  },
+  "instant_death": false
 }

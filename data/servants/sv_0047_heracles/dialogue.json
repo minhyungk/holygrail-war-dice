@@ -44,7 +44,7 @@
         "speaker": "narrator",
         "when": {
           "enemy.servant": "sv_0002_artoria",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "{servant}{이/가} 성검의 빛에 반응하여 전신의 근육이 팽창한다.",
         "source": "legacy",
@@ -65,7 +65,7 @@
         "speaker": "narrator",
         "when": {
           "enemy.servant": "sv_0017_cu_chulainn",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "{servant}{이/가} 마창의 저주를 감지하고 더욱 포효한다.",
         "source": "legacy",
@@ -106,7 +106,7 @@
         "speaker": "narrator",
         "when": {
           "enemy.servant": "sv_0023_medusa",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "{servant}{이/가} 고르곤의 마기에 반응하여 전투 자세를 취한다.",
         "source": "legacy",
@@ -227,7 +227,7 @@
         "text": "무너질 법한 상처에도, 거인은 다시 일어선다. 그 몸에 새겨진 시련은, 이 정도로 끝나지 않는다.",
         "id": "base_01",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "notes": "\"시련\"이 정체를 암시하므로 화자 정보 3단계 조건"
       },

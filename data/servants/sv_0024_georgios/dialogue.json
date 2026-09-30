@@ -354,7 +354,7 @@
         "text": "라이더, 게오르기우스. 소환에 응해 찾아왔습니다. 자, 분발하지요.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

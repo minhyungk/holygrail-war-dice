@@ -20,7 +20,8 @@
     "name_ko": "변재천오현비파",
     "ruby_ko": "사라스바티 멜트아웃",
     "rank": "EX",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_10002000.png",
@@ -28,5 +29,31 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/1000200/1000200b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    109,
+    201,
+    300,
+    303,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2009,
+    2011,
+    2037,
+    2040,
+    2781,
+    2835,
+    2850,
+    2925,
+    5000,
+    1000200
+  ],
+  "lore": {
+    "detail": "쾌락의 얼터에고. BB에게서 만들어진 얼터에고 중 한 명. 무엇이든 녹이는 독의 꿀, 닿은 것을 찢어버리는 강철의 다리, 그리고 인정사정없는 가학성으로 가득 찬 성격의 초공격형 얼터에고. BB가 만들어낸 얼터에고 중에서도 톱 클래스의 종합성능을 가졌으며, 드레인 기능에서는 BB마저 웃돈다. 그렇기에 BB에 대한 경의가 부족하고 다른 에고들을 깔본다. 자신이 완성된 개체라고 자각하기 때문에 자존심이 대단히 강하다.\n“난 스스로 생각해도 너무하다 싶을 정도로 가학체질이야. 싫어하는 상대를 철저하게 걷어차 쓰러뜨리다니, 솔직히, 정말 참을 수 없어.”\n그야말로 물의 여왕이라고 할 몸이지만, 육체는 어느 에고보다도 가냘프고 연약한 소녀의 모습이다."
+  },
+  "instant_death": false
 }

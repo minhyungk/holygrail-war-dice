@@ -410,7 +410,7 @@
         "text": "원탁의 기사, 탄식의 트리스탄. 소환 명령에 따라 찾아왔습니다. 부디 제가 도움이 되기를 기도하겠습니다. 명령을, 마스터.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

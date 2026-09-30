@@ -113,7 +113,7 @@
               "loyal"
             ]
           },
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "나는 아이리스필. 풀네임은 아이리스필 폰 아인츠베른. 성배의 의사, 라고 할 수는 없지만……",
         "weight": 2,
@@ -250,7 +250,7 @@
         "text": "나는 성배에서 나오는 자. 성배의 단말과도 같은 자. 일시적인 형태. 일시적인 서번트. 이름은, 아이리스필이라 불러줘.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

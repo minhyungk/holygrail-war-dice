@@ -20,7 +20,8 @@
     "name_ko": "망상심음",
     "ruby_ko": "자바니아",
     "rank": "C+",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_6002000.png",
@@ -28,5 +29,25 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/600200/600200b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    105,
+    202,
+    300,
+    304,
+    402,
+    1000,
+    2001,
+    2008,
+    2631,
+    2858,
+    2883,
+    5000,
+    600200
+  ],
+  "lore": {
+    "detail": "하얀 해골의 암살자. 중동에 기원을 둔 암살교단의 우두머리. 별명 ‘산의 노인’, 어쌔신의 어원이 된 니자르파의 전설적 두목, 그중 하나. 산의 노인은 역대 19명이었다고 하며, 저마다 특별한 기술을 수양한 달인이었다고 한다."
+  },
+  "instant_death": true
 }

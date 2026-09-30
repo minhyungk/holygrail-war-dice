@@ -94,7 +94,7 @@
           "world.day": {
             "gte": 3
           },
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "성배란 죄 많은 것이로구나. 당찮게도 짐을 유혹하다니. 전능한 신조차 공포에 떨게 만드는 이 오지만디아스를.",
         "weight": 2,
@@ -240,7 +240,7 @@
         "id": "fgo_down_2",
         "text": "이…… 오지만디아스인 짐을…… 쓰러트린…… 건가……?",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -253,7 +253,7 @@
         "text": "나의 이름은 오지만디아스. 왕 중의 왕. 전능한 신이여, 나의 위업을 보라── 그리고 절망하라!",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

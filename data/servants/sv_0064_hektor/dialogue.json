@@ -333,7 +333,7 @@
         "text": "여어! 이 아저씨는 랜서, 진명은 헥토르. 들어본 적 있어? 없다고? 뭐, 잘 부탁해.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

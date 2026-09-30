@@ -368,7 +368,7 @@
         "text": "……애증의 얼터에고, 패션립, 입니다…… 저기…… 상처 입혔다면, 죄송해요……",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

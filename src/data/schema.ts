@@ -5,7 +5,7 @@ export const SERVANT_ID = /^sv_\d{4}_[a-z0-9_]+$/; // D-066
 export const MASTER_ID = /^ms_[a-z0-9_]+$/;
 export const FACT_NAMESPACES = ['event', 'self', 'enemy', 'world', 'battle', 'beat', 'scene', 'mem', 'pair'] as const;
 // narrative-engine.md §7.1
-export const PLACEHOLDERS = ['master', 'servant', 'enemy', 'enemy_master', 'place', 'day', 'np', 'actor', 'target', 'winner', 'loser', 'servant_class', 'skill'] as const;
+export const PLACEHOLDERS = ['master', 'servant', 'enemy', 'enemy_master', 'place', 'day', 'np', 'actor', 'target', 'winner', 'loser', 'servant_class', 'skill', 'weakness'] as const;
 export const JOSA = ['이/가', '은/는', '을/를', '와/과', '으로/로'] as const;
 
 const factKey = z.string().refine((k) => (FACT_NAMESPACES as readonly string[]).includes(k.split('.')[0]!), {
@@ -88,7 +88,14 @@ export const ServantProfile = z
     temperament: z.string(),
     /** 성격 반응표의 서번트별 예외 (D-143 오버라이드, D-150) */
     reaction_overrides: z.object(Object.fromEntries(REACTIONS.map((r) => [r, z.number()])) as Record<Reaction, z.ZodNumber>).partial().strict().optional(),
-    noble_phantasm: z.object({ name_ko: z.string(), ruby_ko: z.string(), rank: z.string(), type_ko: z.string() }).strict(),
+    /** special_attack: 보구 특공 대상 Atlas 특성 id (D-162) */
+    noble_phantasm: z.object({ name_ko: z.string(), ruby_ko: z.string(), rank: z.string(), type_ko: z.string(), special_attack: z.array(z.number().int()) }).strict(),
+    /** Atlas 서번트 특성 id (특공 판정, D-162) */
+    traits: z.array(z.number().int()),
+    /** FGO 보구·스킬에 즉사 효과가 있다: 즉사/우연 국면 발생 조건 (D-163) */
+    instant_death: z.boolean(),
+    /** detail: Atlas KR 캐릭터 상세 (소환 화면, 범용 약점 문구). weakness: 약점 문구 오버라이드 (D-158, D-165) */
+    lore: z.object({ detail: z.string().min(1), weakness: z.string().min(1).optional() }).strict().optional(),
     /** Atlas 이미지 (Q-134): face = 맵 아이콘, summon = 기본 재림 전신, final = 최종 재림 전신 */
     images: z.object({ face: z.string().url(), summon: z.string().url(), final: z.string().url() }).strict(),
     sprite_id: z.string().nullable(),
@@ -178,6 +185,8 @@ const SkillWhenBase = z
     would_fall: z.literal(true).optional(),
     /** 상대 서번트의 클래스 (D-156: 대마력은 캐스터 상대로) */
     foe_class: z.array(z.string()).min(1).optional(),
+    /** 상대 서번트가 이 Atlas 특성 중 하나를 가짐 (스킬 특공, D-162) */
+    foe_trait: z.array(z.number().int()).min(1).optional(),
   })
   .strict();
 /** any_of: 나머지 조건을 모두 만족하고, 그중 하나 이상의 묶음을 만족하면 발동 (D-156) */

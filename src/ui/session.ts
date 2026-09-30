@@ -1,5 +1,6 @@
 // 화면과 엔진 사이. 판 준비(데이터 로딩)와 진행(제너레이터에 답 보내기), 이벤트 → 화면 항목 변환.
 // 규칙 계산은 하지 않는다 (06-repo-structure.md §2).
+import { INTEL } from '../engine/intel';
 import { PHASES, TILES } from '../data/constants';
 import { availableMasterIds, availableServantIds, loadClassDialogue, loadMasterProfiles, loadNarrationCommon, loadRunDialogue, loadServantProfiles, loadServantSkills } from '../data/load';
 import type { ServantProfile } from '../data/schema';
@@ -137,20 +138,20 @@ export function displayName(v: RunView, data: RunData, fc: string, labels: { unk
   const f = v.factions[fc];
   if (!f) return fc;
   const sv = data.servants[f.servant_id]!;
-  const lv = fc === v.player ? 3 : (v.intel[fc] ?? 0);
-  if (lv === 0) return labels.unknown;
-  if (lv < 3) return labels.cls[sv.class] ?? sv.class;
+  const lv = fc === v.player ? INTEL.weakness : (v.intel[fc] ?? 0);
+  if (lv === INTEL.none) return labels.unknown;
+  if (lv < INTEL.name) return labels.cls[sv.class] ?? sv.class;
   return sv.name_ko;
 }
 
 /**
- * 스킬 이름표 (D-142). 적 스킬은 진명(정보 3단계)을 알기 전엔 이름을 가린다: 스킬 이름이 정체를 드러내기 때문
+ * 스킬 이름표 (D-142). 적 스킬은 진명(정보 2단계, D-158)을 알기 전엔 이름을 가린다: 스킬 이름이 정체를 드러내기 때문
  * 내 스킬이거나 진명을 알면 "카리스마 B", 아니면 null
  */
 export function skillLabel(v: RunView, data: RunData, fc: string, skillId: string): string | null {
   const f = v.factions[fc];
   if (!f) return null;
-  if (fc !== v.player && (v.intel[fc] ?? 0) < 3) return null;
+  if (fc !== v.player && (v.intel[fc] ?? 0) < INTEL.name) return null;
   const sk = data.skills[f.servant_id]?.skills.find((x) => x.skill_id === skillId);
   if (!sk) return null;
   return sk.rank && sk.rank !== '-' ? `${sk.name_ko} ${sk.rank}` : sk.name_ko;

@@ -20,7 +20,8 @@
     "name_ko": "군신오병",
     "ruby_ko": "갓 포스",
     "rank": "A",
-    "type_ko": "대인, 대군, 대성보구"
+    "type_ko": "대인, 대군, 대성보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_7003000.png",
@@ -28,5 +29,25 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/700300/700300b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    106,
+    202,
+    301,
+    304,
+    403,
+    1000,
+    2001,
+    2008,
+    2631,
+    2781,
+    2858,
+    5000,
+    700300
+  ],
+  "lore": {
+    "detail": "삼국지연의에 나오는 배신의 장수. 두 번이나 양아버지를 베고 몇 번이나 배신을 거듭하는 등 유교도덕이 중시되는 중국에서 믿기지 않는 짓을 저질렀다.\n하지만 무공과 무훈은 타의 추종을 불허해 삼국지 세계에서 최강으로 손꼽힌다."
+  },
+  "instant_death": false
 }

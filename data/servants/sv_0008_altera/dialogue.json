@@ -150,7 +150,7 @@
               "loyal"
             ]
           },
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "알테라다. 아틸라라고…… 부르지 말아줬으면 한다. 그다지…… 좋아하는 이름이 아니다. 발음이 귀엽지…… 않으, 니까……",
         "weight": 2,
@@ -250,7 +250,7 @@
         "text": "나의 이름은 알테라. ──훈족의 후예인 군신의 전사다.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

@@ -20,7 +20,8 @@
     "name_ko": "무명 삼단 찌르기",
     "ruby_ko": "무명 삼단 찌르기",
     "rank": "-",
-    "type_ko": "대인마검"
+    "type_ko": "대인마검",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_1027000.png",
@@ -28,5 +29,30 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/102700/102700b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    100,
+    202,
+    302,
+    305,
+    405,
+    1000,
+    2001,
+    2007,
+    2008,
+    2009,
+    2075,
+    2631,
+    2780,
+    2839,
+    2858,
+    5000,
+    10009,
+    102700
+  ],
+  "lore": {
+    "detail": "막부 말기 교토를 중심으로 활약한 치안조직, 신선조의 1번대 대장 오키타 소지. 검객 집단으로도 두려움을 샀던 신선조에서 최강의 천재 검객으로 칭송받았던 이가 오키타 소지다."
+  },
+  "instant_death": false
 }

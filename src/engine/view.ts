@@ -1,6 +1,7 @@
 // 이벤트 로그 → 현재 상태 (읽기 전용 보기). 화면과 서술 엔진이 쓴다.
 // 이벤트를 하나씩 재생하므로, 화면은 텍스트 출력 속도에 맞춰 상태를 갱신할 수 있다.
 import type { AnyEvent, Condition, TimeOfDay } from './events';
+import { INTEL } from './intel';
 
 export interface FactionView {
   id: string;
@@ -98,8 +99,8 @@ export function applyEvent(prev: RunView, e: AnyEvent): RunView {
       break;
     case 'np_opened':
       f(e.data.faction).mana = e.data.mana_after;
-      // 영창부터 진명을 쓸 수 있도록 즉시 공개한다. 바로 뒤의 intel_gained가 같은 단계를 기록한다 (D-137)
-      if (v.battle?.sides.includes(v.player) && e.data.faction !== v.player) v.intel[e.data.faction] = 3;
+      // 영창부터 진명을 쓸 수 있도록 즉시 진명까지 공개한다. 바로 뒤의 intel_gained가 같은 단계를 기록한다 (D-137, D-158)
+      if (v.battle?.sides.includes(v.player) && e.data.faction !== v.player) v.intel[e.data.faction] = Math.max(v.intel[e.data.faction] ?? 0, INTEL.name);
       break;
     case 'seal_used':
       f(e.data.faction).seals = e.data.seals_left;

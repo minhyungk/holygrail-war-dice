@@ -347,7 +347,7 @@
         "text": "서번트, 랜서. 스파르타의 왕 레오니다스, 여기에 등장!",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

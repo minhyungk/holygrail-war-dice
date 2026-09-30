@@ -20,7 +20,10 @@
     "name_ko": "죽음이 두 사람을 갈라놓을 때까지",
     "ruby_ko": "브륀힐드 로맨시아",
     "rank": "B+",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": [
+      2012
+    ]
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_3012000.png",
@@ -28,5 +31,32 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/301200/301200b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    2,
+    101,
+    200,
+    302,
+    303,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2009,
+    2011,
+    2037,
+    2040,
+    2797,
+    2837,
+    2847,
+    2851,
+    2858,
+    5000,
+    301200
+  ],
+  "lore": {
+    "detail": "북유럽의 주신 오딘의 딸, 전쟁의 여신 발키리 중 하나. 북유럽 신화의 비극의 여인.\n“볼숭 일족의 사가”의 등장인물인 대영웅 시구르드의 운명의 상대 시구르드리바와 동일시되는 여전사로, 옛 에다 “시구르드리바의 노래”, “브륀힐드의 명부로의 여행” 에서도 마찬가지로 시구르드와 사랑에 빠지는 발키리로 나온다."
+  },
+  "instant_death": false
 }

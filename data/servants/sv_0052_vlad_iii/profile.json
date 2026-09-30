@@ -20,7 +20,8 @@
     "name_ko": "악마 같은 피투성이 왕",
     "ruby_ko": "카지클 베이",
     "rank": "B+",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_7007000.png",
@@ -28,5 +29,29 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/700700/700700b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    106,
+    201,
+    301,
+    304,
+    405,
+    1000,
+    2001,
+    2008,
+    2011,
+    2012,
+    2037,
+    2113,
+    2631,
+    2849,
+    2858,
+    5000,
+    700700
+  ],
+  "lore": {
+    "detail": "블라드 3세는 루마니아의 왕이자 영웅. 본래는 랜서로 소환되지만 이번 성배전쟁에서는 버서커로 소환. 흡혈귀의 힘을 사정없이 휘두르는 재앙의 화신."
+  },
+  "instant_death": false
 }

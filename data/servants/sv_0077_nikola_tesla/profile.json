@@ -20,7 +20,10 @@
     "name_ko": "인류신화 뇌전강림",
     "ruby_ko": "시스템 케라우노스",
     "rank": "EX",
-    "type_ko": "대성보구"
+    "type_ko": "대성보구",
+    "special_attack": [
+      2011
+    ]
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_2011000.png",
@@ -28,5 +31,24 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/201100/201100b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    102,
+    203,
+    301,
+    303,
+    405,
+    1000,
+    2001,
+    2012,
+    2631,
+    2858,
+    5000,
+    201100
+  ],
+  "lore": {
+    "detail": "전자기를 제압한 19~20세기의 천재 과학자. 별까지도 쪼개겠다고 선언한 당당한 천재.\n수많은 신화에서 신(자연)의 전설로 일컬어지는 뇌전의 힘을 해명하고, 인류 문명에 ‘전기’를 가져다 준 위대한 석학 중 한 사람."
+  },
+  "instant_death": false
 }

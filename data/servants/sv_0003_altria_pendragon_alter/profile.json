@@ -20,7 +20,8 @@
     "name_ko": "약속된 승리의 검",
     "ruby_ko": "엑스칼리버 모르간",
     "rank": "A++",
-    "type_ko": "대성보구"
+    "type_ko": "대성보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_1002000.png",
@@ -28,5 +29,32 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/100200/100200b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    100,
+    202,
+    300,
+    304,
+    404,
+    1000,
+    2001,
+    2002,
+    2007,
+    2008,
+    2010,
+    2075,
+    2113,
+    2631,
+    2780,
+    2795,
+    2858,
+    2883,
+    5000,
+    100200
+  ],
+  "lore": {
+    "detail": "성배의 저주에 침식되어 철저히 비정해진 기사왕의 측면. 어쩌면 아서 왕이 추구했던 “이상적인 왕”이란 이런 것이었을지도 모른다.\n알트리아는 자신의 힘을 절제했지만, 이 상태의 그녀는 주저 없이 강력한 마력을 휘두른다."
+  },
+  "instant_death": false
 }

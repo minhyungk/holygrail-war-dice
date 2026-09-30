@@ -20,7 +20,8 @@
     "name_ko": "울부짖으라, 나의 분노",
     "ruby_ko": "라 그롱드망 뒤 엔",
     "rank": "EX",
-    "type_ko": "대군보구"
+    "type_ko": "대군보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_11003000.png",
@@ -28,5 +29,25 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/1100300/1100300b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    2,
+    110,
+    202,
+    301,
+    304,
+    405,
+    1000,
+    2001,
+    2007,
+    2008,
+    2631,
+    2780,
+    5000,
+    1100300
+  ],
+  "lore": {
+    "detail": "───신이 정말로 계신다면 나에게는 반드시 천벌이 내리겠지요───"
+  },
+  "instant_death": false
 }

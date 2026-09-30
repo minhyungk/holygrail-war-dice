@@ -261,7 +261,7 @@
         "id": "fgo_start_1",
         "text": "우시와카마루라고 기억해라.",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -378,7 +378,7 @@
         "text": "우시와카마루, 찾아뵙습니다. 무사로서 성심성의를 다하겠습니다.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

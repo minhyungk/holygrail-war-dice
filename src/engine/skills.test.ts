@@ -1,8 +1,9 @@
 // 스킬 자동 발동 (skills.md §9, D-142). 효과량은 constants skill.* [임시값]을 그대로 읽는다.
 import { describe, expect, it } from 'vitest';
 import { K, SKILLS } from '../data/constants';
-import { runData, scriptedDice, servant, servantIds, SV } from '../testkit';
+import { HASSAN, runData, scriptedDice, servant, servantIds, SV } from '../testkit';
 import { type BattleDice, createFighter, type Fighter, type Policy, runBattle } from './combat';
+import { whenOk } from './skills';
 import { EventLog } from './events';
 
 const data = runData();
@@ -11,9 +12,9 @@ const fighter = (faction: string, id: string, o: Partial<Fighter> = {}) =>
 const policy: Policy = (p) => (p.kind === 'phase_command' ? 'none' : p.kind === 'danger_decision' ? 'fight' : false);
 const TIES = [7, 7, 7, 7, 7, 7];
 /** 개활지 추첨값: 정면 0~49, 선제 50~69, 마술전 70~89, 즉사 90~99. 공격측 0 = a */
-const DRAW = { clash: 0, sorcery: 75, fate: 95 };
+const DRAW = { clash: 0, initiative: 55, sorcery: 75, fate: 95 };
 
-/** 앞부분만 정해 둔 주사위. 이후 굴림은 7, 추첨은 n-1 (확률 판정은 일어나지 않고, 지형 추첨은 즉사/우연) */
+/** 앞부분만 정해 둔 주사위. 이후 굴림은 7, 추첨은 n-1 (확률 판정은 일어나지 않고, 지형 추첨은 마지막 후보: 즉사 수단이 있으면 즉사/우연, 없으면 마술전) */
 function looseDice(rolls: number[], draws: number[]): BattleDice {
   const s = scriptedDice(rolls, draws);
   return {
@@ -59,17 +60,20 @@ describe('판정 보정 (hk_battle_phase_roll)', () => {
     expect(r.skills.some((s) => s.skill_id === 'sk_magic_resistance')).toBe(false);
   });
 
-  it('마안 A+: 즉사/우연에서 공격측 메두사가 방어측 판정을 깎는다 (foe:)', () => {
-    const r = fight(fighter('fc_m', SV.medusa), fighter('fc_a', SV.artoria), TIES, [DRAW.fate, 0, DRAW.clash, 0, DRAW.clash, 0]);
-    const roll = r.log.ofType('phase_rolled')[0]!.data.rolls[0]!;
-    expect(roll.faction).toBe('fc_a');
+  it('마안 A+: 선제/회피에서 공격측 메두사가 방어측 판정을 깎는다 (foe:, D-163)', () => {
+    const r = fight(fighter('fc_m', SV.medusa), fighter('fc_a', SV.artoria), TIES, [DRAW.initiative, 0, DRAW.clash, 0, DRAW.clash, 0]);
+    expect(r.log.ofType('phase_started')[0]!.data).toMatchObject({ phase_id: 'ph_initiative', attacker: 'fc_m' });
+    const roll = r.log.ofType('phase_rolled')[0]!.data.rolls.find((x) => x.faction === 'fc_a')!;
     expect(roll.parts['foe:sk_mystic_eyes']).toBe(-K['skill.rank_amount'].major.A);
     expect(r.skills[0]).toMatchObject({ faction: 'fc_m', skill_id: 'sk_mystic_eyes', target: 'fc_a', effect: 'roll_mod' });
   });
 
-  it('굴리지 않는 쪽의 보정은 발동하지 않는다: 즉사/우연에서 공격측의 카리스마', () => {
-    const r = fight(fighter('fc_a', SV.artoria), fighter('fc_c', SV.cu), TIES, [DRAW.fate, 0, DRAW.clash, 0, DRAW.clash, 0]);
-    expect(r.skills.filter((s) => s.phase_index === 1 && s.faction === 'fc_a')).toHaveLength(0);
+  it('굴리지 않는 쪽의 보정은 발동하지 않는다: 즉사/우연에서 공격측 하산의 투척/회수 (R11)', () => {
+    // 하산·쿠 훌린 모두 즉사 수단이 있어 공격측을 추첨한다 (0 = a = 하산)
+    const r = fight(fighter('fc_h', HASSAN), fighter('fc_c', SV.cu), TIES, [DRAW.fate, 0, DRAW.clash, 0, DRAW.clash, 0]);
+    expect(r.log.ofType('phase_started')[0]!.data).toMatchObject({ phase_id: 'ph_fate', attacker: 'fc_h' });
+    expect(SKILLS.sk_throw_retrieve).toMatchObject({ when: { phase: ['ph_fate'] } });
+    expect(r.skills.filter((s) => s.phase_index === 1 && s.faction === 'fc_h')).toHaveLength(0);
   });
 
   it('단독행동: 음수 호감도 보정을 무시한다', () => {
@@ -116,5 +120,16 @@ describe('상태 변화 (hk_battle_condition_change)', () => {
     expect(blood).toMatchObject({ faction: 'fc_m', amount: K['skill.fixed_amount'].sk_blood_temple, mana_after: K['skill.fixed_amount'].sk_blood_temple });
     const changed = r.log.ofType('condition_changed')[0]!;
     expect(changed.seq).toBeLessThan(r.log.ofType('skill_triggered').find((e) => e.data.skill_id === 'sk_blood_temple')!.seq);
+  });
+});
+
+describe('스킬 특공 foe_trait (D-162)', () => {
+  const ctx = (foeTraits: number[]) => ({ phaseIndex: 1, selfCondition: 'full' as const, leyline: false, foeClass: 'saber', foeTraits, phase: 'ph_clash' as const });
+  it('상대가 그 특성 중 하나를 가지면 발동, 없으면 발동하지 않는다', () => {
+    expect(whenOk({ phase: ['ph_clash'], foe_trait: [2000] }, ctx([1, 2000]))).toBe(true);
+    expect(whenOk({ phase: ['ph_clash'], foe_trait: [2000] }, ctx([1, 2001]))).toBe(false);
+  });
+  it('자동 배정: 신성 특공 스킬(천하포무)은 foe_trait 2000(divine)', () => {
+    expect(SKILLS.sk_unifying_the_nation_by_force).toMatchObject({ when: { foe_trait: [2000] } });
   });
 });

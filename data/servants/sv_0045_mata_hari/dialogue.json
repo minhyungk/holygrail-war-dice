@@ -249,7 +249,7 @@
         "text": "서번트, 어쌔신. 통칭 마타 하리야. 잘 부탁해!",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

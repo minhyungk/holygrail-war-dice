@@ -368,7 +368,7 @@
         "text": "어쌔신, 잭 더 리퍼. 잘 부탁해, 엄마.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

@@ -20,7 +20,10 @@
     "name_ko": "천지를 괴리시키는 개벽의 별",
     "ruby_ko": "에누마 엘리시",
     "rank": "EX",
-    "type_ko": "대계보구"
+    "type_ko": "대계보구",
+    "special_attack": [
+      2008
+    ]
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_2002000.png",
@@ -28,5 +31,31 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/200200/200200b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    102,
+    200,
+    301,
+    303,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2040,
+    2113,
+    2631,
+    2851,
+    2858,
+    2883,
+    5000,
+    200200
+  ],
+  "lore": {
+    "detail": "기원전, 수메르의 도시국가 우루크를 다스리던 반신반인인 왕.\n전설뿐만 아니라 실존한 것으로 여겨지는 인류상 가장 오래된 서사시 “길가메시 서사시”에 기록된 왕."
+  },
+  "instant_death": false
 }

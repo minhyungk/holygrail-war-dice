@@ -291,7 +291,7 @@
         "text": "안녕하세요! 나는 애비게일─── 애비게일 윌리엄스. 내가 포…… 리너…… 고, 당신이 마스터…… 인가요? 괜찮다면 애비라고 불러주세요. 금방 친구가 될 수 있을 거라고 생각해요.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

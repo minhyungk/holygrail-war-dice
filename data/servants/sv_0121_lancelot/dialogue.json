@@ -317,7 +317,7 @@
         "id": "fgo_start_4",
         "text": "랜슬롯, 여기 있노라! 간다!",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -385,7 +385,7 @@
         "text": "서번트, 세이버. 랜슬롯, 찾아뵈었습니다. 잠시 동안이긴 하지만, 제 검을 마스터에게 바치겠습니다.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

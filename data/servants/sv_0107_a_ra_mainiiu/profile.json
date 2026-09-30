@@ -20,7 +20,8 @@
     "name_ko": "거짓을 베끼는 만상",
     "ruby_ko": "베르그 아베스타",
     "rank": "C-",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_11001000.png",
@@ -28,5 +29,23 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/1100100/1100100b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    110,
+    202,
+    301,
+    304,
+    400,
+    1000,
+    2001,
+    2008,
+    2631,
+    5000,
+    1100100
+  ],
+  "lore": {
+    "detail": "인류 최초의 선악이원론이라고 일컬어지는 배화교. 그 배화교에 전해지는 악마왕의 이름이 붙은 서번트. 그가 진짜 앙리 마유인지는 소환자가 판단할 수밖에 없다. 살인에 특화된 영령이지만, 그 이상의 일은 할 수 없다. 초인들이 싸우는 자리인 성배전쟁에서는 아무런 도움도 되지 않는, 명실공히 최약의 서번트."
+  },
+  "instant_death": false
 }

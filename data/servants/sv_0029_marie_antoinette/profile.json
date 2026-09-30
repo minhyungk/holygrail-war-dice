@@ -20,7 +20,8 @@
     "name_ko": "백합의 왕관에 영광이 있으라",
     "ruby_ko": "기요틴 브레이커",
     "rank": "A+",
-    "type_ko": "대군보구"
+    "type_ko": "대군보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_4017000.png",
@@ -28,5 +29,25 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/401700/401700b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    2,
+    103,
+    202,
+    300,
+    303,
+    404,
+    1000,
+    2001,
+    2008,
+    2009,
+    2631,
+    2858,
+    5000,
+    401700
+  ],
+  "lore": {
+    "detail": "합스부르크 가문의 계보에 속한 프랑스 왕비. 18세기 루이 16세의 왕비. 덧없는 귀부인. 유럽 세계의 ‘고귀함에 의한 지배’를 상징하는 존재. 왕권의 절대성이 사라져가는 시대의 격류, 세계의 변화 앞에서 목숨을 잃었다."
+  },
+  "instant_death": false
 }

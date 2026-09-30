@@ -191,7 +191,7 @@
         "id": "fgo_start_1",
         "text": "피오나 기사단 선봉장, 디어뮈드, 간다!",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -252,7 +252,7 @@
         "text": "피오나 기사단 선봉장, 디어뮈드 오 디나. 찾아뵙습니다. 앞으로 당신을 모시는 서번트가 되겠습니다.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

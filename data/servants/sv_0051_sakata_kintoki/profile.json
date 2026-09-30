@@ -20,7 +20,8 @@
     "name_ko": "황금충격",
     "ruby_ko": "골든 스파크",
     "rank": "C",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_7006000.png",
@@ -28,5 +29,30 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/700600/700600b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    106,
+    202,
+    300,
+    303,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2012,
+    2040,
+    2631,
+    2735,
+    2780,
+    2810,
+    2858,
+    5000,
+    700600
+  ],
+  "lore": {
+    "detail": "헤이안 시대 최강의 신비살해자 미나모토노 라이코 사천왕 중 한 명. 어릴 적 이름인 ‘킨타로’가 지니는 일본에서의 지명도는 모모타로에 버금간다.\n망나니이며 방약무인, 위험한 남자지만──실은 정이 두텁고 정의롭다. 말버릇은 ‘골드’, ‘골든’. 좋아하는 개는 골든 리트리버."
+  },
+  "instant_death": false
 }

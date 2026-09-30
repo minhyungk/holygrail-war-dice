@@ -20,7 +20,10 @@
     "name_ko": "천갈일사",
     "ruby_ko": "안타레스・스나이프",
     "rank": "A+",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": [
+      201
+    ]
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_2030000.png",
@@ -28,5 +31,31 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/203000/203000b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    102,
+    200,
+    300,
+    303,
+    404,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2040,
+    2114,
+    2466,
+    2797,
+    2851,
+    2858,
+    5000,
+    203000
+  ],
+  "lore": {
+    "detail": "그리스 신화에 등장하는 대현자. 다양한 지식에 정통하며, 그 온화한 성격과 뛰어난 교수법 덕에 그리스에서 그의 가르침을 받은 영웅은 다 셀 수 없을 정도이다.\n헤라클레스, 아킬레우스, 이아손, 아스클레피오스, 카스트로…… 연대는 다르지만, 모두 케이론의 문하생이다."
+  },
+  "instant_death": false
 }

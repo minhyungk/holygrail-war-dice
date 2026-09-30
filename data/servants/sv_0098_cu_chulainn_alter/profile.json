@@ -20,7 +20,8 @@
     "name_ko": "씹어 으깨는 죽음의 송곳니 짐승",
     "ruby_ko": "쿠루드 코인헨 ",
     "rank": "A+",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_7020000.png",
@@ -28,5 +29,30 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/702000/702000b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    106,
+    201,
+    301,
+    304,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2012,
+    2037,
+    2040,
+    2631,
+    2780,
+    2858,
+    5000,
+    702000
+  ],
+  "lore": {
+    "detail": "켈트, 얼스터 전설의 용사. 붉은 가지 기사단의 일원으로 얼스터 최강의 전사이며, 이계 ‘그림자 나라’의 맹주 스카사하에게 전수받은 무적의 마창술을 구사하며 용맹을 떨쳤다.\n통상과는 달리 버서커로 현계하였다. 어떠한 요인으로 전신의 장비가 변하고 성격도 반전. 표정은 냉혹, 보구인 마창도 검붉은 색으로 변하여, 흉흉한 기운을 내뿜고 있다."
+  },
+  "instant_death": false
 }

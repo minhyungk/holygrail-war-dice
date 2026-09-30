@@ -20,7 +20,8 @@
     "name_ko": "선혈마양",
     "ruby_ko": "바토리 에르제베트",
     "rank": "E+",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_3005000.png",
@@ -28,5 +29,25 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/300500/300500b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    101,
+    202,
+    301,
+    304,
+    404,
+    1000,
+    2001,
+    2002,
+    2008,
+    2631,
+    2858,
+    5000,
+    300500
+  ],
+  "lore": {
+    "detail": "흡혈귀 카밀라의 모델이 된 피의 백작부인. ……이지만 서번트로 소환된 것은 그녀가 아직 죄를 짓기 전인 14살의 모습이었다. 아이돌을 자칭하는 스위트 계열의 서번트.\n고귀, 고압적, 잔인, 무자비 등 전설에 나오는 대로 비인도적인 모습을 보인다."
+  },
+  "instant_death": false
 }

@@ -163,7 +163,7 @@
         "id": "fgo_bond_4",
         "when": {
           "self.affinity_tier": "loyal",
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "나는…… 남자도, 여자도 될 수 있어. 그것이 나, 슈발리에 데옹 드 보몽이다.",
         "weight": 2,
@@ -250,7 +250,7 @@
         "text": "나는 슈발리에 데옹. 프랑스 왕가와 너를 지키는── 흰 백합의 기사!",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

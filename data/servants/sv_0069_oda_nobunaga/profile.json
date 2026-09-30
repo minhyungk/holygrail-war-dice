@@ -20,7 +20,10 @@
     "name_ko": "삼천세계",
     "ruby_ko": "삼단 사격",
     "rank": "E~A",
-    "type_ko": "대군보구"
+    "type_ko": "대군보구",
+    "special_attack": [
+      2009
+    ]
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_2024000.png",
@@ -28,5 +31,26 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/202400/202400b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    102,
+    202,
+    300,
+    305,
+    404,
+    1000,
+    2001,
+    2008,
+    2113,
+    2631,
+    2721,
+    2858,
+    5000,
+    202400
+  ],
+  "lore": {
+    "detail": "전국시대의 풍운아, 오다 노부나가.\n유소년기에는 ‘오와리의 얼간이’라 불렸지만 오케하자마에서 이마가와 요시모토를 격파하고 천하에 이름을 떨친다.\n그 후 차례로 강적들을 격파해 천하통일을 눈앞에 두지만 아케치 미츠히데의 배신으로 혼노지에서 죽음을 맞았다."
+  },
+  "instant_death": false
 }

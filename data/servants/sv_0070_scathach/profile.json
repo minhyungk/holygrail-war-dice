@@ -20,7 +20,8 @@
     "name_ko": "꿰뚫는 죽음의 투창",
     "ruby_ko": "게이 볼그 얼터너티브",
     "rank": "B+",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_3013000.png",
@@ -28,5 +29,26 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/301300/301300b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    2,
+    101,
+    203,
+    302,
+    303,
+    405,
+    1000,
+    2001,
+    2008,
+    2113,
+    2631,
+    2780,
+    2858,
+    5000,
+    301300
+  ],
+  "lore": {
+    "detail": "켈트 얼스터 전설의 전사이자 여왕. 이경이자 마경인 ‘그림자 나라’의 여왕이자 문지기로, 창술과 룬 마술의 천재이다.\n수많은 망령이 넘쳐나는 ‘그림자 나라’의 문을 닫고 지배하기에 충분한 절대적인 힘을 지니고 있다.\n후에 얼스터의 영웅이 되는 젊은 쿠 훌린의 스승으로 그를 이끌고 기술을 전부 전수했으며 애용하는 마창까지 줬다고 한다. 그의 아들 콘라도 가르쳐 이끌었다."
+  },
+  "instant_death": true
 }

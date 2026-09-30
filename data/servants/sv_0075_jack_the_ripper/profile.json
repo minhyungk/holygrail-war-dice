@@ -20,7 +20,8 @@
     "name_ko": "해체성모",
     "ruby_ko": "마리아 더 리퍼",
     "rank": "D+",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_6005000.png",
@@ -28,5 +29,27 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/600500/600500b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    2,
+    105,
+    201,
+    301,
+    304,
+    405,
+    1000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2631,
+    2667,
+    2858,
+    5000,
+    600500
+  ],
+  "lore": {
+    "detail": "전 세계에 그 이름을 떨친 연쇄 살인마.\n일본에서는 그대로 ‘난도질 잭’이라 부르는 경우가 많다. 다섯 명의 여자를 살해했고, 스코틀랜드 야드의 필사적인 수사에도 불구하고 잡히지 않은 채 사라졌다."
+  },
+  "instant_death": false
 }

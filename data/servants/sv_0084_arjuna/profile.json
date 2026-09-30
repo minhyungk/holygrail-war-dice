@@ -20,7 +20,8 @@
     "name_ko": "파괴신의 손짓",
     "ruby_ko": "파슈파타",
     "rank": "A+",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_2015000.png",
@@ -28,5 +29,30 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/201500/201500b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    102,
+    200,
+    300,
+    305,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2040,
+    2631,
+    2780,
+    2851,
+    2858,
+    5000,
+    201500
+  ],
+  "lore": {
+    "detail": "인도 고대 서사시 ‘마하바라타’의 대영웅.\n마하바라타는 인도의 모든 영웅이 집결하는 찬란한 이야기인데 아르주나는 그 중심에 위치하는 존재라 해도 과언이 아니다."
+  },
+  "instant_death": true
 }

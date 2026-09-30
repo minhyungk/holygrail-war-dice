@@ -20,7 +20,8 @@
     "name_ko": "앤 여왕의 복수",
     "ruby_ko": "퀸 앤즈 리벤지",
     "rank": "C+++",
-    "type_ko": "대군보구"
+    "type_ko": "대군보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_4008000.png",
@@ -28,5 +29,25 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/400800/400800b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    103,
+    202,
+    301,
+    304,
+    402,
+    1000,
+    2001,
+    2008,
+    2631,
+    2780,
+    2858,
+    5000,
+    400800
+  ],
+  "lore": {
+    "detail": "아마도 세계에서 가장 유명한 대해적이자, 해적의 이미지를 결정지은 대악당. 카리브 해를 지배하에 두고 술과 여자, 폭력에 빠졌으며, 막대한 보물을 손에 넣었다."
+  },
+  "instant_death": false
 }

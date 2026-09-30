@@ -319,7 +319,7 @@
         "text": "두려워 마라, 계약자여. 산의 노인, 소환에 응하여 모습을 드러냈다. 나에게 이름은 없다. 부르기 편한 이름으로 부르도록 하여라.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

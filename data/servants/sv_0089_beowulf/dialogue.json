@@ -249,7 +249,7 @@
         "text": "서번트, 버서커. 진명, 베오울프. 그럼 싸우러 가자고, 마스터. ……어이어이, 쫄지 마.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

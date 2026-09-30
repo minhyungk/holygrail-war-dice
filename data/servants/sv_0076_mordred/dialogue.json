@@ -205,7 +205,7 @@
         "id": "fgo_start_1",
         "text": "도망쳐도 상관없어. 상대는 바로 나, 모드레드니까!",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -273,7 +273,7 @@
         "text": "세이버, 모드레드가 납셨다. 아바마마는 계신가?",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

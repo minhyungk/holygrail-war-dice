@@ -538,6 +538,15 @@
         "text": "도시에 흩어진 흔적을 좇는다. 마력의 잔향, 부자연스러운 결계, 사람들의 소문."
       }
     ],
+    "intel_weakness": [
+      {
+        "id": "lore",
+        "slot": "react",
+        "text": "{weakness}",
+        "source": "fgo",
+        "notes": "약점(정보 3단계) 공개: 대상 서번트의 약점 문구를 그대로 읽는다. {weakness} = profile.lore.weakness, 없으면 Atlas KR 캐릭터 상세 (D-158)"
+      }
+    ],
     "battle_start": [
       {
         "id": "place_open",
@@ -601,7 +610,7 @@
         "slot": "lead",
         "text": "{enemy}. 이름도 전설도 이미 드러난 상대. ──그렇기에 더욱, 방심은 허락되지 않는다.",
         "when": {
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         }
       },
       {
@@ -693,7 +702,7 @@
       {
         "id": "np_attack",
         "slot": "lead",
-        "text": "한쪽만이 전설을 꺼내 들었다. ──막아 낼 것인가, 삼켜질 것인가.",
+        "text": "한쪽만이 보구를 꺼내 들었다. ──막아 낼 것인가, 삼켜질 것인가.",
         "when": {
           "event.phase_id": "ph_np_attack"
         }
@@ -928,9 +937,10 @@
         "slot": "react",
         "text": "그 이름이 불린 순간, 모든 것이 드러났다. ──진명, {actor}.",
         "when": {
-          "beat.actor_side": "enemy"
+          "beat.actor_side": "enemy",
+          "event.revealed": true
         },
-        "notes": "보구 개방 = 정체 공개 (D-067)"
+        "notes": "보구 개방 = 정체 공개 (D-067). 이 개방으로 처음 드러날 때만 (D-165)"
       },
       {
         "id": "self",

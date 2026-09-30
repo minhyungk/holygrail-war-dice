@@ -4,6 +4,7 @@
 import { K } from '../data/constants';
 import type { BeatsFile, DialogueFile, LabelsFile, Line, MasterProfile, ServantProfile, ServantSkillsFile, SlotDef, Tile } from '../data/schema';
 import type { AnyEvent, GameEvent } from '../engine/events';
+import { INTEL } from '../engine/intel';
 import { createRng, deriveSeed, type Rng } from '../engine/rng';
 import { distance } from '../engine/map';
 import { applyEvent, emptyView, type RunView } from '../engine/view';
@@ -222,7 +223,7 @@ export class Narrator {
         if (e.data.cause === 'np') return null; // 보구 비트가 공개를 서술한다. 전투 장면은 유지한다.
         if (e.data.cause === 'encounter') return null; // 조우 비트가 상대를 소개한다 (D-147)
         ctx.enemy = e.data.target;
-        ctx.event = { result: e.data.result, intel_level: e.data.result === 'success' ? e.data.level_to : null, cause: e.data.cause };
+        ctx.event = { result: e.data.result, intel_level: e.data.result === 'success' ? e.data.level_to : null, cause: e.data.cause, has_weakness: !!this.weaknessOf(e.data.target) };
         break;
       case 'encounter': {
         if (!e.data.factions.includes(P)) return null;
@@ -281,9 +282,9 @@ export class Narrator {
         ctx.event = { phase_id: e.data.phase_id };
         break;
       case 'skill_triggered': {
-        // 스킬 해설 (D-153): 전투마다 스킬별 첫 발동만 해설한다. 적 스킬은 진명(정보 3단계) 전엔 이름·스킬 ID를 가린다
+        // 스킬 해설 (D-153): 전투마다 스킬별 첫 발동만 해설한다. 적 스킬은 진명(정보 2단계, D-158) 전엔 이름·스킬 ID를 가린다
         if (this.playerBattle !== e.data.battle_id) return null;
-        const known = e.data.faction === P || (this.view.intel[e.data.faction] ?? 0) >= 3;
+        const known = e.data.faction === P || (this.view.intel[e.data.faction] ?? 0) >= INTEL.name;
         // 가려진 스킬은 이름이 없으니 진영당 한 번만 해설한다
         const key = `${e.data.faction}|${known ? e.data.skill_id : '?'}`;
         const first = !this.skillsTold.has(key);
@@ -309,8 +310,12 @@ export class Narrator {
         ctx.actor = e.data.faction;
         ctx.names.actor = e.data.faction;
         ctx.beat = { actor_side: e.data.faction === P ? 'self' : 'enemy' };
-        // 같은 국면에 상대가 먼저 열었으면 맞선 개방 (D-113)
-        ctx.event = { seal: e.data.seal, counter: this.npPhase === `${e.data.battle_id}/${e.data.phase_index}` };
+        // 같은 국면에 상대가 먼저 열었으면 맞선 개방 (D-113). revealed: 이 개방으로 처음 진명이 드러났다 (D-165)
+        ctx.event = {
+          seal: e.data.seal,
+          counter: this.npPhase === `${e.data.battle_id}/${e.data.phase_index}`,
+          revealed: e.data.faction !== P && (before.intel[e.data.faction] ?? 0) < INTEL.name,
+        };
         this.npPhase = `${e.data.battle_id}/${e.data.phase_index}`;
         break;
       case 'phase_resolved': {
@@ -515,7 +520,7 @@ export class Narrator {
     const v = this.view;
     const s = v.factions[selfFc];
     const o = enemyFc ? v.factions[enemyFc] : undefined;
-    const known = (fc: string | null | undefined) => (!fc ? null : fc === P ? 3 : (v.intel[fc] ?? 0));
+    const known = (fc: string | null | undefined) => (!fc ? null : fc === P ? INTEL.weakness : (v.intel[fc] ?? 0));
     const tileId = v.battle?.tile ?? this.battleTile ?? v.factions[P]?.tile;
     const t = tileId ? this.tileById.get(tileId) : undefined;
     const f: Facts = {
@@ -593,13 +598,20 @@ export class Narrator {
     const f = v.factions[fc];
     if (!f) return '';
     const sv = this.data.servants[f.servant_id]!;
-    const level = fc === v.player ? 3 : (v.intel[fc] ?? 0);
-    if (level === 0) return this.data.labels.unknown_servant;
-    if (level < 3) return this.data.labels.class_name[sv.class] ?? sv.class;
+    const level = fc === v.player ? INTEL.weakness : (v.intel[fc] ?? 0);
+    if (level === INTEL.none) return this.data.labels.unknown_servant;
+    if (level < INTEL.name) return this.data.labels.class_name[sv.class] ?? sv.class;
     // 한 비트 안에서 두 번째부터 이름 축약 (Q-156 ③)
     const name = mentioned.has(fc) && sv.name_short_ko ? sv.name_short_ko : sv.name_ko;
     mentioned.add(fc);
     return name;
+  }
+
+  /** 약점 문구 (D-158): 개별 오버라이드, 없으면 Atlas 캐릭터 상세 */
+  private weaknessOf(fc: string): string {
+    const f = this.view.factions[fc];
+    const lore = f ? this.data.servants[f.servant_id]?.lore : undefined;
+    return lore?.weakness ?? lore?.detail ?? '';
   }
 
   private toLine(slot: Slot, c: Candidate, faction: string | null, refs: Record<string, string | null>, mentioned: Set<string>): BeatLine {
@@ -632,6 +644,8 @@ export class Narrator {
           return String(v.day);
         case 'skill':
           return this.skillName;
+        case 'weakness':
+          return refs.enemy ? this.weaknessOf(refs.enemy) : '';
         case 'np': {
           const f = refs.servant ? v.factions[refs.servant] : null;
           const np = f ? this.data.servants[f.servant_id]?.noble_phantasm : null;

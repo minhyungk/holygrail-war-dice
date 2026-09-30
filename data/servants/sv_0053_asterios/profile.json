@@ -20,7 +20,8 @@
     "name_ko": "만고불역의 미궁",
     "ruby_ko": "케이오스 라비린토스",
     "rank": "EX",
-    "type_ko": "미궁보구"
+    "type_ko": "미궁보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_7009000.png",
@@ -28,5 +29,29 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/700900/700900b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    106,
+    201,
+    301,
+    304,
+    401,
+    1000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2114,
+    2632,
+    2666,
+    2667,
+    2858,
+    5000,
+    700900
+  ],
+  "lore": {
+    "detail": "아스테리오스──벼락불이라는 이름이 주어진 이 괴물(영웅)이 그 이름으로 불리는 일은 거의 없었다.\n세상에 널리 퍼진 그의 별명은 미노스 왕의 소를 뜻하는 미노타우로스이다."
+  },
+  "instant_death": false
 }

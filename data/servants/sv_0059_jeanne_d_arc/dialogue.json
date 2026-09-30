@@ -452,7 +452,7 @@
         "text": "서번트 룰러. 잔 다르크. 만날 수 있어서, 정말 다행이에요!",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

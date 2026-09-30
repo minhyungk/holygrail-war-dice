@@ -20,7 +20,8 @@
     "name_ko": "기원의 활",
     "ruby_ko": "유 바우",
     "rank": "D",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_2003000.png",
@@ -28,5 +29,27 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/200300/200300b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    102,
+    202,
+    302,
+    303,
+    403,
+    1000,
+    2001,
+    2008,
+    2012,
+    2631,
+    2780,
+    2810,
+    2858,
+    5000,
+    200300
+  ],
+  "lore": {
+    "detail": "얼굴도 없고 이름도 없는 의적. 본인도 말하다시피 이 청년은 로빈 후드에 해당하는 수많은 “누군가” 중 한 명에 불과하다.\n전설의 근간은 셔우드 숲에 숨은 의적에 있다. 오리지널 로빈 후드는 실지왕, 폭군 존에게 저항했지만, 커클리스 수도원에서 수도원장의 음모 때문에 과다 출혈로 사망한 것으로 전해진다."
+  },
+  "instant_death": false
 }

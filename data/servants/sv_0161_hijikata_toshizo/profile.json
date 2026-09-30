@@ -20,7 +20,8 @@
     "name_ko": "불멸의 진심",
     "ruby_ko": "신선조",
     "rank": "C++",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_7025000.png",
@@ -28,5 +29,27 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/702500/702500b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    106,
+    202,
+    300,
+    304,
+    405,
+    1000,
+    2001,
+    2008,
+    2631,
+    2780,
+    2839,
+    2858,
+    5000,
+    10009,
+    702500
+  ],
+  "lore": {
+    "detail": "막부 말기의 교토를 중심으로 활동한 치안조직, 신선조의 부장, 히지카타 토시조. 엄격한 내부 규율을 세우고, 검호가 즐비한 부대원들에게 귀신 같은 부장이라며 두려움을 샀다. 싸움에서는 악귀처럼 사나운 면과 전술가로서의 이성적인 면을 겸비했다는 희귀한 타입의 버서커."
+  },
+  "instant_death": false
 }

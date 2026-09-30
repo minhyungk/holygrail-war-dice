@@ -20,7 +20,8 @@
     "name_ko": "죽음이 두 사람을 갈라놓을지라도",
     "ruby_ko": "브륀힐드 로맨시아",
     "rank": "C+",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_10001000.png",
@@ -28,5 +29,31 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/1000100/1000100b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    109,
+    201,
+    300,
+    305,
+    404,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2040,
+    2780,
+    2781,
+    2835,
+    2850,
+    2925,
+    5000,
+    1000100
+  ],
+  "lore": {
+    "detail": "BB에게서 만들어진 얼터에고 중 한 명. 애증의 얼터에고.\n지나치게 큰 가슴과 흉악한 손톱이 특징적인 소녀. 싸움을 좋아하지는 않지만, 스킬 ‘피학체질’ 때문에 주위의 공격을 받게 되어 어쩔 수 없이 반격하고 있다. 얼터에고 중에서도 손꼽히는 파워 캐릭터. 상대를 감싸고, 비틀어 뜯어내서, 가슴 속에 넣고 독점하는 맹목적인 구애의 화신……\n이었으나, 어떤 만남을 통해 일방적인 구애는 좋지 않다며 마음을 고쳐먹고, 자신의 몸이 가진 여러 흉기가 주위에 해를 미치지 않도록 조심하는, 소극적이지만 마음 착한 AI로 성장했다."
+  },
+  "instant_death": false
 }

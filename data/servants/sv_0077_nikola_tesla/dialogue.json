@@ -123,7 +123,7 @@
         "id": "fgo_skill_3",
         "text": "테슬라 코일이다!",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -233,7 +233,7 @@
         "id": "fgo_start_2",
         "text": "니콜라 테슬라, 여기 왔다.",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -313,7 +313,7 @@
         "text": "나는 니콜라 테슬라. 천재다.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

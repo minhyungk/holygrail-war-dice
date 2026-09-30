@@ -56,7 +56,7 @@
         "id": "fgo_ex_2",
         "text": "음기집결, 타마모 원한탄!",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -245,7 +245,7 @@
         "id": "fgo_down_2",
         "text": "아파~ 타마모는 집에 돌아갈래요…",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

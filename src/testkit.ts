@@ -19,6 +19,8 @@ export const SV = {
   kojiro: 'sv_0039_kojiro',
   heracles: 'sv_0047_heracles',
 } as const;
+/** 시작 7기 밖의 예시용 서번트 (즉사 수단 보유, D-163) */
+export const HASSAN = 'sv_0040_hassan_of_the_cursed_arm';
 
 /** 자연값을 주사위 눈으로 나눈다 (예: 2d6에서 7 → [6, 1]) */
 export function splitNatural(n: number): number[] {

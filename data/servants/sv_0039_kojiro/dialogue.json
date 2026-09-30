@@ -38,7 +38,7 @@
         "id": "legacy_vs_artoria_01",
         "when": {
           "enemy.servant": "sv_0002_artoria",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "오오... 이것은 훌륭한 검기. 성검의 주인이여, 그리운 감각이군.",
         "source": "legacy",
@@ -48,7 +48,7 @@
         "id": "legacy_vs_artoria_02",
         "when": {
           "enemy.servant": "sv_0002_artoria",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "기사왕인가. 서양의 검은 직선적이지만... 그 빛은 아름답군.",
         "source": "legacy",
@@ -58,7 +58,7 @@
         "id": "legacy_vs_cu_01",
         "when": {
           "enemy.servant": "sv_0017_cu_chulainn",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "창사(槍士)여. 그 마창의 궤도, 흥미롭군. 나의 검으로 꺾을 수 있을지...",
         "source": "legacy",
@@ -68,7 +68,7 @@
         "id": "legacy_vs_cu_02",
         "when": {
           "enemy.servant": "sv_0017_cu_chulainn",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "쿠 훌린... 켈트 최강의 전사인가.",
         "source": "legacy",
@@ -114,7 +114,7 @@
         "id": "legacy_vs_medea_02",
         "when": {
           "enemy.servant": "sv_0031_medea",
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "...일찍이 문지기로 불렸던 인연인가. 이번에는 단순히 검사로서 맞서마.",
         "source": "legacy",
@@ -124,7 +124,7 @@
         "id": "legacy_vs_heracles_01",
         "when": {
           "enemy.servant": "sv_0047_heracles",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "대영웅이여... 이 검으로 그 거구를 벨 수 있을지. 하지만 검사로서 물러서지 않겠다.",
         "source": "legacy",
@@ -275,7 +275,7 @@
         "id": "level3",
         "when": {
           "event.result": "success",
-          "event.intel_level": 3
+          "event.intel_level": 2
         },
         "text": "{enemy}── 이름을 알고 나니, 그 검의 내력도 보이는구려."
       },

@@ -236,7 +236,7 @@
         "text": "서번트, 제갈공명이다. ……뭐, 다른 사람 아니냐고? 그 말대로 엘멜로이 2세다. 하지만, 힘은 계승하고 있다. 문제는 없어.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

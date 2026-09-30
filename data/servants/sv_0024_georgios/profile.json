@@ -20,7 +20,8 @@
     "name_ko": "힘을 타파하는 축복의 검",
     "ruby_ko": "아스칼론",
     "rank": "B",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_4006000.png",
@@ -28,5 +29,27 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/400600/400600b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    103,
+    202,
+    300,
+    303,
+    402,
+    1000,
+    2001,
+    2003,
+    2008,
+    2009,
+    2012,
+    2631,
+    2858,
+    5000,
+    400600
+  ],
+  "lore": {
+    "detail": "성 게오르기우스 또는 성 조지로 이름 높은 성인. 성검 아스칼론을 들고 드래곤을 퇴치한 일화가 유명하다. 상대의 공격을 딱 한 번 무효화하는 베이어드라는 말을 탄다."
+  },
+  "instant_death": false
 }

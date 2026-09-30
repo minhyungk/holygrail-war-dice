@@ -249,7 +249,7 @@
         "text": "캐스터, 셰익스피어! 여기에 찾아뵈었습니다. 자아, 이야기를 시작하지 않으시겠습니까!",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

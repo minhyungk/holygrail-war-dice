@@ -249,7 +249,7 @@
         "text": "부름을 받아 찾아오게 되었습니다. 불초 질 드 레. 이제부터 곁에서 모시도록 하겠습니다.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

@@ -150,7 +150,7 @@
               "loyal"
             ]
           },
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "나는 대충 만능이다. 그렇게 나는 되어 있고, 그렇게 사람들에게 빌어진 것이기도 해. 그러니까, 응? 다 빈치짱에게 불가능은 거의 없어. 마술을 행사하는 것도 말야.",
         "weight": 2,
@@ -192,7 +192,7 @@
         "id": "fgo_start_1",
         "text": "다 빈치짱 등장! 자, 만물의 구성 요소를 얘기해 보자구.",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -227,7 +227,7 @@
         "id": "fgo_win_2",
         "text": "나를 쓰러뜨리는 자는 나를 뛰어넘도록 만능인 자뿐이야. 너로서는 쬐~끔 모자랐네.",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -256,7 +256,7 @@
         "text": "다시 한번, 잘 부탁해. 서번트 레오나르도 다 빈치. 그래────지금부터는, 너만의 다 빈치짱이란 말이지!",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

@@ -249,7 +249,7 @@
         "text": "서번트 랜서, 엘키두 네 부름에 기동했다. 부디 자유롭게, 무자비하게 사용해 줘, 마스터.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

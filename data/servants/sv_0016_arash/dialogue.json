@@ -361,7 +361,7 @@
         "text": "동방의 대영웅, 아라쉬가 바로 나야. 잘 부탁해!",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

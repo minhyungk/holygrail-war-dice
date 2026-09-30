@@ -20,7 +20,8 @@
     "name_ko": "모든 것은 나의 창으로 통한다",
     "ruby_ko": "마그나 볼루이세 마그눔",
     "rank": "A++",
-    "type_ko": "대군보구"
+    "type_ko": "대군보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_3010000.png",
@@ -28,5 +29,26 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/301000/301000b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    1,
+    101,
+    203,
+    301,
+    305,
+    403,
+    1000,
+    2001,
+    2004,
+    2113,
+    2631,
+    2835,
+    2858,
+    5000,
+    301000
+  ],
+  "lore": {
+    "detail": "고대 로마의 건국 신화에 등장하는 건국의 영웅. 군신 마르스와 아름다운 처녀 실비아 사이에서 태어나 신의 짐승인 늑대를 친구로 자랐다고 한다. 지중해 인근 국가를 통합해 오랜 영광의 대제국인 로마의 기반을 닦은 건국왕. 진홍의 신조."
+  },
+  "instant_death": false
 }

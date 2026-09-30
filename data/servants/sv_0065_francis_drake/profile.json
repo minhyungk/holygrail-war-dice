@@ -20,7 +20,8 @@
     "name_ko": "황금 사슴과 폭풍의 밤",
     "ruby_ko": "골든 와일드 헌트",
     "rank": "A+",
-    "type_ko": "대군보구"
+    "type_ko": "대군보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_4003000.png",
@@ -28,5 +29,24 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/400300/400300b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    2,
+    103,
+    203,
+    301,
+    304,
+    405,
+    1000,
+    2001,
+    2009,
+    2631,
+    2858,
+    5000,
+    400300
+  ],
+  "lore": {
+    "detail": "모험가이자 사략선 함장, 그리고 함대 사령관. 세계 일주를 완수하고, 그 수익으로 영국이 대항해시대의 패자가 되는 길을 연 인물.\n또 강력했던 스페인의 무적함대를 무찌르고, 태양이 지지 않는 제국이라 불리던 스페인을 사실상 와해시킨 “태양을 떨어뜨린 여자”."
+  },
+  "instant_death": false
 }

@@ -20,7 +20,8 @@
     "name_ko": "영원히 닫힌 이상향",
     "ruby_ko": "가든 오브 아발론",
     "rank": "C",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_5008000.png",
@@ -28,5 +29,28 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/500800/500800b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    104,
+    201,
+    300,
+    303,
+    405,
+    1000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2631,
+    2780,
+    2795,
+    2858,
+    5000,
+    500800
+  ],
+  "lore": {
+    "detail": "낙원의 방랑자. 아서 왕 전설에 등장하는 궁정 마술사이자 조언자, 예언자. 수많은 적과 고난을 극복하려는 아서 왕을 때로는 이끌고, 때로는 고뇌하게 만들고, 때로는 도왔다. 그러나 현자일지라도 기본적으로는 비인간적. 어쨌든 몽마와 인간의 혼혈이니까.\n“인간 세계는 정말 좋지만, 개개인으로 따지면 비교적, 그 왜, 그렇지, 응! 좋아, 침묵이 금이라는 기분이 들기 시작했어!”\n이처럼 딱히 인간의 편인 것도 아니다. 최고위의 캐스터 중 한 명이지만 본인은 마술을 특기로 삼지 않는다. 왜냐하면 주문을 더듬게 되니까 말이야."
+  },
+  "instant_death": false
 }

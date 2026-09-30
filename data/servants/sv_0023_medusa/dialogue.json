@@ -38,7 +38,7 @@
         "id": "legacy_vs_artoria_01",
         "when": {
           "enemy.servant": "sv_0002_artoria",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "기사왕이시군요. 대마력의 소유자를 상대하는 것은 번거롭지만... 전력으로 가겠습니다.",
         "source": "legacy",
@@ -48,7 +48,7 @@
         "id": "legacy_vs_artoria_02",
         "when": {
           "enemy.servant": "sv_0002_artoria",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "세이버... 당신의 성검은 위협적이지만, 제 보구도 만만치 않습니다. 아아, 당신은 분명...",
         "source": "legacy",
@@ -58,7 +58,7 @@
         "id": "legacy_vs_cu_01",
         "when": {
           "enemy.servant": "sv_0017_cu_chulainn",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "랜서... 쿠 훌린. 전설의 마창을 가진 자. 마안이 통하지 않는다면 힘으로 가겠습니다.",
         "source": "legacy",
@@ -68,7 +68,7 @@
         "id": "legacy_vs_cu_02",
         "when": {
           "enemy.servant": "sv_0017_cu_chulainn",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "빛의 어린 전사여. 그 마창의 저주... 경계해야겠군요.",
         "source": "legacy",
@@ -78,7 +78,7 @@
         "id": "legacy_vs_emiya_01",
         "when": {
           "enemy.servant": "sv_0011_emiya",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "아처 에미야... 그 투영 마술, 위조품이라지만 실전에서는 꽤 위협적이군요.",
         "source": "legacy",
@@ -88,7 +88,7 @@
         "id": "legacy_vs_medea_01",
         "when": {
           "enemy.servant": "sv_0031_medea",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "콜키스의 마녀... 같은 그리스의 영령이지만, 저는 당신의 편이 아닙니다.",
         "source": "legacy",
@@ -107,7 +107,7 @@
         "id": "legacy_vs_heracles_01",
         "when": {
           "enemy.servant": "sv_0047_heracles",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "헤라클레스... 그리스 최대의 영웅. 괴물을 수없이 쓰러뜨린 자... 저도 그 중 하나인가요?",
         "source": "legacy",
@@ -257,7 +257,7 @@
         "id": "level3",
         "when": {
           "event.result": "success",
-          "event.intel_level": 3
+          "event.intel_level": 2
         },
         "text": "진명을 알아냈습니다. {enemy}── 그렇다면, 대책은 세울 수 있어요."
       },

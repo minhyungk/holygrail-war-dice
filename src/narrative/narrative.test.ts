@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest';
 import { isActiveSkill, SKILLS } from '../data/constants';
 import { DialogueFile, type Line } from '../data/schema';
 import { EventLog, type FactionSetup } from '../engine/events';
+import { INTEL } from '../engine/intel';
 import { createRng } from '../engine/rng';
 import { masterIds, narratorData, runData, servantIds, SV } from '../testkit';
 import { simulateRun } from '../engine/sim';
@@ -150,7 +151,7 @@ describe('비트 (§8, §13 예시 3·5)', () => {
 describe('한 판 전체 서술 (헤드리스)', () => {
   const rd = runData();
   void rd;
-  it('판 20개를 서술해도 오류가 없고, 적의 진명은 정보 3단계 전에는 나오지 않는다', () => {
+  it('판 20개를 서술해도 오류가 없고, 적의 진명은 진명(정보 2단계) 전에는 나오지 않는다', () => {
     for (let seed = 1; seed <= 20; seed++) {
       const r = simulateRun({ seed, data: runData(), servantIds: servantIds(), masterIds: masterIds() });
       const n = new Narrator(data, seed);
@@ -161,12 +162,12 @@ describe('한 판 전체 서술 (헤드리스)', () => {
           expect(l.text).not.toMatch(/\{[a-z_]+\}/);
           expect(l.text).not.toContain('[image');
           for (const [fc, f] of Object.entries(n.state.factions)) {
-            if (fc === n.state.player || (n.state.intel[fc] ?? 0) >= 3) continue;
+            if (fc === n.state.player || (n.state.intel[fc] ?? 0) >= INTEL.name) continue;
             const name = data.servants[f.servant_id]!.name_ko;
             // 적 서번트 자신의 대사 본문(자기 이름)은 제외하고, 이름표·나레이션에서 진명이 새지 않아야 한다
             if (l.speaker === 'narrator') expect(l.text, `${seed} ${l.textId}`).not.toContain(name);
             if (l.speakerName) expect(l.speakerName).not.toBe(name);
-            // 미공개 적 서번트의 대사도 자기 진명·보구명을 말하지 않는다 (D-153: 정체 노출 줄은 self.intel_level 3 조건)
+            // 미공개 적 서번트의 대사도 자기 진명·보구명을 말하지 않는다 (D-153: 정체 노출 줄은 self.intel_level {gte: 2} 조건, D-158)
             if (l.speaker === f.servant_id) {
               const np = data.servants[f.servant_id]!.noble_phantasm;
               for (const w of [name, np?.name_ko, np?.ruby_ko].filter(Boolean)) expect(l.text, `${seed} ${l.textId}`).not.toContain(w);
@@ -190,7 +191,7 @@ describe('한 판 전체 서술 (헤드리스)', () => {
         for (const l of b?.lines ?? []) {
           expect(l.text, `${id} ${l.textId}`).not.toMatch(/\{[a-z_]+\}/);
           for (const [fc, f] of Object.entries(n.state.factions)) {
-            if (fc === n.state.player || (n.state.intel[fc] ?? 0) >= 3 || l.speaker !== f.servant_id) continue;
+            if (fc === n.state.player || (n.state.intel[fc] ?? 0) >= INTEL.name || l.speaker !== f.servant_id) continue;
             const sv = data.servants[f.servant_id]!;
             for (const w of [sv.name_ko, sv.noble_phantasm.name_ko].filter((x) => x.length >= 2)) expect(l.text, `${id} ${l.textId}`).not.toContain(w);
           }
@@ -227,7 +228,7 @@ describe('스킬 해설 (D-153)', () => {
         expect(told.has(key), `${seed} ${key}`).toBe(false);
         told.add(key);
         const sk = data.skills[n.state.factions[e.data.faction]!.servant_id]!.skills.find((x) => x.skill_id === e.data.skill_id)!;
-        const visible = e.data.faction === n.state.player || (n.state.intel[e.data.faction] ?? 0) >= 3;
+        const visible = e.data.faction === n.state.player || (n.state.intel[e.data.faction] ?? 0) >= INTEL.name;
         expect(isHidden).toBe(!visible);
         if (visible) (known++, expect(react.text).toContain(sk.name_ko));
         else (hidden++, expect(react.text).not.toContain(sk.name_ko));
@@ -379,5 +380,35 @@ describe('역전승 (D-151)', () => {
     const ids = log.events.map((e) => n.consume(e)).at(-1)!.lines.map((l) => l.textId);
     expect(ids.some((t) => t.includes('_comeback_'))).toBe(false);
     expect(ids.some((t) => t.includes('_victory_'))).toBe(true);
+  });
+});
+
+describe('정보 공개 서술 (D-158, D-165)', () => {
+  const npBeat = (n: Narrator, log: EventLog) => {
+    log.emit('np_opened', ['fc_e1'], { battle_id: 'bt_001', phase_index: 1, faction: 'fc_e1', seal: false, mana_before: 80, mana_after: 0 });
+    const beats = log.events.map((e) => n.consume(e));
+    return beats.at(-1)!;
+  };
+  it('보구 개방으로 처음 진명이 드러날 때만 진명 공개 나레이션이 나온다 (이미 알면 다시 나오지 않는다)', () => {
+    for (let seed = 1; seed <= 10; seed++) {
+      const first = npBeat(new Narrator(data, seed), scenario(1));
+      expect(first.lines.some((l) => l.textId === 'tx_common_np_open_reveal_enemy'), `${seed}`).toBe(true);
+      const again = npBeat(new Narrator(data, seed), scenario(2));
+      expect(again.lines.some((l) => l.textId === 'tx_common_np_open_reveal_enemy'), `${seed}`).toBe(false);
+    }
+  });
+  it('약점(3단계)을 알게 되면 대상의 캐릭터 상세를 읽어 준다. 진명(2단계)에서는 읽지 않는다', () => {
+    const lore = data.servants[SV.cu]!.lore!;
+    const beatAt = (level: number) => {
+      const log = scenario(level - 1);
+      log.emit('intel_gained', ['fc_player', 'fc_e1'], { target: 'fc_e1', level_from: level - 1, level_to: level, result: 'success', cause: 'intel', roll: null, dc: 10 });
+      const n = new Narrator(data, 5);
+      return log.events.map((e) => n.consume(e)).at(-1);
+    };
+    const weak = beatAt(INTEL.weakness)!;
+    const read = weak.lines.find((l) => l.textId === 'tx_common_intel_weakness_lore')!;
+    expect(read.speaker).toBe('narrator');
+    expect(read.text).toBe((lore.weakness ?? lore.detail).replace(/\s+/g, ' ').trim());
+    expect(beatAt(INTEL.name)?.lines.some((l) => l.textId === 'tx_common_intel_weakness_lore') ?? false).toBe(false);
   });
 });

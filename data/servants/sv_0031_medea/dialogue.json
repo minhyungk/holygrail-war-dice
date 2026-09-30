@@ -38,7 +38,7 @@
         "id": "legacy_vs_artoria_01",
         "when": {
           "enemy.servant": "sv_0002_artoria",
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "대마력... 세이버 클래스는 정말이지 성가시군요. 룰 브레이커로 계약을 다시 덧씌워드리죠.",
         "source": "legacy",
@@ -48,7 +48,7 @@
         "id": "legacy_vs_cu_01",
         "when": {
           "enemy.servant": "sv_0017_cu_chulainn",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "켈트의 전사여. 그 마창은 성가시지만... 마술의 신대에서는 마녀가 우위입니다.",
         "source": "legacy",
@@ -76,7 +76,7 @@
         "id": "legacy_vs_medusa_01",
         "when": {
           "enemy.servant": "sv_0023_medusa",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "메두사... 같은 '괴물'로 불린 존재끼리 마주하니 복잡하군요. 하지만 봐주지는 않겠어요.",
         "source": "legacy",
@@ -86,7 +86,7 @@
         "id": "legacy_vs_kojiro_01",
         "when": {
           "enemy.servant": "sv_0039_kojiro",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "어머, 코지로. 아직 문 앞을 지키고 있었나요? 충직한 문지기군요.",
         "source": "legacy",
@@ -96,7 +96,7 @@
         "id": "legacy_vs_kojiro_02",
         "when": {
           "enemy.servant": "sv_0039_kojiro",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "사사키... 적으로 만나니 복잡하군요. 하지만 봐주지는 않겠어요.",
         "source": "legacy",
@@ -106,7 +106,7 @@
         "id": "legacy_vs_heracles_01",
         "when": {
           "enemy.servant": "sv_0047_heracles",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "헤라클레스... 같은 그리스 출신이지만, 영웅은 항상 마녀의 적이었지요.",
         "source": "legacy",
@@ -116,7 +116,7 @@
         "id": "legacy_vs_heracles_02",
         "when": {
           "enemy.servant": "sv_0047_heracles",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "갓 핸드(열두 가지 시련)... 같은 마술이 두 번 통하지 않는다니. 정말이지 성가시군요.",
         "source": "legacy",
@@ -126,7 +126,7 @@
         "id": "legacy_vs_cu_02",
         "when": {
           "enemy.servant": "sv_0017_cu_chulainn",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "켈트의 창사... 대마력이 높지 않은 랜서라면 제 술식이 통할 수도 있겠군요.",
         "source": "legacy",
@@ -277,7 +277,7 @@
         "id": "level3",
         "when": {
           "event.result": "success",
-          "event.intel_level": 3
+          "event.intel_level": 2
         },
         "text": "진명까지 알아냈어. {enemy}── 후훗, 약점이 훤히 보이네."
       },
@@ -546,7 +546,7 @@
         "quote_of": "Fate/Grand Order",
         "quote_verified": true,
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         }
       }
     ],

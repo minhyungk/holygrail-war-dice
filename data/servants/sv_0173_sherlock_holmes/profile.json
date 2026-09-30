@@ -20,7 +20,8 @@
     "name_ko": "초보적인 것이라네, 친구여",
     "ruby_ko": "엘리멘터리 마이 디어",
     "rank": "B",
-    "type_ko": "대인보구/대계보구"
+    "type_ko": "대인보구/대계보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_9005000.png",
@@ -28,5 +29,22 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/900500/900500b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    108,
+    203,
+    302,
+    303,
+    405,
+    1000,
+    2001,
+    2631,
+    5000,
+    900500
+  ],
+  "lore": {
+    "detail": "세계 최고이자 유일한 고문 탐정. 탐정이라는 개념의 결정체, ‘해명하는 자’의 대표. 19~20세기에 아서 코난 도일 경이 집필한 이야기의 주인공이자, 여러 수수께끼를 해명하는 탐정이자, 후세에 탄생하는 수많은 추리소설에 등장하는 ‘탐정’들의 선조 중 한 명── 이라고 평가받고 있지만.\n그 실태는 과연?"
+  },
+  "instant_death": false
 }

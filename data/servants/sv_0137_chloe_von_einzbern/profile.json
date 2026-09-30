@@ -20,7 +20,8 @@
     "name_ko": "학익삼련",
     "ruby_ko": "학익삼련",
     "rank": "C",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_2027000.png",
@@ -28,5 +29,29 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/202700/202700b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    2,
+    102,
+    200,
+    301,
+    303,
+    404,
+    1000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2631,
+    2654,
+    2667,
+    2851,
+    2858,
+    5000,
+    202700
+  ],
+  "lore": {
+    "detail": "이리야에서 분리된 반신이 어느 영령의 형태를 빌려 현세에 나타난 모습. 어린 용모에 어울리지 않는 고혹적인 언동은 늘 주위를 휘젓는다. 자칭 ‘이리야의 언니’. 다만 이리야 또한 언니를 자처하기 때문에 거울을 마주보고 있는 듯한 자매의 싸움이 끊이지 않는다."
+  },
+  "instant_death": false
 }

@@ -20,7 +20,8 @@
     "name_ko": "만능인",
     "ruby_ko": "워모 우니베르살레",
     "rank": "EX",
-    "type_ko": "대인보구/대군보구"
+    "type_ko": "대인보구/대군보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_5009000.png",
@@ -28,5 +29,24 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/500900/500900b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    104,
+    203,
+    301,
+    303,
+    405,
+    1000,
+    2001,
+    2008,
+    2631,
+    2858,
+    5000,
+    500900
+  ],
+  "lore": {
+    "detail": "만능이라 불린 천재. 15~16세기 유럽의 인물. 문명의 발전에 수많은 영향을 끼친, 인류사에 이름을 남긴 유수의 천재. 절세의 미소년, 절세의 미청년이었다고 기록되어 있지만 그 실태는 이것이다.\n진정한 천재 앞에서는 성별도 나이도 관계없다. 이데올로기나 유행이 시대와 함께 변하더라도 진실은 단 하나.\n무슨 일이 있더라도 만능무적의 다 빈치짱이란 말씀!"
+  },
+  "instant_death": false
 }

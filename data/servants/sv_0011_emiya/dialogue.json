@@ -54,7 +54,7 @@
         "id": "legacy_vs_cu_02",
         "when": {
           "enemy.servant": "sv_0017_cu_chulainn",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "또 너인가, 수견. 이번에도 첫날 밤에 죽어줄 건가?",
         "source": "legacy",
@@ -64,7 +64,7 @@
         "id": "legacy_vs_artoria_01",
         "when": {
           "enemy.servant": "sv_0002_artoria",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "세이버... 아니, 기사왕. 이번 전쟁에서는 같은 편이 아니라는 게 유감이군.",
         "source": "legacy",
@@ -74,7 +74,7 @@
         "id": "legacy_vs_artoria_02",
         "when": {
           "enemy.servant": "sv_0002_artoria",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "기사왕, 당신의 이상도, 나의 이상도 — 결국 검으로 증명하는 수밖에.",
         "source": "legacy",
@@ -84,7 +84,7 @@
         "id": "legacy_vs_medusa_01",
         "when": {
           "enemy.servant": "sv_0023_medusa",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "라이더... 메두사. 기동력이 높은 상대는 까다롭지만, 원거리전에서는 이쪽이 유리하다.",
         "source": "legacy",
@@ -94,8 +94,8 @@
         "id": "legacy_vs_medea_01",
         "when": {
           "enemy.servant": "sv_0031_medea",
-          "enemy.intel_level": 3,
-          "self.intel_level": 3
+          "enemy.intel_level": { "gte": 2 },
+          "self.intel_level": { "gte": 2 }
         },
         "text": "콜키스의 마녀... 그 높은 마력, 간장막야로 꿰뚫을 수 있을까?",
         "source": "legacy",
@@ -114,7 +114,7 @@
         "id": "legacy_vs_kojiro_01",
         "when": {
           "enemy.servant": "sv_0039_kojiro",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "류도사의 검사... 사사키 코지로인가. 근접전 특화 상대라면 거리를 유지해야겠군.",
         "source": "legacy",
@@ -133,7 +133,7 @@
         "id": "legacy_vs_heracles_01",
         "when": {
           "enemy.servant": "sv_0047_heracles",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "갓 핸드(열두 가지 시련)... 같은 공격은 두 번 통하지 않는다. 기억이 나는군.",
         "source": "legacy",
@@ -143,7 +143,7 @@
         "id": "legacy_vs_heracles_02",
         "when": {
           "enemy.servant": "sv_0047_heracles",
-          "enemy.intel_level": 3
+          "enemy.intel_level": { "gte": 2 }
         },
         "text": "대영웅 헤라클레스. 그때도 이겼지만... 대가는 컸다.",
         "source": "legacy",
@@ -296,7 +296,7 @@
         "id": "level3",
         "when": {
           "event.result": "success",
-          "event.intel_level": 3
+          "event.intel_level": 2
         },
         "text": "진명이 드러났군. {enemy}── 전설을 알면, 약점도 보이는 법이다."
       },
@@ -566,7 +566,7 @@
         "quote_of": "Fate/Grand Order",
         "quote_verified": true,
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         }
       },
       {

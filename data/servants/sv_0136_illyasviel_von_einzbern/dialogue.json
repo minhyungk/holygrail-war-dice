@@ -95,7 +95,7 @@
         "id": "fgo_skill_3",
         "text": "[루비] : “루비짱의 차례네요~♪” [이리야] : “불안밖에 느껴지지 않아……”",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -144,7 +144,7 @@
               "loyal"
             ]
           },
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "[이리야] : 응응~ 루비, 뭔가 시간 때우기 좋은 거 없어? [루비] : 흐~음, 그러면, 몰래 모아두던 이리야 씨의 자는 얼굴 사진 슬라이드쇼라도…… [이리야] : 지금 바로 삭제해버려!",
         "weight": 2,
@@ -164,7 +164,7 @@
               "loyal"
             ]
           },
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "[이리야] : 나, 제대로 도움이 되고 있어……? 미안해, 나도 애니메이션 속의 마법소녀처럼 좀 더 파바바밧! 하고 차르륵! 하는 느낌이 되면 좋겠지만…… [루비] : 이리야 씨의 마법소녀관은 여전히 래디컬하고 테리블하네요.",
         "weight": 2,
@@ -206,7 +206,7 @@
         "id": "fgo_start_1",
         "text": "[이리야] : 필요한 싸움…… 이지? 응! 가자, 루비！ [루비] : 파밧 하고 해치워버리자고요!",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -216,7 +216,7 @@
         "id": "fgo_start_2",
         "text": "[이리야] : 어, 어째 강해 보이는데……! [루비] : 이런, 철수는 허가 할 수 없는데요?",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -263,7 +263,7 @@
         "text": "저기, 이리야라고 합니다. 초등학교 5학년입니다. 일단…… 마법소녀, 하고 있습니다, 네. 으으, 저 같은 게 무슨 도움이 될지 모르겠지만…… 하지만 열심히, 노력하겠습니다! 루비짱도 있습니다! 재미있고 귀엽게 해나가죠, 그랜드 마스터!",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

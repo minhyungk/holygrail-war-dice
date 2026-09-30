@@ -20,7 +20,8 @@
     "name_ko": "쾌락천・태장만다라",
     "ruby_ko": "아미다 아미달라・헤븐즈 홀",
     "rank": "EX",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_10003000.png",
@@ -28,5 +29,24 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/1000300/1000300b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    109,
+    204,
+    301,
+    304,
+    405,
+    1000,
+    2001,
+    2008,
+    2631,
+    2850,
+    5000,
+    1000300
+  ],
+  "lore": {
+    "detail": "깨달은 자의 적대자. 심해전뇌낙토 SE.RA.PH에 나타난 성자. 보기드문 구세주로서의 자질을 모두 자신을 위해 써서, 인간이 아닌 것으로 변생한 자. 그 소원, 그 바람은 달성 직전에 가까스로 중단되었다. 그때 키아라 본인은 소멸했지만 마지막 순간에 생각을 바꾸었는지, 힘의 일부를 얼터에고로서 남기고, 칼데아에 소환되는 미래를 긍정했다.\n“괜찮겠군요, 칼데아. 여러 시대, 장소에서 다툼에 몸을 던진다…… 저도 맛보도록 하겠습니다.”\n본인은 그렇게 말하며 미소 지었지만, 그 말의 진의는 당연히, ‘인류를 위해서’가 아니다. 다소 둥글어졌어도 근본은 티끌만큼도 변하지 않았으니 주의할 것."
+  },
+  "instant_death": false
 }

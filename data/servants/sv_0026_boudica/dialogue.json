@@ -368,7 +368,7 @@
         "text": "부디카야, 잘 부탁해. 편하게 부디카 씨라고 불러도 돼.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

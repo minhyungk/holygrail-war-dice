@@ -20,7 +20,8 @@
     "name_ko": "죽음을 고하는 천사",
     "ruby_ko": "아즈라엘",
     "rank": "C",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_6025000.png",
@@ -28,5 +29,25 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/602500/602500b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    105,
+    202,
+    300,
+    304,
+    405,
+    1000,
+    2001,
+    2008,
+    2012,
+    2631,
+    2858,
+    5000,
+    602500
+  ],
+  "lore": {
+    "detail": "해골 가면을 쓴 암살자. 암살교단이 어쌔신으로 성립된 뒤, “산의 노인”이라는 이름이 호칭으로 변한 뒤에 탄생한 최초의 하산 사바흐로 여겨진다. 그러나 다른 18명의 하산과 교단의 신도들은 모두 이 인물의 정체를 몰랐으며, 실제로 존재했었다는 증거 또한 어디에도 없었다고 한다. 그 대의 하산 사바흐가 길을 잘못 들었을 때 나타나 그의 목을 벤다는 전설의 암살자.\n즉, 하산을 죽이는 하산일지니."
+  },
+  "instant_death": true
 }

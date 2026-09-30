@@ -20,7 +20,8 @@
     "name_ko": "군신의 검",
     "ruby_ko": "포톤 레이",
     "rank": "A",
-    "type_ko": "대군보구"
+    "type_ko": "대군보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_1018000.png",
@@ -28,5 +29,30 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/101800/101800b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    2,
+    100,
+    202,
+    301,
+    303,
+    405,
+    1000,
+    2000,
+    2001,
+    2008,
+    2009,
+    2040,
+    2075,
+    2113,
+    2631,
+    2780,
+    2858,
+    5000,
+    101800
+  ],
+  "lore": {
+    "detail": "대제국을 이룩한 대왕. 아틸라 더 훈. 흉노의 후예, 훈족의 전사이자 왕. 서아시아부터 러시아, 동유럽, 갈리아에 이르는 광대한 판도를 제압한 5세기의 대영웅. 서로마제국의 멸망을 초래했다고도 일컬어진다."
+  },
+  "instant_death": false
 }

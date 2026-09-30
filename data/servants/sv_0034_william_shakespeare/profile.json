@@ -20,7 +20,8 @@
     "name_ko": "막을 올릴 때가 왔으니, 여기에 우레 같은 갈채를",
     "ruby_ko": "퍼스트 폴리오",
     "rank": "B+",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_5007000.png",
@@ -28,5 +29,24 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/500700/500700b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    104,
+    202,
+    302,
+    305,
+    402,
+    1000,
+    2001,
+    2008,
+    2631,
+    2858,
+    5000,
+    500700
+  ],
+  "lore": {
+    "detail": "윌리엄 셰익스피어는 틀림없이 세계에서 가장 저명한 극작가이자 배우였다. 영문학 역사에서 찬란하게 빛나는 그 이름은, 그리고 영국 위인으로서의 지명도는 최고봉에 위치할 것이다."
+  },
+  "instant_death": false
 }

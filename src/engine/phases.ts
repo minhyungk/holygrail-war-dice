@@ -4,14 +4,17 @@ import type { PhaseDef, PhaseId, Terrain } from '../data/schema';
 
 export const phaseDef = (id: PhaseId): PhaseDef => PHASES[id];
 
-/** 지형 가중치 합 (추첨값 범위) */
-export const terrainWeightTotal = (terrain: Terrain): number => Object.values(K['phase.weights_by_terrain'][terrain]).reduce((s, w) => s + w, 0);
+/** 추첨 후보 가중치. 즉사/우연은 즉사 수단이 있는 전투에서만 (phases.md §3.5-0, D-163) */
+const drawWeights = (terrain: Terrain, fate: boolean): [PhaseId, number][] =>
+  (Object.entries(K['phase.weights_by_terrain'][terrain]) as [PhaseId, number][]).filter(([id]) => fate || id !== 'ph_fate');
 
-/** 추첨값 r(0 ~ 합-1)을 누적 가중치로 국면에 대응시킨다 (phases.md §5 예시 1·2) */
-export function phaseFromDraw(terrain: Terrain, r: number): PhaseId {
-  const weights = K['phase.weights_by_terrain'][terrain];
+/** 지형 가중치 합 (추첨값 범위) */
+export const terrainWeightTotal = (terrain: Terrain, fate = true): number => drawWeights(terrain, fate).reduce((s, [, w]) => s + w, 0);
+
+/** 추첨값 r(0 ~ 합-1)을 누적 가중치로 국면에 대응시킨다 (phases.md §5 예시 1·2·7) */
+export function phaseFromDraw(terrain: Terrain, r: number, fate = true): PhaseId {
   let acc = 0;
-  for (const [id, w] of Object.entries(weights) as [PhaseId, number][]) {
+  for (const [id, w] of drawWeights(terrain, fate)) {
     acc += w;
     if (r < acc) return id;
   }

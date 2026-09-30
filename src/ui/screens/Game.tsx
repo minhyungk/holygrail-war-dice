@@ -8,6 +8,7 @@ import type { BattleInput, RollBreakdown } from '../../engine/combat';
 import type { RollResult } from '../../engine/dice';
 import type { AnyEvent, Condition } from '../../engine/events';
 import { forecastBattle, type BattleForecast } from '../../engine/forecast';
+import { INTEL } from '../../engine/intel';
 import { visible } from '../../engine/map';
 import { createRng } from '../../engine/rng';
 import type { RunAnswer, RunPrompt, TileRole } from '../../engine/run';
@@ -90,9 +91,12 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
   const [typing, setTyping] = useState(false);
   const [history, setHistory] = useState<ShownLine[]>([]);
   const [showLog, setShowLog] = useState(false);
-  const [forecast, setForecast] = useState<BattleForecast | null>(null);
-  const updateForecast = (input: BattleInput | undefined) => {
-    if (input) setForecast(forecastBattle(input, session.narrator.state.player));
+  // 예상 승률은 조우 때 한 번 계산해 그 전투 동안 고정한다 (D-160). 조우 없는 강제 전투는 개시 때 계산
+  const [forecastOf, setForecastOf] = useState<{ enemy: string; value: BattleForecast } | null>(null);
+  const forecast = forecastOf?.value ?? null;
+  const updateForecast = (enemy: string, input: BattleInput | undefined, keep: boolean) => {
+    if (!input) return;
+    setForecastOf((cur) => (keep && cur?.enemy === enemy ? cur : { enemy, value: forecastBattle(input, session.narrator.state.player) }));
   };
   const [prompt, setPrompt] = useState<RunPrompt | null>(null);
   const [tileInfo, setTileInfo] = useState<string | null>(null);
@@ -112,7 +116,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
     if (REDUCED) return;
     const id = ++fxSeq.current;
     setFxList((l) => [...l, { ...f, id }]);
-    window.setTimeout(() => setFxList((l) => l.filter((x) => x.id !== id)), ms);
+    window.setTimeout(() => setFxList((l) => l.filter((x) => x.id !== id)), ms / speed());
   };
   const sideOf = (fc: string): Side => (fc === session.narrator.state.player ? 'a' : 'c');
   // 피격 흔들림 (D-151): 큰 피해·쓰러짐은 세게
@@ -135,6 +139,16 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
   const dice = useRef<DiceTable | null>(null);
   const diceReady = useRef<Promise<void>>(Promise.resolve());
   const fast = useRef(false);
+  // 전투 빨리감기 (D-161): 전투가 끝날 때까지 text.fast_forward 배속. 선택지에서는 입력을 기다리며 멈춘다
+  const [ff, setFf] = useState(false);
+  const ffRef = useRef(false);
+  const setFastForward = (on: boolean) => {
+    ffRef.current = on;
+    setFf(on);
+  };
+  const speed = () => (ffRef.current ? K['text.fast_forward'] : 1);
+  /** 소멸 중인 진영 (D-164): 일러스트가 금빛으로 물든 뒤 아래에서 위로 사라진다 */
+  const [dying, setDying] = useState<string[]>([]);
   const staged = useRef<RollBreakdown | null>(null);
   const takeShown = (roll: StagedRoll | undefined) => {
     const shown = wasShown(staged.current, roll);
@@ -151,7 +165,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
 
   const P = view.player;
   const name = useCallback((fc: string, v: RunView = session.narrator.state) => displayName(v, session.data, fc, labels), [session, labels]);
-  const wait = (ms: number) => new Promise<void>((r) => window.setTimeout(r, REDUCED ? 0 : fast.current ? ms * 0.25 : ms));
+  const wait = (ms: number) => new Promise<void>((r) => window.setTimeout(r, REDUCED ? 0 : (fast.current ? ms * 0.25 : ms) / speed()));
 
   // ── VN: 줄이 이어서 흘러나온다 (D-122). 한 줄을 다 치면 다음 줄 ──
   const say = async (lines: ShownLine[]) => {
@@ -231,8 +245,9 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
         return res();
       }
       const t0 = performance.now();
+      const dur = ms / speed();
       const f = (t: number) => {
-        const p = Math.min(1, (t - t0) / ms);
+        const p = Math.min(1, (t - t0) / dur);
         setTotal(side, String(Math.round((from + (to - from) * p) * 2) / 2));
         if (p < 1) requestAnimationFrame(f);
         else res();
@@ -264,13 +279,18 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
     const label = skillLabel(v, session.data, owner, id) ?? T.part.skill!;
     return <span className="skl">{foe ? `${T.part.foeSkill} · ${label}` : label}</span>;
   };
-  /** 보정 이름: 무슨 보정인지 알 수 있게 (예: 호감도 (중립), 정보 (2단계 · 스테이터스)) */
-  const partLabel = (k: string, v: number, fc: string): ReactNode => {
+  /** 보정 이름: 무슨 보정인지 알 수 있게 (예: 호감도 (중립), 정보 (2단계 · 진명)) */
+  const partLabel = (k: string, fc: string): ReactNode => {
     const skill = skillPart(k, fc);
     if (skill) return skill;
-    const f = session.narrator.state.factions[fc];
+    const v = session.narrator.state;
+    const f = v.factions[fc];
     if (k === 'affinity' && f && f.affinity !== null) return `${T.part.affinity} (${T.affinityTier[tierOf(f.affinity)]})`;
-    if (k === 'intel') return `${T.part.intel} (${v}단계 · ${T.intelLevel[v]})`;
+    if (k === 'intel') {
+      const foe = v.battle?.sides.find((x) => x !== fc);
+      const lv = foe ? (v.intel[foe] ?? 0) : 0;
+      return `${T.part.intel} (${lv}단계 · ${T.intelLevel[lv]})`;
+    }
     return T.part[k] ?? k;
   };
 
@@ -279,7 +299,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
     const v = session.narrator.state;
     const f = v.factions[fc];
     const sv = f ? session.data.servants[f.servant_id]! : null;
-    const knowStats = fc === v.player || (v.intel[fc] ?? 0) >= 2;
+    const knowStats = fc === v.player || (v.intel[fc] ?? 0) >= INTEL.face;
     if (mine) {
       addLn(side, chips(r.dice), r.natural);
       await countTo(side, 0, r.natural, 500);
@@ -288,7 +308,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
       const key = addLn(side, chips(Array.from({ length: K['dice.die_count'] }, () => null)), '…');
       for (let i = 0; i < (REDUCED || fast.current ? 0 : 14); i++) {
         updateLn(side, key, chips(Array.from({ length: K['dice.die_count'] }, () => fxRng.int(1, K['dice.die_size']))), '…');
-        await new Promise((res) => window.setTimeout(res, 55));
+        await new Promise((res) => window.setTimeout(res, 55 / speed()));
       }
       updateLn(side, key, chips(r.dice), r.natural);
       await countTo(side, 0, r.natural, 500);
@@ -313,7 +333,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
         }
       }
       for (const [k, val] of Object.entries(r.parts ?? {})) {
-        addLn(side, partLabel(k, val, fc), val >= 0 ? `+${val}` : String(val));
+        addLn(side, partLabel(k, fc), val >= 0 ? `+${val}` : String(val));
         if (knowStats) await countTo(side, acc, acc + val, 400);
         acc += val;
       }
@@ -331,8 +351,10 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
 
   const throwMine = async (r: RollResult) => {
     await diceReady.current;
-    const [power, dir] = await awaitThrow();
-    const animated = dice.current ? await dice.current.roll(r.dice, power, dir) : false;
+    // 빨리감기 중에는 던지기를 기다리지 않고, 3D 굴림 없이 눈만 보인다 (D-161)
+    const auto = ffRef.current;
+    const [power, dir] = auto ? [0, 0] : await awaitThrow();
+    const animated = !auto && dice.current ? await dice.current.roll(r.dice, power, dir) : false;
     fast.current = false; // 던지기 스와이프의 클릭이 빨리감기로 잡히지 않도록 착지 후 초기화
     const landId = ++fxSeq.current;
     setTrayFx({ id: landId, n: r.natural, miracle: r.miracle });
@@ -393,9 +415,9 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
         await wait(50);
         {
           const v = session.narrator.state;
-          const known = (fc: string) => (fc === me ? 3 : (v.intel[fc] ?? 0));
-          const clsOf = (fc: string) => (known(fc) >= 1 ? session.data.servants[v.factions[fc]!.servant_id]!.class : null);
-          const faceOf = (fc: string) => known(fc) >= 3 ? session.data.servants[v.factions[fc]!.servant_id]!.images.face : undefined;
+          const known = (fc: string) => (fc === me ? INTEL.weakness : (v.intel[fc] ?? 0));
+          const clsOf = (fc: string) => (known(fc) >= INTEL.face ? session.data.servants[v.factions[fc]!.servant_id]!.class : null);
+          const faceOf = (fc: string) => known(fc) >= INTEL.face ? session.data.servants[v.factions[fc]!.servant_id]!.images.face : undefined;
           pushFx({ kind: 'vs', a: { name: name(me), cls: clsOf(me), img: faceOf(me) }, c: { name: name(enemy), cls: clsOf(enemy), img: faceOf(enemy) }, sub: e.data.is_final ? T.time.final : tileOf(e.data.tile ?? v.factions[me]!.tile).name_ko }, 2300);
           await wait(1900);
         }
@@ -484,6 +506,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
         }
         if (e.data.to === 'dead') {
           doShake(true);
+          setDying((d) => [...d, e.data.faction]);
           pushFx({ kind: 'death', side }, K['text.death_fx'].duration_ms);
           await wait(900);
         }
@@ -495,7 +518,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
         if (battleRef.current?.id !== e.data.battle_id) return;
         const v = session.narrator.state;
         const label = skillLabel(v, session.data, e.data.faction, e.data.skill_id) ?? T.part.skill!;
-        const known = e.data.faction === me || (v.intel[e.data.faction] ?? 0) >= 2;
+        const known = e.data.faction === me || (v.intel[e.data.faction] ?? 0) >= INTEL.face; // 수치는 얼굴(스테이터스)부터 (D-158)
         const signed = (n: number) => (n > 0 ? `+${n}` : String(n));
         const detail =
           e.data.effect === 'roll_mod' ? (known ? `${e.data.target !== e.data.faction ? `${T.part.foeSkill} ` : ''}${signed(e.data.amount)}` : '')
@@ -547,10 +570,12 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
           const sv = session.data.servants[session.narrator.state.factions[me]!.servant_id]!;
           pushFx({ kind: 'comeback', cls: sv.class, img: sv.images.final, text: T.fx.comeback, sub: T.fx.comebackSub }, 3000);
           await wait(2400);
+          setFastForward(false);
           return;
         }
         pushFx({ kind: 'result', tone, text: T.sys.battleEnd[tone === 'lose' ? 'loss' : tone]! }, 2200);
         await wait(1500);
+        setFastForward(false);
         return;
       }
     }
@@ -566,14 +591,18 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
         const ar = battleRef.current ? null : actionRollOf(e, p.after.player);
         // 판정이 있는 행동은 주사위를 다 보여 준 뒤에 막대(마력·호감도)를 바꾼다: 결과를 미리 드러내지 않게
         if (!ar) setView(p.after);
-        if (e.type === 'battle_started' || e.type === 'phase_started') updateForecast(e.data.forecast);
-        if (e.type === 'battle_ended') setForecast(null);
+        if (e.type === 'battle_started' && e.data.sides.includes(p.after.player)) updateForecast(e.data.sides.find((x) => x !== p.after.player)!, e.data.forecast, true);
+        if (e.type === 'battle_ended' || e.type === 'day_started' || e.type === 'night_started' || e.type === 'final_battle_bracket') setForecastOf(null);
         const out = !p.after.factions[p.after.player]?.alive && e.type !== 'eliminated';
         if (out) {
           setView(p.after);
           continue; // 탈락 후에는 빨리감기 (D-043)
         }
-        if (battleRef.current && (e.type === 'day_started' || e.type === 'night_started' || e.type === 'final_battle_bracket' || e.type === 'moved')) setBattle(null);
+        if (battleRef.current && (e.type === 'day_started' || e.type === 'night_started' || e.type === 'final_battle_bracket' || e.type === 'moved')) {
+          setBattle(null);
+          setDying([]);
+          setFastForward(false);
+        }
         if (ar) {
           // 도입 나레이션은 앞선 action_started가 이미 열었다 (D-141). 여기서는 던진 뒤 결과(대사·반응·시스템 문구)
           await showActionRoll(ar);
@@ -613,7 +642,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
         setCards((c) => ({ ...c, a: { ...c.a, mark: 'lose' } }));
       }
       if (next && (next.kind === 'action' || next.kind === 'encounter')) setBattle(null);
-      if (next && 'forecast' in next) updateForecast(next.forecast);
+      if (next?.kind === 'encounter') updateForecast(next.enemy, next.forecast, false);
       setPrompt(next);
     } finally {
       running.current = false;
@@ -623,6 +652,16 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
   useEffect(() => {
     void run();
   }, [run]);
+
+  // 빨리감기 중에는 화면의 CSS 연출도 같은 배속으로 (D-161). 끌 때 한 번 되돌린다
+  const appliedRate = useRef(1);
+  useEffect(() => {
+    if (REDUCED || typeof document.getAnimations !== 'function') return;
+    const rate = ff ? K['text.fast_forward'] : 1;
+    if (rate === 1 && appliedRate.current === 1) return;
+    appliedRate.current = rate;
+    for (const a of document.getAnimations()) a.playbackRate = rate;
+  }, [ff, fxList, shake, sealFx, dying, cards]);
 
   const answer = (a: RunAnswer) => {
     // 재굴림하지 않으면 지금 보여 준 굴림으로 확정: 뒤따르는 굴림 이벤트에서 다시 던지지 않는다
@@ -801,6 +840,9 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
             <b>{ph.name}</b>
             <span>{ph.no}</span>
             {forecast ? <Forecast value={forecast} /> : null}
+            <button type="button" className={`ff-btn ${ff ? 'on' : ''}`} aria-pressed={ff} onClick={() => setFastForward(!ff)}>
+              {ff ? T.ffOn(K['text.fast_forward']) : T.ffSkip}
+            </button>
           </div>
           <div
             className="arena"
@@ -809,7 +851,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
             }}
           >
             <div className="bcol a">
-              <StandArt fc={P} view={view} session={session} />
+              <StandArt fc={P} view={view} session={session} dying={dying.includes(P)} />
               <Profile fc={P} view={view} session={session} />
               <FighterCard side="a" fc={P} view={view} session={session} card={cards.a} name={name(P, view)} dc={battleDc !== null && phaseSides.current?.defender === P ? battleDc : null} />
             </div>
@@ -825,7 +867,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
               {rollCtaEl}
             </div>
             <div className="bcol c">
-              <StandArt fc={battle.enemy} view={view} session={session} />
+              <StandArt fc={battle.enemy} view={view} session={session} dying={dying.includes(battle.enemy)} />
               <Profile fc={battle.enemy} view={view} session={session} />
               <FighterCard side="c" fc={battle.enemy} view={view} session={session} card={cards.c} name={name(battle.enemy, view)} dc={battleDc !== null && phaseSides.current?.defender === battle.enemy ? battleDc : null} />
             </div>
@@ -882,7 +924,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
                   const esv = session.data.servants[f.servant_id]!;
                   return (
                     <div key={f.id} className="token enemy" style={tokenPos(f.tile, f.tile === meF.tile ? 4 + i * 3 : i * 3)}>
-                      {lv >= 3 ? <Art src={esv.images.face} cls={esv.class} /> : lv >= 1 ? <Glyph cls={esv.class} /> : '?'}
+                      {lv >= INTEL.face ? <Art src={esv.images.face} cls={esv.class} /> : '?'}
                     </div>
                   );
                 })}
@@ -987,7 +1029,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
         </div>
       ) : null}
       {/* 전투 화면에서는 글이 계속 남아 있고, 맵에서는 글이 나오는 동안만 보인다 (행동 메뉴를 가리지 않게) */}
-      {battle || typing || rollBox ? <Vn log={vnLog} typing={typing} onLineDone={onLineDone} onLog={() => setShowLog(true)} /> : null}
+      {battle || typing || rollBox ? <Vn log={vnLog} typing={typing} onLineDone={onLineDone} onLog={() => setShowLog(true)} speed={battle && ff ? K['text.fast_forward'] : 1} /> : null}
       {choice && !rerollInBox ? (
         <Choices
           key={JSON.stringify(prompt)}
@@ -1116,17 +1158,19 @@ function MasterFace({ name, src }: { name: string; src: string | null }) {
 }
 
 /**
- * 서 있는 일러스트 (Atlas charaGraph, D-151): 카드 뒤에 옅게. 적은 진명(정보 3단계)을 알아야 보인다 (정보 가림).
- * 위험이면 붉게 깜빡이고, 쓰러지면 빛으로 흩어진다
+ * 서 있는 일러스트 (Atlas charaGraph, D-151): 카드 뒤에 옅게. 적은 얼굴(정보 1단계, D-158)을 알아야 보인다 (정보 가림).
+ * 위험이면 붉게 깜빡이고, 소멸하면 금빛으로 물든 뒤 아래에서 위로 사라진다 (D-164)
  */
-function StandArt({ fc, view, session }: { fc: string; view: RunView; session: Session }) {
+function StandArt({ fc, view, session, dying }: { fc: string; view: RunView; session: Session; dying: boolean }) {
   const [failed, setFailed] = useState(false);
   const f = view.factions[fc];
   if (!f || failed) return null;
-  if (fc !== view.player && (view.intel[fc] ?? 0) < 3) return null;
+  if (fc !== view.player && (view.intel[fc] ?? 0) < INTEL.face) return null;
   const sv = session.data.servants[f.servant_id]!;
-  const state = !f.alive ? 'dead' : f.condition === 'danger' ? 'danger' : '';
-  return <img className={`stand-art ${state}`} src={sv.images.summon} alt="" referrerPolicy="no-referrer" onError={() => setFailed(true)} />;
+  const cfg = K['text.death_fx'];
+  const state = dying ? 'dying' : !f.alive ? 'dead' : f.condition === 'danger' ? 'danger' : '';
+  const style = dying ? { ['--death-duration' as string]: `${cfg.duration_ms}ms`, ['--death-gild' as string]: `${cfg.gild_ms}ms` } : undefined;
+  return <img className={`stand-art ${state}`} style={style} src={sv.images.summon} alt="" referrerPolicy="no-referrer" onError={() => setFailed(true)} />;
 }
 
 /** 목표값: 카드 맨 아래에 크게. 판정값이 나오면 넘었는지 색으로 */
@@ -1155,17 +1199,17 @@ function FighterCard({ side, fc, view, session, card, name, dc }: { side: Side; 
   if (!f) return null;
   const sv = session.data.servants[f.servant_id]!;
   const mine = fc === view.player;
-  const lv = mine ? 3 : (view.intel[fc] ?? 0);
+  const lv = mine ? INTEL.weakness : (view.intel[fc] ?? 0);
   const cond = f.alive ? f.condition : 'danger';
   const n = f.alive ? { full: 3, hurt: 2, danger: 1 }[f.condition] : 0;
   return (
     <div className={`fcard ${side} ${card.mark} ${hitAnim ? 'hit' : ''}`}>
       <div className="who">
-        {lv >= 3 ? <Art src={sv.images.face} cls={sv.class} /> : <Glyph cls={sv.class} hidden={lv === 0} />}
+        {lv >= INTEL.face ? <Art src={sv.images.face} cls={sv.class} /> : <Glyph cls={sv.class} hidden={lv === 0} />}
         <div style={{ minWidth: 0 }}>
           <div className="nm">{name}</div>
           <div className="cls">
-            {mine ? '내 서번트' : '적'} · {lv >= 1 ? LABELS.cls[sv.class] : '?'}
+            {mine ? '내 서번트' : '적'} · {lv >= INTEL.face ? LABELS.cls[sv.class] : '?'}
           </div>
         </div>
       </div>

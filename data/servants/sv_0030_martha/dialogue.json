@@ -63,7 +63,7 @@
         "id": "fgo_ex_2",
         "text": "타라스크, 부탁해! 화염을!",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -146,7 +146,7 @@
               "loyal"
             ]
           },
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "타라스크 때는…… 좀 힘들었어…… 설~마, 리바이어던의 피를 이은 괴물 중의 괴물이라니……",
         "weight": 2,

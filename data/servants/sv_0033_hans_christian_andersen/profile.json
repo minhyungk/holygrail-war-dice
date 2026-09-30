@@ -20,7 +20,8 @@
     "name_ko": "당신을 위한 이야기",
     "ruby_ko": "메르헨 마이네스 레이벤스",
     "rank": "C+",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_5005000.png",
@@ -28,5 +29,25 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/500500/500500b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    1,
+    104,
+    202,
+    300,
+    305,
+    402,
+    1000,
+    2001,
+    2008,
+    2631,
+    2667,
+    2858,
+    5000,
+    500500
+  ],
+  "lore": {
+    "detail": "세계 3대 동화작가 중 하나. “인어공주”, “성냥팔이 소녀”는 모르는 사람이 없을 것이다. 1805년생, 1875년 간암으로 사망. 지금은 3대 작가 중 한 사람으로 회자되지만 그의 반평생은 좌절과 고뇌로 가득했다고 한다."
+  },
+  "instant_death": false
 }

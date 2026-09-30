@@ -20,7 +20,8 @@
     "name_ko": "C.C.C.",
     "ruby_ko": "커스드 큐피드 클렌저",
     "rank": "A",
-    "type_ko": "대인보구"
+    "type_ko": "대인보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_23001000.png",
@@ -28,5 +29,27 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/2300100/2300100b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 ai), 사용자 검수 전.",
+  "traits": [
+    2,
+    115,
+    202,
+    301,
+    303,
+    404,
+    1000,
+    2001,
+    2008,
+    2631,
+    2781,
+    2835,
+    2850,
+    2925,
+    5000,
+    2300100
+  ],
+  "lore": {
+    "detail": "과거에 문 셀 오토마톤에 발생한 특수사례. 원래는 마스터의 건강을 관리하기 위해 배치된 상급 AI였지만, 버그를 일으켜 폭주. 전뇌세계를 침식하는 캔서(암)로서 달의 뒤편을 지배하고, SE.RA.PH의 성배전쟁을 방해한 전뇌마. 성배전쟁의 참가자들에게 룰을 지키게 하면서, 본인은 룰을 마구 깨뜨리는 위법개조의 화신. 삼시세끼 밥 먹는 느낌으로 세계를 멸하는 한편, 밝고 깜찍한 후배로서 선배(마스터)를 휘두르는 것에 전력을 기울이는 후배 속성 데빌 히로인.\n“예의 바른 싸움 같은 건 재미없잖아요? 여러분이 괴로워하는 얼굴을 더 보고 싶어요!”\n언뜻 보면 행동 설정도 성격 설정도 일그러진 것처럼 보이지만──── 뭐, 평소랑 다름없는 BB짱이다."
+  },
+  "instant_death": false
 }

@@ -19,7 +19,8 @@
     "name_ko": "무한의 검제",
     "ruby_ko": "언리미티드 블레이드 워크스",
     "rank": "E~A",
-    "type_ko": "????"
+    "type_ko": "????",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_2001000.png",
@@ -27,5 +28,27 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/200100/200100b@2.png"
   },
   "sprite_id": null,
-  "notes": "레거시 servants-ko.json id 11에서 생성. alignment는 원작 설정 기준 AI 입력값 (Atlas로 검증 필요). temperament는 레거시 servantPersonality.ts를 ID가 아닌 이름으로 맞춘 값. images: Atlas Academy KR (face=맵 아이콘, summon=기본 재림 전신, final=최종 재림 전신, Q-134)."
+  "notes": "레거시 servants-ko.json id 11에서 생성. alignment는 원작 설정 기준 AI 입력값 (Atlas로 검증 필요). temperament는 레거시 servantPersonality.ts를 ID가 아닌 이름으로 맞춘 값. images: Atlas Academy KR (face=맵 아이콘, summon=기본 재림 전신, final=최종 재림 전신, Q-134).",
+  "traits": [
+    1,
+    102,
+    202,
+    302,
+    305,
+    404,
+    1000,
+    2001,
+    2008,
+    2012,
+    2631,
+    2780,
+    2858,
+    2883,
+    5000,
+    200100
+  ],
+  "lore": {
+    "detail": "다른 영령들과는 출전이 다르기 때문에 정통 영령이라 할 수 없다.\n이 영령은 수호자라 불리는 것으로, 인류의 “존속해야 한다”는 집합 무의식이 만들어낸 방위장치와 같은 것이다. 이런 방위 방식은 인류 측의 억지력이라고도 불린다.\n요컨대 이름도 없는 사람들이 선출한, 얼굴 없는 정의의 대표자."
+  },
+  "instant_death": false
 }

@@ -20,7 +20,8 @@
     "name_ko": "약속되지 않은 수호의 바퀴",
     "ruby_ko": "채리엇 오브 부디카",
     "rank": "B++",
-    "type_ko": "대군보구"
+    "type_ko": "대군보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_4011000.png",
@@ -28,5 +29,26 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/401100/401100b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    2,
+    103,
+    202,
+    302,
+    303,
+    403,
+    1000,
+    2001,
+    2008,
+    2009,
+    2113,
+    2631,
+    2858,
+    5000,
+    401100
+  ],
+  "lore": {
+    "detail": "1세기 고대 브리타니아의 젊은 전투여왕. 악랄한 침략 끝에 자신과 딸들을 능욕한 로마제국을 용서하지 않겠다며 여러 왕을 이끌고 반란을 일으키지만 최후에는 네로 황제의 군에 패했고 결국 목숨을 잃었다. 훗날 브리튼의 ‘승리의 여왕’ 전설이 되었다."
+  },
+  "instant_death": false
 }

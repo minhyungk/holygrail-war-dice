@@ -19,7 +19,8 @@
     "name_ko": "사살하는 백 개의 머리",
     "ruby_ko": "나인 라이브즈",
     "rank": "C~A+",
-    "type_ko": "불명"
+    "type_ko": "불명",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_7001000.png",
@@ -27,5 +28,32 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/700100/700100b@2.png"
   },
   "sprite_id": null,
-  "notes": "레거시 servants-ko.json id 47에서 생성. alignment는 원작 설정 기준 AI 입력값 (Atlas로 검증 필요). temperament는 레거시 servantPersonality.ts를 ID가 아닌 이름으로 맞춘 값. 성향 광기: alignment 값 미정 (Q-125). images: Atlas Academy KR (face=맵 아이콘, summon=기본 재림 전신, final=최종 재림 전신, Q-134)."
+  "notes": "레거시 servants-ko.json id 47에서 생성. alignment는 원작 설정 기준 AI 입력값 (Atlas로 검증 필요). temperament는 레거시 servantPersonality.ts를 ID가 아닌 이름으로 맞춘 값. 성향 광기: alignment 값 미정 (Q-125). images: Atlas Academy KR (face=맵 아이콘, summon=기본 재림 전신, final=최종 재림 전신, Q-134).",
+  "traits": [
+    1,
+    106,
+    200,
+    301,
+    306,
+    404,
+    1000,
+    2000,
+    2001,
+    2008,
+    2011,
+    2037,
+    2040,
+    2114,
+    2466,
+    2631,
+    2851,
+    2858,
+    2883,
+    5000,
+    700100
+  ],
+  "lore": {
+    "detail": "그리스 신화의 양대 영웅 중 하나. 주신 제우스와 인간 여자 사이에서 태어난 반신반인의 영웅. 여신 헤라와의 불화로 무수한 모험을 거듭하며 그 모든 시련을 극복한 초인."
+  },
+  "instant_death": false
 }

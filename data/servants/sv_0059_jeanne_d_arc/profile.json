@@ -20,7 +20,8 @@
     "name_ko": "나의 신은 여기에 있나니",
     "ruby_ko": "뤼미노지테 에테르넬",
     "rank": "A",
-    "type_ko": "결계보구"
+    "type_ko": "결계보구",
+    "special_attack": []
   },
   "images": {
     "face": "https://static.atlasacademy.io/KR/Faces/f_9001000.png",
@@ -28,5 +29,25 @@
     "final": "https://static.atlasacademy.io/KR/CharaGraph/900100/900100b@2.png"
   },
   "sprite_id": null,
-  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전."
+  "notes": "Atlas KR 자동 생성 (D-157, scripts/activate-profiles.mjs). 스탯은 Atlas 랭크. 짧은 이름·성향 표기·성격은 AI 분류 초안 (activation/meta.json, 성격 근거 legacy), 사용자 검수 전.",
+  "traits": [
+    2,
+    108,
+    203,
+    300,
+    303,
+    405,
+    1000,
+    2001,
+    2007,
+    2008,
+    2631,
+    2780,
+    5000,
+    900100
+  ],
+  "lore": {
+    "detail": "주여, 이 몸을 맡기겠나이다────"
+  },
+  "instant_death": false
 }

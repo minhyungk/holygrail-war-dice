@@ -240,7 +240,7 @@
         "id": "fgo_start_1",
         "text": "마리야♪ 자, 같이. [#Vive la France:프랑스 만세]!",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",

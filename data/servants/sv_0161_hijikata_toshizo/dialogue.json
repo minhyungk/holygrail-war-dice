@@ -145,7 +145,7 @@
         "id": "fgo_bond_5",
         "when": {
           "self.affinity_tier": "loyal",
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "text": "나는 나를 위해 검을 휘둘러 왔다. 누구를 위해서가 아냐, 나를 위해서다. 하지만 네가 포기하지 않는 한, 나는──, 신선조는, 너와 함께 있는다.",
         "weight": 2,
@@ -199,7 +199,7 @@
         "id": "fgo_start_2",
         "text": "여기는 신선조가 맡겠다.",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -243,7 +243,7 @@
         "id": "fgo_down_1",
         "text": "나는 안 죽어, 내가 있는 한, 신선조는 불멸…… 이다……",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
@@ -263,7 +263,7 @@
         "text": "신선조 부장, 히지카타 토시조다. 클래스? 그딴 건 아무래도 좋아. 내가 있는 한, 여기가──신선조다.",
         "repeat": "once_per_run",
         "when": {
-          "self.intel_level": 3
+          "self.intel_level": { "gte": 2 }
         },
         "source": "fgo",
         "quote_of": "Fate/Grand Order",
