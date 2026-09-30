@@ -1,6 +1,6 @@
-# ■차 성배전쟁 (가칭, `fsn6`)
+# ■차 성배전쟁
 
-페이트/스테이 나이트 세계관의 6차 성배전쟁을 주사위를 굴려 참여하세요. 
+TYPE/MOON 세계관의 성배전쟁을 주사위를 굴려 참여하세요. 
 
 ## 실행
 ```
@@ -16,4 +16,5 @@ npm run sim:battle # 전투 시뮬레이션 상성표 출력
 
 ## DISCLAIMER
 This is a non-profit fan project. All rights to 'Fate' series and related assets belong to TYPE-MOON / FGO PROJECT.
-폰트 Pretendard는 SIL Open Font License 1.1.
+
+Font Pretendard used under SIL Open Font License 1.1.
