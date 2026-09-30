@@ -399,7 +399,7 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
 
   /**
    * 마력 공급 요청 (D-129): 아침에 서번트가 부상·위험이거나 호감도가 높으면 먼저 청한다. 하루 1회, 행동을 쓰지 않는다.
-   * 부상 때문에 청한 공급이 보통 이상이면 상태가 1단계 회복된다.
+   * 부상·위험은 요청 계기일 뿐, 공급으로 상태는 회복되지 않는다 (D-169).
    */
   function* supplyOffer(day: number) {
     const hurt = player.condition !== 'full';
@@ -416,12 +416,6 @@ export function* playRun(plan: RunPlan, data: RunData, opts: { fatePoints: numbe
     player.mana = clampMana(player.mana + band.mana);
     S.suppliedDay = day;
     log.emit('mana_supplied', [player.id], { faction: player.id, result: band.result as SupplyResult, mana_before: before, mana_after: player.mana, roll: record });
-    if (reason === 'hurt' && (band.result === 'great' || band.result === 'success' || band.result === 'normal')) {
-      const from = player.condition;
-      const to = from === 'danger' ? 'hurt' : 'full';
-      player.condition = to;
-      log.emit('condition_recovered', [player.id], { faction: player.id, from, to, cause: 'supply' });
-    }
     changeAffinity(K['affinity.delta_supply'][band.result], 'supply');
   }
 

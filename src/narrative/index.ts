@@ -132,7 +132,8 @@ export class Narrator {
 
   /** 소환 대사 (S1_SUMMON). 비트가 아니라 한 줄 */
   summonLine(servantId: string): BeatLine | null {
-    const c = pick(this.candidates(servantId, 'summon', false), {}, this.mem, this.rng, `${servantId}|summon`);
+    // 소환한 내 서번트는 전부 안다 (정보 3단계). 진명이 든 소환 대사의 가림 조건(self.intel_level ≥ 2)을 통과해야 한다 (D-169 버그 수정)
+    const c = pick(this.candidates(servantId, 'summon', false), { 'self.intel_level': INTEL.weakness, 'self.servant': servantId }, this.mem, this.rng, `${servantId}|summon`);
     return c ? this.toLine('line', c, null, {}, new Set()) : null;
   }
 

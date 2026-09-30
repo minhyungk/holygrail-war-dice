@@ -57,14 +57,14 @@
 .main-embers i:nth-child(6) { --ember-index: 5; }
 .main-embers i:nth-child(7) { --ember-index: 6; }
 
-.main-figures, .main-split {
+.main-figures {
   position: fixed;
   inset: 0;
   z-index: -1;
   pointer-events: none;
   overflow: hidden;
 }
-.main-figure, .main-split img {
+.main-figure {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -137,38 +137,17 @@
 .s-main .main-stat { font-size: 11px; }
 .s-main .copyright { position: fixed; bottom: 7px; z-index: 2; }
 
-.main-exiting .main-figures { opacity: 0; }
-.main-split { z-index: 3; }
-.main-split img {
-  opacity: .85;
-  filter: brightness(0) sepia(1) saturate(3) drop-shadow(0 0 16px var(--miracle));
-}
-.main-split-left { clip-path: inset(0 50% 0 0); animation: main-split-left var(--main-flash-ms) ease-in forwards; }
-.main-split-right { clip-path: inset(0 0 0 50%); animation: main-split-right var(--main-flash-ms) ease-in forwards; }
-.main-exiting::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  z-index: 4;
-  pointer-events: none;
-  background: radial-gradient(ellipse at center, var(--miracle), transparent 68%);
-  animation: main-flash var(--main-flash-ms) ease-out both;
-}
-
 @keyframes main-pan { from { transform: scale(1) translate(-1%, 0); } to { transform: scale(1.12) translate(1%, -1%); } }
 @keyframes main-ember { 0% { transform: translateY(0); opacity: 0; } 15% { opacity: .75; } 85% { opacity: .4; } 100% { transform: translateY(-76vh); opacity: 0; } }
 @keyframes main-fade { from { opacity: 0; } to { opacity: .58; } }
-@keyframes main-split-left { to { transform: translateX(-28%); opacity: 0; } }
-@keyframes main-split-right { to { transform: translateX(28%); opacity: 0; } }
-@keyframes main-flash { 0% { opacity: 0; } 30% { opacity: .56; } 100% { opacity: 0; } }
 
 @media (max-width: 480px) {
   .s-main .main-inner { padding-inline: 8px; }
-  .main-figures, .main-split { inset: 0; }
+  .main-figures { inset: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .s-main .main-bg, .main-embers i, .main-figure-in, .main-split img, .main-exiting::after { animation: none; }
+  .s-main .main-bg, .main-embers i, .main-figure-in { animation: none; }
   .main-embers { display: none; }
   .main-class { transition: none; }
 }

@@ -1,12 +1,14 @@
 // S6_VICTORY / S7_DEFEAT. 패배면 남은 전쟁을 빨리감기한 결과를 보여 준다 (D-043). 목업 문법(title, panel, btn)을 따른다.
 // 우승하면 먼저 성배 앞에서 소원을 적는다 (D-142). 소원을 빈 뒤 결과를 보인다.
-import { useState } from 'react';
+import { Fragment, useEffect, useMemo, useState } from 'react';
 import { K } from '../../data/constants';
 import type { RunView } from '../../engine/view';
 import { REDUCED } from '../fx/circle';
 import { Art, clsStyle, LABELS } from '../components/common';
 import type { Session } from '../session';
-import { buildChronicle, type ChronicleItem } from '../chronicle';
+import { composeChronicle } from '../../narrative/chronicle';
+import { loadChronicle } from '../../data/load';
+import type { ChronicleFile } from '../../data/schema';
 import { T } from '../strings';
 
 export function End({ session, view, onExit }: { session: Session; view: RunView; onExit: () => void }) {
@@ -99,60 +101,58 @@ function WarSummary({ session, view }: { session: Session; view: RunView }) {
   );
 }
 
-/** 전쟁 연대기 (D-166): 날짜·시간대별 전투·처치/방면·탈락. 전쟁이 끝났으므로 진명을 모두 공개한다 */
+/**
+ * 전쟁 연대기 (D-166, D-168): 날짜별 줄글. 서번트 이름이 문단에 처음 나올 때 얼굴을 붙이고, 내 진영의 사건은 강조한다.
+ * 전쟁이 끝났으므로 진명을 모두 공개한다
+ */
 function Chronicle({ session, view }: { session: Session; view: RunView }) {
+  const [file, setFile] = useState<ChronicleFile | null>(null);
+  useEffect(() => {
+    let alive = true;
+    loadChronicle().then((f) => alive && setFile(f), () => undefined);
+    return () => {
+      alive = false;
+    };
+  }, []);
   const P = view.player;
-  const sections = buildChronicle(session.log.events, P);
+  const paragraphs = useMemo(() => {
+    if (!file) return null;
+    const svOf = (fc: string) => session.data.servants[view.factions[fc]!.servant_id]!;
+    return composeChronicle(session.log.events, P, file, {
+      servant: (fc) => svOf(fc).name_short_ko ?? svOf(fc).name_ko,
+      cls: (fc) => LABELS.cls[svOf(fc).class] ?? svOf(fc).class,
+      master: (fc) => (fc === P ? null : (session.data.masters[view.factions[fc]!.master_id ?? '']?.name_ko ?? null)),
+    }, session.plan.seed, view.ended?.winner ?? null);
+  }, [file, session, view, P]);
+  if (!paragraphs) return null;
   const svOf = (fc: string) => session.data.servants[view.factions[fc]!.servant_id]!;
-  const nm = (fc: string | null | undefined) => (fc ? (svOf(fc).name_short_ko ?? svOf(fc).name_ko) : '');
-  const masterOf = (fc: string) => (fc === P ? T.you : (session.data.masters[view.factions[fc]!.master_id ?? '']?.name_ko ?? ''));
-  const C = T.chronicle;
-  const text = (it: ChronicleItem): string => {
-    switch (it.kind) {
-      case 'battle': {
-        const head = `${nm(it.factions[0])} ${C.vs} ${nm(it.factions[1])}${it.place ? ` · ${it.place}` : ''}`;
-        const res =
-          it.result === 'win' ? [C.win(nm(it.winner)), ...(it.dead ? [C.dead(nm(it.dead))] : [])]
-          : it.result === 'escape' ? [C.escape(nm(it.escaped))]
-          : it.result === 'draw' ? [C.draw]
-          : [C.escapeFailed, ...(it.dead ? [C.dead(nm(it.dead))] : [])];
-        const np = it.np?.length ? [C.np(it.np.map(nm).join(', '))] : [];
-        return [head, ...np, ...res].join(' — ');
-      }
-      case 'choice':
-        return it.choice === 'execute' ? C.execute(masterOf(it.factions[1]!)) : C.release(masterOf(it.factions[1]!));
-      case 'out':
-        return C.out(nm(it.factions[0]), T.elimHow[it.cause ?? ''] ?? it.cause ?? '', it.by ? nm(it.by) : null);
-      case 'final':
-        return C.finalStart(it.place ?? '');
-    }
-  };
   return (
     <div className="panel chronicle">
-      <h4>{C.title}</h4>
-      {sections.length ? (
-        sections.map((sec, i) => (
-          <section key={i} className="ch-sec">
-            <h5>{sec.time === 'final' ? C.final : `${T.dayN(sec.day)} ${T.time[sec.time]}`}</h5>
-            <ul>
-              {sec.items.map((it, k) => (
-                <li key={k} className={`ch-${it.kind} ${it.mine || it.factions.includes(P) ? 'mine' : ''} ${it.dead || it.kind === 'out' ? 'dead' : ''}`}>
-                  <span className="ch-faces">
-                    {it.factions.slice(0, 2).map((fc) => (
-                      <Art key={fc} src={svOf(fc).images.face} cls={svOf(fc).class} />
-                    ))}
-                  </span>
-                  <span className="ch-text">
-                    {it.mine ? <b className="ch-tag">{C.mine}</b> : null}
-                    {text(it)}
-                  </span>
-                </li>
+      <h4>{T.chronicle.title}</h4>
+      {paragraphs.length ? (
+        paragraphs.map((para, i) => (
+          <section key={i} className="ch-para">
+            <h5>{para.heading}</h5>
+            <p>
+              {para.sentences.map((sen, k) => (
+                <span key={k} className={sen.mine ? 'ch-mine' : undefined}>
+                  {sen.segs.map((sg, j) =>
+                    sg.k === 'text' ? (
+                      <Fragment key={j}>{sg.v}</Fragment>
+                    ) : (
+                      <span key={j} className={`ch-name ${sg.fc === P ? 'me' : ''}`} style={clsStyle(svOf(sg.fc).class)}>
+                        {sg.face ? <Art src={svOf(sg.fc).images.face} cls={svOf(sg.fc).class} className="ch-face" /> : null}
+                        {sg.v}
+                      </span>
+                    ),
+                  )}{' '}
+                </span>
               ))}
-            </ul>
+            </p>
           </section>
         ))
       ) : (
-        <p className="sub">{C.empty}</p>
+        <p className="sub">{T.chronicle.empty}</p>
       )}
     </div>
   );

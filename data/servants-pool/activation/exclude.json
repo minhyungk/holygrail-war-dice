@@ -1,0 +1,565 @@
+{
+  "notes": "D-169 개그·이벤트 변형 제외. 현재 편입 명단에서 레거시 ID·이름 패턴 및 Atlas KR 여름 특성으로 확인한 변형을 기록. reason은 중복 시 legacy_id → legacy_pattern → summer_trait → name_keyword 우선.",
+  "servants": [
+    {
+      "servant_id": "sv_0061_elisabeth_bathory_halloween",
+      "source_id": 61,
+      "name_ko": "엘리자베트 바토리(할로윈)",
+      "reason": "legacy_pattern",
+      "detail": "레거시 EXCLUDE_PATTERNS에 이름 일치"
+    },
+    {
+      "servant_id": "sv_0073_altria_pendragon_santa_alter",
+      "source_id": 73,
+      "name_ko": "알트리아 펜드래곤(산타 얼터)",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 73 수록"
+    },
+    {
+      "servant_id": "sv_0128_tamamo_no_mae_lancer",
+      "source_id": 128,
+      "name_ko": "타마모노마에",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 128 수록"
+    },
+    {
+      "servant_id": "sv_0129_altria_pendragon_archer",
+      "source_id": 129,
+      "name_ko": "알트리아 펜드래곤",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 129 수록"
+    },
+    {
+      "servant_id": "sv_0130_marie_antoinette_caster",
+      "source_id": 130,
+      "name_ko": "마리 앙투아네트",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 130 수록"
+    },
+    {
+      "servant_id": "sv_0131_anne_bonny_and_mary_read_archer",
+      "source_id": 131,
+      "name_ko": "앤 보니&메리 리드",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 131 수록"
+    },
+    {
+      "servant_id": "sv_0132_mordred_rider",
+      "source_id": 132,
+      "name_ko": "모드레드",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 132 수록"
+    },
+    {
+      "servant_id": "sv_0133_scathach_assassin",
+      "source_id": 133,
+      "name_ko": "스카사하",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 133 수록"
+    },
+    {
+      "servant_id": "sv_0134_kiyohime_lancer",
+      "source_id": 134,
+      "name_ko": "키요히메",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 134 수록"
+    },
+    {
+      "servant_id": "sv_0135_martha_ruler",
+      "source_id": 135,
+      "name_ko": "마르타",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 135 수록"
+    },
+    {
+      "servant_id": "sv_0138_elisabeth_bathory_brave",
+      "source_id": 138,
+      "name_ko": "엘리자베트 바토리(브레이브)",
+      "reason": "legacy_pattern",
+      "detail": "레거시 EXCLUDE_PATTERNS에 이름 일치"
+    },
+    {
+      "servant_id": "sv_0141_jeanne_d_arc_alter_santa_lily",
+      "source_id": 141,
+      "name_ko": "잔 다르크 얼터 산타 릴리",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 141 수록"
+    },
+    {
+      "servant_id": "sv_0175_nero_claudius_caster",
+      "source_id": 175,
+      "name_ko": "네로 클라우디우스",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 175 수록"
+    },
+    {
+      "servant_id": "sv_0176_frankenstein_saber",
+      "source_id": 176,
+      "name_ko": "프랑켄슈타인",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 176 수록"
+    },
+    {
+      "servant_id": "sv_0177_nitocris_assassin",
+      "source_id": 177,
+      "name_ko": "니토크리스",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 177 수록"
+    },
+    {
+      "servant_id": "sv_0178_oda_nobunaga_berserker",
+      "source_id": 178,
+      "name_ko": "오다 노부나가",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 178 수록"
+    },
+    {
+      "servant_id": "sv_0179_altria_pendragon_alter_rider",
+      "source_id": 179,
+      "name_ko": "알트리아 펜드래곤(얼터)",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 179 수록"
+    },
+    {
+      "servant_id": "sv_0180_helena_blavatsky_archer",
+      "source_id": 180,
+      "name_ko": "엘레나 블라바츠키",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 180 수록"
+    },
+    {
+      "servant_id": "sv_0181_minamoto_no_raikou_lancer",
+      "source_id": 181,
+      "name_ko": "미나모토노 라이코",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 181 수록"
+    },
+    {
+      "servant_id": "sv_0182_ishtar_rider",
+      "source_id": 182,
+      "name_ko": "이슈타르",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 182 수록"
+    },
+    {
+      "servant_id": "sv_0190_mecha_eli_chan",
+      "source_id": 190,
+      "name_ko": "메카에리짱",
+      "reason": "legacy_pattern",
+      "detail": "레거시 EXCLUDE_PATTERNS에 이름 일치"
+    },
+    {
+      "servant_id": "sv_0191_mecha_eli_chan_mk_ii",
+      "source_id": 191,
+      "name_ko": "메카에리짱 Ⅱ호기",
+      "reason": "legacy_pattern",
+      "detail": "레거시 EXCLUDE_PATTERNS에 이름 일치"
+    },
+    {
+      "servant_id": "sv_0197_attila_the_san_ta",
+      "source_id": 197,
+      "name_ko": "알테라 더 산[타]",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 197 수록"
+    },
+    {
+      "servant_id": "sv_0216_jeanne_d_arc_archer",
+      "source_id": 216,
+      "name_ko": "잔 다르크",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 216 수록"
+    },
+    {
+      "servant_id": "sv_0217_ibaraki_douji_lancer",
+      "source_id": 217,
+      "name_ko": "이바라키도지",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 217 수록"
+    },
+    {
+      "servant_id": "sv_0218_ushiwakamaru_assassin",
+      "source_id": 218,
+      "name_ko": "우시와카마루",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 218 수록"
+    },
+    {
+      "servant_id": "sv_0219_jeanne_d_arc_alter_berserker",
+      "source_id": 219,
+      "name_ko": "잔 다르크(얼터)",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 219 수록"
+    },
+    {
+      "servant_id": "sv_0220_bb",
+      "source_id": 220,
+      "name_ko": "BB",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 220 수록"
+    },
+    {
+      "servant_id": "sv_0221_medb_saber",
+      "source_id": 221,
+      "name_ko": "여왕 메이브",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 221 수록"
+    },
+    {
+      "servant_id": "sv_0222_mysterious_heroine_xx",
+      "source_id": 222,
+      "name_ko": "수수께끼의 히로인 XX",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 222 수록"
+    },
+    {
+      "servant_id": "sv_0233_quetzalcoatl_samba_santa",
+      "source_id": 233,
+      "name_ko": "케찰코아틀(삼바/산타)",
+      "reason": "legacy_pattern",
+      "detail": "레거시 EXCLUDE_PATTERNS에 이름 일치"
+    },
+    {
+      "servant_id": "sv_0261_miyamoto_musashi_berserker",
+      "source_id": 261,
+      "name_ko": "미야모토 무사시",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 261 수록"
+    },
+    {
+      "servant_id": "sv_0262_osakabehime_archer",
+      "source_id": 262,
+      "name_ko": "오사카베히메",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 262 수록"
+    },
+    {
+      "servant_id": "sv_0263_carmilla_rider",
+      "source_id": 263,
+      "name_ko": "카밀라",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 263 수록"
+    },
+    {
+      "servant_id": "sv_0264_katsushika_hokusai_saber",
+      "source_id": 264,
+      "name_ko": "카츠시카 호쿠사이",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 264 수록"
+    },
+    {
+      "servant_id": "sv_0265_altria_pendragon_ruler",
+      "source_id": 265,
+      "name_ko": "알트리아 펜드래곤",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 265 수록"
+    },
+    {
+      "servant_id": "sv_0266_mysterious_alter_ego",
+      "source_id": 266,
+      "name_ko": "수수께끼의 얼터에고・Λ",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 266 수록"
+    },
+    {
+      "servant_id": "sv_0267_okita_j_souji",
+      "source_id": 267,
+      "name_ko": "오키타 소지",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 267 수록"
+    },
+    {
+      "servant_id": "sv_0271_florence_nightingale_santa",
+      "source_id": 271,
+      "name_ko": "나이팅게일[산타]",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 271 수록"
+    },
+    {
+      "servant_id": "sv_0285_sessyoin_kiara_moon_cancer",
+      "source_id": 285,
+      "name_ko": "셋쇼인 키아라",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 285 수록"
+    },
+    {
+      "servant_id": "sv_0286_illyasviel_von_einzbern_archer",
+      "source_id": 286,
+      "name_ko": "이리야스필 폰 아인츠베른",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 286 수록"
+    },
+    {
+      "servant_id": "sv_0287_brynhild_berserker",
+      "source_id": 287,
+      "name_ko": "브륀힐드",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 287 수록"
+    },
+    {
+      "servant_id": "sv_0288_yu_mei_ren_lancer",
+      "source_id": 288,
+      "name_ko": "우미인",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 288 수록"
+    },
+    {
+      "servant_id": "sv_0289_abigail_williams_summer",
+      "source_id": 289,
+      "name_ko": "애비게일 윌리엄스(여름)",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 289 수록"
+    },
+    {
+      "servant_id": "sv_0290_tomoe_gozen_saber",
+      "source_id": 290,
+      "name_ko": "토모에고젠",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 290 수록"
+    },
+    {
+      "servant_id": "sv_0291_murasaki_shikibu_rider",
+      "source_id": 291,
+      "name_ko": "무라사키 시키부",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 291 수록"
+    },
+    {
+      "servant_id": "sv_0301_karna_santa",
+      "source_id": 301,
+      "name_ko": "카르나[산타]",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 301 수록"
+    },
+    {
+      "servant_id": "sv_0317_okita_souji_alter_saber",
+      "source_id": 317,
+      "name_ko": "오키타 소지(얼터)",
+      "reason": "summer_trait",
+      "detail": "Atlas KR traits에 summerModeServant 확인"
+    },
+    {
+      "servant_id": "sv_0318_anastasia_and_viy",
+      "source_id": 318,
+      "name_ko": "아나스타샤&비이",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 318 수록"
+    },
+    {
+      "servant_id": "sv_0319_charlotte_corday_caster",
+      "source_id": 319,
+      "name_ko": "샤를로트 코르데",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 319 수록"
+    },
+    {
+      "servant_id": "sv_0320_leonardo_da_vinci_ruler",
+      "source_id": 320,
+      "name_ko": "레오나르도 다 빈치",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 320 수록"
+    },
+    {
+      "servant_id": "sv_0321_kama_avenger",
+      "source_id": 321,
+      "name_ko": "카마",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 321 수록"
+    },
+    {
+      "servant_id": "sv_0322_caenis_rider",
+      "source_id": 322,
+      "name_ko": "카이니스",
+      "reason": "summer_trait",
+      "detail": "Atlas KR traits에 alignmentSummer 확인"
+    },
+    {
+      "servant_id": "sv_0323_sei_shounagon_berserker",
+      "source_id": 323,
+      "name_ko": "세이 쇼나곤",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 323 수록"
+    },
+    {
+      "servant_id": "sv_0326_elisabeth_bathory_cinderella",
+      "source_id": 326,
+      "name_ko": "엘리자베트 바토리(신데렐라)",
+      "reason": "legacy_pattern",
+      "detail": "레거시 EXCLUDE_PATTERNS에 이름 일치"
+    },
+    {
+      "servant_id": "sv_0330_martha_santa",
+      "source_id": 330,
+      "name_ko": "마르타[산타]",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 330 수록"
+    },
+    {
+      "servant_id": "sv_0353_lady_avalon",
+      "source_id": 353,
+      "name_ko": "레이디 아발론",
+      "reason": "summer_trait",
+      "detail": "Atlas KR traits에 summerModeServant 확인"
+    },
+    {
+      "servant_id": "sv_0354_gareth_saber",
+      "source_id": 354,
+      "name_ko": "가레스",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 354 수록"
+    },
+    {
+      "servant_id": "sv_0355_ibuki_douji_berserker",
+      "source_id": 355,
+      "name_ko": "이부키도지",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 355 수록"
+    },
+    {
+      "servant_id": "sv_0356_utsumi_erice_avenger",
+      "source_id": 356,
+      "name_ko": "우츠미 에리세",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 356 수록"
+    },
+    {
+      "servant_id": "sv_0357_scathach_skadi_ruler",
+      "source_id": 357,
+      "name_ko": "스카사하=스카디",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 357 수록"
+    },
+    {
+      "servant_id": "sv_0358_wu_zetian_caster",
+      "source_id": 358,
+      "name_ko": "무측천",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 358 수록"
+    },
+    {
+      "servant_id": "sv_0359_thrud",
+      "source_id": 359,
+      "name_ko": "스루드",
+      "reason": "summer_trait",
+      "detail": "Atlas KR traits에 alignmentSummer 확인"
+    },
+    {
+      "servant_id": "sv_0360_hildr",
+      "source_id": 360,
+      "name_ko": "힐드",
+      "reason": "summer_trait",
+      "detail": "Atlas KR traits에 alignmentSummer 확인"
+    },
+    {
+      "servant_id": "sv_0361_ortlinde",
+      "source_id": 361,
+      "name_ko": "오르트린데",
+      "reason": "summer_trait",
+      "detail": "Atlas KR traits에 alignmentSummer 확인"
+    },
+    {
+      "servant_id": "sv_0386_altria_caster",
+      "source_id": 386,
+      "name_ko": "알트리아 캐스터",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 386 수록"
+    },
+    {
+      "servant_id": "sv_0387_suzuka_gozen_vacay",
+      "source_id": 387,
+      "name_ko": "스즈카고젠[서머베케]",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 387 수록"
+    },
+    {
+      "servant_id": "sv_0388_chloe_von_einzbern",
+      "source_id": 388,
+      "name_ko": "클로에 폰 아인츠베른",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 388 수록"
+    },
+    {
+      "servant_id": "sv_0389_cnoc_na_riabh_yaraandoo",
+      "source_id": 389,
+      "name_ko": "노크나레아・야라안두",
+      "reason": "summer_trait",
+      "detail": "Atlas KR traits에 summerModeServant 확인"
+    },
+    {
+      "servant_id": "sv_0390_melusine",
+      "source_id": 390,
+      "name_ko": "멜뤼진",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 390 수록"
+    },
+    {
+      "servant_id": "sv_0391_udk_barghest",
+      "source_id": 391,
+      "name_ko": "UDK-바게스트",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 391 수록"
+    },
+    {
+      "servant_id": "sv_0392_cait_cu_mikocer",
+      "source_id": 392,
+      "name_ko": "캐트 쿠 미코케르",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 392 수록"
+    },
+    {
+      "servant_id": "sv_0401_nemo_santa",
+      "source_id": 401,
+      "name_ko": "네모[산타]",
+      "reason": "legacy_id",
+      "detail": "레거시 SUMMER_EVENT_IDS에 collectionNo 401 수록"
+    },
+    {
+      "servant_id": "sv_0418_mysterious_executor_c_i_e_l",
+      "source_id": 418,
+      "name_ko": "수수께끼의 대행자 C.I.E.L",
+      "reason": "summer_trait",
+      "detail": "Atlas KR traits에 summerModeServant 확인"
+    },
+    {
+      "servant_id": "sv_0419_dobrynya_nikitich_lancer",
+      "source_id": 419,
+      "name_ko": "도브리냐 니키티치",
+      "reason": "summer_trait",
+      "detail": "Atlas KR traits에 summerModeServant 확인"
+    },
+    {
+      "servant_id": "sv_0420_xu_fu_avenger",
+      "source_id": 420,
+      "name_ko": "서복",
+      "reason": "summer_trait",
+      "detail": "Atlas KR traits에 summerModeServant 확인"
+    },
+    {
+      "servant_id": "sv_0421_bb_dubai",
+      "source_id": 421,
+      "name_ko": "BB 두바이",
+      "reason": "summer_trait",
+      "detail": "Atlas KR traits에 summerModeServant 확인"
+    },
+    {
+      "servant_id": "sv_0422_tenochtitlan_moon_cancer",
+      "source_id": 422,
+      "name_ko": "테노치티틀란",
+      "reason": "summer_trait",
+      "detail": "Atlas KR traits에 summerModeServant 확인"
+    },
+    {
+      "servant_id": "sv_0423_mysterious_heroine_xx_alter",
+      "source_id": 423,
+      "name_ko": "수수께끼의 히로인 XX(얼터)",
+      "reason": "summer_trait",
+      "detail": "Atlas KR traits에 summerModeServant 확인"
+    },
+    {
+      "servant_id": "sv_0430_servant_430",
+      "source_id": 430,
+      "name_ko": "애비게일 윌리엄스[산타]",
+      "reason": "legacy_pattern",
+      "detail": "레거시 EXCLUDE_PATTERNS에 이름 일치"
+    }
+  ]
+}

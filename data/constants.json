@@ -768,13 +768,12 @@
         "silhouette_ms": 4200,
         "crossfade_ms": 1400,
         "class_light_ms": 420,
-        "circle_spin_ms": 2600,
-        "summon_flash_ms": 900
+        "circle_spin_ms": 2600
       },
       "unit": "ms",
       "doc_ref": "02-screens-flow.md S0_MAIN",
       "status": "임시값",
-      "note": "D-166. 메인화면: 서번트 실루엣 1장 노출 시간·교차 전환, 7클래스 아이콘이 하나씩 켜지는 간격, 7개가 다 켜진 뒤 마법진 회전, 소환 버튼을 누른 뒤 실루엣이 금빛으로 갈라지는 시간"
+      "note": "D-166. 메인화면: 서번트 실루엣 1장 노출 시간·교차 전환, 7클래스 아이콘이 하나씩 켜지는 간격, 7개가 다 켜진 뒤 마법진 회전. 소환 클릭 연출은 없앰 (D-169)"
     },
     {
       "key": "text.trace_fx",
@@ -818,11 +817,11 @@
     },
     {
       "key": "text.fast_forward",
-      "value": 3,
+      "value": [3, 10],
       "unit": "배",
       "doc_ref": "combat.md §4.3",
       "status": "임시값",
-      "note": "전투 빨리감기 배속: 글자·주사위·연출 시간을 이 값으로 나눈다 (D-161)"
+      "note": "전투 빨리감기 배속 단계: 버튼을 누를 때마다 다음 단계(3배 → 10배 → 끔). 글자·주사위·연출 시간을 이 값으로 나눈다 (D-161, D-169)"
     },
     {
       "key": "text.summon_timing",

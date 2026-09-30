@@ -218,7 +218,7 @@ export function play(s: Session, e: AnyEvent, labels: { unknown: string; cls: Re
         }
         break;
       case 'condition_recovered':
-        if (e.data.faction === P) lines.push(sys(T.sys.recovered(T.condition[e.data.from]!, T.condition[e.data.to]!, e.data.cause)));
+        if (e.data.faction === P) lines.push(sys(T.sys.recovered(T.condition[e.data.from]!, T.condition[e.data.to]!)));
         break;
       case 'betrayal_attempted':
         lines.push(sys(T.sys.betrayal));

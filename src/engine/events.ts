@@ -47,8 +47,8 @@ export interface EventDataMap {
   day_started: { day: number };
   night_started: { day: number };
   final_started: { tile: string; factions: string[] };
-  /** cause: 밤이 지나 회복 / 부상 때 받은 마력 공급 (D-129) */
-  condition_recovered: { faction: string; from: Condition; to: Condition; cause: 'night' | 'supply' };
+  /** cause: 밤 진입 시 회복 (D-167, D-169) */
+  condition_recovered: { faction: string; from: Condition; to: Condition; cause: 'night' };
   mana_regenerated: { faction: string; amount: number; mana_after: number };
   // 낮·밤 행동
   /** 판정이 있는 플레이어 행동의 시작. 도입 나레이션이 주사위(재굴림 질문 포함)보다 먼저 나오게 한다 (D-141) */

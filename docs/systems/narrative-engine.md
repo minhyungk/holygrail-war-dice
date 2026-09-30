@@ -47,7 +47,7 @@ GameEvent ─► ① 사실 수집 ─► ② 후보 필터 ─► ③ 점수·�
 | 판 | `run_started` | seed, 플레이어 진영, 적 진영 조합, 소환 방식 |
 | | `run_ended` | result(`victory`/`defeat`), 우승 진영 |
 | 시간 | `day_started`, `night_started` | |
-| | `condition_recovered` | 진영, 이전/이후 상태, cause(`night`/`supply`) |
+| | `condition_recovered` | 진영, 이전/이후 상태, cause(`night`: 밤에 들어갈 때, D-167. 마력 공급 회복은 폐지 D-169) |
 | | `mana_regenerated` | 진영, 증가량 |
 | 낮 행동·보구 공개 | `action_started` | 플레이어의 판정 행동 시작: 진영, action(`bond`/`intel`/`supply`), 타일, 대상(정보 수집). 판정·재굴림 질문보다 먼저 기록해 도입 나레이션을 먼저 보인다 (D-141) |
 | | `intel_gained` | 대상, 이전/이후 단계, cause(`intel`/`np`/`encounter`/`battle`), 결과·굴림·DC. 보구 공개는 개방 직후, 조우 자동 공개는 조우 직후, 결판 없는 전투 보상은 전투 종료 직후 기록 (D-137, D-147) |

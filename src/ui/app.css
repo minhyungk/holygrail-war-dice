@@ -660,21 +660,17 @@ rt.in { opacity: .95; transform: none; }
 @keyframes trace-spark { 0% { transform: rotate(var(--a)) translateX(0); opacity: 1; } 100% { transform: rotate(var(--a)) translateX(210%); opacity: .9; } }
 @keyframes trace-rise { from { transform: rotate(var(--a)) translateX(210%); top: 50%; opacity: .9; } to { transform: rotate(var(--a)) translateX(210%); top: 0%; opacity: 0; filter: blur(1px); } }
 
-/* 전쟁 연대기 (D-166) */
-.chronicle { width: min(560px, 100%); text-align: left; }
-.chronicle h4 { margin-bottom: 10px; }
-.ch-sec + .ch-sec { margin-top: 12px; }
-.ch-sec h5 { margin: 0 0 6px; font-size: 12px; letter-spacing: .08em; color: var(--accent); }
-.ch-sec ul { list-style: none; margin: 0; padding: 0 0 0 10px; border-left: 1px solid var(--line-soft); display: flex; flex-direction: column; gap: 6px; }
-.ch-sec li { display: flex; align-items: center; gap: 8px; font-size: 13px; line-height: 1.5; }
-.ch-faces { display: inline-flex; flex: none; }
-.ch-faces img, .ch-faces .glyph { width: 24px; height: 24px; border-radius: 50%; object-fit: cover; font-size: 11px; }
-.ch-faces > * + * { margin-left: -6px; }
-.ch-tag { font-size: 10px; font-weight: 700; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 0 6px; margin-right: 6px; }
-.ch-sec li.dead .ch-text { color: var(--text-primary); }
-.ch-sec li.ch-out .ch-text { color: var(--danger); }
-.ch-sec li.ch-final .ch-text { color: var(--miracle, var(--accent)); font-weight: 700; }
-.ch-sec li:not(.mine):not(.ch-out):not(.ch-final) .ch-text { color: var(--text-muted); }
+/* 전쟁 연대기 줄글 (D-166, D-168) */
+.chronicle { width: min(600px, 100%); text-align: left; }
+.chronicle h4 { margin-bottom: 12px; }
+.ch-para + .ch-para { margin-top: 14px; }
+.ch-para h5 { margin: 0 0 6px; font-size: 12px; letter-spacing: .1em; color: var(--accent); }
+.ch-para p { margin: 0; font-size: 14px; line-height: 1.95; color: var(--text-primary); word-break: keep-all; }
+.ch-name { font-weight: 700; white-space: nowrap; }
+.ch-name.me { color: var(--accent); }
+.ch-face { width: 22px; height: 22px; border-radius: 50%; object-fit: cover; vertical-align: -6px; margin-right: 4px; box-shadow: 0 0 0 1.5px var(--cls, var(--line)); }
+.ch-name .glyph { display: inline-grid; width: 22px; height: 22px; font-size: 11px; vertical-align: -6px; margin-right: 4px; }
+.ch-mine { background: linear-gradient(transparent 62%, rgba(201,164,92,.16) 62%); }
 
 /* 전투 카드 스테이터스 (D-167): 서번트 이름 아래 */
 .bp-stats { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 2px; margin: 0; }

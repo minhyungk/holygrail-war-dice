@@ -44,6 +44,33 @@ export const DialogueFile = z
   .strict();
 export type DialogueFile = z.infer<typeof DialogueFile>;
 
+/** 전쟁 연대기 줄글 문장 틀 (D-168, data/common/chronicle.json) */
+export const CHRONICLE_PLACEHOLDERS = ['place', 'winner', 'loser', 'dead', 'escaped', 'other', 'a', 'b', 'opener', 'rival', 'master', 'servant', 'n', 'times', 'count', 'list', 'class', 'winner_master'] as const;
+export const ChronicleFile = z
+  .object({
+    scope: z.string(),
+    speaker: z.literal('narrator'),
+    defaults: Line.partial().strict(),
+    notes: z.string().optional(),
+    labels: z
+      .object({
+        day_names: z.array(z.string()).min(7),
+        ordinals: z.array(z.string()).min(1),
+        counts: z.array(z.string()).min(7),
+        heading_night: z.string(),
+        heading_day: z.string(),
+        heading_range: z.string(),
+        heading_final: z.string(),
+        ordinal: z.string(),
+        ordinal_big: z.string(),
+        master_fallback: z.string(),
+      })
+      .strict(),
+    tags: z.object({ battle: z.array(Line), out: z.array(Line), stalemate: z.array(Line), final: z.array(Line), closing: z.array(Line) }).strict(),
+  })
+  .strict();
+export type ChronicleFile = z.infer<typeof ChronicleFile>;
+
 /** 본문의 {자리표시자}{조사} 중 목록에 없는 것을 돌려준다 */
 export function unknownPlaceholders(text: string): string[] {
   const bad: string[] = [];

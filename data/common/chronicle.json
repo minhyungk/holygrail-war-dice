@@ -1,0 +1,85 @@
+{
+  "scope": "common",
+  "speaker": "narrator",
+  "defaults": { "status": "draft", "author": "ai", "weight": 1, "repeat": "always", "source": "new" },
+  "notes": "전쟁 연대기 줄글 문장 틀 (D-168). 종료 화면에서 이벤트 기록을 날짜별 문단으로 조립한다 (src/narrative/chronicle.ts). 전쟁이 끝난 뒤라 진명을 공개한다. 3인칭 관찰자. 이름 뒤에 서술격 조사(이다/였다)를 붙이지 않는다(받침 처리 없음). 자리표시자 목록은 schema.ts CHRONICLE_PLACEHOLDERS",
+  "labels": {
+    "day_names": ["첫째", "둘째", "셋째", "넷째", "다섯째", "여섯째", "일곱째", "여덟째", "아홉째", "열째"],
+    "ordinals": ["첫", "두", "세", "네", "다섯", "여섯", "일곱", "여덟", "아홉", "열"],
+    "counts": ["한", "두", "세", "네", "다섯", "여섯", "일곱", "여덟", "아홉", "열"],
+    "heading_night": "{day} 밤",
+    "heading_day": "{day} 낮",
+    "heading_range": "{from} 밤부터 {to} 밤까지",
+    "heading_final": "성배 강림",
+    "ordinal": "{word} 번째",
+    "ordinal_big": "{n}번째",
+    "master_fallback": "{servant}의 마스터"
+  },
+  "tags": {
+    "battle": [
+      {"id": "win_1", "when": {"event.result": "win", "event.dead": true}, "text": "{place}에서 {winner}{와/과} {loser}{이/가} 맞붙었다. 끝까지 서 있던 쪽은 {winner}. {loser}{은/는} 금빛 입자가 되어 흩어졌다."},
+      {"id": "win_2", "when": {"event.result": "win", "event.dead": true}, "text": "{place}. {winner}의 일격이 {loser}의 영기를 꿰뚫었다. ──한 영령의 전설이, 거기서 끝났다."},
+      {"id": "win_3", "when": {"event.result": "win", "event.dead": true}, "text": "{place}에서 {loser}{은/는} {winner}의 앞에 쓰러졌다."},
+      {"id": "win_np_both_1", "when": {"event.result": "win", "event.dead": true, "event.np": "both"}, "text": "{place}에서 {winner}{와/과} {loser}{이/가} 동시에 보구를 열었다. 전설과 전설이 부딪친 끝에, 서 있던 것은 {winner}."},
+      {"id": "win_np_both_2", "when": {"event.result": "win", "event.dead": true, "event.np": "both"}, "text": "{place}의 밤하늘을 두 보구의 빛이 갈랐다. 빛이 걷혔을 때 서 있던 것은 {winner}. {loser}의 모습은 없었다."},
+      {"id": "win_np_both_3", "when": {"event.result": "win", "event.dead": true, "event.np": "both"}, "text": "{place}에서 {winner}{와/과} {loser}{은/는} 서로의 보구를 꺼내 들었다. 먼저 무너진 쪽은 {loser}."},
+      {"id": "win_np_winner_1", "when": {"event.result": "win", "event.dead": true, "event.np": "winner"}, "text": "{place}에서 {winner}{이/가} 보구를 열었다. {loser}{은/는} 그 빛을 넘지 못했다."},
+      {"id": "win_np_winner_2", "when": {"event.result": "win", "event.dead": true, "event.np": "winner"}, "text": "{winner}의 보구가 {place}{을/를} 밝혔다. 빛이 사라진 자리에, {loser}의 모습은 없었다."},
+      {"id": "win_np_loser_1", "when": {"event.result": "win", "event.dead": true, "event.np": "loser"}, "text": "{place}에서 {loser}{은/는} 보구까지 열었지만, 끝내 {winner}{을/를} 넘지 못했다."},
+      {"id": "win_np_loser_2", "when": {"event.result": "win", "event.dead": true, "event.np": "loser"}, "text": "{loser}의 보구가 {place}{을/를} 뒤흔들었다. 그러나 마지막에 서 있던 쪽은 {winner}."},
+      {"id": "first_1", "when": {"event.result": "win", "event.dead": true, "event.first_blood": true}, "text": "{place}에서 전쟁의 첫 피가 흘렀다. {winner}{와/과} {loser}의 싸움 끝에, 쓰러진 것은 {loser}."},
+      {"id": "first_2", "when": {"event.result": "win", "event.dead": true, "event.first_blood": true}, "text": "첫 탈락자는 {place}에서 나왔다. {winner}의 앞에서 {loser}{이/가} 무너졌다."},
+      {"id": "first_np_both", "when": {"event.result": "win", "event.dead": true, "event.first_blood": true, "event.np": "both"}, "text": "{place}에서 전쟁의 첫 피가 흘렀다. {loser}{와/과} {winner}{이/가} 동시에 보구를 열었고, 끝까지 서 있던 것은 {winner}."},
+      {"id": "rematch_win_1", "when": {"event.result": "win", "event.dead": true, "event.rematch": true}, "text": "{place}에서 {winner}{와/과} {loser}{은/는} 같은 밤 {times} 번 맞붙었다. 마지막 싸움 끝에 {loser}{이/가} 쓰러졌다."},
+      {"id": "rematch_win_2", "when": {"event.result": "win", "event.dead": true, "event.rematch": true}, "text": "한 번으로는 끝나지 않았다. {place}에서 다시 맞붙은 끝에, {winner}{이/가} {loser}{을/를} 쓰러뜨렸다."},
+      {"id": "meet_win_1", "when": {"event.result": "win", "event.dead": true, "event.meeting": {"gte": 3}}, "text": "{place}에서 {winner}{와/과} {loser}의 {n} 대결이 마침내 끝을 보았다. 쓰러진 것은 {loser}."},
+      {"id": "meet_win_2", "when": {"event.result": "win", "event.dead": true, "event.meeting": {"gte": 3}}, "text": "{n} 맞대결. {place}에서, 길었던 인연이 끝났다. {loser}{은/는} {winner}의 앞에서 무너졌다."},
+      {"id": "final_win_1", "when": {"event.result": "win", "event.dead": true, "event.final": true}, "text": "{winner}{와/과} {loser}의 대결. 성배 앞에서 무너진 쪽은 {loser}."},
+      {"id": "final_win_2", "when": {"event.result": "win", "event.dead": true, "event.final": true}, "text": "{loser}{은/는} 성배를 눈앞에 두고, {winner}의 앞에 쓰러졌다."},
+      {"id": "final_win_np_loser", "when": {"event.result": "win", "event.dead": true, "event.final": true, "event.np": "loser"}, "text": "{loser}{은/는} 마지막 보구를 열었지만, {winner}의 앞에 쓰러졌다."},
+      {"id": "final_win_np_winner", "when": {"event.result": "win", "event.dead": true, "event.final": true, "event.np": "winner"}, "text": "{winner}의 보구가 성배 앞을 밝혔다. {loser}{은/는} 그 빛 속에서 사라졌다."},
+      {"id": "win_alive", "when": {"event.result": "win"}, "text": "{place}에서 {winner}{이/가} {loser}{을/를} 꺾었다."},
+      {"id": "draw_1", "when": {"event.result": "draw"}, "text": "{place}에서 {a}{와/과} {b}{이/가} 맞섰지만, 결판은 나지 않았다."},
+      {"id": "draw_2", "when": {"event.result": "draw"}, "text": "{a}{와/과} {b}. {place}에서 부딪친 두 영령은, 어느 쪽도 쓰러지지 않은 채 물러났다."},
+      {"id": "draw_3", "when": {"event.result": "draw"}, "text": "{place}의 격돌은 무승부로 끝났다. {a}도 {b}도, 다음 밤을 기약했다."},
+      {"id": "draw_np_one", "when": {"event.result": "draw", "event.np": "one"}, "text": "{place}에서 {opener}{은/는} {rival}에게 보구까지 열었지만, 결판은 나지 않았다."},
+      {"id": "draw_np_both", "when": {"event.result": "draw", "event.np": "both"}, "text": "{place}에서 {a}{와/과} {b}{이/가} 서로 보구를 열었다. 그럼에도, 쓰러진 쪽은 없었다."},
+      {"id": "draw_rematch", "when": {"event.result": "draw", "event.rematch": true}, "text": "{place}에서 {a}{와/과} {b}{은/는} 같은 밤 {times} 번 맞붙었지만, 끝내 결판을 내지 못했다."},
+      {"id": "draw_meet_1", "when": {"event.result": "draw", "event.meeting": {"gte": 3}}, "text": "{a}{와/과} {b}의 {n} 대결. {place}에서도 결판은 나지 않았다."},
+      {"id": "draw_meet_2", "when": {"event.result": "draw", "event.meeting": {"gte": 3}}, "text": "{place}에서 {a}{와/과} {b}{이/가} 또다시 부딪쳤다. {n} 대결도 무승부."},
+      {"id": "escape_1", "when": {"event.result": "escape"}, "text": "{place}에서 {escaped}{은/는} {other}{와/과} 마주쳤지만, 물러나는 길을 택했다."},
+      {"id": "escape_2", "when": {"event.result": "escape"}, "text": "{place}. {other}의 공세 앞에서, {escaped}{이/가} 몸을 뺐다."},
+      {"id": "escape_np_self", "when": {"event.result": "escape", "event.np": "escaped"}, "text": "{place}에서 {escaped}{은/는} 보구를 열고도, {other}에게서 물러나야 했다."},
+      {"id": "escape_np_other", "when": {"event.result": "escape", "event.np": "other"}, "text": "{other}{이/가} 보구를 열자, {escaped}{은/는} {place}에서 몸을 뺐다."},
+      {"id": "escape_failed_dead", "when": {"event.result": "escape_failed", "event.dead": true}, "text": "{place}에서 {dead}{은/는} 물러나려 했지만, {other}{은/는} 그 등을 놓치지 않았다."},
+      {"id": "escape_failed", "when": {"event.result": "escape_failed"}, "text": "{place}에서 {a}{와/과} {b}{이/가} 맞붙었다. 한쪽은 물러나려 했지만, 길은 열리지 않았다."}
+    ],
+    "out": [
+      {"id": "executed_1", "when": {"event.cause": "executed"}, "text": "패배한 마스터 {master}{은/는} 그 자리에서 처치되었다."},
+      {"id": "executed_2", "when": {"event.cause": "executed"}, "text": "마스터 {master}{은/는} 살아서 그 밤을 넘기지 못했다."},
+      {"id": "executed_3", "when": {"event.cause": "executed"}, "text": "{master}의 성배전쟁도 그 밤으로 끝났다."},
+      {"id": "released_1", "when": {"event.cause": "released"}, "text": "마스터 {master}{은/는} 목숨을 건져 전장을 떠났다."},
+      {"id": "released_2", "when": {"event.cause": "released"}, "text": "승자는 패자를 놓아주었다. {master}{은/는} 조용히 전쟁에서 물러났다."},
+      {"id": "betrayal", "when": {"event.cause": "betrayal"}, "text": "그 밤, {servant}{이/가} 자신의 마스터에게 칼끝을 돌렸다. 계약은 피로 끝났다."},
+      {"id": "refused", "when": {"event.cause": "refused_escape"}, "text": "퇴각 명령을 거부한 {servant}{은/는}, 끝까지 싸우다 쓰러졌다."},
+      {"id": "killed", "when": {"event.cause": "killed"}, "text": "{servant}{이/가} 쓰러졌다."},
+      {"id": "escape_failed", "when": {"event.cause": "escape_failed"}, "text": "{servant}{은/는} 등을 보인 채 쓰러졌다."}
+    ],
+    "stalemate": [
+      {"id": "lead_1", "text": "전쟁은 교착에 빠졌다."},
+      {"id": "lead_2", "text": "칼은 밤마다 부딪쳤지만, 쓰러지는 자는 없었다."},
+      {"id": "lead_3", "text": "일곱 자리 중 비는 곳은 더 생기지 않았다. 대신, 밤마다 싸움만이 이어졌다."}
+    ],
+    "final": [
+      {"id": "lead_1", "text": "그리고 성배가 눈을 떴다. 남은 {count} 서번트, {list}{이/가} {place}{으로/로} 끌려왔다."},
+      {"id": "lead_2", "text": "일곱째 밤이 끝나고, 성배가 남은 {count} 영령을 {place}{으로/로} 불러 모았다. {list}."}
+    ],
+    "closing": [
+      {"id": "win_1", "when": {"event.has_winner": true}, "text": "제6차 성배전쟁의 승자는 {class} {winner}, 마스터 {winner_master}."},
+      {"id": "win_2", "when": {"event.has_winner": true}, "text": "성배에 닿은 것은 {class} {winner}. 그 마스터, {winner_master}."},
+      {"id": "player_1", "when": {"event.has_winner": true, "event.player_won": true}, "text": "제6차 성배전쟁의 승자는 {class} {winner}, 그리고 그 마스터."},
+      {"id": "player_2", "when": {"event.has_winner": true, "event.player_won": true}, "text": "마지막까지 서 있던 것은 {class} {winner}. 성배는, 그 마스터의 손에 닿았다."},
+      {"id": "none", "when": {"event.has_winner": false}, "text": "승자는 없었다. 성배는 누구의 손에도 닿지 않은 채, 다시 잠들었다."}
+    ]
+  }
+}

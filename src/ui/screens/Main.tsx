@@ -1,4 +1,4 @@
-// S0_MAIN: 일곱 자리와 소환 전 실루엣 (D-166).
+// S0_MAIN: 일곱 자리와 소환 전 실루엣 (D-166). 소환 연출은 소환 화면 영창이 맡는다 (D-169).
 import { useEffect, useRef, useState, type CSSProperties } from 'react';
 import { K } from '../../data/constants';
 import { STANDARD_CLASSES, type ServantProfile } from '../../data/schema';
@@ -20,10 +20,8 @@ export function Main({ servants, fatePoints, setFatePoints, onSummon }: {
 }) {
   const [lit, setLit] = useState(REDUCED ? STANDARD_CLASSES.length : 0);
   const [art, setArt] = useState<{ current: ServantProfile | null; incoming: ServantProfile | null }>({ current: null, incoming: null });
-  const [exiting, setExiting] = useState(false);
   const [failed, setFailed] = useState<Set<string>>(() => new Set());
   const exitingRef = useRef(false);
-  const flashTimer = useRef(0);
   const circle = useRef<HTMLCanvasElement>(null);
   const min = K['dice.fate_point_min'];
   const max = K['dice.fate_point_max'];
@@ -60,7 +58,6 @@ export function Main({ servants, fatePoints, setFatePoints, onSummon }: {
 
   // 한 장을 보여주는 동안 다음 한 장만 미리 받는다 (D-166).
   useEffect(() => {
-    if (exiting) return;
     const pool = servants.filter((s) => s.images.summon && !failed.has(s.servant_id));
     if (!pool.length) {
       setArt({ current: null, incoming: null });
@@ -130,20 +127,15 @@ export function Main({ servants, fatePoints, setFatePoints, onSummon }: {
         loading.onerror = null;
       }
     };
-  }, [servants, failed, exiting]);
+  }, [servants, failed]);
 
-  useEffect(() => () => window.clearTimeout(flashTimer.current), []);
 
   const imageFailed = (id: string) => setFailed((prev) => new Set(prev).add(id));
+  // 소환 연출은 소환 화면의 영창(「고한다」)이 맡는다: 누르면 바로 넘어간다 (D-169)
   const summon = (mode: 'random' | 'catalyst') => {
     if (exitingRef.current) return;
     exitingRef.current = true;
-    if (REDUCED) {
-      onSummon(mode);
-      return;
-    }
-    setExiting(true);
-    flashTimer.current = window.setTimeout(() => onSummon(mode), FX.summon_flash_ms);
+    onSummon(mode);
   };
 
   const style = {
@@ -151,11 +143,10 @@ export function Main({ servants, fatePoints, setFatePoints, onSummon }: {
     '--main-crossfade-ms': `${FX.crossfade_ms}ms`,
     '--main-class-ms': `${FX.class_light_ms}ms`,
     '--main-circle-spin-ms': `${FX.circle_spin_ms}ms`,
-    '--main-flash-ms': `${FX.summon_flash_ms}ms`,
   } as CSSProperties;
 
   return (
-    <section className={`screen s-main ${exiting ? 'main-exiting' : ''}`} style={style}>
+    <section className="screen s-main" style={style}>
       <div className="main-bg" style={{ backgroundImage: 'url("./assets/map/fuyuki_tile_night.jpeg")' }} />
       <div className="main-mist" />
       <div className="main-embers" aria-hidden="true">
@@ -165,10 +156,6 @@ export function Main({ servants, fatePoints, setFatePoints, onSummon }: {
         {art.current && <img className="main-figure" src={art.current.images.summon} alt="" referrerPolicy="no-referrer" onError={() => imageFailed(art.current!.servant_id)} />}
         {art.incoming && <img className="main-figure main-figure-in" src={art.incoming.images.summon} alt="" referrerPolicy="no-referrer" onError={() => imageFailed(art.incoming!.servant_id)} />}
       </div>
-      {exiting && art.current && <div className="main-split" aria-hidden="true">
-        <img className="main-split-left" src={art.current.images.summon} alt="" referrerPolicy="no-referrer" onError={() => imageFailed(art.current!.servant_id)} />
-        <img className="main-split-right" src={art.current.images.summon} alt="" referrerPolicy="no-referrer" onError={() => imageFailed(art.current!.servant_id)} />
-      </div>}
       <div className="main-inner">
         <div className="main-ring" aria-hidden="true">
           <canvas ref={circle} className="main-circle" width={680} height={680} />
@@ -182,15 +169,15 @@ export function Main({ servants, fatePoints, setFatePoints, onSummon }: {
         <h1 className="title">{T.title}<small>{T.subtitle}</small></h1>
         <p className={`main-tagline ${lit >= STANDARD_CLASSES.length ? 'in' : ''}`}><RubyText text={T.mainTagline} /></p>
         <div className="main-actions">
-          <button className="btn primary" onClick={() => summon('random')} disabled={exiting}>{T.summonRandom}</button>
-          <button className="btn" onClick={() => summon('catalyst')} disabled={exiting}>{T.summonCatalyst}</button>
+          <button className="btn primary" onClick={() => summon('random')}>{T.summonRandom}</button>
+          <button className="btn" onClick={() => summon('catalyst')}>{T.summonCatalyst}</button>
         </div>
         <div className="stepper-wrap">
           <span className="main-stat">{T.fatePoints}</span>
           <div className="stepper">
-            <button onClick={() => set(fatePoints - 1)} aria-label="운명점 줄이기" disabled={fatePoints <= min || exiting}>−</button>
+            <button onClick={() => set(fatePoints - 1)} aria-label="운명점 줄이기" disabled={fatePoints <= min}>−</button>
             <b>{fatePoints}</b>
-            <button onClick={() => set(fatePoints + 1)} aria-label="운명점 늘리기" disabled={fatePoints >= max || exiting}>+</button>
+            <button onClick={() => set(fatePoints + 1)} aria-label="운명점 늘리기" disabled={fatePoints >= max}>+</button>
           </div>
         </div>
         <div className="main-stat">{T.statsPending}</div>

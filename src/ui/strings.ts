@@ -12,7 +12,7 @@ export const T = {
     none: '남은 국면으로는 승부가 나지 않는다',
   },
 
-  title: '제6차 성배전쟁',
+  title: '■차 성배전쟁',
   subtitle: '후유키 · 7일',
   /** 메인 문구 (사용자 선택, D-167, Q-162). 괄호는 루비 */
   mainTagline: '만능의 원망기(願望機)가, 다시 강림한다.',
@@ -30,7 +30,6 @@ export const T = {
   catalystAll: '전체',
   catalystCount: (n: number) => `${n}기`,
   catalystNone: '응답하는 영령이 없다.',
-  catalystExtra: '난입',
   back: '돌아가기',
   summoning: '소환 중…',
   skipChant: '영창 생략 ▸▸',
@@ -97,7 +96,7 @@ export const T = {
     none: '지시하지 않는다',
     noneCounter: '맞서지 않는다',
   },
-  supplyHurtQ: (who: string, cond: string) => `${who}이(가) 크게 다친 듯하다 (${cond}). 마력 공급으로 상태를 완화해 볼까?`,
+  supplyHurtQ: (who: string, cond: string) => `${who}이(가) 크게 다친 듯하다 (${cond}). 마력을 공급해 줄까?`,
   supplyTrustQ: (who: string) => `${who}이(가) 마스터를 깊게 신뢰하고 있는 듯하다. 마력 공급을 진행할까?`,
   supplyYes: '마력 공급을 한다',
   supplyNo: '오늘은 그만둔다',
@@ -185,7 +184,7 @@ export const T = {
     seal: (purpose: string, n: number) => `영주 사용: ${purpose} (남은 ${n}획)`,
     sealPurpose: { np: '보구 즉시 발동', escape: '도주', block_betrayal: '배신 저지' } as Record<string, string>,
     battleEnd: { win: '승리', loss: '패배', draw: '무승부', escape: '도주' } as Record<string, string>,
-    recovered: (a: string, b: string, cause: 'night' | 'supply') => `${cause === 'supply' ? '마력 공급으로' : '하루가 지나'} 상태가 회복되었다 (${a} → ${b}).`,
+    recovered: (a: string, b: string) => `하루가 지나 상태가 회복되었다 (${a} → ${b}).`,
     betrayal: '서번트가 배신하려 한다.',
     betrayalBlocked: '영주의 구속으로 배신을 막았다.',
     finalStart: (n: number) => `일곱째 밤이 끝났다. 남은 ${n}진영이 중앙 공원으로 불려 나온다.`,
@@ -225,22 +224,9 @@ export const T = {
   defeatCause: { killed: '서번트가 쓰러졌다.', escape_failed: '도주에 실패했다.', betrayal: '서번트에게 살해당했다.', refused_escape: '서번트가 도주 명령을 거부하고 쓰러졌다.' } as Record<string, string>,
   // 전쟁 결산 (D-156): 끝나면 모든 진영의 진명·마스터·결과를 공개한다
   warSummary: '전쟁 결산',
-  /** 전쟁 연대기 (D-166) */
+  /** 전쟁 연대기 (D-166, D-168). 본문 문장은 data/common/chronicle.json */
   chronicle: {
     title: '전쟁 연대기',
-    final: '강제 전투',
-    mine: '내 전투',
-    vs: 'vs',
-    win: (w: string) => `${w} 승리`,
-    dead: (d: string) => `${d} 소멸`,
-    escape: (x: string) => `${x} 퇴각`,
-    draw: '무승부',
-    escapeFailed: '도주 실패',
-    np: (names: string) => `보구 개방: ${names}`,
-    execute: (master: string) => `마스터 ${master} 처치`,
-    release: (master: string) => `마스터 ${master} 방면`,
-    out: (who: string, how: string, by: string | null) => `${who} 탈락 · ${how}${by ? ` ← ${by}` : ''}`,
-    finalStart: (place: string) => `강제 전투 개시${place ? ` · ${place}` : ''}`,
     empty: '기록된 사건이 없다.',
   },
   winnerLabel: '성배를 손에 넣은 것은',

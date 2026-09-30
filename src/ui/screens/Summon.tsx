@@ -3,7 +3,7 @@
 // 마법진·카드·시트 위에 소환 연출을 얹는다.
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { K } from '../../data/constants';
-import { CLASSES, EXTRA_CLASSES, STAT_IDS, type ServantProfile } from '../../data/schema';
+import { CLASSES, STAT_IDS, type ServantProfile } from '../../data/schema';
 import { createRng } from '../../engine/rng';
 import type { RunPlan } from '../../engine/run';
 import { parseRank } from '../../engine/stats';
@@ -66,10 +66,7 @@ export function CatalystPick({ servants, onPick }: { servants: ServantProfile[];
                 <Art src={s.images.face} cls={s.class} />
                 <span>
                   <b>{s.name_ko}</b>
-                  <span>
-                    {LABELS.cls[s.class]}
-                    {(EXTRA_CLASSES as readonly string[]).includes(s.class) ? ` · ${T.catalystExtra}` : ''}
-                  </span>
+                  <span>{LABELS.cls[s.class]}</span>
                 </span>
               </button>
             ))

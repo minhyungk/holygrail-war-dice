@@ -148,14 +148,17 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
   const dice = useRef<DiceTable | null>(null);
   const diceReady = useRef<Promise<void>>(Promise.resolve());
   const fast = useRef(false);
-  // 전투 빨리감기 (D-161): 전투가 끝날 때까지 text.fast_forward 배속. 선택지에서는 입력을 기다리며 멈춘다
-  const [ff, setFf] = useState(false);
-  const ffRef = useRef(false);
-  const setFastForward = (on: boolean) => {
+  // 전투 빨리감기 (D-161, D-169): 버튼을 누를 때마다 text.fast_forward 단계(3배 → 10배 → 끔). 전투가 끝나면 끈다
+  const [ffLevel, setFfLevel] = useState(0);
+  const ffRef = useRef(0);
+  const ff = ffLevel > 0;
+  const ffRate = ffLevel ? K['text.fast_forward'][ffLevel - 1]! : 1;
+  const setFastForward = (level: number | false) => {
+    const on = level === false ? 0 : level % (K['text.fast_forward'].length + 1);
     ffRef.current = on;
-    setFf(on);
+    setFfLevel(on);
   };
-  const speed = () => (ffRef.current ? K['text.fast_forward'] : 1);
+  const speed = () => (ffRef.current ? K['text.fast_forward'][ffRef.current - 1]! : 1);
   /** 소멸 중인 진영 (D-164): 일러스트가 금빛으로 물든 뒤 아래에서 위로 사라진다 */
   const [dying, setDying] = useState<string[]>([]);
   const staged = useRef<RollBreakdown | null>(null);
@@ -361,7 +364,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
   const throwMine = async (r: RollResult) => {
     await diceReady.current;
     // 빨리감기 중에는 던지기를 기다리지 않고, 3D 굴림 없이 눈만 보인다 (D-161)
-    const auto = ffRef.current;
+    const auto = ffRef.current > 0;
     const [power, dir] = auto ? [0, 0] : await awaitThrow();
     const animated = !auto && dice.current ? await dice.current.roll(r.dice, power, dir) : false;
     fast.current = false; // 던지기 스와이프의 클릭이 빨리감기로 잡히지 않도록 착지 후 초기화
@@ -671,11 +674,11 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
   const appliedRate = useRef(1);
   useEffect(() => {
     if (REDUCED || typeof document.getAnimations !== 'function') return;
-    const rate = ff ? K['text.fast_forward'] : 1;
+    const rate = ffRate;
     if (rate === 1 && appliedRate.current === 1) return;
     appliedRate.current = rate;
     for (const a of document.getAnimations()) a.playbackRate = rate;
-  }, [ff, fxList, shake, sealFx, dying, cards]);
+  }, [ffRate, fxList, shake, sealFx, dying, cards]);
 
   const answer = (a: RunAnswer) => {
     // 재굴림하지 않으면 지금 보여 준 굴림으로 확정: 뒤따르는 굴림 이벤트에서 다시 던지지 않는다
@@ -870,8 +873,8 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
             <b>{ph.name}</b>
             <span>{ph.no}</span>
             {forecast ? <Forecast value={forecast} /> : null}
-            <button type="button" className={`ff-btn ${ff ? 'on' : ''}`} aria-pressed={ff} onClick={() => setFastForward(!ff)}>
-              {ff ? T.ffOn(K['text.fast_forward']) : T.ffSkip}
+            <button type="button" className={`ff-btn ${ff ? 'on' : ''}`} aria-pressed={ff} onClick={() => setFastForward(ffLevel + 1)}>
+              {ff ? T.ffOn(ffRate) : T.ffSkip}
             </button>
           </div>
           <div
@@ -1082,7 +1085,7 @@ export function Game({ session, onExit }: { session: Session; onExit: () => void
         </div>
       ) : null}
       {/* 전투 화면에서는 글이 계속 남아 있고, 맵에서는 글이 나오는 동안만 보인다 (행동 메뉴를 가리지 않게) */}
-      {battle || typing || rollBox ? <Vn log={vnLog} typing={typing} onLineDone={onLineDone} onLog={() => setShowLog(true)} speed={battle && ff ? K['text.fast_forward'] : 1} /> : null}
+      {battle || typing || rollBox ? <Vn log={vnLog} typing={typing} onLineDone={onLineDone} onLog={() => setShowLog(true)} speed={battle ? ffRate : 1} /> : null}
       {choice && !rerollInBox ? (
         <Choices
           key={JSON.stringify(prompt)}

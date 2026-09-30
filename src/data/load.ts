@@ -1,6 +1,6 @@
 // 판 단위 데이터 로딩 (D-065): 그 판에 나오는 서번트·마스터 폴더만 동적으로 불러온다. 프로필만은 전원 한 청크 (D-166, catalog.ts).
 // 빌드 시 폴더별로 청크가 나뉜다 (Vite import.meta.glob).
-import { BeatsFile, DialogueFile, LabelsFile, MasterProfile, ServantProfile, ServantSkillsFile, SummonChantFile } from './schema';
+import { BeatsFile, ChronicleFile, DialogueFile, LabelsFile, MasterProfile, ServantProfile, ServantSkillsFile, SummonChantFile } from './schema';
 
 type Table = Record<string, () => Promise<{ default: unknown }>>;
 const servantDialogue = import.meta.glob<{ default: unknown }>('/data/servants/*/dialogue.json');
@@ -57,6 +57,11 @@ export async function loadMasterProfiles(masterIds: readonly string[]): Promise<
 export async function loadNarrationCommon() {
   const [labels, beats, chant] = await Promise.all([loadRaw(common, '/data/common/labels.json'), loadRaw(common, '/data/common/beats.json'), loadRaw(common, '/data/common/summon.json')]);
   return { labels: LabelsFile.parse(labels), beats: BeatsFile.parse(beats), chant: SummonChantFile.parse(chant).lines };
+}
+
+/** 전쟁 연대기 문장 틀 (D-168). 종료 화면에서만 쓰므로 그때 불러온다 */
+export async function loadChronicle(): Promise<ChronicleFile> {
+  return ChronicleFile.parse(await loadRaw(common, '/data/common/chronicle.json'));
 }
 
 export const availableServantIds = () => Object.keys(servantDialogue).map((p) => p.split('/')[3]!);

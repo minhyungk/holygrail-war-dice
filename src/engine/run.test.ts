@@ -163,7 +163,7 @@ describe('한 판 끝까지 (헤드리스)', () => {
     }
   });
 
-  it('밤이 끝나면 상태 1단계 회복 (D-034)', () => {
+  it('밤에 들어갈 때 상태 1단계 회복 (D-034, D-167)', () => {
     for (const r of runs) for (const e of r.log.ofType('condition_recovered')) expect(['full', 'hurt', 'danger'].indexOf(e.data.from) - ['full', 'hurt', 'danger'].indexOf(e.data.to)).toBe(1);
   });
 
@@ -248,12 +248,34 @@ describe('한 판 끝까지 (헤드리스)', () => {
     for (const r of runs) for (const e of r.log.events) expect(['crafted', 'camp_offer']).not.toContain(e.type);
   });
 
-  it('마력 공급은 아침 요청으로만, 부상 때 보통 이상이면 상태 회복 (D-129)', () => {
+  it('마력 공급은 아침 요청으로만 한다 (D-129)', () => {
     for (const r of runs) {
       for (const e of r.log.ofType('mana_supplied')) expect(e.action).toBe(0);
-      for (const e of r.log.ofType('condition_recovered')) if (e.data.cause === 'supply') expect(e.time).toBe('day');
     }
     expect(runs.some((r) => r.log.ofType('mana_supplied').length > 0)).toBe(true);
+  });
+
+  it('여러 시드에서 공급 직후 상태는 그대로이고, 상태 회복은 밤 진입 때뿐이다 (D-169)', () => {
+    let hurtSupplies = 0;
+    let recoveries = 0;
+    for (const r of runs) {
+      let view = emptyView();
+      for (const e of r.log.events) {
+        const before = view.factions[PLAYER_FACTION]?.condition;
+        view = applyEvent(view, e);
+        if (e.type === 'mana_supplied') {
+          if (before === 'hurt' || before === 'danger') hurtSupplies++;
+          expect(view.factions[PLAYER_FACTION]?.condition, `seed ${r.seed}, event ${e.seq}`).toBe(before);
+        }
+        if (e.type === 'condition_recovered') {
+          recoveries++;
+          expect(e.data.cause).toBe('night');
+          expect([e.time, e.action]).toEqual(['night', 0]);
+        }
+      }
+    }
+    expect(hurtSupplies).toBeGreaterThan(0);
+    expect(recoveries).toBeGreaterThan(0);
   });
 
   it('조우하면 상대 클래스를 안다 (D-147)', () => {
@@ -330,7 +352,6 @@ describe('상태 회복 시점 (combat.md §3.4-6, D-167)', () => {
     for (let seed = 1; seed <= 30; seed++) {
       const { log } = sim(seed);
       for (const e of log.ofType('condition_recovered')) {
-        if (e.data.cause !== 'night') continue;
         nights++;
         expect([e.time, e.action], `${seed} ${e.seq}`).toEqual(['night', 0]);
         // 회복 직전 이벤트들은 같은 날 밤의 시작(night_started)이다
@@ -338,8 +359,6 @@ describe('상태 회복 시점 (combat.md §3.4-6, D-167)', () => {
         expect(start.day).toBe(e.day);
         expect(e.day).toBeGreaterThan(1);
       }
-      // 낮에는 밤 회복이 없다
-      expect(log.ofType('condition_recovered').some((x) => x.data.cause === 'night' && x.time === 'day')).toBe(false);
     }
     expect(nights).toBeGreaterThan(0);
   });

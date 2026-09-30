@@ -427,3 +427,17 @@ describe('정보 공개 서술 (D-158, D-165)', () => {
     expect(beatAt(INTEL.name)?.lines.some(isLore) ?? false).toBe(false);
   });
 });
+
+describe('소환 대사 (D-169 버그 수정)', () => {
+  it('자기 소환 대사가 있는 서번트는 진명 가림 조건이 붙어 있어도 클래스 기본값이 아니라 자기 대사가 나온다', () => {
+    let checked = 0;
+    for (const f of data.servantDialogue) {
+      const own = f.tags.summon ?? [];
+      if (!own.length || !data.servants[f.speaker]) continue;
+      const line = new Narrator(data, 1).summonLine(f.speaker)!;
+      expect(line.textId.startsWith(`tx_${f.speaker}_summon_`), `${f.speaker}: ${line.textId}`).toBe(true);
+      checked++;
+    }
+    expect(checked).toBeGreaterThan(300);
+  });
+});
